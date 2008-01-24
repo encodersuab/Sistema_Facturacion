@@ -1,6 +1,6 @@
 ﻿Public Class frmPruebaCC
 
-    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles txtfecha.TextChanged
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -32,5 +32,14 @@
         monto = calcularMontoCC(txtmonto.Text)
 
         txtresultCC.Text = CC.generar(txtautorizacion.Text, txtnumero.Text, txtnit.Text, fecha, monto, txtllave.Text)
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        txtautorizacion.Clear()
+        txtllave.Clear()
+        txtmonto.Clear()
+        txtnit.Clear()
+        txtnumero.Clear()
+        txtresultCC.Clear()
     End Sub
 End Class
