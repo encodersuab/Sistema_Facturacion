@@ -171,16 +171,26 @@ Public Class CC
         Return table_inv(c)
     End Function
     Private Shared Function verhoeff_add_recursive(number As String, digits As Integer) As String
-        Dim temp As Long = Long.Parse(number)
-        Dim x As Integer
-        While digits > 0
-            '   MsgBox(temp)
-            x = calcsum(temp)
-            temp = (temp * 10) + x
 
-            digits = digits - 1
-        End While
-        Return temp
+        If number = "0" Then
+            Dim temp As String = "047"
+            Return temp
+        Else
+            Dim temp As Long = Long.Parse(number)
+            Dim x As Integer
+            While digits > 0
+                '   MsgBox(temp)
+                x = calcsum(temp)
+                temp = (temp * 10) + x
+
+                digits = digits - 1
+            End While
+            Return temp
+        End If
+
+
+
+
     End Function
     Private Shared Function reverse(cadena As String) As String
         Dim str As Char() = cadena.ToCharArray()
