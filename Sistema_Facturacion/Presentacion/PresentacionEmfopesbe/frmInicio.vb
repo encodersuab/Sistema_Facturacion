@@ -577,4 +577,10 @@ Public Class frmInicioF
         frmReporteProductosCampoFerial.Show()
 
     End Sub
+
+    Private Sub ToolStripMenuItem1_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+        frmPruebaCC.MdiParent = Me
+        frmPruebaCC.Show()
+
+    End Sub
 End Class
