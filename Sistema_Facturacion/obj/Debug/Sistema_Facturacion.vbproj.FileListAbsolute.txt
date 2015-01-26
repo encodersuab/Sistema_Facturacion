@@ -31,3 +31,4 @@ D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\De
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmCategoria.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmCliente.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.vbproj.GenerateResource.Cache
+D:\Users\Blady\Desktop\REPOSITORIO\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmCategoria.resources

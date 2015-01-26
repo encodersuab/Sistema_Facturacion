@@ -28,7 +28,7 @@ Public Class vCategoria
 
     End Sub
 
-    Public Sub New()
+    Public Sub New(ByVal idcategoria As Integer, ByVal nombre_categoria As String)
         gidcategoria = idcategoria
         gnombre_categoria = nombre_categoria
     End Sub
