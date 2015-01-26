@@ -67,23 +67,11 @@ Public Class fCliente
             cmd.Parameters.AddWithValue("@telefono", dts.gtelefono)
             cmd.Parameters.AddWithValue("@ci", dts.gci)
 
-<<<<<<< HEAD
-=======
-    Public Function eliminar(ByVal dts As vCliente) As Boolean
-        Try
-            conectado()
-            cmd = New SqlCommand("eliminar_cliente")
-            cmd.CommandType = CommandType.StoredProcedure
-            cmd.Connection = cnn
-
-            cmd.Parameters.Add("@idcliente", SqlDbType.NVarChar, 50).Value = dts.gicliente
->>>>>>> origin/master
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
                 Return False
             End If
-<<<<<<< HEAD
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -92,14 +80,5 @@ Public Class fCliente
             desconectado()
         End Try
     End Function
-=======
-        Catch ex As Exception
-            MsgBox(ex.Message)
-            Return False
-        End Try
-    End Function
-
-
->>>>>>> origin/master
 
 End Class

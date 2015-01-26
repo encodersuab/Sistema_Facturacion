@@ -47,11 +47,7 @@ Partial Class frmCliente
         Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-<<<<<<< HEAD
-        Me.cbeliminar = New System.Windows.Forms.CheckBox()
-=======
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
->>>>>>> origin/master
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -217,7 +213,6 @@ Partial Class frmCliente
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.cbeliminar)
         Me.GroupBox2.Controls.Add(Me.btnEliminar)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.txtBuscar)
@@ -285,20 +280,9 @@ Partial Class frmCliente
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
         '
-<<<<<<< HEAD
-        'cbeliminar
-        '
-        Me.cbeliminar.Location = New System.Drawing.Point(29, 54)
-        Me.cbeliminar.Name = "cbeliminar"
-        Me.cbeliminar.Size = New System.Drawing.Size(104, 24)
-        Me.cbeliminar.TabIndex = 16
-        Me.cbeliminar.Text = "Eliminar"
-        Me.cbeliminar.UseVisualStyleBackColor = True
-=======
         'erroricono
         '
         Me.erroricono.ContainerControl = Me
->>>>>>> origin/master
         '
         'frmCliente
         '
@@ -342,10 +326,6 @@ Partial Class frmCliente
     Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
     Friend WithEvents cbxListadoClientes As System.Windows.Forms.ComboBox
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
-<<<<<<< HEAD
-    Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
-=======
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
->>>>>>> origin/master
 End Class
