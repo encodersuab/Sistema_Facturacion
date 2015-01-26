@@ -35,7 +35,7 @@ Public Class fCliente
             cmd.Connection = cnn
 
             cmd.Parameters.AddWithValue("@nombre", dts.gnombre)
-            cmd.Parameters.AddWithValue("@apellido", dts.gapellidos)
+            cmd.Parameters.AddWithValue("@apellidos", dts.gapellidos)
             cmd.Parameters.AddWithValue("@direccion", dts.gdireccion)
             cmd.Parameters.AddWithValue("@telefono", dts.gtelefono)
             cmd.Parameters.AddWithValue("@ci", dts.gci)
@@ -48,7 +48,7 @@ Public Class fCliente
 
         Catch ex As Exception
             MsgBox(ex.Message)
-            Return Nothing
+            Return False
         Finally
             desconectado()
         End Try
