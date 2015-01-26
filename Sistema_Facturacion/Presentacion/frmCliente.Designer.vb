@@ -41,6 +41,7 @@ Partial Class frmCliente
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdCliente = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.cbeliminar = New System.Windows.Forms.CheckBox()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
@@ -48,7 +49,6 @@ Partial Class frmCliente
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.cbeliminar = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -227,6 +227,16 @@ Partial Class frmCliente
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Clientes"
         '
+        'cbeliminar
+        '
+        Me.cbeliminar.AutoSize = True
+        Me.cbeliminar.Location = New System.Drawing.Point(29, 53)
+        Me.cbeliminar.Name = "cbeliminar"
+        Me.cbeliminar.Size = New System.Drawing.Size(62, 17)
+        Me.cbeliminar.TabIndex = 16
+        Me.cbeliminar.Text = "Eliminar"
+        Me.cbeliminar.UseVisualStyleBackColor = True
+        '
         'btnEliminar
         '
         Me.btnEliminar.Location = New System.Drawing.Point(29, 350)
@@ -285,16 +295,6 @@ Partial Class frmCliente
         'erroricono
         '
         Me.erroricono.ContainerControl = Me
-        '
-        'cbeliminar
-        '
-        Me.cbeliminar.AutoSize = True
-        Me.cbeliminar.Location = New System.Drawing.Point(29, 53)
-        Me.cbeliminar.Name = "cbeliminar"
-        Me.cbeliminar.Size = New System.Drawing.Size(62, 17)
-        Me.cbeliminar.TabIndex = 16
-        Me.cbeliminar.Text = "Eliminar"
-        Me.cbeliminar.UseVisualStyleBackColor = True
         '
         'frmCliente
         '
