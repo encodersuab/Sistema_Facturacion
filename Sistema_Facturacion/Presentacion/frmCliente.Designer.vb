@@ -22,9 +22,7 @@ Partial Class frmCliente
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btncancelar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
@@ -41,22 +39,20 @@ Partial Class frmCliente
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdCliente = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.cbeliminar = New System.Windows.Forms.CheckBox()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.btnGuardar)
         Me.GroupBox1.Controls.Add(Me.btnEditar)
         Me.GroupBox1.Controls.Add(Me.btncancelar)
         Me.GroupBox1.Controls.Add(Me.btnNuevo)
@@ -79,18 +75,9 @@ Partial Class frmCliente
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
-        'btnGuardar
-        '
-        Me.btnGuardar.Location = New System.Drawing.Point(105, 203)
-        Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
-        Me.btnGuardar.TabIndex = 15
-        Me.btnGuardar.Text = "Guardar"
-        Me.btnGuardar.UseVisualStyleBackColor = True
-        '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(105, 203)
+        Me.btnEditar.Location = New System.Drawing.Point(107, 203)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -213,6 +200,7 @@ Partial Class frmCliente
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.cbeliminar)
         Me.GroupBox2.Controls.Add(Me.btnEliminar)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.txtBuscar)
@@ -224,6 +212,15 @@ Partial Class frmCliente
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Clientes"
+        '
+        'cbeliminar
+        '
+        Me.cbeliminar.Location = New System.Drawing.Point(15, 54)
+        Me.cbeliminar.Name = "cbeliminar"
+        Me.cbeliminar.Size = New System.Drawing.Size(104, 24)
+        Me.cbeliminar.TabIndex = 16
+        Me.cbeliminar.Text = "Eliminar"
+        Me.cbeliminar.UseVisualStyleBackColor = True
         '
         'btnEliminar
         '
@@ -254,12 +251,12 @@ Partial Class frmCliente
         'cbxListadoClientes
         '
         Me.cbxListadoClientes.FormattingEnabled = True
-        Me.cbxListadoClientes.Items.AddRange(New Object() {"nombre", "apellidos", "direccion", "telefono", "ci"})
+        Me.cbxListadoClientes.Items.AddRange(New Object() {"Nombre", "Apellidos", "Telefono", "Ci"})
         Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 30)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
         Me.cbxListadoClientes.Size = New System.Drawing.Size(121, 21)
         Me.cbxListadoClientes.TabIndex = 1
-        Me.cbxListadoClientes.Text = "nombre"
+        Me.cbxListadoClientes.Text = "Ci"
         '
         'datalistado
         '
@@ -280,10 +277,6 @@ Partial Class frmCliente
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
         '
-        'erroricono
-        '
-        Me.erroricono.ContainerControl = Me
-        '
         'frmCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -299,7 +292,6 @@ Partial Class frmCliente
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -326,6 +318,5 @@ Partial Class frmCliente
     Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
     Friend WithEvents cbxListadoClientes As System.Windows.Forms.ComboBox
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
-    Friend WithEvents btnGuardar As System.Windows.Forms.Button
+    Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
 End Class
