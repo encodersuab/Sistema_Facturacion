@@ -19,3 +19,7 @@ D:\Users\Blady\Desktop\REPOSITORIO\Sistema_Facturacion\Sistema_Facturacion\bin\D
 D:\Users\Blady\Desktop\REPOSITORIO\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.Resources.resources
 D:\Users\Blady\Desktop\REPOSITORIO\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmCliente.resources
 D:\Users\Blady\Desktop\REPOSITORIO\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.vbproj.GenerateResource.Cache
+D:\Users\soft\Desktop\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion.exe.config
+D:\Users\soft\Desktop\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.exe
+D:\Users\soft\Desktop\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.xml
+D:\Users\soft\Desktop\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.pdb
