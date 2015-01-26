@@ -116,7 +116,7 @@
             Call mostrar()
 
         End If
-        Call limpiar()
+        'Call limpiar()
 
 
     End Sub
