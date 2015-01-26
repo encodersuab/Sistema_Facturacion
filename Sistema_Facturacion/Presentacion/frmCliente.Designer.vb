@@ -48,6 +48,7 @@ Partial Class frmCliente
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.cbeliminar = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -213,6 +214,7 @@ Partial Class frmCliente
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.cbeliminar)
         Me.GroupBox2.Controls.Add(Me.btnEliminar)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.txtBuscar)
@@ -246,7 +248,7 @@ Partial Class frmCliente
         '
         'txtBuscar
         '
-        Me.txtBuscar.Location = New System.Drawing.Point(178, 30)
+        Me.txtBuscar.Location = New System.Drawing.Point(178, 26)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(228, 20)
         Me.txtBuscar.TabIndex = 2
@@ -255,7 +257,7 @@ Partial Class frmCliente
         '
         Me.cbxListadoClientes.FormattingEnabled = True
         Me.cbxListadoClientes.Items.AddRange(New Object() {"nombre", "apellidos", "direccion", "telefono", "ci"})
-        Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 30)
+        Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 25)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
         Me.cbxListadoClientes.Size = New System.Drawing.Size(121, 21)
         Me.cbxListadoClientes.TabIndex = 1
@@ -283,6 +285,16 @@ Partial Class frmCliente
         'erroricono
         '
         Me.erroricono.ContainerControl = Me
+        '
+        'cbeliminar
+        '
+        Me.cbeliminar.AutoSize = True
+        Me.cbeliminar.Location = New System.Drawing.Point(29, 53)
+        Me.cbeliminar.Name = "cbeliminar"
+        Me.cbeliminar.Size = New System.Drawing.Size(62, 17)
+        Me.cbeliminar.TabIndex = 16
+        Me.cbeliminar.Text = "Eliminar"
+        Me.cbeliminar.UseVisualStyleBackColor = True
         '
         'frmCliente
         '
@@ -328,4 +340,5 @@ Partial Class frmCliente
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
+    Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
 End Class
