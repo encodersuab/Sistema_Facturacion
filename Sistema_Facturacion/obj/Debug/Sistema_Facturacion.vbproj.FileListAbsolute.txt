@@ -19,15 +19,7 @@ D:\Users\Blady\Desktop\REPOSITORIO\Sistema_Facturacion\Sistema_Facturacion\bin\D
 D:\Users\Blady\Desktop\REPOSITORIO\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.Resources.resources
 D:\Users\Blady\Desktop\REPOSITORIO\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmCliente.resources
 D:\Users\Blady\Desktop\REPOSITORIO\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.vbproj.GenerateResource.Cache
-D:\Users\soft\Desktop\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion.exe.config
-D:\Users\soft\Desktop\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.exe
-D:\Users\soft\Desktop\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.xml
-D:\Users\soft\Desktop\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.pdb
-D:\Users\soft\Desktop\Sistema_Facturacion-fb5795600b5468803305c14921823700cb57f7ed\Sistema_Facturacion\bin\Debug\Sistema_Facturacion.exe.config
-D:\Users\soft\Desktop\Sistema_Facturacion-fb5795600b5468803305c14921823700cb57f7ed\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.exe
-D:\Users\soft\Desktop\Sistema_Facturacion-fb5795600b5468803305c14921823700cb57f7ed\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.xml
-D:\Users\soft\Desktop\Sistema_Facturacion-fb5795600b5468803305c14921823700cb57f7ed\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.pdb
-D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion.exe.config
-D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.exe
-D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.xml
-D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.pdb
+D:\Users\Blady\Desktop\Nueva carpeta\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion.exe.config
+D:\Users\Blady\Desktop\Nueva carpeta\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.exe
+D:\Users\Blady\Desktop\Nueva carpeta\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.xml
+D:\Users\Blady\Desktop\Nueva carpeta\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.pdb

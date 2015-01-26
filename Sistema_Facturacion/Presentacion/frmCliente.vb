@@ -3,8 +3,19 @@
     Private dt As New DataTable
     Private Sub frmCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
+    End Sub
+
+    Public Sub limpiar()
+        btnGuardar.Visible = True
+        btnEditar.Visible = False
+        txtNombre.Text = ""
+        txtApellido.Text = ""
+        txtDireccion.Text = ""
+        txtTelefono.Text = ""
+        txtCi.Text = ""
 
     End Sub
+
     Private Sub mostrar()
         Try
             Dim func As New fCliente
@@ -40,7 +51,7 @@
             ds.Tables.Add(dt.Copy)
             Dim dv As New DataView(ds.Tables(0))
 
-            dv.RowFilter = cbxListadoClientes.Text & "Like" & txtBuscar.Text & "%'"
+            dv.RowFilter = cbxListadoClientes.Text & " Like '" & txtBuscar.Text & "%'"
 
             If dv.Count <> 0 Then
                 Inexistente.Visible = False
@@ -69,55 +80,167 @@
 
     'End Sub
 
-    Private Sub cbeliminar_CheckedChanged(sender As Object, e As EventArgs) Handles cbeliminar.CheckedChanged
-        If cbeliminar.CheckState = CheckState.Checked Then
-            datalistado.Columns.Item("Eliminar").Visible = True
+    Private Sub txtIdCliente_TextChanged(sender As Object, e As EventArgs) Handles txtIdCliente.TextChanged
+
+    End Sub
+
+    Private Sub txtIdCliente_Validated(sender As Object, e As EventArgs) Handles txtIdCliente.Validated
+        
+    End Sub
+
+    Private Sub txtNombre_TextChanged(sender As Object, e As EventArgs) Handles txtNombre.TextChanged
+
+    End Sub
+
+    Private Sub txtNombre_Validated(sender As Object, e As EventArgs) Handles txtNombre.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
         Else
-            datalistado.Columns.Item("Eliminar").Visible = False
-        End If
-
-    End Sub
-
-    Private Sub datalistado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellContentClick
-        If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then
-            Dim chkcell As DataGridViewCheckBoxCell = Me.datalistado.Rows(e.RowIndex).Cells("Eliminar")
-            chkcell.Value = Not chkcell.Value
-
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
         End If
     End Sub
 
-    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
-        Dim result As DialogResult
+    Private Sub txtApellido_TextChanged(sender As Object, e As EventArgs) Handles txtApellido.TextChanged
 
-        result = MessageBox.Show("Realmente desea eliminar los clientes seleccionados?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
-        If result = DialogResult.OK Then
+    End Sub
+
+    Private Sub txtApellido_Validated(sender As Object, e As EventArgs) Handles txtApellido.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese apellidos del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtDireccion_TextChanged(sender As Object, e As EventArgs) Handles txtDireccion.TextChanged
+
+    End Sub
+
+    Private Sub txtDireccion_Validated(sender As Object, e As EventArgs) Handles txtDireccion.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese direccion del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtTelefono_TextChanged(sender As Object, e As EventArgs) Handles txtTelefono.TextChanged
+
+    End Sub
+
+    Private Sub txtTelefono_Validated(sender As Object, e As EventArgs) Handles txtTelefono.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el telefono del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtCi_TextChanged(sender As Object, e As EventArgs) Handles txtCi.TextChanged
+
+    End Sub
+
+    Private Sub txtCi_Validated(sender As Object, e As EventArgs) Handles txtCi.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese carnet de identidad del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
+        limpiar()
+        mostrar()
+
+    End Sub
+
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+        If Me.ValidateChildren = True And txtNombre.Text <> "" And txtApellido.Text <> "" And txtDireccion.Text <> "" And txtTelefono.Text <> "" And txtCi.Text <> "" Then
             Try
-                For Each row As DataGridViewRow In datalistado.Rows
-                    Dim marcado As Boolean = Convert.ToBoolean(row.Cells("Eliminar").Value)
+                Dim dts As New vCliente
+                Dim func As New fCliente
 
-                    If marcado Then
-                        Dim onekey As Integer = Convert.ToInt32(row.Cells("idcliente").Value)
-                        Dim vdb As New vCliente
-                        Dim func As New fCliente
-                        vdb.gicliente = onekey
+                dts.gnombre = txtNombre.Text
+                dts.gapellidos = txtApellido.Text
+                dts.gdireccion = txtDireccion.Text
+                dts.gtelefono = txtTelefono.Text
+                dts.gci = txtCi.Text
 
-                        If func.eliminar(vdb) Then
-                        Else
-                            MessageBox.Show("Clioente no fue eliminado", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
-                        End If
-                    End If
-                Next
-                Call mostrar()
+                If func.insertar(dts) Then
+                    MessageBox.Show("cliente registrado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    mostrar()
+                    limpiar()
+                Else
+                    MessageBox.Show("cliente no registrado", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    mostrar()
+                    limpiar()
+
+                End If
+
             Catch ex As Exception
                 MsgBox(ex.Message)
             End Try
         Else
-            MessageBox.Show("Cancelando eliminacion de registro", "Eliminando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Call mostrar()
+            MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
         End If
-        'Call limpiar()
 
+    End Sub
+
+    Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
+        Dim result As DialogResult
+        result = MessageBox.Show("realizar los cambios?", "Modificardo registro", MessageBoxButtons.OKCancel)
+
+        If result = DialogResult.OK Then
+
+            If Me.ValidateChildren = True And txtNombre.Text <> "" And txtApellido.Text <> "" And txtDireccion.Text <> "" And txtTelefono.Text <> "" And txtCi.Text <> "" And txtIdCliente.Text <> "" Then
+                Try
+                    Dim dts As New vCliente
+                    Dim func As New fCliente
+
+                    dts.gicliente = txtIdCliente.Text
+                    dts.gnombre = txtNombre.Text
+                    dts.gapellidos = txtApellido.Text
+                    dts.gdireccion = txtDireccion.Text
+                    dts.gtelefono = txtTelefono.Text
+                    dts.gci = txtCi.Text
+
+                    If func.editar(dts) Then
+                        MessageBox.Show("cliente modificado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        mostrar()
+                        limpiar()
+                    Else
+                        MessageBox.Show("cliente no modificado", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        mostrar()
+                        limpiar()
+
+                    End If
+
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
+            Else
+                MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            End If
+        End If
+    End Sub
+
+    Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick
+        txtIdCliente.Text = datalistado.SelectedCells.Item(1).Value
+        txtNombre.Text = datalistado.SelectedCells.Item(2).Value
+        txtApellido.Text = datalistado.SelectedCells.Item(3).Value
+        txtDireccion.Text = datalistado.SelectedCells.Item(4).Value
+        txtTelefono.Text = datalistado.SelectedCells.Item(5).Value
+        txtCi.Text = datalistado.SelectedCells.Item(6).Value
+
+        btnEditar.Visible = True
+        btnGuardar.Visible = False
+
+
+    End Sub
+
+    Private Sub datalistado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellContentClick
 
     End Sub
 End Class
