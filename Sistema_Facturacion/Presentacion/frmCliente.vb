@@ -287,4 +287,8 @@
             datalistado.Columns.Item("Eliminar").Visible = False
         End If
     End Sub
+
+    Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
+
+    End Sub
 End Class
