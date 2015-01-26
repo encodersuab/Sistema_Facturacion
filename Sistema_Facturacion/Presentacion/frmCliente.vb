@@ -186,4 +186,61 @@
         End If
 
     End Sub
+
+    Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
+        Dim result As DialogResult
+        result = MessageBox.Show("realizar los cambios?", "Modificardo registro", MessageBoxButtons.OKCancel)
+
+        If result = DialogResult.OK Then
+
+            If Me.ValidateChildren = True And txtNombre.Text <> "" And txtApellido.Text <> "" And txtDireccion.Text <> "" And txtTelefono.Text <> "" And txtCi.Text <> "" And txtIdCliente.Text <> "" Then
+                Try
+                    Dim dts As New vCliente
+                    Dim func As New fCliente
+
+                    dts.gicliente = txtIdCliente.Text
+                    dts.gnombre = txtNombre.Text
+                    dts.gapellidos = txtApellido.Text
+                    dts.gdireccion = txtDireccion.Text
+                    dts.gtelefono = txtTelefono.Text
+                    dts.gci = txtCi.Text
+
+                    If func.editar(dts) Then
+                        MessageBox.Show("cliente modificado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        mostrar()
+                        limpiar()
+                    Else
+                        MessageBox.Show("cliente no modificado", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        mostrar()
+                        limpiar()
+
+                    End If
+
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
+            Else
+                MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            End If
+        End If
+    End Sub
+
+    Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick
+        txtIdCliente.Text = datalistado.SelectedCells.Item(1).Value
+        txtNombre.Text = datalistado.SelectedCells.Item(2).Value
+        txtApellido.Text = datalistado.SelectedCells.Item(3).Value
+        txtDireccion.Text = datalistado.SelectedCells.Item(4).Value
+        txtTelefono.Text = datalistado.SelectedCells.Item(5).Value
+        txtCi.Text = datalistado.SelectedCells.Item(6).Value
+
+        btnEditar.Visible = True
+        btnGuardar.Visible = False
+
+
+    End Sub
+
+    Private Sub datalistado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellContentClick
+
+    End Sub
 End Class
