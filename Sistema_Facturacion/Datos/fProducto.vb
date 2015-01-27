@@ -40,7 +40,7 @@ Public Class fProducto
             cmd.Parameters.AddWithValue("@descripcion", dts.gdescripcion)
             cmd.Parameters.AddWithValue("@stock", dts.gstock)
             cmd.Parameters.AddWithValue("@precio_compra", dts.gprecio_compra)
-            cmd.Parameters.AddWithValue("@precioc_venta", dts.gprecio_venta)
+            cmd.Parameters.AddWithValue("@precio_venta", dts.gprecio_venta)
             cmd.Parameters.AddWithValue("@fecha_vencimiento", dts.gfecha_vencimiento)
             cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
 
@@ -71,7 +71,7 @@ Public Class fProducto
             cmd.Parameters.AddWithValue("@descripcion", dts.gdescripcion)
             cmd.Parameters.AddWithValue("@stock", dts.gstock)
             cmd.Parameters.AddWithValue("@precio_compra", dts.gprecio_compra)
-            cmd.Parameters.AddWithValue("@precioc_venta", dts.gprecio_venta)
+            cmd.Parameters.AddWithValue("@precio_venta", dts.gprecio_venta)
             cmd.Parameters.AddWithValue("@fecha_vencimiento", dts.gfecha_vencimiento)
             cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
 
