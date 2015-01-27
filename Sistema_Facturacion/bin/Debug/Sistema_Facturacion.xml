@@ -15,6 +15,10 @@ Sistema_Facturacion
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="T:Sistema_Facturacion.My.Resources.Resources">
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.

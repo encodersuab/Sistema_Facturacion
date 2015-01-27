@@ -41,6 +41,7 @@ Partial Class frmCategoria
         Me.txtIdcategoria = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtflag = New System.Windows.Forms.TextBox()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -209,18 +210,27 @@ Partial Class frmCategoria
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtIdcategoria)
-        Me.GroupBox1.Location = New System.Drawing.Point(47, 26)
+        Me.GroupBox1.Location = New System.Drawing.Point(43, 79)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(297, 250)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
+        'txtflag
+        '
+        Me.txtflag.Location = New System.Drawing.Point(304, 37)
+        Me.txtflag.Name = "txtflag"
+        Me.txtflag.Size = New System.Drawing.Size(36, 20)
+        Me.txtflag.TabIndex = 4
+        Me.txtflag.Text = "0"
+        '
         'frmCategoria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1042, 424)
+        Me.Controls.Add(Me.txtflag)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmCategoria"
@@ -232,6 +242,7 @@ Partial Class frmCategoria
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
@@ -252,4 +263,5 @@ Partial Class frmCategoria
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdcategoria As System.Windows.Forms.TextBox
+    Friend WithEvents txtflag As System.Windows.Forms.TextBox
 End Class
