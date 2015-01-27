@@ -23,29 +23,28 @@ Partial Class frmVenta
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.cbeliminar = New System.Windows.Forms.CheckBox()
-        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtNombreCLiente = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btncancelar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtTelefono = New System.Windows.Forms.TextBox()
+        Me.txtNumDoc = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtCliente = New System.Windows.Forms.TextBox()
+        Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btnBuscarCliente = New System.Windows.Forms.Button()
+        Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
+        Me.cbTipoDoc = New System.Windows.Forms.ComboBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -53,8 +52,6 @@ Partial Class frmVenta
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.cbeliminar)
-        Me.GroupBox2.Controls.Add(Me.btnEliminar)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.txtBuscar)
         Me.GroupBox2.Controls.Add(Me.cbxListadoClientes)
@@ -65,25 +62,6 @@ Partial Class frmVenta
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Estado de ventas"
-        '
-        'cbeliminar
-        '
-        Me.cbeliminar.AutoSize = True
-        Me.cbeliminar.Location = New System.Drawing.Point(29, 53)
-        Me.cbeliminar.Name = "cbeliminar"
-        Me.cbeliminar.Size = New System.Drawing.Size(62, 17)
-        Me.cbeliminar.TabIndex = 16
-        Me.cbeliminar.Text = "Eliminar"
-        Me.cbeliminar.UseVisualStyleBackColor = True
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.Location = New System.Drawing.Point(29, 350)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(67, 26)
-        Me.btnEliminar.TabIndex = 15
-        Me.btnEliminar.Text = "Eliminar"
-        Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'Inexistente
         '
@@ -133,19 +111,20 @@ Partial Class frmVenta
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.cbTipoDoc)
+        Me.GroupBox1.Controls.Add(Me.dtpFecha)
+        Me.GroupBox1.Controls.Add(Me.btnBuscarCliente)
+        Me.GroupBox1.Controls.Add(Me.txtNombreCLiente)
         Me.GroupBox1.Controls.Add(Me.btnGuardar)
         Me.GroupBox1.Controls.Add(Me.btnEditar)
         Me.GroupBox1.Controls.Add(Me.btncancelar)
         Me.GroupBox1.Controls.Add(Me.btnNuevo)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.txtTelefono)
+        Me.GroupBox1.Controls.Add(Me.txtNumDoc)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.txtDireccion)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.txtApellido)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.txtCliente)
+        Me.GroupBox1.Controls.Add(Me.txtidCliente)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtIdVenta)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 25)
@@ -154,6 +133,13 @@ Partial Class frmVenta
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'txtNombreCLiente
+        '
+        Me.txtNombreCLiente.Location = New System.Drawing.Point(170, 76)
+        Me.txtNombreCLiente.Name = "txtNombreCLiente"
+        Me.txtNombreCLiente.Size = New System.Drawing.Size(74, 20)
+        Me.txtNombreCLiente.TabIndex = 16
         '
         'btnGuardar
         '
@@ -200,12 +186,12 @@ Partial Class frmVenta
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Numero Doc"
         '
-        'txtTelefono
+        'txtNumDoc
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(144, 154)
-        Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(100, 20)
-        Me.txtTelefono.TabIndex = 8
+        Me.txtNumDoc.Location = New System.Drawing.Point(144, 154)
+        Me.txtNumDoc.Name = "txtNumDoc"
+        Me.txtNumDoc.Size = New System.Drawing.Size(100, 20)
+        Me.txtNumDoc.TabIndex = 8
         '
         'Label4
         '
@@ -216,13 +202,6 @@ Partial Class frmVenta
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Tipo Doc"
         '
-        'txtDireccion
-        '
-        Me.txtDireccion.Location = New System.Drawing.Point(144, 128)
-        Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(100, 20)
-        Me.txtDireccion.TabIndex = 6
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -231,13 +210,6 @@ Partial Class frmVenta
         Me.Label3.Size = New System.Drawing.Size(37, 13)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Fecha"
-        '
-        'txtApellido
-        '
-        Me.txtApellido.Location = New System.Drawing.Point(144, 102)
-        Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(100, 20)
-        Me.txtApellido.TabIndex = 4
         '
         'Label2
         '
@@ -248,12 +220,12 @@ Partial Class frmVenta
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Cliente"
         '
-        'txtCliente
+        'txtidCliente
         '
-        Me.txtCliente.Location = New System.Drawing.Point(115, 76)
-        Me.txtCliente.Name = "txtCliente"
-        Me.txtCliente.Size = New System.Drawing.Size(57, 20)
-        Me.txtCliente.TabIndex = 2
+        Me.txtidCliente.Location = New System.Drawing.Point(144, 76)
+        Me.txtidCliente.Name = "txtidCliente"
+        Me.txtidCliente.Size = New System.Drawing.Size(20, 20)
+        Me.txtidCliente.TabIndex = 2
         '
         'Label1
         '
@@ -271,12 +243,30 @@ Partial Class frmVenta
         Me.txtIdVenta.Size = New System.Drawing.Size(100, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'TextBox1
+        'btnBuscarCliente
         '
-        Me.TextBox1.Location = New System.Drawing.Point(200, 79)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(57, 20)
-        Me.TextBox1.TabIndex = 16
+        Me.btnBuscarCliente.Location = New System.Drawing.Point(250, 72)
+        Me.btnBuscarCliente.Name = "btnBuscarCliente"
+        Me.btnBuscarCliente.Size = New System.Drawing.Size(29, 26)
+        Me.btnBuscarCliente.TabIndex = 17
+        Me.btnBuscarCliente.Text = "..."
+        Me.btnBuscarCliente.UseVisualStyleBackColor = True
+        '
+        'dtpFecha
+        '
+        Me.dtpFecha.Location = New System.Drawing.Point(144, 103)
+        Me.dtpFecha.Name = "dtpFecha"
+        Me.dtpFecha.Size = New System.Drawing.Size(100, 20)
+        Me.dtpFecha.TabIndex = 18
+        '
+        'cbTipoDoc
+        '
+        Me.cbTipoDoc.FormattingEnabled = True
+        Me.cbTipoDoc.Items.AddRange(New Object() {"Factura"})
+        Me.cbTipoDoc.Location = New System.Drawing.Point(144, 128)
+        Me.cbTipoDoc.Name = "cbTipoDoc"
+        Me.cbTipoDoc.Size = New System.Drawing.Size(100, 21)
+        Me.cbTipoDoc.TabIndex = 19
         '
         'frmVenta
         '
@@ -296,8 +286,6 @@ Partial Class frmVenta
 
     End Sub
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
-    Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
     Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
     Friend WithEvents cbxListadoClientes As System.Windows.Forms.ComboBox
@@ -309,14 +297,15 @@ Partial Class frmVenta
     Friend WithEvents btncancelar As System.Windows.Forms.Button
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents txtTelefono As System.Windows.Forms.TextBox
+    Friend WithEvents txtNumDoc As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents txtDireccion As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents txtApellido As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents txtCliente As System.Windows.Forms.TextBox
+    Friend WithEvents txtidCliente As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtNombreCLiente As System.Windows.Forms.TextBox
+    Friend WithEvents cbTipoDoc As System.Windows.Forms.ComboBox
+    Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
+    Friend WithEvents btnBuscarCliente As System.Windows.Forms.Button
 End Class
