@@ -79,7 +79,7 @@ Partial Class frmDetalleVenta
         '
         'btnquitar
         '
-        Me.btnquitar.Location = New System.Drawing.Point(27, 369)
+        Me.btnquitar.Location = New System.Drawing.Point(27, 348)
         Me.btnquitar.Name = "btnquitar"
         Me.btnquitar.Size = New System.Drawing.Size(67, 26)
         Me.btnquitar.TabIndex = 30

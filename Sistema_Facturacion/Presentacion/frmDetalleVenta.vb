@@ -236,4 +236,16 @@
     Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
+
+    End Sub
+
+    Private Sub cbeliminar_CheckedChanged_1(sender As Object, e As EventArgs) Handles cbeliminar.CheckedChanged
+        If cbeliminar.CheckState = CheckState.Checked Then
+            datalistado.Columns.Item("Eliminar").Visible = True
+        Else
+            datalistado.Columns.Item("Eliminar").Visible = False
+        End If
+    End Sub
 End Class

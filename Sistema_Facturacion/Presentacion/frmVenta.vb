@@ -68,8 +68,8 @@
     End Sub
 
     Private Sub ocultar_columnas()
-        datalistado.Columns(1).Visible = False
-        datalistado.Columns(2).Visible = False
+        'datalistado.Columns(1).Visible = False
+        'datalistado.Columns(2).Visible = False
     End Sub
 
    
@@ -156,7 +156,7 @@
 
     Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick
         txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
-        txtidCliente.Text = datalistado.SelectedCells.Item(4).Value
+        txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
         txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
         dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
         cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
@@ -222,8 +222,8 @@
     End Sub
 
     Private Sub cargar_detalle()
-        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
         frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
         frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
         frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
         frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
