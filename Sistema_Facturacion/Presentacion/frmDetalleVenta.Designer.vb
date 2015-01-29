@@ -31,6 +31,7 @@ Partial Class frmDetalleVenta
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnimprimir = New System.Windows.Forms.Button()
         Me.txtStock = New System.Windows.Forms.NumericUpDown()
         Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.txtPrecioUnitario = New System.Windows.Forms.TextBox()
@@ -55,7 +56,6 @@ Partial Class frmDetalleVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.btnimprimir = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -177,6 +177,16 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'btnimprimir
+        '
+        Me.btnimprimir.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.images__3_
+        Me.btnimprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnimprimir.Location = New System.Drawing.Point(197, 288)
+        Me.btnimprimir.Name = "btnimprimir"
+        Me.btnimprimir.Size = New System.Drawing.Size(67, 74)
+        Me.btnimprimir.TabIndex = 30
+        Me.btnimprimir.UseVisualStyleBackColor = True
         '
         'txtStock
         '
@@ -377,16 +387,6 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta.Name = "txtIdVenta"
         Me.txtIdVenta.Size = New System.Drawing.Size(100, 20)
         Me.txtIdVenta.TabIndex = 0
-        '
-        'btnimprimir
-        '
-        Me.btnimprimir.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.images__3_
-        Me.btnimprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnimprimir.Location = New System.Drawing.Point(197, 288)
-        Me.btnimprimir.Name = "btnimprimir"
-        Me.btnimprimir.Size = New System.Drawing.Size(67, 74)
-        Me.btnimprimir.TabIndex = 30
-        Me.btnimprimir.UseVisualStyleBackColor = True
         '
         'frmDetalleVenta
         '
