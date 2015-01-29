@@ -182,6 +182,9 @@
     <EmbeddedResource Include="Presentacion\frmDetalleVenta.resx">
       <DependentUpon>frmDetalleVenta.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmProducto.resx">
+      <DependentUpon>frmProducto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmVenta.resx">
       <DependentUpon>frmVenta.vb</DependentUpon>
     </EmbeddedResource>

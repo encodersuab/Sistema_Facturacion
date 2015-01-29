@@ -86,7 +86,7 @@
                 Dim dts As New vVenta
                 Dim func As New fVenta
 
-                dts.Gidventa = txtIdVenta.Text
+                dts.Gidcliente = txtidCliente.Text
                 dts.Gfecha_venta = dtpFecha.Text
                 dts.Gtipo_documento = cbTipoDoc.Text
                 dts.Gnum_documento = txtNumDoc.Text
@@ -156,7 +156,7 @@
 
     Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick
         txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
-        txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        txtidCliente.Text = datalistado.SelectedCells.Item(4).Value
         txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
         dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
         cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
@@ -228,10 +228,20 @@
         frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
         frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
         frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
+
+
+        frmDetalleVenta.ShowDialog()
+
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
         cargar_detalle()
+
+    End Sub
+
+    Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
+        frmCliente.txtFlag.Text = "1"
+        frmCliente.ShowDialog()
 
     End Sub
 End Class

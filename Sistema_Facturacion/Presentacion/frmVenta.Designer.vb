@@ -29,6 +29,9 @@ Partial Class frmVenta
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbTipoDoc = New System.Windows.Forms.ComboBox()
+        Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
+        Me.btnBuscarCliente = New System.Windows.Forms.Button()
         Me.txtNombreCLiente = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
@@ -42,9 +45,6 @@ Partial Class frmVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.btnBuscarCliente = New System.Windows.Forms.Button()
-        Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
-        Me.cbTipoDoc = New System.Windows.Forms.ComboBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -133,6 +133,31 @@ Partial Class frmVenta
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'cbTipoDoc
+        '
+        Me.cbTipoDoc.FormattingEnabled = True
+        Me.cbTipoDoc.Items.AddRange(New Object() {"Factura"})
+        Me.cbTipoDoc.Location = New System.Drawing.Point(144, 128)
+        Me.cbTipoDoc.Name = "cbTipoDoc"
+        Me.cbTipoDoc.Size = New System.Drawing.Size(100, 21)
+        Me.cbTipoDoc.TabIndex = 19
+        '
+        'dtpFecha
+        '
+        Me.dtpFecha.Location = New System.Drawing.Point(144, 103)
+        Me.dtpFecha.Name = "dtpFecha"
+        Me.dtpFecha.Size = New System.Drawing.Size(100, 20)
+        Me.dtpFecha.TabIndex = 18
+        '
+        'btnBuscarCliente
+        '
+        Me.btnBuscarCliente.Location = New System.Drawing.Point(250, 72)
+        Me.btnBuscarCliente.Name = "btnBuscarCliente"
+        Me.btnBuscarCliente.Size = New System.Drawing.Size(29, 26)
+        Me.btnBuscarCliente.TabIndex = 17
+        Me.btnBuscarCliente.Text = "..."
+        Me.btnBuscarCliente.UseVisualStyleBackColor = True
         '
         'txtNombreCLiente
         '
@@ -242,31 +267,6 @@ Partial Class frmVenta
         Me.txtIdVenta.Name = "txtIdVenta"
         Me.txtIdVenta.Size = New System.Drawing.Size(100, 20)
         Me.txtIdVenta.TabIndex = 0
-        '
-        'btnBuscarCliente
-        '
-        Me.btnBuscarCliente.Location = New System.Drawing.Point(250, 72)
-        Me.btnBuscarCliente.Name = "btnBuscarCliente"
-        Me.btnBuscarCliente.Size = New System.Drawing.Size(29, 26)
-        Me.btnBuscarCliente.TabIndex = 17
-        Me.btnBuscarCliente.Text = "..."
-        Me.btnBuscarCliente.UseVisualStyleBackColor = True
-        '
-        'dtpFecha
-        '
-        Me.dtpFecha.Location = New System.Drawing.Point(144, 103)
-        Me.dtpFecha.Name = "dtpFecha"
-        Me.dtpFecha.Size = New System.Drawing.Size(100, 20)
-        Me.dtpFecha.TabIndex = 18
-        '
-        'cbTipoDoc
-        '
-        Me.cbTipoDoc.FormattingEnabled = True
-        Me.cbTipoDoc.Items.AddRange(New Object() {"Factura"})
-        Me.cbTipoDoc.Location = New System.Drawing.Point(144, 128)
-        Me.cbTipoDoc.Name = "cbTipoDoc"
-        Me.cbTipoDoc.Size = New System.Drawing.Size(100, 21)
-        Me.cbTipoDoc.TabIndex = 19
         '
         'frmVenta
         '

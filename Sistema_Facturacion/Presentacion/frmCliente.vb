@@ -291,4 +291,14 @@
     Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
 
     End Sub
+
+    Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
+        If txtFlag.Text = "1" Then
+            frmVenta.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
+            frmVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
+            Me.Close()
+
+
+        End If
+    End Sub
 End Class

@@ -60,6 +60,7 @@ Partial Class frmProducto
         Me.txtIdproducto = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dlg = New System.Windows.Forms.OpenFileDialog()
+        Me.txtTag = New System.Windows.Forms.TextBox()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -415,11 +416,21 @@ Partial Class frmProducto
         '
         Me.dlg.FileName = "dlg"
         '
+        'txtTag
+        '
+        Me.txtTag.Location = New System.Drawing.Point(268, 12)
+        Me.txtTag.Name = "txtTag"
+        Me.txtTag.Size = New System.Drawing.Size(140, 20)
+        Me.txtTag.TabIndex = 26
+        Me.txtTag.Text = "0"
+        Me.txtTag.Visible = False
+        '
         'frmProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1007, 478)
+        Me.Controls.Add(Me.txtTag)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "frmProducto"
@@ -434,6 +445,7 @@ Partial Class frmProducto
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
@@ -473,4 +485,5 @@ Partial Class frmProducto
     Friend WithEvents btncargar As System.Windows.Forms.PictureBox
     Friend WithEvents btnlimpiar As System.Windows.Forms.PictureBox
     Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents txtTag As System.Windows.Forms.TextBox
 End Class

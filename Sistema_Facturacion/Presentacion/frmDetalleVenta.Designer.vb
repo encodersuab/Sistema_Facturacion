@@ -23,18 +23,28 @@ Partial Class frmDetalleVenta
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.btnquitar = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.cbeliminar = New System.Windows.Forms.CheckBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
-        Me.txtBuscar = New System.Windows.Forms.TextBox()
-        Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtStock = New System.Windows.Forms.NumericUpDown()
+        Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
+        Me.txtPrecioUnitario = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnBuscarProducto = New System.Windows.Forms.Button()
+        Me.txtNombreProducto = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtIdProducto = New System.Windows.Forms.TextBox()
         Me.cbTipoDoc = New System.Windows.Forms.ComboBox()
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
-        Me.btnBuscarCliente = New System.Windows.Forms.Button()
         Me.txtNombreCLiente = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
-        Me.btnEditar = New System.Windows.Forms.Button()
         Me.btncancelar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -48,20 +58,61 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.btnquitar)
+        Me.GroupBox2.Controls.Add(Me.Button2)
+        Me.GroupBox2.Controls.Add(Me.cbeliminar)
+        Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
-        Me.GroupBox2.Controls.Add(Me.txtBuscar)
-        Me.GroupBox2.Controls.Add(Me.cbxListadoClientes)
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(333, 23)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(581, 400)
+        Me.GroupBox2.Size = New System.Drawing.Size(581, 544)
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Estado de ventas"
+        Me.GroupBox2.Text = "Listado de articulos de Venta"
+        '
+        'btnquitar
+        '
+        Me.btnquitar.Location = New System.Drawing.Point(27, 369)
+        Me.btnquitar.Name = "btnquitar"
+        Me.btnquitar.Size = New System.Drawing.Size(67, 26)
+        Me.btnquitar.TabIndex = 30
+        Me.btnquitar.Text = "Quitar"
+        Me.btnquitar.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(221, 30)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(103, 26)
+        Me.Button2.TabIndex = 31
+        Me.Button2.Text = "Quitar Articulos"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'cbeliminar
+        '
+        Me.cbeliminar.AutoSize = True
+        Me.cbeliminar.Location = New System.Drawing.Point(32, 36)
+        Me.cbeliminar.Name = "cbeliminar"
+        Me.cbeliminar.Size = New System.Drawing.Size(62, 17)
+        Me.cbeliminar.TabIndex = 17
+        Me.cbeliminar.Text = "Eliminar"
+        Me.cbeliminar.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(112, 30)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(103, 26)
+        Me.Button1.TabIndex = 30
+        Me.Button1.Text = "Quitar Articulos"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Inexistente
         '
@@ -72,23 +123,6 @@ Partial Class frmDetalleVenta
         Me.Inexistente.TabIndex = 3
         Me.Inexistente.TabStop = True
         Me.Inexistente.Text = "Datos Inexistentes"
-        '
-        'txtBuscar
-        '
-        Me.txtBuscar.Location = New System.Drawing.Point(178, 26)
-        Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(228, 20)
-        Me.txtBuscar.TabIndex = 2
-        '
-        'cbxListadoClientes
-        '
-        Me.cbxListadoClientes.FormattingEnabled = True
-        Me.cbxListadoClientes.Items.AddRange(New Object() {"num_documento", "ci"})
-        Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 25)
-        Me.cbxListadoClientes.Name = "cbxListadoClientes"
-        Me.cbxListadoClientes.Size = New System.Drawing.Size(121, 21)
-        Me.cbxListadoClientes.TabIndex = 1
-        Me.cbxListadoClientes.Text = "num_documento"
         '
         'datalistado
         '
@@ -111,12 +145,20 @@ Partial Class frmDetalleVenta
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtStock)
+        Me.GroupBox1.Controls.Add(Me.txtCantidad)
+        Me.GroupBox1.Controls.Add(Me.txtPrecioUnitario)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.btnBuscarProducto)
+        Me.GroupBox1.Controls.Add(Me.txtNombreProducto)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.txtIdProducto)
         Me.GroupBox1.Controls.Add(Me.cbTipoDoc)
         Me.GroupBox1.Controls.Add(Me.dtpFecha)
-        Me.GroupBox1.Controls.Add(Me.btnBuscarCliente)
         Me.GroupBox1.Controls.Add(Me.txtNombreCLiente)
         Me.GroupBox1.Controls.Add(Me.btnGuardar)
-        Me.GroupBox1.Controls.Add(Me.btnEditar)
         Me.GroupBox1.Controls.Add(Me.btncancelar)
         Me.GroupBox1.Controls.Add(Me.btnNuevo)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -129,10 +171,94 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.Controls.Add(Me.txtIdVenta)
         Me.GroupBox1.Location = New System.Drawing.Point(19, 23)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(297, 250)
+        Me.GroupBox1.Size = New System.Drawing.Size(297, 544)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'txtStock
+        '
+        Me.txtStock.Location = New System.Drawing.Point(144, 228)
+        Me.txtStock.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
+        Me.txtStock.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.txtStock.Name = "txtStock"
+        Me.txtStock.Size = New System.Drawing.Size(120, 20)
+        Me.txtStock.TabIndex = 29
+        Me.txtStock.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'txtCantidad
+        '
+        Me.txtCantidad.Location = New System.Drawing.Point(144, 207)
+        Me.txtCantidad.Name = "txtCantidad"
+        Me.txtCantidad.Size = New System.Drawing.Size(120, 20)
+        Me.txtCantidad.TabIndex = 28
+        Me.txtCantidad.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'txtPrecioUnitario
+        '
+        Me.txtPrecioUnitario.Location = New System.Drawing.Point(144, 253)
+        Me.txtPrecioUnitario.Name = "txtPrecioUnitario"
+        Me.txtPrecioUnitario.Size = New System.Drawing.Size(100, 20)
+        Me.txtPrecioUnitario.TabIndex = 27
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(44, 256)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(78, 13)
+        Me.Label9.TabIndex = 26
+        Me.Label9.Text = "PRecioUnitario"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(48, 228)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(35, 13)
+        Me.Label8.TabIndex = 25
+        Me.Label8.Text = "Stock"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(39, 203)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(49, 13)
+        Me.Label7.TabIndex = 24
+        Me.Label7.Text = "Cantidad"
+        '
+        'btnBuscarProducto
+        '
+        Me.btnBuscarProducto.Location = New System.Drawing.Point(250, 176)
+        Me.btnBuscarProducto.Name = "btnBuscarProducto"
+        Me.btnBuscarProducto.Size = New System.Drawing.Size(29, 26)
+        Me.btnBuscarProducto.TabIndex = 23
+        Me.btnBuscarProducto.Text = "..."
+        Me.btnBuscarProducto.UseVisualStyleBackColor = True
+        '
+        'txtNombreProducto
+        '
+        Me.txtNombreProducto.Location = New System.Drawing.Point(170, 180)
+        Me.txtNombreProducto.Name = "txtNombreProducto"
+        Me.txtNombreProducto.Size = New System.Drawing.Size(74, 20)
+        Me.txtNombreProducto.TabIndex = 22
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(44, 183)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(50, 13)
+        Me.Label6.TabIndex = 21
+        Me.Label6.Text = "Producto"
+        '
+        'txtIdProducto
+        '
+        Me.txtIdProducto.Location = New System.Drawing.Point(144, 180)
+        Me.txtIdProducto.Name = "txtIdProducto"
+        Me.txtIdProducto.Size = New System.Drawing.Size(20, 20)
+        Me.txtIdProducto.TabIndex = 20
         '
         'cbTipoDoc
         '
@@ -150,15 +276,6 @@ Partial Class frmDetalleVenta
         Me.dtpFecha.Size = New System.Drawing.Size(100, 20)
         Me.dtpFecha.TabIndex = 18
         '
-        'btnBuscarCliente
-        '
-        Me.btnBuscarCliente.Location = New System.Drawing.Point(250, 72)
-        Me.btnBuscarCliente.Name = "btnBuscarCliente"
-        Me.btnBuscarCliente.Size = New System.Drawing.Size(29, 26)
-        Me.btnBuscarCliente.TabIndex = 17
-        Me.btnBuscarCliente.Text = "..."
-        Me.btnBuscarCliente.UseVisualStyleBackColor = True
-        '
         'txtNombreCLiente
         '
         Me.txtNombreCLiente.Location = New System.Drawing.Point(170, 76)
@@ -168,34 +285,25 @@ Partial Class frmDetalleVenta
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(105, 203)
+        Me.btnGuardar.Location = New System.Drawing.Point(112, 488)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
+        Me.btnGuardar.Size = New System.Drawing.Size(67, 35)
         Me.btnGuardar.TabIndex = 15
-        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.Text = "Agregar Articulo"
         Me.btnGuardar.UseVisualStyleBackColor = True
-        '
-        'btnEditar
-        '
-        Me.btnEditar.Location = New System.Drawing.Point(105, 203)
-        Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(67, 26)
-        Me.btnEditar.TabIndex = 14
-        Me.btnEditar.Text = "Editar"
-        Me.btnEditar.UseVisualStyleBackColor = True
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(190, 203)
+        Me.btncancelar.Location = New System.Drawing.Point(197, 497)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
-        Me.btncancelar.Text = "Cancelar"
+        Me.btncancelar.Text = "Salir"
         Me.btncancelar.UseVisualStyleBackColor = True
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(21, 203)
+        Me.btnNuevo.Location = New System.Drawing.Point(28, 497)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -272,7 +380,7 @@ Partial Class frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(934, 443)
+        Me.ClientSize = New System.Drawing.Size(934, 642)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmDetalleVenta"
@@ -282,22 +390,20 @@ Partial Class frmDetalleVenta
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
-    Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
-    Friend WithEvents cbxListadoClientes As System.Windows.Forms.ComboBox
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents cbTipoDoc As System.Windows.Forms.ComboBox
     Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
-    Friend WithEvents btnBuscarCliente As System.Windows.Forms.Button
     Friend WithEvents txtNombreCLiente As System.Windows.Forms.TextBox
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
-    Friend WithEvents btnEditar As System.Windows.Forms.Button
     Friend WithEvents btncancelar As System.Windows.Forms.Button
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
@@ -308,4 +414,18 @@ Partial Class frmDetalleVenta
     Friend WithEvents txtidCliente As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
+    Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
+    Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
+    Friend WithEvents txtPrecioUnitario As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents btnBuscarProducto As System.Windows.Forms.Button
+    Friend WithEvents txtNombreProducto As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents txtIdProducto As System.Windows.Forms.TextBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
+    Friend WithEvents btnquitar As System.Windows.Forms.Button
 End Class

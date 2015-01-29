@@ -49,6 +49,7 @@ Partial Class frmCliente
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.txtFlag = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -296,11 +297,21 @@ Partial Class frmCliente
         '
         Me.erroricono.ContainerControl = Me
         '
+        'txtFlag
+        '
+        Me.txtFlag.Location = New System.Drawing.Point(243, 31)
+        Me.txtFlag.Name = "txtFlag"
+        Me.txtFlag.Size = New System.Drawing.Size(100, 20)
+        Me.txtFlag.TabIndex = 16
+        Me.txtFlag.Text = "0"
+        Me.txtFlag.Visible = False
+        '
         'frmCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1052, 496)
+        Me.Controls.Add(Me.txtFlag)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmCliente"
@@ -313,6 +324,7 @@ Partial Class frmCliente
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
@@ -341,4 +353,5 @@ Partial Class frmCliente
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
+    Friend WithEvents txtFlag As System.Windows.Forms.TextBox
 End Class

@@ -299,4 +299,20 @@
         frmCategoria.txtflag.Text = "1"
         frmCategoria.ShowDialog()
     End Sub
+
+    Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
+        If txtTag.Text = "1" Then
+            frmDetalleVenta.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+            frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(2).Value
+            frmDetalleVenta.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(6).Value
+            frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(8).Value
+
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub datalistado_CellErrorTextChanged(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellErrorTextChanged
+
+
+    End Sub
 End Class
