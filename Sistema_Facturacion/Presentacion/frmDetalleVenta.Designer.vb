@@ -55,6 +55,7 @@ Partial Class frmDetalleVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
+        Me.btnimprimir = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -145,6 +146,7 @@ Partial Class frmDetalleVenta
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnimprimir)
         Me.GroupBox1.Controls.Add(Me.txtStock)
         Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.txtPrecioUnitario)
@@ -376,6 +378,16 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta.Size = New System.Drawing.Size(100, 20)
         Me.txtIdVenta.TabIndex = 0
         '
+        'btnimprimir
+        '
+        Me.btnimprimir.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.images__3_
+        Me.btnimprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnimprimir.Location = New System.Drawing.Point(197, 288)
+        Me.btnimprimir.Name = "btnimprimir"
+        Me.btnimprimir.Size = New System.Drawing.Size(67, 74)
+        Me.btnimprimir.TabIndex = 30
+        Me.btnimprimir.UseVisualStyleBackColor = True
+        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -428,4 +440,5 @@ Partial Class frmDetalleVenta
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
     Friend WithEvents btnquitar As System.Windows.Forms.Button
+    Friend WithEvents btnimprimir As System.Windows.Forms.Button
 End Class
