@@ -40,3 +40,8 @@ D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\De
 D:\Users\Blady\Desktop\REPOSITORIO\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVenta.resources
 D:\Users\Blady\Desktop\REPOSITORIO\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVenta.resources
 D:\Users\Blady\Desktop\REPOSITORIO\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmProducto.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVenta.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.vbprojResolveAssemblyReference.cache
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteComprobante.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\RdlCompile.cache
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\RdlCompile.compiled

@@ -7,7 +7,7 @@ Public Class Conexion
 
     Protected Function conectado()
         Try
-            cnn = New SqlConnection("Data Source=BLADYCONDOR;Initial Catalog=dbfac;Integrated Security=True")
+            cnn = New SqlConnection("Data Source=SOFTWARE;Initial Catalog=dbfac;Integrated Security=True")
             cnn.Open()
             Return True
         Catch ex As Exception
