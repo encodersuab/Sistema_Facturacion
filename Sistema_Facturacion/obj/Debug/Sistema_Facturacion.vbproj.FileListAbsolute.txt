@@ -82,3 +82,5 @@ D:\Users\Blady\Desktop\Nueva carpeta\Sistema_Facturacion\Sistema_Facturacion\obj
 D:\Users\Blady\Desktop\Nueva carpeta\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\RdlCompile.cache
 D:\Users\Blady\Desktop\Nueva carpeta\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\RdlCompile.compiled
 D:\Users\Blady\Desktop\Nueva carpeta\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmInicio.resources
+D:\Users\Blady\Desktop\REPOSITORIO2\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmInicio.resources
+D:\Users\Blady\Desktop\REPOSITORIO2\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmLogin.resources
