@@ -258,4 +258,14 @@
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
 
     End Sub
+
+  
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        QrCodeImgControl1.Text = txtNitEmisor.Text + "|" + txtIdVenta.Text + "|" + dtpFecha.Text
+        QrCodeImgControl1.Enabled = True
+    End Sub
+
+    Private Sub QrCodeImgControl1_Click(sender As Object, e As EventArgs) Handles QrCodeImgControl1.Click
+
+    End Sub
 End Class
