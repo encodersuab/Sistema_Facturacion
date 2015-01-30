@@ -2,6 +2,8 @@
     Private dt As New DataTable
     Private Sub frmDetalleVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
+        QrCodeImgControl1.Visible = False
+
     End Sub
 
     Public Sub limpiar()
@@ -260,12 +262,18 @@
     End Sub
 
   
+    'Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    '    
+    'End Sub
+
+    'Private Sub QrCodeImgControl1_Click(sender As Object, e As EventArgs) Handles QrCodeImgControl1.Click
+
+    'End Sub
+
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        QrCodeImgControl1.Text = txtNitEmisor.Text + "|" + txtIdVenta.Text + "|" + dtpFecha.Text
+
+        QrCodeImgControl1.Visible = True
+        QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + dtpFecha.Text
         QrCodeImgControl1.Enabled = True
-    End Sub
-
-    Private Sub QrCodeImgControl1_Click(sender As Object, e As EventArgs) Handles QrCodeImgControl1.Click
-
     End Sub
 End Class
