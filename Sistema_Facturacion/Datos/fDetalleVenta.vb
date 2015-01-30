@@ -40,6 +40,7 @@ Public Class fDetalleVenta
             cmd.Parameters.AddWithValue("@idproducto", dts.gidproducto)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
 
+
             If cmd.ExecuteNonQuery Then
                 Return True
             Else

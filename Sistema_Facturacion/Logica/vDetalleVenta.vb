@@ -58,6 +58,11 @@
         gidproducto = idproducto
         gcantidad = cantidad
         gprecio_unitario = precio_unitario
+
     End Sub
+
+    Private Function total()
+        Return gcantidad * gprecio_unitario
+    End Function
 
 End Class
