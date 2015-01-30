@@ -153,15 +153,15 @@
     End Sub
 
     Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick
-        txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
-        txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
-        txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
-        dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
-        cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
-        txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
+        'txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
+        'txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        'txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
+        'dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
+        'cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
+        'txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
 
-        btnEditar.Visible = True
-        btnGuardar.Visible = False
+        'btnEditar.Visible = True
+        'btnGuardar.Visible = False
 
 
     End Sub
@@ -202,13 +202,19 @@
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
-        cargar_detalle()
+        ' cargar_detalle()
 
     End Sub
 
     Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
         frmCliente.txtFlag.Text = "1"
         frmCliente.ShowDialog()
+
+    End Sub
+
+    Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
+        Me.Close()
+
 
     End Sub
 End Class

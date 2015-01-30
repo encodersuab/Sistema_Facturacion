@@ -71,7 +71,7 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Location = New System.Drawing.Point(333, 23)
+        Me.GroupBox2.Location = New System.Drawing.Point(383, 23)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(581, 458)
         Me.GroupBox2.TabIndex = 5
@@ -173,7 +173,7 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.Controls.Add(Me.txtIdVenta)
         Me.GroupBox1.Location = New System.Drawing.Point(19, 23)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(297, 458)
+        Me.GroupBox1.Size = New System.Drawing.Size(358, 458)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
@@ -194,7 +194,7 @@ Partial Class frmDetalleVenta
         Me.txtStock.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.txtStock.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.txtStock.Name = "txtStock"
-        Me.txtStock.Size = New System.Drawing.Size(120, 20)
+        Me.txtStock.Size = New System.Drawing.Size(173, 20)
         Me.txtStock.TabIndex = 29
         Me.txtStock.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
@@ -202,7 +202,7 @@ Partial Class frmDetalleVenta
         '
         Me.txtCantidad.Location = New System.Drawing.Point(144, 207)
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(120, 20)
+        Me.txtCantidad.Size = New System.Drawing.Size(173, 20)
         Me.txtCantidad.TabIndex = 28
         Me.txtCantidad.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
@@ -210,7 +210,7 @@ Partial Class frmDetalleVenta
         '
         Me.txtPrecioUnitario.Location = New System.Drawing.Point(144, 253)
         Me.txtPrecioUnitario.Name = "txtPrecioUnitario"
-        Me.txtPrecioUnitario.Size = New System.Drawing.Size(100, 20)
+        Me.txtPrecioUnitario.Size = New System.Drawing.Size(173, 20)
         Me.txtPrecioUnitario.TabIndex = 27
         '
         'Label9
@@ -242,7 +242,7 @@ Partial Class frmDetalleVenta
         '
         'btnBuscarProducto
         '
-        Me.btnBuscarProducto.Location = New System.Drawing.Point(250, 176)
+        Me.btnBuscarProducto.Location = New System.Drawing.Point(323, 176)
         Me.btnBuscarProducto.Name = "btnBuscarProducto"
         Me.btnBuscarProducto.Size = New System.Drawing.Size(29, 26)
         Me.btnBuscarProducto.TabIndex = 23
@@ -253,7 +253,7 @@ Partial Class frmDetalleVenta
         '
         Me.txtNombreProducto.Location = New System.Drawing.Point(170, 180)
         Me.txtNombreProducto.Name = "txtNombreProducto"
-        Me.txtNombreProducto.Size = New System.Drawing.Size(74, 20)
+        Me.txtNombreProducto.Size = New System.Drawing.Size(147, 20)
         Me.txtNombreProducto.TabIndex = 22
         '
         'Label6
@@ -278,21 +278,23 @@ Partial Class frmDetalleVenta
         Me.cbTipoDoc.Items.AddRange(New Object() {"Factura"})
         Me.cbTipoDoc.Location = New System.Drawing.Point(144, 128)
         Me.cbTipoDoc.Name = "cbTipoDoc"
-        Me.cbTipoDoc.Size = New System.Drawing.Size(100, 21)
+        Me.cbTipoDoc.Size = New System.Drawing.Size(173, 21)
         Me.cbTipoDoc.TabIndex = 19
         '
         'dtpFecha
         '
+        Me.dtpFecha.Enabled = False
         Me.dtpFecha.Location = New System.Drawing.Point(144, 103)
         Me.dtpFecha.Name = "dtpFecha"
-        Me.dtpFecha.Size = New System.Drawing.Size(100, 20)
+        Me.dtpFecha.Size = New System.Drawing.Size(173, 20)
         Me.dtpFecha.TabIndex = 18
         '
         'txtNombreCLiente
         '
+        Me.txtNombreCLiente.Enabled = False
         Me.txtNombreCLiente.Location = New System.Drawing.Point(170, 76)
         Me.txtNombreCLiente.Name = "txtNombreCLiente"
-        Me.txtNombreCLiente.Size = New System.Drawing.Size(74, 20)
+        Me.txtNombreCLiente.Size = New System.Drawing.Size(147, 20)
         Me.txtNombreCLiente.TabIndex = 16
         '
         'btnGuardar
@@ -335,7 +337,7 @@ Partial Class frmDetalleVenta
         '
         Me.txtNumDoc.Location = New System.Drawing.Point(144, 154)
         Me.txtNumDoc.Name = "txtNumDoc"
-        Me.txtNumDoc.Size = New System.Drawing.Size(100, 20)
+        Me.txtNumDoc.Size = New System.Drawing.Size(173, 20)
         Me.txtNumDoc.TabIndex = 8
         '
         'Label4
@@ -367,6 +369,7 @@ Partial Class frmDetalleVenta
         '
         'txtidCliente
         '
+        Me.txtidCliente.Enabled = False
         Me.txtidCliente.Location = New System.Drawing.Point(144, 76)
         Me.txtidCliente.Name = "txtidCliente"
         Me.txtidCliente.Size = New System.Drawing.Size(20, 20)
@@ -383,16 +386,17 @@ Partial Class frmDetalleVenta
         '
         'txtIdVenta
         '
+        Me.txtIdVenta.Enabled = False
         Me.txtIdVenta.Location = New System.Drawing.Point(144, 50)
         Me.txtIdVenta.Name = "txtIdVenta"
-        Me.txtIdVenta.Size = New System.Drawing.Size(100, 20)
+        Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(934, 498)
+        Me.ClientSize = New System.Drawing.Size(1032, 498)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmDetalleVenta"

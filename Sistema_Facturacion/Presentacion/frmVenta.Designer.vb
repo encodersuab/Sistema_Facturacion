@@ -56,9 +56,9 @@ Partial Class frmVenta
         Me.GroupBox2.Controls.Add(Me.txtBuscar)
         Me.GroupBox2.Controls.Add(Me.cbxListadoClientes)
         Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Location = New System.Drawing.Point(328, 25)
+        Me.GroupBox2.Location = New System.Drawing.Point(413, 25)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(581, 400)
+        Me.GroupBox2.Size = New System.Drawing.Size(496, 285)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Estado de ventas"
@@ -66,7 +66,7 @@ Partial Class frmVenta
         'Inexistente
         '
         Me.Inexistente.AutoSize = True
-        Me.Inexistente.Location = New System.Drawing.Point(234, 203)
+        Me.Inexistente.Location = New System.Drawing.Point(203, 203)
         Me.Inexistente.Name = "Inexistente"
         Me.Inexistente.Size = New System.Drawing.Size(94, 13)
         Me.Inexistente.TabIndex = 3
@@ -75,7 +75,7 @@ Partial Class frmVenta
         '
         'txtBuscar
         '
-        Me.txtBuscar.Location = New System.Drawing.Point(178, 26)
+        Me.txtBuscar.Location = New System.Drawing.Point(162, 45)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(228, 20)
         Me.txtBuscar.TabIndex = 2
@@ -84,7 +84,7 @@ Partial Class frmVenta
         '
         Me.cbxListadoClientes.FormattingEnabled = True
         Me.cbxListadoClientes.Items.AddRange(New Object() {"num_documento", "ci"})
-        Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 25)
+        Me.cbxListadoClientes.Location = New System.Drawing.Point(35, 45)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
         Me.cbxListadoClientes.Size = New System.Drawing.Size(121, 21)
         Me.cbxListadoClientes.TabIndex = 1
@@ -96,11 +96,11 @@ Partial Class frmVenta
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(6, 79)
+        Me.datalistado.Location = New System.Drawing.Point(35, 79)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(536, 251)
+        Me.datalistado.Size = New System.Drawing.Size(444, 181)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -129,7 +129,7 @@ Partial Class frmVenta
         Me.GroupBox1.Controls.Add(Me.txtIdVenta)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 25)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(297, 250)
+        Me.GroupBox1.Size = New System.Drawing.Size(395, 285)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
@@ -140,7 +140,7 @@ Partial Class frmVenta
         Me.cbTipoDoc.Items.AddRange(New Object() {"CI", "NIT"})
         Me.cbTipoDoc.Location = New System.Drawing.Point(144, 128)
         Me.cbTipoDoc.Name = "cbTipoDoc"
-        Me.cbTipoDoc.Size = New System.Drawing.Size(100, 21)
+        Me.cbTipoDoc.Size = New System.Drawing.Size(166, 21)
         Me.cbTipoDoc.TabIndex = 19
         Me.cbTipoDoc.Text = "CI"
         '
@@ -148,12 +148,12 @@ Partial Class frmVenta
         '
         Me.dtpFecha.Location = New System.Drawing.Point(144, 103)
         Me.dtpFecha.Name = "dtpFecha"
-        Me.dtpFecha.Size = New System.Drawing.Size(100, 20)
+        Me.dtpFecha.Size = New System.Drawing.Size(166, 20)
         Me.dtpFecha.TabIndex = 18
         '
         'btnBuscarCliente
         '
-        Me.btnBuscarCliente.Location = New System.Drawing.Point(250, 72)
+        Me.btnBuscarCliente.Location = New System.Drawing.Point(326, 72)
         Me.btnBuscarCliente.Name = "btnBuscarCliente"
         Me.btnBuscarCliente.Size = New System.Drawing.Size(29, 26)
         Me.btnBuscarCliente.TabIndex = 17
@@ -162,14 +162,15 @@ Partial Class frmVenta
         '
         'txtNombreCLiente
         '
-        Me.txtNombreCLiente.Location = New System.Drawing.Point(170, 76)
+        Me.txtNombreCLiente.Enabled = False
+        Me.txtNombreCLiente.Location = New System.Drawing.Point(185, 76)
         Me.txtNombreCLiente.Name = "txtNombreCLiente"
-        Me.txtNombreCLiente.Size = New System.Drawing.Size(74, 20)
+        Me.txtNombreCLiente.Size = New System.Drawing.Size(125, 20)
         Me.txtNombreCLiente.TabIndex = 16
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(105, 203)
+        Me.btnGuardar.Location = New System.Drawing.Point(162, 217)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -178,7 +179,7 @@ Partial Class frmVenta
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(105, 203)
+        Me.btnEditar.Location = New System.Drawing.Point(162, 217)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -187,7 +188,7 @@ Partial Class frmVenta
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(190, 203)
+        Me.btncancelar.Location = New System.Drawing.Point(247, 217)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -196,7 +197,7 @@ Partial Class frmVenta
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(21, 203)
+        Me.btnNuevo.Location = New System.Drawing.Point(78, 217)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -216,7 +217,7 @@ Partial Class frmVenta
         '
         Me.txtNumDoc.Location = New System.Drawing.Point(144, 154)
         Me.txtNumDoc.Name = "txtNumDoc"
-        Me.txtNumDoc.Size = New System.Drawing.Size(100, 20)
+        Me.txtNumDoc.Size = New System.Drawing.Size(166, 20)
         Me.txtNumDoc.TabIndex = 8
         '
         'Label4
@@ -248,9 +249,10 @@ Partial Class frmVenta
         '
         'txtidCliente
         '
+        Me.txtidCliente.Enabled = False
         Me.txtidCliente.Location = New System.Drawing.Point(144, 76)
         Me.txtidCliente.Name = "txtidCliente"
-        Me.txtidCliente.Size = New System.Drawing.Size(20, 20)
+        Me.txtidCliente.Size = New System.Drawing.Size(35, 20)
         Me.txtidCliente.TabIndex = 2
         '
         'Label1
@@ -264,16 +266,17 @@ Partial Class frmVenta
         '
         'txtIdVenta
         '
+        Me.txtIdVenta.Enabled = False
         Me.txtIdVenta.Location = New System.Drawing.Point(144, 50)
         Me.txtIdVenta.Name = "txtIdVenta"
-        Me.txtIdVenta.Size = New System.Drawing.Size(100, 20)
+        Me.txtIdVenta.Size = New System.Drawing.Size(166, 20)
         Me.txtIdVenta.TabIndex = 0
         '
         'frmVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(918, 440)
+        Me.ClientSize = New System.Drawing.Size(918, 323)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmVenta"

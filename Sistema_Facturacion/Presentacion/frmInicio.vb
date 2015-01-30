@@ -2,7 +2,7 @@
 
 Public Class frmInicio
 
-    Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripButton.Click, NewWindowToolStripMenuItem.Click
+    Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripButton.Click
         ' Cree una nueva instancia del formulario secundario.
         Dim ChildForm As New System.Windows.Forms.Form
         ' Conviértalo en un elemento secundario de este formulario MDI antes de mostrarlo.
@@ -116,5 +116,9 @@ Public Class frmInicio
 
     Private Sub ReporteDeProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteDeProductoToolStripMenuItem.Click
 
+    End Sub
+
+    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
+        End
     End Sub
 End Class

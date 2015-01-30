@@ -74,9 +74,9 @@ Partial Class frmCliente
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtIdCliente)
-        Me.GroupBox1.Location = New System.Drawing.Point(46, 57)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(297, 250)
+        Me.GroupBox1.Size = New System.Drawing.Size(297, 268)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
@@ -208,6 +208,7 @@ Partial Class frmCliente
         '
         'txtIdCliente
         '
+        Me.txtIdCliente.Enabled = False
         Me.txtIdCliente.Location = New System.Drawing.Point(118, 30)
         Me.txtIdCliente.Name = "txtIdCliente"
         Me.txtIdCliente.Size = New System.Drawing.Size(100, 20)
@@ -221,9 +222,9 @@ Partial Class frmCliente
         Me.GroupBox2.Controls.Add(Me.txtBuscar)
         Me.GroupBox2.Controls.Add(Me.cbxListadoClientes)
         Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Location = New System.Drawing.Point(404, 57)
+        Me.GroupBox2.Location = New System.Drawing.Point(315, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(581, 400)
+        Me.GroupBox2.Size = New System.Drawing.Size(532, 268)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Clientes"
@@ -240,7 +241,7 @@ Partial Class frmCliente
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(29, 350)
+        Me.btnEliminar.Location = New System.Drawing.Point(6, 235)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(67, 26)
         Me.btnEliminar.TabIndex = 15
@@ -250,7 +251,7 @@ Partial Class frmCliente
         'Inexistente
         '
         Me.Inexistente.AutoSize = True
-        Me.Inexistente.Location = New System.Drawing.Point(234, 203)
+        Me.Inexistente.Location = New System.Drawing.Point(218, 141)
         Me.Inexistente.Name = "Inexistente"
         Me.Inexistente.Size = New System.Drawing.Size(94, 13)
         Me.Inexistente.TabIndex = 3
@@ -259,9 +260,9 @@ Partial Class frmCliente
         '
         'txtBuscar
         '
-        Me.txtBuscar.Location = New System.Drawing.Point(178, 26)
+        Me.txtBuscar.Location = New System.Drawing.Point(221, 25)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(228, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(287, 20)
         Me.txtBuscar.TabIndex = 2
         '
         'cbxListadoClientes
@@ -270,7 +271,7 @@ Partial Class frmCliente
         Me.cbxListadoClientes.Items.AddRange(New Object() {"nombre", "apellidos", "direccion", "telefono", "ci"})
         Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 25)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
-        Me.cbxListadoClientes.Size = New System.Drawing.Size(121, 21)
+        Me.cbxListadoClientes.Size = New System.Drawing.Size(186, 21)
         Me.cbxListadoClientes.TabIndex = 1
         Me.cbxListadoClientes.Text = "nombre"
         '
@@ -284,7 +285,7 @@ Partial Class frmCliente
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(536, 251)
+        Me.datalistado.Size = New System.Drawing.Size(502, 150)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -299,7 +300,7 @@ Partial Class frmCliente
         '
         'txtFlag
         '
-        Me.txtFlag.Location = New System.Drawing.Point(243, 31)
+        Me.txtFlag.Location = New System.Drawing.Point(219, -1)
         Me.txtFlag.Name = "txtFlag"
         Me.txtFlag.Size = New System.Drawing.Size(100, 20)
         Me.txtFlag.TabIndex = 16
@@ -310,7 +311,7 @@ Partial Class frmCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1052, 496)
+        Me.ClientSize = New System.Drawing.Size(918, 290)
         Me.Controls.Add(Me.txtFlag)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)

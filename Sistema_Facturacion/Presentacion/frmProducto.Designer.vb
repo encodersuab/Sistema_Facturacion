@@ -92,7 +92,7 @@ Partial Class frmProducto
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(126, 374)
+        Me.btnGuardar.Location = New System.Drawing.Point(134, 384)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -101,7 +101,7 @@ Partial Class frmProducto
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(126, 374)
+        Me.btnEditar.Location = New System.Drawing.Point(134, 384)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -110,7 +110,7 @@ Partial Class frmProducto
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(211, 374)
+        Me.btncancelar.Location = New System.Drawing.Point(219, 384)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -119,7 +119,7 @@ Partial Class frmProducto
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(42, 374)
+        Me.btnNuevo.Location = New System.Drawing.Point(50, 384)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -139,14 +139,14 @@ Partial Class frmProducto
         '
         Me.txtprecio_venta.Location = New System.Drawing.Point(154, 205)
         Me.txtprecio_venta.Name = "txtprecio_venta"
-        Me.txtprecio_venta.Size = New System.Drawing.Size(140, 20)
+        Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
         Me.txtprecio_venta.TabIndex = 10
         '
         'txtBuscar
         '
         Me.txtBuscar.Location = New System.Drawing.Point(178, 26)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(228, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(274, 20)
         Me.txtBuscar.TabIndex = 2
         '
         'cbxListadoClientes
@@ -170,14 +170,14 @@ Partial Class frmProducto
         '
         'txtprecio_compra
         '
-        Me.txtprecio_compra.Location = New System.Drawing.Point(157, 179)
+        Me.txtprecio_compra.Location = New System.Drawing.Point(154, 179)
         Me.txtprecio_compra.Name = "txtprecio_compra"
         Me.txtprecio_compra.Size = New System.Drawing.Size(56, 20)
         Me.txtprecio_compra.TabIndex = 8
         '
         'txtstock
         '
-        Me.txtstock.Location = New System.Drawing.Point(157, 153)
+        Me.txtstock.Location = New System.Drawing.Point(154, 153)
         Me.txtstock.Name = "txtstock"
         Me.txtstock.Size = New System.Drawing.Size(56, 20)
         Me.txtstock.TabIndex = 6
@@ -201,7 +201,7 @@ Partial Class frmProducto
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(536, 251)
+        Me.datalistado.Size = New System.Drawing.Size(446, 289)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -234,11 +234,11 @@ Partial Class frmProducto
         '
         'txtdescripcion
         '
-        Me.txtdescripcion.Location = New System.Drawing.Point(157, 108)
+        Me.txtdescripcion.Location = New System.Drawing.Point(154, 108)
         Me.txtdescripcion.Multiline = True
         Me.txtdescripcion.Name = "txtdescripcion"
         Me.txtdescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtdescripcion.Size = New System.Drawing.Size(140, 39)
+        Me.txtdescripcion.Size = New System.Drawing.Size(172, 39)
         Me.txtdescripcion.TabIndex = 4
         '
         'Label2
@@ -252,9 +252,9 @@ Partial Class frmProducto
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(157, 56)
+        Me.txtNombre.Location = New System.Drawing.Point(154, 56)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(140, 20)
+        Me.txtNombre.Size = New System.Drawing.Size(172, 20)
         Me.txtNombre.TabIndex = 2
         '
         'Label1
@@ -294,7 +294,7 @@ Partial Class frmProducto
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtIdproducto)
-        Me.GroupBox1.Location = New System.Drawing.Point(26, 23)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(382, 427)
         Me.GroupBox1.TabIndex = 2
@@ -305,9 +305,9 @@ Partial Class frmProducto
         '
         Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
         Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(279, 321)
+        Me.btnlimpiar.Location = New System.Drawing.Point(273, 310)
         Me.btnlimpiar.Name = "btnlimpiar"
-        Me.btnlimpiar.Size = New System.Drawing.Size(50, 36)
+        Me.btnlimpiar.Size = New System.Drawing.Size(53, 48)
         Me.btnlimpiar.TabIndex = 25
         Me.btnlimpiar.TabStop = False
         '
@@ -315,9 +315,9 @@ Partial Class frmProducto
         '
         Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
         Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(276, 261)
+        Me.btncargar.Location = New System.Drawing.Point(273, 261)
         Me.btncargar.Name = "btncargar"
-        Me.btncargar.Size = New System.Drawing.Size(53, 43)
+        Me.btncargar.Size = New System.Drawing.Size(53, 48)
         Me.btncargar.TabIndex = 24
         Me.btncargar.TabStop = False
         '
@@ -326,9 +326,9 @@ Partial Class frmProducto
         Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
         Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(157, 261)
+        Me.imagen.Location = New System.Drawing.Point(154, 261)
         Me.imagen.Name = "imagen"
-        Me.imagen.Size = New System.Drawing.Size(104, 97)
+        Me.imagen.Size = New System.Drawing.Size(107, 97)
         Me.imagen.TabIndex = 23
         Me.imagen.TabStop = False
         '
@@ -360,7 +360,7 @@ Partial Class frmProducto
         '
         'btncategoria
         '
-        Me.btncategoria.Location = New System.Drawing.Point(303, 85)
+        Me.btncategoria.Location = New System.Drawing.Point(331, 85)
         Me.btncategoria.Name = "btncategoria"
         Me.btncategoria.Size = New System.Drawing.Size(26, 19)
         Me.btncategoria.TabIndex = 19
@@ -369,9 +369,9 @@ Partial Class frmProducto
         '
         'txtnom_categoria
         '
-        Me.txtnom_categoria.Location = New System.Drawing.Point(192, 82)
+        Me.txtnom_categoria.Location = New System.Drawing.Point(189, 82)
         Me.txtnom_categoria.Name = "txtnom_categoria"
-        Me.txtnom_categoria.Size = New System.Drawing.Size(105, 20)
+        Me.txtnom_categoria.Size = New System.Drawing.Size(137, 20)
         Me.txtnom_categoria.TabIndex = 18
         '
         'Label7
@@ -385,16 +385,17 @@ Partial Class frmProducto
         '
         'txtidcategoria
         '
-        Me.txtidcategoria.Location = New System.Drawing.Point(157, 82)
+        Me.txtidcategoria.Location = New System.Drawing.Point(154, 82)
         Me.txtidcategoria.Name = "txtidcategoria"
         Me.txtidcategoria.Size = New System.Drawing.Size(29, 20)
         Me.txtidcategoria.TabIndex = 16
         '
         'txtIdproducto
         '
-        Me.txtIdproducto.Location = New System.Drawing.Point(157, 30)
+        Me.txtIdproducto.Enabled = False
+        Me.txtIdproducto.Location = New System.Drawing.Point(154, 30)
         Me.txtIdproducto.Name = "txtIdproducto"
-        Me.txtIdproducto.Size = New System.Drawing.Size(140, 20)
+        Me.txtIdproducto.Size = New System.Drawing.Size(172, 20)
         Me.txtIdproducto.TabIndex = 0
         '
         'GroupBox2
@@ -405,9 +406,9 @@ Partial Class frmProducto
         Me.GroupBox2.Controls.Add(Me.txtBuscar)
         Me.GroupBox2.Controls.Add(Me.cbxListadoClientes)
         Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Location = New System.Drawing.Point(414, 23)
+        Me.GroupBox2.Location = New System.Drawing.Point(400, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(581, 427)
+        Me.GroupBox2.Size = New System.Drawing.Size(470, 427)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Productos"
@@ -418,7 +419,7 @@ Partial Class frmProducto
         '
         'txtTag
         '
-        Me.txtTag.Location = New System.Drawing.Point(268, 12)
+        Me.txtTag.Location = New System.Drawing.Point(268, -3)
         Me.txtTag.Name = "txtTag"
         Me.txtTag.Size = New System.Drawing.Size(140, 20)
         Me.txtTag.TabIndex = 26
@@ -429,7 +430,7 @@ Partial Class frmProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1007, 478)
+        Me.ClientSize = New System.Drawing.Size(887, 448)
         Me.Controls.Add(Me.txtTag)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
