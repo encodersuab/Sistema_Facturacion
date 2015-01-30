@@ -10,8 +10,7 @@
         txtNombreProducto.Text = ""
         txtPrecioUnitario.Text = ""
         txtCantidad.Text = 0
-        txtStock.Text = 1
-
+        txtStock.Text = 0
     End Sub
 
     Private Sub mostrar()
@@ -252,6 +251,10 @@
     Private Sub btnimprimir_Click(sender As Object, e As EventArgs) Handles btnimprimir.Click
         frmReporteComprobante.txtidventa.Text = Me.txtIdVenta.Text
         frmReporteComprobante.ShowDialog()
+
+    End Sub
+
+    Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
 
     End Sub
 End Class

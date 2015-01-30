@@ -137,11 +137,12 @@ Partial Class frmVenta
         'cbTipoDoc
         '
         Me.cbTipoDoc.FormattingEnabled = True
-        Me.cbTipoDoc.Items.AddRange(New Object() {"Factura"})
+        Me.cbTipoDoc.Items.AddRange(New Object() {"CI", "NIT"})
         Me.cbTipoDoc.Location = New System.Drawing.Point(144, 128)
         Me.cbTipoDoc.Name = "cbTipoDoc"
         Me.cbTipoDoc.Size = New System.Drawing.Size(100, 21)
         Me.cbTipoDoc.TabIndex = 19
+        Me.cbTipoDoc.Text = "CI"
         '
         'dtpFecha
         '

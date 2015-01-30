@@ -8,6 +8,7 @@
     Public Sub limpiar()
         btnGuardar.Visible = True
         btnEditar.Visible = False
+        txtIdCliente.Text = ""
         txtNombre.Text = ""
         txtApellido.Text = ""
         txtDireccion.Text = ""
@@ -296,6 +297,8 @@
         If txtFlag.Text = "1" Then
             frmVenta.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
             frmVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
+            frmVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
+
             Me.Close()
 
 

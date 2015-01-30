@@ -303,9 +303,9 @@
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
         If txtTag.Text = "1" Then
             frmDetalleVenta.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
-            frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(2).Value
-            frmDetalleVenta.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(6).Value
-            frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(8).Value
+            frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(3).Value
+            frmDetalleVenta.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+            frmDetalleVenta.txtStock.Text = datalistado.SelectedCells.Item(6).Value
 
             Me.Close()
         End If
