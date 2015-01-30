@@ -24,14 +24,24 @@ Partial Class frmReporteComprobante
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
         Me.generar_comprobanteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.generar_comprobanteTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.generar_comprobanteTableAdapter()
         Me.txtidventa = New System.Windows.Forms.TextBox()
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.generar_comprobanteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'generar_comprobanteBindingSource
+        '
+        Me.generar_comprobanteBindingSource.DataMember = "generar_comprobante"
+        Me.generar_comprobanteBindingSource.DataSource = Me.dbfacDataSet
+        '
+        'dbfacDataSet
+        '
+        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
+        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'ReportViewer1
         '
@@ -44,16 +54,6 @@ Partial Class frmReporteComprobante
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(854, 411)
         Me.ReportViewer1.TabIndex = 0
-        '
-        'dbfacDataSet
-        '
-        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
-        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'generar_comprobanteBindingSource
-        '
-        Me.generar_comprobanteBindingSource.DataMember = "generar_comprobante"
-        Me.generar_comprobanteBindingSource.DataSource = Me.dbfacDataSet
         '
         'generar_comprobanteTableAdapter
         '
@@ -76,8 +76,8 @@ Partial Class frmReporteComprobante
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "frmReporteComprobante"
         Me.Text = ".: Reporte de Comprobante :."
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.generar_comprobanteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

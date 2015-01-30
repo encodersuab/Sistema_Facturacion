@@ -90,7 +90,6 @@
                 dts.Gfecha_venta = dtpFecha.Text
                 dts.Gtipo_documento = cbTipoDoc.Text
                 dts.Gnum_documento = txtNumDoc.Text
-                '   dts.gci = txtCi.Text
 
                 If func.insertar(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -123,15 +122,14 @@
 
             If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNumDoc.Text <> "" And txtIdVenta.Text <> "" Then
                 Try
-                    Dim dts As New vCliente
-                    Dim func As New fCliente
+                    Dim dts As New vVenta
+                    Dim func As New fVenta
 
-                    dts.gicliente = txtIdVenta.Text
-                    dts.gnombre = txtidCliente.Text
-                    ' dts.gapellidos = txtApellido.Text
-                    'dts.gdireccion = txtDireccion.Text
-                    dts.gtelefono = txtNumDoc.Text
-                    '        dts.gci = txtCi.Text
+                    dts.Gidventa = txtIdVenta.Text
+                    dts.Gidcliente = txtidCliente.Text
+                    dts.Gfecha_venta = dtpFecha.Text
+                    dts.Gtipo_documento = cbTipoDoc.Text
+                    dts.Gnum_documento = txtNumDoc.Text
 
                     If func.editar(dts) Then
                         MessageBox.Show("cliente modificado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -176,38 +174,7 @@
         End If
     End Sub
 
-    Private Sub btnEliminar_Click(sender As Object, e As EventArgs)
-        Dim result As DialogResult
-
-        result = MessageBox.Show("Realmente desea eliminar los clientes seleccionados?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
-        If result = DialogResult.OK Then
-            Try
-                For Each row As DataGridViewRow In datalistado.Rows
-                    Dim marcado As Boolean = Convert.ToBoolean(row.Cells("Eliminar").Value)
-
-                    If marcado Then
-                        Dim onekey As Integer = Convert.ToInt32(row.Cells("idcliente").Value)
-                        Dim vdb As New vCliente
-                        Dim func As New fCliente
-                        vdb.gicliente = onekey
-
-                        If func.eliminar(vdb) Then
-                        Else
-                            MessageBox.Show("Clioente no fue eliminado", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
-                        End If
-                    End If
-                Next
-                Call mostrar()
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        Else
-            MessageBox.Show("Cancelando eliminacion de registro", "Eliminando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Call mostrar()
-
-        End If
-    End Sub
-
+   
     Private Sub cbeliminar_CheckedChanged(sender As Object, e As EventArgs)
         'If cbeliminar.CheckState = CheckState.Checked Then
         '    datalistado.Columns.Item("Eliminar").Visible = True

@@ -315,4 +315,8 @@
 
 
     End Sub
+
+    Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
+        Buscar()
+    End Sub
 End Class

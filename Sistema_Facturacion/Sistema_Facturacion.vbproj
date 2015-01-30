@@ -196,6 +196,9 @@
     <EmbeddedResource Include="Presentacion\frmDetalleVenta.resx">
       <DependentUpon>frmDetalleVenta.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmInicio.resx">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmProducto.resx">
       <DependentUpon>frmProducto.vb</DependentUpon>
     </EmbeddedResource>

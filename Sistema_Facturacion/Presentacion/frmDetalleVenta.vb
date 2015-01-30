@@ -9,8 +9,8 @@
         txtIdProducto.Text = ""
         txtNombreProducto.Text = ""
         txtPrecioUnitario.Text = ""
-        txtCantidad.Text = 0
-        txtStock.Text = 0
+        txtCantidad.Text = 1
+        txtStock.Text = 1
     End Sub
 
     Private Sub mostrar()
@@ -63,9 +63,9 @@
     End Sub
 
     Private Sub ocultar_columnas()
-        datalistado.Columns(1).Visible = False
-        datalistado.Columns(2).Visible = False
-        datalistado.Columns(3).Visible = False
+        '   datalistado.Columns(1).Visible = False
+        '  datalistado.Columns(2).Visible = False
+        '  datalistado.Columns(3).Visible = False
     End Sub
 
 
@@ -87,7 +87,7 @@
                 dts.gcantidad = txtCantidad.Text
                 dts.gprecio_unitario = txtPrecioUnitario.Text
 
-                '   dts.gci = txtCi.Text
+
 
                 If func.insertar(dts) Then
                     If func.disminuir_stock(dts) Then
@@ -134,9 +134,9 @@
 
                     If marcado Then
                         Dim onekey As Integer = Convert.ToInt32(row.Cells("idcliente").Value)
-                        Dim vdb As New vCliente
-                        Dim func As New fCliente
-                        vdb.gicliente = onekey
+                        Dim vdb As New vDetalleVenta
+                        Dim func As New fDetalleVenta
+                        vdb.giddedatlle_venta = onekey
 
                         If func.eliminar(vdb) Then
                         Else
