@@ -179,6 +179,11 @@
     <Compile Include="Presentacion\frmVistaProducto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="qrdataset1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qrdataset1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\frmReporteComprobante.Designer.vb">
       <DependentUpon>frmReporteComprobante.vb</DependentUpon>
     </Compile>
@@ -217,6 +222,7 @@
     <EmbeddedResource Include="Reportes\frmReporteComprobante.resx">
       <DependentUpon>frmReporteComprobante.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Report1.rdlc" />
     <EmbeddedResource Include="Reportes\rptcomprobante.rdlc" />
   </ItemGroup>
   <ItemGroup>
@@ -244,6 +250,17 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="qrdataset1.xsc">
+      <DependentUpon>qrdataset1.xsd</DependentUpon>
+    </None>
+    <None Include="qrdataset1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>qrdataset1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="qrdataset1.xss">
+      <DependentUpon>qrdataset1.xsd</DependentUpon>
+    </None>
     <None Include="Resources\descarga %284%29.jpg" />
   </ItemGroup>
   <ItemGroup>

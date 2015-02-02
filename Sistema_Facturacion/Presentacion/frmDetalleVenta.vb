@@ -81,6 +81,11 @@
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtIdProducto.Text <> "" And txtCantidad.Text <> "" And txtPrecioUnitario.Text <> "" Then
             Try
+
+                QrCodeImgControl1.Visible = True
+                QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + dtpFecha.Text
+                QrCodeImgControl1.Enabled = True
+
                 Dim dts As New vDetalleVenta
                 Dim func As New fDetalleVenta
 
@@ -88,6 +93,39 @@
                 dts.gidproducto = txtIdProducto.Text
                 dts.gcantidad = txtCantidad.Text
                 dts.gprecio_unitario = txtPrecioUnitario.Text
+
+
+
+                '''''''''''''''''''''''''''''''''''''''''''
+                Dim ms As New IO.MemoryStream()
+
+
+                'cmd.Parameters.AddWithValue("nombre", txtNombre.Text)
+                'Dim memoriaImagenQR As MemoryStream = New MemoryStream
+                'QrCodeImgControl1.Image.Save(memoriaImagenQR, ImageFormat.Jpeg)
+                'Dim byteqr() As Byte = New Byte((memoriaImagenQR.Length) - 1) {}
+                'memoriaImagenQR.Position = 0
+                'memoriaImagenQR.Read(byteqr, 0, Convert.ToInt32(memoriaImagenQR.Length))
+                'cmd.Parameters.AddWithValue("foto", byteqr)
+
+
+                QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
+                ''QrCodeImgControl1.Image = My.Resources.fondo_transparente_fotos
+                ''QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
+
+
+
+                'imagen.Image.Save(ms, imagen.Image.RawFormat)
+                '        Else
+                'imagen.Image = My.Resources.fondo_transparente_fotos
+                'imagen.Image.Save(ms, imagen.Image.RawFormat)
+                '        End If
+
+                dts.gimagen = ms.GetBuffer
+
+
+                '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
 
 
 
@@ -100,12 +138,17 @@
                     limpiar()
 
 
+
+
+
                 Else
                     MessageBox.Show("articulo no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     mostrar()
                     limpiar()
 
+
                 End If
+                txttotal.Text = sumar().ToString
 
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -270,10 +313,33 @@
 
     'End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    ''Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
-        QrCodeImgControl1.Visible = True
-        QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + dtpFecha.Text
-        QrCodeImgControl1.Enabled = True
+    ''    QrCodeImgControl1.Visible = True
+    ''    QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + dtpFecha.Text
+    ''    QrCodeImgControl1.Enabled = True
+    ''End Sub
+
+
+    Public Function sumar() As Double
+
+        Dim total As Double
+
+        For Each rowtotal As DataGridViewRow In datalistado.Rows
+            total += Convert.ToDouble(rowtotal.Cells("iddetalle_venta").Value)
+
+
+        Next
+
+
+
+
+        Return total
+
+
+    End Function
+
+    Private Sub QrCodeImgControl1_Click(sender As Object, e As EventArgs) Handles QrCodeImgControl1.Click
+
     End Sub
 End Class

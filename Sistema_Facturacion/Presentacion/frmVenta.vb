@@ -189,9 +189,9 @@
     End Sub
 
     Private Sub cargar_detalle()
-        frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
-        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
-        frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
+        frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(4).Value
+        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(3).Value
+        frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(1).Value
         frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
         frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
         frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
@@ -215,6 +215,10 @@
     Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
         Me.Close()
 
+
+    End Sub
+
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
 
     End Sub
 End Class

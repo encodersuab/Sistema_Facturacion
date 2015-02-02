@@ -25,13 +25,13 @@ Partial Class frmLogin
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLogin))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblHOra = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnIngresar = New System.Windows.Forms.Button()
         Me.txtPassord = New System.Windows.Forms.TextBox()
         Me.txtLogin = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.lblHOra = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
@@ -56,6 +56,17 @@ Partial Class frmLogin
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Acceso al Sistema"
+        '
+        'lblHOra
+        '
+        Me.lblHOra.AutoSize = True
+        Me.lblHOra.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHOra.ForeColor = System.Drawing.Color.Black
+        Me.lblHOra.Location = New System.Drawing.Point(1, 144)
+        Me.lblHOra.Name = "lblHOra"
+        Me.lblHOra.Size = New System.Drawing.Size(42, 18)
+        Me.lblHOra.TabIndex = 6
+        Me.lblHOra.Text = "HORA"
         '
         'Button2
         '
@@ -121,17 +132,6 @@ Partial Class frmLogin
         Me.Label1.Size = New System.Drawing.Size(47, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "login"
-        '
-        'lblHOra
-        '
-        Me.lblHOra.AutoSize = True
-        Me.lblHOra.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHOra.ForeColor = System.Drawing.Color.Black
-        Me.lblHOra.Location = New System.Drawing.Point(1, 144)
-        Me.lblHOra.Name = "lblHOra"
-        Me.lblHOra.Size = New System.Drawing.Size(42, 18)
-        Me.lblHOra.TabIndex = 6
-        Me.lblHOra.Text = "HORA"
         '
         'Timer1
         '
