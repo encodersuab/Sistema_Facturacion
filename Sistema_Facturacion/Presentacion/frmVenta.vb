@@ -24,12 +24,12 @@
             If dt.Rows.Count <> 0 Then
                 datalistado.DataSource = dt
                 txtBuscar.Enabled = True
-                datalistado.ColumnHeadersVisible = False
+                datalistado.ColumnHeadersVisible = True
                 Inexistente.Visible = False
             Else
                 datalistado.DataSource = Nothing
                 txtBuscar.Enabled = False
-                datalistado.ColumnHeadersVisible = False
+                datalistado.ColumnHeadersVisible = True
                 Inexistente.Visible = True
             End If
 
@@ -195,6 +195,8 @@
         frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
         frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
         frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
+
+
 
 
         frmDetalleVenta.ShowDialog()

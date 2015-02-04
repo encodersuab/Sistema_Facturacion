@@ -24,6 +24,7 @@ Partial Class frmDetalleVenta
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txttotal = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.QrCodeImgControl1 = New Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl()
         Me.btnquitar = New System.Windows.Forms.Button()
@@ -32,7 +33,6 @@ Partial Class frmDetalleVenta
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
-        Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtnituab = New System.Windows.Forms.TextBox()
@@ -61,7 +61,7 @@ Partial Class frmDetalleVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.txttotal = New System.Windows.Forms.TextBox()
+        Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,6 +87,13 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
+        '
+        'txttotal
+        '
+        Me.txttotal.Location = New System.Drawing.Point(442, 354)
+        Me.txttotal.Name = "txttotal"
+        Me.txttotal.Size = New System.Drawing.Size(100, 20)
+        Me.txttotal.TabIndex = 34
         '
         'Button3
         '
@@ -168,12 +175,6 @@ Partial Class frmDetalleVenta
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.datalistado.Size = New System.Drawing.Size(536, 251)
         Me.datalistado.TabIndex = 0
-        '
-        'eliminar
-        '
-        Me.eliminar.HeaderText = "Eliminar"
-        Me.eliminar.Name = "eliminar"
-        Me.eliminar.ReadOnly = True
         '
         'GroupBox1
         '
@@ -441,12 +442,11 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'txttotal
+        'eliminar
         '
-        Me.txttotal.Location = New System.Drawing.Point(442, 354)
-        Me.txttotal.Name = "txttotal"
-        Me.txttotal.Size = New System.Drawing.Size(100, 20)
-        Me.txttotal.TabIndex = 34
+        Me.eliminar.HeaderText = "Eliminar"
+        Me.eliminar.Name = "eliminar"
+        Me.eliminar.ReadOnly = True
         '
         'frmDetalleVenta
         '
@@ -471,7 +471,6 @@ Partial Class frmDetalleVenta
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
-    Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents cbTipoDoc As System.Windows.Forms.ComboBox
     Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
@@ -507,4 +506,5 @@ Partial Class frmDetalleVenta
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtnituab As System.Windows.Forms.TextBox
     Friend WithEvents txttotal As System.Windows.Forms.TextBox
+    Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
 End Class

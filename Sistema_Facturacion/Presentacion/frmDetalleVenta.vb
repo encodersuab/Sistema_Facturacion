@@ -23,11 +23,16 @@
 
             If dt.Rows.Count <> 0 Then
                 datalistado.DataSource = dt
-                datalistado.ColumnHeadersVisible = False
+                datalistado.ColumnHeadersVisible = True
+
+
+
+
+                ''dataGridView1.Columns[3].HeaderText = "Cédula de identidad";
                 Inexistente.Visible = False
             Else
                 datalistado.DataSource = Nothing
-                datalistado.ColumnHeadersVisible = False
+                datalistado.ColumnHeadersVisible = True
                 Inexistente.Visible = True
             End If
 
@@ -88,6 +93,9 @@
 
                 Dim dts As New vDetalleVenta
                 Dim func As New fDetalleVenta
+
+
+
 
                 dts.gidventa = txtIdVenta.Text
                 dts.gidproducto = txtIdProducto.Text
