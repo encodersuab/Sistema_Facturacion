@@ -23,20 +23,56 @@ Partial Class frmReporteComprobante
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource4 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.txtidventa = New System.Windows.Forms.TextBox()
+        Me.TDetalleVentaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.qrdataset1 = New Sistema_Facturacion.qrdataset1()
         Me.generar_comprobanteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.generar_comprobanteTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.generar_comprobanteTableAdapter()
-        Me.txtidventa = New System.Windows.Forms.TextBox()
-        Me.qrdataset1 = New Sistema_Facturacion.qrdataset1()
-        Me.TDetalleVentaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TDetalleVentaTableAdapter = New Sistema_Facturacion.qrdataset1TableAdapters.TDetalleVentaTableAdapter()
+        Me.dbfacDataSet1 = New Sistema_Facturacion.dbfacDataSet1()
+        Me.mostrar_facturaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.mostrar_facturaTableAdapter = New Sistema_Facturacion.dbfacDataSet1TableAdapters.mostrar_facturaTableAdapter()
+        CType(Me.TDetalleVentaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.qrdataset1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.generar_comprobanteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.qrdataset1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TDetalleVentaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dbfacDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mostrar_facturaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'ReportViewer1
+        '
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+        ReportDataSource4.Name = "DataSet1"
+        ReportDataSource4.Value = Me.mostrar_facturaBindingSource
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource4)
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.Report2.rdlc"
+        Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.Size = New System.Drawing.Size(854, 411)
+        Me.ReportViewer1.TabIndex = 0
+        '
+        'txtidventa
+        '
+        Me.txtidventa.Location = New System.Drawing.Point(81, 62)
+        Me.txtidventa.Name = "txtidventa"
+        Me.txtidventa.Size = New System.Drawing.Size(100, 20)
+        Me.txtidventa.TabIndex = 1
+        Me.txtidventa.Text = "128"
+        Me.txtidventa.Visible = False
+        '
+        'TDetalleVentaBindingSource
+        '
+        Me.TDetalleVentaBindingSource.DataMember = "TDetalleVenta"
+        Me.TDetalleVentaBindingSource.DataSource = Me.qrdataset1
+        '
+        'qrdataset1
+        '
+        Me.qrdataset1.DataSetName = "qrdataset1"
+        Me.qrdataset1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'generar_comprobanteBindingSource
         '
@@ -48,43 +84,27 @@ Partial Class frmReporteComprobante
         Me.dbfacDataSet.DataSetName = "dbfacDataSet"
         Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'ReportViewer1
-        '
-        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
-        ReportDataSource1.Name = "DataSet1"
-        ReportDataSource1.Value = Me.TDetalleVentaBindingSource
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.Report1.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
-        Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(854, 411)
-        Me.ReportViewer1.TabIndex = 0
-        '
         'generar_comprobanteTableAdapter
         '
         Me.generar_comprobanteTableAdapter.ClearBeforeFill = True
         '
-        'txtidventa
-        '
-        Me.txtidventa.Location = New System.Drawing.Point(77, 66)
-        Me.txtidventa.Name = "txtidventa"
-        Me.txtidventa.Size = New System.Drawing.Size(100, 20)
-        Me.txtidventa.TabIndex = 1
-        Me.txtidventa.Visible = False
-        '
-        'qrdataset1
-        '
-        Me.qrdataset1.DataSetName = "qrdataset1"
-        Me.qrdataset1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TDetalleVentaBindingSource
-        '
-        Me.TDetalleVentaBindingSource.DataMember = "TDetalleVenta"
-        Me.TDetalleVentaBindingSource.DataSource = Me.qrdataset1
-        '
         'TDetalleVentaTableAdapter
         '
         Me.TDetalleVentaTableAdapter.ClearBeforeFill = True
+        '
+        'dbfacDataSet1
+        '
+        Me.dbfacDataSet1.DataSetName = "dbfacDataSet1"
+        Me.dbfacDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'mostrar_facturaBindingSource
+        '
+        Me.mostrar_facturaBindingSource.DataMember = "mostrar_factura"
+        Me.mostrar_facturaBindingSource.DataSource = Me.dbfacDataSet1
+        '
+        'mostrar_facturaTableAdapter
+        '
+        Me.mostrar_facturaTableAdapter.ClearBeforeFill = True
         '
         'frmReporteComprobante
         '
@@ -95,10 +115,12 @@ Partial Class frmReporteComprobante
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "frmReporteComprobante"
         Me.Text = ".: Reporte de Comprobante :."
+        CType(Me.TDetalleVentaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.qrdataset1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.generar_comprobanteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.qrdataset1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TDetalleVentaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dbfacDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mostrar_facturaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -111,4 +133,7 @@ Partial Class frmReporteComprobante
     Friend WithEvents TDetalleVentaBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents qrdataset1 As Sistema_Facturacion.qrdataset1
     Friend WithEvents TDetalleVentaTableAdapter As Sistema_Facturacion.qrdataset1TableAdapters.TDetalleVentaTableAdapter
+    Friend WithEvents mostrar_facturaBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents dbfacDataSet1 As Sistema_Facturacion.dbfacDataSet1
+    Friend WithEvents mostrar_facturaTableAdapter As Sistema_Facturacion.dbfacDataSet1TableAdapters.mostrar_facturaTableAdapter
 End Class

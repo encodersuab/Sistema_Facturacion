@@ -1,10 +1,12 @@
 ﻿Public Class frmReporteComprobante
 
     Private Sub frmReporteComprobante_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'dbfacDataSet1.mostrar_factura' Puede moverla o quitarla según sea necesario.
+        Me.mostrar_facturaTableAdapter.Fill(Me.dbfacDataSet1.mostrar_factura, idventa:=Me.txtidventa.Text)
         'TODO: This line of code loads data into the 'qrdataset1.TDetalleVenta' table. You can move, or remove it, as needed.
-        Me.TDetalleVentaTableAdapter.Fill(Me.qrdataset1.TDetalleVenta)
+        ' Me.TDetalleVentaTableAdapter.Fill(Me.qrdataset1.TDetalleVenta)
         'TODO: This line of code loads data into the 'dbfacDataSet.generar_comprobante' table. You can move, or remove it, as needed.
-        Me.generar_comprobanteTableAdapter.Fill(Me.dbfacDataSet.generar_comprobante, idventa:=Me.txtidventa.Text)
+        '  Me.generar_comprobanteTableAdapter.Fill(Me.dbfacDataSet.generar_comprobante, idventa:=Me.txtidventa.Text)
 
         Me.ReportViewer1.RefreshReport()
     End Sub
