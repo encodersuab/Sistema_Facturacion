@@ -78,13 +78,13 @@
 
     End Sub
 
+
+
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtIdProducto.Text <> "" And txtCantidad.Text <> "" And txtPrecioUnitario.Text <> "" Then
             Try
 
-                QrCodeImgControl1.Visible = True
-                QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + dtpFecha.Text
-                QrCodeImgControl1.Enabled = True
+
 
                 Dim dts As New vDetalleVenta
                 Dim func As New fDetalleVenta
@@ -93,8 +93,6 @@
                 dts.gidproducto = txtIdProducto.Text
                 dts.gcantidad = txtCantidad.Text
                 dts.gprecio_unitario = txtPrecioUnitario.Text
-
-
 
                 '''''''''''''''''''''''''''''''''''''''''''
                 Dim ms As New IO.MemoryStream()
@@ -123,11 +121,7 @@
 
                 dts.gimagen = ms.GetBuffer
 
-
                 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-
-
 
                 If func.insertar(dts) Then
                     If func.disminuir_stock(dts) Then
@@ -135,8 +129,13 @@
                     End If
                     MessageBox.Show("articulo añadido correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     mostrar()
+                    txttotal.Text = sumar().ToString
                     limpiar()
 
+
+                    QrCodeImgControl1.Visible = True
+                    QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + dtpFecha.Text + "|" + txttotal.Text
+                    QrCodeImgControl1.Enabled = True
 
 
 
@@ -148,7 +147,7 @@
 
 
                 End If
-                txttotal.Text = sumar().ToString
+
 
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -304,7 +303,7 @@
 
     End Sub
 
-  
+
     'Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
     '    
     'End Sub

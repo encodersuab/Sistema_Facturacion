@@ -24,6 +24,7 @@ Partial Class frmDetalleVenta
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txttotal = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.QrCodeImgControl1 = New Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl()
         Me.btnquitar = New System.Windows.Forms.Button()
@@ -61,7 +62,6 @@ Partial Class frmDetalleVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.txttotal = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,6 +88,13 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
+        'txttotal
+        '
+        Me.txttotal.Location = New System.Drawing.Point(442, 354)
+        Me.txttotal.Name = "txttotal"
+        Me.txttotal.Size = New System.Drawing.Size(100, 20)
+        Me.txttotal.TabIndex = 34
+        '
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(173, 379)
@@ -101,10 +108,10 @@ Partial Class frmDetalleVenta
         '
         Me.QrCodeImgControl1.ErrorCorrectLevel = Gma.QrCodeNet.Encoding.ErrorCorrectionLevel.M
         Me.QrCodeImgControl1.Image = CType(resources.GetObject("QrCodeImgControl1.Image"), System.Drawing.Image)
-        Me.QrCodeImgControl1.Location = New System.Drawing.Point(301, 348)
+        Me.QrCodeImgControl1.Location = New System.Drawing.Point(283, 330)
         Me.QrCodeImgControl1.Name = "QrCodeImgControl1"
         Me.QrCodeImgControl1.QuietZoneModule = Gma.QrCodeNet.Encoding.Windows.Render.QuietZoneModules.Two
-        Me.QrCodeImgControl1.Size = New System.Drawing.Size(109, 98)
+        Me.QrCodeImgControl1.Size = New System.Drawing.Size(128, 122)
         Me.QrCodeImgControl1.TabIndex = 32
         Me.QrCodeImgControl1.TabStop = False
         Me.QrCodeImgControl1.Text = "QrCodeImgControl1"
@@ -222,10 +229,12 @@ Partial Class frmDetalleVenta
         '
         'txtnituab
         '
+        Me.txtnituab.Enabled = False
         Me.txtnituab.Location = New System.Drawing.Point(144, 24)
         Me.txtnituab.Name = "txtnituab"
         Me.txtnituab.Size = New System.Drawing.Size(173, 20)
         Me.txtnituab.TabIndex = 31
+        Me.txtnituab.Text = "2564585254019"
         '
         'btnimprimir
         '
@@ -440,13 +449,6 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta.Name = "txtIdVenta"
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
-        '
-        'txttotal
-        '
-        Me.txttotal.Location = New System.Drawing.Point(442, 354)
-        Me.txttotal.Name = "txttotal"
-        Me.txttotal.Size = New System.Drawing.Size(100, 20)
-        Me.txttotal.TabIndex = 34
         '
         'frmDetalleVenta
         '
