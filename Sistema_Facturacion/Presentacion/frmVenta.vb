@@ -189,9 +189,9 @@
     End Sub
 
     Private Sub cargar_detalle()
-        frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(4).Value
-        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(3).Value
-        frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(1).Value
+        frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
+        frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
         frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
         frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
         frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
@@ -202,7 +202,7 @@
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
-        ' cargar_detalle()
+        cargar_detalle()
 
     End Sub
 

@@ -152,12 +152,12 @@ Partial Class frmProducto
         'cbxListadoClientes
         '
         Me.cbxListadoClientes.FormattingEnabled = True
-        Me.cbxListadoClientes.Items.AddRange(New Object() {"nombre", "nombre_categoria"})
+        Me.cbxListadoClientes.Items.AddRange(New Object() {"NombreProducto"})
         Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 25)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
         Me.cbxListadoClientes.Size = New System.Drawing.Size(121, 21)
         Me.cbxListadoClientes.TabIndex = 1
-        Me.cbxListadoClientes.Text = "nombre"
+        Me.cbxListadoClientes.Text = "NombreProducto"
         '
         'Label5
         '

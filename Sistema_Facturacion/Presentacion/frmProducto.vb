@@ -304,7 +304,7 @@
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
         If txtTag.Text = "1" Then
             frmDetalleVenta.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
-            frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(3).Value
+            frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
             frmDetalleVenta.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
             frmDetalleVenta.txtStock.Text = datalistado.SelectedCells.Item(6).Value
 
@@ -319,5 +319,9 @@
 
     Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
         Buscar()
+    End Sub
+
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
+
     End Sub
 End Class

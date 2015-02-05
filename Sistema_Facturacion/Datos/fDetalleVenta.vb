@@ -34,7 +34,7 @@ Public Class fDetalleVenta
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-            'cmd.Parameters.AddWithValue("@iddetalle_venta", dts.giddedatlle_venta)
+            ' cmd.Parameters.AddWithValue("@iddetalle_venta", dts.giddedatlle_venta)
             cmd.Parameters.AddWithValue("@idventa", dts.gidventa)
             cmd.Parameters.AddWithValue("@cantidad", dts.gcantidad)
             cmd.Parameters.AddWithValue("@idproducto", dts.gidproducto)

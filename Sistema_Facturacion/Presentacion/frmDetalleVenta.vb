@@ -47,7 +47,7 @@
             ds.Tables.Add(dt.Copy)
             Dim dv As New DataView(ds.Tables(0))
 
-            dv.RowFilter = " idventa='" & txtIdVenta.Text & "'"
+            dv.RowFilter = " IDVenta='" & txtIdVenta.Text & "'"
 
             If dv.Count <> 0 Then
                 Inexistente.Visible = False
@@ -326,7 +326,7 @@
         Dim total As Double
 
         For Each rowtotal As DataGridViewRow In datalistado.Rows
-            total += Convert.ToDouble(rowtotal.Cells("iddetalle_venta").Value)
+            total += Convert.ToDouble(rowtotal.Cells("IDDVenta").Value)
 
 
         Next
