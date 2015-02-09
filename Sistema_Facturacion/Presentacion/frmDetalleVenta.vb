@@ -292,8 +292,14 @@
             datalistado.Columns.Item("Eliminar").Visible = False
         End If
     End Sub
+    Private Sub generarCC()
+
+    End Sub
 
     Private Sub btnimprimir_Click(sender As Object, e As EventArgs) Handles btnimprimir.Click
+
+
+
         frmReporteComprobante.txtidventa.Text = Me.txtIdVenta.Text
         frmReporteComprobante.ShowDialog()
 

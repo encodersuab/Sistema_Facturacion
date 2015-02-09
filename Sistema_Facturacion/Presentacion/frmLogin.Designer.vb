@@ -92,7 +92,7 @@ Partial Class frmLogin
         '
         'txtPassord
         '
-        Me.txtPassord.BackColor = System.Drawing.Color.White
+        Me.txtPassord.BackColor = System.Drawing.Color.Silver
         Me.txtPassord.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassord.ForeColor = System.Drawing.Color.Black
         Me.txtPassord.Location = New System.Drawing.Point(124, 60)
@@ -103,7 +103,7 @@ Partial Class frmLogin
         '
         'txtLogin
         '
-        Me.txtLogin.BackColor = System.Drawing.Color.White
+        Me.txtLogin.BackColor = System.Drawing.Color.Silver
         Me.txtLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLogin.ForeColor = System.Drawing.Color.Black
         Me.txtLogin.Location = New System.Drawing.Point(124, 28)
