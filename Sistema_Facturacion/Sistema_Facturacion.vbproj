@@ -85,6 +85,7 @@
     <Compile Include="Datos\fDatosImpuestos.vb" />
     <Compile Include="Datos\fDetalleVenta.vb" />
     <Compile Include="Datos\fProducto.vb" />
+    <Compile Include="Datos\fQr.vb" />
     <Compile Include="Datos\fUsuario.vb" />
     <Compile Include="Datos\fVenta.vb" />
     <Compile Include="dbfacDataSet.Designer.vb">
@@ -110,6 +111,7 @@
     <Compile Include="Logica\vDatosImpuestos.vb" />
     <Compile Include="Logica\vDetalleVenta.vb" />
     <Compile Include="Logica\vProducto.vb" />
+    <Compile Include="Logica\vQr.vb" />
     <Compile Include="Logica\vUsuario.vb" />
     <Compile Include="Logica\vVenta.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -167,6 +169,12 @@
       <DependentUpon>frmProducto.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\frmProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmQR.Designer.vb">
+      <DependentUpon>frmQR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmQR.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\frmUsuario.Designer.vb">
@@ -232,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmProducto.resx">
       <DependentUpon>frmProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmQR.resx">
+      <DependentUpon>frmQR.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmVenta.resx">
       <DependentUpon>frmVenta.vb</DependentUpon>
