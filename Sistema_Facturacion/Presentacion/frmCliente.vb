@@ -310,4 +310,8 @@
         Buscar()
 
     End Sub
+
+    Private Sub Inexistente_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Inexistente.LinkClicked
+
+    End Sub
 End Class
