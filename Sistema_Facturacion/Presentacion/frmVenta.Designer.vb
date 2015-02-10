@@ -146,6 +146,7 @@ Partial Class frmVenta
         '
         'dtpFecha
         '
+        Me.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpFecha.Location = New System.Drawing.Point(144, 103)
         Me.dtpFecha.Name = "dtpFecha"
         Me.dtpFecha.Size = New System.Drawing.Size(166, 20)

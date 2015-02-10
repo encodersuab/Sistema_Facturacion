@@ -24,6 +24,9 @@ Partial Class frmDetalleVenta
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txtCC = New System.Windows.Forms.TextBox()
+        Me.lbCC = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.txttotal = New System.Windows.Forms.TextBox()
         Me.QrCodeImgControl1 = New Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl()
         Me.btnquitar = New System.Windows.Forms.Button()
@@ -59,9 +62,6 @@ Partial Class frmDetalleVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.lbCC = New System.Windows.Forms.Label()
-        Me.txtCC = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,6 +87,31 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
+        '
+        'txtCC
+        '
+        Me.txtCC.Location = New System.Drawing.Point(84, 379)
+        Me.txtCC.Name = "txtCC"
+        Me.txtCC.Size = New System.Drawing.Size(100, 20)
+        Me.txtCC.TabIndex = 37
+        '
+        'lbCC
+        '
+        Me.lbCC.AutoSize = True
+        Me.lbCC.Location = New System.Drawing.Point(7, 387)
+        Me.lbCC.Name = "lbCC"
+        Me.lbCC.Size = New System.Drawing.Size(76, 13)
+        Me.lbCC.TabIndex = 36
+        Me.lbCC.Text = "Codigo Control"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(7, 342)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(71, 13)
+        Me.Label11.TabIndex = 35
+        Me.Label11.Text = "Total a Pagar"
         '
         'txttotal
         '
@@ -315,6 +340,7 @@ Partial Class frmDetalleVenta
         'dtpFecha
         '
         Me.dtpFecha.Enabled = False
+        Me.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpFecha.Location = New System.Drawing.Point(144, 103)
         Me.dtpFecha.Name = "dtpFecha"
         Me.dtpFecha.Size = New System.Drawing.Size(173, 20)
@@ -422,31 +448,6 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta.Name = "txtIdVenta"
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(7, 342)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(71, 13)
-        Me.Label11.TabIndex = 35
-        Me.Label11.Text = "Total a Pagar"
-        '
-        'lbCC
-        '
-        Me.lbCC.AutoSize = True
-        Me.lbCC.Location = New System.Drawing.Point(7, 387)
-        Me.lbCC.Name = "lbCC"
-        Me.lbCC.Size = New System.Drawing.Size(76, 13)
-        Me.lbCC.TabIndex = 36
-        Me.lbCC.Text = "Codigo Control"
-        '
-        'txtCC
-        '
-        Me.txtCC.Location = New System.Drawing.Point(84, 379)
-        Me.txtCC.Name = "txtCC"
-        Me.txtCC.Size = New System.Drawing.Size(100, 20)
-        Me.txtCC.TabIndex = 37
         '
         'frmDetalleVenta
         '

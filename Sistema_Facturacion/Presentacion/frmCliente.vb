@@ -15,6 +15,7 @@
         txtTelefono.Text = ""
         txtCi.Text = ""
 
+
     End Sub
 
     Private Sub mostrar()

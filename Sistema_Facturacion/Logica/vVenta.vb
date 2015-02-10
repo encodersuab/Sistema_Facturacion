@@ -49,7 +49,7 @@
 
     End Sub
 
-    Public Sub New(ByVal idventa As Integer, ByVal idcliente As Integer, ByVal fecha_venta As Integer, ByVal tipo_documento As String, ByVal num_documento As String)
+    Public Sub New(ByVal idventa As Integer, ByVal idcliente As Integer, ByVal fecha_venta As Date, ByVal tipo_documento As String, ByVal num_documento As String)
         Gidventa = idventa
         Gidcliente = idventa
         Gfecha_venta = fecha_venta

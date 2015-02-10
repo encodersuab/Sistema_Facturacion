@@ -15,6 +15,7 @@ Partial Public Class frmDetalleVenta
     Private Sub frmDetalleVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
         QrCodeImgControl1.Visible = False
+        limpiar()
 
     End Sub
 
@@ -25,9 +26,14 @@ Partial Public Class frmDetalleVenta
         txtPrecioUnitario.Text = ""
         txtCantidad.Text = 1
         txtStock.Text = 1
+        txtCC.Text = 0
+
+
     End Sub
 
     Private Sub mostrar()
+        txttotal.Text = 0
+
         Try
             Dim func As New fDetalleVenta
             dt = func.mostrar
@@ -308,6 +314,7 @@ Partial Public Class frmDetalleVenta
 
     Private Sub btnimprimir_Click(sender As Object, e As EventArgs) Handles btnimprimir.Click
 
+
         ''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         'Para obtener el numero de autorizacion
 
@@ -336,6 +343,7 @@ Partial Public Class frmDetalleVenta
         'frmReporteComprobante.txtidventa.Text = Me.txtIdVenta.Text
         'frmReporteComprobante.ShowDialog()
 
+        
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
@@ -364,7 +372,7 @@ Partial Public Class frmDetalleVenta
         Dim total As Double
 
         For Each rowtotal As DataGridViewRow In datalistado.Rows
-            total += Convert.ToDouble(rowtotal.Cells("IDDVenta").Value)
+            total += Convert.ToDouble(rowtotal.Cells("Total Parcial").Value)
 
 
         Next
@@ -396,4 +404,8 @@ Partial Public Class frmDetalleVenta
         Return real.ToString()
 
     End Function
+
+    Private Sub txttotal_TextChanged(sender As Object, e As EventArgs) Handles txttotal.TextChanged
+
+    End Sub
 End Class
