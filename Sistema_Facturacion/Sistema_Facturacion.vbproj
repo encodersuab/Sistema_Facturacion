@@ -82,6 +82,7 @@
     <Compile Include="Datos\Conexion.vb" />
     <Compile Include="Datos\fCategoria.vb" />
     <Compile Include="Datos\fCliente.vb" />
+    <Compile Include="Datos\fDatosImpuestos.vb" />
     <Compile Include="Datos\fDetalleVenta.vb" />
     <Compile Include="Datos\fProducto.vb" />
     <Compile Include="Datos\fUsuario.vb" />
@@ -106,6 +107,7 @@
     <Compile Include="Logica\CC.vb" />
     <Compile Include="Logica\vCategoria.vb" />
     <Compile Include="Logica\vCliente.vb" />
+    <Compile Include="Logica\vDatosImpuestos.vb" />
     <Compile Include="Logica\vDetalleVenta.vb" />
     <Compile Include="Logica\vProducto.vb" />
     <Compile Include="Logica\vUsuario.vb" />
@@ -135,6 +137,12 @@
       <DependentUpon>frmCliente.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\frmCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmDatosImpuestos.Designer.vb">
+      <DependentUpon>frmDatosImpuestos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmDatosImpuestos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\frmDetalleVenta.Designer.vb">
@@ -209,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmCliente.resx">
       <DependentUpon>frmCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmDatosImpuestos.resx">
+      <DependentUpon>frmDatosImpuestos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmDetalleVenta.resx">
       <DependentUpon>frmDetalleVenta.vb</DependentUpon>
