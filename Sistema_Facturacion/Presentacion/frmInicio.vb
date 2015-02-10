@@ -121,4 +121,10 @@ Public Class frmInicio
     Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
         End
     End Sub
+
+    Private Sub ReportesQrToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportesQrToolStripMenuItem.Click
+        frmQR.MdiParent = Me
+        frmQR.Show()
+
+    End Sub
 End Class

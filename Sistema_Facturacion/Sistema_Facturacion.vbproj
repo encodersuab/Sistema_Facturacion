@@ -79,6 +79,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\fCC.vb" />
     <Compile Include="Datos\Conexion.vb" />
     <Compile Include="Datos\fCategoria.vb" />
     <Compile Include="Datos\fCliente.vb" />

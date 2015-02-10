@@ -25,12 +25,9 @@ Partial Class frmDetalleVenta
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txttotal = New System.Windows.Forms.TextBox()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.QrCodeImgControl1 = New Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl()
         Me.btnquitar = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.cbeliminar = New System.Windows.Forms.CheckBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
@@ -62,6 +59,9 @@ Partial Class frmDetalleVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.lbCC = New System.Windows.Forms.Label()
+        Me.txtCC = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,13 +72,13 @@ Partial Class frmDetalleVenta
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.txtCC)
+        Me.GroupBox2.Controls.Add(Me.lbCC)
+        Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.txttotal)
-        Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.QrCodeImgControl1)
         Me.GroupBox2.Controls.Add(Me.btnquitar)
-        Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.cbeliminar)
-        Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(383, 23)
@@ -90,49 +90,31 @@ Partial Class frmDetalleVenta
         '
         'txttotal
         '
-        Me.txttotal.Location = New System.Drawing.Point(442, 354)
+        Me.txttotal.Location = New System.Drawing.Point(84, 339)
         Me.txttotal.Name = "txttotal"
         Me.txttotal.Size = New System.Drawing.Size(100, 20)
         Me.txttotal.TabIndex = 34
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(173, 379)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 33
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'QrCodeImgControl1
         '
         Me.QrCodeImgControl1.ErrorCorrectLevel = Gma.QrCodeNet.Encoding.ErrorCorrectionLevel.M
         Me.QrCodeImgControl1.Image = CType(resources.GetObject("QrCodeImgControl1.Image"), System.Drawing.Image)
-        Me.QrCodeImgControl1.Location = New System.Drawing.Point(283, 330)
+        Me.QrCodeImgControl1.Location = New System.Drawing.Point(422, 16)
         Me.QrCodeImgControl1.Name = "QrCodeImgControl1"
         Me.QrCodeImgControl1.QuietZoneModule = Gma.QrCodeNet.Encoding.Windows.Render.QuietZoneModules.Two
-        Me.QrCodeImgControl1.Size = New System.Drawing.Size(128, 122)
+        Me.QrCodeImgControl1.Size = New System.Drawing.Size(61, 54)
         Me.QrCodeImgControl1.TabIndex = 32
         Me.QrCodeImgControl1.TabStop = False
         Me.QrCodeImgControl1.Text = "QrCodeImgControl1"
         '
         'btnquitar
         '
-        Me.btnquitar.Location = New System.Drawing.Point(27, 348)
+        Me.btnquitar.Location = New System.Drawing.Point(132, 36)
         Me.btnquitar.Name = "btnquitar"
         Me.btnquitar.Size = New System.Drawing.Size(67, 26)
         Me.btnquitar.TabIndex = 30
         Me.btnquitar.Text = "Quitar"
         Me.btnquitar.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(221, 30)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(103, 26)
-        Me.Button2.TabIndex = 31
-        Me.Button2.Text = "Quitar Articulos"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'cbeliminar
         '
@@ -143,15 +125,6 @@ Partial Class frmDetalleVenta
         Me.cbeliminar.TabIndex = 17
         Me.cbeliminar.Text = "Eliminar"
         Me.cbeliminar.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(112, 30)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(103, 26)
-        Me.Button1.TabIndex = 30
-        Me.Button1.Text = "Quitar Articulos"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'Inexistente
         '
@@ -450,6 +423,31 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(7, 342)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(71, 13)
+        Me.Label11.TabIndex = 35
+        Me.Label11.Text = "Total a Pagar"
+        '
+        'lbCC
+        '
+        Me.lbCC.AutoSize = True
+        Me.lbCC.Location = New System.Drawing.Point(7, 387)
+        Me.lbCC.Name = "lbCC"
+        Me.lbCC.Size = New System.Drawing.Size(76, 13)
+        Me.lbCC.TabIndex = 36
+        Me.lbCC.Text = "Codigo Control"
+        '
+        'txtCC
+        '
+        Me.txtCC.Location = New System.Drawing.Point(84, 379)
+        Me.txtCC.Name = "txtCC"
+        Me.txtCC.Size = New System.Drawing.Size(100, 20)
+        Me.txtCC.TabIndex = 37
+        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -499,14 +497,14 @@ Partial Class frmDetalleVenta
     Friend WithEvents txtNombreProducto As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtIdProducto As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
     Friend WithEvents btnquitar As System.Windows.Forms.Button
     Friend WithEvents btnimprimir As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents QrCodeImgControl1 As Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtnituab As System.Windows.Forms.TextBox
     Friend WithEvents txttotal As System.Windows.Forms.TextBox
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents txtCC As System.Windows.Forms.TextBox
+    Friend WithEvents lbCC As System.Windows.Forms.Label
 End Class

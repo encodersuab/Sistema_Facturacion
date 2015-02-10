@@ -1,4 +1,16 @@
-﻿Public Class frmDetalleVenta
+﻿Imports System.Collections.Generic
+Imports System.ComponentModel
+Imports System.Data
+Imports System.Drawing
+Imports System.Linq
+Imports System.Text
+Imports System.Threading.Tasks
+Imports System.Windows.Forms
+Imports System.Data.SqlClient
+Imports System.IO
+Imports System.Drawing.Imaging
+Imports System
+Partial Public Class frmDetalleVenta
     Private dt As New DataTable
     Private Sub frmDetalleVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
@@ -292,16 +304,37 @@
             datalistado.Columns.Item("Eliminar").Visible = False
         End If
     End Sub
-    Private Sub generarCC()
-
-    End Sub
+   
 
     Private Sub btnimprimir_Click(sender As Object, e As EventArgs) Handles btnimprimir.Click
 
+        ''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+        'Para obtener el numero de autorizacion
 
 
-        frmReporteComprobante.txtidventa.Text = Me.txtIdVenta.Text
-        frmReporteComprobante.ShowDialog()
+
+
+
+        ''''''''''''''''''''''''''''''''''''''''''''''''
+        'Para calcular la llave
+
+
+
+
+
+        ''''''''''''''''''''''''''''''
+        'para generar el codigo qr
+
+        Dim fecha, monto As String
+        fecha = CalcularFechaParaCC()
+        monto = calcularMontoCC(txttotal.Text)
+
+        txtCC.Text = fCC.generar("7904006306693", txtIdVenta.Text, txtNumDoc.Text, fecha, monto, "zZ7Z]xssKqkEf_6K9uH(EcV+%x+u[Cca9T%+_$kiLjT8(zr3T9b5Fx2xG-D+_EBS").ToString
+        ''''''''''''''''''''''''''''''''''
+
+
+        'frmReporteComprobante.txtidventa.Text = Me.txtIdVenta.Text
+        'frmReporteComprobante.ShowDialog()
 
     End Sub
 
@@ -344,7 +377,23 @@
 
     End Function
 
-    Private Sub QrCodeImgControl1_Click(sender As Object, e As EventArgs) Handles QrCodeImgControl1.Click
 
-    End Sub
+    Public Function CalcularFechaParaCC() As String
+        'CALCULAR LA FECHA
+        Dim x As DateTime = DateTime.Now
+        Dim FECHA As Integer = ((x.Year * 100) + x.Month) * 100 + x.Day
+        Return FECHA.ToString()
+
+    End Function
+
+
+    Public Function calcularMontoCC(ByRef monto As String) As String
+        'CALCULAR EL MONTO
+        System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
+        Dim real As Double = Double.Parse(monto)
+        real = Math.Round(real, 0)
+        Dim total As String = real.ToString()
+        Return real.ToString()
+
+    End Function
 End Class

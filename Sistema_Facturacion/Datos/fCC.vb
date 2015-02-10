@@ -10,9 +10,9 @@ Imports System.Data.SqlClient
 Imports System.IO
 Imports System.Drawing.Imaging
 Imports System
-Public Class CC
-    ''Private Sub New()
-    'End Sub
+Public Class fCC
+    Private Sub New()
+    End Sub
     ' Verhoeff Digit table variables
     Shared table_d As Integer(,) = New Integer(,) {{0, 1, 2, 3, 4, 5, _
         6, 7, 8, 9}, {1, 2, 3, 4, 0, 6, _

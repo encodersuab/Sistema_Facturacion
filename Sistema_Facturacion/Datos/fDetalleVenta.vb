@@ -39,7 +39,7 @@ Public Class fDetalleVenta
             cmd.Parameters.AddWithValue("@cantidad", dts.gcantidad)
             cmd.Parameters.AddWithValue("@idproducto", dts.gidproducto)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
-            cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
+            'cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
 
 
             If cmd.ExecuteNonQuery Then
