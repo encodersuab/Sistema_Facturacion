@@ -89,32 +89,32 @@ Public Class frmInicio
 
     End Sub
 
-    Private Sub CategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem.Click
+    Private Sub CategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmCategoria.MdiParent = Me
         frmCategoria.Show()
     End Sub
 
-    Private Sub ProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProductoToolStripMenuItem.Click
+    Private Sub ProductoToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmProducto.MdiParent = Me
         frmProducto.Show()
 
     End Sub
 
-    Private Sub RegistroDeVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistroDeVentaToolStripMenuItem.Click
+    Private Sub RegistroDeVentaToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmVenta.MdiParent = Me
         frmVenta.Show()
 
 
     End Sub
 
-    Private Sub ClientesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClientesToolStripMenuItem.Click
+    Private Sub ClientesToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmCliente.MdiParent = Me
         frmCliente.Show()
 
 
     End Sub
 
-    Private Sub ReporteDeProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteDeProductoToolStripMenuItem.Click
+    Private Sub ReporteDeProductoToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -122,7 +122,7 @@ Public Class frmInicio
         End
     End Sub
 
-    Private Sub ReportesQrToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportesQrToolStripMenuItem.Click
+    Private Sub ReportesQrToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmQR.MdiParent = Me
         frmQR.Show()
 
