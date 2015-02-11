@@ -1,6 +1,6 @@
 ﻿Public Class vUsuario
     Dim idusuario As Integer
-    Dim nombre, apellidos, ci, direccion, telefono, login, password, acceso As String
+    Dim nombre, apellidos, ci, direccion, telefono, login, password, acceso, rol As String
 
     Public Property gidusuario
         Get
@@ -78,12 +78,19 @@
         End Set
     End Property
 
-
+    Public Property grol
+        Get
+            Return rol
+        End Get
+        Set(ByVal value)
+            rol = value
+        End Set
+    End Property
     Public Sub New()
 
     End Sub
 
-    Public Sub New(ByVal idusuario As Integer, ByVal nombre As String, ByVal apellidos As String, ByVal ci As String, ByVal direccion As String, ByVal telefono As String, ByVal login As String, ByVal password As String, ByVal acceso As String)
+    Public Sub New(ByVal idusuario As Integer, ByVal nombre As String, ByVal apellidos As String, ByVal ci As String, ByVal direccion As String, ByVal telefono As String, ByVal login As String, ByVal password As String, ByVal acceso As String, ByVal rol As String)
         gidusuario = idusuario
         gnombre = nombre
         gapellidos = apellidos
@@ -93,6 +100,8 @@
         glogin = login
         gpassword = password
         gacceso = acceso
+        grol = rol
+
     End Sub
 
 End Class
