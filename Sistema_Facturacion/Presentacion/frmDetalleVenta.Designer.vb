@@ -62,6 +62,8 @@ Partial Class frmDetalleVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
+        Me.lbllave = New System.Windows.Forms.Label()
+        Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,6 +74,8 @@ Partial Class frmDetalleVenta
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.lbnumAutor)
+        Me.GroupBox2.Controls.Add(Me.lbllave)
         Me.GroupBox2.Controls.Add(Me.txtCC)
         Me.GroupBox2.Controls.Add(Me.lbCC)
         Me.GroupBox2.Controls.Add(Me.Label11)
@@ -144,7 +148,7 @@ Partial Class frmDetalleVenta
         'cbeliminar
         '
         Me.cbeliminar.AutoSize = True
-        Me.cbeliminar.Location = New System.Drawing.Point(32, 36)
+        Me.cbeliminar.Location = New System.Drawing.Point(32, 42)
         Me.cbeliminar.Name = "cbeliminar"
         Me.cbeliminar.Size = New System.Drawing.Size(62, 17)
         Me.cbeliminar.TabIndex = 17
@@ -232,7 +236,6 @@ Partial Class frmDetalleVenta
         Me.txtnituab.Name = "txtnituab"
         Me.txtnituab.Size = New System.Drawing.Size(173, 20)
         Me.txtnituab.TabIndex = 31
-        Me.txtnituab.Text = "2564585254019"
         '
         'btnimprimir
         '
@@ -449,6 +452,24 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
+        'lbllave
+        '
+        Me.lbllave.AutoSize = True
+        Me.lbllave.Location = New System.Drawing.Point(252, 342)
+        Me.lbllave.Name = "lbllave"
+        Me.lbllave.Size = New System.Drawing.Size(45, 13)
+        Me.lbllave.TabIndex = 38
+        Me.lbllave.Text = "Label12"
+        '
+        'lbnumAutor
+        '
+        Me.lbnumAutor.AutoSize = True
+        Me.lbnumAutor.Location = New System.Drawing.Point(252, 357)
+        Me.lbnumAutor.Name = "lbnumAutor"
+        Me.lbnumAutor.Size = New System.Drawing.Size(45, 13)
+        Me.lbnumAutor.TabIndex = 39
+        Me.lbnumAutor.Text = "Label13"
+        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -508,4 +529,6 @@ Partial Class frmDetalleVenta
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents txtCC As System.Windows.Forms.TextBox
     Friend WithEvents lbCC As System.Windows.Forms.Label
+    Friend WithEvents lbllave As System.Windows.Forms.Label
+    Friend WithEvents lbnumAutor As System.Windows.Forms.Label
 End Class

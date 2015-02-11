@@ -39,4 +39,8 @@
     Private Sub txtPassord_TextChanged(sender As Object, e As EventArgs) Handles txtPassord.TextChanged
 
     End Sub
+
+    Private Sub lblHOra_Click(sender As Object, e As EventArgs) Handles lblHOra.Click
+
+    End Sub
 End Class

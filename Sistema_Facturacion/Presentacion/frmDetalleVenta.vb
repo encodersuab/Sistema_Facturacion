@@ -16,9 +16,20 @@ Partial Public Class frmDetalleVenta
         mostrar()
         QrCodeImgControl1.Visible = False
         limpiar()
+        mostrarDatosImpuestos()
 
     End Sub
 
+    Public Sub mostrarDatosImpuestos()
+        Dim dt1 As New DataTable
+        Dim fdatosImp As New fDatosImpuestos
+        dt1 = fdatosImp.mostrar
+
+        txtnituab.Text = dt1.Rows(0)("nitEmisor").ToString
+        lbllave.Text = dt1.Rows(0)("llave").ToString
+        lbnumAutor.Text = dt1.Rows(0)("numAutorizacion").ToString
+
+    End Sub
     Public Sub limpiar()
         btnGuardar.Visible = True
         txtIdProducto.Text = ""
@@ -83,9 +94,9 @@ Partial Public Class frmDetalleVenta
     End Sub
 
     Private Sub ocultar_columnas()
-        '   datalistado.Columns(1).Visible = False
-        '  datalistado.Columns(2).Visible = False
-        '  datalistado.Columns(3).Visible = False
+        'datalistado.Columns(1).Visible = False
+        'datalistado.Columns(2).Visible = False
+        'datalistado.Columns(3).Visible = False
     End Sub
 
 
@@ -336,7 +347,7 @@ Partial Public Class frmDetalleVenta
         fecha = CalcularFechaParaCC()
         monto = calcularMontoCC(txttotal.Text)
 
-        txtCC.Text = fCC.generar("7904006306693", txtIdVenta.Text, txtNumDoc.Text, fecha, monto, "zZ7Z]xssKqkEf_6K9uH(EcV+%x+u[Cca9T%+_$kiLjT8(zr3T9b5Fx2xG-D+_EBS").ToString
+        txtCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
         ''''''''''''''''''''''''''''''''''
 
 
