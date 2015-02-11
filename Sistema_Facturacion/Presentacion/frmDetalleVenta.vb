@@ -326,33 +326,7 @@ Partial Public Class frmDetalleVenta
     Private Sub btnimprimir_Click(sender As Object, e As EventArgs) Handles btnimprimir.Click
 
 
-        ''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        'Para obtener el numero de autorizacion
-
-
-
-
-
-        ''''''''''''''''''''''''''''''''''''''''''''''''
-        'Para calcular la llave
-
-
-
-
-
-        ''''''''''''''''''''''''''''''
-        'para generar el codigo qr
-
-        Dim fecha, monto As String
-        fecha = CalcularFechaParaCC()
-        monto = calcularMontoCC(txttotal.Text)
-
-        txtCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
-        ''''''''''''''''''''''''''''''''''
-
-
-        'frmReporteComprobante.txtidventa.Text = Me.txtIdVenta.Text
-        'frmReporteComprobante.ShowDialog()
+    
 
         
     End Sub
@@ -385,14 +359,9 @@ Partial Public Class frmDetalleVenta
         For Each rowtotal As DataGridViewRow In datalistado.Rows
             total += Convert.ToDouble(rowtotal.Cells("Total Parcial").Value)
 
-
         Next
 
-
-
-
         Return total
-
 
     End Function
 
@@ -417,6 +386,72 @@ Partial Public Class frmDetalleVenta
     End Function
 
     Private Sub txttotal_TextChanged(sender As Object, e As EventArgs) Handles txttotal.TextChanged
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        'para generar el codigo Control
+
+        Dim fecha, monto As String
+        fecha = CalcularFechaParaCC()
+        monto = calcularMontoCC(txttotal.Text)
+
+        txtCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
+        ''''''''''''''''''''''''''''''''''
+        Try
+            Dim ms As New IO.MemoryStream()
+            Dim dts As New vQr
+            Dim func As New fQr
+
+            QrCodeImgControl1.Visible = True
+            QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + dtpFecha.Text + "|" + txttotal.Text
+            QrCodeImgControl1.Enabled = True
+            QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
+
+
+
+
+            ' '''''''''''''
+            dts.gNit_Emisor = txtnituab.Text
+            dts.gNum_Factura = txtIdVenta.Text
+
+            dts.gNum_Autorizacion = lbnumAutor.Text
+            dts.gTotal = txttotal.Text
+            dts.gCodigo_Control = txtCC.Text
+            dts.gCi_Nit_Comprador = txtNumDoc.Text
+            dts.gimagen = ms.GetBuffer
+            dts.gIdVenta = txtIdVenta.Text
+            dts.gfecha_emision = dtpFecha.Text
+
+            ''''''''
+
+            If func.insertar(dts) Then
+
+                MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.Close()
+
+            Else
+                MessageBox.Show("No se a podido guardar la venta  Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            End If
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Catch ex As Exception
+
+        End Try
 
     End Sub
 End Class

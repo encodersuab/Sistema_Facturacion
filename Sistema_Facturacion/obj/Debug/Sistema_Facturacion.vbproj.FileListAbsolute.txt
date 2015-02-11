@@ -96,3 +96,5 @@ D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\D
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Gma.QrCodeNet.Encoding.pdb
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Gma.QrCodeNet.Encoding.xml
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmQR.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDatosImpuestos.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmQR.resources

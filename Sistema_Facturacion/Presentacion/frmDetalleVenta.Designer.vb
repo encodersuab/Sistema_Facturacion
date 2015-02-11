@@ -24,6 +24,9 @@ Partial Class frmDetalleVenta
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.lbnumAutor = New System.Windows.Forms.Label()
+        Me.lbllave = New System.Windows.Forms.Label()
         Me.txtCC = New System.Windows.Forms.TextBox()
         Me.lbCC = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -62,8 +65,6 @@ Partial Class frmDetalleVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.lbllave = New System.Windows.Forms.Label()
-        Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,6 +75,7 @@ Partial Class frmDetalleVenta
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
         Me.GroupBox2.Controls.Add(Me.lbllave)
         Me.GroupBox2.Controls.Add(Me.txtCC)
@@ -91,6 +93,35 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(322, 346)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(161, 85)
+        Me.Button1.TabIndex = 40
+        Me.Button1.Text = "Finalizar Venta"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'lbnumAutor
+        '
+        Me.lbnumAutor.AutoSize = True
+        Me.lbnumAutor.Location = New System.Drawing.Point(252, 357)
+        Me.lbnumAutor.Name = "lbnumAutor"
+        Me.lbnumAutor.Size = New System.Drawing.Size(45, 13)
+        Me.lbnumAutor.TabIndex = 39
+        Me.lbnumAutor.Text = "Label13"
+        Me.lbnumAutor.Visible = False
+        '
+        'lbllave
+        '
+        Me.lbllave.AutoSize = True
+        Me.lbllave.Location = New System.Drawing.Point(252, 342)
+        Me.lbllave.Name = "lbllave"
+        Me.lbllave.Size = New System.Drawing.Size(45, 13)
+        Me.lbllave.TabIndex = 38
+        Me.lbllave.Text = "Label12"
+        Me.lbllave.Visible = False
         '
         'txtCC
         '
@@ -346,7 +377,7 @@ Partial Class frmDetalleVenta
         Me.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpFecha.Location = New System.Drawing.Point(144, 103)
         Me.dtpFecha.Name = "dtpFecha"
-        Me.dtpFecha.Size = New System.Drawing.Size(173, 20)
+        Me.dtpFecha.Size = New System.Drawing.Size(92, 20)
         Me.dtpFecha.TabIndex = 18
         '
         'txtNombreCLiente
@@ -452,24 +483,6 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'lbllave
-        '
-        Me.lbllave.AutoSize = True
-        Me.lbllave.Location = New System.Drawing.Point(252, 342)
-        Me.lbllave.Name = "lbllave"
-        Me.lbllave.Size = New System.Drawing.Size(45, 13)
-        Me.lbllave.TabIndex = 38
-        Me.lbllave.Text = "Label12"
-        '
-        'lbnumAutor
-        '
-        Me.lbnumAutor.AutoSize = True
-        Me.lbnumAutor.Location = New System.Drawing.Point(252, 357)
-        Me.lbnumAutor.Name = "lbnumAutor"
-        Me.lbnumAutor.Size = New System.Drawing.Size(45, 13)
-        Me.lbnumAutor.TabIndex = 39
-        Me.lbnumAutor.Text = "Label13"
-        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -531,4 +544,5 @@ Partial Class frmDetalleVenta
     Friend WithEvents lbCC As System.Windows.Forms.Label
     Friend WithEvents lbllave As System.Windows.Forms.Label
     Friend WithEvents lbnumAutor As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
