@@ -37,7 +37,7 @@ Partial Public Class frmDetalleVenta
         txtPrecioUnitario.Text = ""
         txtCantidad.Text = 1
         txtStock.Text = 1
-        txtCC.Text = 0
+        txtImpCreFis.Text = 0
 
 
     End Sub
@@ -321,14 +321,14 @@ Partial Public Class frmDetalleVenta
             datalistado.Columns.Item("Eliminar").Visible = False
         End If
     End Sub
-   
+
 
     Private Sub btnimprimir_Click(sender As Object, e As EventArgs) Handles btnimprimir.Click
 
 
-    
 
-        
+
+
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
@@ -397,7 +397,7 @@ Partial Public Class frmDetalleVenta
         fecha = CalcularFechaParaCC()
         monto = calcularMontoCC(txttotal.Text)
 
-        txtCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
+        lbCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
         ''''''''''''''''''''''''''''''''''
         Try
             Dim ms As New IO.MemoryStream()
@@ -405,7 +405,7 @@ Partial Public Class frmDetalleVenta
             Dim func As New fQr
 
             QrCodeImgControl1.Visible = True
-            QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + dtpFecha.Text + "|" + txttotal.Text
+            QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + lbnumAutor.Text + "|" + dtpFecha.Text + "|" + txttotal.Text + "|" + txtImpCreFis.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
             QrCodeImgControl1.Enabled = True
             QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
 
@@ -418,7 +418,7 @@ Partial Public Class frmDetalleVenta
 
             dts.gNum_Autorizacion = lbnumAutor.Text
             dts.gTotal = txttotal.Text
-            dts.gCodigo_Control = txtCC.Text
+            dts.gCodigo_Control = txtImpCreFis.Text
             dts.gCi_Nit_Comprador = txtNumDoc.Text
             dts.gimagen = ms.GetBuffer
             dts.gIdVenta = txtIdVenta.Text

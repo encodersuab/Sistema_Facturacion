@@ -27,7 +27,7 @@ Partial Class frmDetalleVenta
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.lbllave = New System.Windows.Forms.Label()
-        Me.txtCC = New System.Windows.Forms.TextBox()
+        Me.txtImpCreFis = New System.Windows.Forms.TextBox()
         Me.lbCC = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txttotal = New System.Windows.Forms.TextBox()
@@ -78,7 +78,7 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
         Me.GroupBox2.Controls.Add(Me.lbllave)
-        Me.GroupBox2.Controls.Add(Me.txtCC)
+        Me.GroupBox2.Controls.Add(Me.txtImpCreFis)
         Me.GroupBox2.Controls.Add(Me.lbCC)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.txttotal)
@@ -106,34 +106,34 @@ Partial Class frmDetalleVenta
         'lbnumAutor
         '
         Me.lbnumAutor.AutoSize = True
-        Me.lbnumAutor.Location = New System.Drawing.Point(252, 357)
+        Me.lbnumAutor.Location = New System.Drawing.Point(204, 357)
         Me.lbnumAutor.Name = "lbnumAutor"
-        Me.lbnumAutor.Size = New System.Drawing.Size(45, 13)
+        Me.lbnumAutor.Size = New System.Drawing.Size(98, 13)
         Me.lbnumAutor.TabIndex = 39
-        Me.lbnumAutor.Text = "Label13"
+        Me.lbnumAutor.Text = "lbnum AUtorizacion"
         Me.lbnumAutor.Visible = False
         '
         'lbllave
         '
         Me.lbllave.AutoSize = True
-        Me.lbllave.Location = New System.Drawing.Point(252, 342)
+        Me.lbllave.Location = New System.Drawing.Point(204, 342)
         Me.lbllave.Name = "lbllave"
-        Me.lbllave.Size = New System.Drawing.Size(45, 13)
+        Me.lbllave.Size = New System.Drawing.Size(37, 13)
         Me.lbllave.TabIndex = 38
-        Me.lbllave.Text = "Label12"
+        Me.lbllave.Text = "lbllave"
         Me.lbllave.Visible = False
         '
-        'txtCC
+        'txtImpCreFis
         '
-        Me.txtCC.Location = New System.Drawing.Point(84, 379)
-        Me.txtCC.Name = "txtCC"
-        Me.txtCC.Size = New System.Drawing.Size(100, 20)
-        Me.txtCC.TabIndex = 37
+        Me.txtImpCreFis.Location = New System.Drawing.Point(84, 379)
+        Me.txtImpCreFis.Name = "txtImpCreFis"
+        Me.txtImpCreFis.Size = New System.Drawing.Size(100, 20)
+        Me.txtImpCreFis.TabIndex = 37
         '
         'lbCC
         '
         Me.lbCC.AutoSize = True
-        Me.lbCC.Location = New System.Drawing.Point(7, 387)
+        Me.lbCC.Location = New System.Drawing.Point(204, 382)
         Me.lbCC.Name = "lbCC"
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
@@ -540,7 +540,7 @@ Partial Class frmDetalleVenta
     Friend WithEvents txtnituab As System.Windows.Forms.TextBox
     Friend WithEvents txttotal As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents txtCC As System.Windows.Forms.TextBox
+    Friend WithEvents txtImpCreFis As System.Windows.Forms.TextBox
     Friend WithEvents lbCC As System.Windows.Forms.Label
     Friend WithEvents lbllave As System.Windows.Forms.Label
     Friend WithEvents lbnumAutor As System.Windows.Forms.Label
