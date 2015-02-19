@@ -15,6 +15,7 @@
         txtprecio_compra.Text = "0"
         txtprecio_venta.Text = "0"
         txtIdproducto.Text = ""
+        cbbmodulo.Text = ""
 
         imagen.Image = Nothing
         imagen.BackgroundImage = My.Resources.fondo_transparente_fotos
@@ -110,6 +111,7 @@
                 dts.gprecio_compra = txtprecio_compra.Text
                 dts.gprecio_venta = txtprecio_venta.Text
                 dts.gfecha_vencimiento = txtfecha_vencimiento.Text
+                dts.gmodulo = cbbmodulo.Text
 
                 Dim ms As New IO.MemoryStream()
                 If Not imagen.Image Is Nothing Then
@@ -161,7 +163,7 @@
                     dts.gprecio_compra = txtprecio_compra.Text
                     dts.gprecio_venta = txtprecio_venta.Text
                     dts.gfecha_vencimiento = txtfecha_vencimiento.Text
-
+                    dts.gmodulo = cbbmodulo.Text
                     Dim ms As New IO.MemoryStream()
                     If Not imagen.Image Is Nothing Then
                         imagen.Image.Save(ms, imagen.Image.RawFormat)
@@ -203,7 +205,7 @@
         txtprecio_compra.Text = datalistado.SelectedCells.Item(7).Value
         txtprecio_venta.Text = datalistado.SelectedCells.Item(8).Value
         txtfecha_vencimiento.Text = datalistado.SelectedCells.Item(9).Value
-
+        cbbmodulo.Text = datalistado.SelectedCells.Item(11).Value
 
         imagen.BackgroundImage = Nothing
         Dim b() As Byte = datalistado.SelectedCells.Item(10).Value
@@ -327,5 +329,61 @@
 
     Private Sub cbxListadoClientes_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxListadoClientes.SelectedIndexChanged
 
+    End Sub
+
+    Private Sub txtNombre_TextChanged(sender As Object, e As EventArgs) Handles txtNombre.TextChanged
+
+    End Sub
+
+    Private Sub txtIdproducto_TextChanged(sender As Object, e As EventArgs) Handles txtIdproducto.TextChanged
+
+    End Sub
+
+    Private Sub txtstock_TextChanged(sender As Object, e As EventArgs) Handles txtstock.TextChanged
+
+    End Sub
+
+    Private Sub txtstock_Validated(sender As Object, e As EventArgs) Handles txtstock.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtdescripcion_TextChanged(sender As Object, e As EventArgs) Handles txtdescripcion.TextChanged
+
+    End Sub
+
+    Private Sub txtdescripcion_Validated(sender As Object, e As EventArgs) Handles txtdescripcion.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtprecio_compra_TextChanged(sender As Object, e As EventArgs) Handles txtprecio_compra.TextChanged
+
+    End Sub
+
+    Private Sub txtprecio_compra_Validated(sender As Object, e As EventArgs) Handles txtprecio_compra.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtprecio_venta_TextChanged(sender As Object, e As EventArgs) Handles txtprecio_venta.TextChanged
+
+    End Sub
+
+    Private Sub txtprecio_venta_Validated(sender As Object, e As EventArgs) Handles txtprecio_venta.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
     End Sub
 End Class

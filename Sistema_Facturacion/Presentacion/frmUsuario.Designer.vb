@@ -22,6 +22,7 @@ Partial Class frmUsuario
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
@@ -53,9 +54,11 @@ Partial Class frmUsuario
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdUsuario = New System.Windows.Forms.TextBox()
+        Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox2
@@ -163,7 +166,7 @@ Partial Class frmUsuario
         '
         Me.txtAcceso.Location = New System.Drawing.Point(133, 224)
         Me.txtAcceso.Name = "txtAcceso"
-        Me.txtAcceso.Size = New System.Drawing.Size(100, 20)
+        Me.txtAcceso.Size = New System.Drawing.Size(140, 20)
         Me.txtAcceso.TabIndex = 23
         '
         'txtRol
@@ -172,7 +175,7 @@ Partial Class frmUsuario
         Me.txtRol.Items.AddRange(New Object() {"Administrador", "Usuario"})
         Me.txtRol.Location = New System.Drawing.Point(132, 249)
         Me.txtRol.Name = "txtRol"
-        Me.txtRol.Size = New System.Drawing.Size(101, 21)
+        Me.txtRol.Size = New System.Drawing.Size(141, 21)
         Me.txtRol.TabIndex = 22
         Me.txtRol.Text = "Administrador"
         '
@@ -198,7 +201,7 @@ Partial Class frmUsuario
         '
         Me.txtContraceña.Location = New System.Drawing.Point(132, 199)
         Me.txtContraceña.Name = "txtContraceña"
-        Me.txtContraceña.Size = New System.Drawing.Size(100, 20)
+        Me.txtContraceña.Size = New System.Drawing.Size(140, 20)
         Me.txtContraceña.TabIndex = 18
         '
         'Label7
@@ -214,7 +217,7 @@ Partial Class frmUsuario
         '
         Me.txtLogin.Location = New System.Drawing.Point(132, 173)
         Me.txtLogin.Name = "txtLogin"
-        Me.txtLogin.Size = New System.Drawing.Size(100, 20)
+        Me.txtLogin.Size = New System.Drawing.Size(140, 20)
         Me.txtLogin.TabIndex = 16
         '
         'btnGuardar
@@ -266,7 +269,7 @@ Partial Class frmUsuario
         '
         Me.txtCi.Location = New System.Drawing.Point(133, 95)
         Me.txtCi.Name = "txtCi"
-        Me.txtCi.Size = New System.Drawing.Size(100, 20)
+        Me.txtCi.Size = New System.Drawing.Size(140, 20)
         Me.txtCi.TabIndex = 10
         '
         'Label5
@@ -282,7 +285,7 @@ Partial Class frmUsuario
         '
         Me.txtTelefono.Location = New System.Drawing.Point(132, 147)
         Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(100, 20)
+        Me.txtTelefono.Size = New System.Drawing.Size(140, 20)
         Me.txtTelefono.TabIndex = 8
         '
         'Label4
@@ -298,7 +301,7 @@ Partial Class frmUsuario
         '
         Me.txtDireccion.Location = New System.Drawing.Point(132, 121)
         Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(100, 20)
+        Me.txtDireccion.Size = New System.Drawing.Size(140, 20)
         Me.txtDireccion.TabIndex = 6
         '
         'Label3
@@ -314,7 +317,7 @@ Partial Class frmUsuario
         '
         Me.txtApellido.Location = New System.Drawing.Point(133, 69)
         Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(100, 20)
+        Me.txtApellido.Size = New System.Drawing.Size(140, 20)
         Me.txtApellido.TabIndex = 4
         '
         'Label2
@@ -330,7 +333,7 @@ Partial Class frmUsuario
         '
         Me.txtNombre.Location = New System.Drawing.Point(133, 43)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(100, 20)
+        Me.txtNombre.Size = New System.Drawing.Size(140, 20)
         Me.txtNombre.TabIndex = 2
         '
         'Label1
@@ -347,8 +350,12 @@ Partial Class frmUsuario
         Me.txtIdUsuario.Enabled = False
         Me.txtIdUsuario.Location = New System.Drawing.Point(133, 17)
         Me.txtIdUsuario.Name = "txtIdUsuario"
-        Me.txtIdUsuario.Size = New System.Drawing.Size(100, 20)
+        Me.txtIdUsuario.Size = New System.Drawing.Size(140, 20)
         Me.txtIdUsuario.TabIndex = 0
+        '
+        'erroricono
+        '
+        Me.erroricono.ContainerControl = Me
         '
         'frmUsuario
         '
@@ -364,6 +371,7 @@ Partial Class frmUsuario
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -398,4 +406,5 @@ Partial Class frmUsuario
     Friend WithEvents txtRol As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtAcceso As System.Windows.Forms.TextBox
+    Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
 End Class

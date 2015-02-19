@@ -87,7 +87,7 @@
                 Dim func As New fVenta
 
                 dts.Gidcliente = txtidCliente.Text
-                dts.Gfecha_venta = dtpFecha.Text
+                dts.Gfecha_venta = dtpFecha.Value.Date.ToString
                 dts.Gtipo_documento = cbTipoDoc.Text
                 dts.Gnum_documento = txtNumDoc.Text
 
@@ -220,5 +220,17 @@
 
     Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
 
+    End Sub
+
+    Private Sub txtNumDoc_TextChanged(sender As Object, e As EventArgs) Handles txtNumDoc.TextChanged
+
+    End Sub
+
+    Private Sub txtNumDoc_Validated(sender As Object, e As EventArgs) Handles txtNumDoc.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
     End Sub
 End Class

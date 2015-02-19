@@ -231,4 +231,17 @@
         Buscar()
 
     End Sub
+
+    Private Sub txtIdcategoria_TextChanged(sender As Object, e As EventArgs) Handles txtIdcategoria.TextChanged
+
+    End Sub
+
+  
+    Private Sub txtNombre_TextChanged(sender As Object, e As EventArgs) Handles txtNombre.TextChanged
+
+    End Sub
+
+    Private Sub txtIdcategoria_Validated(sender As Object, e As EventArgs) Handles txtIdcategoria.Validated
+       
+    End Sub
 End Class

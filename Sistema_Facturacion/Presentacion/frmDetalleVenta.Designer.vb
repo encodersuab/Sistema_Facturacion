@@ -22,12 +22,12 @@ Partial Class frmDetalleVenta
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.lbllave = New System.Windows.Forms.Label()
-        Me.txtImpCreFis = New System.Windows.Forms.TextBox()
         Me.lbCC = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txttotal = New System.Windows.Forms.TextBox()
@@ -65,12 +65,14 @@ Partial Class frmDetalleVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
+        Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox2
@@ -78,7 +80,6 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
         Me.GroupBox2.Controls.Add(Me.lbllave)
-        Me.GroupBox2.Controls.Add(Me.txtImpCreFis)
         Me.GroupBox2.Controls.Add(Me.lbCC)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.txttotal)
@@ -123,17 +124,10 @@ Partial Class frmDetalleVenta
         Me.lbllave.Text = "lbllave"
         Me.lbllave.Visible = False
         '
-        'txtImpCreFis
-        '
-        Me.txtImpCreFis.Location = New System.Drawing.Point(84, 379)
-        Me.txtImpCreFis.Name = "txtImpCreFis"
-        Me.txtImpCreFis.Size = New System.Drawing.Size(100, 20)
-        Me.txtImpCreFis.TabIndex = 37
-        '
         'lbCC
         '
         Me.lbCC.AutoSize = True
-        Me.lbCC.Location = New System.Drawing.Point(204, 382)
+        Me.lbCC.Location = New System.Drawing.Point(204, 371)
         Me.lbCC.Name = "lbCC"
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
@@ -290,7 +284,8 @@ Partial Class frmDetalleVenta
         '
         'txtCantidad
         '
-        Me.txtCantidad.Location = New System.Drawing.Point(144, 207)
+        Me.txtCantidad.Location = New System.Drawing.Point(144, 206)
+        Me.txtCantidad.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(173, 20)
         Me.txtCantidad.TabIndex = 28
@@ -483,6 +478,10 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
+        'erroricono
+        '
+        Me.erroricono.ContainerControl = Me
+        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -500,6 +499,7 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.PerformLayout()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -540,9 +540,9 @@ Partial Class frmDetalleVenta
     Friend WithEvents txtnituab As System.Windows.Forms.TextBox
     Friend WithEvents txttotal As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents txtImpCreFis As System.Windows.Forms.TextBox
     Friend WithEvents lbCC As System.Windows.Forms.Label
     Friend WithEvents lbllave As System.Windows.Forms.Label
     Friend WithEvents lbnumAutor As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
 End Class

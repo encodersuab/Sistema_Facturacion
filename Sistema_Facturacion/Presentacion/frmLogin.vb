@@ -43,4 +43,24 @@
     Private Sub lblHOra_Click(sender As Object, e As EventArgs) Handles lblHOra.Click
 
     End Sub
+
+    Private Sub txtLogin_TextChanged(sender As Object, e As EventArgs) Handles txtLogin.TextChanged
+
+    End Sub
+
+    Private Sub txtLogin_Validated(sender As Object, e As EventArgs) Handles txtLogin.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese login, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtPassord_Validated(sender As Object, e As EventArgs) Handles txtPassord.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese password, ese dato es obligatorio")
+        End If
+    End Sub
 End Class

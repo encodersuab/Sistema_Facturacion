@@ -167,4 +167,48 @@ Public Class frmDatosImpuestos
 
         End If
     End Sub
+
+    Private Sub txtidDATosIMp_TextChanged(sender As Object, e As EventArgs) Handles txtidDATosIMp.TextChanged
+
+    End Sub
+
+    Private Sub txtidDATosIMp_Validated(sender As Object, e As EventArgs) Handles txtidDATosIMp.Validated
+        
+    End Sub
+
+    Private Sub txtNitEmisor_TextChanged(sender As Object, e As EventArgs) Handles txtNitEmisor.TextChanged
+
+    End Sub
+
+    Private Sub txtNitEmisor_Validated(sender As Object, e As EventArgs) Handles txtNitEmisor.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese nit emisor, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtNumAutorizacion_TextChanged(sender As Object, e As EventArgs) Handles txtNumAutorizacion.TextChanged
+
+    End Sub
+
+    Private Sub txtNumAutorizacion_Validated(sender As Object, e As EventArgs) Handles txtNumAutorizacion.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese numero de autorizacion, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtLLAVE_TextChanged(sender As Object, e As EventArgs) Handles txtLLAVE.TextChanged
+
+    End Sub
+
+    Private Sub txtLLAVE_Validated(sender As Object, e As EventArgs) Handles txtLLAVE.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese apellidos del cliente, ese dato es obligatorio")
+        End If
+    End Sub
 End Class

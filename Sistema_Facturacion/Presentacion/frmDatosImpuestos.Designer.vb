@@ -22,8 +22,14 @@ Partial Class frmDatosImpuestos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDatosImpuestos))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.btnEditar = New System.Windows.Forms.Button()
+        Me.btnNuevo = New System.Windows.Forms.Button()
+        Me.txtidDATosIMp = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.txtLLAVE = New System.Windows.Forms.TextBox()
         Me.txtNumAutorizacion = New System.Windows.Forms.TextBox()
         Me.txtNitEmisor = New System.Windows.Forms.TextBox()
@@ -38,15 +44,12 @@ Partial Class frmDatosImpuestos
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.txtidDATosIMp = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.btnNuevo = New System.Windows.Forms.Button()
-        Me.btnGuardar = New System.Windows.Forms.Button()
-        Me.btnEditar = New System.Windows.Forms.Button()
+        Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -68,6 +71,48 @@ Partial Class frmDatosImpuestos
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "DATOS IMPUESTOS"
+        '
+        'btnGuardar
+        '
+        Me.btnGuardar.Location = New System.Drawing.Point(193, 130)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
+        Me.btnGuardar.TabIndex = 17
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = True
+        '
+        'btnEditar
+        '
+        Me.btnEditar.Location = New System.Drawing.Point(193, 130)
+        Me.btnEditar.Name = "btnEditar"
+        Me.btnEditar.Size = New System.Drawing.Size(67, 26)
+        Me.btnEditar.TabIndex = 16
+        Me.btnEditar.Text = "Editar"
+        Me.btnEditar.UseVisualStyleBackColor = True
+        '
+        'btnNuevo
+        '
+        Me.btnNuevo.Location = New System.Drawing.Point(266, 132)
+        Me.btnNuevo.Name = "btnNuevo"
+        Me.btnNuevo.Size = New System.Drawing.Size(75, 23)
+        Me.btnNuevo.TabIndex = 9
+        Me.btnNuevo.Text = "Nuevo"
+        Me.btnNuevo.UseVisualStyleBackColor = True
+        '
+        'txtidDATosIMp
+        '
+        Me.txtidDATosIMp.Location = New System.Drawing.Point(120, 24)
+        Me.txtidDATosIMp.Name = "txtidDATosIMp"
+        Me.txtidDATosIMp.Size = New System.Drawing.Size(309, 20)
+        Me.txtidDATosIMp.TabIndex = 8
+        '
+        'Label4
+        '
+        Me.Label4.Location = New System.Drawing.Point(47, 27)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(67, 17)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "ID DatosImp"
         '
         'txtLLAVE
         '
@@ -198,47 +243,9 @@ Partial Class frmDatosImpuestos
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
         '
-        'txtidDATosIMp
+        'erroricono
         '
-        Me.txtidDATosIMp.Location = New System.Drawing.Point(120, 24)
-        Me.txtidDATosIMp.Name = "txtidDATosIMp"
-        Me.txtidDATosIMp.Size = New System.Drawing.Size(309, 20)
-        Me.txtidDATosIMp.TabIndex = 8
-        '
-        'Label4
-        '
-        Me.Label4.Location = New System.Drawing.Point(47, 27)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(67, 17)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "ID DatosImp"
-        '
-        'btnNuevo
-        '
-        Me.btnNuevo.Location = New System.Drawing.Point(266, 132)
-        Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(75, 23)
-        Me.btnNuevo.TabIndex = 9
-        Me.btnNuevo.Text = "Nuevo"
-        Me.btnNuevo.UseVisualStyleBackColor = True
-        '
-        'btnGuardar
-        '
-        Me.btnGuardar.Location = New System.Drawing.Point(193, 130)
-        Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
-        Me.btnGuardar.TabIndex = 17
-        Me.btnGuardar.Text = "Guardar"
-        Me.btnGuardar.UseVisualStyleBackColor = True
-        '
-        'btnEditar
-        '
-        Me.btnEditar.Location = New System.Drawing.Point(193, 130)
-        Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(67, 26)
-        Me.btnEditar.TabIndex = 16
-        Me.btnEditar.Text = "Editar"
-        Me.btnEditar.UseVisualStyleBackColor = True
+        Me.erroricono.ContainerControl = Me
         '
         'frmDatosImpuestos
         '
@@ -255,6 +262,7 @@ Partial Class frmDatosImpuestos
         Me.GroupBox2.PerformLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -278,4 +286,5 @@ Partial Class frmDatosImpuestos
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents btnEditar As System.Windows.Forms.Button
+    Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
 End Class

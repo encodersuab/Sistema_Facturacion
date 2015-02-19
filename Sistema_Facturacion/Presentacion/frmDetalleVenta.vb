@@ -37,7 +37,7 @@ Partial Public Class frmDetalleVenta
         txtPrecioUnitario.Text = ""
         txtCantidad.Text = 1
         txtStock.Text = 1
-        txtImpCreFis.Text = 0
+
 
 
     End Sub
@@ -127,28 +127,11 @@ Partial Public Class frmDetalleVenta
                 Dim ms As New IO.MemoryStream()
 
 
-                'cmd.Parameters.AddWithValue("nombre", txtNombre.Text)
-                'Dim memoriaImagenQR As MemoryStream = New MemoryStream
-                'QrCodeImgControl1.Image.Save(memoriaImagenQR, ImageFormat.Jpeg)
-                'Dim byteqr() As Byte = New Byte((memoriaImagenQR.Length) - 1) {}
-                'memoriaImagenQR.Position = 0
-                'memoriaImagenQR.Read(byteqr, 0, Convert.ToInt32(memoriaImagenQR.Length))
-                'cmd.Parameters.AddWithValue("foto", byteqr)
-
-
-                QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
-                ''QrCodeImgControl1.Image = My.Resources.fondo_transparente_fotos
-                ''QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
 
 
 
-                'imagen.Image.Save(ms, imagen.Image.RawFormat)
-                '        Else
-                'imagen.Image = My.Resources.fondo_transparente_fotos
-                'imagen.Image.Save(ms, imagen.Image.RawFormat)
-                '        End If
 
-                dts.gimagen = ms.GetBuffer
+
 
                 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
@@ -162,10 +145,7 @@ Partial Public Class frmDetalleVenta
                     limpiar()
 
 
-                    QrCodeImgControl1.Visible = True
-                    QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + dtpFecha.Text + "|" + txttotal.Text
-                    QrCodeImgControl1.Enabled = True
-
+                 
 
 
 
@@ -403,26 +383,26 @@ Partial Public Class frmDetalleVenta
             Dim ms As New IO.MemoryStream()
             Dim dts As New vQr
             Dim func As New fQr
-
+            Dim f As String
+            f = dtpFecha.Value.Date
             QrCodeImgControl1.Visible = True
-            QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + lbnumAutor.Text + "|" + dtpFecha.Text + "|" + txttotal.Text + "|" + txtImpCreFis.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
+            QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
             QrCodeImgControl1.Enabled = True
             QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
 
 
 
 
-            ' '''''''''''''
+            ' ''''''''''''' 
+            dts.gfecha_emision = f.ToString
             dts.gNit_Emisor = txtnituab.Text
             dts.gNum_Factura = txtIdVenta.Text
-
             dts.gNum_Autorizacion = lbnumAutor.Text
             dts.gTotal = txttotal.Text
-            dts.gCodigo_Control = txtImpCreFis.Text
+            dts.gCodigo_Control = lbCC.Text
             dts.gCi_Nit_Comprador = txtNumDoc.Text
             dts.gimagen = ms.GetBuffer
             dts.gIdVenta = txtIdVenta.Text
-            dts.gfecha_emision = dtpFecha.Text
 
             ''''''''
 
@@ -435,23 +415,37 @@ Partial Public Class frmDetalleVenta
                 MessageBox.Show("No se a podido guardar la venta  Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
             End If
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         Catch ex As Exception
-
+            MsgBox(ex.Message)
         End Try
 
+    End Sub
+
+    Private Sub txtnituab_TextChanged(sender As Object, e As EventArgs) Handles txtnituab.TextChanged
+
+    End Sub
+
+    Private Sub txtnituab_Validated(sender As Object, e As EventArgs) Handles txtnituab.Validated
+        
+    End Sub
+
+    Private Sub cbTipoDoc_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbTipoDoc.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub cbTipoDoc_Validated(sender As Object, e As EventArgs) Handles cbTipoDoc.Validated
+        
+    End Sub
+
+    Private Sub txtNumDoc_TextChanged(sender As Object, e As EventArgs) Handles txtNumDoc.TextChanged
+
+    End Sub
+
+    Private Sub txtNumDoc_Validated(sender As Object, e As EventArgs) Handles txtNumDoc.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese numero de documento, ese dato es obligatorio")
+        End If
     End Sub
 End Class

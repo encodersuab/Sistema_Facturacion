@@ -6,7 +6,7 @@ Public Class fProducto
     Public Function mostrar() As DataTable
         Try
             conectado()
-            cmd = New SqlCommand("mostrar_producto")
+            cmd = New SqlCommand("mostrar_producto_emfopesbe")
             cmd.CommandType = CommandType.StoredProcedure
 
             cmd.Connection = cnn
@@ -43,7 +43,7 @@ Public Class fProducto
             cmd.Parameters.AddWithValue("@precio_venta", dts.gprecio_venta)
             cmd.Parameters.AddWithValue("@fecha_vencimiento", dts.gfecha_vencimiento)
             cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
-
+            cmd.Parameters.AddWithValue("@modulo", dts.gmodulo)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -74,7 +74,7 @@ Public Class fProducto
             cmd.Parameters.AddWithValue("@precio_venta", dts.gprecio_venta)
             cmd.Parameters.AddWithValue("@fecha_vencimiento", dts.gfecha_vencimiento)
             cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
-
+            cmd.Parameters.AddWithValue("@modulo", dts.gmodulo)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else

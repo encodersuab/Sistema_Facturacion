@@ -47,6 +47,8 @@ Partial Class frmProducto
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbbmodulo = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.btnlimpiar = New System.Windows.Forms.PictureBox()
         Me.btncargar = New System.Windows.Forms.PictureBox()
         Me.imagen = New System.Windows.Forms.PictureBox()
@@ -92,7 +94,7 @@ Partial Class frmProducto
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(134, 384)
+        Me.btnGuardar.Location = New System.Drawing.Point(134, 426)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -101,7 +103,7 @@ Partial Class frmProducto
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(134, 384)
+        Me.btnEditar.Location = New System.Drawing.Point(134, 426)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -110,7 +112,7 @@ Partial Class frmProducto
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(219, 384)
+        Me.btncancelar.Location = New System.Drawing.Point(219, 426)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -119,7 +121,7 @@ Partial Class frmProducto
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(50, 384)
+        Me.btnNuevo.Location = New System.Drawing.Point(50, 426)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -268,6 +270,8 @@ Partial Class frmProducto
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.cbbmodulo)
+        Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.btnlimpiar)
         Me.GroupBox1.Controls.Add(Me.btncargar)
         Me.GroupBox1.Controls.Add(Me.imagen)
@@ -296,16 +300,35 @@ Partial Class frmProducto
         Me.GroupBox1.Controls.Add(Me.txtIdproducto)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(382, 427)
+        Me.GroupBox1.Size = New System.Drawing.Size(382, 457)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'cbbmodulo
+        '
+        Me.cbbmodulo.FormattingEnabled = True
+        Me.cbbmodulo.Items.AddRange(New Object() {"FEXPO-BENI", "EMFOPESBE", "POST-GRADO", "CANAL-11"})
+        Me.cbbmodulo.Location = New System.Drawing.Point(154, 257)
+        Me.cbbmodulo.Name = "cbbmodulo"
+        Me.cbbmodulo.Size = New System.Drawing.Size(172, 21)
+        Me.cbbmodulo.TabIndex = 17
+        Me.cbbmodulo.Text = "FEXPO-BENI"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(17, 260)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(42, 13)
+        Me.Label10.TabIndex = 27
+        Me.Label10.Text = "Modulo"
         '
         'btnlimpiar
         '
         Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
         Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(273, 310)
+        Me.btnlimpiar.Location = New System.Drawing.Point(323, 352)
         Me.btnlimpiar.Name = "btnlimpiar"
         Me.btnlimpiar.Size = New System.Drawing.Size(53, 48)
         Me.btnlimpiar.TabIndex = 25
@@ -315,7 +338,7 @@ Partial Class frmProducto
         '
         Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
         Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(273, 261)
+        Me.btncargar.Location = New System.Drawing.Point(323, 284)
         Me.btncargar.Name = "btncargar"
         Me.btncargar.Size = New System.Drawing.Size(53, 48)
         Me.btncargar.TabIndex = 24
@@ -326,16 +349,16 @@ Partial Class frmProducto
         Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
         Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(154, 261)
+        Me.imagen.Location = New System.Drawing.Point(154, 284)
         Me.imagen.Name = "imagen"
-        Me.imagen.Size = New System.Drawing.Size(107, 97)
+        Me.imagen.Size = New System.Drawing.Size(163, 117)
         Me.imagen.TabIndex = 23
         Me.imagen.TabStop = False
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(18, 261)
+        Me.Label9.Location = New System.Drawing.Point(18, 284)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 22
@@ -408,7 +431,7 @@ Partial Class frmProducto
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(400, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(470, 427)
+        Me.GroupBox2.Size = New System.Drawing.Size(470, 477)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Productos"
@@ -430,7 +453,7 @@ Partial Class frmProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(887, 448)
+        Me.ClientSize = New System.Drawing.Size(889, 481)
         Me.Controls.Add(Me.txtTag)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
@@ -487,4 +510,6 @@ Partial Class frmProducto
     Friend WithEvents btnlimpiar As System.Windows.Forms.PictureBox
     Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
     Friend WithEvents txtTag As System.Windows.Forms.TextBox
+    Friend WithEvents cbbmodulo As System.Windows.Forms.ComboBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class

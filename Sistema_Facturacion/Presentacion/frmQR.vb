@@ -288,4 +288,99 @@
     End Sub
 
   
+    Private Sub txtNit_Emisor_TextChanged(sender As Object, e As EventArgs) Handles txtNit_Emisor.TextChanged
+
+    End Sub
+
+    Private Sub txtNit_Emisor_Validated(sender As Object, e As EventArgs) Handles txtNit_Emisor.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtNum_Factura_TextChanged(sender As Object, e As EventArgs) Handles txtNum_Factura.TextChanged
+        
+    End Sub
+
+    Private Sub txtNum_Factura_Validated(sender As Object, e As EventArgs) Handles txtNum_Factura.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtINum_Autorizacion_TextChanged(sender As Object, e As EventArgs) Handles txtINum_Autorizacion.TextChanged
+
+    End Sub
+
+    Private Sub txtINum_Autorizacion_Validated(sender As Object, e As EventArgs) Handles txtINum_Autorizacion.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtfechaEmision_TextChanged(sender As Object, e As EventArgs) Handles txtfechaEmision.TextChanged
+
+    End Sub
+
+    Private Sub txtfechaEmision_Validated(sender As Object, e As EventArgs) Handles txtfechaEmision.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtTotalPagar_TextChanged(sender As Object, e As EventArgs) Handles txtTotalPagar.TextChanged
+
+    End Sub
+
+    Private Sub txtTotalPagar_Validated(sender As Object, e As EventArgs) Handles txtTotalPagar.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtCodigoControl_TextChanged(sender As Object, e As EventArgs) Handles txtCodigoControl.TextChanged
+
+    End Sub
+
+    Private Sub txtCodigoControl_Validated(sender As Object, e As EventArgs) Handles txtCodigoControl.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtCiNitComprador_TextChanged(sender As Object, e As EventArgs) Handles txtCiNitComprador.TextChanged
+
+    End Sub
+
+    Private Sub txtCiNitComprador_Validated(sender As Object, e As EventArgs) Handles txtCiNitComprador.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txttxtIdVenta_TextChanged(sender As Object, e As EventArgs) Handles txttxtIdVenta.TextChanged
+
+    End Sub
+
+    Private Sub txttxtIdVenta_Validated(sender As Object, e As EventArgs) Handles txttxtIdVenta.Validated
+        If DirectCast(sender, TextBox).Text.Length > 0 Then
+            Me.erroricono.SetError(sender, "")
+        Else
+            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
 End Class
