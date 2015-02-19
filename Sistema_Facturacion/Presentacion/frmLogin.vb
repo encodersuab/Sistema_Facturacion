@@ -11,7 +11,16 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         End
     End Sub
+    'Public Sub mostrarRolUsuario()
+    '    Dim dt1 As New DataTable
+    '    Dim fdato As New fUsuario
+    '    dt1 = fdato.mostrarROL
+    '    lbROL.Text = dt1.Rows(0)("rol").ToString
+    'End Sub
 
+    Public Sub mostrarUsuario()
+
+    End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
         Try
             Dim dts As New vUsuario
@@ -21,12 +30,13 @@
             dts.gpassword = txtPassord.Text
 
             If func.validar_usuario(dts) = True Then
-                frmInicio.Show()
+                frmInicioF.Show()
                 Me.Hide()
             Else
                 MsgBox("Ingrese nuevamente sus datos correctos", MsgBoxStyle.Information, "accesos denegados al sistema")
                 txtPassord.Clear()
             End If
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

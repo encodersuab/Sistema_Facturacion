@@ -64,7 +64,7 @@ Partial Class frmQR
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(392, 1)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(581, 458)
+        Me.GroupBox2.Size = New System.Drawing.Size(570, 316)
         Me.GroupBox2.TabIndex = 7
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
@@ -106,7 +106,7 @@ Partial Class frmQR
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(536, 251)
+        Me.datalistado.Size = New System.Drawing.Size(536, 220)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -138,21 +138,23 @@ Partial Class frmQR
         Me.GroupBox1.Controls.Add(Me.txtNit_Emisor)
         Me.GroupBox1.Location = New System.Drawing.Point(28, 1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(358, 458)
+        Me.GroupBox1.Size = New System.Drawing.Size(358, 316)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
         'txtfechaEmision
         '
+        Me.txtfechaEmision.Enabled = False
         Me.txtfechaEmision.Location = New System.Drawing.Point(144, 130)
         Me.txtfechaEmision.Name = "txtfechaEmision"
-        Me.txtfechaEmision.Size = New System.Drawing.Size(171, 20)
+        Me.txtfechaEmision.Size = New System.Drawing.Size(173, 20)
         Me.txtfechaEmision.TabIndex = 34
         '
         'txtCiNitComprador
         '
-        Me.txtCiNitComprador.Location = New System.Drawing.Point(146, 221)
+        Me.txtCiNitComprador.Enabled = False
+        Me.txtCiNitComprador.Location = New System.Drawing.Point(144, 206)
         Me.txtCiNitComprador.Name = "txtCiNitComprador"
         Me.txtCiNitComprador.Size = New System.Drawing.Size(173, 20)
         Me.txtCiNitComprador.TabIndex = 33
@@ -176,7 +178,9 @@ Partial Class frmQR
         '
         'txttxtIdVenta
         '
-        Me.txttxtIdVenta.Location = New System.Drawing.Point(144, 253)
+        Me.txttxtIdVenta.AcceptsReturn = True
+        Me.txttxtIdVenta.Enabled = False
+        Me.txttxtIdVenta.Location = New System.Drawing.Point(144, 232)
         Me.txttxtIdVenta.Name = "txttxtIdVenta"
         Me.txttxtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txttxtIdVenta.TabIndex = 27
@@ -184,7 +188,7 @@ Partial Class frmQR
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(44, 256)
+        Me.Label9.Location = New System.Drawing.Point(44, 235)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(44, 13)
         Me.Label9.TabIndex = 26
@@ -193,7 +197,7 @@ Partial Class frmQR
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(48, 228)
+        Me.Label8.Location = New System.Drawing.Point(44, 213)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(92, 13)
         Me.Label8.TabIndex = 25
@@ -210,6 +214,7 @@ Partial Class frmQR
         '
         'txtCodigoControl
         '
+        Me.txtCodigoControl.Enabled = False
         Me.txtCodigoControl.Location = New System.Drawing.Point(144, 180)
         Me.txtCodigoControl.Name = "txtCodigoControl"
         Me.txtCodigoControl.Size = New System.Drawing.Size(173, 20)
@@ -226,6 +231,7 @@ Partial Class frmQR
         '
         'txtINum_Autorizacion
         '
+        Me.txtINum_Autorizacion.Enabled = False
         Me.txtINum_Autorizacion.Location = New System.Drawing.Point(144, 104)
         Me.txtINum_Autorizacion.Name = "txtINum_Autorizacion"
         Me.txtINum_Autorizacion.Size = New System.Drawing.Size(173, 20)
@@ -233,7 +239,7 @@ Partial Class frmQR
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(197, 304)
+        Me.btncancelar.Location = New System.Drawing.Point(188, 273)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -251,6 +257,7 @@ Partial Class frmQR
         '
         'txtTotalPagar
         '
+        Me.txtTotalPagar.Enabled = False
         Me.txtTotalPagar.Location = New System.Drawing.Point(144, 154)
         Me.txtTotalPagar.Name = "txtTotalPagar"
         Me.txtTotalPagar.Size = New System.Drawing.Size(173, 20)
@@ -307,7 +314,7 @@ Partial Class frmQR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1001, 460)
+        Me.ClientSize = New System.Drawing.Size(974, 327)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmQR"

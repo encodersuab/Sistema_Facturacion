@@ -35,7 +35,7 @@
                 Inexistente.Visible = False
             Else
                 datalistado.DataSource = Nothing
-                datalistado.ColumnHeadersVisible = False
+                datalistado.ColumnHeadersVisible = True
                 Inexistente.Visible = True
             End If
 

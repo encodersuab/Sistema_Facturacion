@@ -101,6 +101,7 @@ Partial Class frmDatosImpuestos
         '
         'txtidDATosIMp
         '
+        Me.txtidDATosIMp.Enabled = False
         Me.txtidDATosIMp.Location = New System.Drawing.Point(120, 24)
         Me.txtidDATosIMp.Name = "txtidDATosIMp"
         Me.txtidDATosIMp.Size = New System.Drawing.Size(309, 20)

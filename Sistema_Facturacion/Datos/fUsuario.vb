@@ -12,11 +12,11 @@ Public Class fUsuario
             cmd.Connection = cnn
             cmd.Parameters.AddWithValue("@login", dts.glogin)
             cmd.Parameters.AddWithValue("@password", dts.gpassword)
-
             Dim dr As SqlDataReader
 
             dr = cmd.ExecuteReader
             If dr.HasRows = True Then
+
                 Return True
             Else
                 Return False
@@ -49,9 +49,31 @@ Public Class fUsuario
             Return Nothing
         Finally
             desconectado()
-
         End Try
     End Function
+
+    'Public Function mostrarROL(ByVal dts As vUsuario)
+
+    '    Try
+    '        conectado()
+    '        cmd = New SqlCommand("mostrar_RolUsuario")
+    '        cmd.CommandType = CommandType.StoredProcedure
+    '        cmd.Connection = cnn
+    '        If cmd.ExecuteNonQuery Then
+    '            Dim dt As New DataTable
+    '            Dim da As New SqlDataAdapter(cmd)
+    '            da.Fill(dt)
+    '            Return dt
+    '        Else
+    '            Return Nothing
+    '        End If
+    '    Catch ex As Exception
+    '        MsgBox(ex.Message)
+    '        Return Nothing
+    '    Finally
+    '        desconectado()
+    '    End Try
+    'End Function
 
     Public Function insertar(ByVal dts As vUsuario) As Boolean
         Try

@@ -35,6 +35,7 @@ Partial Class frmLogin
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.lbROL = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,7 +86,7 @@ Partial Class frmLogin
         '
         Me.btnIngresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIngresar.ForeColor = System.Drawing.Color.Black
-        Me.btnIngresar.Location = New System.Drawing.Point(43, 102)
+        Me.btnIngresar.Location = New System.Drawing.Point(43, 105)
         Me.btnIngresar.Name = "btnIngresar"
         Me.btnIngresar.Size = New System.Drawing.Size(91, 36)
         Me.btnIngresar.TabIndex = 4
@@ -154,12 +155,22 @@ Partial Class frmLogin
         '
         Me.erroricono.ContainerControl = Me
         '
+        'lbROL
+        '
+        Me.lbROL.AutoSize = True
+        Me.lbROL.Location = New System.Drawing.Point(440, 233)
+        Me.lbROL.Name = "lbROL"
+        Me.lbROL.Size = New System.Drawing.Size(39, 13)
+        Me.lbROL.TabIndex = 2
+        Me.lbROL.Text = "Label3"
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.HighlightText
         Me.ClientSize = New System.Drawing.Size(701, 255)
+        Me.Controls.Add(Me.lbROL)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -172,6 +183,7 @@ Partial Class frmLogin
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
@@ -185,4 +197,5 @@ Partial Class frmLogin
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
+    Friend WithEvents lbROL As System.Windows.Forms.Label
 End Class

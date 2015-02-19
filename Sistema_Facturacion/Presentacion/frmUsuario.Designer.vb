@@ -156,7 +156,7 @@ Partial Class frmUsuario
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(42, 227)
+        Me.Label10.Location = New System.Drawing.Point(61, 227)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(43, 13)
         Me.Label10.TabIndex = 24
@@ -172,12 +172,12 @@ Partial Class frmUsuario
         'txtRol
         '
         Me.txtRol.FormattingEnabled = True
-        Me.txtRol.Items.AddRange(New Object() {"Administrador", "Usuario"})
+        Me.txtRol.Items.AddRange(New Object() {"AdministradorEMFOPESVE", "UsuarioEMFOPESVE", "AdministradorCANAL11", "UsuarioCANAL11", "AdministradorPOSGRADO", "UsuarioPOSGRADO"})
         Me.txtRol.Location = New System.Drawing.Point(132, 249)
         Me.txtRol.Name = "txtRol"
         Me.txtRol.Size = New System.Drawing.Size(141, 21)
         Me.txtRol.TabIndex = 22
-        Me.txtRol.Text = "Administrador"
+        Me.txtRol.Text = "AdministradorEMFOPESVE"
         '
         'Label9
         '

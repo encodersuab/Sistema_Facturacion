@@ -1,6 +1,6 @@
 ﻿Imports System.Windows.Forms
 
-Public Class frmInicio
+Public Class frmInicioF
 
     Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripButton.Click
         ' Cree una nueva instancia del formulario secundario.
@@ -86,6 +86,7 @@ Public Class frmInicio
     Private m_ChildFormNumber As Integer
 
     Private Sub frmInicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        frmLogin.lbROL.Text = lbrol.Text
 
     End Sub
 
@@ -125,6 +126,33 @@ Public Class frmInicio
     Private Sub ReportesQrToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmQR.MdiParent = Me
         frmQR.Show()
+
+    End Sub
+
+    Private Sub ClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClienteToolStripMenuItem.Click
+        frmCliente.MdiParent = Me
+        frmCliente.Show()
+
+    End Sub
+
+    Private Sub ProductoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ProductoToolStripMenuItem1.Click
+        frmProducto.MdiParent = Me
+        frmProducto.Show()
+
+    End Sub
+
+    Private Sub CategoriaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem1.Click
+        frmCategoria.MdiParent = Me
+        frmCategoria.Show()
+
+    End Sub
+
+    Private Sub EMFOPESBEToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EMFOPESBEToolStripMenuItem.Click
+        
+
+    End Sub
+
+    Private Sub MenuStrip_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip.ItemClicked
 
     End Sub
 End Class

@@ -28,7 +28,6 @@ Partial Public Class frmDetalleVenta
         txtnituab.Text = dt1.Rows(0)("nitEmisor").ToString
         lbllave.Text = dt1.Rows(0)("llave").ToString
         lbnumAutor.Text = dt1.Rows(0)("numAutorizacion").ToString
-
     End Sub
     Public Sub limpiar()
         btnGuardar.Visible = True
@@ -52,11 +51,11 @@ Partial Public Class frmDetalleVenta
 
             If dt.Rows.Count <> 0 Then
                 datalistado.DataSource = dt
-                datalistado.ColumnHeadersVisible = False
+                datalistado.ColumnHeadersVisible = True
                 Inexistente.Visible = False
             Else
                 datalistado.DataSource = Nothing
-                datalistado.ColumnHeadersVisible = False
+                datalistado.ColumnHeadersVisible = True
                 Inexistente.Visible = True
             End If
 
@@ -143,21 +142,11 @@ Partial Public Class frmDetalleVenta
                     mostrar()
                     txttotal.Text = sumar().ToString
                     limpiar()
-
-
-                 
-
-
-
                 Else
                     MessageBox.Show("articulo no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     mostrar()
                     limpiar()
-
-
                 End If
-
-
             Catch ex As Exception
                 MsgBox(ex.Message)
             End Try
@@ -245,7 +234,6 @@ Partial Public Class frmDetalleVenta
                         vdb.gcantidad = datalistado.SelectedCells.Item(5).Value
                         If func.eliminar(vdb) Then
                             If func.aumentar_stock(vdb) Then
-
                             End If
                         Else
                             MessageBox.Show("Fue eliminado", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
@@ -445,7 +433,11 @@ Partial Public Class frmDetalleVenta
         If DirectCast(sender, TextBox).Text.Length > 0 Then
             Me.erroricono.SetError(sender, "")
         Else
-            Me.erroricono.SetError(sender, "ingrese numero de documento, ese dato es obligatorio")
+            Me.erroricono.SetError(sender, "Ingrese numero de documento, ese dato es obligatorio")
         End If
+    End Sub
+
+    Private Sub lbllave_Click(sender As Object, e As EventArgs) Handles lbllave.Click
+
     End Sub
 End Class

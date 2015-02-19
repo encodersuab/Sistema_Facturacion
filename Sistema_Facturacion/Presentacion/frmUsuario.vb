@@ -30,12 +30,12 @@
             If dt.Rows.Count <> 0 Then
                 datalistado.DataSource = dt
                 txtBuscar.Enabled = True
-                datalistado.ColumnHeadersVisible = False
+                datalistado.ColumnHeadersVisible = True
                 Inexistente.Visible = False
             Else
                 datalistado.DataSource = Nothing
                 txtBuscar.Enabled = False
-                datalistado.ColumnHeadersVisible = False
+                datalistado.ColumnHeadersVisible = True
                 Inexistente.Visible = True
             End If
 

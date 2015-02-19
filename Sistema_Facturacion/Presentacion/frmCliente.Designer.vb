@@ -41,8 +41,6 @@ Partial Class frmCliente
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdCliente = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.cbeliminar = New System.Windows.Forms.CheckBox()
-        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
@@ -216,8 +214,6 @@ Partial Class frmCliente
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.cbeliminar)
-        Me.GroupBox2.Controls.Add(Me.btnEliminar)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.txtBuscar)
         Me.GroupBox2.Controls.Add(Me.cbxListadoClientes)
@@ -228,25 +224,6 @@ Partial Class frmCliente
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Clientes"
-        '
-        'cbeliminar
-        '
-        Me.cbeliminar.AutoSize = True
-        Me.cbeliminar.Location = New System.Drawing.Point(29, 53)
-        Me.cbeliminar.Name = "cbeliminar"
-        Me.cbeliminar.Size = New System.Drawing.Size(62, 17)
-        Me.cbeliminar.TabIndex = 16
-        Me.cbeliminar.Text = "Eliminar"
-        Me.cbeliminar.UseVisualStyleBackColor = True
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.Location = New System.Drawing.Point(6, 235)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(67, 26)
-        Me.btnEliminar.TabIndex = 15
-        Me.btnEliminar.Text = "Eliminar"
-        Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'Inexistente
         '
@@ -281,11 +258,11 @@ Partial Class frmCliente
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(6, 79)
+        Me.datalistado.Location = New System.Drawing.Point(6, 52)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(502, 150)
+        Me.datalistado.Size = New System.Drawing.Size(502, 210)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -346,13 +323,11 @@ Partial Class frmCliente
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
-    Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
     Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
     Friend WithEvents cbxListadoClientes As System.Windows.Forms.ComboBox
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
-    Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
     Friend WithEvents txtFlag As System.Windows.Forms.TextBox
 End Class

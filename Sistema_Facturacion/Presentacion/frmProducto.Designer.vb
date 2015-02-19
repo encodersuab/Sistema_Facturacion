@@ -23,7 +23,6 @@ Partial Class frmProducto
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.cbeliminar = New System.Windows.Forms.CheckBox()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
@@ -36,7 +35,6 @@ Partial Class frmProducto
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtprecio_compra = New System.Windows.Forms.TextBox()
         Me.txtstock = New System.Windows.Forms.TextBox()
-        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -71,16 +69,6 @@ Partial Class frmProducto
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'cbeliminar
-        '
-        Me.cbeliminar.AutoSize = True
-        Me.cbeliminar.Location = New System.Drawing.Point(29, 53)
-        Me.cbeliminar.Name = "cbeliminar"
-        Me.cbeliminar.Size = New System.Drawing.Size(62, 17)
-        Me.cbeliminar.TabIndex = 16
-        Me.cbeliminar.Text = "Eliminar"
-        Me.cbeliminar.UseVisualStyleBackColor = True
         '
         'Inexistente
         '
@@ -154,7 +142,7 @@ Partial Class frmProducto
         'cbxListadoClientes
         '
         Me.cbxListadoClientes.FormattingEnabled = True
-        Me.cbxListadoClientes.Items.AddRange(New Object() {"NombreProducto"})
+        Me.cbxListadoClientes.Items.AddRange(New Object() {"NombreProducto", "NombreCategoria"})
         Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 25)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
         Me.cbxListadoClientes.Size = New System.Drawing.Size(121, 21)
@@ -184,26 +172,17 @@ Partial Class frmProducto
         Me.txtstock.Size = New System.Drawing.Size(56, 20)
         Me.txtstock.TabIndex = 6
         '
-        'btnEliminar
-        '
-        Me.btnEliminar.Location = New System.Drawing.Point(29, 374)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(67, 26)
-        Me.btnEliminar.TabIndex = 15
-        Me.btnEliminar.Text = "Eliminar"
-        Me.btnEliminar.UseVisualStyleBackColor = True
-        '
         'datalistado
         '
         Me.datalistado.AllowUserToAddRows = False
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(6, 79)
+        Me.datalistado.Location = New System.Drawing.Point(6, 56)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(446, 289)
+        Me.datalistado.Size = New System.Drawing.Size(446, 344)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -423,8 +402,6 @@ Partial Class frmProducto
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.cbeliminar)
-        Me.GroupBox2.Controls.Add(Me.btnEliminar)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.txtBuscar)
         Me.GroupBox2.Controls.Add(Me.cbxListadoClientes)
@@ -472,7 +449,6 @@ Partial Class frmProducto
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
     Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents btnEditar As System.Windows.Forms.Button
@@ -485,7 +461,6 @@ Partial Class frmProducto
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtprecio_compra As System.Windows.Forms.TextBox
     Friend WithEvents txtstock As System.Windows.Forms.TextBox
-    Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents Label4 As System.Windows.Forms.Label

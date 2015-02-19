@@ -25,12 +25,12 @@ Public Class frmDatosImpuestos
             If dt.Rows.Count <> 0 Then
                 datalistado.DataSource = dt
                 ' txtBuscar.Enabled = True
-                datalistado.ColumnHeadersVisible = False
+                datalistado.ColumnHeadersVisible = True
                 Inexistente.Visible = False
             Else
                 datalistado.DataSource = Nothing
                 '   txtBuscar.Enabled = False
-                datalistado.ColumnHeadersVisible = False
+                datalistado.ColumnHeadersVisible = True
                 Inexistente.Visible = True
             End If
 
@@ -110,11 +110,11 @@ Public Class frmDatosImpuestos
 
               
                     If func.editar(dts) Then
-                        MessageBox.Show("cliente modificado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        MessageBox.Show("Registro modificado correctamente", "Modificando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         mostrar()
                         limpiar()
                     Else
-                        MessageBox.Show("cliente no modificado", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        MessageBox.Show("Datos no modificados", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
                         mostrar()
                         limpiar()
 
@@ -149,11 +149,11 @@ Public Class frmDatosImpuestos
                 dts.gllave = txtLLAVE.Text
 
                 If func.insertar(dts) Then
-                    MessageBox.Show("cliente registrado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    MessageBox.Show("Registro realizado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     mostrar()
                     limpiar()
                 Else
-                    MessageBox.Show("cliente no registrado", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    MessageBox.Show("Datos no registrados", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     mostrar()
                     limpiar()
 
@@ -208,7 +208,7 @@ Public Class frmDatosImpuestos
         If DirectCast(sender, TextBox).Text.Length > 0 Then
             Me.erroricono.SetError(sender, "")
         Else
-            Me.erroricono.SetError(sender, "ingrese apellidos del cliente, ese dato es obligatorio")
+            Me.erroricono.SetError(sender, "ingrese LLAVE, ese dato es obligatorio")
         End If
     End Sub
 End Class
