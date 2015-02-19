@@ -89,6 +89,24 @@
     <Compile Include="Datos\fQr.vb" />
     <Compile Include="Datos\fUsuario.vb" />
     <Compile Include="Datos\fVenta.vb" />
+    <Compile Include="dbfacDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbfacDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dtsCategoria.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsCategoria.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dtsSistema.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsSistema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dtsSistema.vb">
+      <DependentUpon>dtsSistema.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Logica\CC.vb" />
     <Compile Include="Logica\vCategoria.vb" />
     <Compile Include="Logica\vCliente.vb" />
@@ -185,6 +203,30 @@
     <Compile Include="Presentacion\frmVistaProducto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\frmReporteCategoria.Designer.vb">
+      <DependentUpon>frmReporteCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteClientes.Designer.vb">
+      <DependentUpon>frmReporteClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteProducto.Designer.vb">
+      <DependentUpon>frmReporteProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReimpresionFactura.Designer.vb">
+      <DependentUpon>frmReimpresionFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReimpresionFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -223,8 +265,57 @@
     <EmbeddedResource Include="Presentacion\frmVenta.resx">
       <DependentUpon>frmVenta.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteCategoria.resx">
+      <DependentUpon>frmReporteCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteClientes.resx">
+      <DependentUpon>frmReporteClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteProducto.resx">
+      <DependentUpon>frmReporteProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReimpresionFactura.resx">
+      <DependentUpon>frmReimpresionFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptCategoria.rdlc" />
+    <EmbeddedResource Include="Reportes\rptclientes.rdlc" />
+    <EmbeddedResource Include="Reportes\rptProducto.rdlc" />
+    <EmbeddedResource Include="Reportes\rptReimpresionFactura.rdlc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="dbfacDataSet.xsc">
+      <DependentUpon>dbfacDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbfacDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbfacDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbfacDataSet.xss">
+      <DependentUpon>dbfacDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dtsCategoria.xsc">
+      <DependentUpon>dtsCategoria.xsd</DependentUpon>
+    </None>
+    <None Include="dtsCategoria.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsCategoria.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dtsCategoria.xss">
+      <DependentUpon>dtsCategoria.xsd</DependentUpon>
+    </None>
+    <None Include="dtsSistema.xsc">
+      <DependentUpon>dtsSistema.xsd</DependentUpon>
+    </None>
+    <None Include="dtsSistema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsSistema.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dtsSistema.xss">
+      <DependentUpon>dtsSistema.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -236,9 +327,7 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Reportes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\descarga %284%29.jpg" />
   </ItemGroup>

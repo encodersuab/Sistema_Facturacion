@@ -127,4 +127,56 @@ Public Class frmInicio
         frmQR.Show()
 
     End Sub
+
+    Private Sub ClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClienteToolStripMenuItem.Click
+        frmCliente.MdiParent = Me
+        frmCliente.Show()
+    End Sub
+
+    Private Sub ProductoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ProductoToolStripMenuItem1.Click
+        frmProducto.MdiParent = Me
+        frmProducto.Show()
+
+    End Sub
+
+    Private Sub CategoriaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem1.Click
+        frmCategoria.MdiParent = Me
+        frmCategoria.Show()
+
+    End Sub
+
+    Private Sub VentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentaToolStripMenuItem.Click
+        frmVenta.MdiParent = Me
+        frmVenta.Show()
+
+    End Sub
+
+    Private Sub CategoriaToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles RptCategoriaToolStripMenuItem2.Click
+        frmReporteCategoria.MdiParent = Me
+        frmReporteCategoria.Show()
+    End Sub
+
+    Private Sub RpteClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RpteClienteToolStripMenuItem.Click
+        frmReporteClientes.MdiParent = Me
+        frmReporteClientes.Show()
+    End Sub
+
+   
+    Private Sub ReporteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub RpteProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RpteProductoToolStripMenuItem.Click
+        frmReporteProducto.MdiParent = Me
+        frmReporteProducto.Show()
+    End Sub
+
+    Private Sub RptVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RptVentaToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub ReImprecionFacToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReImprecionFacToolStripMenuItem.Click
+        frmReimpresionFactura.MdiParent = Me
+        frmReimpresionFactura.Show()
+    End Sub
 End Class
