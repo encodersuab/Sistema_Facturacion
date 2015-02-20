@@ -1,5 +1,5 @@
 ﻿Public Class frmLogin
-
+    Private dt As New DataTable
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         lblHOra.Text = TimeOfDay
     End Sub
@@ -18,9 +18,8 @@
     '    lbROL.Text = dt1.Rows(0)("rol").ToString
     'End Sub
 
-    Public Sub mostrarUsuario()
 
-    End Sub
+   
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
         Try
             Dim dts As New vUsuario
@@ -30,6 +29,12 @@
             dts.gpassword = txtPassord.Text
 
             If func.validar_usuario(dts) = True Then
+                Dim rol As String
+
+                rol = func.mostrarROL(dts)
+
+                frmInicioF.lbrol.Text = rol.ToString
+
                 frmInicioF.Show()
                 Me.Hide()
             Else

@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
+
 Public Class fUsuario
     Inherits Conexion
     Dim cmd As New SqlCommand
@@ -18,6 +19,30 @@ Public Class fUsuario
             If dr.HasRows = True Then
 
                 Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            desconectado()
+        End Try
+    End Function
+    Public Function mostrar_rol(ByVal dts As vUsuario)
+        Try
+            conectado()
+            cmd = New SqlCommand("validar_usuario")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+            cmd.Parameters.AddWithValue("@login", dts.glogin)
+            cmd.Parameters.AddWithValue("@password", dts.gpassword)
+
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dt)
+                Return cmd
             Else
                 Return False
             End If
@@ -52,28 +77,28 @@ Public Class fUsuario
         End Try
     End Function
 
-    'Public Function mostrarROL(ByVal dts As vUsuario)
+    Public Function mostrarROL(ByVal dts As vUsuario)
 
-    '    Try
-    '        conectado()
-    '        cmd = New SqlCommand("mostrar_RolUsuario")
-    '        cmd.CommandType = CommandType.StoredProcedure
-    '        cmd.Connection = cnn
-    '        If cmd.ExecuteNonQuery Then
-    '            Dim dt As New DataTable
-    '            Dim da As New SqlDataAdapter(cmd)
-    '            da.Fill(dt)
-    '            Return dt
-    '        Else
-    '            Return Nothing
-    '        End If
-    '    Catch ex As Exception
-    '        MsgBox(ex.Message)
-    '        Return Nothing
-    '    Finally
-    '        desconectado()
-    '    End Try
-    'End Function
+        Dim cmd = New SqlCommand("validar_usuario", cnn)
+        cmd.CommandType = CommandType.StoredProcedure
+
+        cmd.Parameters.AddWithValue("@login", dts.glogin)
+        cmd.Parameters.AddWithValue("@password", dts.gpassword)
+
+        Dim da = New SqlDataAdapter(cmd)
+        Dim ds = New DataTable()
+        da.Fill(ds)
+
+        If (ds.Rows.Count > 0) Then
+            Dim row = ds.Rows(0)
+            Dim a As String
+            a = Convert.ToString(row("rol"))
+            Return a
+        End If
+
+
+
+    End Function
 
     Public Function insertar(ByVal dts As vUsuario) As Boolean
         Try

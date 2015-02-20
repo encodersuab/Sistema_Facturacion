@@ -86,7 +86,6 @@ Public Class frmInicioF
     Private m_ChildFormNumber As Integer
 
     Private Sub frmInicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        frmLogin.lbROL.Text = lbrol.Text
 
     End Sub
 

@@ -158,7 +158,7 @@ Partial Class frmLogin
         'lbROL
         '
         Me.lbROL.AutoSize = True
-        Me.lbROL.Location = New System.Drawing.Point(440, 233)
+        Me.lbROL.Location = New System.Drawing.Point(424, 233)
         Me.lbROL.Name = "lbROL"
         Me.lbROL.Size = New System.Drawing.Size(39, 13)
         Me.lbROL.TabIndex = 2
