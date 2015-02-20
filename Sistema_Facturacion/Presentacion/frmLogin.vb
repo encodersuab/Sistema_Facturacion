@@ -33,6 +33,7 @@
 
                 rol = func.mostrarROL(dts)
 
+                frmInicioF.lbUsurio.Text = txtLogin.Text
                 frmInicioF.lbrol.Text = rol.ToString
 
                 frmInicioF.Show()

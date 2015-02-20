@@ -86,7 +86,13 @@ Public Class frmInicioF
     Private m_ChildFormNumber As Integer
 
     Private Sub frmInicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        If lbrol.Text = "UsuarioEMFOPESBE" Then
+            ToolStripMenuItem1.Enabled = False
+            RegistroToolStripMenuItem.Enabled = False
+        End If
+        If lbrol.Text = "AdministradorEMFOPESBE" Then
+            ToolStripMenuItem1.Enabled = False
+        End If
     End Sub
 
     Private Sub CategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs)

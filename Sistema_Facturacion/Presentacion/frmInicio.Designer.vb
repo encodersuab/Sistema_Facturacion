@@ -81,6 +81,7 @@ Partial Class frmInicioF
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.lbrol = New System.Windows.Forms.Label()
+        Me.lbUsurio = New System.Windows.Forms.Label()
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -460,17 +461,28 @@ Partial Class frmInicioF
         '
         Me.lbrol.AutoSize = True
         Me.lbrol.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbrol.Location = New System.Drawing.Point(12, 58)
+        Me.lbrol.Location = New System.Drawing.Point(12, 78)
         Me.lbrol.Name = "lbrol"
         Me.lbrol.Size = New System.Drawing.Size(57, 20)
         Me.lbrol.TabIndex = 9
         Me.lbrol.Text = "Label1"
+        '
+        'lbUsurio
+        '
+        Me.lbUsurio.AutoSize = True
+        Me.lbUsurio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbUsurio.Location = New System.Drawing.Point(12, 58)
+        Me.lbUsurio.Name = "lbUsurio"
+        Me.lbUsurio.Size = New System.Drawing.Size(57, 20)
+        Me.lbUsurio.TabIndex = 11
+        Me.lbUsurio.Text = "Label0"
         '
         'frmInicioF
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1030, 508)
+        Me.Controls.Add(Me.lbUsurio)
         Me.Controls.Add(Me.lbrol)
         Me.Controls.Add(Me.ToolStrip)
         Me.Controls.Add(Me.MenuStrip)
@@ -546,5 +558,6 @@ Partial Class frmInicioF
     Friend WithEvents ToolStripMenuItem10 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem11 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents lbrol As System.Windows.Forms.Label
+    Friend WithEvents lbUsurio As System.Windows.Forms.Label
 
 End Class

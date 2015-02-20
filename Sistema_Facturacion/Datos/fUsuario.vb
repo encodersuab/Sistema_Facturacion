@@ -94,9 +94,9 @@ Public Class fUsuario
             Dim a As String
             a = Convert.ToString(row("rol"))
             Return a
+        Else
+            Return False
         End If
-
-
 
     End Function
 
