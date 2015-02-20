@@ -34,8 +34,8 @@ Partial Public Class frmDetalleVenta
         txtIdProducto.Text = ""
         txtNombreProducto.Text = ""
         txtPrecioUnitario.Text = ""
-        txtCantidad.Text = 1
-        txtStock.Text = 1
+        txtCantidad.Text = 0
+        txtStock.Text = 0
 
 
 

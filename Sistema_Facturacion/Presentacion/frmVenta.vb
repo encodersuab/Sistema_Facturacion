@@ -202,7 +202,7 @@
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
-        cargar_detalle()
+        'cargar_detalle()
 
     End Sub
 

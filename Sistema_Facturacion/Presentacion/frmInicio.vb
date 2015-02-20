@@ -160,4 +160,9 @@ Public Class frmInicioF
     Private Sub MenuStrip_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip.ItemClicked
 
     End Sub
+
+    Private Sub VentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentaToolStripMenuItem.Click
+        frmVenta.MdiParent = Me
+        frmVenta.Show()
+    End Sub
 End Class

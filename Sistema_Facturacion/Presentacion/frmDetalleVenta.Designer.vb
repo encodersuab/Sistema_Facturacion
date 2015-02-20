@@ -274,22 +274,20 @@ Partial Class frmDetalleVenta
         '
         'txtStock
         '
+        Me.txtStock.Enabled = False
         Me.txtStock.Location = New System.Drawing.Point(144, 228)
-        Me.txtStock.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
-        Me.txtStock.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
         Me.txtStock.Name = "txtStock"
         Me.txtStock.Size = New System.Drawing.Size(173, 20)
         Me.txtStock.TabIndex = 29
-        Me.txtStock.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'txtCantidad
         '
         Me.txtCantidad.Location = New System.Drawing.Point(144, 206)
-        Me.txtCantidad.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(173, 20)
         Me.txtCantidad.TabIndex = 28
-        Me.txtCantidad.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'txtPrecioUnitario
         '
