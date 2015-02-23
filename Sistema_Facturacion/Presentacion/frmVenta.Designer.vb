@@ -25,11 +25,11 @@ Partial Class frmVenta
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
-        Me.txtBuscar = New System.Windows.Forms.TextBox()
-        Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.cbTipoDoc = New System.Windows.Forms.ComboBox()
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
         Me.btnBuscarCliente = New System.Windows.Forms.Button()
@@ -47,8 +47,6 @@ Partial Class frmVenta
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -58,8 +56,6 @@ Partial Class frmVenta
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Inexistente)
-        Me.GroupBox2.Controls.Add(Me.txtBuscar)
-        Me.GroupBox2.Controls.Add(Me.cbxListadoClientes)
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(413, 25)
         Me.GroupBox2.Name = "GroupBox2"
@@ -78,34 +74,17 @@ Partial Class frmVenta
         Me.Inexistente.TabStop = True
         Me.Inexistente.Text = "Datos Inexistentes"
         '
-        'txtBuscar
-        '
-        Me.txtBuscar.Location = New System.Drawing.Point(162, 45)
-        Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(228, 20)
-        Me.txtBuscar.TabIndex = 2
-        '
-        'cbxListadoClientes
-        '
-        Me.cbxListadoClientes.FormattingEnabled = True
-        Me.cbxListadoClientes.Items.AddRange(New Object() {"NumeroDocumento", "CI"})
-        Me.cbxListadoClientes.Location = New System.Drawing.Point(35, 45)
-        Me.cbxListadoClientes.Name = "cbxListadoClientes"
-        Me.cbxListadoClientes.Size = New System.Drawing.Size(121, 21)
-        Me.cbxListadoClientes.TabIndex = 1
-        Me.cbxListadoClientes.Text = "NumeroDocumento"
-        '
         'datalistado
         '
         Me.datalistado.AllowUserToAddRows = False
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(35, 79)
+        Me.datalistado.Location = New System.Drawing.Point(35, 40)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(444, 181)
+        Me.datalistado.Size = New System.Drawing.Size(444, 220)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -140,6 +119,22 @@ Partial Class frmVenta
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(44, 183)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(83, 13)
+        Me.Label6.TabIndex = 21
+        Me.Label6.Text = "Nombre Factura"
+        '
+        'txtNombreFac
+        '
+        Me.txtNombreFac.Location = New System.Drawing.Point(144, 180)
+        Me.txtNombreFac.Name = "txtNombreFac"
+        Me.txtNombreFac.Size = New System.Drawing.Size(166, 20)
+        Me.txtNombreFac.TabIndex = 20
         '
         'cbTipoDoc
         '
@@ -284,22 +279,6 @@ Partial Class frmVenta
         '
         Me.erroricono.ContainerControl = Me
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(44, 183)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(83, 13)
-        Me.Label6.TabIndex = 21
-        Me.Label6.Text = "Nombre Factura"
-        '
-        'txtNombreFac
-        '
-        Me.txtNombreFac.Location = New System.Drawing.Point(144, 180)
-        Me.txtNombreFac.Name = "txtNombreFac"
-        Me.txtNombreFac.Size = New System.Drawing.Size(166, 20)
-        Me.txtNombreFac.TabIndex = 20
-        '
         'frmVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -320,8 +299,6 @@ Partial Class frmVenta
     End Sub
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
-    Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
-    Friend WithEvents cbxListadoClientes As System.Windows.Forms.ComboBox
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox

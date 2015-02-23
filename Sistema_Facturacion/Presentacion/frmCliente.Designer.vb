@@ -42,12 +42,12 @@ Partial Class frmCliente
         Me.txtIdCliente = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
-        Me.txtBuscar = New System.Windows.Forms.TextBox()
-        Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtFlag = New System.Windows.Forms.TextBox()
+        Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -235,23 +235,6 @@ Partial Class frmCliente
         Me.Inexistente.TabStop = True
         Me.Inexistente.Text = "Datos Inexistentes"
         '
-        'txtBuscar
-        '
-        Me.txtBuscar.Location = New System.Drawing.Point(221, 25)
-        Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(287, 20)
-        Me.txtBuscar.TabIndex = 2
-        '
-        'cbxListadoClientes
-        '
-        Me.cbxListadoClientes.FormattingEnabled = True
-        Me.cbxListadoClientes.Items.AddRange(New Object() {"Nombre", "Apellidos", "CI"})
-        Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 25)
-        Me.cbxListadoClientes.Name = "cbxListadoClientes"
-        Me.cbxListadoClientes.Size = New System.Drawing.Size(186, 21)
-        Me.cbxListadoClientes.TabIndex = 1
-        Me.cbxListadoClientes.Text = "Nombre"
-        '
         'datalistado
         '
         Me.datalistado.AllowUserToAddRows = False
@@ -283,6 +266,23 @@ Partial Class frmCliente
         Me.txtFlag.TabIndex = 16
         Me.txtFlag.Text = "0"
         Me.txtFlag.Visible = False
+        '
+        'cbxListadoClientes
+        '
+        Me.cbxListadoClientes.FormattingEnabled = True
+        Me.cbxListadoClientes.Items.AddRange(New Object() {"Nombre", "Apellidos", "CI"})
+        Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 25)
+        Me.cbxListadoClientes.Name = "cbxListadoClientes"
+        Me.cbxListadoClientes.Size = New System.Drawing.Size(186, 21)
+        Me.cbxListadoClientes.TabIndex = 1
+        Me.cbxListadoClientes.Text = "Nombre"
+        '
+        'txtBuscar
+        '
+        Me.txtBuscar.Location = New System.Drawing.Point(221, 25)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(287, 20)
+        Me.txtBuscar.TabIndex = 2
         '
         'frmCliente
         '
@@ -324,10 +324,10 @@ Partial Class frmCliente
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
-    Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
-    Friend WithEvents cbxListadoClientes As System.Windows.Forms.ComboBox
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents txtFlag As System.Windows.Forms.TextBox
+    Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
+    Friend WithEvents cbxListadoClientes As System.Windows.Forms.ComboBox
 End Class

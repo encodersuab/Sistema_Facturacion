@@ -23,12 +23,12 @@
 
             If dt.Rows.Count <> 0 Then
                 datalistado.DataSource = dt
-                txtBuscar.Enabled = True
+                '           txtBuscar.Enabled = True
                 datalistado.ColumnHeadersVisible = True
                 Inexistente.Visible = False
             Else
                 datalistado.DataSource = Nothing
-                txtBuscar.Enabled = False
+                '          txtBuscar.Enabled = False
                 datalistado.ColumnHeadersVisible = True
                 Inexistente.Visible = True
             End If
@@ -39,33 +39,33 @@
         btnNuevo.Visible = True
         btnEditar.Visible = False
 
-        Buscar()
+        '       Buscar()
 
     End Sub
 
-    Private Sub Buscar()
+    'Private Sub Buscar()
 
-        Try
-            Dim ds As New DataSet
-            ds.Tables.Add(dt.Copy)
-            Dim dv As New DataView(ds.Tables(0))
+    '    Try
+    '        Dim ds As New DataSet
+    '        ds.Tables.Add(dt.Copy)
+    '        Dim dv As New DataView(ds.Tables(0))
 
-            dv.RowFilter = cbxListadoClientes.Text & " Like '" & txtBuscar.Text & "%'"
+    '        dv.RowFilter = cbxListadoClientes.Text & " Like '" & txtBuscar.Text & "%'"
 
-            If dv.Count <> 0 Then
-                Inexistente.Visible = False
-                datalistado.DataSource = dv
-                ocultar_columnas()
-            Else
-                Inexistente.Visible = True
-                datalistado.DataSource = Nothing
-            End If
+    '        If dv.Count <> 0 Then
+    '            Inexistente.Visible = False
+    '            datalistado.DataSource = dv
+    '            ocultar_columnas()
+    '        Else
+    '            Inexistente.Visible = True
+    '            datalistado.DataSource = Nothing
+    '        End If
 
 
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-    End Sub
+    '    Catch ex As Exception
+    '        MsgBox(ex.Message)
+    '    End Try
+    'End Sub
 
     Private Sub ocultar_columnas()
         'datalistado.Columns(1).Visible = False
@@ -93,9 +93,11 @@
                 dts.Gnombre_fac = txtNombreFac.Text
                 If func.insertar(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
                     mostrar()
-                    limpiar()
                     cargar_detalle()
+                    limpiar()
+
 
                 Else
                     MessageBox.Show("venta no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -168,11 +170,10 @@
     End Sub
 
     Private Sub datalistado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellContentClick
-        If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then
-            Dim chkcell As DataGridViewCheckBoxCell = Me.datalistado.Rows(e.RowIndex).Cells("Eliminar")
-            chkcell.Value = Not chkcell.Value
-
-        End If
+        'If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then
+        '    Dim chkcell As DataGridViewCheckBoxCell = Me.datalistado.Rows(e.RowIndex).Cells("Eliminar")
+        '    chkcell.Value = Not chkcell.Value
+        'End If
     End Sub
 
    
@@ -184,8 +185,8 @@
         'End If
     End Sub
 
-    Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
-        Buscar()
+    Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs)
+        'Buscar()
 
     End Sub
 
@@ -197,7 +198,13 @@
         frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
         frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
         frmDetalleVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
-
+        'frmDetalleVenta.txtidCliente.Text = txtidCliente.Text
+        'frmDetalleVenta.txtIdVenta.Text = txtIdVenta.Text
+        'frmDetalleVenta.txtNombreCLiente.Text = txtNombreCLiente.Text
+        'frmDetalleVenta.dtpFecha.Text = dtpFecha.Text
+        'frmDetalleVenta.cbTipoDoc.Text = cbTipoDoc.Text
+        'frmDetalleVenta.txtNumDoc.Text = txtNumDoc.Text
+        'frmDetalleVenta.txtNombreFac.Text = txtNombreFac.Text
 
         frmDetalleVenta.ShowDialog()
 

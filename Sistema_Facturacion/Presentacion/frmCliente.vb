@@ -229,15 +229,15 @@
     End Sub
 
     Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick
-        txtIdCliente.Text = datalistado.SelectedCells.Item(1).Value
-        txtNombre.Text = datalistado.SelectedCells.Item(2).Value
-        txtApellido.Text = datalistado.SelectedCells.Item(3).Value
-        txtDireccion.Text = datalistado.SelectedCells.Item(4).Value
-        txtTelefono.Text = datalistado.SelectedCells.Item(5).Value
-        txtCi.Text = datalistado.SelectedCells.Item(6).Value
+        'txtIdCliente.Text = datalistado.SelectedCells.Item(1).Value
+        'txtNombre.Text = datalistado.SelectedCells.Item(2).Value
+        'txtApellido.Text = datalistado.SelectedCells.Item(3).Value
+        'txtDireccion.Text = datalistado.SelectedCells.Item(4).Value
+        'txtTelefono.Text = datalistado.SelectedCells.Item(5).Value
+        'txtCi.Text = datalistado.SelectedCells.Item(6).Value
 
-        btnEditar.Visible = True
-        btnGuardar.Visible = False
+        'btnEditar.Visible = True
+        'btnGuardar.Visible = False
 
 
     End Sub
@@ -277,6 +277,10 @@
     End Sub
 
     Private Sub Inexistente_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Inexistente.LinkClicked
+
+    End Sub
+
+    Private Sub cbxListadoClientes_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 End Class
