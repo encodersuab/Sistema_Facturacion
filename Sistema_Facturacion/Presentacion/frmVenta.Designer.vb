@@ -47,6 +47,8 @@ Partial Class frmVenta
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -114,6 +116,8 @@ Partial Class frmVenta
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.cbTipoDoc)
         Me.GroupBox1.Controls.Add(Me.dtpFecha)
         Me.GroupBox1.Controls.Add(Me.btnBuscarCliente)
@@ -280,6 +284,22 @@ Partial Class frmVenta
         '
         Me.erroricono.ContainerControl = Me
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(44, 183)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(83, 13)
+        Me.Label6.TabIndex = 21
+        Me.Label6.Text = "Nombre Factura"
+        '
+        'txtNombreFac
+        '
+        Me.txtNombreFac.Location = New System.Drawing.Point(144, 180)
+        Me.txtNombreFac.Name = "txtNombreFac"
+        Me.txtNombreFac.Size = New System.Drawing.Size(166, 20)
+        Me.txtNombreFac.TabIndex = 20
+        '
         'frmVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -322,4 +342,6 @@ Partial Class frmVenta
     Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents btnBuscarCliente As System.Windows.Forms.Button
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
 End Class

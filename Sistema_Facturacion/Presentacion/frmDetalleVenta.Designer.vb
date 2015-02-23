@@ -66,6 +66,8 @@ Partial Class frmDetalleVenta
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -211,6 +213,8 @@ Partial Class frmDetalleVenta
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label12)
+        Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.txtnituab)
         Me.GroupBox1.Controls.Add(Me.btnimprimir)
@@ -266,7 +270,7 @@ Partial Class frmDetalleVenta
         '
         Me.btnimprimir.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.images__3_
         Me.btnimprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnimprimir.Location = New System.Drawing.Point(112, 357)
+        Me.btnimprimir.Location = New System.Drawing.Point(149, 357)
         Me.btnimprimir.Name = "btnimprimir"
         Me.btnimprimir.Size = New System.Drawing.Size(67, 74)
         Me.btnimprimir.TabIndex = 30
@@ -275,7 +279,7 @@ Partial Class frmDetalleVenta
         'txtStock
         '
         Me.txtStock.Enabled = False
-        Me.txtStock.Location = New System.Drawing.Point(144, 228)
+        Me.txtStock.Location = New System.Drawing.Point(144, 255)
         Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
         Me.txtStock.Name = "txtStock"
         Me.txtStock.Size = New System.Drawing.Size(173, 20)
@@ -283,7 +287,7 @@ Partial Class frmDetalleVenta
         '
         'txtCantidad
         '
-        Me.txtCantidad.Location = New System.Drawing.Point(144, 206)
+        Me.txtCantidad.Location = New System.Drawing.Point(144, 233)
         Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(173, 20)
@@ -291,7 +295,7 @@ Partial Class frmDetalleVenta
         '
         'txtPrecioUnitario
         '
-        Me.txtPrecioUnitario.Location = New System.Drawing.Point(144, 253)
+        Me.txtPrecioUnitario.Location = New System.Drawing.Point(144, 280)
         Me.txtPrecioUnitario.Name = "txtPrecioUnitario"
         Me.txtPrecioUnitario.Size = New System.Drawing.Size(173, 20)
         Me.txtPrecioUnitario.TabIndex = 27
@@ -299,7 +303,7 @@ Partial Class frmDetalleVenta
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(44, 256)
+        Me.Label9.Location = New System.Drawing.Point(44, 283)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(78, 13)
         Me.Label9.TabIndex = 26
@@ -308,7 +312,7 @@ Partial Class frmDetalleVenta
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(48, 228)
+        Me.Label8.Location = New System.Drawing.Point(44, 257)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 13)
         Me.Label8.TabIndex = 25
@@ -317,7 +321,7 @@ Partial Class frmDetalleVenta
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(39, 203)
+        Me.Label7.Location = New System.Drawing.Point(44, 235)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 13)
         Me.Label7.TabIndex = 24
@@ -325,7 +329,7 @@ Partial Class frmDetalleVenta
         '
         'btnBuscarProducto
         '
-        Me.btnBuscarProducto.Location = New System.Drawing.Point(323, 176)
+        Me.btnBuscarProducto.Location = New System.Drawing.Point(323, 203)
         Me.btnBuscarProducto.Name = "btnBuscarProducto"
         Me.btnBuscarProducto.Size = New System.Drawing.Size(29, 26)
         Me.btnBuscarProducto.TabIndex = 23
@@ -334,7 +338,7 @@ Partial Class frmDetalleVenta
         '
         'txtNombreProducto
         '
-        Me.txtNombreProducto.Location = New System.Drawing.Point(170, 180)
+        Me.txtNombreProducto.Location = New System.Drawing.Point(170, 207)
         Me.txtNombreProducto.Name = "txtNombreProducto"
         Me.txtNombreProducto.Size = New System.Drawing.Size(147, 20)
         Me.txtNombreProducto.TabIndex = 22
@@ -342,7 +346,7 @@ Partial Class frmDetalleVenta
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(44, 183)
+        Me.Label6.Location = New System.Drawing.Point(44, 210)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(50, 13)
         Me.Label6.TabIndex = 21
@@ -350,13 +354,14 @@ Partial Class frmDetalleVenta
         '
         'txtIdProducto
         '
-        Me.txtIdProducto.Location = New System.Drawing.Point(144, 180)
+        Me.txtIdProducto.Location = New System.Drawing.Point(144, 207)
         Me.txtIdProducto.Name = "txtIdProducto"
         Me.txtIdProducto.Size = New System.Drawing.Size(20, 20)
         Me.txtIdProducto.TabIndex = 20
         '
         'cbTipoDoc
         '
+        Me.cbTipoDoc.Enabled = False
         Me.cbTipoDoc.FormattingEnabled = True
         Me.cbTipoDoc.Items.AddRange(New Object() {"Factura"})
         Me.cbTipoDoc.Location = New System.Drawing.Point(144, 128)
@@ -383,7 +388,7 @@ Partial Class frmDetalleVenta
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(112, 295)
+        Me.btnGuardar.Location = New System.Drawing.Point(149, 306)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 35)
         Me.btnGuardar.TabIndex = 15
@@ -392,7 +397,7 @@ Partial Class frmDetalleVenta
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(197, 304)
+        Me.btncancelar.Location = New System.Drawing.Point(234, 315)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -401,7 +406,7 @@ Partial Class frmDetalleVenta
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(28, 304)
+        Me.btnNuevo.Location = New System.Drawing.Point(65, 315)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -419,6 +424,7 @@ Partial Class frmDetalleVenta
         '
         'txtNumDoc
         '
+        Me.txtNumDoc.Enabled = False
         Me.txtNumDoc.Location = New System.Drawing.Point(144, 154)
         Me.txtNumDoc.Name = "txtNumDoc"
         Me.txtNumDoc.Size = New System.Drawing.Size(173, 20)
@@ -479,6 +485,23 @@ Partial Class frmDetalleVenta
         'erroricono
         '
         Me.erroricono.ContainerControl = Me
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(44, 183)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(83, 13)
+        Me.Label12.TabIndex = 34
+        Me.Label12.Text = "Nombre Factura"
+        '
+        'txtNombreFac
+        '
+        Me.txtNombreFac.Enabled = False
+        Me.txtNombreFac.Location = New System.Drawing.Point(144, 180)
+        Me.txtNombreFac.Name = "txtNombreFac"
+        Me.txtNombreFac.Size = New System.Drawing.Size(173, 20)
+        Me.txtNombreFac.TabIndex = 33
         '
         'frmDetalleVenta
         '
@@ -543,4 +566,6 @@ Partial Class frmDetalleVenta
     Friend WithEvents lbnumAutor As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
 End Class

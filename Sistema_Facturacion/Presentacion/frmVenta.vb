@@ -90,7 +90,7 @@
                 dts.Gfecha_venta = dtpFecha.Value.Date.ToString
                 dts.Gtipo_documento = cbTipoDoc.Text
                 dts.Gnum_documento = txtNumDoc.Text
-
+                dts.Gnombre_fac = txtNombreFac.Text
                 If func.insertar(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     mostrar()
@@ -130,6 +130,7 @@
                     dts.Gfecha_venta = dtpFecha.Text
                     dts.Gtipo_documento = cbTipoDoc.Text
                     dts.Gnum_documento = txtNumDoc.Text
+                    dts.Gnombre_fac = txtNombreFac.Text
 
                     If func.editar(dts) Then
                         MessageBox.Show("cliente modificado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -195,6 +196,7 @@
         frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
         frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
         frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
+        frmDetalleVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
 
 
         frmDetalleVenta.ShowDialog()

@@ -39,7 +39,7 @@ Public Class fVenta
             cmd.Parameters.AddWithValue("@fecha_venta", dts.Gfecha_venta)
             cmd.Parameters.AddWithValue("@tipo_documento", dts.Gtipo_documento)
             cmd.Parameters.AddWithValue("@num_documento", dts.Gnum_documento)
-
+            cmd.Parameters.AddWithValue("@nombre_fac", dts.Gnombre_fac)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -65,7 +65,7 @@ Public Class fVenta
             cmd.Parameters.AddWithValue("@fecha_venta", dts.Gfecha_venta)
             cmd.Parameters.AddWithValue("@tipo_documento", dts.Gtipo_documento)
             cmd.Parameters.AddWithValue("@num_documento", dts.Gnum_documento)
-
+            cmd.Parameters.AddWithValue("@nombre_fac", dts.Gnombre_fac)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
