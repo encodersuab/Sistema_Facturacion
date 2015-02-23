@@ -26,6 +26,37 @@ Public Class fQr
 
         End Try
     End Function
+    Public Function mostrarUltimoQR() As Integer
+        Try
+            conectado()
+            cmd = New SqlCommand("mostrar_ultimo_qr")
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Connection = cnn
+            Dim da As New SqlDataAdapter(cmd)
+            Dim ds As New DataTable
+
+            da.Fill(ds)
+
+            If (ds.Rows.Count > 0) Then
+                Dim row = ds.Rows(0)
+                Dim a As Integer
+                a = row("IDCodQr")
+                Return a
+
+            End If
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            desconectado()
+
+        End Try
+    End Function
+
+
 
     Public Function insertar(ByVal dts As vQr) As Boolean
         Try

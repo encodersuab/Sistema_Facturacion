@@ -368,13 +368,18 @@ Partial Public Class frmDetalleVenta
         lbCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
         ''''''''''''''''''''''''''''''''''
         Try
+
+
             Dim ms As New IO.MemoryStream()
             Dim dts As New vQr
             Dim func As New fQr
-            Dim f As String
+            Dim f, aux As String
+
+            aux = func.mostrarUltimoQR.ToString + 1
+
             f = dtpFecha.Value.Date
             QrCodeImgControl1.Visible = True
-            QrCodeImgControl1.Text = txtnituab.Text + "|" + txtIdVenta.Text + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
+            QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
             QrCodeImgControl1.Enabled = True
             QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
 
@@ -384,7 +389,7 @@ Partial Public Class frmDetalleVenta
             ' ''''''''''''' 
             dts.gfecha_emision = f.ToString
             dts.gNit_Emisor = txtnituab.Text
-            dts.gNum_Factura = txtIdVenta.Text
+            dts.gNum_Factura = aux
             dts.gNum_Autorizacion = lbnumAutor.Text
             dts.gTotal = txttotal.Text
             dts.gCodigo_Control = lbCC.Text
@@ -440,4 +445,27 @@ Partial Public Class frmDetalleVenta
     Private Sub lbllave_Click(sender As Object, e As EventArgs) Handles lbllave.Click
 
     End Sub
+
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        Dim dts As New vDetalleVenta
+        Dim func As New fDetalleVenta
+        dts.gidventa = txtIdVenta.Text
+        func.eliminar(dts)
+
+
+        Dim dtsDV As New vVenta
+        Dim funcDV As New fVenta
+        dtsDV.Gidventa = txtIdVenta.Text
+
+        funcDV.eliminar(dtsDV)
+        Me.Close()
+
+    End Sub
+
+
+    ''''''''''''''
+
+    '''''''''''
 End Class

@@ -38,6 +38,8 @@ Partial Class frmDetalleVenta
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtnituab = New System.Windows.Forms.TextBox()
         Me.btnimprimir = New System.Windows.Forms.Button()
@@ -66,8 +68,7 @@ Partial Class frmDetalleVenta
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.txtNombreFac = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -155,7 +156,7 @@ Partial Class frmDetalleVenta
         '
         Me.QrCodeImgControl1.ErrorCorrectLevel = Gma.QrCodeNet.Encoding.ErrorCorrectionLevel.M
         Me.QrCodeImgControl1.Image = CType(resources.GetObject("QrCodeImgControl1.Image"), System.Drawing.Image)
-        Me.QrCodeImgControl1.Location = New System.Drawing.Point(422, 16)
+        Me.QrCodeImgControl1.Location = New System.Drawing.Point(322, 16)
         Me.QrCodeImgControl1.Name = "QrCodeImgControl1"
         Me.QrCodeImgControl1.QuietZoneModule = Gma.QrCodeNet.Encoding.Windows.Render.QuietZoneModules.Two
         Me.QrCodeImgControl1.Size = New System.Drawing.Size(61, 54)
@@ -248,6 +249,23 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(44, 183)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(83, 13)
+        Me.Label12.TabIndex = 34
+        Me.Label12.Text = "Nombre Factura"
+        '
+        'txtNombreFac
+        '
+        Me.txtNombreFac.Enabled = False
+        Me.txtNombreFac.Location = New System.Drawing.Point(144, 180)
+        Me.txtNombreFac.Name = "txtNombreFac"
+        Me.txtNombreFac.Size = New System.Drawing.Size(173, 20)
+        Me.txtNombreFac.TabIndex = 33
         '
         'Label10
         '
@@ -486,28 +504,21 @@ Partial Class frmDetalleVenta
         '
         Me.erroricono.ContainerControl = Me
         '
-        'Label12
+        'Button2
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(44, 183)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(83, 13)
-        Me.Label12.TabIndex = 34
-        Me.Label12.Text = "Nombre Factura"
-        '
-        'txtNombreFac
-        '
-        Me.txtNombreFac.Enabled = False
-        Me.txtNombreFac.Location = New System.Drawing.Point(144, 180)
-        Me.txtNombreFac.Name = "txtNombreFac"
-        Me.txtNombreFac.Size = New System.Drawing.Size(173, 20)
-        Me.txtNombreFac.TabIndex = 33
+        Me.Button2.Location = New System.Drawing.Point(985, 39)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 54)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "Cancelar Venta"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1032, 498)
+        Me.ClientSize = New System.Drawing.Size(1072, 498)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmDetalleVenta"
@@ -568,4 +579,5 @@ Partial Class frmDetalleVenta
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

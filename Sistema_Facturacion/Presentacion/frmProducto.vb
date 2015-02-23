@@ -2,6 +2,14 @@
 
     Private dt As New DataTable
     Private Sub frmProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If frmInicioF.lbrol.Text = "UsuarioEMFOPESBE" Then
+            btnEditar.Enabled = False
+            btnNuevo.Enabled = False
+
+        End If
+
+
+
         mostrar()
 
     End Sub

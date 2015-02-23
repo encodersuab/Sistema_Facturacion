@@ -89,7 +89,7 @@ Public Class fDetalleVenta
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-            cmd.Parameters.Add("@iddetalle_venta", SqlDbType.NVarChar, 50).Value = dts.giddedatlle_venta
+            cmd.Parameters.Add("@idventa", SqlDbType.NVarChar, 50).Value = dts.gidventa
             If cmd.ExecuteNonQuery Then
                 Return True
             Else

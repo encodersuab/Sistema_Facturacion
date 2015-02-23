@@ -120,19 +120,19 @@ Partial Class frmInicioF
         'ClienteToolStripMenuItem
         '
         Me.ClienteToolStripMenuItem.Name = "ClienteToolStripMenuItem"
-        Me.ClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ClienteToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.ClienteToolStripMenuItem.Text = "Cliente"
         '
         'ProductoToolStripMenuItem1
         '
         Me.ProductoToolStripMenuItem1.Name = "ProductoToolStripMenuItem1"
-        Me.ProductoToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ProductoToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.ProductoToolStripMenuItem1.Text = "Producto"
         '
         'CategoriaToolStripMenuItem1
         '
         Me.CategoriaToolStripMenuItem1.Name = "CategoriaToolStripMenuItem1"
-        Me.CategoriaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.CategoriaToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.CategoriaToolStripMenuItem1.Text = "Categoria"
         '
         'VentaToolStripMenuItem
