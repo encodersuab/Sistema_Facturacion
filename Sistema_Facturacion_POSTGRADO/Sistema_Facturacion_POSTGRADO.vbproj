@@ -231,12 +231,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sistema_Facturacion\Sistema_Facturacion_EMFOPESBE.vbproj">
-      <Project>{f9addcc0-a425-47f9-a72e-3e34538bae92}</Project>
-      <Name>Sistema_Facturacion_EMFOPESBE</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\descarga %284%29.jpg" />
   </ItemGroup>
   <ItemGroup>

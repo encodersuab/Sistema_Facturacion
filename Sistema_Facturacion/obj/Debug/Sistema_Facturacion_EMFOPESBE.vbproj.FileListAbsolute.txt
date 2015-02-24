@@ -20,3 +20,12 @@ D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\D
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion.xml
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Gma.QrCodeNet.Encoding.pdb
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Gma.QrCodeNet.Encoding.xml
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion_FEXPOBENI.exe
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion_POSTGRADO.exe
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion_REDRUBI.exe
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion_FEXPOBENI.pdb
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion_FEXPOBENI.xml
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion_POSTGRADO.pdb
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion_POSTGRADO.xml
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion_REDRUBI.pdb
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion_REDRUBI.xml

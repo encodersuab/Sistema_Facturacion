@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sistema_Facturacion_EMFOPESBE", "Sistema_Facturacion\Sistema_Facturacion_EMFOPESBE.vbproj", "{F9ADDCC0-A425-47F9-A72E-3E34538BAE92}"
+	ProjectSection(ProjectDependencies) = postProject
+		{06119F73-AF7F-414B-9A85-9D7642D7E583} = {06119F73-AF7F-414B-9A85-9D7642D7E583}
+		{19EAF0D1-AF5A-42D5-85D4-C2FC3389905C} = {19EAF0D1-AF5A-42D5-85D4-C2FC3389905C}
+	EndProjectSection
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sistema_Facturacion_POSTGRADO", "Sistema_Facturacion_POSTGRADO\Sistema_Facturacion_POSTGRADO.vbproj", "{3FEC8A54-D185-420C-8D97-8CA9BA9BD96C}"
 EndProject

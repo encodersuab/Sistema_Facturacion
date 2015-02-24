@@ -1,5 +1,7 @@
 ﻿Imports System.Windows.Forms
-
+Imports Sistema_Facturacion_FEXPOBENI
+Imports Sistema_Facturacion_POSTGRADO
+Imports Sistema_Facturacion_REDRUBI
 Public Class frmInicioF
 
     Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripButton.Click
@@ -93,6 +95,13 @@ Public Class frmInicioF
         If lbrol.Text = "AdministradorEMFOPESBE" Then
             ToolStripMenuItem1.Enabled = False
         End If
+        If lbrol.Text = "UsuarioCANAL11" Then
+            EMFOPESBEToolStripMenuItem.Enabled = False
+            ToolStripMenuItem2.Enabled = False
+        End If
+        If lbrol.Text = "AdministradorCANAL11" Then
+            EMFOPESBEToolStripMenuItem.Enabled = False
+        End If
     End Sub
 
     Private Sub CategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs)
@@ -172,5 +181,25 @@ Public Class frmInicioF
 
     Private Sub RegistroToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistroToolStripMenuItem.Click
 
+    End Sub
+
+    Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
+        Dim a As New Sistema_Facturacion_REDRUBI.frmCliente
+        a.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+        Dim a As New Sistema_Facturacion_REDRUBI.frmProducto
+        a.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
+        Dim a As New Sistema_Facturacion_REDRUBI.frmCategoria
+        a.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem6_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem6.Click
+        Dim a As New Sistema_Facturacion_REDRUBI.frmVenta
+        a.Show()
     End Sub
 End Class

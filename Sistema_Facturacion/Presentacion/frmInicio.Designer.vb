@@ -120,19 +120,19 @@ Partial Class frmInicioF
         'ClienteToolStripMenuItem
         '
         Me.ClienteToolStripMenuItem.Name = "ClienteToolStripMenuItem"
-        Me.ClienteToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.ClienteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ClienteToolStripMenuItem.Text = "Cliente"
         '
         'ProductoToolStripMenuItem1
         '
         Me.ProductoToolStripMenuItem1.Name = "ProductoToolStripMenuItem1"
-        Me.ProductoToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
+        Me.ProductoToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ProductoToolStripMenuItem1.Text = "Producto"
         '
         'CategoriaToolStripMenuItem1
         '
         Me.CategoriaToolStripMenuItem1.Name = "CategoriaToolStripMenuItem1"
-        Me.CategoriaToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
+        Me.CategoriaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.CategoriaToolStripMenuItem1.Text = "Categoria"
         '
         'VentaToolStripMenuItem
@@ -182,8 +182,8 @@ Partial Class frmInicioF
         '
         Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2, Me.ToolStripMenuItem6, Me.ToolStripMenuItem7, Me.ToolStripMenuItem11})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(73, 20)
-        Me.ToolStripMenuItem1.Text = "CANAL 11"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(70, 20)
+        Me.ToolStripMenuItem1.Text = "RED-RUBI"
         '
         'ToolStripMenuItem2
         '
@@ -195,19 +195,19 @@ Partial Class frmInicioF
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem3.Text = "Cliente"
         '
         'ToolStripMenuItem4
         '
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem4.Text = "Producto"
         '
         'ToolStripMenuItem5
         '
         Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem5.Text = "Categoria"
         '
         'ToolStripMenuItem6

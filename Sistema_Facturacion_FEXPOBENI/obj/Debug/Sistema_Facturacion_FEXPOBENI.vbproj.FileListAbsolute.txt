@@ -20,3 +20,4 @@ D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion_FEXPO
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion_FEXPOBENI\obj\Debug\Sistema_Facturacion_FEXPOBENI.exe
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion_FEXPOBENI\obj\Debug\Sistema_Facturacion_FEXPOBENI.xml
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion_FEXPOBENI\obj\Debug\Sistema_Facturacion_FEXPOBENI.pdb
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion_FEXPOBENI\obj\Debug\Sistema_Facturacion_FEXPOBENI.vbprojResolveAssemblyReference.cache
