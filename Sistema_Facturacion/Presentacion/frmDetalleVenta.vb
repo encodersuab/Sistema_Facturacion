@@ -419,7 +419,7 @@ Partial Public Class frmDetalleVenta
     End Sub
 
     Private Sub txtnituab_Validated(sender As Object, e As EventArgs) Handles txtnituab.Validated
-        
+
     End Sub
 
     Private Sub cbTipoDoc_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbTipoDoc.SelectedIndexChanged
@@ -427,7 +427,7 @@ Partial Public Class frmDetalleVenta
     End Sub
 
     Private Sub cbTipoDoc_Validated(sender As Object, e As EventArgs) Handles cbTipoDoc.Validated
-        
+
     End Sub
 
     Private Sub txtNumDoc_TextChanged(sender As Object, e As EventArgs) Handles txtNumDoc.TextChanged

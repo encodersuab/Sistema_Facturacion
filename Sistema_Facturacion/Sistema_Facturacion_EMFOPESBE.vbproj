@@ -79,6 +79,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatosPostGrado\fCategoriaPostGrado.vb" />
+    <Compile Include="DatosPostGrado\fClientePostGrado.vb" />
+    <Compile Include="DatosPostGrado\fDetalleVentaPostGrado.vb" />
+    <Compile Include="DatosPostGrado\fProductoPostGrado.vb" />
+    <Compile Include="DatosPostGrado\fUsuarioPostGrado.vb" />
+    <Compile Include="DatosPostGrado\fVentaPostGrado.vb" />
+    <Compile Include="DatosREDRUBI\fCategoriaREDRUBI.vb" />
+    <Compile Include="DatosREDRUBI\fClienteREDRUBI.vb" />
+    <Compile Include="DatosREDRUBI\fDetalleVentaREDRUBI.vb" />
+    <Compile Include="DatosREDRUBI\fProductoREDRUBI.vb" />
+    <Compile Include="DatosREDRUBI\fUsuarioREDRUBI.vb" />
+    <Compile Include="DatosREDRUBI\fVentaREDRUBI.vb" />
     <Compile Include="Datos\fCC.vb" />
     <Compile Include="Datos\Conexion.vb" />
     <Compile Include="Datos\fCategoria.vb" />
@@ -89,6 +101,18 @@
     <Compile Include="Datos\fQr.vb" />
     <Compile Include="Datos\fUsuario.vb" />
     <Compile Include="Datos\fVenta.vb" />
+    <Compile Include="LogicaPostGrado\vCategoriaPostGrado.vb" />
+    <Compile Include="LogicaPostGrado\vClientePostGrado.vb" />
+    <Compile Include="LogicaPostGrado\vDetalleVentaPostGrado.vb" />
+    <Compile Include="LogicaPostGrado\vProductoPostGrado.vb" />
+    <Compile Include="LogicaPostGrado\vUsuarioPostGrado.vb" />
+    <Compile Include="LogicaPostGrado\vVentaPostGrado.vb" />
+    <Compile Include="LogicaREDRUBI\vCategoriaREDRUBI.vb" />
+    <Compile Include="LogicaREDRUBI\vClienteREDRUBI.vb" />
+    <Compile Include="LogicaREDRUBI\vDetalleVentaREDRUBI.vb" />
+    <Compile Include="LogicaREDRUBI\vProductoREDRUBI.vb" />
+    <Compile Include="LogicaREDRUBI\vUsuarioREDRUBI.vb" />
+    <Compile Include="LogicaREDRUBI\vVentaREDRUBI.vb" />
     <Compile Include="Logica\CC.vb" />
     <Compile Include="Logica\vCategoria.vb" />
     <Compile Include="Logica\vCliente.vb" />
@@ -112,6 +136,78 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PresentacionPostGrado\frmCategoriaPostGrado.Designer.vb">
+      <DependentUpon>frmCategoriaPostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionPostGrado\frmCategoriaPostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionPostGrado\frmClientePostGrado.Designer.vb">
+      <DependentUpon>frmClientePostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionPostGrado\frmClientePostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionPostGrado\frmDetalleVentaPostGrado.Designer.vb">
+      <DependentUpon>frmDetalleVentaPostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionPostGrado\frmDetalleVentaPostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionPostGrado\frmProductoPostGrado.Designer.vb">
+      <DependentUpon>frmProductoPostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionPostGrado\frmProductoPostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionPostGrado\frmUsuarioPostGrado.Designer.vb">
+      <DependentUpon>frmUsuarioPostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionPostGrado\frmUsuarioPostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionPostGrado\frmVentaPostGrado.Designer.vb">
+      <DependentUpon>frmVentaPostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionPostGrado\frmVentaPostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionREDRUBI\frmCategoriaREDRUBI.Designer.vb">
+      <DependentUpon>frmCategoriaREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionREDRUBI\frmCategoriaREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionREDRUBI\frmClienteREDRUBI.Designer.vb">
+      <DependentUpon>frmClienteREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionREDRUBI\frmClienteREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionREDRUBI\frmDetalleVentaREDRUBI.Designer.vb">
+      <DependentUpon>frmDetalleVentaREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionREDRUBI\frmDetalleVentaREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionREDRUBI\frmProductoREDRUBI.Designer.vb">
+      <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionREDRUBI\frmProductoREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionREDRUBI\frmUsuarioREDRUBI.Designer.vb">
+      <DependentUpon>frmUsuarioREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionREDRUBI\frmUsuarioREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentacionREDRUBI\frmVentaREDRUBI.Designer.vb">
+      <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentacionREDRUBI\frmVentaREDRUBI.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\frmCategoria.Designer.vb">
       <DependentUpon>frmCategoria.vb</DependentUpon>
@@ -192,6 +288,42 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionPostGrado\frmCategoriaPostGrado.resx">
+      <DependentUpon>frmCategoriaPostGrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionPostGrado\frmClientePostGrado.resx">
+      <DependentUpon>frmClientePostGrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionPostGrado\frmDetalleVentaPostGrado.resx">
+      <DependentUpon>frmDetalleVentaPostGrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionPostGrado\frmProductoPostGrado.resx">
+      <DependentUpon>frmProductoPostGrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionPostGrado\frmUsuarioPostGrado.resx">
+      <DependentUpon>frmUsuarioPostGrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionPostGrado\frmVentaPostGrado.resx">
+      <DependentUpon>frmVentaPostGrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionREDRUBI\frmCategoriaREDRUBI.resx">
+      <DependentUpon>frmCategoriaREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionREDRUBI\frmClienteREDRUBI.resx">
+      <DependentUpon>frmClienteREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionREDRUBI\frmDetalleVentaREDRUBI.resx">
+      <DependentUpon>frmDetalleVentaREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionREDRUBI\frmProductoREDRUBI.resx">
+      <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionREDRUBI\frmUsuarioREDRUBI.resx">
+      <DependentUpon>frmUsuarioREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentacionREDRUBI\frmVentaREDRUBI.resx">
+      <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmCategoria.resx">
       <DependentUpon>frmCategoria.vb</DependentUpon>

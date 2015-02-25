@@ -297,4 +297,8 @@
             Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
         End If
     End Sub
+
+    Private Sub txtRol_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtRol.SelectedIndexChanged
+
+    End Sub
 End Class
