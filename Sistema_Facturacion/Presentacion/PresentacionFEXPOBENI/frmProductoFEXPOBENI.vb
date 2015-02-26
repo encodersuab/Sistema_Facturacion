@@ -2,10 +2,22 @@
 
     Private dt As New DataTable
     Private Sub frmProducto_LoadFEXPOBENI(sender As Object, e As EventArgs) Handles MyBase.Load
-        If frmInicioF.lbrol.Text = "UsuarioEMFOPESBE" Then
+        If frmInicioF.lbrol.Text = "UsuarioFEXPOBENI" Then
             btnEditar.Enabled = False
             btnNuevo.Enabled = False
-
+            btncategoria.Enabled = False
+            txtstock.Enabled = False
+            txtNombre.Enabled = False
+            txtdescripcion.Enabled = False
+            txtprecio_compra.Enabled = False
+            txtprecio_venta.Enabled = False
+            txtIdproducto.Enabled = False
+            cbbmodulo.Enabled = False
+            txtfecha_vencimiento.Enabled = False
+            btncargar.Enabled = False
+            btnlimpiar.Enabled = False
+            txtidcategoria.Enabled = False
+            txtnom_categoria.Enabled = False
         End If
 
 

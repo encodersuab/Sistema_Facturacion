@@ -23,7 +23,7 @@ Partial Class frmDetalleVentaPostGrado
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVentaREDRUBI))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVentaPostGrado))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
@@ -356,6 +356,7 @@ Partial Class frmDetalleVentaPostGrado
         '
         'txtNombreProducto
         '
+        Me.txtNombreProducto.Enabled = False
         Me.txtNombreProducto.Location = New System.Drawing.Point(170, 207)
         Me.txtNombreProducto.Name = "txtNombreProducto"
         Me.txtNombreProducto.Size = New System.Drawing.Size(147, 20)
@@ -372,6 +373,7 @@ Partial Class frmDetalleVentaPostGrado
         '
         'txtIdProducto
         '
+        Me.txtIdProducto.Enabled = False
         Me.txtIdProducto.Location = New System.Drawing.Point(144, 207)
         Me.txtIdProducto.Name = "txtIdProducto"
         Me.txtIdProducto.Size = New System.Drawing.Size(20, 20)
@@ -513,7 +515,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.Button2.Text = "Cancelar Venta"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'frmDetalleVenta
+        'frmDetalleVentaPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -521,7 +523,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "frmDetalleVenta"
+        Me.Name = "frmDetalleVentaPostGrado"
         Me.Text = ".:. listado de ventas .:."
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

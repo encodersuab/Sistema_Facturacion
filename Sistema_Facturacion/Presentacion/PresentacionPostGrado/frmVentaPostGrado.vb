@@ -124,8 +124,8 @@
 
             If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNumDoc.Text <> "" And txtIdVenta.Text <> "" Then
                 Try
-                    Dim dts As New vVenta
-                    Dim func As New fVenta
+                    Dim dts As New vVentaPostGrado
+                    Dim func As New fVentaPostGrado
 
                     dts.Gidventa = txtIdVenta.Text
                     dts.Gidcliente = txtidCliente.Text
@@ -206,7 +206,7 @@
         'frmDetalleVenta.txtNumDoc.Text = txtNumDoc.Text
         'frmDetalleVenta.txtNombreFac.Text = txtNombreFac.Text
 
-        frmDetalleVenta.ShowDialog()
+        frmDetalleVentaPostGrado.ShowDialog()
 
     End Sub
 

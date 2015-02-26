@@ -191,13 +191,13 @@
     End Sub
 
     Private Sub cargar_detalle()
-        frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
-        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
-        frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
-        frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
-        frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
-        frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
-        frmDetalleVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
+        frmDetalleVentaREDRUBI.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        frmDetalleVentaREDRUBI.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
+        frmDetalleVentaREDRUBI.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
+        frmDetalleVentaREDRUBI.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
+        frmDetalleVentaREDRUBI.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
+        frmDetalleVentaREDRUBI.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
+        frmDetalleVentaREDRUBI.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
         'frmDetalleVenta.txtidCliente.Text = txtidCliente.Text
         'frmDetalleVenta.txtIdVenta.Text = txtIdVenta.Text
         'frmDetalleVenta.txtNombreCLiente.Text = txtNombreCLiente.Text
@@ -205,11 +205,7 @@
         'frmDetalleVenta.cbTipoDoc.Text = cbTipoDoc.Text
         'frmDetalleVenta.txtNumDoc.Text = txtNumDoc.Text
         'frmDetalleVenta.txtNombreFac.Text = txtNombreFac.Text
-
-
-
         frmDetalleVentaREDRUBI.ShowDialog()
-
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
@@ -218,7 +214,7 @@
     End Sub
 
     Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
-        frmCliente.txtFlag.Text = "1"
+        frmClienteREDRUBI.txtFlag.Text = "1"
         frmClienteREDRUBI.ShowDialog()
 
     End Sub

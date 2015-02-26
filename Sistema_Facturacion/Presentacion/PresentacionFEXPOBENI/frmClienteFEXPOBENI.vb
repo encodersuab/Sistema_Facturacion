@@ -2,6 +2,7 @@
 
     Private dt As New DataTable
     Private Sub frmCliente_LoadFEXPOBENI(sender As Object, e As EventArgs) Handles MyBase.Load
+
         mostrar()
     End Sub
 
@@ -229,15 +230,15 @@
     End Sub
 
     Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick
-        'txtIdCliente.Text = datalistado.SelectedCells.Item(1).Value
-        'txtNombre.Text = datalistado.SelectedCells.Item(2).Value
-        'txtApellido.Text = datalistado.SelectedCells.Item(3).Value
-        'txtDireccion.Text = datalistado.SelectedCells.Item(4).Value
-        'txtTelefono.Text = datalistado.SelectedCells.Item(5).Value
-        'txtCi.Text = datalistado.SelectedCells.Item(6).Value
+        txtIdCliente.Text = datalistado.SelectedCells.Item(1).Value
+        txtNombre.Text = datalistado.SelectedCells.Item(2).Value
+        txtApellido.Text = datalistado.SelectedCells.Item(3).Value
+        txtDireccion.Text = datalistado.SelectedCells.Item(4).Value
+        txtTelefono.Text = datalistado.SelectedCells.Item(5).Value
+        txtCi.Text = datalistado.SelectedCells.Item(6).Value
 
-        'btnEditar.Visible = True
-        'btnGuardar.Visible = False
+        btnEditar.Visible = True
+        btnGuardar.Visible = False
 
 
     End Sub

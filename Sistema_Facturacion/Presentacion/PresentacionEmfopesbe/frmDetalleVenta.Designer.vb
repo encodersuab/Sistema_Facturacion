@@ -356,6 +356,7 @@ Partial Class frmDetalleVenta
         '
         'txtNombreProducto
         '
+        Me.txtNombreProducto.Enabled = False
         Me.txtNombreProducto.Location = New System.Drawing.Point(170, 207)
         Me.txtNombreProducto.Name = "txtNombreProducto"
         Me.txtNombreProducto.Size = New System.Drawing.Size(147, 20)
@@ -372,6 +373,7 @@ Partial Class frmDetalleVenta
         '
         'txtIdProducto
         '
+        Me.txtIdProducto.Enabled = False
         Me.txtIdProducto.Location = New System.Drawing.Point(144, 207)
         Me.txtIdProducto.Name = "txtIdProducto"
         Me.txtIdProducto.Size = New System.Drawing.Size(20, 20)

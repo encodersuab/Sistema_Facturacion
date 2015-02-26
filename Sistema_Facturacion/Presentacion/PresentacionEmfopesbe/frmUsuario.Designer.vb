@@ -177,7 +177,7 @@ Partial Class frmUsuario
         Me.txtRol.Name = "txtRol"
         Me.txtRol.Size = New System.Drawing.Size(141, 21)
         Me.txtRol.TabIndex = 22
-        Me.txtRol.Text = "AdministradorEMFOPESVE"
+        Me.txtRol.Text = "AdministradorEMFOPESBE"
         '
         'Label9
         '
