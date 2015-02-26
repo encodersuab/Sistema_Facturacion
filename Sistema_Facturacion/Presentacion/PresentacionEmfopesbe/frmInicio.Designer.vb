@@ -141,21 +141,39 @@ Partial Class frmInicioF
         '
         'ClientessmenuEmfopesbe
         '
+<<<<<<< HEAD:Sistema_Facturacion/Presentacion/frmInicio.Designer.vb
         Me.ClientessmenuEmfopesbe.Name = "ClientessmenuEmfopesbe"
         Me.ClientessmenuEmfopesbe.Size = New System.Drawing.Size(152, 22)
         Me.ClientessmenuEmfopesbe.Text = "Cliente"
+=======
+        Me.ClienteToolStripMenuItem.Name = "ClienteToolStripMenuItem"
+        Me.ClienteToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.ClienteToolStripMenuItem.Text = "Cliente"
+>>>>>>> origin/master:Sistema_Facturacion/Presentacion/PresentacionEmfopesbe/frmInicio.Designer.vb
         '
         'ProductossmenuEmfopesbe
         '
+<<<<<<< HEAD:Sistema_Facturacion/Presentacion/frmInicio.Designer.vb
         Me.ProductossmenuEmfopesbe.Name = "ProductossmenuEmfopesbe"
         Me.ProductossmenuEmfopesbe.Size = New System.Drawing.Size(152, 22)
         Me.ProductossmenuEmfopesbe.Text = "Producto"
+=======
+        Me.ProductoToolStripMenuItem1.Name = "ProductoToolStripMenuItem1"
+        Me.ProductoToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
+        Me.ProductoToolStripMenuItem1.Text = "Producto"
+>>>>>>> origin/master:Sistema_Facturacion/Presentacion/PresentacionEmfopesbe/frmInicio.Designer.vb
         '
         'CategoriassmenuEmfopesbe
         '
+<<<<<<< HEAD:Sistema_Facturacion/Presentacion/frmInicio.Designer.vb
         Me.CategoriassmenuEmfopesbe.Name = "CategoriassmenuEmfopesbe"
         Me.CategoriassmenuEmfopesbe.Size = New System.Drawing.Size(152, 22)
         Me.CategoriassmenuEmfopesbe.Text = "Categoria"
+=======
+        Me.CategoriaToolStripMenuItem1.Name = "CategoriaToolStripMenuItem1"
+        Me.CategoriaToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
+        Me.CategoriaToolStripMenuItem1.Text = "Categoria"
+>>>>>>> origin/master:Sistema_Facturacion/Presentacion/PresentacionEmfopesbe/frmInicio.Designer.vb
         '
         'ventaE
         '
@@ -217,19 +235,19 @@ Partial Class frmInicioF
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(125, 22)
         Me.ToolStripMenuItem3.Text = "Cliente"
         '
         'ToolStripMenuItem4
         '
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(125, 22)
         Me.ToolStripMenuItem4.Text = "Producto"
         '
         'ToolStripMenuItem5
         '
         Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(125, 22)
         Me.ToolStripMenuItem5.Text = "Categoria"
         '
         'ventaF

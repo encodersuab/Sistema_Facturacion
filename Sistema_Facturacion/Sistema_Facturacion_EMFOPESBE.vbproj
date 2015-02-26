@@ -79,61 +79,66 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatosFEXPOBENI\fCategoriaFEXPOBENI.vb" />
-    <Compile Include="DatosFEXPOBENI\fClienteFEXPOBENI.vb" />
-    <Compile Include="DatosFEXPOBENI\fDetalleVentaFEXPOBENI.vb" />
-    <Compile Include="DatosFEXPOBENI\fProductoFEXPOBENI.vb" />
-    <Compile Include="DatosFEXPOBENI\fUsuarioFEXPOBENI.vb" />
-    <Compile Include="DatosFEXPOBENI\fVentaFEXPOBENI.vb" />
-    <Compile Include="DatosPostGrado\fCategoriaPostGrado.vb" />
-    <Compile Include="DatosPostGrado\fClientePostGrado.vb" />
-    <Compile Include="DatosPostGrado\fDetalleVentaPostGrado.vb" />
-    <Compile Include="DatosPostGrado\fProductoPostGrado.vb" />
-    <Compile Include="DatosPostGrado\fUsuarioPostGrado.vb" />
-    <Compile Include="DatosPostGrado\fVentaPostGrado.vb" />
-    <Compile Include="DatosREDRUBI\fCategoriaREDRUBI.vb" />
-    <Compile Include="DatosREDRUBI\fClienteREDRUBI.vb" />
-    <Compile Include="DatosREDRUBI\fDetalleVentaREDRUBI.vb" />
-    <Compile Include="DatosREDRUBI\fProductoREDRUBI.vb" />
-    <Compile Include="DatosREDRUBI\fUsuarioREDRUBI.vb" />
-    <Compile Include="DatosREDRUBI\fVentaREDRUBI.vb" />
-    <Compile Include="Datos\fCC.vb" />
-    <Compile Include="Datos\Conexion.vb" />
-    <Compile Include="Datos\fCategoria.vb" />
-    <Compile Include="Datos\fCliente.vb" />
-    <Compile Include="Datos\fDatosImpuestos.vb" />
-    <Compile Include="Datos\fDetalleVenta.vb" />
-    <Compile Include="Datos\fProducto.vb" />
-    <Compile Include="Datos\fQr.vb" />
-    <Compile Include="Datos\fUsuario.vb" />
-    <Compile Include="Datos\fVenta.vb" />
-    <Compile Include="LogicaFEXPOBENI\vCategoriaFEXPOBENI.vb" />
-    <Compile Include="LogicaFEXPOBENI\vClienteFEXPOBENI.vb" />
-    <Compile Include="LogicaFEXPOBENI\vDetalleVentaFEXPOBENI.vb" />
-    <Compile Include="LogicaFEXPOBENI\vProductoFEXPOBENI.vb" />
-    <Compile Include="LogicaFEXPOBENI\vUsuarioFEXPOBENI.vb" />
-    <Compile Include="LogicaFEXPOBENI\vVentaFEXPOBENI.vb" />
-    <Compile Include="LogicaPostGrado\vCategoriaPostGrado.vb" />
-    <Compile Include="LogicaPostGrado\vClientePostGrado.vb" />
-    <Compile Include="LogicaPostGrado\vDetalleVentaPostGrado.vb" />
-    <Compile Include="LogicaPostGrado\vProductoPostGrado.vb" />
-    <Compile Include="LogicaPostGrado\vUsuarioPostGrado.vb" />
-    <Compile Include="LogicaPostGrado\vVentaPostGrado.vb" />
-    <Compile Include="LogicaREDRUBI\vCategoriaREDRUBI.vb" />
-    <Compile Include="LogicaREDRUBI\vClienteREDRUBI.vb" />
-    <Compile Include="LogicaREDRUBI\vDetalleVentaREDRUBI.vb" />
-    <Compile Include="LogicaREDRUBI\vProductoREDRUBI.vb" />
-    <Compile Include="LogicaREDRUBI\vUsuarioREDRUBI.vb" />
-    <Compile Include="LogicaREDRUBI\vVentaREDRUBI.vb" />
-    <Compile Include="Logica\CC.vb" />
-    <Compile Include="Logica\vCategoria.vb" />
-    <Compile Include="Logica\vCliente.vb" />
-    <Compile Include="Logica\vDatosImpuestos.vb" />
-    <Compile Include="Logica\vDetalleVenta.vb" />
-    <Compile Include="Logica\vProducto.vb" />
-    <Compile Include="Logica\vQr.vb" />
-    <Compile Include="Logica\vUsuario.vb" />
-    <Compile Include="Logica\vVenta.vb" />
+    <Compile Include="datos\DatosFEXPOBENI\fCategoriaFEXPOBENI.vb" />
+    <Compile Include="datos\DatosFEXPOBENI\fClienteFEXPOBENI.vb" />
+    <Compile Include="datos\DatosFEXPOBENI\fDetalleVentaFEXPOBENI.vb" />
+    <Compile Include="datos\DatosFEXPOBENI\fProductoFEXPOBENI.vb" />
+    <Compile Include="datos\DatosFEXPOBENI\fUsuarioFEXPOBENI.vb" />
+    <Compile Include="datos\DatosFEXPOBENI\fVentaFEXPOBENI.vb" />
+    <Compile Include="datos\DatosPostGrado\fCategoriaPostGrado.vb" />
+    <Compile Include="datos\DatosPostGrado\fClientePostGrado.vb" />
+    <Compile Include="datos\DatosPostGrado\fDetalleVentaPostGrado.vb" />
+    <Compile Include="datos\DatosPostGrado\fProductoPostGrado.vb" />
+    <Compile Include="datos\DatosPostGrado\fUsuarioPostGrado.vb" />
+    <Compile Include="datos\DatosPostGrado\fVentaPostGrado.vb" />
+    <Compile Include="datos\DatosREDRUBI\fCategoriaREDRUBI.vb" />
+    <Compile Include="datos\DatosREDRUBI\fClienteREDRUBI.vb" />
+    <Compile Include="datos\DatosREDRUBI\fDetalleVentaREDRUBI.vb" />
+    <Compile Include="datos\DatosREDRUBI\fProductoREDRUBI.vb" />
+    <Compile Include="datos\DatosREDRUBI\fUsuarioREDRUBI.vb" />
+    <Compile Include="datos\DatosREDRUBI\fVentaREDRUBI.vb" />
+    <Compile Include="datos\DatosEmfopesbe\fCC.vb" />
+    <Compile Include="datos\DatosEmfopesbe\Conexion.vb" />
+    <Compile Include="datos\DatosEmfopesbe\fCategoria.vb" />
+    <Compile Include="datos\DatosEmfopesbe\fCliente.vb" />
+    <Compile Include="datos\DatosEmfopesbe\fDatosImpuestos.vb" />
+    <Compile Include="datos\DatosEmfopesbe\fDetalleVenta.vb" />
+    <Compile Include="datos\DatosEmfopesbe\fProducto.vb" />
+    <Compile Include="datos\DatosEmfopesbe\fQr.vb" />
+    <Compile Include="datos\DatosEmfopesbe\fUsuario.vb" />
+    <Compile Include="datos\DatosEmfopesbe\fVenta.vb" />
+    <Compile Include="dbfacDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbfacDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Logica\LogicaFEXPOBENI\vCategoriaFEXPOBENI.vb" />
+    <Compile Include="Logica\LogicaFEXPOBENI\vClienteFEXPOBENI.vb" />
+    <Compile Include="Logica\LogicaFEXPOBENI\vDetalleVentaFEXPOBENI.vb" />
+    <Compile Include="Logica\LogicaFEXPOBENI\vProductoFEXPOBENI.vb" />
+    <Compile Include="Logica\LogicaFEXPOBENI\vUsuarioFEXPOBENI.vb" />
+    <Compile Include="Logica\LogicaFEXPOBENI\vVentaFEXPOBENI.vb" />
+    <Compile Include="Logica\LogicaPostGrado\vCategoriaPostGrado.vb" />
+    <Compile Include="Logica\LogicaPostGrado\vClientePostGrado.vb" />
+    <Compile Include="Logica\LogicaPostGrado\vDetalleVentaPostGrado.vb" />
+    <Compile Include="Logica\LogicaPostGrado\vProductoPostGrado.vb" />
+    <Compile Include="Logica\LogicaPostGrado\vUsuarioPostGrado.vb" />
+    <Compile Include="Logica\LogicaPostGrado\vVentaPostGrado.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vCategoriaREDRUBI.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vClienteREDRUBI.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vDetalleVentaREDRUBI.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vProductoREDRUBI.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vUsuarioREDRUBI.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vVentaREDRUBI.vb" />
+    <Compile Include="Logica\LogicaEmfopesbe\CC.vb" />
+    <Compile Include="Logica\LogicaEmfopesbe\vCategoria.vb" />
+    <Compile Include="Logica\LogicaEmfopesbe\vCliente.vb" />
+    <Compile Include="Logica\LogicaEmfopesbe\vDatosImpuestos.vb" />
+    <Compile Include="Logica\LogicaEmfopesbe\vDetalleVenta.vb" />
+    <Compile Include="Logica\LogicaEmfopesbe\vProducto.vb" />
+    <Compile Include="Logica\LogicaEmfopesbe\vQr.vb" />
+    <Compile Include="Logica\LogicaEmfopesbe\vUsuario.vb" />
+    <Compile Include="Logica\LogicaEmfopesbe\vVenta.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -149,184 +154,202 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PresentacionFEXPOBENI\frmCategoriaFEXPOBENI.Designer.vb">
+    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmCategoriaFEXPOBENI.Designer.vb">
       <DependentUpon>frmCategoriaFEXPOBENI.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionFEXPOBENI\frmCategoriaFEXPOBENI.vb">
+    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmCategoriaFEXPOBENI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionFEXPOBENI\frmClienteFEXPOBENI.Designer.vb">
+    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmClienteFEXPOBENI.Designer.vb">
       <DependentUpon>frmClienteFEXPOBENI.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionFEXPOBENI\frmClienteFEXPOBENI.vb">
+    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmClienteFEXPOBENI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionFEXPOBENI\frmDetalleVentaFEXPOBENI.Designer.vb">
+    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmDetalleVentaFEXPOBENI.Designer.vb">
       <DependentUpon>frmDetalleVentaFEXPOBENI.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionFEXPOBENI\frmDetalleVentaFEXPOBENI.vb">
+    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmDetalleVentaFEXPOBENI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionFEXPOBENI\frmProductoFEXPOBENI.Designer.vb">
+    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmProductoFEXPOBENI.Designer.vb">
       <DependentUpon>frmProductoFEXPOBENI.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionFEXPOBENI\frmProductoFEXPOBENI.vb">
+    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmProductoFEXPOBENI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionFEXPOBENI\frmUsuarioFEXPOBENI.Designer.vb">
+    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmUsuarioFEXPOBENI.Designer.vb">
       <DependentUpon>frmUsuarioFEXPOBENI.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionFEXPOBENI\frmUsuarioFEXPOBENI.vb">
+    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmUsuarioFEXPOBENI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionFEXPOBENI\frmVentaFEXPOBENI.Designer.vb">
+    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmVentaFEXPOBENI.Designer.vb">
       <DependentUpon>frmVentaFEXPOBENI.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionFEXPOBENI\frmVentaFEXPOBENI.vb">
+    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmVentaFEXPOBENI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionPostGrado\frmCategoriaPostGrado.Designer.vb">
+    <Compile Include="Presentacion\PresentacionPostGrado\frmCategoriaPostGrado.Designer.vb">
       <DependentUpon>frmCategoriaPostGrado.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionPostGrado\frmCategoriaPostGrado.vb">
+    <Compile Include="Presentacion\PresentacionPostGrado\frmCategoriaPostGrado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionPostGrado\frmClientePostGrado.Designer.vb">
+    <Compile Include="Presentacion\PresentacionPostGrado\frmClientePostGrado.Designer.vb">
       <DependentUpon>frmClientePostGrado.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionPostGrado\frmClientePostGrado.vb">
+    <Compile Include="Presentacion\PresentacionPostGrado\frmClientePostGrado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionPostGrado\frmDetalleVentaPostGrado.Designer.vb">
+    <Compile Include="Presentacion\PresentacionPostGrado\frmDetalleVentaPostGrado.Designer.vb">
       <DependentUpon>frmDetalleVentaPostGrado.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionPostGrado\frmDetalleVentaPostGrado.vb">
+    <Compile Include="Presentacion\PresentacionPostGrado\frmDetalleVentaPostGrado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionPostGrado\frmProductoPostGrado.Designer.vb">
+    <Compile Include="Presentacion\PresentacionPostGrado\frmProductoPostGrado.Designer.vb">
       <DependentUpon>frmProductoPostGrado.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionPostGrado\frmProductoPostGrado.vb">
+    <Compile Include="Presentacion\PresentacionPostGrado\frmProductoPostGrado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionPostGrado\frmUsuarioPostGrado.Designer.vb">
+    <Compile Include="Presentacion\PresentacionPostGrado\frmUsuarioPostGrado.Designer.vb">
       <DependentUpon>frmUsuarioPostGrado.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionPostGrado\frmUsuarioPostGrado.vb">
+    <Compile Include="Presentacion\PresentacionPostGrado\frmUsuarioPostGrado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionPostGrado\frmVentaPostGrado.Designer.vb">
+    <Compile Include="Presentacion\PresentacionPostGrado\frmVentaPostGrado.Designer.vb">
       <DependentUpon>frmVentaPostGrado.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionPostGrado\frmVentaPostGrado.vb">
+    <Compile Include="Presentacion\PresentacionPostGrado\frmVentaPostGrado.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionREDRUBI\frmCategoriaREDRUBI.Designer.vb">
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmCategoriaREDRUBI.Designer.vb">
       <DependentUpon>frmCategoriaREDRUBI.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionREDRUBI\frmCategoriaREDRUBI.vb">
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmCategoriaREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionREDRUBI\frmClienteREDRUBI.Designer.vb">
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmClienteREDRUBI.Designer.vb">
       <DependentUpon>frmClienteREDRUBI.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionREDRUBI\frmClienteREDRUBI.vb">
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmClienteREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionREDRUBI\frmDetalleVentaREDRUBI.Designer.vb">
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaREDRUBI.Designer.vb">
       <DependentUpon>frmDetalleVentaREDRUBI.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionREDRUBI\frmDetalleVentaREDRUBI.vb">
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionREDRUBI\frmProductoREDRUBI.Designer.vb">
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.Designer.vb">
       <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionREDRUBI\frmProductoREDRUBI.vb">
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionREDRUBI\frmUsuarioREDRUBI.Designer.vb">
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmUsuarioREDRUBI.Designer.vb">
       <DependentUpon>frmUsuarioREDRUBI.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionREDRUBI\frmUsuarioREDRUBI.vb">
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmUsuarioREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresentacionREDRUBI\frmVentaREDRUBI.Designer.vb">
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.Designer.vb">
       <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
     </Compile>
-    <Compile Include="PresentacionREDRUBI\frmVentaREDRUBI.vb">
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmCategoria.Designer.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmCategoria.Designer.vb">
       <DependentUpon>frmCategoria.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmCategoria.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmCategoria.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmCliente.Designer.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmCliente.Designer.vb">
       <DependentUpon>frmCliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmCliente.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmDatosImpuestos.Designer.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmDatosImpuestos.Designer.vb">
       <DependentUpon>frmDatosImpuestos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmDatosImpuestos.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmDatosImpuestos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmDetalleVenta.Designer.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmDetalleVenta.Designer.vb">
       <DependentUpon>frmDetalleVenta.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmDetalleVenta.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmDetalleVenta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmInicio.Designer.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmInicio.Designer.vb">
       <DependentUpon>frmInicio.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmInicio.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmInicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmLogin.Designer.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmLogin.Designer.vb">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmLogin.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmProducto.Designer.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmProducto.Designer.vb">
       <DependentUpon>frmProducto.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmProducto.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmProducto.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmQR.Designer.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmQR.Designer.vb">
       <DependentUpon>frmQR.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmQR.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmQR.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmUsuario.Designer.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmUsuario.Designer.vb">
       <DependentUpon>frmUsuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmUsuario.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmVenta.Designer.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmVenta.Designer.vb">
       <DependentUpon>frmVenta.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmVenta.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmVenta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmVistaCategoria.Designer.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmVistaCategoria.Designer.vb">
       <DependentUpon>frmVistaCategoria.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmVistaCategoria.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmVistaCategoria.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmVistaProducto.Designer.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmVistaProducto.Designer.vb">
       <DependentUpon>frmVistaProducto.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmVistaProducto.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmVistaProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCatergotria.Designer.vb">
+      <DependentUpon>frmReporteCatergotria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCatergotria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCliente.Designer.vb">
+      <DependentUpon>frmReporteCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteProductos.Designer.vb">
+      <DependentUpon>frmReporteProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteProductos.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -337,92 +360,116 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionFEXPOBENI\frmCategoriaFEXPOBENI.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmCategoriaFEXPOBENI.resx">
       <DependentUpon>frmCategoriaFEXPOBENI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionFEXPOBENI\frmClienteFEXPOBENI.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmClienteFEXPOBENI.resx">
       <DependentUpon>frmClienteFEXPOBENI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionFEXPOBENI\frmDetalleVentaFEXPOBENI.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmDetalleVentaFEXPOBENI.resx">
       <DependentUpon>frmDetalleVentaFEXPOBENI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionFEXPOBENI\frmProductoFEXPOBENI.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmProductoFEXPOBENI.resx">
       <DependentUpon>frmProductoFEXPOBENI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionFEXPOBENI\frmUsuarioFEXPOBENI.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmUsuarioFEXPOBENI.resx">
       <DependentUpon>frmUsuarioFEXPOBENI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionFEXPOBENI\frmVentaFEXPOBENI.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmVentaFEXPOBENI.resx">
       <DependentUpon>frmVentaFEXPOBENI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionPostGrado\frmCategoriaPostGrado.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmCategoriaPostGrado.resx">
       <DependentUpon>frmCategoriaPostGrado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionPostGrado\frmClientePostGrado.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmClientePostGrado.resx">
       <DependentUpon>frmClientePostGrado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionPostGrado\frmDetalleVentaPostGrado.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmDetalleVentaPostGrado.resx">
       <DependentUpon>frmDetalleVentaPostGrado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionPostGrado\frmProductoPostGrado.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmProductoPostGrado.resx">
       <DependentUpon>frmProductoPostGrado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionPostGrado\frmUsuarioPostGrado.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmUsuarioPostGrado.resx">
       <DependentUpon>frmUsuarioPostGrado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionPostGrado\frmVentaPostGrado.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmVentaPostGrado.resx">
       <DependentUpon>frmVentaPostGrado.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionREDRUBI\frmCategoriaREDRUBI.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmCategoriaREDRUBI.resx">
       <DependentUpon>frmCategoriaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionREDRUBI\frmClienteREDRUBI.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmClienteREDRUBI.resx">
       <DependentUpon>frmClienteREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionREDRUBI\frmDetalleVentaREDRUBI.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaREDRUBI.resx">
       <DependentUpon>frmDetalleVentaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionREDRUBI\frmProductoREDRUBI.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.resx">
       <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionREDRUBI\frmUsuarioREDRUBI.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmUsuarioREDRUBI.resx">
       <DependentUpon>frmUsuarioREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresentacionREDRUBI\frmVentaREDRUBI.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.resx">
       <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmCategoria.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmCategoria.resx">
       <DependentUpon>frmCategoria.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmCliente.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmCliente.resx">
       <DependentUpon>frmCliente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmDatosImpuestos.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmDatosImpuestos.resx">
       <DependentUpon>frmDatosImpuestos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmDetalleVenta.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmDetalleVenta.resx">
       <DependentUpon>frmDetalleVenta.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmInicio.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmInicio.resx">
       <DependentUpon>frmInicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmLogin.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmProducto.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmProducto.resx">
       <DependentUpon>frmProducto.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmQR.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmQR.resx">
       <DependentUpon>frmQR.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmUsuario.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmUsuario.resx">
       <DependentUpon>frmUsuario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmVenta.resx">
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmVenta.resx">
       <DependentUpon>frmVenta.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCatergotria.resx">
+      <DependentUpon>frmReporteCatergotria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCliente.resx">
+      <DependentUpon>frmReporteCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteProductos.resx">
+      <DependentUpon>frmReporteProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptcategoria.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptProducto.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptcliente.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentas.rdlc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="dbfacDataSet.xsc">
+      <DependentUpon>dbfacDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbfacDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbfacDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbfacDataSet.xss">
+      <DependentUpon>dbfacDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
