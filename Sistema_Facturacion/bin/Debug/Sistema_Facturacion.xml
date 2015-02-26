@@ -50,10 +50,6 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.Mostrar_datos_facturaDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_datos_impuestosDataTable">
 	<summary>
 Represents the strongly named DataTable class.
@@ -134,10 +130,6 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.Mostrar_datos_facturaRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_datos_impuestosRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -215,10 +207,6 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_clienteRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.Mostrar_datos_facturaRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -303,10 +291,6 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_clienteTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.Mostrar_datos_facturaTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

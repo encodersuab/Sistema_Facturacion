@@ -291,13 +291,7 @@ Partial Public Class frmDetalleVenta
     End Sub
 
 
-    Private Sub btnimprimir_Click(sender As Object, e As EventArgs) Handles btnimprimir.Click
-
-
-
-
-
-    End Sub
+ 
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
 
@@ -400,8 +394,11 @@ Partial Public Class frmDetalleVenta
             ''''''''
 
             If func.insertar(dts) Then
+                frmReporteFactura.txtnumfactura.Text = aux
 
                 MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                frmReporteFactura.Show()
+
                 Me.Close()
 
             Else

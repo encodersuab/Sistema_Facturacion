@@ -42,7 +42,6 @@ Partial Class frmDetalleVenta
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtnituab = New System.Windows.Forms.TextBox()
-        Me.btnimprimir = New System.Windows.Forms.Button()
         Me.txtStock = New System.Windows.Forms.NumericUpDown()
         Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.txtPrecioUnitario = New System.Windows.Forms.TextBox()
@@ -218,7 +217,6 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.txtnituab)
-        Me.GroupBox1.Controls.Add(Me.btnimprimir)
         Me.GroupBox1.Controls.Add(Me.txtStock)
         Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.txtPrecioUnitario)
@@ -283,16 +281,6 @@ Partial Class frmDetalleVenta
         Me.txtnituab.Name = "txtnituab"
         Me.txtnituab.Size = New System.Drawing.Size(173, 20)
         Me.txtnituab.TabIndex = 31
-        '
-        'btnimprimir
-        '
-        Me.btnimprimir.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.images__3_
-        Me.btnimprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnimprimir.Location = New System.Drawing.Point(149, 357)
-        Me.btnimprimir.Name = "btnimprimir"
-        Me.btnimprimir.Size = New System.Drawing.Size(67, 74)
-        Me.btnimprimir.TabIndex = 30
-        Me.btnimprimir.UseVisualStyleBackColor = True
         '
         'txtStock
         '
@@ -566,7 +554,6 @@ Partial Class frmDetalleVenta
     Friend WithEvents txtIdProducto As System.Windows.Forms.TextBox
     Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
     Friend WithEvents btnquitar As System.Windows.Forms.Button
-    Friend WithEvents btnimprimir As System.Windows.Forms.Button
     Friend WithEvents QrCodeImgControl1 As Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtnituab As System.Windows.Forms.TextBox
