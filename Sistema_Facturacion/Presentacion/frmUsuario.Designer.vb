@@ -172,7 +172,7 @@ Partial Class frmUsuario
         'txtRol
         '
         Me.txtRol.FormattingEnabled = True
-        Me.txtRol.Items.AddRange(New Object() {"AdministradorEMFOPESVE", "UsuarioEMFOPESVE", "AdministradorCANAL11", "UsuarioCANAL11", "AdministradorPOSGRADO", "UsuarioPOSGRADO"})
+        Me.txtRol.Items.AddRange(New Object() {"AdministradorEMFOPESBE", "UsuarioEMFOPESBE", "AdministradorREDRUBI", "UsuarioREDRUBI", "AdministradorPOSGRADO", "UsuarioPOSGRADO", "AdministradorFEXPOBENI", "UsuarioFEXPOBENI"})
         Me.txtRol.Location = New System.Drawing.Point(132, 249)
         Me.txtRol.Name = "txtRol"
         Me.txtRol.Size = New System.Drawing.Size(141, 21)

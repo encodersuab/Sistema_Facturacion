@@ -1,7 +1,5 @@
 ﻿Imports System.Windows.Forms
-Imports Sistema_Facturacion_FEXPOBENI
-Imports Sistema_Facturacion_POSTGRADO
-Imports Sistema_Facturacion_REDRUBI
+
 Public Class frmInicioF
 
     Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripButton.Click
@@ -88,19 +86,72 @@ Public Class frmInicioF
     Private m_ChildFormNumber As Integer
 
     Private Sub frmInicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'AdministradorEMFOPESBE()
+        'UsuarioEMFOPESBE()
+        'AdministradorREDRUBI()
+        'UsuarioREDRUBI()
+        'AdministradorPOSGRADO()
+        'UsuarioPOSGRADO()
+        'AdministradorFEXPOBENI()
+        'UsuarioFEXPOBENI()
         If lbrol.Text = "UsuarioEMFOPESBE" Then
-            ToolStripMenuItem1.Enabled = False
-            RegistroToolStripMenuItem.Enabled = False
-        End If
-        If lbrol.Text = "AdministradorEMFOPESBE" Then
-            ToolStripMenuItem1.Enabled = False
-        End If
-        If lbrol.Text = "UsuarioCANAL11" Then
-            EMFOPESBEToolStripMenuItem.Enabled = False
-            ToolStripMenuItem2.Enabled = False
-        End If
-        If lbrol.Text = "AdministradorCANAL11" Then
-            EMFOPESBEToolStripMenuItem.Enabled = False
+            fexpobeni.Enabled = False
+            redrubi.Enabled = False
+            emfopesbe.Enabled = True
+            postgrado.Enabled = False
+            registroE.Enabled = False
+        Else
+            If lbrol.Text = "AdministradorEMFOPESBE" Then
+                redrubi.Enabled = False
+                emfopesbe.Enabled = True
+                postgrado.Enabled = False
+                fexpobeni.Enabled = False
+            Else
+                If lbrol.Text = "UsuarioREDRUBI" Then
+                    fexpobeni.Enabled = False
+                    redrubi.Enabled = True
+                    emfopesbe.Enabled = False
+                    postgrado.Enabled = False
+                    registroR.Enabled = False
+                Else
+                    If lbrol.Text = "AdministradorREDRUBI" Then
+                        fexpobeni.Enabled = False
+                        redrubi.Enabled = True
+                        emfopesbe.Enabled = False
+                        postgrado.Enabled = False
+                    Else
+                        If lbrol.Text = "UsuarioPOSGRADO" Then
+                            fexpobeni.Enabled = False
+                            redrubi.Enabled = False
+                            emfopesbe.Enabled = False
+                            postgrado.Enabled = True
+                            registroP.Enabled = False
+                        Else
+                            If lbrol.Text = "AdministradorPOSGRADO" Then
+                                fexpobeni.Enabled = False
+                                redrubi.Enabled = False
+                                emfopesbe.Enabled = False
+                                postgrado.Enabled = True
+                            Else
+                                If lbrol.Text = "UsuarioFEXPOBENI" Then
+                                    fexpobeni.Enabled = True
+                                    redrubi.Enabled = False
+                                    emfopesbe.Enabled = False
+                                    postgrado.Enabled = False
+                                    registroF.Enabled = False
+                                Else
+                                    If lbrol.Text = "AdministradorFEXPOBENI" Then
+                                        fexpobeni.Enabled = True
+                                        redrubi.Enabled = False
+                                        emfopesbe.Enabled = False
+                                        postgrado.Enabled = False
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
         End If
     End Sub
 
@@ -143,26 +194,26 @@ Public Class frmInicioF
 
     End Sub
 
-    Private Sub ClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClienteToolStripMenuItem.Click
+    Private Sub ClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClientessmenuEmfopesbe.Click
         frmCliente.MdiParent = Me
         frmCliente.Show()
 
     End Sub
 
-    Private Sub ProductoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ProductoToolStripMenuItem1.Click
+    Private Sub ProductoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ProductossmenuEmfopesbe.Click
         frmProducto.MdiParent = Me
         frmProducto.Show()
 
     End Sub
 
-    Private Sub CategoriaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem1.Click
+    Private Sub CategoriaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CategoriassmenuEmfopesbe.Click
         frmCategoriaREDRUBI.MdiParent = Me
         frmCategoriaREDRUBI.Show()
 
     End Sub
 
-    Private Sub EMFOPESBEToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EMFOPESBEToolStripMenuItem.Click
-        
+    Private Sub EMFOPESBEToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles emfopesbe.Click
+
 
     End Sub
 
@@ -170,27 +221,25 @@ Public Class frmInicioF
 
     End Sub
 
-    Private Sub VentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentaToolStripMenuItem.Click
+    Private Sub VentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ventaE.Click
         frmVenta.MdiParent = Me
         frmVenta.Show()
     End Sub
 
-    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles fexpobeni.Click
 
     End Sub
 
-    Private Sub RegistroToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistroToolStripMenuItem.Click
+    Private Sub RegistroToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles registroE.Click
 
     End Sub
 
     Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
-        Dim a As New Sistema_Facturacion_REDRUBI.frmCliente
-        a.Show()
+  
     End Sub
 
     Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
-        Dim a As New Sistema_Facturacion_REDRUBI.frmProducto
-        a.Show()
+      
     End Sub
 
     Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
@@ -198,8 +247,7 @@ Public Class frmInicioF
         frmCategoriaREDRUBI.Show()
     End Sub
 
-    Private Sub ToolStripMenuItem6_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem6.Click
-        Dim a As New Sistema_Facturacion_REDRUBI.frmVenta
-        a.Show()
+    Private Sub ToolStripMenuItem6_Click(sender As Object, e As EventArgs) Handles ventaF.Click
+
     End Sub
 End Class

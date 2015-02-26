@@ -261,10 +261,10 @@
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
         If txtFlag.Text = "1" Then
-            frmVenta.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
-            frmVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
-            frmVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
-            frmVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value
+            frmVentaFEXPOBENI.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
+            frmVentaFEXPOBENI.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
+            frmVentaFEXPOBENI.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
+            frmVentaFEXPOBENI.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value
             Me.Close()
 
 
@@ -281,6 +281,10 @@
     End Sub
 
     Private Sub cbxListadoClientes_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
 
     End Sub
 End Class

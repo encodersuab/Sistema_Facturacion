@@ -229,15 +229,15 @@
     End Sub
 
     Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick
-        'txtIdCliente.Text = datalistado.SelectedCells.Item(1).Value
-        'txtNombre.Text = datalistado.SelectedCells.Item(2).Value
-        'txtApellido.Text = datalistado.SelectedCells.Item(3).Value
-        'txtDireccion.Text = datalistado.SelectedCells.Item(4).Value
-        'txtTelefono.Text = datalistado.SelectedCells.Item(5).Value
-        'txtCi.Text = datalistado.SelectedCells.Item(6).Value
+        txtIdCliente.Text = datalistado.SelectedCells.Item(1).Value
+        txtNombre.Text = datalistado.SelectedCells.Item(2).Value
+        txtApellido.Text = datalistado.SelectedCells.Item(3).Value
+        txtDireccion.Text = datalistado.SelectedCells.Item(4).Value
+        txtTelefono.Text = datalistado.SelectedCells.Item(5).Value
+        txtCi.Text = datalistado.SelectedCells.Item(6).Value
 
-        'btnEditar.Visible = True
-        'btnGuardar.Visible = False
+        btnEditar.Visible = True
+        btnGuardar.Visible = False
 
 
     End Sub
@@ -261,13 +261,11 @@
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
         If txtFlag.Text = "1" Then
-            frmVenta.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
-            frmVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
-            frmVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
-            frmVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value
+            frmVentaREDRUBI.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
+            frmVentaREDRUBI.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
+            frmVentaREDRUBI.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
+            frmVentaREDRUBI.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value
             Me.Close()
-
-
         End If
     End Sub
 

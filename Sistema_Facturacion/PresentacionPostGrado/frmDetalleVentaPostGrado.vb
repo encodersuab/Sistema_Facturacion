@@ -45,7 +45,7 @@ Partial Public Class frmDetalleVentaPostGrado
         txttotal.Text = 0
 
         Try
-            Dim func As New fDetalleVentaREDRUBI
+            Dim func As New fDetalleVentaPostGrado
             dt = func.mostrar
             datalistado.Columns.Item("Eliminar").Visible = False
 
@@ -114,8 +114,8 @@ Partial Public Class frmDetalleVentaPostGrado
 
 
 
-                Dim dts As New vDetalleVentaREDRUBI
-                Dim func As New fDetalleVentaREDRUBI
+                Dim dts As New vDetalleVentaPostGrado
+                Dim func As New fDetalleVentaPostGrado
 
                 dts.gidventa = txtIdVenta.Text
                 dts.gidproducto = txtIdProducto.Text
@@ -226,8 +226,8 @@ Partial Public Class frmDetalleVentaPostGrado
 
                     If marcado Then
                         Dim onekey As Integer = Convert.ToInt32(row.Cells("iddetalle_venta").Value)
-                        Dim vdb As New vDetalleVentaREDRUBI
-                        Dim func As New fDetalleVentaREDRUBI
+                        Dim vdb As New vDetalleVentaPostGrado
+                        Dim func As New fDetalleVentaPostGrado
                         vdb.giddedatlle_venta = onekey
                         vdb.gidproducto = datalistado.SelectedCells.Item(3).Value
                         vdb.gidventa = datalistado.SelectedCells.Item(2).Value
@@ -252,8 +252,8 @@ Partial Public Class frmDetalleVentaPostGrado
     End Sub
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
-        frmProducto.txtTag.Text = "1"
-        frmProducto.ShowDialog()
+        frmProductoPostGrado.txtTag.Text = "1"
+        frmProductoPostGrado.ShowDialog()
     End Sub
 
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
@@ -449,14 +449,14 @@ Partial Public Class frmDetalleVentaPostGrado
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        Dim dts As New vDetalleVentaREDRUBI
-        Dim func As New fDetalleVentaREDRUBI
+        Dim dts As New vDetalleVentaPostGrado
+        Dim func As New fDetalleVentaPostGrado
         dts.gidventa = txtIdVenta.Text
         func.eliminar(dts)
 
 
-        Dim dtsDV As New vVenta
-        Dim funcDV As New fVenta
+        Dim dtsDV As New vVentaPostGrado
+        Dim funcDV As New fVentaPostGrado
         dtsDV.Gidventa = txtIdVenta.Text
 
         funcDV.eliminar(dtsDV)

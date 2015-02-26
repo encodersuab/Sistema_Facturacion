@@ -227,7 +227,7 @@ Partial Class frmCategoriaPostGrado
         Me.txtflag.Text = "0"
         Me.txtflag.Visible = False
         '
-        'frmCategoria
+        'frmCategoriaPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -235,8 +235,8 @@ Partial Class frmCategoriaPostGrado
         Me.Controls.Add(Me.txtflag)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "frmCategoria"
-        Me.Text = "Listado de categoria"
+        Me.Name = "frmCategoriaPostGrado"
+        Me.Text = ".:. CATEGORIA .:."
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)

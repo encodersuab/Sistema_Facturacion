@@ -435,20 +435,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sistema_Facturacion_FEXPOBENI\Sistema_Facturacion_FEXPOBENI.vbproj">
-      <Project>{06119f73-af7f-414b-9a85-9d7642d7e583}</Project>
-      <Name>Sistema_Facturacion_FEXPOBENI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sistema_Facturacion_POSTGRADO\Sistema_Facturacion_POSTGRADO.vbproj">
-      <Project>{3fec8a54-d185-420c-8d97-8ca9ba9bd96c}</Project>
-      <Name>Sistema_Facturacion_POSTGRADO</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sistema_Facturacion_REDRUBI\Sistema_Facturacion_REDRUBI.vbproj">
-      <Project>{19eaf0d1-af5a-42d5-85d4-c2fc3389905c}</Project>
-      <Name>Sistema_Facturacion_REDRUBI</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\descarga %284%29.jpg" />
   </ItemGroup>
   <ItemGroup>

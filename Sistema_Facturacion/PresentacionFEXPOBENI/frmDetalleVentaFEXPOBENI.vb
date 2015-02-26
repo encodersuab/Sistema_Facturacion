@@ -252,8 +252,8 @@ Partial Public Class frmDetalleVentaFEXPOBENI
     End Sub
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
-        frmProducto.txtTag.Text = "1"
-        frmProducto.ShowDialog()
+        frmProductoFEXPOBENI.txtTag.Text = "1"
+        frmProductoFEXPOBENI.ShowDialog()
     End Sub
 
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged

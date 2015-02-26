@@ -1,6 +1,6 @@
 ﻿Public Class frmVentaFEXPOBENI
     Private dt As New DataTable
-    Private Sub frmVenta_LoadFEXPOBENI(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
     End Sub
     Public Sub limpiar()
@@ -17,7 +17,7 @@
 
     Private Sub mostrar()
         Try
-            Dim func As New fVentaFEXPOBENI
+            Dim func As New fVenta
             dt = func.mostrar
             datalistado.Columns.Item("Eliminar").Visible = False
 
@@ -83,8 +83,8 @@
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNombreCLiente.Text <> "" And txtNumDoc.Text <> "" Then
             Try
-                Dim dts As New vVentaFEXPOBENI
-                Dim func As New fVentaFEXPOBENI
+                Dim dts As New vVenta
+                Dim func As New fVenta
 
                 dts.Gidcliente = txtidCliente.Text
                 dts.Gfecha_venta = dtpFecha.Value.Date.ToString
@@ -124,8 +124,8 @@
 
             If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNumDoc.Text <> "" And txtIdVenta.Text <> "" Then
                 Try
-                    Dim dts As New vVentaFEXPOBENI
-                    Dim func As New fVentaFEXPOBENI
+                    Dim dts As New vVenta
+                    Dim func As New fVenta
 
                     dts.Gidventa = txtIdVenta.Text
                     dts.Gidcliente = txtidCliente.Text
@@ -191,13 +191,13 @@
     End Sub
 
     Private Sub cargar_detalle()
-        frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
-        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
-        frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
-        frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
-        frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
-        frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
-        frmDetalleVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
+        frmDetalleVentaFEXPOBENI.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        frmDetalleVentaFEXPOBENI.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
+        frmDetalleVentaFEXPOBENI.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
+        frmDetalleVentaFEXPOBENI.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
+        frmDetalleVentaFEXPOBENI.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
+        frmDetalleVentaFEXPOBENI.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
+        frmDetalleVentaFEXPOBENI.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
         'frmDetalleVenta.txtidCliente.Text = txtidCliente.Text
         'frmDetalleVenta.txtIdVenta.Text = txtIdVenta.Text
         'frmDetalleVenta.txtNombreCLiente.Text = txtNombreCLiente.Text
@@ -216,8 +216,8 @@
     End Sub
 
     Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
-        frmCliente.txtFlag.Text = "1"
-        frmCliente.ShowDialog()
+        frmClienteFEXPOBENI.txtFlag.Text = "1"
+        frmClienteFEXPOBENI.ShowDialog()
 
     End Sub
 
