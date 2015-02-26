@@ -105,8 +105,8 @@ Public Class frmInicioF
     End Sub
 
     Private Sub CategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        frmCategoriaREDRUBI.MdiParent = Me
-        frmCategoriaREDRUBI.Show()
+        frmCategoria.MdiParent = Me
+        frmCategoria.Show()
     End Sub
 
     Private Sub ProductoToolStripMenuItem_Click(sender As Object, e As EventArgs)
@@ -156,8 +156,8 @@ Public Class frmInicioF
     End Sub
 
     Private Sub CategoriaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem1.Click
-        frmCategoriaREDRUBI.MdiParent = Me
-        frmCategoriaREDRUBI.Show()
+        frmCategoria.MdiParent = Me
+        frmCategoria.Show()
 
     End Sub
 
@@ -194,8 +194,8 @@ Public Class frmInicioF
     End Sub
 
     Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
-        frmCategoriaREDRUBI.MdiParent = Me
-        frmCategoriaREDRUBI.Show()
+        Dim a As New Sistema_Facturacion_REDRUBI.frmCategoria
+        a.Show()
     End Sub
 
     Private Sub ToolStripMenuItem6_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem6.Click

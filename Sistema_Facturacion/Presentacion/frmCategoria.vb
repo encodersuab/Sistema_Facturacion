@@ -13,7 +13,7 @@
         btnEditar.Visible = False
         txtNombre.Text = ""
         txtIdcategoria.Text = ""
-
+ 
 
     End Sub
 
@@ -94,7 +94,7 @@
 
 
                 dts.gnombre_categoria = txtNombre.Text
-
+                
 
                 If func.insertar(dts) Then
                     MessageBox.Show("Categoria registrado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -130,7 +130,7 @@
 
                     dts.gidcategoria = txtIdcategoria.Text
                     dts.gnombre_categoria = txtNombre.Text
-
+                   
 
                     If func.editar(dts) Then
                         MessageBox.Show("Categoria modificada correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -156,7 +156,7 @@
     Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick
         txtIdcategoria.Text = datalistado.SelectedCells.Item(1).Value
         txtNombre.Text = datalistado.SelectedCells.Item(2).Value
-
+       
 
         btnEditar.Visible = True
         btnGuardar.Visible = False
@@ -236,12 +236,12 @@
 
     End Sub
 
-
+  
     Private Sub txtNombre_TextChanged(sender As Object, e As EventArgs) Handles txtNombre.TextChanged
 
     End Sub
 
     Private Sub txtIdcategoria_Validated(sender As Object, e As EventArgs) Handles txtIdcategoria.Validated
-
+       
     End Sub
 End Class
