@@ -83,8 +83,8 @@
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNombreCLiente.Text <> "" And txtNumDoc.Text <> "" Then
             Try
-                Dim dts As New vVenta
-                Dim func As New fVenta
+                Dim dts As New vVentaPostGrado
+                Dim func As New fVentaPostGrado
 
                 dts.Gidcliente = txtidCliente.Text
                 dts.Gfecha_venta = dtpFecha.Value.Date.ToString
@@ -191,13 +191,13 @@
     End Sub
 
     Private Sub cargar_detalle()
-        frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
-        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
-        frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
-        frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
-        frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
-        frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
-        frmDetalleVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
+        frmDetalleVentaPostGrado.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        frmDetalleVentaPostGrado.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
+        frmDetalleVentaPostGrado.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
+        frmDetalleVentaPostGrado.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
+        frmDetalleVentaPostGrado.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
+        frmDetalleVentaPostGrado.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
+        frmDetalleVentaPostGrado.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
         'frmDetalleVenta.txtidCliente.Text = txtidCliente.Text
         'frmDetalleVenta.txtIdVenta.Text = txtIdVenta.Text
         'frmDetalleVenta.txtNombreCLiente.Text = txtNombreCLiente.Text
@@ -216,8 +216,8 @@
     End Sub
 
     Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
-        frmCliente.txtFlag.Text = "1"
-        frmCliente.ShowDialog()
+        frmClientePostGrado.txtFlag.Text = "1"
+        frmClientePostGrado.ShowDialog()
 
     End Sub
 

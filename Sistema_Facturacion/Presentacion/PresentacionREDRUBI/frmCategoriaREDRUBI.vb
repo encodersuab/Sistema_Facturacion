@@ -220,8 +220,8 @@
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
         If txtflag.Text = "1" Then
-            frmProducto.txtidcategoria.Text = datalistado.SelectedCells.Item(1).Value
-            frmProducto.txtnom_categoria.Text = datalistado.SelectedCells.Item(2).Value
+            frmProductoREDRUBI.txtidcategoria.Text = datalistado.SelectedCells.Item(1).Value
+            frmProductoREDRUBI.txtnom_categoria.Text = datalistado.SelectedCells.Item(2).Value
             Me.Close()
 
         End If

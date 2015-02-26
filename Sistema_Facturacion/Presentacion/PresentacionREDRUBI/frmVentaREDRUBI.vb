@@ -39,7 +39,7 @@
         btnNuevo.Visible = True
         btnEditar.Visible = False
 
-        '       Buscar()
+        '      Buscar()
 
     End Sub
 
@@ -170,10 +170,10 @@
     End Sub
 
     Private Sub datalistado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellContentClick
-        'If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then
-        '    Dim chkcell As DataGridViewCheckBoxCell = Me.datalistado.Rows(e.RowIndex).Cells("Eliminar")
-        '    chkcell.Value = Not chkcell.Value
-        'End If
+        If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then
+            Dim chkcell As DataGridViewCheckBoxCell = Me.datalistado.Rows(e.RowIndex).Cells("Eliminar")
+            chkcell.Value = Not chkcell.Value
+        End If
     End Sub
 
 
@@ -213,7 +213,7 @@
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
-        'cargar_detalle()
+        cargar_detalle()
 
     End Sub
 

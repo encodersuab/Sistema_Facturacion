@@ -252,8 +252,8 @@ Partial Public Class frmDetalleVentaREDRUBI
     End Sub
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
-        frmProducto.txtTag.Text = "1"
-        frmProducto.ShowDialog()
+        frmProductoREDRUBI.txtTag.Text = "1"
+        frmProductoREDRUBI.ShowDialog()
     End Sub
 
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
@@ -455,8 +455,8 @@ Partial Public Class frmDetalleVentaREDRUBI
         func.eliminar(dts)
 
 
-        Dim dtsDV As New vVenta
-        Dim funcDV As New fVenta
+        Dim dtsDV As New vVentaREDRUBI
+        Dim funcDV As New fVentaREDRUBI
         dtsDV.Gidventa = txtIdVenta.Text
 
         funcDV.eliminar(dtsDV)

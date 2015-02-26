@@ -271,16 +271,16 @@
     End Sub
 
     Private Sub btncategoria_Click(sender As Object, e As EventArgs) Handles btncategoria.Click
-        frmCategoriaREDRUBI.txtflag.Text = "1"
-        frmCategoriaREDRUBI.ShowDialog()
+        frmCategoriaFEXPOBENI.txtflag.Text = "1"
+        frmCategoriaFEXPOBENI.ShowDialog()
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
         If txtTag.Text = "1" Then
-            frmDetalleVenta.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
-            frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
-            frmDetalleVenta.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
-            frmDetalleVenta.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+            frmDetalleVentaFEXPOBENI.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+            frmDetalleVentaFEXPOBENI.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+            frmDetalleVentaFEXPOBENI.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+            frmDetalleVentaFEXPOBENI.txtStock.Text = datalistado.SelectedCells.Item(6).Value
 
             Me.Close()
         End If

@@ -23,7 +23,7 @@
 
     Private Sub mostrar()
         Try
-            Dim func As New fUsuario
+            Dim func As New fUsuarioPostGrado
             dt = func.mostrar
             datalistado.Columns.Item("Eliminar").Visible = False
 
@@ -81,8 +81,8 @@
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtNombre.Text <> "" And txtApellido.Text <> "" And txtDireccion.Text <> "" And txtTelefono.Text <> "" And txtCi.Text <> "" And txtLogin.Text <> "" And txtContraceña.Text <> "" And txtAcceso.Text <> "" And txtRol.Text <> "" Then
             Try
-                Dim dts As New vUsuario
-                Dim func As New fUsuario
+                Dim dts As New vUsuarioPostGrado
+                Dim func As New fUsuarioPostGrado
 
                 dts.gnombre = txtNombre.Text
                 dts.gapellidos = txtApellido.Text
@@ -122,8 +122,8 @@
 
             If Me.ValidateChildren = True And txtNombre.Text <> "" And txtApellido.Text <> "" And txtDireccion.Text <> "" And txtTelefono.Text <> "" And txtCi.Text <> "" And txtIdUsuario.Text <> "" And txtLogin.Text <> "" And txtContraceña.Text <> "" And txtAcceso.Text <> "" And txtRol.Text <> "" Then
                 Try
-                    Dim dts As New vUsuario
-                    Dim func As New fUsuario
+                    Dim dts As New vUsuarioPostGrado
+                    Dim func As New fUsuarioPostGrado
 
                     dts.gidusuario = txtIdUsuario.Text
                     dts.gnombre = txtNombre.Text

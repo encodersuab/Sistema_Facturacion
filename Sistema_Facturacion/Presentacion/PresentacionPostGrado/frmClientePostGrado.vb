@@ -1,7 +1,7 @@
-﻿Public Class frmClienteREDRUBIPostGrado
+﻿Public Class frmClientePostGrado
 
     Private dt As New DataTable
-    Private Sub frmClienteREDRUBI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmClientePostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
     End Sub
 
@@ -20,7 +20,7 @@
 
     Private Sub mostrar()
         Try
-            Dim func As New fClienteREDRUBI
+            Dim func As New fClientePostGrado
             dt = func.mostrar
             datalistado.Columns.Item("Eliminar").Visible = False
 
@@ -159,8 +159,8 @@
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtNombre.Text <> "" And txtApellido.Text <> "" And txtDireccion.Text <> "" And txtTelefono.Text <> "" And txtCi.Text <> "" Then
             Try
-                Dim dts As New vClienteREDRUBI
-                Dim func As New fClienteREDRUBI
+                Dim dts As New vClientePostGrado
+                Dim func As New fClientePostGrado
 
                 dts.gnombre = txtNombre.Text
                 dts.gapellidos = txtApellido.Text
@@ -197,8 +197,8 @@
 
             If Me.ValidateChildren = True And txtNombre.Text <> "" And txtApellido.Text <> "" And txtDireccion.Text <> "" And txtTelefono.Text <> "" And txtCi.Text <> "" And txtIdCliente.Text <> "" Then
                 Try
-                    Dim dts As New vClienteREDRUBI
-                    Dim func As New fClienteREDRUBI
+                    Dim dts As New vClientePostGrado
+                    Dim func As New fClientePostGrado
 
                     dts.gicliente = txtIdCliente.Text
                     dts.gnombre = txtNombre.Text
@@ -261,10 +261,10 @@
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
         If txtFlag.Text = "1" Then
-            frmVenta.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
-            frmVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
-            frmVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
-            frmVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value
+            frmVentaPostGrado.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
+            frmVentaPostGrado.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
+            frmVentaPostGrado.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
+            frmVentaPostGrado.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value
             Me.Close()
 
 
