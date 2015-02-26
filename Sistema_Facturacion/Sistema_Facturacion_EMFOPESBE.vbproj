@@ -346,10 +346,28 @@
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteFactura.Designer.vb">
+      <DependentUpon>frmReporteFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteProductos.Designer.vb">
       <DependentUpon>frmReporteProductos.vb</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentas.Designer.vb">
+      <DependentUpon>frmReporteVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\rptReImpresionFactura.Designer.vb">
+      <DependentUpon>rptReImpresionFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\rptReImpresionFactura.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -450,12 +468,22 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCliente.resx">
       <DependentUpon>frmReporteCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteFactura.resx">
+      <DependentUpon>frmReporteFactura.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteProductos.resx">
       <DependentUpon>frmReporteProductos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentas.resx">
+      <DependentUpon>frmReporteVentas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptcategoria.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptFactura.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptProducto.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptcliente.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReImpresionFactura.resx">
+      <DependentUpon>rptReImpresionFactura.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentas.rdlc" />
   </ItemGroup>
   <ItemGroup>
