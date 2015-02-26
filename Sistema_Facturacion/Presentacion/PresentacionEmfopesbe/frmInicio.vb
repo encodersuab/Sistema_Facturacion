@@ -1,7 +1,5 @@
 ﻿Imports System.Windows.Forms
-Imports Sistema_Facturacion_FEXPOBENI
-Imports Sistema_Facturacion_POSTGRADO
-Imports Sistema_Facturacion_REDRUBI
+
 Public Class frmInicioF
 
     Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripButton.Click
@@ -105,8 +103,8 @@ Public Class frmInicioF
     End Sub
 
     Private Sub CategoriaToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        frmCategoriaREDRUBI.MdiParent = Me
-        frmCategoriaREDRUBI.Show()
+        frmCategoria.MdiParent = Me
+        frmCategoria.Show()
     End Sub
 
     Private Sub ProductoToolStripMenuItem_Click(sender As Object, e As EventArgs)
@@ -156,8 +154,8 @@ Public Class frmInicioF
     End Sub
 
     Private Sub CategoriaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem1.Click
-        frmCategoriaREDRUBI.MdiParent = Me
-        frmCategoriaREDRUBI.Show()
+        frmCategoria.MdiParent = Me
+        frmCategoria.Show()
 
     End Sub
 
@@ -184,22 +182,37 @@ Public Class frmInicioF
     End Sub
 
     Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
-        Dim a As New Sistema_Facturacion_REDRUBI.frmCliente
-        a.Show()
+      
     End Sub
 
     Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
-        Dim a As New Sistema_Facturacion_REDRUBI.frmProducto
-        a.Show()
+    
     End Sub
 
     Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
-        frmCategoriaREDRUBI.MdiParent = Me
-        frmCategoriaREDRUBI.Show()
+        frmCategoria.MdiParent = Me
+        frmCategoria.Show()
     End Sub
 
     Private Sub ToolStripMenuItem6_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem6.Click
-        Dim a As New Sistema_Facturacion_REDRUBI.frmVenta
-        a.Show()
+       
+    End Sub
+
+    Private Sub RpteProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RpteProductoToolStripMenuItem.Click
+        frmReporteProductos.MdiParent = Me
+        frmReporteProductos.Show()
+
+    End Sub
+
+    Private Sub RpteClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RpteClienteToolStripMenuItem.Click
+        frmReporteCliente.MdiParent = Me
+        frmReporteCliente.Show()
+
+    End Sub
+
+    Private Sub CategoriaToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem2.Click
+        frmReporteCatergotria.MdiParent = Me
+        frmReporteCatergotria.Show()
+
     End Sub
 End Class
