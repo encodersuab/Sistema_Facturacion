@@ -36,7 +36,7 @@ Public Class fCategoria
             cmd.Connection = cnn
 
             cmd.Parameters.AddWithValue("@nombre_categoria", dts.gnombre_categoria)
-     
+
 
             If cmd.ExecuteNonQuery Then
                 Return True
@@ -60,7 +60,7 @@ Public Class fCategoria
 
             cmd.Parameters.AddWithValue("@idcategotia", dts.gidcategoria)
             cmd.Parameters.AddWithValue("@nombre_categoria", dts.gnombre_categoria)
-  
+
 
             If cmd.ExecuteNonQuery Then
                 Return True
