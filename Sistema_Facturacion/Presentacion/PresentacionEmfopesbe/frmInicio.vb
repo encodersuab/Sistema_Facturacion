@@ -316,4 +316,9 @@ Public Class frmInicioF
         frmrptReImpresionFactura.MdiParent = Me
         frmrptReImpresionFactura.Show()
     End Sub
+
+    Private Sub RptUsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RptUsuariosToolStripMenuItem.Click
+        frmReporteUsuarios.MdiParent = Me
+        frmReporteUsuarios.Show()
+    End Sub
 End Class

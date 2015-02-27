@@ -24,15 +24,25 @@ Partial Class frmrptReImpresionFactura
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Me.mostrar_facturaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.btnReporte = New System.Windows.Forms.Button()
         Me.txtNumFactura = New System.Windows.Forms.TextBox()
-        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
-        Me.mostrar_facturaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.mostrar_facturaTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_facturaTableAdapter()
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mostrar_facturaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'mostrar_facturaBindingSource
+        '
+        Me.mostrar_facturaBindingSource.DataMember = "mostrar_factura"
+        Me.mostrar_facturaBindingSource.DataSource = Me.dbfacDataSet
+        '
+        'dbfacDataSet
+        '
+        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
+        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'ReportViewer1
         '
@@ -42,7 +52,7 @@ Partial Class frmrptReImpresionFactura
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptFactura.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 33)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(1123, 410)
+        Me.ReportViewer1.Size = New System.Drawing.Size(700, 410)
         Me.ReportViewer1.TabIndex = 0
         '
         'btnReporte
@@ -61,16 +71,6 @@ Partial Class frmrptReImpresionFactura
         Me.txtNumFactura.Size = New System.Drawing.Size(100, 20)
         Me.txtNumFactura.TabIndex = 2
         '
-        'dbfacDataSet
-        '
-        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
-        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'mostrar_facturaBindingSource
-        '
-        Me.mostrar_facturaBindingSource.DataMember = "mostrar_factura"
-        Me.mostrar_facturaBindingSource.DataSource = Me.dbfacDataSet
-        '
         'mostrar_facturaTableAdapter
         '
         Me.mostrar_facturaTableAdapter.ClearBeforeFill = True
@@ -79,14 +79,14 @@ Partial Class frmrptReImpresionFactura
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1124, 441)
+        Me.ClientSize = New System.Drawing.Size(712, 441)
         Me.Controls.Add(Me.txtNumFactura)
         Me.Controls.Add(Me.btnReporte)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "frmrptReImpresionFactura"
         Me.Text = "rptReImpresionFactura"
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mostrar_facturaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
