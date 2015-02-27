@@ -97,3 +97,4 @@ D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\De
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteVentas.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmrptReImpresionFactura.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteUsuarios.resources
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteUsuarios.resources

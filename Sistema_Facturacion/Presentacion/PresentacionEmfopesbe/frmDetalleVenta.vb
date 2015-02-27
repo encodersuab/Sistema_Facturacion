@@ -397,6 +397,7 @@ Partial Public Class frmDetalleVenta
                 frmReporteFactura.txtnumfactura.Text = aux
 
                 MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                frmReporteFactura.MdiParent = frmInicioF
                 frmReporteFactura.Show()
 
                 Me.Close()
