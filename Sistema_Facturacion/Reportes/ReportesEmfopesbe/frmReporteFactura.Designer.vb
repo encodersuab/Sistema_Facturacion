@@ -29,8 +29,11 @@ Partial Class frmReporteFactura
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.txtnumfactura = New System.Windows.Forms.TextBox()
         Me.mostrar_facturaTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_facturaTableAdapter()
+        Me.mostrar_producto_emfopesbeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.mostrar_producto_emfopesbeTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_producto_emfopesbeTableAdapter()
         CType(Me.mostrar_facturaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mostrar_producto_emfopesbeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mostrar_facturaBindingSource
@@ -67,6 +70,15 @@ Partial Class frmReporteFactura
         '
         Me.mostrar_facturaTableAdapter.ClearBeforeFill = True
         '
+        'mostrar_producto_emfopesbeBindingSource
+        '
+        Me.mostrar_producto_emfopesbeBindingSource.DataMember = "mostrar_producto_emfopesbe"
+        Me.mostrar_producto_emfopesbeBindingSource.DataSource = Me.dbfacDataSet
+        '
+        'mostrar_producto_emfopesbeTableAdapter
+        '
+        Me.mostrar_producto_emfopesbeTableAdapter.ClearBeforeFill = True
+        '
         'frmReporteFactura
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -78,6 +90,7 @@ Partial Class frmReporteFactura
         Me.Text = "frmReporteFactura"
         CType(Me.mostrar_facturaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mostrar_producto_emfopesbeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -87,4 +100,6 @@ Partial Class frmReporteFactura
     Friend WithEvents dbfacDataSet As Sistema_Facturacion.dbfacDataSet
     Friend WithEvents txtnumfactura As System.Windows.Forms.TextBox
     Friend WithEvents mostrar_facturaTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_facturaTableAdapter
+    Friend WithEvents mostrar_producto_emfopesbeBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents mostrar_producto_emfopesbeTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_producto_emfopesbeTableAdapter
 End Class

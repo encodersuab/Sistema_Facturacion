@@ -264,7 +264,7 @@
             frmVenta.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
             frmVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
             frmVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
-            frmVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value
+            frmVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
             Me.Close()
 
 

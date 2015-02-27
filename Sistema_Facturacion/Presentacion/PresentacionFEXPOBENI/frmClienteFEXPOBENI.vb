@@ -265,7 +265,7 @@
             frmVentaFEXPOBENI.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
             frmVentaFEXPOBENI.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
             frmVentaFEXPOBENI.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
-            frmVentaFEXPOBENI.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value
+            frmVentaFEXPOBENI.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
             Me.Close()
 
 
