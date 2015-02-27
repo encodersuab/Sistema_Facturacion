@@ -265,7 +265,7 @@
             frmVentaPostGrado.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
             frmVentaPostGrado.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
             frmVentaPostGrado.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
-            frmVentaPostGrado.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value
+            frmVentaPostGrado.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
             Me.Close()
 
 
