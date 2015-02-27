@@ -358,6 +358,12 @@
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteProductos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteUsuarios.Designer.vb">
+      <DependentUpon>frmReporteUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentas.Designer.vb">
       <DependentUpon>frmReporteVentas.vb</DependentUpon>
     </Compile>
@@ -474,6 +480,9 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteProductos.resx">
       <DependentUpon>frmReporteProductos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteUsuarios.resx">
+      <DependentUpon>frmReporteUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentas.resx">
       <DependentUpon>frmReporteVentas.vb</DependentUpon>
     </EmbeddedResource>
@@ -484,6 +493,7 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmrptReImpresionFactura.resx">
       <DependentUpon>frmrptReImpresionFactura.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptUsuarios.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentas.rdlc" />
   </ItemGroup>
   <ItemGroup>

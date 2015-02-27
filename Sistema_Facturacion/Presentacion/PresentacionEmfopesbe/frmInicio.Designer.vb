@@ -104,6 +104,7 @@ Partial Class frmInicioF
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.lbrol = New System.Windows.Forms.Label()
         Me.lbUsurio = New System.Windows.Forms.Label()
+        Me.RptUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -165,7 +166,7 @@ Partial Class frmInicioF
         '
         'reporteE
         '
-        Me.reporteE.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RptVentaToolStripMenuItem, Me.RpteProductoToolStripMenuItem, Me.CategoriaToolStripMenuItem2, Me.RpteClienteToolStripMenuItem})
+        Me.reporteE.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RptVentaToolStripMenuItem, Me.RpteProductoToolStripMenuItem, Me.CategoriaToolStripMenuItem2, Me.RpteClienteToolStripMenuItem, Me.RptUsuariosToolStripMenuItem})
         Me.reporteE.Name = "reporteE"
         Me.reporteE.Size = New System.Drawing.Size(167, 22)
         Me.reporteE.Text = "Reporte"
@@ -637,6 +638,12 @@ Partial Class frmInicioF
         Me.lbUsurio.TabIndex = 11
         Me.lbUsurio.Text = "Label0"
         '
+        'RptUsuariosToolStripMenuItem
+        '
+        Me.RptUsuariosToolStripMenuItem.Name = "RptUsuariosToolStripMenuItem"
+        Me.RptUsuariosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RptUsuariosToolStripMenuItem.Text = "Rpt Usuarios"
+        '
         'frmInicioF
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -741,5 +748,6 @@ Partial Class frmInicioF
     Friend WithEvents ToolStripMenuItem20 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem21 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents reImprecionP As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents RptUsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
