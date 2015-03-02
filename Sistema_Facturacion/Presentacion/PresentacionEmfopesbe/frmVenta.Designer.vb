@@ -48,6 +48,7 @@ Partial Class frmVenta
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.btnGuardarVP = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -96,6 +97,7 @@ Partial Class frmVenta
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnGuardarVP)
         Me.GroupBox1.Controls.Add(Me.cbxVentaXplanilla)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
@@ -291,6 +293,15 @@ Partial Class frmVenta
         '
         Me.erroricono.ContainerControl = Me
         '
+        'btnGuardarVP
+        '
+        Me.btnGuardarVP.Location = New System.Drawing.Point(158, 253)
+        Me.btnGuardarVP.Name = "btnGuardarVP"
+        Me.btnGuardarVP.Size = New System.Drawing.Size(67, 26)
+        Me.btnGuardarVP.TabIndex = 24
+        Me.btnGuardarVP.Text = "Guardar"
+        Me.btnGuardarVP.UseVisualStyleBackColor = True
+        '
         'frmVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -334,4 +345,5 @@ Partial Class frmVenta
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
     Friend WithEvents cbxVentaXplanilla As System.Windows.Forms.CheckBox
+    Friend WithEvents btnGuardarVP As System.Windows.Forms.Button
 End Class
