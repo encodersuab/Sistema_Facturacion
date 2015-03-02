@@ -94,6 +94,12 @@
                 If func.insertar(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
+                    If cbxVentaXplanilla.Checked = True Then
+                        frmDetalleVenta.txtestado.Text = "1"
+                    Else
+                        frmDetalleVenta.txtestado.Text = "0"
+                    End If
+
                     mostrar()
                     cargar_detalle()
                     limpiar()

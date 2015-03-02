@@ -47,6 +47,7 @@ Partial Class frmVenta
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.cbxVentaXplanilla = New System.Windows.Forms.CheckBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -95,6 +96,7 @@ Partial Class frmVenta
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.cbxVentaXplanilla)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.cbTipoDoc)
@@ -173,7 +175,7 @@ Partial Class frmVenta
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(162, 217)
+        Me.btnGuardar.Location = New System.Drawing.Point(158, 234)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -182,7 +184,7 @@ Partial Class frmVenta
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(162, 217)
+        Me.btnEditar.Location = New System.Drawing.Point(158, 234)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -191,7 +193,7 @@ Partial Class frmVenta
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(247, 217)
+        Me.btncancelar.Location = New System.Drawing.Point(243, 234)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -200,7 +202,7 @@ Partial Class frmVenta
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(78, 217)
+        Me.btnNuevo.Location = New System.Drawing.Point(74, 234)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -279,6 +281,16 @@ Partial Class frmVenta
         '
         Me.erroricono.ContainerControl = Me
         '
+        'cbxVentaXplanilla
+        '
+        Me.cbxVentaXplanilla.AutoSize = True
+        Me.cbxVentaXplanilla.Location = New System.Drawing.Point(144, 211)
+        Me.cbxVentaXplanilla.Name = "cbxVentaXplanilla"
+        Me.cbxVentaXplanilla.Size = New System.Drawing.Size(108, 17)
+        Me.cbxVentaXplanilla.TabIndex = 23
+        Me.cbxVentaXplanilla.Text = "Venta por Planilla"
+        Me.cbxVentaXplanilla.UseVisualStyleBackColor = True
+        '
         'frmVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -321,4 +333,5 @@ Partial Class frmVenta
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
+    Friend WithEvents cbxVentaXplanilla As System.Windows.Forms.CheckBox
 End Class

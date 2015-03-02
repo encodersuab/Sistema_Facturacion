@@ -25,7 +25,6 @@ Partial Class frmDetalleVenta
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.lbllave = New System.Windows.Forms.Label()
         Me.lbCC = New System.Windows.Forms.Label()
@@ -68,6 +67,9 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.txtestado = New System.Windows.Forms.TextBox()
+        Me.btnGuardarVentaPlanilla = New System.Windows.Forms.Button()
+        Me.btnGuardarVEnta = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -79,7 +81,8 @@ Partial Class frmDetalleVenta
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Button1)
+        Me.GroupBox2.Controls.Add(Me.btnGuardarVentaPlanilla)
+        Me.GroupBox2.Controls.Add(Me.btnGuardarVEnta)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
         Me.GroupBox2.Controls.Add(Me.lbllave)
         Me.GroupBox2.Controls.Add(Me.lbCC)
@@ -96,15 +99,6 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(322, 346)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(161, 85)
-        Me.Button1.TabIndex = 40
-        Me.Button1.Text = "Finalizar Venta"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'lbnumAutor
         '
@@ -503,11 +497,38 @@ Partial Class frmDetalleVenta
         Me.Button2.Text = "Cancelar Venta"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'txtestado
+        '
+        Me.txtestado.Location = New System.Drawing.Point(113, -3)
+        Me.txtestado.Name = "txtestado"
+        Me.txtestado.Size = New System.Drawing.Size(100, 20)
+        Me.txtestado.TabIndex = 7
+        Me.txtestado.Visible = False
+        '
+        'btnGuardarVentaPlanilla
+        '
+        Me.btnGuardarVentaPlanilla.Location = New System.Drawing.Point(296, 371)
+        Me.btnGuardarVentaPlanilla.Name = "btnGuardarVentaPlanilla"
+        Me.btnGuardarVentaPlanilla.Size = New System.Drawing.Size(161, 71)
+        Me.btnGuardarVentaPlanilla.TabIndex = 43
+        Me.btnGuardarVentaPlanilla.Text = "Finalizar Venta por Planilla"
+        Me.btnGuardarVentaPlanilla.UseVisualStyleBackColor = True
+        '
+        'btnGuardarVEnta
+        '
+        Me.btnGuardarVEnta.Location = New System.Drawing.Point(371, 371)
+        Me.btnGuardarVEnta.Name = "btnGuardarVEnta"
+        Me.btnGuardarVEnta.Size = New System.Drawing.Size(161, 71)
+        Me.btnGuardarVEnta.TabIndex = 42
+        Me.btnGuardarVEnta.Text = "Finalizar Venta"
+        Me.btnGuardarVEnta.UseVisualStyleBackColor = True
+        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1072, 498)
+        Me.Controls.Add(Me.txtestado)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -523,6 +544,7 @@ Partial Class frmDetalleVenta
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
@@ -564,9 +586,11 @@ Partial Class frmDetalleVenta
     Friend WithEvents lbCC As System.Windows.Forms.Label
     Friend WithEvents lbllave As System.Windows.Forms.Label
     Friend WithEvents lbnumAutor As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents txtestado As System.Windows.Forms.TextBox
+    Friend WithEvents btnGuardarVentaPlanilla As System.Windows.Forms.Button
+    Friend WithEvents btnGuardarVEnta As System.Windows.Forms.Button
 End Class
