@@ -25,6 +25,8 @@ Partial Class frmDetalleVenta
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.btnGuardarVentaPlanilla = New System.Windows.Forms.Button()
+        Me.btnGuardarVEnta = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.lbllave = New System.Windows.Forms.Label()
         Me.lbCC = New System.Windows.Forms.Label()
@@ -68,8 +70,6 @@ Partial Class frmDetalleVenta
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Button2 = New System.Windows.Forms.Button()
         Me.txtestado = New System.Windows.Forms.TextBox()
-        Me.btnGuardarVentaPlanilla = New System.Windows.Forms.Button()
-        Me.btnGuardarVEnta = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -100,10 +100,28 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
+        'btnGuardarVentaPlanilla
+        '
+        Me.btnGuardarVentaPlanilla.Location = New System.Drawing.Point(371, 371)
+        Me.btnGuardarVentaPlanilla.Name = "btnGuardarVentaPlanilla"
+        Me.btnGuardarVentaPlanilla.Size = New System.Drawing.Size(161, 71)
+        Me.btnGuardarVentaPlanilla.TabIndex = 43
+        Me.btnGuardarVentaPlanilla.Text = "Finalizar Venta por Planilla"
+        Me.btnGuardarVentaPlanilla.UseVisualStyleBackColor = True
+        '
+        'btnGuardarVEnta
+        '
+        Me.btnGuardarVEnta.Location = New System.Drawing.Point(371, 371)
+        Me.btnGuardarVEnta.Name = "btnGuardarVEnta"
+        Me.btnGuardarVEnta.Size = New System.Drawing.Size(161, 71)
+        Me.btnGuardarVEnta.TabIndex = 42
+        Me.btnGuardarVEnta.Text = "Finalizar Venta"
+        Me.btnGuardarVEnta.UseVisualStyleBackColor = True
+        '
         'lbnumAutor
         '
         Me.lbnumAutor.AutoSize = True
-        Me.lbnumAutor.Location = New System.Drawing.Point(204, 357)
+        Me.lbnumAutor.Location = New System.Drawing.Point(7, 430)
         Me.lbnumAutor.Name = "lbnumAutor"
         Me.lbnumAutor.Size = New System.Drawing.Size(98, 13)
         Me.lbnumAutor.TabIndex = 39
@@ -113,7 +131,7 @@ Partial Class frmDetalleVenta
         'lbllave
         '
         Me.lbllave.AutoSize = True
-        Me.lbllave.Location = New System.Drawing.Point(204, 342)
+        Me.lbllave.Location = New System.Drawing.Point(7, 415)
         Me.lbllave.Name = "lbllave"
         Me.lbllave.Size = New System.Drawing.Size(37, 13)
         Me.lbllave.TabIndex = 38
@@ -123,7 +141,7 @@ Partial Class frmDetalleVenta
         'lbCC
         '
         Me.lbCC.AutoSize = True
-        Me.lbCC.Location = New System.Drawing.Point(204, 371)
+        Me.lbCC.Location = New System.Drawing.Point(7, 444)
         Me.lbCC.Name = "lbCC"
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
@@ -132,7 +150,7 @@ Partial Class frmDetalleVenta
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(7, 342)
+        Me.Label11.Location = New System.Drawing.Point(108, 391)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(71, 13)
         Me.Label11.TabIndex = 35
@@ -140,7 +158,7 @@ Partial Class frmDetalleVenta
         '
         'txttotal
         '
-        Me.txttotal.Location = New System.Drawing.Point(84, 339)
+        Me.txttotal.Location = New System.Drawing.Point(185, 388)
         Me.txttotal.Name = "txttotal"
         Me.txttotal.Size = New System.Drawing.Size(100, 20)
         Me.txttotal.TabIndex = 34
@@ -329,11 +347,11 @@ Partial Class frmDetalleVenta
         '
         'btnBuscarProducto
         '
-        Me.btnBuscarProducto.Location = New System.Drawing.Point(323, 203)
+        Me.btnBuscarProducto.Location = New System.Drawing.Point(231, 343)
         Me.btnBuscarProducto.Name = "btnBuscarProducto"
-        Me.btnBuscarProducto.Size = New System.Drawing.Size(29, 26)
+        Me.btnBuscarProducto.Size = New System.Drawing.Size(86, 35)
         Me.btnBuscarProducto.TabIndex = 23
-        Me.btnBuscarProducto.Text = "..."
+        Me.btnBuscarProducto.Text = "Seleccionar Artuculo"
         Me.btnBuscarProducto.UseVisualStyleBackColor = True
         '
         'txtNombreProducto
@@ -390,27 +408,27 @@ Partial Class frmDetalleVenta
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(149, 306)
+        Me.btnGuardar.Location = New System.Drawing.Point(144, 343)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(67, 35)
+        Me.btnGuardar.Size = New System.Drawing.Size(86, 35)
         Me.btnGuardar.TabIndex = 15
         Me.btnGuardar.Text = "Agregar Articulo"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(234, 315)
+        Me.btncancelar.Location = New System.Drawing.Point(231, 384)
         Me.btncancelar.Name = "btncancelar"
-        Me.btncancelar.Size = New System.Drawing.Size(67, 26)
+        Me.btncancelar.Size = New System.Drawing.Size(86, 26)
         Me.btncancelar.TabIndex = 13
         Me.btncancelar.Text = "Salir"
         Me.btncancelar.UseVisualStyleBackColor = True
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(65, 315)
+        Me.btnNuevo.Location = New System.Drawing.Point(144, 384)
         Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
+        Me.btnNuevo.Size = New System.Drawing.Size(86, 26)
         Me.btnNuevo.TabIndex = 12
         Me.btnNuevo.Text = "Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = True
@@ -504,24 +522,6 @@ Partial Class frmDetalleVenta
         Me.txtestado.Size = New System.Drawing.Size(100, 20)
         Me.txtestado.TabIndex = 7
         Me.txtestado.Visible = False
-        '
-        'btnGuardarVentaPlanilla
-        '
-        Me.btnGuardarVentaPlanilla.Location = New System.Drawing.Point(296, 371)
-        Me.btnGuardarVentaPlanilla.Name = "btnGuardarVentaPlanilla"
-        Me.btnGuardarVentaPlanilla.Size = New System.Drawing.Size(161, 71)
-        Me.btnGuardarVentaPlanilla.TabIndex = 43
-        Me.btnGuardarVentaPlanilla.Text = "Finalizar Venta por Planilla"
-        Me.btnGuardarVentaPlanilla.UseVisualStyleBackColor = True
-        '
-        'btnGuardarVEnta
-        '
-        Me.btnGuardarVEnta.Location = New System.Drawing.Point(371, 371)
-        Me.btnGuardarVEnta.Name = "btnGuardarVEnta"
-        Me.btnGuardarVEnta.Size = New System.Drawing.Size(161, 71)
-        Me.btnGuardarVEnta.TabIndex = 42
-        Me.btnGuardarVEnta.Text = "Finalizar Venta"
-        Me.btnGuardarVEnta.UseVisualStyleBackColor = True
         '
         'frmDetalleVenta
         '

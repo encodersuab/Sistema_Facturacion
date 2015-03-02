@@ -131,13 +131,6 @@ Partial Public Class frmDetalleVenta
                 '''''''''''''''''''''''''''''''''''''''''''
                 Dim ms As New IO.MemoryStream()
 
-
-
-
-
-
-
-
                 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
                 If func.insertar(dts) Then
@@ -247,6 +240,7 @@ Partial Public Class frmDetalleVenta
                     End If
                 Next
                 Call mostrar()
+                cbeliminar.Checked = False
             Catch ex As Exception
                 MsgBox(ex.Message)
             End Try
