@@ -20,9 +20,14 @@ Partial Public Class frmDetalleVenta
         If txtestado.Text = "1" Then
             btnGuardarVEnta.Visible = False
             btnGuardarVentaPlanilla.Visible = True
+            btnEliminarVentaPlanilla.Visible = True
+            btnEliminarVenta.Visible = False
+
         Else
             btnGuardarVEnta.Visible = True
             btnGuardarVentaPlanilla.Visible = False
+            btnEliminarVentaPlanilla.Visible = False
+            btnEliminarVenta.Visible = True
         End If
     End Sub
 
@@ -445,10 +450,11 @@ Partial Public Class frmDetalleVenta
     End Sub
 
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnEliminarVenta.Click
 
         Dim dts As New vDetalleVenta
         Dim func As New fDetalleVenta
+
         dts.gidventa = txtIdVenta.Text
         func.eliminarproductoVenta(dts)
 
@@ -528,6 +534,25 @@ Partial Public Class frmDetalleVenta
     End Sub
 
     Private Sub btnGuardarVentaPlanilla_Click(sender As Object, e As EventArgs) Handles btnGuardarVentaPlanilla.Click
+
+    End Sub
+
+    Private Sub btnEliminarVentaPlanilla_Click(sender As Object, e As EventArgs) Handles btnEliminarVentaPlanilla.Click
+
+        Dim dts As New vDetalleVenta
+        Dim func As New fDetalleVenta
+
+
+        dts.gidventa = txtIdVenta.Text
+        func.eliminarproductoVenta(dts)
+
+
+        Dim dtsDV As New vVentaPlanilla
+        Dim funcDV As New fVentaPlanilla
+
+        dtsDV.Gidventaplanilla = txtIdVenta.Text
+        funcDV.eliminar(dtsDV)
+        Me.Close()
 
     End Sub
 End Class
