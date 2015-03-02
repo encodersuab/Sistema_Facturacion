@@ -526,4 +526,8 @@ Partial Public Class frmDetalleVenta
         End Try
 
     End Sub
+
+    Private Sub btnGuardarVentaPlanilla_Click(sender As Object, e As EventArgs) Handles btnGuardarVentaPlanilla.Click
+
+    End Sub
 End Class
