@@ -91,7 +91,7 @@
                 dts.Gtipo_documento = cbTipoDoc.Text
                 dts.Gnum_documento = txtNumDoc.Text
                 dts.Gnombre_fac = txtNombreFac.Text
-                If func.insertar(dts) Then
+                If func.insertarV(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                     mostrar()

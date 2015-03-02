@@ -28,6 +28,7 @@ Partial Class frmVenta
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbxVentaXplanilla = New System.Windows.Forms.CheckBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.cbTipoDoc = New System.Windows.Forms.ComboBox()
@@ -47,7 +48,6 @@ Partial Class frmVenta
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.cbxVentaXplanilla = New System.Windows.Forms.CheckBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -121,6 +121,16 @@ Partial Class frmVenta
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'cbxVentaXplanilla
+        '
+        Me.cbxVentaXplanilla.AutoSize = True
+        Me.cbxVentaXplanilla.Location = New System.Drawing.Point(144, 211)
+        Me.cbxVentaXplanilla.Name = "cbxVentaXplanilla"
+        Me.cbxVentaXplanilla.Size = New System.Drawing.Size(108, 17)
+        Me.cbxVentaXplanilla.TabIndex = 23
+        Me.cbxVentaXplanilla.Text = "Venta por Planilla"
+        Me.cbxVentaXplanilla.UseVisualStyleBackColor = True
         '
         'Label6
         '
@@ -280,16 +290,6 @@ Partial Class frmVenta
         'erroricono
         '
         Me.erroricono.ContainerControl = Me
-        '
-        'cbxVentaXplanilla
-        '
-        Me.cbxVentaXplanilla.AutoSize = True
-        Me.cbxVentaXplanilla.Location = New System.Drawing.Point(144, 211)
-        Me.cbxVentaXplanilla.Name = "cbxVentaXplanilla"
-        Me.cbxVentaXplanilla.Size = New System.Drawing.Size(108, 17)
-        Me.cbxVentaXplanilla.TabIndex = 23
-        Me.cbxVentaXplanilla.Text = "Venta por Planilla"
-        Me.cbxVentaXplanilla.UseVisualStyleBackColor = True
         '
         'frmVenta
         '
