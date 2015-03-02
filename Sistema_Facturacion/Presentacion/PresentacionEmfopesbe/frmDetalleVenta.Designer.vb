@@ -68,8 +68,9 @@ Partial Class frmDetalleVenta
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnEliminarVenta = New System.Windows.Forms.Button()
         Me.txtestado = New System.Windows.Forms.TextBox()
+        Me.btnEliminarVentaPlanilla = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -506,14 +507,14 @@ Partial Class frmDetalleVenta
         '
         Me.erroricono.ContainerControl = Me
         '
-        'Button2
+        'btnEliminarVenta
         '
-        Me.Button2.Location = New System.Drawing.Point(985, 39)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 54)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Cancelar Venta"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnEliminarVenta.Location = New System.Drawing.Point(985, 39)
+        Me.btnEliminarVenta.Name = "btnEliminarVenta"
+        Me.btnEliminarVenta.Size = New System.Drawing.Size(75, 54)
+        Me.btnEliminarVenta.TabIndex = 6
+        Me.btnEliminarVenta.Text = "Cancelar Venta"
+        Me.btnEliminarVenta.UseVisualStyleBackColor = True
         '
         'txtestado
         '
@@ -523,13 +524,23 @@ Partial Class frmDetalleVenta
         Me.txtestado.TabIndex = 7
         Me.txtestado.Visible = False
         '
+        'btnEliminarVentaPlanilla
+        '
+        Me.btnEliminarVentaPlanilla.Location = New System.Drawing.Point(985, 76)
+        Me.btnEliminarVentaPlanilla.Name = "btnEliminarVentaPlanilla"
+        Me.btnEliminarVentaPlanilla.Size = New System.Drawing.Size(75, 54)
+        Me.btnEliminarVentaPlanilla.TabIndex = 8
+        Me.btnEliminarVentaPlanilla.Text = "Cancelar Venta"
+        Me.btnEliminarVentaPlanilla.UseVisualStyleBackColor = True
+        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1072, 498)
+        Me.Controls.Add(Me.btnEliminarVentaPlanilla)
         Me.Controls.Add(Me.txtestado)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnEliminarVenta)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmDetalleVenta"
@@ -589,8 +600,9 @@ Partial Class frmDetalleVenta
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnEliminarVenta As System.Windows.Forms.Button
     Friend WithEvents txtestado As System.Windows.Forms.TextBox
     Friend WithEvents btnGuardarVentaPlanilla As System.Windows.Forms.Button
     Friend WithEvents btnGuardarVEnta As System.Windows.Forms.Button
+    Friend WithEvents btnEliminarVentaPlanilla As System.Windows.Forms.Button
 End Class
