@@ -28,7 +28,6 @@ Partial Class frmVenta
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.cbxVentaXplanilla = New System.Windows.Forms.CheckBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.cbTipoDoc = New System.Windows.Forms.ComboBox()
@@ -48,7 +47,6 @@ Partial Class frmVenta
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.btnGuardarVP = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -97,8 +95,6 @@ Partial Class frmVenta
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.btnGuardarVP)
-        Me.GroupBox1.Controls.Add(Me.cbxVentaXplanilla)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.cbTipoDoc)
@@ -123,16 +119,6 @@ Partial Class frmVenta
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
-        '
-        'cbxVentaXplanilla
-        '
-        Me.cbxVentaXplanilla.AutoSize = True
-        Me.cbxVentaXplanilla.Location = New System.Drawing.Point(144, 211)
-        Me.cbxVentaXplanilla.Name = "cbxVentaXplanilla"
-        Me.cbxVentaXplanilla.Size = New System.Drawing.Size(108, 17)
-        Me.cbxVentaXplanilla.TabIndex = 23
-        Me.cbxVentaXplanilla.Text = "Venta por Planilla"
-        Me.cbxVentaXplanilla.UseVisualStyleBackColor = True
         '
         'Label6
         '
@@ -187,7 +173,7 @@ Partial Class frmVenta
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(158, 234)
+        Me.btnGuardar.Location = New System.Drawing.Point(162, 217)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -196,7 +182,7 @@ Partial Class frmVenta
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(158, 234)
+        Me.btnEditar.Location = New System.Drawing.Point(162, 217)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -205,7 +191,7 @@ Partial Class frmVenta
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(243, 234)
+        Me.btncancelar.Location = New System.Drawing.Point(247, 217)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -214,7 +200,7 @@ Partial Class frmVenta
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(74, 234)
+        Me.btnNuevo.Location = New System.Drawing.Point(78, 217)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -293,15 +279,6 @@ Partial Class frmVenta
         '
         Me.erroricono.ContainerControl = Me
         '
-        'btnGuardarVP
-        '
-        Me.btnGuardarVP.Location = New System.Drawing.Point(158, 253)
-        Me.btnGuardarVP.Name = "btnGuardarVP"
-        Me.btnGuardarVP.Size = New System.Drawing.Size(67, 26)
-        Me.btnGuardarVP.TabIndex = 24
-        Me.btnGuardarVP.Text = "Guardar"
-        Me.btnGuardarVP.UseVisualStyleBackColor = True
-        '
         'frmVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -344,6 +321,4 @@ Partial Class frmVenta
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
-    Friend WithEvents cbxVentaXplanilla As System.Windows.Forms.CheckBox
-    Friend WithEvents btnGuardarVP As System.Windows.Forms.Button
 End Class

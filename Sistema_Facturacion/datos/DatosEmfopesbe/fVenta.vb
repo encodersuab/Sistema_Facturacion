@@ -27,7 +27,7 @@ Public Class fVenta
         End Try
     End Function
 
-    Public Function insertarV(ByVal dts As vVenta) As Boolean
+    Public Function insertar(ByVal dts As vVenta) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("insertar_venta")
@@ -40,33 +40,6 @@ Public Class fVenta
             cmd.Parameters.AddWithValue("@tipo_documento", dts.Gtipo_documento)
             cmd.Parameters.AddWithValue("@num_documento", dts.Gnum_documento)
             cmd.Parameters.AddWithValue("@nombre_fac", dts.Gnombre_fac)
-            If cmd.ExecuteNonQuery Then
-                Return True
-            Else
-                Return False
-            End If
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-            Return False
-        Finally
-            desconectado()
-        End Try
-    End Function
-    Public Function insertarVP(ByVal dts As vVentaPlanilla) As Boolean
-        Try
-            conectado()
-            cmd = New SqlCommand("insertar_venta_planilla")
-            cmd.CommandType = CommandType.StoredProcedure
-            cmd.Connection = cnn
-
-            '  cmd.Parameters.AddWithValue("@idventa", dts.Gidventa)
-            cmd.Parameters.AddWithValue("@idcliente", dts.Gidcliente)
-            cmd.Parameters.AddWithValue("@fecha_venta", dts.Gfecha_venta)
-            cmd.Parameters.AddWithValue("@tipo_documento", dts.Gtipo_documento)
-            cmd.Parameters.AddWithValue("@num_documento", dts.Gnum_documento)
-            cmd.Parameters.AddWithValue("@nombre_fac", dts.Gnombre_fac)
-            cmd.Parameters.AddWithValue("@estado", dts.Gestado)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else

@@ -14,33 +14,7 @@
         ' txtCi.Text = ""
 
     End Sub
-    Private Sub mostrarVP()
-        Try
-            Dim func As New fVentaPlanilla
-            dt = func.mostrar
-            datalistado.Columns.Item("Eliminar").Visible = False
 
-            If dt.Rows.Count <> 0 Then
-                datalistado.DataSource = dt
-                '           txtBuscar.Enabled = True
-                datalistado.ColumnHeadersVisible = True
-                Inexistente.Visible = False
-            Else
-                datalistado.DataSource = Nothing
-                '          txtBuscar.Enabled = False
-                datalistado.ColumnHeadersVisible = True
-                Inexistente.Visible = True
-            End If
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-        btnNuevo.Visible = True
-        btnEditar.Visible = False
-
-        '       Buscar()
-
-    End Sub
     Private Sub mostrar()
         Try
             Dim func As New fVenta
@@ -117,36 +91,10 @@
                 dts.Gtipo_documento = cbTipoDoc.Text
                 dts.Gnum_documento = txtNumDoc.Text
                 dts.Gnombre_fac = txtNombreFac.Text
-                If func.insertarV(dts) Then
+                If func.insertar(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-                        frmDetalleVenta.txtestado.Text = "0"
                     mostrar()
-                    cargar_detalle()
-                    limpiar()
-
-
-                Else
-                    MessageBox.Show("venta no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    mostrar()
-                    limpiar()
-
-                End If
-
-
-
-                If func.insertarV(dts) Then
-                    MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
-                    If cbxVentaXplanilla.Checked = True Then
-                        frmDetalleVenta.txtestado.Text = "1"
-                        mostrarVP()
-                    Else
-                        frmDetalleVenta.txtestado.Text = "0"
-                        mostrar()
-                    End If
-
-
                     cargar_detalle()
                     limpiar()
 
@@ -243,8 +191,8 @@
     End Sub
 
     Private Sub cargar_detalle()
-        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
         frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
         frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
         frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
         frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
@@ -292,80 +240,6 @@
             Me.erroricono.SetError(sender, "")
         Else
             Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
-        End If
-    End Sub
-
-    Private Sub cbxVentaXplanilla_CheckedChanged(sender As Object, e As EventArgs) Handles cbxVentaXplanilla.CheckedChanged
-        If cbxVentaXplanilla.Checked = True Then
-            btnGuardar.Visible = False
-            btnGuardarVP.Visible = True
-            mostrarVP()
-        Else
-            btnGuardar.Visible = True
-            btnGuardarVP.Visible = False
-            mostrar()
-        End If
-    End Sub
-
-    Private Sub btnGuardarVP_Click(sender As Object, e As EventArgs) Handles btnGuardarVP.Click
-        If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNombreCLiente.Text <> "" And txtNumDoc.Text <> "" Then
-            Try
-                Dim dts1 As New vVentaPlanilla
-                Dim func1 As New fVentaPlanilla
-
-
-                dts1.Gidcliente = txtidCliente.Text
-                dts1.Gfecha_venta = dtpFecha.Value.Date.ToString
-                dts1.Gtipo_documento = cbTipoDoc.Text
-                dts1.Gnum_documento = txtNumDoc.Text
-                dts1.Gnombre_fac = txtNombreFac.Text
-                dts1.Gestado = "1"
-                If func1.insertar(dts1) Then
-                    MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
-
-                    frmDetalleVenta.txtestado.Text = "1"
-                    mostrarVP()
-
-                    cargar_detalle()
-                    limpiar()
-                Else
-                    MessageBox.Show("venta no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    mostrar()
-                    limpiar()
-
-                End If
-
-
-                If func1.insertar(dts1) Then
-                    MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
-                    If cbxVentaXplanilla.Checked = True Then
-                        frmDetalleVenta.txtestado.Text = "1"
-                        mostrarVP()
-                    Else
-                        frmDetalleVenta.txtestado.Text = "0"
-                        mostrarVP()
-                    End If
-
-
-                    cargar_detalle()
-                    limpiar()
-
-
-                Else
-                    MessageBox.Show("venta no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    mostrar()
-                    limpiar()
-
-                End If
-
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-        Else
-            MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
         End If
     End Sub
 End Class

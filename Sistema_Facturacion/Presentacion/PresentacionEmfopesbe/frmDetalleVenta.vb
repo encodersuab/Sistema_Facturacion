@@ -17,18 +17,7 @@ Partial Public Class frmDetalleVenta
         QrCodeImgControl1.Visible = False
         limpiar()
         mostrarDatosImpuestos()
-        If txtestado.Text = "1" Then
-            btnGuardarVEnta.Visible = False
-            btnGuardarVentaPlanilla.Visible = True
-            btnEliminarVentaPlanilla.Visible = True
-            btnEliminarVenta.Visible = False
 
-        Else
-            btnGuardarVEnta.Visible = True
-            btnGuardarVentaPlanilla.Visible = False
-            btnEliminarVentaPlanilla.Visible = False
-            btnEliminarVenta.Visible = True
-        End If
     End Sub
 
     Public Sub mostrarDatosImpuestos()
@@ -135,6 +124,13 @@ Partial Public Class frmDetalleVenta
 
                 '''''''''''''''''''''''''''''''''''''''''''
                 Dim ms As New IO.MemoryStream()
+
+
+
+
+
+
+
 
                 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
@@ -245,7 +241,6 @@ Partial Public Class frmDetalleVenta
                     End If
                 Next
                 Call mostrar()
-                cbeliminar.Checked = False
             Catch ex As Exception
                 MsgBox(ex.Message)
             End Try
@@ -356,7 +351,7 @@ Partial Public Class frmDetalleVenta
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         'para generar el codigo Control
 
@@ -450,19 +445,18 @@ Partial Public Class frmDetalleVenta
     End Sub
 
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnEliminarVenta.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
         Dim dts As New vDetalleVenta
         Dim func As New fDetalleVenta
-
         dts.gidventa = txtIdVenta.Text
-        func.eliminarproductoVenta(dts)
-
+        func.eliminar(dts)
 
 
         Dim dtsDV As New vVenta
         Dim funcDV As New fVenta
         dtsDV.Gidventa = txtIdVenta.Text
+
         funcDV.eliminar(dtsDV)
         Me.Close()
 
@@ -472,87 +466,4 @@ Partial Public Class frmDetalleVenta
     ''''''''''''''
 
     '''''''''''
-
-    Private Sub btnGuardarVEnta_Click(sender As Object, e As EventArgs) Handles btnGuardarVEnta.Click
-        'para generar el codigo Control
-
-        Dim fecha, monto As String
-        fecha = CalcularFechaParaCC()
-        monto = calcularMontoCC(txttotal.Text)
-
-        lbCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
-        ''''''''''''''''''''''''''''''''''
-        Try
-
-
-            Dim ms As New IO.MemoryStream()
-            Dim dts As New vQr
-            Dim func As New fQr
-            Dim f, aux As String
-
-            aux = func.mostrarUltimoQR.ToString + 1
-
-            f = dtpFecha.Value.Date
-            QrCodeImgControl1.Visible = True
-            QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
-            QrCodeImgControl1.Enabled = True
-            QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
-
-
-
-
-            ' ''''''''''''' 
-            dts.gfecha_emision = f.ToString
-            dts.gNit_Emisor = txtnituab.Text
-            dts.gNum_Factura = aux
-            dts.gNum_Autorizacion = lbnumAutor.Text
-            dts.gTotal = txttotal.Text
-            dts.gCodigo_Control = lbCC.Text
-            dts.gCi_Nit_Comprador = txtNumDoc.Text
-            dts.gimagen = ms.GetBuffer
-            dts.gIdVenta = txtIdVenta.Text
-
-            ''''''''
-
-            If func.insertar(dts) Then
-                frmReporteFactura.txtnumfactura.Text = aux
-
-                MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                frmReporteFactura.MdiParent = frmInicioF
-                frmReporteFactura.Show()
-
-                Me.Close()
-
-            Else
-                MessageBox.Show("No se a podido guardar la venta  Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
-            End If
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
-    End Sub
-
-    Private Sub btnGuardarVentaPlanilla_Click(sender As Object, e As EventArgs) Handles btnGuardarVentaPlanilla.Click
-
-    End Sub
-
-    Private Sub btnEliminarVentaPlanilla_Click(sender As Object, e As EventArgs) Handles btnEliminarVentaPlanilla.Click
-
-        Dim dts As New vDetalleVenta
-        Dim func As New fDetalleVenta
-
-
-        dts.gidventa = txtIdVenta.Text
-        func.eliminarproductoVenta(dts)
-
-
-        Dim dtsDV As New vVentaPlanilla
-        Dim funcDV As New fVentaPlanilla
-
-        dtsDV.Gidventaplanilla = txtIdVenta.Text
-        funcDV.eliminar(dtsDV)
-        Me.Close()
-
-    End Sub
 End Class

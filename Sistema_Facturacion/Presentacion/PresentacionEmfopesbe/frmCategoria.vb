@@ -223,6 +223,7 @@
             frmProducto.txtidcategoria.Text = datalistado.SelectedCells.Item(1).Value
             frmProducto.txtnom_categoria.Text = datalistado.SelectedCells.Item(2).Value
             Me.Close()
+
         End If
     End Sub
 
