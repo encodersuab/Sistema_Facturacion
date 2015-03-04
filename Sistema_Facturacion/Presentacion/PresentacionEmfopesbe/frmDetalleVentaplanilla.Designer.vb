@@ -38,6 +38,8 @@ Partial Class frmDetalleVentaplanilla
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.txtestado = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -66,8 +68,6 @@ Partial Class frmDetalleVentaplanilla
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.txtestado = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -257,6 +257,22 @@ Partial Class frmDetalleVentaplanilla
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(44, 317)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(40, 13)
+        Me.Label13.TabIndex = 36
+        Me.Label13.Text = "Estado"
+        '
+        'txtestado
+        '
+        Me.txtestado.Location = New System.Drawing.Point(144, 314)
+        Me.txtestado.Name = "txtestado"
+        Me.txtestado.Size = New System.Drawing.Size(166, 20)
+        Me.txtestado.TabIndex = 35
         '
         'Label12
         '
@@ -499,22 +515,6 @@ Partial Class frmDetalleVentaplanilla
         Me.txtIdVenta.Name = "txtIdVenta"
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(44, 317)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(40, 13)
-        Me.Label13.TabIndex = 36
-        Me.Label13.Text = "Estado"
-        '
-        'txtestado
-        '
-        Me.txtestado.Location = New System.Drawing.Point(144, 314)
-        Me.txtestado.Name = "txtestado"
-        Me.txtestado.Size = New System.Drawing.Size(166, 20)
-        Me.txtestado.TabIndex = 35
         '
         'frmDetalleVentaplanilla
         '

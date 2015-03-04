@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="datos\DatosEmfopesbe\fVentaPlanilla.vb" />
+    <Compile Include="datos\DatosEmfopesbe\fDetalleVentaPlanilla.vb" />
     <Compile Include="datos\DatosFEXPOBENI\fCategoriaFEXPOBENI.vb" />
     <Compile Include="datos\DatosFEXPOBENI\fClienteFEXPOBENI.vb" />
     <Compile Include="datos\DatosFEXPOBENI\fDetalleVentaFEXPOBENI.vb" />
@@ -113,6 +114,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbfacDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dbfacDataSet.vb">
+      <DependentUpon>dbfacDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Logica\LogicaEmfopesbe\vDetalleVentaPlanilla.vb" />
     <Compile Include="Logica\LogicaEmfopesbe\vVentaPlanilla.vb" />
     <Compile Include="Logica\LogicaFEXPOBENI\vCategoriaFEXPOBENI.vb" />
     <Compile Include="Logica\LogicaFEXPOBENI\vClienteFEXPOBENI.vb" />
