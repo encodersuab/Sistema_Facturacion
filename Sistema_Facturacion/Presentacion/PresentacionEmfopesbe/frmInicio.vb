@@ -223,8 +223,7 @@ Public Class frmInicioF
     End Sub
 
     Private Sub VentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ventaE.Click
-        frmVenta.MdiParent = Me
-        frmVenta.Show()
+       
     End Sub
 
     Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles fexpobeni.Click
@@ -320,5 +319,15 @@ Public Class frmInicioF
     Private Sub RptUsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RptUsuariosToolStripMenuItem.Click
         frmReporteUsuarios.MdiParent = Me
         frmReporteUsuarios.Show()
+    End Sub
+
+    Private Sub ContadoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ContadoToolStripMenuItem.Click
+        frmVenta.MdiParent = Me
+        frmVenta.Show()
+    End Sub
+
+    Private Sub PorPlanillaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PorPlanillaToolStripMenuItem.Click
+        frmVentaPlanilla.MdiParent = Me
+        frmVentaPlanilla.Show()
     End Sub
 End Class

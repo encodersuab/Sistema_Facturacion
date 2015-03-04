@@ -266,9 +266,15 @@
             frmVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
             frmVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
             Me.Close()
-
-
         End If
+        If txtFlag.Text = "2" Then
+            frmVentaPlanilla.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
+            frmVentaPlanilla.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
+            frmVentaPlanilla.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
+            frmVentaPlanilla.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
+            Me.Close()
+        End If
+
     End Sub
 
     Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmVenta
+Partial Class frmVentaPlanilla
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,7 +22,6 @@ Partial Class frmVenta
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
@@ -46,21 +45,19 @@ Partial Class frmVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Location = New System.Drawing.Point(413, 25)
+        Me.GroupBox2.Location = New System.Drawing.Point(413, 28)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(496, 285)
-        Me.GroupBox2.TabIndex = 3
+        Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Estado de ventas"
         '
@@ -80,7 +77,7 @@ Partial Class frmVenta
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(46, 40)
+        Me.datalistado.Location = New System.Drawing.Point(35, 40)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -113,10 +110,10 @@ Partial Class frmVenta
         Me.GroupBox1.Controls.Add(Me.txtidCliente)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtIdVenta)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 25)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 28)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(395, 285)
-        Me.GroupBox1.TabIndex = 2
+        Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
@@ -173,7 +170,7 @@ Partial Class frmVenta
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(162, 234)
+        Me.btnGuardar.Location = New System.Drawing.Point(170, 253)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -182,7 +179,7 @@ Partial Class frmVenta
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(162, 217)
+        Me.btnEditar.Location = New System.Drawing.Point(170, 253)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -191,7 +188,7 @@ Partial Class frmVenta
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(247, 217)
+        Me.btncancelar.Location = New System.Drawing.Point(255, 253)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -200,7 +197,7 @@ Partial Class frmVenta
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(78, 217)
+        Me.btnNuevo.Location = New System.Drawing.Point(86, 253)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -275,25 +272,20 @@ Partial Class frmVenta
         Me.txtIdVenta.Size = New System.Drawing.Size(166, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'erroricono
-        '
-        Me.erroricono.ContainerControl = Me
-        '
-        'frmVenta
+        'frmVentaPlanilla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(918, 323)
+        Me.ClientSize = New System.Drawing.Size(925, 375)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "frmVenta"
-        Me.Text = ".:. Listado Ventas .:."
+        Me.Name = "frmVentaPlanilla"
+        Me.Text = "frmVentaPlanilla"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -302,6 +294,12 @@ Partial Class frmVenta
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
+    Friend WithEvents cbTipoDoc As System.Windows.Forms.ComboBox
+    Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
+    Friend WithEvents btnBuscarCliente As System.Windows.Forms.Button
+    Friend WithEvents txtNombreCLiente As System.Windows.Forms.TextBox
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents btnEditar As System.Windows.Forms.Button
     Friend WithEvents btncancelar As System.Windows.Forms.Button
@@ -314,11 +312,4 @@ Partial Class frmVenta
     Friend WithEvents txtidCliente As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
-    Friend WithEvents txtNombreCLiente As System.Windows.Forms.TextBox
-    Friend WithEvents cbTipoDoc As System.Windows.Forms.ComboBox
-    Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
-    Friend WithEvents btnBuscarCliente As System.Windows.Forms.Button
-    Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
 End Class

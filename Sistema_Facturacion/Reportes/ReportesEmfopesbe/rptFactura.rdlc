@@ -6,21 +6,21 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.20354cm</Width>
+              <Width>1.24764cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.0834cm</Width>
+              <Width>3.81882cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.18181cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.07063cm</Width>
+              <Width>1.9173cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>0.83813cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -316,10 +316,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>4.62703cm</Top>
-        <Left>0.60537cm</Left>
-        <Height>1.2cm</Height>
-        <Width>7.53938cm</Width>
+        <Top>4.66203cm</Top>
+        <Left>0.20662cm</Left>
+        <Height>1.43812cm</Height>
+        <Width>8.16557cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -391,8 +391,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>6.22308cm</Top>
-        <Left>6.00412cm</Left>
+        <Top>6.54058cm</Top>
+        <Left>5.27308cm</Left>
         <Height>0.6cm</Height>
         <Width>0.92889cm</Width>
         <ZIndex>3</ZIndex>
@@ -425,10 +425,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Total</rd:DefaultName>
-        <Top>6.18808cm</Top>
-        <Left>7.07412cm</Left>
+        <Top>6.50558cm</Top>
+        <Left>6.45489cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.07063cm</Width>
+        <Width>1.9173cm</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -776,21 +776,21 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.20354cm</Width>
+              <Width>1.24764cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.0834cm</Width>
+              <Width>3.81882cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.18181cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.07063cm</Width>
+              <Width>1.9173cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>0.83813cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -1086,10 +1086,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>4.68849cm</Top>
-        <Left>9.70771cm</Left>
-        <Height>1.2cm</Height>
-        <Width>7.53938cm</Width>
+        <Top>4.65348cm</Top>
+        <Left>9.53445cm</Left>
+        <Height>1.43813cm</Height>
+        <Width>8.16557cm</Width>
         <ZIndex>15</ZIndex>
         <Style>
           <Border>
@@ -1102,8 +1102,8 @@
         <Value>=Fields!imagen.Value</Value>
         <MIMEType>image/jpeg</MIMEType>
         <Sizing>FitProportional</Sizing>
-        <Top>1.45203cm</Top>
-        <Left>9.25666cm</Left>
+        <Top>1.38202cm</Top>
+        <Left>9.48215cm</Left>
         <Height>2.39917cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>16</ZIndex>
@@ -1130,8 +1130,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Fecha_emision</rd:DefaultName>
-        <Top>0.23495cm</Top>
-        <Left>9.33604cm</Left>
+        <Top>0.16494cm</Top>
+        <Left>9.56153cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>17</ZIndex>
@@ -1162,8 +1162,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>6.28454cm</Top>
-        <Left>15.10646cm</Left>
+        <Top>6.53203cm</Top>
+        <Left>14.60091cm</Left>
         <Height>0.6cm</Height>
         <Width>0.92889cm</Width>
         <ZIndex>18</ZIndex>
@@ -1196,10 +1196,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Total</rd:DefaultName>
-        <Top>6.24954cm</Top>
-        <Left>16.17646cm</Left>
+        <Top>6.49703cm</Top>
+        <Left>15.78272cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.07063cm</Width>
+        <Width>1.9173cm</Width>
         <ZIndex>19</ZIndex>
         <Style>
           <Border>
@@ -1228,8 +1228,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_fac</rd:DefaultName>
-        <Top>2.77495cm</Top>
-        <Left>13.27771cm</Left>
+        <Top>2.70494cm</Top>
+        <Left>13.5032cm</Left>
         <Height>0.6cm</Height>
         <Width>3.61125cm</Width>
         <ZIndex>20</ZIndex>
@@ -1260,8 +1260,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox17</rd:DefaultName>
-        <Top>2.80995cm</Top>
-        <Left>11.88014cm</Left>
+        <Top>2.73994cm</Top>
+        <Left>12.10563cm</Left>
         <Height>0.6cm</Height>
         <Width>1.36229cm</Width>
         <ZIndex>21</ZIndex>
@@ -1294,8 +1294,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Ci_Nit_Comprador</rd:DefaultName>
-        <Top>3.55106cm</Top>
-        <Left>13.27771cm</Left>
+        <Top>3.48105cm</Top>
+        <Left>13.5032cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>22</ZIndex>
@@ -1326,8 +1326,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox20</rd:DefaultName>
-        <Top>3.55106cm</Top>
-        <Left>12.03826cm</Left>
+        <Top>3.48105cm</Top>
+        <Left>12.26375cm</Left>
         <Height>0.6cm</Height>
         <Width>1.12479cm</Width>
         <ZIndex>23</ZIndex>
@@ -1360,8 +1360,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox22</rd:DefaultName>
-        <Top>0.26058cm</Top>
-        <Left>12.16646cm</Left>
+        <Top>0.19057cm</Top>
+        <Left>12.39195cm</Left>
         <Height>0.6cm</Height>
         <Width>2.20896cm</Width>
         <ZIndex>24</ZIndex>
@@ -1396,8 +1396,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>NumeroFactura</rd:DefaultName>
-        <Top>0.25203cm</Top>
-        <Left>14.89166cm</Left>
+        <Top>0.18202cm</Top>
+        <Left>15.11715cm</Left>
         <Height>0.6cm</Height>
         <Width>2.35542cm</Width>
         <ZIndex>25</ZIndex>
@@ -1428,8 +1428,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Codigo_Control</rd:DefaultName>
-        <Top>0.93995cm</Top>
-        <Left>14.89166cm</Left>
+        <Top>0.86994cm</Top>
+        <Left>15.11715cm</Left>
         <Height>0.6cm</Height>
         <Width>2.35542cm</Width>
         <ZIndex>26</ZIndex>
@@ -1460,8 +1460,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox23</rd:DefaultName>
-        <Top>0.96641cm</Top>
-        <Left>12.16646cm</Left>
+        <Top>0.8964cm</Top>
+        <Left>12.39195cm</Left>
         <Height>0.6cm</Height>
         <Width>2.20896cm</Width>
         <ZIndex>27</ZIndex>
@@ -1494,8 +1494,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox26</rd:DefaultName>
-        <Top>1.67224cm</Top>
-        <Left>12.16646cm</Left>
+        <Top>1.60223cm</Top>
+        <Left>12.39195cm</Left>
         <Height>0.6cm</Height>
         <Width>2.47354cm</Width>
         <ZIndex>28</ZIndex>
@@ -1528,8 +1528,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Num_Autorizacion</rd:DefaultName>
-        <Top>1.61078cm</Top>
-        <Left>14.94521cm</Left>
+        <Top>1.54077cm</Top>
+        <Left>15.1707cm</Left>
         <Height>0.6cm</Height>
         <Width>2.30188cm</Width>
         <ZIndex>29</ZIndex>

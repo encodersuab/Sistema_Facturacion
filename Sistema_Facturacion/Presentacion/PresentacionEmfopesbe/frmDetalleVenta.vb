@@ -249,6 +249,12 @@ Partial Public Class frmDetalleVenta
             Call mostrar()
 
         End If
+        mostrar()
+        txttotal.Text = sumar().ToString
+        limpiar()
+        cbeliminar.Checked = False
+
+
     End Sub
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
@@ -447,18 +453,27 @@ Partial Public Class frmDetalleVenta
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
+        Dim result As DialogResult
         Dim dts As New vDetalleVenta
         Dim func As New fDetalleVenta
-        dts.gidventa = txtIdVenta.Text
-        func.eliminar(dts)
+        result = MessageBox.Show("Realmente desea eliminar la venta?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        If result = DialogResult.OK Then
 
+            dts.gidventa = txtIdVenta.Text
+            ' func.eliminarproductoVenta(dts)
 
-        Dim dtsDV As New vVenta
-        Dim funcDV As New fVenta
-        dtsDV.Gidventa = txtIdVenta.Text
+            Dim dtsDV As New vVenta
+            Dim funcDV As New fVenta
 
-        funcDV.eliminar(dtsDV)
-        Me.Close()
+            dtsDV.Gidventa = txtIdVenta.Text
+            '  funcDV.eliminar(dtsDV)
+
+            If (func.eliminarproductoVenta(dts) And dtsDV.Gidventa = txtIdVenta.Text) Then
+                MessageBox.Show("Venta Eliminada", "eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+            Me.Close()
+        End If
+
 
     End Sub
 

@@ -79,6 +79,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="datos\DatosEmfopesbe\fVentaPlanilla.vb" />
     <Compile Include="datos\DatosFEXPOBENI\fCategoriaFEXPOBENI.vb" />
     <Compile Include="datos\DatosFEXPOBENI\fClienteFEXPOBENI.vb" />
     <Compile Include="datos\DatosFEXPOBENI\fDetalleVentaFEXPOBENI.vb" />
@@ -112,6 +113,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbfacDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Logica\LogicaEmfopesbe\vVentaPlanilla.vb" />
     <Compile Include="Logica\LogicaFEXPOBENI\vCategoriaFEXPOBENI.vb" />
     <Compile Include="Logica\LogicaFEXPOBENI\vClienteFEXPOBENI.vb" />
     <Compile Include="Logica\LogicaFEXPOBENI\vDetalleVentaFEXPOBENI.vb" />
@@ -153,6 +155,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmDetalleVentaplanilla.Designer.vb">
+      <DependentUpon>frmDetalleVentaplanilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmDetalleVentaplanilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmVentaPlanilla.Designer.vb">
+      <DependentUpon>frmVentaPlanilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmVentaPlanilla.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\PresentacionFEXPOBENI\frmCategoriaFEXPOBENI.Designer.vb">
       <DependentUpon>frmCategoriaFEXPOBENI.vb</DependentUpon>
@@ -384,6 +398,12 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmDetalleVentaplanilla.resx">
+      <DependentUpon>frmDetalleVentaplanilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmVentaPlanilla.resx">
+      <DependentUpon>frmVentaPlanilla.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmCategoriaFEXPOBENI.resx">
       <DependentUpon>frmCategoriaFEXPOBENI.vb</DependentUpon>
     </EmbeddedResource>
@@ -524,6 +544,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slider3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

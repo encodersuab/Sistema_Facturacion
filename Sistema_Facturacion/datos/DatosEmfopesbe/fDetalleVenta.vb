@@ -89,6 +89,24 @@ Public Class fDetalleVenta
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
+            cmd.Parameters.Add("@iddetalleventa", SqlDbType.NVarChar, 50).Value = dts.giddedatlle_venta
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        End Try
+    End Function
+    Public Function eliminarproductoVenta(ByVal dts As vDetalleVenta) As Boolean
+        Try
+            conectado()
+            cmd = New SqlCommand("eliminar_dventa_x_idventa")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+
             cmd.Parameters.Add("@idventa", SqlDbType.NVarChar, 50).Value = dts.gidventa
             If cmd.ExecuteNonQuery Then
                 Return True

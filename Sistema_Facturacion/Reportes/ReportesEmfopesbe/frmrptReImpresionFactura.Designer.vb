@@ -50,23 +50,24 @@ Partial Class frmrptReImpresionFactura
         ReportDataSource1.Value = Me.mostrar_facturaBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptFactura.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(0, 33)
+        Me.ReportViewer1.Location = New System.Drawing.Point(0, 64)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(700, 410)
+        Me.ReportViewer1.Size = New System.Drawing.Size(700, 379)
         Me.ReportViewer1.TabIndex = 0
         '
         'btnReporte
         '
-        Me.btnReporte.Location = New System.Drawing.Point(343, 4)
+        Me.btnReporte.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.images__3_
+        Me.btnReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnReporte.Location = New System.Drawing.Point(160, 3)
         Me.btnReporte.Name = "btnReporte"
-        Me.btnReporte.Size = New System.Drawing.Size(75, 23)
+        Me.btnReporte.Size = New System.Drawing.Size(60, 55)
         Me.btnReporte.TabIndex = 1
-        Me.btnReporte.Text = "Button1"
         Me.btnReporte.UseVisualStyleBackColor = True
         '
         'txtNumFactura
         '
-        Me.txtNumFactura.Location = New System.Drawing.Point(125, 7)
+        Me.txtNumFactura.Location = New System.Drawing.Point(29, 32)
         Me.txtNumFactura.Name = "txtNumFactura"
         Me.txtNumFactura.Size = New System.Drawing.Size(100, 20)
         Me.txtNumFactura.TabIndex = 2

@@ -18,5 +18,9 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=BLADYCONDOR;Initial Catalog=dbfac;User ID=union;Password=123456</Value>
     </Setting>
+    <Setting Name="Setting1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)" />
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -1,14 +1,14 @@
-﻿Public Class vVenta
-    Dim idventa, idcliente As Integer
+﻿Public Class vVentaPlanilla
+    Dim idventaplanilla, idcliente As Integer
     Dim fecha_venta As Date
-    Dim tipo_documento, num_documento, nombre_fac As String
+    Dim tipo_documento, num_documento, nombre_fac, estado As String
 
-    Public Property Gidventa
+    Public Property Gidventaplanilla
         Get
-            Return idventa
+            Return idventaplanilla
         End Get
         Set(ByVal value)
-            idventa = value
+            idventaplanilla = value
         End Set
     End Property
     Public Property Gidcliente
@@ -51,19 +51,26 @@
             nombre_fac = value
         End Set
     End Property
+    Public Property Gestado
+        Get
+            Return estado
+        End Get
+        Set(ByVal value)
+            estado = value
+        End Set
+    End Property
 
     Public Sub New()
 
     End Sub
 
-    Public Sub New(ByVal idventa As Integer, ByVal idcliente As Integer, ByVal fecha_venta As Date, ByVal tipo_documento As String, ByVal num_documento As String, ByVal nombre_fac As String)
-        Gidventa = idventa
+    Public Sub New(ByVal idventaplanilla As Integer, ByVal idcliente As Integer, ByVal fecha_venta As Date, ByVal tipo_documento As String, ByVal num_documento As String, ByVal nombre_fac As String, ByVal estado As String)
+        Gidventaplanilla = idventaplanilla
         Gidcliente = idcliente
         Gfecha_venta = fecha_venta
         Gtipo_documento = tipo_documento
         Gnum_documento = num_documento
         Gnombre_fac = nombre_fac
+        Gestado = estado
     End Sub
-
-
 End Class

@@ -18,4 +18,8 @@
 
 
     End Sub
+
+    Private Sub txtNumFactura_TextChanged(sender As Object, e As EventArgs) Handles txtNumFactura.TextChanged
+
+    End Sub
 End Class
