@@ -1,6 +1,6 @@
 ﻿Public Class vQr
     Dim IDCodQr, Num_Factura, IdVenta As Integer
-    Dim Nit_Emisor, Codigo_Control, Ci_Nit_Comprador, Num_Autorizacion As String
+    Dim validez, Nit_Emisor, Codigo_Control, Ci_Nit_Comprador, Num_Autorizacion As String
     Dim Total As Double
     Dim fecha_emision As Date
     Dim imagen() As Byte
@@ -95,11 +95,21 @@
 
         End Set
     End Property
+
+    Public Property gvalidez
+        Get
+            Return validez
+        End Get
+        Set(value)
+            validez = value
+
+        End Set
+    End Property
     Public Sub New()
 
     End Sub
     Public Sub New(ByVal IDCodQr As Integer, ByVal Num_Factura As Integer, ByVal Num_Autorizacion As String, ByVal IdVenta As Integer, ByVal Nit_emisor As String,
-                   ByVal Codigo_Control As String, ByVal Ci_Nit_Comprador As String, ByVal Total As Double, ByVal fecha_emision As Date, ByVal imagen As Byte)
+                   ByVal Codigo_Control As String, ByVal Ci_Nit_Comprador As String, ByVal Total As Double, ByVal fecha_emision As Date, ByVal imagen As Byte, ByVal validez As String)
 
 
         gIDCodQr = IDCodQr
@@ -112,6 +122,7 @@
         gTotal = Total
         gfecha_emision = fecha_emision
         gimagen = imagen
+        gvalidez = validez
 
     End Sub
 End Class

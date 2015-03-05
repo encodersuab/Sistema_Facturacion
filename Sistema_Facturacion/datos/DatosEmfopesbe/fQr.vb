@@ -73,7 +73,7 @@ Public Class fQr
             cmd.Parameters.AddWithValue("@Ci_Nit_Comprador", dts.gCi_Nit_Comprador)
             cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
             cmd.Parameters.AddWithValue("@IdVenta", dts.gIdVenta)
-      
+            cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
 
             If cmd.ExecuteNonQuery Then
                 Return True
@@ -95,6 +95,7 @@ Public Class fQr
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
+            cmd.Parameters.AddWithValue("@IDCodQr", dts.gIDCodQr)
             cmd.Parameters.AddWithValue("@Nit_Emisor", dts.gNit_Emisor)
             cmd.Parameters.AddWithValue("@Num_Factura", dts.gNum_Factura)
             cmd.Parameters.AddWithValue("@Num_Autorizacion", dts.gNum_Autorizacion)
@@ -102,9 +103,9 @@ Public Class fQr
             cmd.Parameters.AddWithValue("@Total", dts.gTotal)
             cmd.Parameters.AddWithValue("@Codigo_Control", dts.gCodigo_Control)
             cmd.Parameters.AddWithValue("@Ci_Nit_Comprador", dts.gCi_Nit_Comprador)
-            cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
+            ' cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
             cmd.Parameters.AddWithValue("@IdVenta", dts.gIdVenta)
-
+            cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
 
             If cmd.ExecuteNonQuery Then
                 Return True

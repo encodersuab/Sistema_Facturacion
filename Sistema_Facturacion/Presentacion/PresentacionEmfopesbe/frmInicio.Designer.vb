@@ -107,6 +107,7 @@ Partial Class frmInicioF
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.lbrol = New System.Windows.Forms.Label()
         Me.lbUsurio = New System.Windows.Forms.Label()
+        Me.AnularFacturaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -130,7 +131,7 @@ Partial Class frmInicioF
         '
         'emfopesbe
         '
-        Me.emfopesbe.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registroE, Me.ventaE, Me.reporteE, Me.ReImprecionE})
+        Me.emfopesbe.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registroE, Me.ventaE, Me.reporteE, Me.ReImprecionE, Me.AnularFacturaToolStripMenuItem})
         Me.emfopesbe.Name = "emfopesbe"
         Me.emfopesbe.Size = New System.Drawing.Size(83, 20)
         Me.emfopesbe.Text = "EMFOPESBE"
@@ -145,19 +146,19 @@ Partial Class frmInicioF
         'ClientessmenuEmfopesbe
         '
         Me.ClientessmenuEmfopesbe.Name = "ClientessmenuEmfopesbe"
-        Me.ClientessmenuEmfopesbe.Size = New System.Drawing.Size(152, 22)
+        Me.ClientessmenuEmfopesbe.Size = New System.Drawing.Size(125, 22)
         Me.ClientessmenuEmfopesbe.Text = "Cliente"
         '
         'ProductossmenuEmfopesbe
         '
         Me.ProductossmenuEmfopesbe.Name = "ProductossmenuEmfopesbe"
-        Me.ProductossmenuEmfopesbe.Size = New System.Drawing.Size(152, 22)
+        Me.ProductossmenuEmfopesbe.Size = New System.Drawing.Size(125, 22)
         Me.ProductossmenuEmfopesbe.Text = "Producto"
         '
         'CategoriassmenuEmfopesbe
         '
         Me.CategoriassmenuEmfopesbe.Name = "CategoriassmenuEmfopesbe"
-        Me.CategoriassmenuEmfopesbe.Size = New System.Drawing.Size(152, 22)
+        Me.CategoriassmenuEmfopesbe.Size = New System.Drawing.Size(125, 22)
         Me.CategoriassmenuEmfopesbe.Text = "Categoria"
         '
         'ventaE
@@ -170,13 +171,13 @@ Partial Class frmInicioF
         'ContadoToolStripMenuItem
         '
         Me.ContadoToolStripMenuItem.Name = "ContadoToolStripMenuItem"
-        Me.ContadoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ContadoToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.ContadoToolStripMenuItem.Text = "Contado"
         '
         'PorPlanillaToolStripMenuItem
         '
         Me.PorPlanillaToolStripMenuItem.Name = "PorPlanillaToolStripMenuItem"
-        Me.PorPlanillaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PorPlanillaToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.PorPlanillaToolStripMenuItem.Text = "Por Planilla"
         '
         'reporteE
@@ -659,6 +660,12 @@ Partial Class frmInicioF
         Me.lbUsurio.TabIndex = 11
         Me.lbUsurio.Text = "Label0"
         '
+        'AnularFacturaToolStripMenuItem
+        '
+        Me.AnularFacturaToolStripMenuItem.Name = "AnularFacturaToolStripMenuItem"
+        Me.AnularFacturaToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
+        Me.AnularFacturaToolStripMenuItem.Text = "Anular Factura"
+        '
         'frmInicioF
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -768,5 +775,6 @@ Partial Class frmInicioF
     Friend WithEvents RptUsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ContadoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PorPlanillaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AnularFacturaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

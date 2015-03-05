@@ -396,6 +396,7 @@ Partial Public Class frmDetalleVenta
             dts.gCi_Nit_Comprador = txtNumDoc.Text
             dts.gimagen = ms.GetBuffer
             dts.gIdVenta = txtIdVenta.Text
+            dts.gvalidez = "V"
 
             ''''''''
 
@@ -481,4 +482,8 @@ Partial Public Class frmDetalleVenta
     ''''''''''''''
 
     '''''''''''
+
+    Private Sub txtPrecioUnitario_TextChanged(sender As Object, e As EventArgs) Handles txtPrecioUnitario.TextChanged
+
+    End Sub
 End Class

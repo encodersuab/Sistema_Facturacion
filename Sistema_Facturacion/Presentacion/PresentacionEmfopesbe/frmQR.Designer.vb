@@ -30,6 +30,7 @@ Partial Class frmQR
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnAnularFactura = New System.Windows.Forms.Button()
         Me.txtfechaEmision = New System.Windows.Forms.TextBox()
         Me.txtCiNitComprador = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -50,6 +51,8 @@ Partial Class frmQR
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtNit_Emisor = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.txtvalidez = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -64,7 +67,7 @@ Partial Class frmQR
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(392, 1)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(570, 316)
+        Me.GroupBox2.Size = New System.Drawing.Size(570, 330)
         Me.GroupBox2.TabIndex = 7
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
@@ -117,6 +120,9 @@ Partial Class frmQR
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtvalidez)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.btnAnularFactura)
         Me.GroupBox1.Controls.Add(Me.txtfechaEmision)
         Me.GroupBox1.Controls.Add(Me.txtCiNitComprador)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -138,10 +144,19 @@ Partial Class frmQR
         Me.GroupBox1.Controls.Add(Me.txtNit_Emisor)
         Me.GroupBox1.Location = New System.Drawing.Point(28, 1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(358, 316)
+        Me.GroupBox1.Size = New System.Drawing.Size(358, 330)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'btnAnularFactura
+        '
+        Me.btnAnularFactura.Location = New System.Drawing.Point(144, 280)
+        Me.btnAnularFactura.Name = "btnAnularFactura"
+        Me.btnAnularFactura.Size = New System.Drawing.Size(67, 42)
+        Me.btnAnularFactura.TabIndex = 35
+        Me.btnAnularFactura.Text = "ANULAR FACTURA"
+        Me.btnAnularFactura.UseVisualStyleBackColor = True
         '
         'txtfechaEmision
         '
@@ -239,9 +254,9 @@ Partial Class frmQR
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(188, 273)
+        Me.btncancelar.Location = New System.Drawing.Point(239, 280)
         Me.btncancelar.Name = "btncancelar"
-        Me.btncancelar.Size = New System.Drawing.Size(67, 26)
+        Me.btncancelar.Size = New System.Drawing.Size(67, 42)
         Me.btncancelar.TabIndex = 13
         Me.btncancelar.Text = "Salir"
         Me.btncancelar.UseVisualStyleBackColor = True
@@ -310,11 +325,29 @@ Partial Class frmQR
         '
         Me.erroricono.ContainerControl = Me
         '
+        'txtvalidez
+        '
+        Me.txtvalidez.AcceptsReturn = True
+        Me.txtvalidez.Enabled = False
+        Me.txtvalidez.Location = New System.Drawing.Point(144, 258)
+        Me.txtvalidez.Name = "txtvalidez"
+        Me.txtvalidez.Size = New System.Drawing.Size(173, 20)
+        Me.txtvalidez.TabIndex = 37
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(44, 261)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(41, 13)
+        Me.Label3.TabIndex = 36
+        Me.Label3.Text = "Validez"
+        '
         'frmQR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(974, 327)
+        Me.ClientSize = New System.Drawing.Size(974, 335)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmQR"
@@ -355,4 +388,7 @@ Partial Class frmQR
     Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
     Friend WithEvents cbxListadoClientes As System.Windows.Forms.ComboBox
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
+    Friend WithEvents btnAnularFactura As System.Windows.Forms.Button
+    Friend WithEvents txtvalidez As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

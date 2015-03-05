@@ -103,3 +103,5 @@ D:\Users\Blady\Desktop\Sistema_Facturacion-fe8b08ffac9d02c657f1f7fbf07bf0b16ca2f
 D:\Users\Blady\Desktop\Sistema_Facturacion-fe8b08ffac9d02c657f1f7fbf07bf0b16ca2f80a\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.pdb
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVentaPlanilla.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVentaplanilla.resources
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVentaplanilla.resources
+D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVentaPlanilla.resources

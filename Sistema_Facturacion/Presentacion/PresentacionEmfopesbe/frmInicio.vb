@@ -330,4 +330,9 @@ Public Class frmInicioF
         frmVentaPlanilla.MdiParent = Me
         frmVentaPlanilla.Show()
     End Sub
+
+    Private Sub AnularFacturaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AnularFacturaToolStripMenuItem.Click
+        frmQR.MdiParent = Me
+        frmQR.Show()
+    End Sub
 End Class

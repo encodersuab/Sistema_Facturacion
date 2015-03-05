@@ -19,7 +19,7 @@
         txtCodigoControl.Text = ""
         txtCiNitComprador.Text = ""
         txttxtIdVenta.Text = ""
-
+        txtvalidez.Text = ""
 
     End Sub
 
@@ -93,6 +93,7 @@
         txtCodigoControl.Text = datalistado.SelectedCells.Item(7).Value
         txtCiNitComprador.Text = datalistado.SelectedCells.Item(8).Value
         txttxtIdVenta.Text = datalistado.SelectedCells.Item(10).Value
+        txtvalidez.Text = datalistado.SelectedCells.Item(11).Value
 
     End Sub
 
@@ -381,6 +382,49 @@
             Me.erroricono.SetError(sender, "")
         Else
             Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAnularFactura.Click
+        Dim result As DialogResult
+        result = MessageBox.Show("realizar la anulacion de la factuara?", "Anulando Factura", MessageBoxButtons.OKCancel)
+
+        If result = DialogResult.OK Then
+
+            If Me.ValidateChildren = True And txtIDCodQr.Text <> "" And txtNit_Emisor.Text <> "" And txtNum_Factura.Text <> "" And txtINum_Autorizacion.Text <> "" And txtfechaEmision.Text <> "" And txtTotalPagar.Text <> "" And txtCodigoControl.Text <> "" And txtCiNitComprador.Text <> "" Then
+                Try
+                    Dim dts As New vQr
+                    Dim func As New fQr
+
+                    dts.gIDCodQr = txtIDCodQr.Text
+                    dts.gNit_Emisor = txtNit_Emisor.Text
+                    dts.gNum_Factura = txtNum_Factura.Text
+                    dts.gNum_Autorizacion = txtINum_Autorizacion.Text
+                    dts.gfecha_emision = txtfechaEmision.Text
+                    dts.gTotal = "0"
+                    dts.gCodigo_Control = txtCodigoControl.Text
+                    dts.gCi_Nit_Comprador = "0"
+                    dts.gIdVenta = txttxtIdVenta.Text
+                    dts.gvalidez = "A"
+
+                    If func.editar(dts) Then
+                        MessageBox.Show("FACTURA ANULADA", "FACTURA ANULADA", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        mostrar()
+                        limpiar()
+                    Else
+                        MessageBox.Show("ERROR AL ANULAR ESTA FACTURA", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        mostrar()
+                        limpiar()
+
+                    End If
+
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
+            Else
+                MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            End If
         End If
     End Sub
 End Class
