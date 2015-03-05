@@ -103,13 +103,13 @@
 
     End Sub
 
-    Private Sub txtNombre_Validated(sender As Object, e As EventArgs) Handles txtNombre.Validated
-        If DirectCast(sender, TextBox).Text.Length > 0 Then
-            Me.erroricono.SetError(sender, "")
-        Else
-            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
-        End If
-    End Sub
+    'Private Sub txtNombre_Validated(sender As Object, e As EventArgs) Handles txtNombre.Validated
+    '    If DirectCast(sender, TextBox).Text.Length > 0 Then
+    '        Me.erroricono.SetError(sender, "")
+    '    Else
+    '        Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+    '    End If
+    'End Sub
 
 
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
@@ -283,19 +283,37 @@
     End Sub
 
     Private Sub btncategoria_Click(sender As Object, e As EventArgs) Handles btncategoria.Click
-        frmCategoriaREDRUBI.txtflag.Text = "1"
-        frmCategoriaREDRUBI.ShowDialog()
+        frmCategoria.txtflag.Text = "1"
+        frmCategoria.ShowDialog()
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
-        If txtTag.Text = "1" Then
-            frmDetalleVenta.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
-            frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
-            frmDetalleVenta.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
-            frmDetalleVenta.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+        Try
+            If txtTag.Text = "1" Then
+                frmDetalleVenta.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+                frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                frmDetalleVenta.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+                frmDetalleVenta.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                Me.Close()
 
-            Me.Close()
-        End If
+            Else
+                frmDetalleVentaplanilla.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+                frmDetalleVentaplanilla.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                frmDetalleVentaplanilla.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+                frmDetalleVentaplanilla.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                Me.Close()
+
+
+            End If
+
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+
+
+
     End Sub
 
     Private Sub datalistado_CellErrorTextChanged(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellErrorTextChanged

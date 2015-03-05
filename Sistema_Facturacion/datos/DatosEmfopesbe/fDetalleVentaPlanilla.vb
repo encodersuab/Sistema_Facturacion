@@ -7,7 +7,7 @@ Public Class fDetalleVentaPlanilla
     Public Function mostrarDVPlanilla() As DataTable
         Try
             conectado()
-            cmd = New SqlCommand("mostrar_detalle_venta_planilla")
+            cmd = New SqlCommand("mostrar_detalle_ventaXidplanilla")
             cmd.CommandType = CommandType.StoredProcedure
 
             cmd.Connection = cnn
@@ -28,19 +28,19 @@ Public Class fDetalleVentaPlanilla
 
         End Try
     End Function
-    Public Function insertarDVPlanilla(ByVal dts As vDetalleVenta) As Boolean
+    Public Function insertarDVPlanilla(ByVal dts As vDetalleVentaPlanilla) As Boolean
         Try
             conectado()
-            cmd = New SqlCommand("insertar_detalle_venta")
+            cmd = New SqlCommand("insertar_detalle_venta_planilla")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-            ' cmd.Parameters.AddWithValue("@iddetalle_venta", dts.giddedatlle_venta)
-            cmd.Parameters.AddWithValue("@idventa", dts.gidventa)
-            cmd.Parameters.AddWithValue("@cantidad", dts.gcantidad)
+
+            cmd.Parameters.AddWithValue("@idventaplanilla", dts.gidventaplanilla)
             cmd.Parameters.AddWithValue("@idproducto", dts.gidproducto)
+            cmd.Parameters.AddWithValue("@cantidad", dts.gcantidad)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
-            'cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
+
 
 
             If cmd.ExecuteNonQuery Then
@@ -56,7 +56,7 @@ Public Class fDetalleVentaPlanilla
             desconectado()
         End Try
     End Function
-    Public Function editar(ByVal dts As vDetalleVenta) As Boolean
+    Public Function editar(ByVal dts As vDetalleVentaPlanilla) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("editar_detalle_venta")
@@ -64,7 +64,7 @@ Public Class fDetalleVentaPlanilla
             cmd.Connection = cnn
 
             cmd.Parameters.AddWithValue("@iddetalle_venta", dts.giddedatlle_venta)
-            cmd.Parameters.AddWithValue("@idventa", dts.Gidventa)
+            cmd.Parameters.AddWithValue("@idventaplanilla", dts.gidventaplanilla)
             cmd.Parameters.AddWithValue("@cantidad", dts.gcantidad)
             cmd.Parameters.AddWithValue("@idproducto", dts.gidproducto)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
@@ -84,7 +84,7 @@ Public Class fDetalleVentaPlanilla
         End Try
     End Function
 
-    Public Function eliminar(ByVal dts As vDetalleVenta) As Boolean
+    Public Function eliminar(ByVal dts As vDetalleVentaPlanilla) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("eliminar_detalle_venta")
@@ -104,25 +104,25 @@ Public Class fDetalleVentaPlanilla
     End Function
 
 
-    Public Function eliminarproductoVenta(ByVal dts As vDetalleVenta) As Boolean
+    Public Function eliminarproductoVenta(ByVal dts As vDetalleVentaPlanilla) As Boolean
         Try
             conectado()
-            cmd = New SqlCommand("eliminar_dventa_x_idventa")
+            cmd = New SqlCommand("eliminar_dventa_x_idventaplanilla")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-            cmd.Parameters.Add("@idventa", SqlDbType.NVarChar, 50).Value = dts.gidventa
+            cmd.Parameters.Add("@idventaplanilla", SqlDbType.NVarChar, 50).Value = dts.gidventaplanilla
             If cmd.ExecuteNonQuery Then
-                Return True
+            Return True
             Else
-                Return False
+            Return False
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
             Return False
         End Try
     End Function
-    Public Function aumentar_stock(ByVal dts As vDetalleVenta) As Boolean
+    Public Function aumentar_stock(ByVal dts As vDetalleVentaPlanilla) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("aumentar_stock")
@@ -148,7 +148,7 @@ Public Class fDetalleVentaPlanilla
             desconectado()
         End Try
     End Function
-    Public Function disminuir_stock(ByVal dts As vDetalleVenta) As Boolean
+    Public Function disminuir_stock(ByVal dts As vDetalleVentaPlanilla) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("disminuir_stock")

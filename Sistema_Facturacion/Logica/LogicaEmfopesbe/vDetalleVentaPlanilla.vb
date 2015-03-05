@@ -1,5 +1,5 @@
 ﻿Public Class vDetalleVentaPlanilla
-    Dim iddetalle_venta, idventaplanilla, idproducto As Integer
+    Dim iddetalle_venta, idventa, idventaplanilla, idproducto As Integer
     Dim cantidad, precio_unitario As Double
     Dim imagen() As Byte
     Public Property giddedatlle_venta
@@ -11,13 +11,13 @@
             iddetalle_venta = value
         End Set
     End Property
-    Public Property gidventaplanilla
+    Public Property gidventa
 
         Get
-            Return idventaplanilla
+            Return idventa
         End Get
         Set(ByVal value)
-            idventaplanilla = value
+            idventa = value
         End Set
     End Property
     Public Property gidproducto
@@ -47,32 +47,29 @@
             precio_unitario = value
         End Set
     End Property
-    Public Property gimagen
+    Public Property gidventaplanilla
+
         Get
-            Return imagen
+            Return idventaplanilla
         End Get
-        Set(value)
-            imagen = value
+        Set(ByVal value)
+            idventaplanilla = value
         End Set
     End Property
-
-
+   
     Public Sub New()
 
     End Sub
 
 
-    Public Sub New(ByVal iddetalle_venta As Integer, ByVal idventa As Integer, ByVal idproducto As Integer, ByVal cantidad As Double, ByVal precio_unitario As Double, ByVal imagen As Byte)
+    Public Sub New(ByVal iddetalle_venta As Integer, ByVal idventa As Integer, ByVal idproducto As Integer, ByVal cantidad As Double, ByVal precio_unitario As Double, ByVal iddetalleventa As Integer)
         giddedatlle_venta = iddetalle_venta
         gidventaplanilla = idventaplanilla
         gidproducto = idproducto
         gcantidad = cantidad
         gprecio_unitario = precio_unitario
-        gimagen = imagen
+        gidventa = idventa
 
     End Sub
 
-    Private Function total()
-        Return gcantidad * gprecio_unitario
-    End Function
 End Class

@@ -97,22 +97,15 @@ Partial Public Class frmDetalleVenta
         'datalistado.Columns(2).Visible = False
         'datalistado.Columns(3).Visible = False
     End Sub
-
-
-
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
         limpiar()
         mostrar()
 
     End Sub
-
-
-
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtIdProducto.Text <> "" And txtCantidad.Text <> "" And txtPrecioUnitario.Text <> "" Then
+            'System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
             Try
-
-
 
                 Dim dts As New vDetalleVenta
                 Dim func As New fDetalleVenta
@@ -124,13 +117,6 @@ Partial Public Class frmDetalleVenta
 
                 '''''''''''''''''''''''''''''''''''''''''''
                 Dim ms As New IO.MemoryStream()
-
-
-
-
-
-
-
 
                 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
@@ -218,7 +204,7 @@ Partial Public Class frmDetalleVenta
     Private Sub btnquitar_Click(sender As Object, e As EventArgs) Handles btnquitar.Click
         Dim result As DialogResult
 
-        result = MessageBox.Show("Realmente desea quitar los seleccionados?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        result = MessageBox.Show("Realmente desea quitar los productos seleccionados?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
         If result = DialogResult.OK Then
             Try
                 For Each row As DataGridViewRow In datalistado.Rows
@@ -262,17 +248,17 @@ Partial Public Class frmDetalleVenta
         frmProducto.ShowDialog()
     End Sub
 
-    Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
+    Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs)
         Dim cant As Double
-        cant = txtCantidad.Value
-        If txtCantidad.Value > txtStock.Value Then
+        cant = txtCantidad.Text
+        If txtCantidad.Text > txtStock.Value Then
             MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
             btnGuardar.Visible = 0
-            txtCantidad.Value = txtStock.Value
+            txtCantidad.Text = txtStock.Value
         Else
             btnGuardar.Visible = 1
         End If
-        If txtCantidad.Value = 0 Then
+        If txtCantidad.Text = 0 Then
             btnGuardar.Visible = 0
         Else
             btnGuardar.Visible = 1
@@ -357,7 +343,7 @@ Partial Public Class frmDetalleVenta
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFinalizarVenta.Click
 
         'para generar el codigo Control
 
@@ -468,7 +454,7 @@ Partial Public Class frmDetalleVenta
             dtsDV.Gidventa = txtIdVenta.Text
             '  funcDV.eliminar(dtsDV)
 
-            If (func.eliminarproductoVenta(dts) And dtsDV.Gidventa = txtIdVenta.Text) Then
+            If (func.eliminarproductoVenta(dts) And funcDV.eliminar(dtsDV)) Then
                 MessageBox.Show("Venta Eliminada", "eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
             Me.Close()
