@@ -389,6 +389,12 @@
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentasPlanillas.Designer.vb">
+      <DependentUpon>frmReporteVentasPlanillas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentasPlanillas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmrptReImpresionFactura.Designer.vb">
       <DependentUpon>frmrptReImpresionFactura.vb</DependentUpon>
     </Compile>
@@ -510,6 +516,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentas.resx">
       <DependentUpon>frmReporteVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentasPlanillas.resx">
+      <DependentUpon>frmReporteVentasPlanillas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptcategoria.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptFactura.rdlc" />

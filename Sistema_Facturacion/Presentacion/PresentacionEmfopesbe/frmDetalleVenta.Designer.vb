@@ -25,7 +25,7 @@ Partial Class frmDetalleVenta
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnFinalizarVenta = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.lbllave = New System.Windows.Forms.Label()
         Me.lbCC = New System.Windows.Forms.Label()
@@ -38,12 +38,12 @@ Partial Class frmDetalleVenta
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtCantidad = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtnituab = New System.Windows.Forms.TextBox()
         Me.txtStock = New System.Windows.Forms.NumericUpDown()
-        Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.txtPrecioUnitario = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -73,13 +73,12 @@ Partial Class frmDetalleVenta
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Button1)
+        Me.GroupBox2.Controls.Add(Me.btnFinalizarVenta)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
         Me.GroupBox2.Controls.Add(Me.lbllave)
         Me.GroupBox2.Controls.Add(Me.lbCC)
@@ -97,14 +96,14 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
-        'Button1
+        'btnFinalizarVenta
         '
-        Me.Button1.Location = New System.Drawing.Point(322, 346)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(161, 85)
-        Me.Button1.TabIndex = 40
-        Me.Button1.Text = "Finalizar Venta"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnFinalizarVenta.Location = New System.Drawing.Point(322, 346)
+        Me.btnFinalizarVenta.Name = "btnFinalizarVenta"
+        Me.btnFinalizarVenta.Size = New System.Drawing.Size(161, 85)
+        Me.btnFinalizarVenta.TabIndex = 40
+        Me.btnFinalizarVenta.Text = "Finalizar Venta"
+        Me.btnFinalizarVenta.UseVisualStyleBackColor = True
         '
         'lbnumAutor
         '
@@ -213,12 +212,12 @@ Partial Class frmDetalleVenta
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.txtnituab)
         Me.GroupBox1.Controls.Add(Me.txtStock)
-        Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.txtPrecioUnitario)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
@@ -247,6 +246,13 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'txtCantidad
+        '
+        Me.txtCantidad.Location = New System.Drawing.Point(144, 227)
+        Me.txtCantidad.Name = "txtCantidad"
+        Me.txtCantidad.Size = New System.Drawing.Size(100, 20)
+        Me.txtCantidad.TabIndex = 35
         '
         'Label12
         '
@@ -290,14 +296,6 @@ Partial Class frmDetalleVenta
         Me.txtStock.Name = "txtStock"
         Me.txtStock.Size = New System.Drawing.Size(173, 20)
         Me.txtStock.TabIndex = 29
-        '
-        'txtCantidad
-        '
-        Me.txtCantidad.Location = New System.Drawing.Point(144, 233)
-        Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
-        Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(173, 20)
-        Me.txtCantidad.TabIndex = 28
         '
         'txtPrecioUnitario
         '
@@ -520,7 +518,6 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -545,7 +542,6 @@ Partial Class frmDetalleVenta
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
     Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
-    Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
     Friend WithEvents txtPrecioUnitario As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
@@ -564,9 +560,10 @@ Partial Class frmDetalleVenta
     Friend WithEvents lbCC As System.Windows.Forms.Label
     Friend WithEvents lbllave As System.Windows.Forms.Label
     Friend WithEvents lbnumAutor As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnFinalizarVenta As System.Windows.Forms.Button
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents txtCantidad As System.Windows.Forms.TextBox
 End Class
