@@ -248,9 +248,7 @@ Partial Public Class frmDetalleVenta
         frmProducto.ShowDialog()
     End Sub
 
-    Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs)
-
-    End Sub
+ 
 
     Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs)
 
@@ -459,9 +457,9 @@ Partial Public Class frmDetalleVenta
 
     End Sub
 
-   
 
-    Private Sub txtCantidad_KeyPress1(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress
+
+    Private Sub txtCantidad_KeyPress1(sender As Object, e As KeyPressEventArgs)
         If ((e.KeyChar = "."c) OrElse (e.KeyChar = ","c)) Then
             ' Obtenemos el carácter separador decimal existente
             ' actualmente en la configuración regional de Windows.
@@ -473,7 +471,19 @@ Partial Public Class frmDetalleVenta
         End If
     End Sub
 
-   
+    Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress
+        If ((e.KeyChar = "."c) OrElse (e.KeyChar = ","c)) Then
+            ' Obtenemos el carácter separador decimal existente
+            ' actualmente en la configuración regional de Windows.
+            ' 
+            e.KeyChar = _
+                Threading.Thread.CurrentThread. _
+                CurrentCulture.NumberFormat.NumberDecimalSeparator.Chars(0)
+
+        End If
+    End Sub
+
+
 
     'Private Sub txtCantidad_TextChanged(sender As Object, e As EventArgs)
 
@@ -507,11 +517,19 @@ Partial Public Class frmDetalleVenta
 
     'End Sub
 
-    
-    
+
+
+
 
   
-    Private Sub txtCantidad_ValueChanged_1(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
+
+
+
+  
+ 
+  
+
+    Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
         Dim cant As Double
         cant = txtCantidad.Text
         If txtCantidad.Text > txtStock.Value Then
@@ -526,5 +544,6 @@ Partial Public Class frmDetalleVenta
         'Else
         '    btnGuardar.Visible = 1
         'End If
+
     End Sub
 End Class
