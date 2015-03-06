@@ -249,20 +249,6 @@ Partial Public Class frmDetalleVenta
     End Sub
 
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs)
-        Dim cant As Double
-        cant = txtCantidad.Text
-        If txtCantidad.Text > txtStock.Value Then
-            MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
-            btnGuardar.Visible = 0
-            txtCantidad.Text = txtStock.Value
-        Else
-            btnGuardar.Visible = 1
-        End If
-        If txtCantidad.Text = 0 Then
-            btnGuardar.Visible = 0
-        Else
-            btnGuardar.Visible = 1
-        End If
 
     End Sub
 
@@ -283,7 +269,7 @@ Partial Public Class frmDetalleVenta
     End Sub
 
 
- 
+
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
 
@@ -471,5 +457,74 @@ Partial Public Class frmDetalleVenta
 
     Private Sub txtPrecioUnitario_TextChanged(sender As Object, e As EventArgs) Handles txtPrecioUnitario.TextChanged
 
+    End Sub
+
+   
+
+    Private Sub txtCantidad_KeyPress1(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress
+        If ((e.KeyChar = "."c) OrElse (e.KeyChar = ","c)) Then
+            ' Obtenemos el carácter separador decimal existente
+            ' actualmente en la configuración regional de Windows.
+            ' 
+            e.KeyChar = _
+                Threading.Thread.CurrentThread. _
+                CurrentCulture.NumberFormat.NumberDecimalSeparator.Chars(0)
+
+        End If
+    End Sub
+
+   
+
+    'Private Sub txtCantidad_TextChanged(sender As Object, e As EventArgs)
+
+
+
+    '    Try
+    '        Dim cant As Double
+    '        cant = txtCantidad.Text
+    '        If txtCantidad.Text > txtStock.Value Then
+    '            MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
+    '            btnGuardar.Visible = 0
+    '            txtCantidad.Text = txtStock.Value
+    '        Else
+    '            btnGuardar.Visible = 1
+    '        End If
+    '        If txtCantidad.Text = 0 Then
+    '            btnGuardar.Visible = 0
+    '        Else
+    '            btnGuardar.Visible = 1
+    '        End If
+
+    '    Catch ex As Exception
+    '        MessageBox.Show("ingrese un monto  a vender")
+    '    End Try
+
+
+
+
+
+
+
+    'End Sub
+
+    
+    
+
+  
+    Private Sub txtCantidad_ValueChanged_1(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
+        Dim cant As Double
+        cant = txtCantidad.Text
+        If txtCantidad.Text > txtStock.Value Then
+            MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
+            'btnGuardar.Visible = 0
+            txtCantidad.Text = txtStock.Value
+        Else
+            btnGuardar.Visible = 1
+        End If
+        'If txtCantidad.Text = 0 Then
+        '    btnGuardar.Visible = 0
+        'Else
+        '    btnGuardar.Visible = 1
+        'End If
     End Sub
 End Class
