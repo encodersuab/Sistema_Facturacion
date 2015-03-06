@@ -101,6 +101,7 @@ Partial Class frmDatosImpuestos
         '
         'txtidDATosIMp
         '
+        Me.txtidDATosIMp.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtidDATosIMp.Enabled = False
         Me.txtidDATosIMp.Location = New System.Drawing.Point(120, 24)
         Me.txtidDATosIMp.Name = "txtidDATosIMp"
@@ -117,6 +118,7 @@ Partial Class frmDatosImpuestos
         '
         'txtLLAVE
         '
+        Me.txtLLAVE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtLLAVE.Location = New System.Drawing.Point(120, 102)
         Me.txtLLAVE.Name = "txtLLAVE"
         Me.txtLLAVE.Size = New System.Drawing.Size(309, 20)
@@ -124,6 +126,7 @@ Partial Class frmDatosImpuestos
         '
         'txtNumAutorizacion
         '
+        Me.txtNumAutorizacion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNumAutorizacion.Location = New System.Drawing.Point(120, 76)
         Me.txtNumAutorizacion.Name = "txtNumAutorizacion"
         Me.txtNumAutorizacion.Size = New System.Drawing.Size(309, 20)
@@ -131,6 +134,7 @@ Partial Class frmDatosImpuestos
         '
         'txtNitEmisor
         '
+        Me.txtNitEmisor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNitEmisor.Location = New System.Drawing.Point(120, 50)
         Me.txtNitEmisor.Name = "txtNitEmisor"
         Me.txtNitEmisor.Size = New System.Drawing.Size(309, 20)

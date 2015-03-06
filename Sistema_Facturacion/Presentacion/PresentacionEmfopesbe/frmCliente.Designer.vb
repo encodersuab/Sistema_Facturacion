@@ -126,6 +126,7 @@ Partial Class frmCliente
         '
         'txtCi
         '
+        Me.txtCi.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtCi.Location = New System.Drawing.Point(118, 160)
         Me.txtCi.Name = "txtCi"
         Me.txtCi.Size = New System.Drawing.Size(100, 20)
@@ -142,6 +143,7 @@ Partial Class frmCliente
         '
         'txtTelefono
         '
+        Me.txtTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtTelefono.Location = New System.Drawing.Point(118, 134)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(100, 20)
@@ -158,6 +160,7 @@ Partial Class frmCliente
         '
         'txtDireccion
         '
+        Me.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtDireccion.Location = New System.Drawing.Point(118, 108)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(100, 20)
@@ -174,6 +177,7 @@ Partial Class frmCliente
         '
         'txtApellido
         '
+        Me.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtApellido.Location = New System.Drawing.Point(118, 82)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(100, 20)
@@ -190,6 +194,7 @@ Partial Class frmCliente
         '
         'txtNombre
         '
+        Me.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNombre.Location = New System.Drawing.Point(118, 56)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(100, 20)
@@ -206,6 +211,7 @@ Partial Class frmCliente
         '
         'txtIdCliente
         '
+        Me.txtIdCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtIdCliente.Enabled = False
         Me.txtIdCliente.Location = New System.Drawing.Point(118, 30)
         Me.txtIdCliente.Name = "txtIdCliente"
@@ -237,6 +243,7 @@ Partial Class frmCliente
         '
         'txtBuscar
         '
+        Me.txtBuscar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtBuscar.Location = New System.Drawing.Point(221, 25)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(287, 20)

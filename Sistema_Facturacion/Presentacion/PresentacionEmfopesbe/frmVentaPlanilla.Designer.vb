@@ -128,6 +128,7 @@ Partial Class frmVentaPlanilla
         '
         'txtNombreFac
         '
+        Me.txtNombreFac.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNombreFac.Location = New System.Drawing.Point(144, 180)
         Me.txtNombreFac.Name = "txtNombreFac"
         Me.txtNombreFac.Size = New System.Drawing.Size(166, 20)
@@ -162,6 +163,7 @@ Partial Class frmVentaPlanilla
         '
         'txtNombreCLiente
         '
+        Me.txtNombreCLiente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNombreCLiente.Enabled = False
         Me.txtNombreCLiente.Location = New System.Drawing.Point(185, 76)
         Me.txtNombreCLiente.Name = "txtNombreCLiente"
@@ -215,6 +217,7 @@ Partial Class frmVentaPlanilla
         '
         'txtNumDoc
         '
+        Me.txtNumDoc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNumDoc.Location = New System.Drawing.Point(144, 154)
         Me.txtNumDoc.Name = "txtNumDoc"
         Me.txtNumDoc.Size = New System.Drawing.Size(166, 20)
@@ -249,6 +252,7 @@ Partial Class frmVentaPlanilla
         '
         'txtidCliente
         '
+        Me.txtidCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtidCliente.Enabled = False
         Me.txtidCliente.Location = New System.Drawing.Point(144, 76)
         Me.txtidCliente.Name = "txtidCliente"
@@ -266,6 +270,7 @@ Partial Class frmVentaPlanilla
         '
         'txtIdVenta
         '
+        Me.txtIdVenta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtIdVenta.Enabled = False
         Me.txtIdVenta.Location = New System.Drawing.Point(144, 50)
         Me.txtIdVenta.Name = "txtIdVenta"

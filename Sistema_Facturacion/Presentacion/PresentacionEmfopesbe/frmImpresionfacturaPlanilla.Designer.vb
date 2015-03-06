@@ -25,6 +25,7 @@ Partial Class frmImpresionfacturaPlanilla
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txttotal = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnFinalizarVenta = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -40,7 +41,6 @@ Partial Class frmImpresionfacturaPlanilla
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.btnFinalizarVenta = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.lbllave = New System.Windows.Forms.Label()
         Me.lbCC = New System.Windows.Forms.Label()
@@ -64,6 +64,7 @@ Partial Class frmImpresionfacturaPlanilla
         '
         'txttotal
         '
+        Me.txttotal.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txttotal.Location = New System.Drawing.Point(144, 216)
         Me.txttotal.Name = "txttotal"
         Me.txttotal.Size = New System.Drawing.Size(100, 20)
@@ -96,6 +97,15 @@ Partial Class frmImpresionfacturaPlanilla
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
+        'btnFinalizarVenta
+        '
+        Me.btnFinalizarVenta.Location = New System.Drawing.Point(100, 276)
+        Me.btnFinalizarVenta.Name = "btnFinalizarVenta"
+        Me.btnFinalizarVenta.Size = New System.Drawing.Size(161, 85)
+        Me.btnFinalizarVenta.TabIndex = 41
+        Me.btnFinalizarVenta.Text = "Finalizar Venta"
+        Me.btnFinalizarVenta.UseVisualStyleBackColor = True
+        '
         'Label12
         '
         Me.Label12.AutoSize = True
@@ -107,6 +117,7 @@ Partial Class frmImpresionfacturaPlanilla
         '
         'txtNombreFac
         '
+        Me.txtNombreFac.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNombreFac.Enabled = False
         Me.txtNombreFac.Location = New System.Drawing.Point(144, 180)
         Me.txtNombreFac.Name = "txtNombreFac"
@@ -124,6 +135,7 @@ Partial Class frmImpresionfacturaPlanilla
         '
         'txtnituab
         '
+        Me.txtnituab.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtnituab.Enabled = False
         Me.txtnituab.Location = New System.Drawing.Point(144, 24)
         Me.txtnituab.Name = "txtnituab"
@@ -151,6 +163,7 @@ Partial Class frmImpresionfacturaPlanilla
         '
         'txtNombreCLiente
         '
+        Me.txtNombreCLiente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNombreCLiente.Enabled = False
         Me.txtNombreCLiente.Location = New System.Drawing.Point(170, 76)
         Me.txtNombreCLiente.Name = "txtNombreCLiente"
@@ -168,6 +181,7 @@ Partial Class frmImpresionfacturaPlanilla
         '
         'txtNumDoc
         '
+        Me.txtNumDoc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNumDoc.Enabled = False
         Me.txtNumDoc.Location = New System.Drawing.Point(144, 154)
         Me.txtNumDoc.Name = "txtNumDoc"
@@ -203,6 +217,7 @@ Partial Class frmImpresionfacturaPlanilla
         '
         'txtidCliente
         '
+        Me.txtidCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtidCliente.Enabled = False
         Me.txtidCliente.Location = New System.Drawing.Point(144, 76)
         Me.txtidCliente.Name = "txtidCliente"
@@ -220,20 +235,12 @@ Partial Class frmImpresionfacturaPlanilla
         '
         'txtIdVenta
         '
+        Me.txtIdVenta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtIdVenta.Enabled = False
         Me.txtIdVenta.Location = New System.Drawing.Point(144, 50)
         Me.txtIdVenta.Name = "txtIdVenta"
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
-        '
-        'btnFinalizarVenta
-        '
-        Me.btnFinalizarVenta.Location = New System.Drawing.Point(100, 276)
-        Me.btnFinalizarVenta.Name = "btnFinalizarVenta"
-        Me.btnFinalizarVenta.Size = New System.Drawing.Size(161, 85)
-        Me.btnFinalizarVenta.TabIndex = 41
-        Me.btnFinalizarVenta.Text = "Finalizar Venta"
-        Me.btnFinalizarVenta.UseVisualStyleBackColor = True
         '
         'lbnumAutor
         '
@@ -276,6 +283,7 @@ Partial Class frmImpresionfacturaPlanilla
         '
         'txtBuscar
         '
+        Me.txtBuscar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtBuscar.Location = New System.Drawing.Point(661, 58)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(274, 20)

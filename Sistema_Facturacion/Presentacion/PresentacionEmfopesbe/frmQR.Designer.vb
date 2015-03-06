@@ -152,6 +152,7 @@ Partial Class frmQR
         'txtvalidez
         '
         Me.txtvalidez.AcceptsReturn = True
+        Me.txtvalidez.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtvalidez.Enabled = False
         Me.txtvalidez.Location = New System.Drawing.Point(144, 258)
         Me.txtvalidez.Name = "txtvalidez"
@@ -178,6 +179,7 @@ Partial Class frmQR
         '
         'txtfechaEmision
         '
+        Me.txtfechaEmision.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtfechaEmision.Enabled = False
         Me.txtfechaEmision.Location = New System.Drawing.Point(144, 130)
         Me.txtfechaEmision.Name = "txtfechaEmision"
@@ -186,6 +188,7 @@ Partial Class frmQR
         '
         'txtCiNitComprador
         '
+        Me.txtCiNitComprador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtCiNitComprador.Enabled = False
         Me.txtCiNitComprador.Location = New System.Drawing.Point(144, 206)
         Me.txtCiNitComprador.Name = "txtCiNitComprador"
@@ -203,6 +206,7 @@ Partial Class frmQR
         '
         'txtIDCodQr
         '
+        Me.txtIDCodQr.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtIDCodQr.Enabled = False
         Me.txtIDCodQr.Location = New System.Drawing.Point(144, 24)
         Me.txtIDCodQr.Name = "txtIDCodQr"
@@ -212,6 +216,7 @@ Partial Class frmQR
         'txttxtIdVenta
         '
         Me.txttxtIdVenta.AcceptsReturn = True
+        Me.txttxtIdVenta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txttxtIdVenta.Enabled = False
         Me.txttxtIdVenta.Location = New System.Drawing.Point(144, 232)
         Me.txttxtIdVenta.Name = "txttxtIdVenta"
@@ -247,6 +252,7 @@ Partial Class frmQR
         '
         'txtCodigoControl
         '
+        Me.txtCodigoControl.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtCodigoControl.Enabled = False
         Me.txtCodigoControl.Location = New System.Drawing.Point(144, 180)
         Me.txtCodigoControl.Name = "txtCodigoControl"
@@ -264,6 +270,7 @@ Partial Class frmQR
         '
         'txtINum_Autorizacion
         '
+        Me.txtINum_Autorizacion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtINum_Autorizacion.Enabled = False
         Me.txtINum_Autorizacion.Location = New System.Drawing.Point(144, 104)
         Me.txtINum_Autorizacion.Name = "txtINum_Autorizacion"
@@ -290,6 +297,7 @@ Partial Class frmQR
         '
         'txtTotalPagar
         '
+        Me.txtTotalPagar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtTotalPagar.Enabled = False
         Me.txtTotalPagar.Location = New System.Drawing.Point(144, 154)
         Me.txtTotalPagar.Name = "txtTotalPagar"
@@ -316,6 +324,7 @@ Partial Class frmQR
         '
         'txtNum_Factura
         '
+        Me.txtNum_Factura.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNum_Factura.Enabled = False
         Me.txtNum_Factura.Location = New System.Drawing.Point(144, 76)
         Me.txtNum_Factura.Name = "txtNum_Factura"
@@ -333,6 +342,7 @@ Partial Class frmQR
         '
         'txtNit_Emisor
         '
+        Me.txtNit_Emisor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNit_Emisor.Enabled = False
         Me.txtNit_Emisor.Location = New System.Drawing.Point(144, 50)
         Me.txtNit_Emisor.Name = "txtNit_Emisor"

@@ -106,6 +106,7 @@ Partial Class frmCategoria
         '
         'txtBuscar
         '
+        Me.txtBuscar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtBuscar.Location = New System.Drawing.Point(160, 26)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(149, 20)
@@ -164,6 +165,7 @@ Partial Class frmCategoria
         '
         'txtNombre
         '
+        Me.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNombre.Location = New System.Drawing.Point(157, 56)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(100, 20)
@@ -180,6 +182,7 @@ Partial Class frmCategoria
         '
         'txtIdcategoria
         '
+        Me.txtIdcategoria.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtIdcategoria.Enabled = False
         Me.txtIdcategoria.Location = New System.Drawing.Point(157, 30)
         Me.txtIdcategoria.Name = "txtIdcategoria"

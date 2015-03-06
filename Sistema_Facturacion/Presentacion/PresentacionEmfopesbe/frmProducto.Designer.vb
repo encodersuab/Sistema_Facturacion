@@ -127,6 +127,7 @@ Partial Class frmProducto
         '
         'txtprecio_venta
         '
+        Me.txtprecio_venta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtprecio_venta.Location = New System.Drawing.Point(154, 205)
         Me.txtprecio_venta.Name = "txtprecio_venta"
         Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
@@ -160,6 +161,7 @@ Partial Class frmProducto
         '
         'txtprecio_compra
         '
+        Me.txtprecio_compra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtprecio_compra.Location = New System.Drawing.Point(154, 179)
         Me.txtprecio_compra.Name = "txtprecio_compra"
         Me.txtprecio_compra.Size = New System.Drawing.Size(56, 20)
@@ -167,6 +169,7 @@ Partial Class frmProducto
         '
         'txtstock
         '
+        Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtstock.Location = New System.Drawing.Point(154, 153)
         Me.txtstock.Name = "txtstock"
         Me.txtstock.Size = New System.Drawing.Size(56, 20)
@@ -215,6 +218,7 @@ Partial Class frmProducto
         '
         'txtdescripcion
         '
+        Me.txtdescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtdescripcion.Location = New System.Drawing.Point(154, 108)
         Me.txtdescripcion.Multiline = True
         Me.txtdescripcion.Name = "txtdescripcion"
@@ -233,6 +237,7 @@ Partial Class frmProducto
         '
         'txtNombre
         '
+        Me.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNombre.Location = New System.Drawing.Point(154, 56)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(172, 20)
@@ -371,6 +376,7 @@ Partial Class frmProducto
         '
         'txtnom_categoria
         '
+        Me.txtnom_categoria.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtnom_categoria.Location = New System.Drawing.Point(189, 82)
         Me.txtnom_categoria.Name = "txtnom_categoria"
         Me.txtnom_categoria.Size = New System.Drawing.Size(137, 20)
@@ -387,6 +393,7 @@ Partial Class frmProducto
         '
         'txtidcategoria
         '
+        Me.txtidcategoria.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtidcategoria.Location = New System.Drawing.Point(154, 82)
         Me.txtidcategoria.Name = "txtidcategoria"
         Me.txtidcategoria.Size = New System.Drawing.Size(29, 20)
@@ -394,6 +401,7 @@ Partial Class frmProducto
         '
         'txtIdproducto
         '
+        Me.txtIdproducto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtIdproducto.Enabled = False
         Me.txtIdproducto.Location = New System.Drawing.Point(154, 30)
         Me.txtIdproducto.Name = "txtIdproducto"
