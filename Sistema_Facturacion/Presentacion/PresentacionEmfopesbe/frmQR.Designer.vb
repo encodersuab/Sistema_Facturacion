@@ -30,6 +30,8 @@ Partial Class frmQR
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtvalidez = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.btnAnularFactura = New System.Windows.Forms.Button()
         Me.txtfechaEmision = New System.Windows.Forms.TextBox()
         Me.txtCiNitComprador = New System.Windows.Forms.TextBox()
@@ -51,8 +53,6 @@ Partial Class frmQR
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtNit_Emisor = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.txtvalidez = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -148,6 +148,24 @@ Partial Class frmQR
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'txtvalidez
+        '
+        Me.txtvalidez.AcceptsReturn = True
+        Me.txtvalidez.Enabled = False
+        Me.txtvalidez.Location = New System.Drawing.Point(144, 258)
+        Me.txtvalidez.Name = "txtvalidez"
+        Me.txtvalidez.Size = New System.Drawing.Size(173, 20)
+        Me.txtvalidez.TabIndex = 37
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(44, 261)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(41, 13)
+        Me.Label3.TabIndex = 36
+        Me.Label3.Text = "Validez"
         '
         'btnAnularFactura
         '
@@ -324,24 +342,6 @@ Partial Class frmQR
         'erroricono
         '
         Me.erroricono.ContainerControl = Me
-        '
-        'txtvalidez
-        '
-        Me.txtvalidez.AcceptsReturn = True
-        Me.txtvalidez.Enabled = False
-        Me.txtvalidez.Location = New System.Drawing.Point(144, 258)
-        Me.txtvalidez.Name = "txtvalidez"
-        Me.txtvalidez.Size = New System.Drawing.Size(173, 20)
-        Me.txtvalidez.TabIndex = 37
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(44, 261)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 13)
-        Me.Label3.TabIndex = 36
-        Me.Label3.Text = "Validez"
         '
         'frmQR
         '
