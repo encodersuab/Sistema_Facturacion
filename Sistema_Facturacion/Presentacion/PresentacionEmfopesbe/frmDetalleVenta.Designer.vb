@@ -38,7 +38,7 @@ Partial Class frmDetalleVenta
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.txtCantidad = New System.Windows.Forms.TextBox()
+        Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -72,6 +72,7 @@ Partial Class frmDetalleVenta
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -249,9 +250,11 @@ Partial Class frmDetalleVenta
         '
         'txtCantidad
         '
-        Me.txtCantidad.Location = New System.Drawing.Point(144, 227)
+        Me.txtCantidad.DecimalPlaces = 3
+        Me.txtCantidad.Location = New System.Drawing.Point(144, 235)
+        Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(100, 20)
+        Me.txtCantidad.Size = New System.Drawing.Size(173, 20)
         Me.txtCantidad.TabIndex = 35
         '
         'Label12
@@ -517,6 +520,7 @@ Partial Class frmDetalleVenta
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -565,5 +569,5 @@ Partial Class frmDetalleVenta
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents txtCantidad As System.Windows.Forms.TextBox
+    Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
 End Class

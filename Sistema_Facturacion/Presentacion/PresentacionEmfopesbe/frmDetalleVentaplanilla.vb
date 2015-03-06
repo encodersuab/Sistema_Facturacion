@@ -273,21 +273,33 @@ Public Class frmDetalleVentaplanilla
 
     End Sub
 
+    Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress
+        If ((e.KeyChar = "."c) OrElse (e.KeyChar = ","c)) Then
+            ' Obtenemos el carácter separador decimal existente
+            ' actualmente en la configuración regional de Windows.
+            ' 
+            e.KeyChar = _
+                Threading.Thread.CurrentThread. _
+                CurrentCulture.NumberFormat.NumberDecimalSeparator.Chars(0)
+
+        End If
+    End Sub
+
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
         Dim cant As Double
         cant = txtCantidad.Text
         If txtCantidad.Text > txtStock.Value Then
             MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
-            btnGuardar.Visible = 0
+            'btnGuardar.Visible = 0
             txtCantidad.Text = txtStock.Value
         Else
             btnGuardar.Visible = 1
         End If
-        If txtCantidad.Text = 0 Then
-            btnGuardar.Visible = 0
-        Else
-            btnGuardar.Visible = 1
-        End If
+        'If txtCantidad.Text = 0 Then
+        '    btnGuardar.Visible = 0
+        'Else
+        '    btnGuardar.Visible = 1
+        'End If
 
     End Sub
 

@@ -319,6 +319,7 @@ Partial Class frmDetalleVentaplanilla
         '
         'txtCantidad
         '
+        Me.txtCantidad.DecimalPlaces = 3
         Me.txtCantidad.Location = New System.Drawing.Point(144, 233)
         Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
