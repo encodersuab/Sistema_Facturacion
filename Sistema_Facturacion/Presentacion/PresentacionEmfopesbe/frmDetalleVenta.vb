@@ -17,7 +17,7 @@ Partial Public Class frmDetalleVenta
         QrCodeImgControl1.Visible = False
         limpiar()
         mostrarDatosImpuestos()
-
+        '  txtIdVenta.Text = datalistado.SelectedCells.Item(8).Value
     End Sub
 
     Public Sub mostrarDatosImpuestos()
@@ -45,8 +45,14 @@ Partial Public Class frmDetalleVenta
         txttotal.Text = 0
 
         Try
-            Dim func As New fDetalleVenta
-            dt = func.mostrar
+
+           
+
+                Dim func As New fDetalleVenta
+                dt = func.mostrar
+
+
+
             datalistado.Columns.Item("Eliminar").Visible = False
 
             If dt.Rows.Count <> 0 Then
@@ -63,8 +69,12 @@ Partial Public Class frmDetalleVenta
             MsgBox(ex.Message)
         End Try
         btnNuevo.Visible = True
+  
 
-        Buscar()
+            Buscar()
+
+
+
 
     End Sub
 
@@ -91,7 +101,7 @@ Partial Public Class frmDetalleVenta
             MsgBox(ex.Message)
         End Try
     End Sub
-
+   
     Private Sub ocultar_columnas()
         'datalistado.Columns(1).Visible = False
         'datalistado.Columns(2).Visible = False
@@ -328,12 +338,13 @@ Partial Public Class frmDetalleVenta
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFinalizarVenta.Click
-
+        txttotal.Text = sumar().ToString
         'para generar el codigo Control
 
         Dim fecha, monto As String
         fecha = CalcularFechaParaCC()
         monto = calcularMontoCC(txttotal.Text)
+
 
         lbCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
         ''''''''''''''''''''''''''''''''''
@@ -349,14 +360,10 @@ Partial Public Class frmDetalleVenta
 
             f = dtpFecha.Value.Date
             QrCodeImgControl1.Visible = True
-            QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
+            QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
             QrCodeImgControl1.Enabled = True
             QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
-
-
-
-
-            ' ''''''''''''' 
+            '''''''' 
             dts.gfecha_emision = f.ToString
             dts.gNit_Emisor = txtnituab.Text
             dts.gNum_Factura = aux
@@ -367,12 +374,9 @@ Partial Public Class frmDetalleVenta
             dts.gimagen = ms.GetBuffer
             dts.gIdVenta = txtIdVenta.Text
             dts.gvalidez = "V"
-
             ''''''''
-
             If func.insertar(dts) Then
                 frmReporteFactura.txtnumfactura.Text = aux
-
                 MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 frmReporteFactura.MdiParent = frmInicioF
                 frmReporteFactura.Show()
@@ -508,27 +512,7 @@ Partial Public Class frmDetalleVenta
     '    Catch ex As Exception
     '        MessageBox.Show("ingrese un monto  a vender")
     '    End Try
-
-
-
-
-
-
-
     'End Sub
-
-
-
-
-
-  
-
-
-
-  
- 
-  
-
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
         Dim cant As Double
         cant = txtCantidad.Text

@@ -68,6 +68,7 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.txtDD = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -99,7 +100,7 @@ Partial Class frmDetalleVenta
         '
         'btnFinalizarVenta
         '
-        Me.btnFinalizarVenta.Location = New System.Drawing.Point(322, 346)
+        Me.btnFinalizarVenta.Location = New System.Drawing.Point(322, 339)
         Me.btnFinalizarVenta.Name = "btnFinalizarVenta"
         Me.btnFinalizarVenta.Size = New System.Drawing.Size(161, 85)
         Me.btnFinalizarVenta.TabIndex = 40
@@ -513,11 +514,20 @@ Partial Class frmDetalleVenta
         Me.Button2.Text = "Cancelar Venta"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'txtDD
+        '
+        Me.txtDD.Location = New System.Drawing.Point(220, -3)
+        Me.txtDD.Name = "txtDD"
+        Me.txtDD.Size = New System.Drawing.Size(100, 20)
+        Me.txtDD.TabIndex = 7
+        Me.txtDD.Text = "0"
+        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1072, 498)
+        Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -533,6 +543,7 @@ Partial Class frmDetalleVenta
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
@@ -579,4 +590,5 @@ Partial Class frmDetalleVenta
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
+    Friend WithEvents txtDD As System.Windows.Forms.TextBox
 End Class

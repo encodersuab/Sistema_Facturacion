@@ -246,7 +246,6 @@
         If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then
             Dim chkcell As DataGridViewCheckBoxCell = Me.datalistado.Rows(e.RowIndex).Cells("Eliminar")
             chkcell.Value = Not chkcell.Value
-
         End If
     End Sub
 

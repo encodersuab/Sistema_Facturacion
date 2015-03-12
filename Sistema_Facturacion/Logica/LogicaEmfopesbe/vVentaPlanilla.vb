@@ -1,7 +1,7 @@
 ﻿Public Class vVentaPlanilla
     Dim idventaplanilla, idcliente As Integer
     Dim fecha_venta As Date
-    Dim tipo_documento, num_documento, nombre_fac, estado As String
+    Dim tipo_documento, num_documento, nombre_fac, estado, pago As String
 
     Public Property Gidventaplanilla
         Get
@@ -59,7 +59,14 @@
             estado = value
         End Set
     End Property
-
+    Public Property Gpago
+        Get
+            Return pago
+        End Get
+        Set(ByVal value)
+            pago = value
+        End Set
+    End Property
     Public Sub New()
 
     End Sub

@@ -45,6 +45,7 @@ Partial Class frmVentaPlanilla
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
+        Me.btnImprimirFacturaPlanilla = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -52,9 +53,10 @@ Partial Class frmVentaPlanilla
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.btnImprimirFacturaPlanilla)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Location = New System.Drawing.Point(413, 28)
+        Me.GroupBox2.Location = New System.Drawing.Point(417, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(496, 285)
         Me.GroupBox2.TabIndex = 5
@@ -77,11 +79,12 @@ Partial Class frmVentaPlanilla
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(35, 40)
+        Me.datalistado.Enabled = False
+        Me.datalistado.Location = New System.Drawing.Point(35, 72)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(444, 220)
+        Me.datalistado.Size = New System.Drawing.Size(444, 188)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -110,7 +113,7 @@ Partial Class frmVentaPlanilla
         Me.GroupBox1.Controls.Add(Me.txtidCliente)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtIdVenta)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 28)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(395, 285)
         Me.GroupBox1.TabIndex = 4
@@ -277,11 +280,20 @@ Partial Class frmVentaPlanilla
         Me.txtIdVenta.Size = New System.Drawing.Size(166, 20)
         Me.txtIdVenta.TabIndex = 0
         '
+        'btnImprimirFacturaPlanilla
+        '
+        Me.btnImprimirFacturaPlanilla.Location = New System.Drawing.Point(35, 43)
+        Me.btnImprimirFacturaPlanilla.Name = "btnImprimirFacturaPlanilla"
+        Me.btnImprimirFacturaPlanilla.Size = New System.Drawing.Size(444, 23)
+        Me.btnImprimirFacturaPlanilla.TabIndex = 4
+        Me.btnImprimirFacturaPlanilla.Text = "IMPRIMIR FACTURA DE VENTAS POR PLANILLA"
+        Me.btnImprimirFacturaPlanilla.UseVisualStyleBackColor = True
+        '
         'frmVentaPlanilla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(925, 375)
+        Me.ClientSize = New System.Drawing.Size(925, 310)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmVentaPlanilla"
@@ -317,4 +329,5 @@ Partial Class frmVentaPlanilla
     Friend WithEvents txtidCliente As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
+    Friend WithEvents btnImprimirFacturaPlanilla As System.Windows.Forms.Button
 End Class

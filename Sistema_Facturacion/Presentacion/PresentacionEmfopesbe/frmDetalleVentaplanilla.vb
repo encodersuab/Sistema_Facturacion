@@ -77,7 +77,7 @@ Public Class frmDetalleVentaplanilla
             ds.Tables.Add(dt.Copy)
             Dim dv As New DataView(ds.Tables(0))
 
-            dv.RowFilter = " IDVentaplanilla='" & txtIdVenta.Text & "'"
+            dv.RowFilter = " IDVenta='" & txtIdVenta.Text & "'"
 
             If dv.Count <> 0 Then
                 Inexistente.Visible = False
@@ -106,20 +106,15 @@ Public Class frmDetalleVentaplanilla
                 Dim dtsp As New vDetalleVentaPlanilla
                 Dim funcp As New fDetalleVentaPlanilla
 
-
                 dtsp.gidproducto = txtIdProducto.Text
                 dtsp.gcantidad = txtCantidad.Text
                 dtsp.gprecio_unitario = txtPrecioUnitario.Text
                 dtsp.gidventaplanilla = txtIdVenta.Text
-
                 '''''''''''''''''''''''''''''''''''''''''''
                 Dim ms As New IO.MemoryStream()
-
                 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
                 If funcp.insertarDVPlanilla(dtsp) Then
                     If funcp.disminuir_stock(dtsp) Then
-
                     End If
                     MessageBox.Show("articulo añadido correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     mostrarDVPlanilla()
@@ -135,9 +130,7 @@ Public Class frmDetalleVentaplanilla
             End Try
         Else
             MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
         End If
-
     End Sub
     Private Sub datalistado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellContentClick
         If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then

@@ -31,17 +31,14 @@ Public Class fDetalleVentaPlanilla
     Public Function insertarDVPlanilla(ByVal dts As vDetalleVentaPlanilla) As Boolean
         Try
             conectado()
-            cmd = New SqlCommand("insertar_detalle_venta_planilla")
+            cmd = New SqlCommand("insertar_detalle_venta")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-
-            cmd.Parameters.AddWithValue("@idventaplanilla", dts.gidventaplanilla)
+            cmd.Parameters.AddWithValue("@idventa", dts.gidventaplanilla)
             cmd.Parameters.AddWithValue("@idproducto", dts.gidproducto)
             cmd.Parameters.AddWithValue("@cantidad", dts.gcantidad)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
-
-
 
             If cmd.ExecuteNonQuery Then
                 Return True

@@ -11,6 +11,7 @@
         cbTipoDoc.Text = ""
         txtNumDoc.Text = ""
         txtIdVenta.Text = ""
+        txtNombreFac.Text = ""
         ' txtCi.Text = ""
 
     End Sub
@@ -89,6 +90,8 @@
                 dts.Gtipo_documento = cbTipoDoc.Text
                 dts.Gnum_documento = txtNumDoc.Text
                 dts.Gnombre_fac = txtNombreFac.Text
+                dts.Gestado = "0"
+                dts.Gpago = "CONTADO"
                 If func.insertar(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
 

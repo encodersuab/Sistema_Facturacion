@@ -31,7 +31,7 @@ Public Class fVentaPlanilla
     Public Function insertarventaPlanilla(ByVal dts As vVentaPlanilla) As Boolean
         Try
             conectado()
-            cmd = New SqlCommand("insertar_venta_planilla")
+            cmd = New SqlCommand("insertar_venta")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
@@ -42,6 +42,7 @@ Public Class fVentaPlanilla
             cmd.Parameters.AddWithValue("@num_documento", dts.Gnum_documento)
             cmd.Parameters.AddWithValue("@nombre_fac", dts.Gnombre_fac)
             cmd.Parameters.AddWithValue("@estado", dts.Gestado)
+            cmd.Parameters.AddWithValue("@pago", dts.Gpago)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -59,17 +60,18 @@ Public Class fVentaPlanilla
     Public Function editarVentaPlanilla(ByVal dts As vVentaPlanilla) As Boolean
         Try
             conectado()
-            cmd = New SqlCommand("editar_venta_planilla")
+            cmd = New SqlCommand("editar_venta")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-            cmd.Parameters.AddWithValue("@idventaplanilla", dts.Gidventaplanilla)
+            cmd.Parameters.AddWithValue("@idventa", dts.Gidventaplanilla)
             cmd.Parameters.AddWithValue("@idcliente", dts.Gidcliente)
             cmd.Parameters.AddWithValue("@fecha_venta", dts.Gfecha_venta)
             cmd.Parameters.AddWithValue("@tipo_documento", dts.Gtipo_documento)
             cmd.Parameters.AddWithValue("@num_documento", dts.Gnum_documento)
             cmd.Parameters.AddWithValue("@nombre_fac", dts.Gnombre_fac)
             cmd.Parameters.AddWithValue("@estado", dts.Gestado)
+            cmd.Parameters.AddWithValue("@pago", dts.Gpago)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -83,15 +85,16 @@ Public Class fVentaPlanilla
             desconectado()
         End Try
     End Function
+   
 
     Public Function eliminarventaPlanilla(ByVal dts As vVentaPlanilla) As Boolean
         Try
             conectado()
-            cmd = New SqlCommand("eliminar_venta_planilla")
+            cmd = New SqlCommand("eliminar_venta")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-            cmd.Parameters.Add("@idventaplanilla", SqlDbType.NVarChar, 50).Value = dts.Gidventaplanilla
+            cmd.Parameters.Add("@idventa", SqlDbType.NVarChar, 50).Value = dts.Gidventaplanilla
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
