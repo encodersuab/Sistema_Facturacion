@@ -21,7 +21,12 @@
     Private Sub mostrar()
         Try
             Dim func As New fCliente
-            dt = func.mostrar
+            If txtFlag.Text = 2 Then
+                dt = func.mostrarUAB
+            ElseIf txtFlag.Text = 1 Then
+                dt = func.mostrar
+            End If
+
             datalistado.Columns.Item("Eliminar").Visible = False
 
             If dt.Rows.Count <> 0 Then

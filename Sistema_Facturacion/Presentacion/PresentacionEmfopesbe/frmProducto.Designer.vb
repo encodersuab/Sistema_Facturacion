@@ -432,6 +432,7 @@ Partial Class frmProducto
         Me.txtTag.Size = New System.Drawing.Size(140, 20)
         Me.txtTag.TabIndex = 26
         Me.txtTag.Text = "0"
+        Me.txtTag.Visible = False
         '
         'frmProducto
         '
