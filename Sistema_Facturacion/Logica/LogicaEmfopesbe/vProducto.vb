@@ -1,6 +1,6 @@
 ﻿Public Class vProducto
     Dim idproducto, idcategoria As Integer
-    Dim nombre, descripcion, modulo As String
+    Dim nombre, descripcion, modulo, medida As String
     Dim stock, precio_compra, precio_venta As Double
     Dim fecha_vencimiento As Date
     Dim imagen() As Byte
@@ -85,11 +85,19 @@
             modulo = value
         End Set
     End Property
+    Public Property gmedida
+        Get
+            Return medida
+        End Get
+        Set(ByVal value)
+            medida = value
+        End Set
+    End Property
     Public Sub New()
 
     End Sub
 
-    Public Sub New(ByVal idproducto As Integer, ByVal idcategoria As Integer, ByVal nombre As String, ByVal descripcion As String, ByVal stock As Double, ByVal precio_venta As Double, ByVal precio_compra As Double, ByVal fecha_Vencimiento As Date, ByVal imagen As Image, ByVal modulo As String)
+    Public Sub New(ByVal idproducto As Integer, ByVal idcategoria As Integer, ByVal nombre As String, ByVal descripcion As String, ByVal stock As Double, ByVal precio_venta As Double, ByVal precio_compra As Double, ByVal fecha_Vencimiento As Date, ByVal imagen As Image, ByVal modulo As String, ByVal medida As String)
         gidproducto = idproducto
         gidcategoria = idcategoria
         gnombre = nombre
@@ -100,6 +108,7 @@
         gfecha_vencimiento = fecha_Vencimiento
         gimagen = imagen
         gmodulo = modulo
+        gmedida = medida
     End Sub
 
 End Class

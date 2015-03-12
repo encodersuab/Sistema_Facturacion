@@ -44,6 +44,7 @@ Public Class fProducto
             cmd.Parameters.AddWithValue("@fecha_vencimiento", dts.gfecha_vencimiento)
             cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
             cmd.Parameters.AddWithValue("@modulo", dts.gmodulo)
+            cmd.Parameters.AddWithValue("@medida", dts.gmedida)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -75,6 +76,7 @@ Public Class fProducto
             cmd.Parameters.AddWithValue("@fecha_vencimiento", dts.gfecha_vencimiento)
             cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
             cmd.Parameters.AddWithValue("@modulo", dts.gmodulo)
+            cmd.Parameters.AddWithValue("@medida", dts.gmedida)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else

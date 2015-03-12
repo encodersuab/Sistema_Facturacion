@@ -68,6 +68,7 @@ Partial Class frmDetalleVentaplanilla
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
+        Me.lbmedida = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -221,6 +222,7 @@ Partial Class frmDetalleVentaplanilla
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.lbmedida)
         Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Controls.Add(Me.txtestado)
         Me.GroupBox1.Controls.Add(Me.Label12)
@@ -527,6 +529,15 @@ Partial Class frmDetalleVentaplanilla
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
+        'lbmedida
+        '
+        Me.lbmedida.AutoSize = True
+        Me.lbmedida.Location = New System.Drawing.Point(265, 405)
+        Me.lbmedida.Name = "lbmedida"
+        Me.lbmedida.Size = New System.Drawing.Size(45, 13)
+        Me.lbmedida.TabIndex = 37
+        Me.lbmedida.Text = "Label13"
+        '
         'frmDetalleVentaplanilla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -593,4 +604,5 @@ Partial Class frmDetalleVentaplanilla
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents txtestado As System.Windows.Forms.TextBox
+    Friend WithEvents lbmedida As System.Windows.Forms.Label
 End Class

@@ -132,6 +132,7 @@
                 dts.gprecio_venta = txtprecio_venta.Text
                 dts.gfecha_vencimiento = txtfecha_vencimiento.Text
                 dts.gmodulo = cbbmodulo.Text
+                dts.gmedida = txtmedida.Text
 
                 Dim ms As New IO.MemoryStream()
                 If Not imagen.Image Is Nothing Then
@@ -184,6 +185,7 @@
                     dts.gprecio_venta = txtprecio_venta.Text
                     dts.gfecha_vencimiento = txtfecha_vencimiento.Text
                     dts.gmodulo = cbbmodulo.Text
+                    dts.gmedida = txtmedida.Text
                     Dim ms As New IO.MemoryStream()
                     If Not imagen.Image Is Nothing Then
                         imagen.Image.Save(ms, imagen.Image.RawFormat)
@@ -226,7 +228,7 @@
         txtprecio_venta.Text = datalistado.SelectedCells.Item(8).Value
         txtfecha_vencimiento.Text = datalistado.SelectedCells.Item(9).Value
         cbbmodulo.Text = datalistado.SelectedCells.Item(11).Value
-
+        txtmedida.Text = datalistado.SelectedCells.Item(12).Value
         imagen.BackgroundImage = Nothing
         Dim b() As Byte = datalistado.SelectedCells.Item(10).Value
         Dim ms As New IO.MemoryStream(b)
@@ -294,6 +296,7 @@
                 frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
                 frmDetalleVenta.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVenta.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                frmDetalleVenta.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
                 Me.Close()
 
             Else
@@ -301,6 +304,7 @@
                 frmDetalleVentaplanilla.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
                 frmDetalleVentaplanilla.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVentaplanilla.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                frmDetalleVentaplanilla.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
                 Me.Close()
 
 

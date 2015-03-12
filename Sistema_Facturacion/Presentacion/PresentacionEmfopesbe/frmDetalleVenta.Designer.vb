@@ -69,6 +69,7 @@ Partial Class frmDetalleVenta
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Button2 = New System.Windows.Forms.Button()
         Me.txtDD = New System.Windows.Forms.TextBox()
+        Me.lbmedida = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -214,6 +215,7 @@ Partial Class frmDetalleVenta
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.lbmedida)
         Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
@@ -522,6 +524,15 @@ Partial Class frmDetalleVenta
         Me.txtDD.TabIndex = 7
         Me.txtDD.Text = "0"
         '
+        'lbmedida
+        '
+        Me.lbmedida.AutoSize = True
+        Me.lbmedida.Location = New System.Drawing.Point(252, 371)
+        Me.lbmedida.Name = "lbmedida"
+        Me.lbmedida.Size = New System.Drawing.Size(45, 13)
+        Me.lbmedida.TabIndex = 35
+        Me.lbmedida.Text = "Label13"
+        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -591,4 +602,5 @@ Partial Class frmDetalleVenta
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
     Friend WithEvents txtDD As System.Windows.Forms.TextBox
+    Friend WithEvents lbmedida As System.Windows.Forms.Label
 End Class

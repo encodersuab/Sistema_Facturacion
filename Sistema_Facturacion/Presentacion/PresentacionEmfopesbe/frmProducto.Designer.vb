@@ -61,6 +61,8 @@ Partial Class frmProducto
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dlg = New System.Windows.Forms.OpenFileDialog()
         Me.txtTag = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtmedida = New System.Windows.Forms.ComboBox()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -82,7 +84,7 @@ Partial Class frmProducto
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(134, 426)
+        Me.btnGuardar.Location = New System.Drawing.Point(157, 478)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -91,7 +93,7 @@ Partial Class frmProducto
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(134, 426)
+        Me.btnEditar.Location = New System.Drawing.Point(157, 478)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -100,7 +102,7 @@ Partial Class frmProducto
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(219, 426)
+        Me.btncancelar.Location = New System.Drawing.Point(242, 478)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -109,7 +111,7 @@ Partial Class frmProducto
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(50, 426)
+        Me.btnNuevo.Location = New System.Drawing.Point(73, 478)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -254,6 +256,8 @@ Partial Class frmProducto
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtmedida)
+        Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.cbbmodulo)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.btnlimpiar)
@@ -284,7 +288,7 @@ Partial Class frmProducto
         Me.GroupBox1.Controls.Add(Me.txtIdproducto)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(382, 457)
+        Me.GroupBox1.Size = New System.Drawing.Size(382, 524)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
@@ -312,7 +316,7 @@ Partial Class frmProducto
         '
         Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
         Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(323, 352)
+        Me.btnlimpiar.Location = New System.Drawing.Point(323, 408)
         Me.btnlimpiar.Name = "btnlimpiar"
         Me.btnlimpiar.Size = New System.Drawing.Size(53, 48)
         Me.btnlimpiar.TabIndex = 25
@@ -322,7 +326,7 @@ Partial Class frmProducto
         '
         Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
         Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(323, 284)
+        Me.btncargar.Location = New System.Drawing.Point(323, 340)
         Me.btncargar.Name = "btncargar"
         Me.btncargar.Size = New System.Drawing.Size(53, 48)
         Me.btncargar.TabIndex = 24
@@ -333,7 +337,7 @@ Partial Class frmProducto
         Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
         Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(154, 284)
+        Me.imagen.Location = New System.Drawing.Point(154, 340)
         Me.imagen.Name = "imagen"
         Me.imagen.Size = New System.Drawing.Size(163, 117)
         Me.imagen.TabIndex = 23
@@ -342,7 +346,7 @@ Partial Class frmProducto
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(18, 284)
+        Me.Label9.Location = New System.Drawing.Point(18, 340)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 22
@@ -433,11 +437,30 @@ Partial Class frmProducto
         Me.txtTag.TabIndex = 26
         Me.txtTag.Text = "0"
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(21, 294)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(42, 13)
+        Me.Label11.TabIndex = 28
+        Me.Label11.Text = "Medida"
+        '
+        'txtmedida
+        '
+        Me.txtmedida.FormattingEnabled = True
+        Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
+        Me.txtmedida.Location = New System.Drawing.Point(157, 294)
+        Me.txtmedida.Name = "txtmedida"
+        Me.txtmedida.Size = New System.Drawing.Size(121, 21)
+        Me.txtmedida.TabIndex = 29
+        Me.txtmedida.Text = "UNIDAD"
+        '
         'frmProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(889, 481)
+        Me.ClientSize = New System.Drawing.Size(886, 563)
         Me.Controls.Add(Me.txtTag)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
@@ -494,4 +517,6 @@ Partial Class frmProducto
     Friend WithEvents txtTag As System.Windows.Forms.TextBox
     Friend WithEvents cbbmodulo As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents txtmedida As System.Windows.Forms.ComboBox
 End Class
