@@ -523,6 +523,7 @@ Partial Class frmDetalleVenta
         Me.txtDD.Size = New System.Drawing.Size(100, 20)
         Me.txtDD.TabIndex = 7
         Me.txtDD.Text = "0"
+        Me.txtDD.Visible = False
         '
         'lbmedida
         '

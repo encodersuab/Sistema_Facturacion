@@ -289,7 +289,6 @@ Partial Class frmCliente
         Me.txtFlag.Size = New System.Drawing.Size(100, 20)
         Me.txtFlag.TabIndex = 16
         Me.txtFlag.Text = "0"
-        Me.txtFlag.Visible = False
         '
         'frmCliente
         '
