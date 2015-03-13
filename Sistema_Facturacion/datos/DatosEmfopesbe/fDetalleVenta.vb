@@ -89,17 +89,48 @@ Public Class fDetalleVenta
             cmd = New SqlCommand("mostrar_idproductoXidventa")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
-
-
             cmd.Parameters.AddWithValue("@idventa", dts.gidventa)
 
+            retornarValor = cmd.ExecuteScalar()
+
+            Return retornarValor
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            desconectado()
+        End Try
+    End Function
+    Public Function mostrariddetalleventaXidventa(ByVal dts As vDetalleVenta) As Integer
+        Try
+            conectado()
+            cmd = New SqlCommand("mostrar_iddetalleventaXidventa")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+            cmd.Parameters.AddWithValue("@idventa", dts.gidventa)
 
             retornarValor = cmd.ExecuteScalar()
-            Return CInt(retornarValor)
 
+            Return retornarValor
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            desconectado()
+        End Try
+    End Function
 
+    Public Function mostrarCantidadXidventa(ByVal dts As vDetalleVenta) As Double
+        Try
+            conectado()
+            cmd = New SqlCommand("mostrar_idproductoCAntidad")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+            cmd.Parameters.AddWithValue("@idventa", dts.gidventa)
 
+            retornarValor = cmd.ExecuteScalar()
 
+            Return retornarValor
         Catch ex As Exception
             MsgBox(ex.Message)
             Return False

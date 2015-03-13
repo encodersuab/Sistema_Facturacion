@@ -388,51 +388,55 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAnularFactura.Click
         Dim result As DialogResult
         result = MessageBox.Show("realizar la anulacion de la factuara?", "Anulando Factura", MessageBoxButtons.OKCancel)
-
         If result = DialogResult.OK Then
+            If Me.ValidateChildren = True And txtIDCodQr.Text <> "" And txtNit_Emisor.Text <> "" And txtNum_Factura.Text <> "" And txtINum_Autorizacion.Text <> "" And txtfechaEmision.Text <> "" And txtTotalPagar.Text <> "" And txtCodigoControl.Text <> "" And txtCiNitComprador.Text <> "" Then
+                Try
+                    Dim dts As New vQr
+                    Dim func As New fQr
+                    Dim dts1 As New vDetalleVenta
+                    Dim func1 As New fDetalleVenta
+                    Dim dts2 As New vDetalleVenta
+                    Dim func2 As New fDetalleVenta
 
-            'If Me.ValidateChildren = True And txtIDCodQr.Text <> "" And txtNit_Emisor.Text <> "" And txtNum_Factura.Text <> "" And txtINum_Autorizacion.Text <> "" And txtfechaEmision.Text <> "" And txtTotalPagar.Text <> "" And txtCodigoControl.Text <> "" And txtCiNitComprador.Text <> "" Then
-            Try
-                Dim dts As New vQr
-                Dim func As New fQr
-                Dim dts1 As New vDetalleVenta
-                Dim func1 As New fDetalleVenta
+                    dts.gIDCodQr = txtIDCodQr.Text
+                    dts.gNit_Emisor = txtNit_Emisor.Text
+                    dts.gNum_Factura = txtNum_Factura.Text
+                    dts.gNum_Autorizacion = txtINum_Autorizacion.Text
+                    dts.gfecha_emision = txtfechaEmision.Text
+                    dts.gTotal = "0"
+                    dts.gCodigo_Control = txtCodigoControl.Text
+                    dts.gCi_Nit_Comprador = "0"
+                    dts.gIdVenta = txttxtIdVenta.Text
+                    dts.gvalidez = "A"
 
-                dts.gIDCodQr = txtIDCodQr.Text
-                dts.gNit_Emisor = txtNit_Emisor.Text
-                dts.gNum_Factura = txtNum_Factura.Text
-                dts.gNum_Autorizacion = txtINum_Autorizacion.Text
-                dts.gfecha_emision = txtfechaEmision.Text
-                dts.gTotal = "0"
-                dts.gCodigo_Control = txtCodigoControl.Text
-                dts.gCi_Nit_Comprador = "0"
-                dts.gIdVenta = txttxtIdVenta.Text
-                dts.gvalidez = "A"
+                    dts1.gidventa = txttxtIdVenta.Text
 
-                dts1.gidventa = txttxtIdVenta.Text
-                Dim aa As Integer
-                aa = func1.mostraridprodXidventa(dts1)
+                    Dim res As DialogResult
+                    res = MessageBox.Show("REALMENTE QUIERE ANULAR LA FACTURA", "FACTURA ANULADA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
+                    If (res = Windows.Forms.DialogResult.Yes) Then
+                        func.editar(dts)
+                        Do While func1.mostraridprodXidventa(dts1) <> 0
+                            dts2.gidproducto = func1.mostraridprodXidventa(dts1)
+                            dts2.gcantidad = func1.mostrarCantidadXidventa(dts1)
+                            func2.aumentar_stock(dts2)
+                            dts2.giddedatlle_venta = func1.mostrariddetalleventaXidventa(dts1)
+                            func1.eliminar(dts2)
+                        Loop
+                        mostrar()
+                        limpiar()
+                    Else
+                        MessageBox.Show("ERROR AL ANULAR ESTA FACTURA", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        mostrar()
+                        limpiar()
+                    End If
 
-
-                'If func.editar(dts) Then
-                '    MessageBox.Show("FACTURA ANULADA", "FACTURA ANULADA", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                '    mostrar()
-                '    limpiar()
-                'Else
-                '    MessageBox.Show("ERROR AL ANULAR ESTA FACTURA", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                '    mostrar()
-                '    limpiar()
-
-                'End If
-
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
-            'Else
-            '    MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
-            'End If
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
+            Else
+                MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
         End If
     End Sub
 

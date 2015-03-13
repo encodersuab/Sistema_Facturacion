@@ -53,6 +53,8 @@ Partial Class frmQR
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtNit_Emisor = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.txtIDVENTA = New System.Windows.Forms.Label()
+        Me.txtCANTIDAD = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -61,6 +63,8 @@ Partial Class frmQR
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.txtCANTIDAD)
+        Me.GroupBox2.Controls.Add(Me.txtIDVENTA)
         Me.GroupBox2.Controls.Add(Me.txtBuscar)
         Me.GroupBox2.Controls.Add(Me.cbxListadoClientes)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
@@ -353,6 +357,24 @@ Partial Class frmQR
         '
         Me.erroricono.ContainerControl = Me
         '
+        'txtIDVENTA
+        '
+        Me.txtIDVENTA.AutoSize = True
+        Me.txtIDVENTA.Location = New System.Drawing.Point(7, 60)
+        Me.txtIDVENTA.Name = "txtIDVENTA"
+        Me.txtIDVENTA.Size = New System.Drawing.Size(45, 13)
+        Me.txtIDVENTA.TabIndex = 6
+        Me.txtIDVENTA.Text = "Label11"
+        '
+        'txtCANTIDAD
+        '
+        Me.txtCANTIDAD.AutoSize = True
+        Me.txtCANTIDAD.Location = New System.Drawing.Point(88, 60)
+        Me.txtCANTIDAD.Name = "txtCANTIDAD"
+        Me.txtCANTIDAD.Size = New System.Drawing.Size(45, 13)
+        Me.txtCANTIDAD.TabIndex = 7
+        Me.txtCANTIDAD.Text = "Label11"
+        '
         'frmQR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -401,4 +423,6 @@ Partial Class frmQR
     Friend WithEvents btnAnularFactura As System.Windows.Forms.Button
     Friend WithEvents txtvalidez As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents txtIDVENTA As System.Windows.Forms.Label
+    Friend WithEvents txtCANTIDAD As System.Windows.Forms.Label
 End Class
