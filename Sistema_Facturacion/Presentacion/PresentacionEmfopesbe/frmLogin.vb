@@ -52,12 +52,30 @@
 
     End Sub
 
+    Private Sub txtPassord_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtPassord.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            e.Handled = True
+            SendKeys.Send("{TAB}")
+        End If
+    End Sub
+
+    Private Sub txtPassord_SystemColorsChanged(sender As Object, e As EventArgs) Handles txtPassord.SystemColorsChanged
+
+    End Sub
+
     Private Sub txtPassord_TextChanged(sender As Object, e As EventArgs) Handles txtPassord.TextChanged
 
     End Sub
 
     Private Sub lblHOra_Click(sender As Object, e As EventArgs) Handles lblHOra.Click
 
+    End Sub
+
+    Private Sub txtLogin_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtLogin.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            e.Handled = True
+            SendKeys.Send("{TAB}")
+        End If
     End Sub
 
     Private Sub txtLogin_TextChanged(sender As Object, e As EventArgs) Handles txtLogin.TextChanged
