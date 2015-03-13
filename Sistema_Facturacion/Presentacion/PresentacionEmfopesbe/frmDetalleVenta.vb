@@ -527,7 +527,10 @@ Partial Public Class frmDetalleVenta
         '    btnGuardar.Visible = 0
         'Else
         '    btnGuardar.Visible = 1
-        'End If
+        'End If   
 
     End Sub
+
+
+
 End Class

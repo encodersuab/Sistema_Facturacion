@@ -391,40 +391,50 @@
 
         If result = DialogResult.OK Then
 
-            If Me.ValidateChildren = True And txtIDCodQr.Text <> "" And txtNit_Emisor.Text <> "" And txtNum_Factura.Text <> "" And txtINum_Autorizacion.Text <> "" And txtfechaEmision.Text <> "" And txtTotalPagar.Text <> "" And txtCodigoControl.Text <> "" And txtCiNitComprador.Text <> "" Then
-                Try
-                    Dim dts As New vQr
-                    Dim func As New fQr
+            'If Me.ValidateChildren = True And txtIDCodQr.Text <> "" And txtNit_Emisor.Text <> "" And txtNum_Factura.Text <> "" And txtINum_Autorizacion.Text <> "" And txtfechaEmision.Text <> "" And txtTotalPagar.Text <> "" And txtCodigoControl.Text <> "" And txtCiNitComprador.Text <> "" Then
+            Try
+                Dim dts As New vQr
+                Dim func As New fQr
+                Dim dts1 As New vDetalleVenta
+                Dim func1 As New fDetalleVenta
 
-                    dts.gIDCodQr = txtIDCodQr.Text
-                    dts.gNit_Emisor = txtNit_Emisor.Text
-                    dts.gNum_Factura = txtNum_Factura.Text
-                    dts.gNum_Autorizacion = txtINum_Autorizacion.Text
-                    dts.gfecha_emision = txtfechaEmision.Text
-                    dts.gTotal = "0"
-                    dts.gCodigo_Control = txtCodigoControl.Text
-                    dts.gCi_Nit_Comprador = "0"
-                    dts.gIdVenta = txttxtIdVenta.Text
-                    dts.gvalidez = "A"
+                dts.gIDCodQr = txtIDCodQr.Text
+                dts.gNit_Emisor = txtNit_Emisor.Text
+                dts.gNum_Factura = txtNum_Factura.Text
+                dts.gNum_Autorizacion = txtINum_Autorizacion.Text
+                dts.gfecha_emision = txtfechaEmision.Text
+                dts.gTotal = "0"
+                dts.gCodigo_Control = txtCodigoControl.Text
+                dts.gCi_Nit_Comprador = "0"
+                dts.gIdVenta = txttxtIdVenta.Text
+                dts.gvalidez = "A"
 
-                    If func.editar(dts) Then
-                        MessageBox.Show("FACTURA ANULADA", "FACTURA ANULADA", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        mostrar()
-                        limpiar()
-                    Else
-                        MessageBox.Show("ERROR AL ANULAR ESTA FACTURA", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                        mostrar()
-                        limpiar()
+                dts1.gidventa = txttxtIdVenta.Text
+                Dim aa As Integer
+                aa = func1.mostraridprodXidventa(dts1)
 
-                    End If
 
-                Catch ex As Exception
-                    MsgBox(ex.Message)
-                End Try
-            Else
-                MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
-            End If
+                'If func.editar(dts) Then
+                '    MessageBox.Show("FACTURA ANULADA", "FACTURA ANULADA", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                '    mostrar()
+                '    limpiar()
+                'Else
+                '    MessageBox.Show("ERROR AL ANULAR ESTA FACTURA", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                '    mostrar()
+                '    limpiar()
+
+                'End If
+
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+            'Else
+            '    MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            'End If
         End If
     End Sub
+
+
 End Class

@@ -2,6 +2,7 @@
 Public Class fDetalleVenta
     Inherits Conexion
     Dim cmd As New SqlCommand
+    Dim retornarValor As Object
     Public Function mostrar() As DataTable
         Try
             conectado()
@@ -74,6 +75,30 @@ Public Class fDetalleVenta
             Else
                 Return False
             End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            desconectado()
+        End Try
+    End Function
+    Public Function mostraridprodXidventa(ByVal dts As vDetalleVenta) As Integer
+        Try
+            conectado()
+            cmd = New SqlCommand("mostrar_idproductoXidventa")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+
+
+            cmd.Parameters.AddWithValue("@idventa", dts.gidventa)
+
+
+            retornarValor = cmd.ExecuteScalar()
+            Return CInt(retornarValor)
+
+
+
 
         Catch ex As Exception
             MsgBox(ex.Message)
