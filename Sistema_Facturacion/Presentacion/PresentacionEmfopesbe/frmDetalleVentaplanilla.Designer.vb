@@ -38,8 +38,7 @@ Partial Class frmDetalleVentaplanilla
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.txtestado = New System.Windows.Forms.TextBox()
+        Me.lbmedida = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -68,7 +67,6 @@ Partial Class frmDetalleVentaplanilla
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.lbmedida = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -155,6 +153,7 @@ Partial Class frmDetalleVentaplanilla
         '
         'txttotal
         '
+        Me.txttotal.Enabled = False
         Me.txttotal.Location = New System.Drawing.Point(84, 339)
         Me.txttotal.Name = "txttotal"
         Me.txttotal.Size = New System.Drawing.Size(100, 20)
@@ -223,8 +222,6 @@ Partial Class frmDetalleVentaplanilla
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.lbmedida)
-        Me.GroupBox1.Controls.Add(Me.Label13)
-        Me.GroupBox1.Controls.Add(Me.txtestado)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -260,22 +257,13 @@ Partial Class frmDetalleVentaplanilla
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
-        'Label13
+        'lbmedida
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(44, 317)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(40, 13)
-        Me.Label13.TabIndex = 36
-        Me.Label13.Text = "Estado"
-        '
-        'txtestado
-        '
-        Me.txtestado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtestado.Location = New System.Drawing.Point(144, 314)
-        Me.txtestado.Name = "txtestado"
-        Me.txtestado.Size = New System.Drawing.Size(166, 20)
-        Me.txtestado.TabIndex = 35
+        Me.lbmedida.AutoSize = True
+        Me.lbmedida.Location = New System.Drawing.Point(289, 235)
+        Me.lbmedida.Name = "lbmedida"
+        Me.lbmedida.Size = New System.Drawing.Size(0, 13)
+        Me.lbmedida.TabIndex = 37
         '
         'Label12
         '
@@ -328,7 +316,7 @@ Partial Class frmDetalleVentaplanilla
         Me.txtCantidad.Location = New System.Drawing.Point(144, 233)
         Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(173, 20)
+        Me.txtCantidad.Size = New System.Drawing.Size(139, 20)
         Me.txtCantidad.TabIndex = 28
         '
         'txtPrecioUnitario
@@ -529,20 +517,11 @@ Partial Class frmDetalleVentaplanilla
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'lbmedida
-        '
-        Me.lbmedida.AutoSize = True
-        Me.lbmedida.Location = New System.Drawing.Point(265, 405)
-        Me.lbmedida.Name = "lbmedida"
-        Me.lbmedida.Size = New System.Drawing.Size(45, 13)
-        Me.lbmedida.TabIndex = 37
-        Me.lbmedida.Text = "Label13"
-        '
         'frmDetalleVentaplanilla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1143, 573)
+        Me.ClientSize = New System.Drawing.Size(1143, 485)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -602,7 +581,5 @@ Partial Class frmDetalleVentaplanilla
     Friend WithEvents txtidCliente As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
-    Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents txtestado As System.Windows.Forms.TextBox
     Friend WithEvents lbmedida As System.Windows.Forms.Label
 End Class

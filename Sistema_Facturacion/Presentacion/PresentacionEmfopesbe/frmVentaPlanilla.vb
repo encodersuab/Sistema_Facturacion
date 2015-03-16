@@ -40,7 +40,7 @@
         End Try
         btnNuevo.Visible = True
         btnEditar.Visible = False
-
+        datalistado.Enabled = False
         '       Buscar()
 
     End Sub
@@ -65,7 +65,7 @@
                 dts.Gtipo_documento = cbTipoDoc.Text
                 dts.Gnum_documento = txtNumDoc.Text
                 dts.Gnombre_fac = txtNombreFac.Text
-                dts.Gestado = "1"
+                dts.Gestado = 1
                 dts.Gpago = "PLANILLA"
                 If func.insertarventaPlanilla(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -103,7 +103,8 @@
                 dts.Gtipo_documento = cbTipoDoc.Text
                 dts.Gnum_documento = txtNumDoc.Text
                 dts.Gnombre_fac = txtNombreFac.Text
-
+                dts.Gestado = txtEstado.Text
+                dts.Gpago = txtPago.Text
 
                 If func.editarVentaPlanilla(dts) Then
                     MessageBox.Show("cliente modificado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -154,6 +155,8 @@
         cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
         txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
         txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
+        txtEstado.Text = datalistado.SelectedCells.Item(9).Value
+        txtPago.Text = datalistado.SelectedCells.Item(10).Value
         btnEditar.Visible = True
         btnGuardar.Visible = False
     End Sub
@@ -169,7 +172,7 @@
         frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
         frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
         frmDetalleVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
-       
+        frmDetalleVenta.txtDD.Text = 1
         frmDetalleVenta.ShowDialog()
 
     End Sub
@@ -211,6 +214,8 @@
 
             ElseIf result = DialogResult.Yes Then
                 datalistado.Enabled = True
+
+
                 If datalistado.SelectedCells.Item(9).Value = 1 Then
                     frmDetalleVenta.txtDD.Text = 1
                 End If
@@ -241,7 +246,7 @@
 
                     dts.Gidventaplanilla = txtIdVenta.Text
                     dts.Gidcliente = txtidCliente.Text
-                    dts.Gfecha_venta = dtpFecha.Text
+                    dts.Gfecha_venta = dtpFecha.Value.Date.ToString
                     dts.Gtipo_documento = cbTipoDoc.Text
                     dts.Gnum_documento = txtNumDoc.Text
                     dts.Gnombre_fac = txtNombreFac.Text
@@ -261,6 +266,11 @@
 
             End If
         End If
+
+    End Sub
+
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
 End Class

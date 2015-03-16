@@ -23,10 +23,15 @@ Partial Class frmVentaPlanilla
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.btnImprimirFacturaPlanilla = New System.Windows.Forms.Button()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtPago = New System.Windows.Forms.Label()
+        Me.txtEstado = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Estado = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.cbTipoDoc = New System.Windows.Forms.ComboBox()
@@ -45,7 +50,6 @@ Partial Class frmVentaPlanilla
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.btnImprimirFacturaPlanilla = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -62,6 +66,15 @@ Partial Class frmVentaPlanilla
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Estado de ventas"
+        '
+        'btnImprimirFacturaPlanilla
+        '
+        Me.btnImprimirFacturaPlanilla.Location = New System.Drawing.Point(35, 43)
+        Me.btnImprimirFacturaPlanilla.Name = "btnImprimirFacturaPlanilla"
+        Me.btnImprimirFacturaPlanilla.Size = New System.Drawing.Size(444, 23)
+        Me.btnImprimirFacturaPlanilla.TabIndex = 4
+        Me.btnImprimirFacturaPlanilla.Text = "IMPRIMIR FACTURA DE VENTAS POR PLANILLA"
+        Me.btnImprimirFacturaPlanilla.UseVisualStyleBackColor = True
         '
         'Inexistente
         '
@@ -95,6 +108,10 @@ Partial Class frmVentaPlanilla
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtPago)
+        Me.GroupBox1.Controls.Add(Me.txtEstado)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Estado)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.cbTipoDoc)
@@ -119,6 +136,40 @@ Partial Class frmVentaPlanilla
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'txtPago
+        '
+        Me.txtPago.AutoSize = True
+        Me.txtPago.Location = New System.Drawing.Point(144, 230)
+        Me.txtPago.Name = "txtPago"
+        Me.txtPago.Size = New System.Drawing.Size(0, 13)
+        Me.txtPago.TabIndex = 27
+        '
+        'txtEstado
+        '
+        Me.txtEstado.AutoSize = True
+        Me.txtEstado.Location = New System.Drawing.Point(144, 207)
+        Me.txtEstado.Name = "txtEstado"
+        Me.txtEstado.Size = New System.Drawing.Size(0, 13)
+        Me.txtEstado.TabIndex = 26
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(44, 230)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(32, 13)
+        Me.Label8.TabIndex = 25
+        Me.Label8.Text = "Pago"
+        '
+        'Estado
+        '
+        Me.Estado.AutoSize = True
+        Me.Estado.Location = New System.Drawing.Point(44, 206)
+        Me.Estado.Name = "Estado"
+        Me.Estado.Size = New System.Drawing.Size(40, 13)
+        Me.Estado.TabIndex = 23
+        Me.Estado.Text = "Estado"
         '
         'Label6
         '
@@ -149,7 +200,7 @@ Partial Class frmVentaPlanilla
         '
         'dtpFecha
         '
-        Me.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpFecha.Location = New System.Drawing.Point(144, 103)
         Me.dtpFecha.Name = "dtpFecha"
         Me.dtpFecha.Size = New System.Drawing.Size(166, 20)
@@ -280,15 +331,6 @@ Partial Class frmVentaPlanilla
         Me.txtIdVenta.Size = New System.Drawing.Size(166, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'btnImprimirFacturaPlanilla
-        '
-        Me.btnImprimirFacturaPlanilla.Location = New System.Drawing.Point(35, 43)
-        Me.btnImprimirFacturaPlanilla.Name = "btnImprimirFacturaPlanilla"
-        Me.btnImprimirFacturaPlanilla.Size = New System.Drawing.Size(444, 23)
-        Me.btnImprimirFacturaPlanilla.TabIndex = 4
-        Me.btnImprimirFacturaPlanilla.Text = "IMPRIMIR FACTURA DE VENTAS POR PLANILLA"
-        Me.btnImprimirFacturaPlanilla.UseVisualStyleBackColor = True
-        '
         'frmVentaPlanilla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -330,4 +372,8 @@ Partial Class frmVentaPlanilla
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
     Friend WithEvents btnImprimirFacturaPlanilla As System.Windows.Forms.Button
+    Friend WithEvents txtPago As System.Windows.Forms.Label
+    Friend WithEvents txtEstado As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Estado As System.Windows.Forms.Label
 End Class

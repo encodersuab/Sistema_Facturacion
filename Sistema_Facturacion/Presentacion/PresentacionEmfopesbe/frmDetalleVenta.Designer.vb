@@ -148,6 +148,7 @@ Partial Class frmDetalleVenta
         '
         'txttotal
         '
+        Me.txttotal.Enabled = False
         Me.txttotal.Location = New System.Drawing.Point(84, 339)
         Me.txttotal.Name = "txttotal"
         Me.txttotal.Size = New System.Drawing.Size(100, 20)

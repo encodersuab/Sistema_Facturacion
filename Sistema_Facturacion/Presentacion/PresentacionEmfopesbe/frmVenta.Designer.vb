@@ -59,7 +59,7 @@ Partial Class frmVenta
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(413, 25)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(496, 285)
+        Me.GroupBox2.Size = New System.Drawing.Size(496, 306)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Estado de ventas"
@@ -115,7 +115,7 @@ Partial Class frmVenta
         Me.GroupBox1.Controls.Add(Me.txtIdVenta)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 25)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(395, 285)
+        Me.GroupBox1.Size = New System.Drawing.Size(395, 306)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
@@ -175,7 +175,7 @@ Partial Class frmVenta
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(162, 217)
+        Me.btnGuardar.Location = New System.Drawing.Point(157, 246)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -184,7 +184,7 @@ Partial Class frmVenta
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(162, 217)
+        Me.btnEditar.Location = New System.Drawing.Point(157, 246)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -193,7 +193,7 @@ Partial Class frmVenta
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(247, 217)
+        Me.btncancelar.Location = New System.Drawing.Point(242, 246)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -202,7 +202,7 @@ Partial Class frmVenta
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(78, 217)
+        Me.btnNuevo.Location = New System.Drawing.Point(73, 246)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -288,7 +288,7 @@ Partial Class frmVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(918, 323)
+        Me.ClientSize = New System.Drawing.Size(918, 343)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmVenta"

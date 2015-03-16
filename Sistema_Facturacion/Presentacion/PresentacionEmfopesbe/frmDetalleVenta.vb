@@ -17,16 +17,7 @@ Partial Public Class frmDetalleVenta
         QrCodeImgControl1.Visible = False
         limpiar()
         mostrarDatosImpuestos()
-        If txtDD.Text = 1 Then
-            Button2.Enabled = False
-            btnBuscarProducto.Enabled = False
-            txtCantidad.Enabled = False
-            txtPrecioUnitario.Enabled = False
-            lbmedida.Visible = False
-            btncancelar.Enabled = False
-            btnGuardar.Enabled = False
-            btnNuevo.Enabled = False
-        End If
+        
         '  txtIdVenta.Text = datalistado.SelectedCells.Item(8).Value
     End Sub
 
@@ -46,23 +37,32 @@ Partial Public Class frmDetalleVenta
         txtPrecioUnitario.Text = ""
         txtCantidad.Text = 0
         txtStock.Text = 0
-        Button2.Enabled = True
-        btnBuscarProducto.Enabled = True
-        txtCantidad.Enabled = True
-        txtPrecioUnitario.Enabled = True
-        lbmedida.Visible = True
-        btncancelar.Enabled = True
-        btnGuardar.Enabled = True
-        btnNuevo.Enabled = True
+        If txtDD.Text = 1 Then
+            Button2.Enabled = False
+            btnBuscarProducto.Enabled = False
+            txtCantidad.Enabled = False
+            txtPrecioUnitario.Enabled = False
+            lbmedida.Visible = False
+            btncancelar.Enabled = False
+            btnGuardar.Enabled = False
+            btnNuevo.Enabled = False
+        Else
+            Button2.Enabled = True
+            btnBuscarProducto.Enabled = True
+            txtCantidad.Enabled = True
+            txtPrecioUnitario.Enabled = True
+            lbmedida.Visible = True
+            btncancelar.Enabled = True
+            btnGuardar.Enabled = True
+            btnNuevo.Enabled = True
+        End If
+
     End Sub
 
     Private Sub mostrar()
         txttotal.Text = 0
-
+        
         Try
-
-           
-
                 Dim func As New fDetalleVenta
                 dt = func.mostrar
 
@@ -354,58 +354,61 @@ Partial Public Class frmDetalleVenta
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFinalizarVenta.Click
         txttotal.Text = sumar().ToString
-        'para generar el codigo Control
+        If txttotal.Text = 0 Then
+            MessageBox.Show("SELECCIONAR ARTICULOS")
+        Else
+            'para generar el codigo Control
 
-        Dim fecha, monto As String
-        fecha = CalcularFechaParaCC()
-        monto = calcularMontoCC(txttotal.Text)
-
-
-        lbCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
-        ''''''''''''''''''''''''''''''''''
-        Try
+            Dim fecha, monto As String
+            fecha = CalcularFechaParaCC()
+            monto = calcularMontoCC(txttotal.Text)
 
 
-            Dim ms As New IO.MemoryStream()
-            Dim dts As New vQr
-            Dim func As New fQr
-            Dim f, aux As String
+            lbCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
+            ''''''''''''''''''''''''''''''''''
+            Try
 
-            aux = func.mostrarUltimoQR.ToString + 1
 
-            f = dtpFecha.Value.Date
-            QrCodeImgControl1.Visible = True
-            QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
-            QrCodeImgControl1.Enabled = True
-            QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
-            '''''''' 
-            dts.gfecha_emision = f.ToString
-            dts.gNit_Emisor = txtnituab.Text
-            dts.gNum_Factura = aux
-            dts.gNum_Autorizacion = lbnumAutor.Text
-            dts.gTotal = txttotal.Text
-            dts.gCodigo_Control = lbCC.Text
-            dts.gCi_Nit_Comprador = txtNumDoc.Text
-            dts.gimagen = ms.GetBuffer
-            dts.gIdVenta = txtIdVenta.Text
-            dts.gvalidez = "V"
-            ''''''''
-            If func.insertar(dts) Then
-                frmReporteFactura.txtnumfactura.Text = aux
-                MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                frmReporteFactura.MdiParent = frmInicioF
-                frmReporteFactura.Show()
+                Dim ms As New IO.MemoryStream()
+                Dim dts As New vQr
+                Dim func As New fQr
+                Dim f, aux As String
 
-                Me.Close()
+                aux = func.mostrarUltimoQR.ToString + 1
 
-            Else
-                MessageBox.Show("No se a podido guardar la venta  Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                f = dtpFecha.Value.Date
+                QrCodeImgControl1.Visible = True
+                QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
+                QrCodeImgControl1.Enabled = True
+                QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
+                '''''''' 
+                dts.gfecha_emision = f.ToString
+                dts.gNit_Emisor = txtnituab.Text
+                dts.gNum_Factura = aux
+                dts.gNum_Autorizacion = lbnumAutor.Text
+                dts.gTotal = txttotal.Text
+                dts.gCodigo_Control = lbCC.Text
+                dts.gCi_Nit_Comprador = txtNumDoc.Text
+                dts.gimagen = ms.GetBuffer
+                dts.gIdVenta = txtIdVenta.Text
+                dts.gvalidez = "V"
+                ''''''''
+                If func.insertar(dts) Then
+                    frmReporteFactura.txtnumfactura.Text = aux
+                    MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    frmReporteFactura.MdiParent = frmInicioF
+                    frmReporteFactura.Show()
 
-            End If
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+                    Me.Close()
 
+                Else
+                    MessageBox.Show("No se a podido guardar la venta  Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                End If
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+        End If
     End Sub
 
     Private Sub txtnituab_TextChanged(sender As Object, e As EventArgs) Handles txtnituab.TextChanged

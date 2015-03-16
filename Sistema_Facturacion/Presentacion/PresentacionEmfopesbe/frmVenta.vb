@@ -90,7 +90,7 @@
                 dts.Gtipo_documento = cbTipoDoc.Text
                 dts.Gnum_documento = txtNumDoc.Text
                 dts.Gnombre_fac = txtNombreFac.Text
-                dts.Gestado = "0"
+                dts.Gestado = 0
                 dts.Gpago = "CONTADO"
                 If func.insertar(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -199,6 +199,7 @@
         frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
         frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
         frmDetalleVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
+        frmDetalleVenta.txtDD.Text = 0
         'frmDetalleVenta.txtidCliente.Text = txtidCliente.Text
         'frmDetalleVenta.txtIdVenta.Text = txtIdVenta.Text
         'frmDetalleVenta.txtNombreCLiente.Text = txtNombreCLiente.Text

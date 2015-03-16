@@ -71,7 +71,7 @@
 
     End Sub
 
-    Public Sub New(ByVal idventaplanilla As Integer, ByVal idcliente As Integer, ByVal fecha_venta As Date, ByVal tipo_documento As String, ByVal num_documento As String, ByVal nombre_fac As String, ByVal estado As String)
+    Public Sub New(ByVal idventaplanilla As Integer, ByVal idcliente As Integer, ByVal fecha_venta As Date, ByVal tipo_documento As String, ByVal num_documento As String, ByVal nombre_fac As String, ByVal estado As String, ByVal pago As String)
         Gidventaplanilla = idventaplanilla
         Gidcliente = idcliente
         Gfecha_venta = fecha_venta
@@ -79,5 +79,6 @@
         Gnum_documento = num_documento
         Gnombre_fac = nombre_fac
         Gestado = estado
+        Gpago = pago
     End Sub
 End Class
