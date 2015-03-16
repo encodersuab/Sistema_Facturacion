@@ -130,7 +130,7 @@ Partial Class frmInicioF
         '
         Me.registroE.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientessmenuEmfopesbe, Me.ProductossmenuEmfopesbe, Me.CategoriassmenuEmfopesbe})
         Me.registroE.Name = "registroE"
-        Me.registroE.Size = New System.Drawing.Size(167, 22)
+        Me.registroE.Size = New System.Drawing.Size(166, 22)
         Me.registroE.Text = "Registro"
         '
         'ClientessmenuEmfopesbe
@@ -155,7 +155,7 @@ Partial Class frmInicioF
         '
         Me.ventaE.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContadoToolStripMenuItem, Me.PorPlanillaToolStripMenuItem})
         Me.ventaE.Name = "ventaE"
-        Me.ventaE.Size = New System.Drawing.Size(167, 22)
+        Me.ventaE.Size = New System.Drawing.Size(166, 22)
         Me.ventaE.Text = "Venta"
         '
         'ContadoToolStripMenuItem
@@ -174,7 +174,7 @@ Partial Class frmInicioF
         '
         Me.reporteE.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RptVentaToolStripMenuItem, Me.RpteProductoToolStripMenuItem, Me.CategoriaToolStripMenuItem2, Me.RpteClienteToolStripMenuItem, Me.RptUsuariosToolStripMenuItem})
         Me.reporteE.Name = "reporteE"
-        Me.reporteE.Size = New System.Drawing.Size(167, 22)
+        Me.reporteE.Size = New System.Drawing.Size(166, 22)
         Me.reporteE.Text = "Reporte"
         '
         'RptVentaToolStripMenuItem
@@ -210,13 +210,13 @@ Partial Class frmInicioF
         'ReImprecionE
         '
         Me.ReImprecionE.Name = "ReImprecionE"
-        Me.ReImprecionE.Size = New System.Drawing.Size(167, 22)
-        Me.ReImprecionE.Text = "Re-Imprecion Fac"
+        Me.ReImprecionE.Size = New System.Drawing.Size(166, 22)
+        Me.ReImprecionE.Text = "Re-Impresion Fac"
         '
         'AnularFacturaToolStripMenuItem
         '
         Me.AnularFacturaToolStripMenuItem.Name = "AnularFacturaToolStripMenuItem"
-        Me.AnularFacturaToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
+        Me.AnularFacturaToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.AnularFacturaToolStripMenuItem.Text = "Anular Factura"
         '
         'redrubi

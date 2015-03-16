@@ -38,6 +38,7 @@ Partial Class frmDetalleVenta
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lbmedida = New System.Windows.Forms.Label()
         Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
@@ -69,7 +70,6 @@ Partial Class frmDetalleVenta
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Button2 = New System.Windows.Forms.Button()
         Me.txtDD = New System.Windows.Forms.TextBox()
-        Me.lbmedida = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -251,13 +251,21 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
+        'lbmedida
+        '
+        Me.lbmedida.AutoSize = True
+        Me.lbmedida.Location = New System.Drawing.Point(284, 235)
+        Me.lbmedida.Name = "lbmedida"
+        Me.lbmedida.Size = New System.Drawing.Size(0, 13)
+        Me.lbmedida.TabIndex = 35
+        '
         'txtCantidad
         '
         Me.txtCantidad.DecimalPlaces = 3
         Me.txtCantidad.Location = New System.Drawing.Point(144, 233)
         Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(173, 20)
+        Me.txtCantidad.Size = New System.Drawing.Size(134, 20)
         Me.txtCantidad.TabIndex = 29
         '
         'Label12
@@ -424,7 +432,7 @@ Partial Class frmDetalleVenta
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(65, 315)
+        Me.btnNuevo.Location = New System.Drawing.Point(60, 315)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -523,16 +531,6 @@ Partial Class frmDetalleVenta
         Me.txtDD.Size = New System.Drawing.Size(100, 20)
         Me.txtDD.TabIndex = 7
         Me.txtDD.Text = "0"
-        Me.txtDD.Visible = False
-        '
-        'lbmedida
-        '
-        Me.lbmedida.AutoSize = True
-        Me.lbmedida.Location = New System.Drawing.Point(252, 371)
-        Me.lbmedida.Name = "lbmedida"
-        Me.lbmedida.Size = New System.Drawing.Size(45, 13)
-        Me.lbmedida.TabIndex = 35
-        Me.lbmedida.Text = "Label13"
         '
         'frmDetalleVenta
         '

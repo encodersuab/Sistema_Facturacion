@@ -169,10 +169,7 @@
         frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
         frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
         frmDetalleVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
-        frmDetalleVenta.Button2.Enabled = False
-        frmDetalleVenta.btnBuscarProducto.Enabled = False
-        frmDetalleVenta.txtCantidad.Enabled = False
-        frmDetalleVenta.txtPrecioUnitario.Enabled = False
+       
         frmDetalleVenta.ShowDialog()
 
     End Sub
@@ -251,12 +248,9 @@
                     dts.Gestado = CInt(0)
                     dts.Gpago = "PLANILLA"
                     If func.editarVentaPlanilla(dts) Then
-
                         cargar_detalle_factura()
                         mostrarVentaPlanilla()
-
                     Else
-                      
                     End If
 
                 Catch ex As Exception

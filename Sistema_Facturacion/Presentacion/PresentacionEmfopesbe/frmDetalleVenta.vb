@@ -17,6 +17,16 @@ Partial Public Class frmDetalleVenta
         QrCodeImgControl1.Visible = False
         limpiar()
         mostrarDatosImpuestos()
+        If txtDD.Text = 1 Then
+            Button2.Enabled = False
+            btnBuscarProducto.Enabled = False
+            txtCantidad.Enabled = False
+            txtPrecioUnitario.Enabled = False
+            lbmedida.Visible = False
+            btncancelar.Enabled = False
+            btnGuardar.Enabled = False
+            btnNuevo.Enabled = False
+        End If
         '  txtIdVenta.Text = datalistado.SelectedCells.Item(8).Value
     End Sub
 
@@ -36,9 +46,14 @@ Partial Public Class frmDetalleVenta
         txtPrecioUnitario.Text = ""
         txtCantidad.Text = 0
         txtStock.Text = 0
-
-
-
+        Button2.Enabled = True
+        btnBuscarProducto.Enabled = True
+        txtCantidad.Enabled = True
+        txtPrecioUnitario.Enabled = True
+        lbmedida.Visible = True
+        btncancelar.Enabled = True
+        btnGuardar.Enabled = True
+        btnNuevo.Enabled = True
     End Sub
 
     Private Sub mostrar()
