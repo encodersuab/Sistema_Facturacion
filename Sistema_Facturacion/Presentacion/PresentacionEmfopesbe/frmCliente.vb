@@ -23,7 +23,7 @@
             Dim func As New fCliente
             If txtFlag.Text = 2 Then
                 dt = func.mostrarUAB
-            ElseIf txtFlag.Text = 1 Then
+            ElseIf txtFlag.Text = 1 Or txtFlag.Text = 0 Then
                 dt = func.mostrar
             End If
 
@@ -269,15 +269,18 @@
             frmVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
             frmVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
             frmVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
+            txtFlag.Text = "0"
             Me.Close()
-        End If
-        If txtFlag.Text = "2" Then
+
+        ElseIf txtFlag.Text = "2" Then
             frmVentaPlanilla.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
             frmVentaPlanilla.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
             frmVentaPlanilla.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
             frmVentaPlanilla.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
+            txtFlag.Text = "0"
             Me.Close()
         End If
+
 
     End Sub
 

@@ -14,6 +14,8 @@
         txtNumDoc.Text = ""
         txtIdVenta.Text = ""
         txtNombreFac.Text = ""
+        txtPago.Text = ""
+        txtEstado.Text = ""
         ' txtCi.Text = ""
     End Sub
 

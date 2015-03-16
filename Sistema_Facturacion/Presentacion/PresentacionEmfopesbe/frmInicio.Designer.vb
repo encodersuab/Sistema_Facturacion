@@ -26,6 +26,9 @@ Partial Class frmInicioF
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmInicioF))
         Me.MenuStrip = New System.Windows.Forms.MenuStrip()
+        Me.ViewMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StatusBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.emfopesbe = New System.Windows.Forms.ToolStripMenuItem()
         Me.registroE = New System.Windows.Forms.ToolStripMenuItem()
@@ -76,9 +79,6 @@ Partial Class frmInicioF
         Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
         Me.reImprecionF = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ViewMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatusBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolsMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WindowsMenu = New System.Windows.Forms.ToolStripMenuItem()
@@ -113,6 +113,31 @@ Partial Class frmInicioF
         Me.MenuStrip.TabIndex = 5
         Me.MenuStrip.Text = "MenuStrip"
         '
+        'ViewMenu
+        '
+        Me.ViewMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolBarToolStripMenuItem, Me.StatusBarToolStripMenuItem})
+        Me.ViewMenu.Name = "ViewMenu"
+        Me.ViewMenu.Size = New System.Drawing.Size(39, 20)
+        Me.ViewMenu.Text = "&VER"
+        '
+        'ToolBarToolStripMenuItem
+        '
+        Me.ToolBarToolStripMenuItem.Checked = True
+        Me.ToolBarToolStripMenuItem.CheckOnClick = True
+        Me.ToolBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.ToolBarToolStripMenuItem.Name = "ToolBarToolStripMenuItem"
+        Me.ToolBarToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.ToolBarToolStripMenuItem.Text = "&Barra de herramientas"
+        '
+        'StatusBarToolStripMenuItem
+        '
+        Me.StatusBarToolStripMenuItem.Checked = True
+        Me.StatusBarToolStripMenuItem.CheckOnClick = True
+        Me.StatusBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.StatusBarToolStripMenuItem.Name = "StatusBarToolStripMenuItem"
+        Me.StatusBarToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.StatusBarToolStripMenuItem.Text = "&Barra de estado"
+        '
         'InicioToolStripMenuItem
         '
         Me.InicioToolStripMenuItem.Name = "InicioToolStripMenuItem"
@@ -136,19 +161,19 @@ Partial Class frmInicioF
         'ClientessmenuEmfopesbe
         '
         Me.ClientessmenuEmfopesbe.Name = "ClientessmenuEmfopesbe"
-        Me.ClientessmenuEmfopesbe.Size = New System.Drawing.Size(125, 22)
+        Me.ClientessmenuEmfopesbe.Size = New System.Drawing.Size(152, 22)
         Me.ClientessmenuEmfopesbe.Text = "Cliente"
         '
         'ProductossmenuEmfopesbe
         '
         Me.ProductossmenuEmfopesbe.Name = "ProductossmenuEmfopesbe"
-        Me.ProductossmenuEmfopesbe.Size = New System.Drawing.Size(125, 22)
+        Me.ProductossmenuEmfopesbe.Size = New System.Drawing.Size(152, 22)
         Me.ProductossmenuEmfopesbe.Text = "Producto"
         '
         'CategoriassmenuEmfopesbe
         '
         Me.CategoriassmenuEmfopesbe.Name = "CategoriassmenuEmfopesbe"
-        Me.CategoriassmenuEmfopesbe.Size = New System.Drawing.Size(125, 22)
+        Me.CategoriassmenuEmfopesbe.Size = New System.Drawing.Size(152, 22)
         Me.CategoriassmenuEmfopesbe.Text = "Categoria"
         '
         'ventaE
@@ -425,31 +450,6 @@ Partial Class frmInicioF
         Me.reImprecionF.Name = "reImprecionF"
         Me.reImprecionF.Size = New System.Drawing.Size(167, 22)
         Me.reImprecionF.Text = "Re-Imprecion Fac"
-        '
-        'ViewMenu
-        '
-        Me.ViewMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolBarToolStripMenuItem, Me.StatusBarToolStripMenuItem})
-        Me.ViewMenu.Name = "ViewMenu"
-        Me.ViewMenu.Size = New System.Drawing.Size(39, 20)
-        Me.ViewMenu.Text = "&VER"
-        '
-        'ToolBarToolStripMenuItem
-        '
-        Me.ToolBarToolStripMenuItem.Checked = True
-        Me.ToolBarToolStripMenuItem.CheckOnClick = True
-        Me.ToolBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.ToolBarToolStripMenuItem.Name = "ToolBarToolStripMenuItem"
-        Me.ToolBarToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.ToolBarToolStripMenuItem.Text = "&Barra de herramientas"
-        '
-        'StatusBarToolStripMenuItem
-        '
-        Me.StatusBarToolStripMenuItem.Checked = True
-        Me.StatusBarToolStripMenuItem.CheckOnClick = True
-        Me.StatusBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.StatusBarToolStripMenuItem.Name = "StatusBarToolStripMenuItem"
-        Me.StatusBarToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.StatusBarToolStripMenuItem.Text = "&Barra de estado"
         '
         'ToolsMenu
         '

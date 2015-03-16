@@ -335,4 +335,6 @@ Public Class frmInicioF
         frmQR.MdiParent = Me
         frmQR.Show()
     End Sub
+
+    
 End Class

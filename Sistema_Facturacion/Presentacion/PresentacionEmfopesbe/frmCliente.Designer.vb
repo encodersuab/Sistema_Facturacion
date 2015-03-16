@@ -81,7 +81,7 @@ Partial Class frmCliente
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(105, 217)
+        Me.btnGuardar.Location = New System.Drawing.Point(105, 203)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -252,7 +252,7 @@ Partial Class frmCliente
         'cbxListadoClientes
         '
         Me.cbxListadoClientes.FormattingEnabled = True
-        Me.cbxListadoClientes.Items.AddRange(New Object() {"Nombre", "Apellidos", "CI"})
+        Me.cbxListadoClientes.Items.AddRange(New Object() {"nombre", "apellidos", "CI"})
         Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 25)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
         Me.cbxListadoClientes.Size = New System.Drawing.Size(186, 21)
