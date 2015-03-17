@@ -128,7 +128,7 @@ Partial Public Class frmDetalleVenta
 
     End Sub
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        If txttotal.Text = 0 Then
+        If txtCantidad.Text = 0 Then
             MessageBox.Show("CANTIDAD INCORRECTA")
         Else
 

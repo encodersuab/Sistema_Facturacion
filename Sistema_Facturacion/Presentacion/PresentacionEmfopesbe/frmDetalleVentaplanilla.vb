@@ -99,7 +99,7 @@ Public Class frmDetalleVentaplanilla
         'datalistado.Columns(3).Visible = False
     End Sub
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        If txttotal.Text = 0 Then
+        If txtCantidad.Text = 0 Then
             MessageBox.Show("CANTIDAD INCORRECTA")
         Else
             If Me.ValidateChildren = True And txtIdProducto.Text <> "" And txtCantidad.Text <> "" And txtPrecioUnitario.Text <> "" Then
