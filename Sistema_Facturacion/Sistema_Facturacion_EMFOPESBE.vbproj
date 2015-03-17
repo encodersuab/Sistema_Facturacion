@@ -114,9 +114,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbfacDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="dbfacDataSet.vb">
-      <DependentUpon>dbfacDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Logica\LogicaEmfopesbe\vDetalleVentaPlanilla.vb" />
     <Compile Include="Logica\LogicaEmfopesbe\vVentaPlanilla.vb" />
     <Compile Include="Logica\LogicaFEXPOBENI\vCategoriaFEXPOBENI.vb" />
@@ -353,10 +350,10 @@
     <Compile Include="Presentacion\PresentacionEmfopesbe\frmVistaCategoria.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\PresentacionEmfopesbe\frmVistaProducto.Designer.vb">
-      <DependentUpon>frmVistaProducto.vb</DependentUpon>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmrptVentas.Designer.vb">
+      <DependentUpon>frmrptVentas.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\PresentacionEmfopesbe\frmVistaProducto.vb">
+    <Compile Include="Reportes\ReportesEmfopesbe\frmrptVentas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCatergotria.Designer.vb">
@@ -529,6 +526,9 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentasPlanillas.resx">
       <DependentUpon>frmReporteVentasPlanillas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmrptVentas.resx">
+      <DependentUpon>frmrptVentas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptcategoria.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptFactura.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptProducto.rdlc" />
@@ -536,6 +536,7 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmrptReImpresionFactura.resx">
       <DependentUpon>frmrptReImpresionFactura.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReporte VentasXFecha.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptUsuarios.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentas.rdlc" />
   </ItemGroup>

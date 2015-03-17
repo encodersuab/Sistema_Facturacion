@@ -38,6 +38,10 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.TVentasPlanillaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.generar_comprobanteDataTable">
 	<summary>
 Represents the strongly named DataTable class.
@@ -47,6 +51,10 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_clienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_clienteUABDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -62,7 +70,23 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_detalle_ventaXidplanillaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_facturaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_iddetalleventaXidventaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_idproductoCAntidadDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_idproductoXidventaDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -79,6 +103,18 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_ventaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_planillaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_planilla_estadoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFechaDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -118,6 +154,10 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.TVentasPlanillaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.generar_comprobanteRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -127,6 +167,10 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_clienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_clienteUABRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -142,7 +186,23 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_detalle_ventaXidplanillaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_facturaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_iddetalleventaXidventaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_idproductoCAntidadRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_idproductoXidventaRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -159,6 +219,18 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_ventaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_planillaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_planilla_estadoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFechaRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -198,6 +270,10 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.TVentasPlanillaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.generar_comprobanteRowChangeEvent">
 	<summary>
 Row event argument class
@@ -207,6 +283,10 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_clienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_clienteUABRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -222,7 +302,23 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_detalle_ventaXidplanillaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_facturaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_iddetalleventaXidventaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_idproductoCAntidadRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_idproductoXidventaRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -239,6 +335,18 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_ventaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_planillaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_planilla_estadoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFechaRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -282,6 +390,10 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.TVentasPlanillaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.generar_comprobanteTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
@@ -291,6 +403,10 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_clienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_clienteUABTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -306,7 +422,23 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_detalle_ventaXidplanillaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_facturaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_iddetalleventaXidventaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_idproductoCAntidadTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_idproductoXidventaTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -323,6 +455,18 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_ventaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_planillaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_planilla_estadoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFechaTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
