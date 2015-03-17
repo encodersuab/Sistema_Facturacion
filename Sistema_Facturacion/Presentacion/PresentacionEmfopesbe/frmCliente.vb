@@ -22,8 +22,15 @@
         Try
             Dim func As New fCliente
             If txtFlag.Text = 2 Then
+                btnNuevo.Enabled = False
+                btnGuardar.Enabled = False
+                btnEditar.Enabled = False
                 dt = func.mostrarUAB
+
             ElseIf txtFlag.Text = 1 Or txtFlag.Text = 0 Then
+                btnNuevo.Enabled = True
+                btnGuardar.Enabled = True
+                btnEditar.Enabled = True
                 dt = func.mostrar
             End If
 
