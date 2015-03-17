@@ -24,6 +24,8 @@ Partial Class frmQR
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txtCANTIDAD = New System.Windows.Forms.Label()
+        Me.txtIDVENTA = New System.Windows.Forms.Label()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
@@ -53,8 +55,7 @@ Partial Class frmQR
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtNit_Emisor = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.txtIDVENTA = New System.Windows.Forms.Label()
-        Me.txtCANTIDAD = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -75,6 +76,24 @@ Partial Class frmQR
         Me.GroupBox2.TabIndex = 7
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
+        '
+        'txtCANTIDAD
+        '
+        Me.txtCANTIDAD.AutoSize = True
+        Me.txtCANTIDAD.Location = New System.Drawing.Point(88, 60)
+        Me.txtCANTIDAD.Name = "txtCANTIDAD"
+        Me.txtCANTIDAD.Size = New System.Drawing.Size(45, 13)
+        Me.txtCANTIDAD.TabIndex = 7
+        Me.txtCANTIDAD.Text = "Label11"
+        '
+        'txtIDVENTA
+        '
+        Me.txtIDVENTA.AutoSize = True
+        Me.txtIDVENTA.Location = New System.Drawing.Point(7, 60)
+        Me.txtIDVENTA.Name = "txtIDVENTA"
+        Me.txtIDVENTA.Size = New System.Drawing.Size(45, 13)
+        Me.txtIDVENTA.TabIndex = 6
+        Me.txtIDVENTA.Text = "Label11"
         '
         'txtBuscar
         '
@@ -124,6 +143,7 @@ Partial Class frmQR
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.txtvalidez)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.btnAnularFactura)
@@ -148,7 +168,7 @@ Partial Class frmQR
         Me.GroupBox1.Controls.Add(Me.txtNit_Emisor)
         Me.GroupBox1.Location = New System.Drawing.Point(28, 1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(358, 330)
+        Me.GroupBox1.Size = New System.Drawing.Size(358, 388)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
@@ -357,29 +377,20 @@ Partial Class frmQR
         '
         Me.erroricono.ContainerControl = Me
         '
-        'txtIDVENTA
+        'Button1
         '
-        Me.txtIDVENTA.AutoSize = True
-        Me.txtIDVENTA.Location = New System.Drawing.Point(7, 60)
-        Me.txtIDVENTA.Name = "txtIDVENTA"
-        Me.txtIDVENTA.Size = New System.Drawing.Size(45, 13)
-        Me.txtIDVENTA.TabIndex = 6
-        Me.txtIDVENTA.Text = "Label11"
-        '
-        'txtCANTIDAD
-        '
-        Me.txtCANTIDAD.AutoSize = True
-        Me.txtCANTIDAD.Location = New System.Drawing.Point(88, 60)
-        Me.txtCANTIDAD.Name = "txtCANTIDAD"
-        Me.txtCANTIDAD.Size = New System.Drawing.Size(45, 13)
-        Me.txtCANTIDAD.TabIndex = 7
-        Me.txtCANTIDAD.Text = "Label11"
+        Me.Button1.Location = New System.Drawing.Point(43, 280)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(80, 42)
+        Me.Button1.TabIndex = 38
+        Me.Button1.Text = "Re-Impresion de Factura"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'frmQR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(974, 335)
+        Me.ClientSize = New System.Drawing.Size(1044, 427)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmQR"
@@ -425,4 +436,5 @@ Partial Class frmQR
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txtIDVENTA As System.Windows.Forms.Label
     Friend WithEvents txtCANTIDAD As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
