@@ -301,4 +301,8 @@
     Private Sub txtRol_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtRol.SelectedIndexChanged
 
     End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+        Me.Close()
+    End Sub
 End Class
