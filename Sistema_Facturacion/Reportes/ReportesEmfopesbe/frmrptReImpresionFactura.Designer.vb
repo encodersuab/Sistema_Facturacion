@@ -27,7 +27,6 @@ Partial Class frmrptReImpresionFactura
         Me.mostrar_facturaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.btnReporte = New System.Windows.Forms.Button()
         Me.txtNumFactura = New System.Windows.Forms.TextBox()
         Me.mostrar_facturaTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_facturaTableAdapter()
         CType(Me.mostrar_facturaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -46,24 +45,15 @@ Partial Class frmrptReImpresionFactura
         '
         'ReportViewer1
         '
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         ReportDataSource1.Name = "DataSet1"
         ReportDataSource1.Value = Me.mostrar_facturaBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptFactura.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(0, 64)
+        Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(700, 379)
+        Me.ReportViewer1.Size = New System.Drawing.Size(712, 441)
         Me.ReportViewer1.TabIndex = 0
-        '
-        'btnReporte
-        '
-        Me.btnReporte.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.images__3_
-        Me.btnReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnReporte.Location = New System.Drawing.Point(160, 3)
-        Me.btnReporte.Name = "btnReporte"
-        Me.btnReporte.Size = New System.Drawing.Size(60, 55)
-        Me.btnReporte.TabIndex = 1
-        Me.btnReporte.UseVisualStyleBackColor = True
         '
         'txtNumFactura
         '
@@ -71,6 +61,7 @@ Partial Class frmrptReImpresionFactura
         Me.txtNumFactura.Name = "txtNumFactura"
         Me.txtNumFactura.Size = New System.Drawing.Size(100, 20)
         Me.txtNumFactura.TabIndex = 2
+        Me.txtNumFactura.Visible = False
         '
         'mostrar_facturaTableAdapter
         '
@@ -82,7 +73,6 @@ Partial Class frmrptReImpresionFactura
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(712, 441)
         Me.Controls.Add(Me.txtNumFactura)
-        Me.Controls.Add(Me.btnReporte)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "frmrptReImpresionFactura"
         Me.Text = "rptReImpresionFactura"
@@ -95,7 +85,6 @@ Partial Class frmrptReImpresionFactura
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents mostrar_facturaBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents dbfacDataSet As Sistema_Facturacion.dbfacDataSet
-    Friend WithEvents btnReporte As System.Windows.Forms.Button
     Friend WithEvents txtNumFactura As System.Windows.Forms.TextBox
     Friend WithEvents mostrar_facturaTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_facturaTableAdapter
 End Class

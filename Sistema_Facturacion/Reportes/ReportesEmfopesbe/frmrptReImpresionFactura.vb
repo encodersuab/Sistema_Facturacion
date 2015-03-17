@@ -2,10 +2,6 @@
 
     Private Sub rptReImpresionFactura_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
-
-    Private Sub btnReporte_Click(sender As Object, e As EventArgs) Handles btnReporte.Click
-
         Try
             'TODO: esta línea de código carga datos en la tabla 'dbfacDataSet.mostrar_factura' Puede moverla o quitarla según sea necesario.
             Me.mostrar_facturaTableAdapter.Fill(Me.dbfacDataSet.mostrar_factura, txtNumFactura.Text)
@@ -17,9 +13,12 @@
         End Try
 
 
+
+
+
     End Sub
 
-    Private Sub txtNumFactura_TextChanged(sender As Object, e As EventArgs) Handles txtNumFactura.TextChanged
+    
 
-    End Sub
+   
 End Class
