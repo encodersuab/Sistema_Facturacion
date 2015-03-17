@@ -311,10 +311,7 @@ Public Class frmInicioF
         frmVentaFEXPOBENI.Show()
     End Sub
 
-    Private Sub ReImprecionE_Click(sender As Object, e As EventArgs) Handles ReImprecionE.Click
-        frmrptReImpresionFactura.MdiParent = Me
-        frmrptReImpresionFactura.Show()
-    End Sub
+  
 
     Private Sub RptUsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RptUsuariosToolStripMenuItem.Click
         frmReporteUsuarios.MdiParent = Me
@@ -337,4 +334,7 @@ Public Class frmInicioF
     End Sub
 
     
+    Private Sub RptVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RptVentaToolStripMenuItem.Click
+
+    End Sub
 End Class
