@@ -139,7 +139,7 @@ Partial Public Class frmDetalleVenta
                 dts.gidproducto = txtIdProducto.Text
                 dts.gcantidad = txtCantidad.Text
                 dts.gprecio_unitario = txtPrecioUnitario.Text
-
+                dts.gvalidez = "V"
                 '''''''''''''''''''''''''''''''''''''''''''
                 Dim ms As New IO.MemoryStream()
 
@@ -243,6 +243,7 @@ Partial Public Class frmDetalleVenta
                         vdb.gidproducto = datalistado.SelectedCells.Item(3).Value
                         vdb.gidventa = datalistado.SelectedCells.Item(2).Value
                         vdb.gcantidad = datalistado.SelectedCells.Item(5).Value
+                        vdb.gvalidez = "V"
                         If func.eliminar(vdb) Then
                             If func.aumentar_stock(vdb) Then
                             End If

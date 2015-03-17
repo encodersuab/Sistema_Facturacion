@@ -39,7 +39,7 @@ Public Class fDetalleVentaPlanilla
             cmd.Parameters.AddWithValue("@idproducto", dts.gidproducto)
             cmd.Parameters.AddWithValue("@cantidad", dts.gcantidad)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
-
+            cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -65,7 +65,7 @@ Public Class fDetalleVentaPlanilla
             cmd.Parameters.AddWithValue("@cantidad", dts.gcantidad)
             cmd.Parameters.AddWithValue("@idproducto", dts.gidproducto)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
-
+            cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
 
             If cmd.ExecuteNonQuery Then
                 Return True

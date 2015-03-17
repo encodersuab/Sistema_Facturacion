@@ -397,6 +397,8 @@
                     Dim func1 As New fDetalleVenta
                     Dim dts2 As New vDetalleVenta
                     Dim func2 As New fDetalleVenta
+                    Dim dts3 As New vDetalleVenta
+                    Dim func3 As New fDetalleVenta
 
                     dts.gIDCodQr = txtIDCodQr.Text
                     dts.gNit_Emisor = txtNit_Emisor.Text
@@ -409,19 +411,22 @@
                     dts.gIdVenta = txttxtIdVenta.Text
                     dts.gvalidez = "A"
 
-                    dts1.gidventa = txttxtIdVenta.Text
+
 
                     Dim res As DialogResult
                     res = MessageBox.Show("REALMENTE QUIERE ANULAR LA FACTURA", "FACTURA ANULADA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
-
+                    dts1.gidventa = txttxtIdVenta.Text
                     If (res = Windows.Forms.DialogResult.Yes) Then
                         func.editar(dts)
                         Do While func1.mostraridprodXidventa(dts1) <> 0
+
                             dts2.gidproducto = func1.mostraridprodXidventa(dts1)
                             dts2.gcantidad = func1.mostrarCantidadXidventa(dts1)
                             func2.aumentar_stock(dts2)
                             dts2.giddedatlle_venta = func1.mostrariddetalleventaXidventa(dts1)
-                            func1.eliminar(dts2)
+                            dts2.gvalidez = "A"
+                            func2.editarValidez(dts2)
+                            ' func1.eliminar(dts2)
                         Loop
                         mostrar()
                         limpiar()

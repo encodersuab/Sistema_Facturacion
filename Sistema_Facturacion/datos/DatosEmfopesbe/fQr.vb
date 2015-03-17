@@ -94,7 +94,6 @@ Public Class fQr
             cmd = New SqlCommand("Editar_DatosQr")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
-
             cmd.Parameters.AddWithValue("@IDCodQr", dts.gIDCodQr)
             cmd.Parameters.AddWithValue("@Nit_Emisor", dts.gNit_Emisor)
             cmd.Parameters.AddWithValue("@Num_Factura", dts.gNum_Factura)
@@ -106,13 +105,11 @@ Public Class fQr
             'cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
             cmd.Parameters.AddWithValue("@IdVenta", dts.gIdVenta)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
-
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
                 Return False
             End If
-
         Catch ex As Exception
             MsgBox(ex.Message)
             Return False
@@ -120,6 +117,4 @@ Public Class fQr
             desconectado()
         End Try
     End Function
-   
-
 End Class

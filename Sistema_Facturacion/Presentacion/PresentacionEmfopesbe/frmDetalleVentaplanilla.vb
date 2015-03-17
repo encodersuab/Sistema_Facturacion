@@ -110,6 +110,7 @@ Public Class frmDetalleVentaplanilla
                 dtsp.gcantidad = txtCantidad.Text
                 dtsp.gprecio_unitario = txtPrecioUnitario.Text
                 dtsp.gidventaplanilla = txtIdVenta.Text
+                dtsp.gvalidez = "V"
                 '''''''''''''''''''''''''''''''''''''''''''
                 Dim ms As New IO.MemoryStream()
                 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -157,6 +158,7 @@ Public Class frmDetalleVentaplanilla
                         vdb.gidproducto = datalistado.SelectedCells.Item(3).Value
                         vdb.gidventaplanilla = datalistado.SelectedCells.Item(9).Value
                         vdb.gcantidad = datalistado.SelectedCells.Item(5).Value
+                        vdb.gvalidez = "V"
                         If func.eliminar(vdb) Then
                             If func.aumentar_stock(vdb) Then
                             End If
