@@ -335,6 +335,7 @@ Public Class frmInicioF
 
     
     Private Sub RptVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RptVentaToolStripMenuItem.Click
-
+        frmrptVentas.MdiParent = Me
+        frmrptVentas.Show()
     End Sub
 End Class

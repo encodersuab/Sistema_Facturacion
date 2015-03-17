@@ -128,42 +128,47 @@ Partial Public Class frmDetalleVenta
 
     End Sub
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        If Me.ValidateChildren = True And txtIdProducto.Text <> "" And txtCantidad.Text <> "" And txtPrecioUnitario.Text <> "" Then
-            'System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
-            Try
-
-                Dim dts As New vDetalleVenta
-                Dim func As New fDetalleVenta
-
-                dts.gidventa = txtIdVenta.Text
-                dts.gidproducto = txtIdProducto.Text
-                dts.gcantidad = txtCantidad.Text
-                dts.gprecio_unitario = txtPrecioUnitario.Text
-                dts.gvalidez = "V"
-                '''''''''''''''''''''''''''''''''''''''''''
-                Dim ms As New IO.MemoryStream()
-
-                '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-                If func.insertar(dts) Then
-                    If func.disminuir_stock(dts) Then
-
-                    End If
-                    MessageBox.Show("articulo añadido correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    mostrar()
-                    txttotal.Text = sumar().ToString
-                    limpiar()
-                Else
-                    MessageBox.Show("articulo no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    mostrar()
-                    limpiar()
-                End If
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
+        If txttotal.Text = 0 Then
+            MessageBox.Show("CANTIDAD INCORRECTA")
         Else
-            MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
+            If Me.ValidateChildren = True And txtIdProducto.Text <> "" And txtCantidad.Text <> "" And txtPrecioUnitario.Text <> "" Then
+                'System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
+                Try
+
+                    Dim dts As New vDetalleVenta
+                    Dim func As New fDetalleVenta
+
+                    dts.gidventa = txtIdVenta.Text
+                    dts.gidproducto = txtIdProducto.Text
+                    dts.gcantidad = txtCantidad.Text
+                    dts.gprecio_unitario = txtPrecioUnitario.Text
+                    dts.gvalidez = "V"
+                    '''''''''''''''''''''''''''''''''''''''''''
+                    Dim ms As New IO.MemoryStream()
+
+                    '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+                    If func.insertar(dts) Then
+                        If func.disminuir_stock(dts) Then
+
+                        End If
+                        MessageBox.Show("articulo añadido correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        mostrar()
+                        txttotal.Text = sumar().ToString
+                        limpiar()
+                    Else
+                        MessageBox.Show("articulo no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        mostrar()
+                        limpiar()
+                    End If
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
+            Else
+                MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            End If
         End If
 
     End Sub

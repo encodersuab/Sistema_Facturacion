@@ -83,11 +83,11 @@ Partial Class frmrptVentas
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(576, 26)
+        Me.Button1.Location = New System.Drawing.Point(567, 26)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 39)
         Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "MOSTRAR"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'ReportViewer1

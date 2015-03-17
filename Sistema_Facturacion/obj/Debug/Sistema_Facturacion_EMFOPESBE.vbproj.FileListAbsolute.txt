@@ -216,3 +216,4 @@ D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Siste
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\RdlCompile.cache
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\RdlCompile.compiled
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmrptVentas.resources
+D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmrptVentas.resources

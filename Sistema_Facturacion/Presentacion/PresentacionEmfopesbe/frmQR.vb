@@ -397,8 +397,6 @@
                     Dim func1 As New fDetalleVenta
                     Dim dts2 As New vDetalleVenta
                     Dim func2 As New fDetalleVenta
-                    Dim dts3 As New vDetalleVenta
-                    Dim func3 As New fDetalleVenta
 
                     dts.gIDCodQr = txtIDCodQr.Text
                     dts.gNit_Emisor = txtNit_Emisor.Text
