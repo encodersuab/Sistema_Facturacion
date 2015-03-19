@@ -57,9 +57,9 @@ Partial Class frmVenta
         '
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Location = New System.Drawing.Point(413, 25)
+        Me.GroupBox2.Location = New System.Drawing.Point(413, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(496, 306)
+        Me.GroupBox2.Size = New System.Drawing.Size(470, 260)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Estado de ventas"
@@ -67,7 +67,7 @@ Partial Class frmVenta
         'Inexistente
         '
         Me.Inexistente.AutoSize = True
-        Me.Inexistente.Location = New System.Drawing.Point(203, 203)
+        Me.Inexistente.Location = New System.Drawing.Point(190, 136)
         Me.Inexistente.Name = "Inexistente"
         Me.Inexistente.Size = New System.Drawing.Size(94, 13)
         Me.Inexistente.TabIndex = 3
@@ -80,11 +80,11 @@ Partial Class frmVenta
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(46, 40)
+        Me.datalistado.Location = New System.Drawing.Point(6, 19)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(444, 220)
+        Me.datalistado.Size = New System.Drawing.Size(444, 224)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -113,9 +113,9 @@ Partial Class frmVenta
         Me.GroupBox1.Controls.Add(Me.txtidCliente)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtIdVenta)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 25)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(395, 306)
+        Me.GroupBox1.Size = New System.Drawing.Size(395, 260)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
@@ -123,7 +123,7 @@ Partial Class frmVenta
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(44, 183)
+        Me.Label6.Location = New System.Drawing.Point(43, 172)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(83, 13)
         Me.Label6.TabIndex = 21
@@ -132,7 +132,7 @@ Partial Class frmVenta
         'txtNombreFac
         '
         Me.txtNombreFac.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtNombreFac.Location = New System.Drawing.Point(144, 180)
+        Me.txtNombreFac.Location = New System.Drawing.Point(143, 169)
         Me.txtNombreFac.Name = "txtNombreFac"
         Me.txtNombreFac.Size = New System.Drawing.Size(166, 20)
         Me.txtNombreFac.TabIndex = 20
@@ -141,7 +141,7 @@ Partial Class frmVenta
         '
         Me.cbTipoDoc.FormattingEnabled = True
         Me.cbTipoDoc.Items.AddRange(New Object() {"CI", "NIT"})
-        Me.cbTipoDoc.Location = New System.Drawing.Point(144, 128)
+        Me.cbTipoDoc.Location = New System.Drawing.Point(143, 117)
         Me.cbTipoDoc.Name = "cbTipoDoc"
         Me.cbTipoDoc.Size = New System.Drawing.Size(166, 21)
         Me.cbTipoDoc.TabIndex = 19
@@ -150,14 +150,14 @@ Partial Class frmVenta
         'dtpFecha
         '
         Me.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFecha.Location = New System.Drawing.Point(144, 103)
+        Me.dtpFecha.Location = New System.Drawing.Point(143, 92)
         Me.dtpFecha.Name = "dtpFecha"
         Me.dtpFecha.Size = New System.Drawing.Size(166, 20)
         Me.dtpFecha.TabIndex = 18
         '
         'btnBuscarCliente
         '
-        Me.btnBuscarCliente.Location = New System.Drawing.Point(326, 72)
+        Me.btnBuscarCliente.Location = New System.Drawing.Point(325, 61)
         Me.btnBuscarCliente.Name = "btnBuscarCliente"
         Me.btnBuscarCliente.Size = New System.Drawing.Size(29, 26)
         Me.btnBuscarCliente.TabIndex = 17
@@ -168,14 +168,14 @@ Partial Class frmVenta
         '
         Me.txtNombreCLiente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNombreCLiente.Enabled = False
-        Me.txtNombreCLiente.Location = New System.Drawing.Point(185, 76)
+        Me.txtNombreCLiente.Location = New System.Drawing.Point(184, 65)
         Me.txtNombreCLiente.Name = "txtNombreCLiente"
         Me.txtNombreCLiente.Size = New System.Drawing.Size(125, 20)
         Me.txtNombreCLiente.TabIndex = 16
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(157, 246)
+        Me.btnGuardar.Location = New System.Drawing.Point(162, 206)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -184,7 +184,7 @@ Partial Class frmVenta
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(157, 246)
+        Me.btnEditar.Location = New System.Drawing.Point(162, 206)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -193,7 +193,7 @@ Partial Class frmVenta
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(242, 246)
+        Me.btncancelar.Location = New System.Drawing.Point(247, 206)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -202,7 +202,7 @@ Partial Class frmVenta
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(73, 246)
+        Me.btnNuevo.Location = New System.Drawing.Point(78, 206)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -212,7 +212,7 @@ Partial Class frmVenta
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(44, 157)
+        Me.Label5.Location = New System.Drawing.Point(59, 146)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(67, 13)
         Me.Label5.TabIndex = 9
@@ -221,7 +221,7 @@ Partial Class frmVenta
         'txtNumDoc
         '
         Me.txtNumDoc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtNumDoc.Location = New System.Drawing.Point(144, 154)
+        Me.txtNumDoc.Location = New System.Drawing.Point(143, 143)
         Me.txtNumDoc.Name = "txtNumDoc"
         Me.txtNumDoc.Size = New System.Drawing.Size(166, 20)
         Me.txtNumDoc.TabIndex = 8
@@ -229,7 +229,7 @@ Partial Class frmVenta
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(44, 131)
+        Me.Label4.Location = New System.Drawing.Point(75, 120)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(51, 13)
         Me.Label4.TabIndex = 7
@@ -238,7 +238,7 @@ Partial Class frmVenta
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(44, 105)
+        Me.Label3.Location = New System.Drawing.Point(89, 98)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(37, 13)
         Me.Label3.TabIndex = 5
@@ -247,7 +247,7 @@ Partial Class frmVenta
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(44, 79)
+        Me.Label2.Location = New System.Drawing.Point(87, 68)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 3
@@ -257,7 +257,7 @@ Partial Class frmVenta
         '
         Me.txtidCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtidCliente.Enabled = False
-        Me.txtidCliente.Location = New System.Drawing.Point(144, 76)
+        Me.txtidCliente.Location = New System.Drawing.Point(143, 65)
         Me.txtidCliente.Name = "txtidCliente"
         Me.txtidCliente.Size = New System.Drawing.Size(35, 20)
         Me.txtidCliente.TabIndex = 2
@@ -265,7 +265,7 @@ Partial Class frmVenta
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(44, 53)
+        Me.Label1.Location = New System.Drawing.Point(82, 42)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(44, 13)
         Me.Label1.TabIndex = 1
@@ -275,7 +275,7 @@ Partial Class frmVenta
         '
         Me.txtIdVenta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtIdVenta.Enabled = False
-        Me.txtIdVenta.Location = New System.Drawing.Point(144, 50)
+        Me.txtIdVenta.Location = New System.Drawing.Point(143, 39)
         Me.txtIdVenta.Name = "txtIdVenta"
         Me.txtIdVenta.Size = New System.Drawing.Size(166, 20)
         Me.txtIdVenta.TabIndex = 0
@@ -288,7 +288,7 @@ Partial Class frmVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(918, 343)
+        Me.ClientSize = New System.Drawing.Size(894, 282)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmVenta"

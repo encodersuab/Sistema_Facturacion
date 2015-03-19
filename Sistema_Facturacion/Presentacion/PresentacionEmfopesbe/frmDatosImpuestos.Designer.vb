@@ -67,32 +67,32 @@ Partial Class frmDatosImpuestos
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(456, 176)
+        Me.GroupBox1.Size = New System.Drawing.Size(456, 167)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "DATOS IMPUESTOS"
+        Me.GroupBox1.Text = "Datos Impuestos"
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(193, 130)
+        Me.btnGuardar.Location = New System.Drawing.Point(193, 132)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
+        Me.btnGuardar.Size = New System.Drawing.Size(67, 24)
         Me.btnGuardar.TabIndex = 17
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(193, 130)
+        Me.btnEditar.Location = New System.Drawing.Point(193, 132)
         Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(67, 26)
+        Me.btnEditar.Size = New System.Drawing.Size(67, 23)
         Me.btnEditar.TabIndex = 16
         Me.btnEditar.Text = "Editar"
         Me.btnEditar.UseVisualStyleBackColor = True
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(266, 132)
+        Me.btnNuevo.Location = New System.Drawing.Point(280, 132)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(75, 23)
         Me.btnNuevo.TabIndex = 9
@@ -177,7 +177,7 @@ Partial Class frmDatosImpuestos
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(474, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(455, 176)
+        Me.GroupBox2.Size = New System.Drawing.Size(455, 167)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
@@ -235,11 +235,11 @@ Partial Class frmDatosImpuestos
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(6, 38)
+        Me.datalistado.Location = New System.Drawing.Point(6, 24)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(443, 117)
+        Me.datalistado.Size = New System.Drawing.Size(443, 131)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -256,7 +256,7 @@ Partial Class frmDatosImpuestos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(941, 200)
+        Me.ClientSize = New System.Drawing.Size(941, 191)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmDatosImpuestos"

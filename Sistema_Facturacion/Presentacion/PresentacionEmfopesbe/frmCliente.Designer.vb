@@ -74,7 +74,7 @@ Partial Class frmCliente
         Me.GroupBox1.Controls.Add(Me.txtIdCliente)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(297, 268)
+        Me.GroupBox1.Size = New System.Drawing.Size(297, 245)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
@@ -118,7 +118,7 @@ Partial Class frmCliente
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(18, 163)
+        Me.Label6.Location = New System.Drawing.Point(69, 163)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(16, 13)
         Me.Label6.TabIndex = 11
@@ -127,15 +127,15 @@ Partial Class frmCliente
         'txtCi
         '
         Me.txtCi.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtCi.Location = New System.Drawing.Point(118, 160)
+        Me.txtCi.Location = New System.Drawing.Point(94, 160)
         Me.txtCi.Name = "txtCi"
-        Me.txtCi.Size = New System.Drawing.Size(100, 20)
+        Me.txtCi.Size = New System.Drawing.Size(163, 20)
         Me.txtCi.TabIndex = 10
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(18, 137)
+        Me.Label5.Location = New System.Drawing.Point(36, 137)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(49, 13)
         Me.Label5.TabIndex = 9
@@ -144,15 +144,15 @@ Partial Class frmCliente
         'txtTelefono
         '
         Me.txtTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtTelefono.Location = New System.Drawing.Point(118, 134)
+        Me.txtTelefono.Location = New System.Drawing.Point(94, 134)
         Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(100, 20)
+        Me.txtTelefono.Size = New System.Drawing.Size(163, 20)
         Me.txtTelefono.TabIndex = 8
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(18, 111)
+        Me.Label4.Location = New System.Drawing.Point(36, 111)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(52, 13)
         Me.Label4.TabIndex = 7
@@ -161,15 +161,15 @@ Partial Class frmCliente
         'txtDireccion
         '
         Me.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtDireccion.Location = New System.Drawing.Point(118, 108)
+        Me.txtDireccion.Location = New System.Drawing.Point(94, 108)
         Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(100, 20)
+        Me.txtDireccion.Size = New System.Drawing.Size(163, 20)
         Me.txtDireccion.TabIndex = 6
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(18, 85)
+        Me.Label3.Location = New System.Drawing.Point(39, 85)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(49, 13)
         Me.Label3.TabIndex = 5
@@ -178,15 +178,15 @@ Partial Class frmCliente
         'txtApellido
         '
         Me.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtApellido.Location = New System.Drawing.Point(118, 82)
+        Me.txtApellido.Location = New System.Drawing.Point(94, 82)
         Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(100, 20)
+        Me.txtApellido.Size = New System.Drawing.Size(163, 20)
         Me.txtApellido.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(18, 59)
+        Me.Label2.Location = New System.Drawing.Point(44, 59)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 13)
         Me.Label2.TabIndex = 3
@@ -195,15 +195,15 @@ Partial Class frmCliente
         'txtNombre
         '
         Me.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtNombre.Location = New System.Drawing.Point(118, 56)
+        Me.txtNombre.Location = New System.Drawing.Point(94, 56)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(100, 20)
+        Me.txtNombre.Size = New System.Drawing.Size(163, 20)
         Me.txtNombre.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 33)
+        Me.Label1.Location = New System.Drawing.Point(40, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(48, 13)
         Me.Label1.TabIndex = 1
@@ -213,9 +213,9 @@ Partial Class frmCliente
         '
         Me.txtIdCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtIdCliente.Enabled = False
-        Me.txtIdCliente.Location = New System.Drawing.Point(118, 30)
+        Me.txtIdCliente.Location = New System.Drawing.Point(94, 30)
         Me.txtIdCliente.Name = "txtIdCliente"
-        Me.txtIdCliente.Size = New System.Drawing.Size(100, 20)
+        Me.txtIdCliente.Size = New System.Drawing.Size(163, 20)
         Me.txtIdCliente.TabIndex = 0
         '
         'GroupBox2
@@ -226,7 +226,7 @@ Partial Class frmCliente
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(315, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(532, 268)
+        Me.GroupBox2.Size = New System.Drawing.Size(532, 245)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Clientes"
@@ -234,7 +234,7 @@ Partial Class frmCliente
         'Inexistente
         '
         Me.Inexistente.AutoSize = True
-        Me.Inexistente.Location = New System.Drawing.Point(218, 141)
+        Me.Inexistente.Location = New System.Drawing.Point(202, 141)
         Me.Inexistente.Name = "Inexistente"
         Me.Inexistente.Size = New System.Drawing.Size(94, 13)
         Me.Inexistente.TabIndex = 3
@@ -244,20 +244,20 @@ Partial Class frmCliente
         'txtBuscar
         '
         Me.txtBuscar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtBuscar.Location = New System.Drawing.Point(221, 25)
+        Me.txtBuscar.Location = New System.Drawing.Point(159, 25)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(287, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(349, 20)
         Me.txtBuscar.TabIndex = 2
         '
         'cbxListadoClientes
         '
         Me.cbxListadoClientes.FormattingEnabled = True
         Me.cbxListadoClientes.Items.AddRange(New Object() {"nombre", "apellidos", "CI"})
-        Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 25)
+        Me.cbxListadoClientes.Location = New System.Drawing.Point(6, 25)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
-        Me.cbxListadoClientes.Size = New System.Drawing.Size(186, 21)
+        Me.cbxListadoClientes.Size = New System.Drawing.Size(147, 21)
         Me.cbxListadoClientes.TabIndex = 1
-        Me.cbxListadoClientes.Text = "Nombre"
+        Me.cbxListadoClientes.Text = "nombre"
         '
         'datalistado
         '
@@ -269,7 +269,7 @@ Partial Class frmCliente
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(502, 210)
+        Me.datalistado.Size = New System.Drawing.Size(502, 177)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -294,7 +294,7 @@ Partial Class frmCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(861, 290)
+        Me.ClientSize = New System.Drawing.Size(857, 267)
         Me.Controls.Add(Me.txtFlag)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)

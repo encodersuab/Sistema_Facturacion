@@ -87,18 +87,18 @@ Partial Class frmUsuario
         'txtBuscar
         '
         Me.txtBuscar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtBuscar.Location = New System.Drawing.Point(221, 25)
+        Me.txtBuscar.Location = New System.Drawing.Point(186, 25)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(287, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(322, 20)
         Me.txtBuscar.TabIndex = 2
         '
         'cbxListadoClientes
         '
         Me.cbxListadoClientes.FormattingEnabled = True
         Me.cbxListadoClientes.Items.AddRange(New Object() {"Nombre", "Apellidos", "CI"})
-        Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 25)
+        Me.cbxListadoClientes.Location = New System.Drawing.Point(6, 24)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
-        Me.cbxListadoClientes.Size = New System.Drawing.Size(186, 21)
+        Me.cbxListadoClientes.Size = New System.Drawing.Size(174, 21)
         Me.cbxListadoClientes.TabIndex = 1
         Me.cbxListadoClientes.Text = "Nombre"
         '
@@ -108,7 +108,7 @@ Partial Class frmUsuario
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(6, 69)
+        Me.datalistado.Location = New System.Drawing.Point(6, 51)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect

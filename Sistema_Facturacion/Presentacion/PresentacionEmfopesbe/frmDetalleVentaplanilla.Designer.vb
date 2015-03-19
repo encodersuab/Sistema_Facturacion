@@ -77,15 +77,16 @@ Partial Class frmDetalleVentaplanilla
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(978, 38)
+        Me.Button2.Location = New System.Drawing.Point(381, 19)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 54)
+        Me.Button2.Size = New System.Drawing.Size(161, 52)
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "Cancelar Venta"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
         Me.GroupBox2.Controls.Add(Me.lbllave)
@@ -97,18 +98,18 @@ Partial Class frmDetalleVentaplanilla
         Me.GroupBox2.Controls.Add(Me.cbeliminar)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Location = New System.Drawing.Point(376, 22)
+        Me.GroupBox2.Location = New System.Drawing.Point(376, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(581, 458)
+        Me.GroupBox2.Size = New System.Drawing.Size(581, 384)
         Me.GroupBox2.TabIndex = 8
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(322, 346)
+        Me.Button1.Location = New System.Drawing.Point(381, 319)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(161, 85)
+        Me.Button1.Size = New System.Drawing.Size(161, 52)
         Me.Button1.TabIndex = 40
         Me.Button1.Text = "Finalizar Venta"
         Me.Button1.UseVisualStyleBackColor = True
@@ -116,7 +117,7 @@ Partial Class frmDetalleVentaplanilla
         'lbnumAutor
         '
         Me.lbnumAutor.AutoSize = True
-        Me.lbnumAutor.Location = New System.Drawing.Point(204, 357)
+        Me.lbnumAutor.Location = New System.Drawing.Point(216, 39)
         Me.lbnumAutor.Name = "lbnumAutor"
         Me.lbnumAutor.Size = New System.Drawing.Size(98, 13)
         Me.lbnumAutor.TabIndex = 39
@@ -126,7 +127,7 @@ Partial Class frmDetalleVentaplanilla
         'lbllave
         '
         Me.lbllave.AutoSize = True
-        Me.lbllave.Location = New System.Drawing.Point(204, 342)
+        Me.lbllave.Location = New System.Drawing.Point(216, 24)
         Me.lbllave.Name = "lbllave"
         Me.lbllave.Size = New System.Drawing.Size(37, 13)
         Me.lbllave.TabIndex = 38
@@ -136,16 +137,17 @@ Partial Class frmDetalleVentaplanilla
         'lbCC
         '
         Me.lbCC.AutoSize = True
-        Me.lbCC.Location = New System.Drawing.Point(204, 371)
+        Me.lbCC.Location = New System.Drawing.Point(216, 53)
         Me.lbCC.Name = "lbCC"
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
         Me.lbCC.Text = "Codigo Control"
+        Me.lbCC.Visible = False
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(7, 342)
+        Me.Label11.Location = New System.Drawing.Point(187, 339)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(71, 13)
         Me.Label11.TabIndex = 35
@@ -154,22 +156,24 @@ Partial Class frmDetalleVentaplanilla
         'txttotal
         '
         Me.txttotal.Enabled = False
-        Me.txttotal.Location = New System.Drawing.Point(84, 339)
+        Me.txttotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txttotal.Location = New System.Drawing.Point(264, 328)
         Me.txttotal.Name = "txttotal"
-        Me.txttotal.Size = New System.Drawing.Size(100, 20)
+        Me.txttotal.Size = New System.Drawing.Size(100, 29)
         Me.txttotal.TabIndex = 34
         '
         'QrCodeImgControl1
         '
         Me.QrCodeImgControl1.ErrorCorrectLevel = Gma.QrCodeNet.Encoding.ErrorCorrectionLevel.M
         Me.QrCodeImgControl1.Image = CType(resources.GetObject("QrCodeImgControl1.Image"), System.Drawing.Image)
-        Me.QrCodeImgControl1.Location = New System.Drawing.Point(322, 16)
+        Me.QrCodeImgControl1.Location = New System.Drawing.Point(314, 16)
         Me.QrCodeImgControl1.Name = "QrCodeImgControl1"
         Me.QrCodeImgControl1.QuietZoneModule = Gma.QrCodeNet.Encoding.Windows.Render.QuietZoneModules.Two
         Me.QrCodeImgControl1.Size = New System.Drawing.Size(61, 54)
         Me.QrCodeImgControl1.TabIndex = 32
         Me.QrCodeImgControl1.TabStop = False
         Me.QrCodeImgControl1.Text = "QrCodeImgControl1"
+        Me.QrCodeImgControl1.Visible = False
         '
         'btnquitar
         '
@@ -210,7 +214,7 @@ Partial Class frmDetalleVentaplanilla
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(536, 251)
+        Me.datalistado.Size = New System.Drawing.Size(536, 221)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -250,9 +254,9 @@ Partial Class frmDetalleVentaplanilla
         Me.GroupBox1.Controls.Add(Me.txtidCliente)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtIdVenta)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 22)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(358, 458)
+        Me.GroupBox1.Size = New System.Drawing.Size(358, 384)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
@@ -286,7 +290,7 @@ Partial Class frmDetalleVentaplanilla
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(44, 27)
+        Me.Label10.Location = New System.Drawing.Point(82, 27)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(45, 13)
         Me.Label10.TabIndex = 32
@@ -330,7 +334,7 @@ Partial Class frmDetalleVentaplanilla
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(44, 283)
+        Me.Label9.Location = New System.Drawing.Point(49, 283)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(78, 13)
         Me.Label9.TabIndex = 26
@@ -339,7 +343,7 @@ Partial Class frmDetalleVentaplanilla
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(44, 257)
+        Me.Label8.Location = New System.Drawing.Point(92, 257)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 13)
         Me.Label8.TabIndex = 25
@@ -348,7 +352,7 @@ Partial Class frmDetalleVentaplanilla
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(44, 235)
+        Me.Label7.Location = New System.Drawing.Point(78, 235)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 13)
         Me.Label7.TabIndex = 24
@@ -375,7 +379,7 @@ Partial Class frmDetalleVentaplanilla
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(44, 210)
+        Me.Label6.Location = New System.Drawing.Point(77, 210)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(50, 13)
         Me.Label6.TabIndex = 21
@@ -420,7 +424,7 @@ Partial Class frmDetalleVentaplanilla
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(139, 348)
+        Me.btnGuardar.Location = New System.Drawing.Point(147, 328)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 35)
         Me.btnGuardar.TabIndex = 15
@@ -429,18 +433,18 @@ Partial Class frmDetalleVentaplanilla
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(224, 357)
+        Me.btncancelar.Location = New System.Drawing.Point(232, 328)
         Me.btncancelar.Name = "btncancelar"
-        Me.btncancelar.Size = New System.Drawing.Size(67, 26)
+        Me.btncancelar.Size = New System.Drawing.Size(67, 35)
         Me.btncancelar.TabIndex = 13
         Me.btncancelar.Text = "Salir"
         Me.btncancelar.UseVisualStyleBackColor = True
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(55, 357)
+        Me.btnNuevo.Location = New System.Drawing.Point(63, 328)
         Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
+        Me.btnNuevo.Size = New System.Drawing.Size(67, 35)
         Me.btnNuevo.TabIndex = 12
         Me.btnNuevo.Text = "Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = True
@@ -448,7 +452,7 @@ Partial Class frmDetalleVentaplanilla
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(44, 157)
+        Me.Label5.Location = New System.Drawing.Point(60, 157)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(67, 13)
         Me.Label5.TabIndex = 9
@@ -466,7 +470,7 @@ Partial Class frmDetalleVentaplanilla
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(44, 131)
+        Me.Label4.Location = New System.Drawing.Point(76, 131)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(51, 13)
         Me.Label4.TabIndex = 7
@@ -475,7 +479,7 @@ Partial Class frmDetalleVentaplanilla
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(44, 105)
+        Me.Label3.Location = New System.Drawing.Point(90, 109)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(37, 13)
         Me.Label3.TabIndex = 5
@@ -484,7 +488,7 @@ Partial Class frmDetalleVentaplanilla
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(44, 79)
+        Me.Label2.Location = New System.Drawing.Point(88, 79)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 3
@@ -502,7 +506,7 @@ Partial Class frmDetalleVentaplanilla
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(44, 53)
+        Me.Label1.Location = New System.Drawing.Point(83, 53)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(44, 13)
         Me.Label1.TabIndex = 1
@@ -521,8 +525,7 @@ Partial Class frmDetalleVentaplanilla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1143, 485)
-        Me.Controls.Add(Me.Button2)
+        Me.ClientSize = New System.Drawing.Size(965, 407)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmDetalleVentaplanilla"

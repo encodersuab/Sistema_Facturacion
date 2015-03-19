@@ -164,12 +164,6 @@
     <Compile Include="Presentacion\PresentacionEmfopesbe\frmDetalleVentaplanilla.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\PresentacionEmfopesbe\frmImpresionfacturaPlanilla.Designer.vb">
-      <DependentUpon>frmImpresionfacturaPlanilla.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionEmfopesbe\frmImpresionfacturaPlanilla.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Presentacion\PresentacionEmfopesbe\frmVentaPlanilla.Designer.vb">
       <DependentUpon>frmVentaPlanilla.vb</DependentUpon>
     </Compile>
@@ -414,9 +408,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmDetalleVentaplanilla.resx">
       <DependentUpon>frmDetalleVentaplanilla.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmImpresionfacturaPlanilla.resx">
-      <DependentUpon>frmImpresionfacturaPlanilla.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmVentaPlanilla.resx">
       <DependentUpon>frmVentaPlanilla.vb</DependentUpon>
