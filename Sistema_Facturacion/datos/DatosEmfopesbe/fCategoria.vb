@@ -58,7 +58,7 @@ Public Class fCategoria
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-            cmd.Parameters.AddWithValue("@idcategotia", dts.gidcategoria)
+            cmd.Parameters.AddWithValue("@id_categotia", dts.gidcategoria)
             cmd.Parameters.AddWithValue("@nombre_categoria", dts.gnombre_categoria)
 
 

@@ -60,7 +60,7 @@ Partial Class frmCategoria
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(114, 138)
+        Me.btnGuardar.Location = New System.Drawing.Point(114, 120)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
