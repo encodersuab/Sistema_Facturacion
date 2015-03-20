@@ -383,9 +383,9 @@ Partial Public Class frmDetalleVenta
                 aux = func.mostrarUltimoQR.ToString + 1
 
                 f = dtpFecha.Value.Date
-                QrCodeImgControl1.Visible = True
+                ' QrCodeImgControl1.Visible = True
                 QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
-                QrCodeImgControl1.Enabled = True
+                'QrCodeImgControl1.Enabled = True
                 QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
                 '''''''' 
                 dts.gfecha_emision = f.ToString

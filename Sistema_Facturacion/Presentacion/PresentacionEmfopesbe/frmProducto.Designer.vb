@@ -315,7 +315,7 @@ Partial Class frmProducto
         'cbbmodulo
         '
         Me.cbbmodulo.FormattingEnabled = True
-        Me.cbbmodulo.Items.AddRange(New Object() {"FEXPO-BENI", "EMFOPESBE", "POST-GRADO", "CANAL-11"})
+        Me.cbbmodulo.Items.AddRange(New Object() {"CAMPO-FERIAL", "EMFOPESBE", "POST-GRADO", "RED-RUBI"})
         Me.cbbmodulo.Location = New System.Drawing.Point(154, 257)
         Me.cbbmodulo.Name = "cbbmodulo"
         Me.cbbmodulo.Size = New System.Drawing.Size(172, 21)
