@@ -1,6 +1,6 @@
 ﻿Public Class frmVentaPostGrado
     Private dt As New DataTable
-    Private Sub frmVenta_LoadPostGrado(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmVentaPostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
     End Sub
     Public Sub limpiar()

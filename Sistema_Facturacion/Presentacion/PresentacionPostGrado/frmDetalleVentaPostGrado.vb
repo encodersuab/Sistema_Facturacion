@@ -12,7 +12,7 @@ Imports System.Drawing.Imaging
 Imports System
 Partial Public Class frmDetalleVentaPostGrado
     Private dt As New DataTable
-    Private Sub frmDetalleVentaREDRUBI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmDetalleVentaPostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
         QrCodeImgControl1.Visible = False
         limpiar()
