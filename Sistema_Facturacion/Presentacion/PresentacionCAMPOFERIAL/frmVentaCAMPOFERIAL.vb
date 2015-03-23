@@ -1,4 +1,4 @@
-﻿Public Class frmVenta
+﻿Public Class frmVentaCAMPOFERIAL
     Private dt As New DataTable
     Private Sub frmVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
@@ -177,7 +177,7 @@
         'End If
     End Sub
 
-   
+
     Private Sub cbeliminar_CheckedChanged(sender As Object, e As EventArgs)
         'If cbeliminar.CheckState = CheckState.Checked Then
         '    datalistado.Columns.Item("Eliminar").Visible = True
@@ -192,14 +192,14 @@
     End Sub
 
     Private Sub cargar_detalle()
-        frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
-        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
-        frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
-        frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
-        frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
-        frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
-        frmDetalleVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
-        frmDetalleVenta.txtDD.Text = 0
+        frmDetalleVentaCAMPOFERIAL.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        frmDetalleVentaCAMPOFERIAL.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
+        frmDetalleVentaCAMPOFERIAL.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
+        frmDetalleVentaCAMPOFERIAL.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
+        frmDetalleVentaCAMPOFERIAL.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
+        frmDetalleVentaCAMPOFERIAL.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
+        frmDetalleVentaCAMPOFERIAL.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
+        frmDetalleVentaCAMPOFERIAL.txtDD.Text = 0
         'frmDetalleVenta.txtidCliente.Text = txtidCliente.Text
         'frmDetalleVenta.txtIdVenta.Text = txtIdVenta.Text
         'frmDetalleVenta.txtNombreCLiente.Text = txtNombreCLiente.Text
@@ -208,7 +208,7 @@
         'frmDetalleVenta.txtNumDoc.Text = txtNumDoc.Text
         'frmDetalleVenta.txtNombreFac.Text = txtNombreFac.Text
 
-        frmDetalleVenta.ShowDialog()
+        frmDetalleVentaCAMPOFERIAL.ShowDialog()
 
     End Sub
 
@@ -218,8 +218,8 @@
     End Sub
 
     Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
-        frmCliente.txtFlag.Text = "1"
-        frmCliente.ShowDialog()
+        frmClienteCAMPOFERIAL.txtFlag.Text = "1"
+        frmClienteCAMPOFERIAL.ShowDialog()
 
     End Sub
 

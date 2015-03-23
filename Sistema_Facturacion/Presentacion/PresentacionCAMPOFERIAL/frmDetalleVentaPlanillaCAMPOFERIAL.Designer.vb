@@ -1,8 +1,8 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmDetalleVenta
+Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
     Inherits System.Windows.Forms.Form
 
-    'Form reemplaza a Dispose para limpiar la lista de componentes.
+    'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -14,19 +14,20 @@ Partial Class frmDetalleVenta
         End Try
     End Sub
 
-    'Requerido por el Diseñador de Windows Forms
+    'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-    'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
-    'Se puede modificar usando el Diseñador de Windows Forms.  
-    'No lo modifique con el editor de código.
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVentaPlanillaCAMPOFERIAL))
+        Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.btnFinalizarVenta = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.lbllave = New System.Windows.Forms.Label()
         Me.lbCC = New System.Windows.Forms.Label()
@@ -40,12 +41,12 @@ Partial Class frmDetalleVenta
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lbmedida = New System.Windows.Forms.Label()
-        Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtnituab = New System.Windows.Forms.TextBox()
         Me.txtStock = New System.Windows.Forms.NumericUpDown()
+        Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.txtPrecioUnitario = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -68,21 +69,23 @@ Partial Class frmDetalleVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.txtDD = New System.Windows.Forms.TextBox()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'erroricono
+        '
+        Me.erroricono.ContainerControl = Me
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.btnFinalizarVenta)
         Me.GroupBox2.Controls.Add(Me.Button2)
+        Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
         Me.GroupBox2.Controls.Add(Me.lbllave)
         Me.GroupBox2.Controls.Add(Me.lbCC)
@@ -93,35 +96,35 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.Controls.Add(Me.cbeliminar)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Location = New System.Drawing.Point(376, 12)
+        Me.GroupBox2.Location = New System.Drawing.Point(373, 14)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(581, 400)
-        Me.GroupBox2.TabIndex = 5
+        Me.GroupBox2.Size = New System.Drawing.Size(581, 384)
+        Me.GroupBox2.TabIndex = 10
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
-        'btnFinalizarVenta
-        '
-        Me.btnFinalizarVenta.Location = New System.Drawing.Point(407, 336)
-        Me.btnFinalizarVenta.Name = "btnFinalizarVenta"
-        Me.btnFinalizarVenta.Size = New System.Drawing.Size(135, 47)
-        Me.btnFinalizarVenta.TabIndex = 40
-        Me.btnFinalizarVenta.Text = "Finalizar Venta"
-        Me.btnFinalizarVenta.UseVisualStyleBackColor = True
-        '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(407, 23)
+        Me.Button2.Location = New System.Drawing.Point(381, 19)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(135, 47)
-        Me.Button2.TabIndex = 6
+        Me.Button2.Size = New System.Drawing.Size(161, 52)
+        Me.Button2.TabIndex = 9
         Me.Button2.Text = "Cancelar Venta"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(381, 319)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(161, 52)
+        Me.Button1.TabIndex = 40
+        Me.Button1.Text = "Finalizar Venta"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'lbnumAutor
         '
         Me.lbnumAutor.AutoSize = True
-        Me.lbnumAutor.Location = New System.Drawing.Point(205, 36)
+        Me.lbnumAutor.Location = New System.Drawing.Point(216, 39)
         Me.lbnumAutor.Name = "lbnumAutor"
         Me.lbnumAutor.Size = New System.Drawing.Size(98, 13)
         Me.lbnumAutor.TabIndex = 39
@@ -131,7 +134,7 @@ Partial Class frmDetalleVenta
         'lbllave
         '
         Me.lbllave.AutoSize = True
-        Me.lbllave.Location = New System.Drawing.Point(205, 21)
+        Me.lbllave.Location = New System.Drawing.Point(216, 24)
         Me.lbllave.Name = "lbllave"
         Me.lbllave.Size = New System.Drawing.Size(37, 13)
         Me.lbllave.TabIndex = 38
@@ -141,7 +144,7 @@ Partial Class frmDetalleVenta
         'lbCC
         '
         Me.lbCC.AutoSize = True
-        Me.lbCC.Location = New System.Drawing.Point(205, 50)
+        Me.lbCC.Location = New System.Drawing.Point(216, 53)
         Me.lbCC.Name = "lbCC"
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
@@ -151,7 +154,7 @@ Partial Class frmDetalleVenta
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(210, 353)
+        Me.Label11.Location = New System.Drawing.Point(187, 339)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(71, 13)
         Me.Label11.TabIndex = 35
@@ -161,7 +164,7 @@ Partial Class frmDetalleVenta
         '
         Me.txttotal.Enabled = False
         Me.txttotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txttotal.Location = New System.Drawing.Point(287, 342)
+        Me.txttotal.Location = New System.Drawing.Point(264, 328)
         Me.txttotal.Name = "txttotal"
         Me.txttotal.Size = New System.Drawing.Size(100, 29)
         Me.txttotal.TabIndex = 34
@@ -170,7 +173,7 @@ Partial Class frmDetalleVenta
         '
         Me.QrCodeImgControl1.ErrorCorrectLevel = Gma.QrCodeNet.Encoding.ErrorCorrectionLevel.M
         Me.QrCodeImgControl1.Image = CType(resources.GetObject("QrCodeImgControl1.Image"), System.Drawing.Image)
-        Me.QrCodeImgControl1.Location = New System.Drawing.Point(309, 10)
+        Me.QrCodeImgControl1.Location = New System.Drawing.Point(314, 16)
         Me.QrCodeImgControl1.Name = "QrCodeImgControl1"
         Me.QrCodeImgControl1.QuietZoneModule = Gma.QrCodeNet.Encoding.Windows.Render.QuietZoneModules.Two
         Me.QrCodeImgControl1.Size = New System.Drawing.Size(61, 54)
@@ -181,7 +184,7 @@ Partial Class frmDetalleVenta
         '
         'btnquitar
         '
-        Me.btnquitar.Location = New System.Drawing.Point(97, 33)
+        Me.btnquitar.Location = New System.Drawing.Point(132, 36)
         Me.btnquitar.Name = "btnquitar"
         Me.btnquitar.Size = New System.Drawing.Size(67, 26)
         Me.btnquitar.TabIndex = 30
@@ -191,7 +194,7 @@ Partial Class frmDetalleVenta
         'cbeliminar
         '
         Me.cbeliminar.AutoSize = True
-        Me.cbeliminar.Location = New System.Drawing.Point(20, 39)
+        Me.cbeliminar.Location = New System.Drawing.Point(32, 42)
         Me.cbeliminar.Name = "cbeliminar"
         Me.cbeliminar.Size = New System.Drawing.Size(62, 17)
         Me.cbeliminar.TabIndex = 17
@@ -214,11 +217,11 @@ Partial Class frmDetalleVenta
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(6, 76)
+        Me.datalistado.Location = New System.Drawing.Point(6, 79)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(536, 251)
+        Me.datalistado.Size = New System.Drawing.Size(536, 221)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -230,12 +233,12 @@ Partial Class frmDetalleVenta
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.lbmedida)
-        Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.txtnituab)
         Me.GroupBox1.Controls.Add(Me.txtStock)
+        Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.txtPrecioUnitario)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
@@ -258,34 +261,25 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.Controls.Add(Me.txtidCliente)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtIdVenta)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(9, 14)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(358, 400)
-        Me.GroupBox1.TabIndex = 4
+        Me.GroupBox1.Size = New System.Drawing.Size(358, 384)
+        Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
         'lbmedida
         '
         Me.lbmedida.AutoSize = True
-        Me.lbmedida.Location = New System.Drawing.Point(284, 235)
+        Me.lbmedida.Location = New System.Drawing.Point(289, 235)
         Me.lbmedida.Name = "lbmedida"
         Me.lbmedida.Size = New System.Drawing.Size(0, 13)
-        Me.lbmedida.TabIndex = 35
-        '
-        'txtCantidad
-        '
-        Me.txtCantidad.DecimalPlaces = 3
-        Me.txtCantidad.Location = New System.Drawing.Point(144, 233)
-        Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
-        Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(134, 20)
-        Me.txtCantidad.TabIndex = 29
+        Me.lbmedida.TabIndex = 37
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(42, 183)
+        Me.Label12.Location = New System.Drawing.Point(47, 183)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(83, 13)
         Me.Label12.TabIndex = 34
@@ -303,7 +297,7 @@ Partial Class frmDetalleVenta
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(80, 27)
+        Me.Label10.Location = New System.Drawing.Point(85, 27)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(45, 13)
         Me.Label10.TabIndex = 32
@@ -327,6 +321,15 @@ Partial Class frmDetalleVenta
         Me.txtStock.Size = New System.Drawing.Size(173, 20)
         Me.txtStock.TabIndex = 29
         '
+        'txtCantidad
+        '
+        Me.txtCantidad.DecimalPlaces = 3
+        Me.txtCantidad.Location = New System.Drawing.Point(144, 233)
+        Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
+        Me.txtCantidad.Name = "txtCantidad"
+        Me.txtCantidad.Size = New System.Drawing.Size(139, 20)
+        Me.txtCantidad.TabIndex = 28
+        '
         'txtPrecioUnitario
         '
         Me.txtPrecioUnitario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
@@ -338,7 +341,7 @@ Partial Class frmDetalleVenta
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(47, 283)
+        Me.Label9.Location = New System.Drawing.Point(52, 283)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(78, 13)
         Me.Label9.TabIndex = 26
@@ -347,7 +350,7 @@ Partial Class frmDetalleVenta
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(90, 257)
+        Me.Label8.Location = New System.Drawing.Point(95, 257)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 13)
         Me.Label8.TabIndex = 25
@@ -356,7 +359,7 @@ Partial Class frmDetalleVenta
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(76, 235)
+        Me.Label7.Location = New System.Drawing.Point(81, 235)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 13)
         Me.Label7.TabIndex = 24
@@ -383,7 +386,7 @@ Partial Class frmDetalleVenta
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(75, 210)
+        Me.Label6.Location = New System.Drawing.Point(80, 210)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(50, 13)
         Me.Label6.TabIndex = 21
@@ -428,7 +431,7 @@ Partial Class frmDetalleVenta
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(142, 331)
+        Me.btnGuardar.Location = New System.Drawing.Point(147, 328)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 35)
         Me.btnGuardar.TabIndex = 15
@@ -437,7 +440,7 @@ Partial Class frmDetalleVenta
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(232, 331)
+        Me.btncancelar.Location = New System.Drawing.Point(232, 328)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 35)
         Me.btncancelar.TabIndex = 13
@@ -446,7 +449,7 @@ Partial Class frmDetalleVenta
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(58, 331)
+        Me.btnNuevo.Location = New System.Drawing.Point(63, 328)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 35)
         Me.btnNuevo.TabIndex = 12
@@ -456,7 +459,7 @@ Partial Class frmDetalleVenta
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(58, 157)
+        Me.Label5.Location = New System.Drawing.Point(63, 157)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(67, 13)
         Me.Label5.TabIndex = 9
@@ -474,7 +477,7 @@ Partial Class frmDetalleVenta
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(74, 131)
+        Me.Label4.Location = New System.Drawing.Point(79, 131)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(51, 13)
         Me.Label4.TabIndex = 7
@@ -483,7 +486,7 @@ Partial Class frmDetalleVenta
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(88, 109)
+        Me.Label3.Location = New System.Drawing.Point(93, 109)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(37, 13)
         Me.Label3.TabIndex = 5
@@ -492,7 +495,7 @@ Partial Class frmDetalleVenta
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(86, 83)
+        Me.Label2.Location = New System.Drawing.Point(91, 79)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 3
@@ -510,7 +513,7 @@ Partial Class frmDetalleVenta
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(81, 53)
+        Me.Label1.Location = New System.Drawing.Point(86, 53)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(44, 13)
         Me.Label1.TabIndex = 1
@@ -525,46 +528,59 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'erroricono
-        '
-        Me.erroricono.ContainerControl = Me
-        '
-        'txtDD
-        '
-        Me.txtDD.Location = New System.Drawing.Point(220, -3)
-        Me.txtDD.Name = "txtDD"
-        Me.txtDD.Size = New System.Drawing.Size(100, 20)
-        Me.txtDD.TabIndex = 7
-        Me.txtDD.Text = "0"
-        '
-        'frmDetalleVenta
+        'frmClienteFEXPOBENI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(967, 425)
-        Me.Controls.Add(Me.txtDD)
+        Me.ClientSize = New System.Drawing.Size(965, 410)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "frmDetalleVenta"
-        Me.Text = ".:. listado de ventas .:."
+        Me.Name = "frmClienteFEXPOBENI"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
+        Me.Text = ".:.Listado de clientes.:."
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
+    Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents lbnumAutor As System.Windows.Forms.Label
+    Friend WithEvents lbllave As System.Windows.Forms.Label
+    Friend WithEvents lbCC As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents txttotal As System.Windows.Forms.TextBox
+    Friend WithEvents QrCodeImgControl1 As Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl
+    Friend WithEvents btnquitar As System.Windows.Forms.Button
+    Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
     Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents lbmedida As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents txtnituab As System.Windows.Forms.TextBox
+    Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
+    Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
+    Friend WithEvents txtPrecioUnitario As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents btnBuscarProducto As System.Windows.Forms.Button
+    Friend WithEvents txtNombreProducto As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents txtIdProducto As System.Windows.Forms.TextBox
     Friend WithEvents cbTipoDoc As System.Windows.Forms.ComboBox
     Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtNombreCLiente As System.Windows.Forms.TextBox
@@ -579,31 +595,4 @@ Partial Class frmDetalleVenta
     Friend WithEvents txtidCliente As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
-    Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
-    Friend WithEvents txtPrecioUnitario As System.Windows.Forms.TextBox
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents btnBuscarProducto As System.Windows.Forms.Button
-    Friend WithEvents txtNombreProducto As System.Windows.Forms.TextBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents txtIdProducto As System.Windows.Forms.TextBox
-    Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
-    Friend WithEvents btnquitar As System.Windows.Forms.Button
-    Friend WithEvents QrCodeImgControl1 As Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents txtnituab As System.Windows.Forms.TextBox
-    Friend WithEvents txttotal As System.Windows.Forms.TextBox
-    Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents lbCC As System.Windows.Forms.Label
-    Friend WithEvents lbllave As System.Windows.Forms.Label
-    Friend WithEvents lbnumAutor As System.Windows.Forms.Label
-    Friend WithEvents btnFinalizarVenta As System.Windows.Forms.Button
-    Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
-    Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
-    Friend WithEvents txtDD As System.Windows.Forms.TextBox
-    Friend WithEvents lbmedida As System.Windows.Forms.Label
 End Class

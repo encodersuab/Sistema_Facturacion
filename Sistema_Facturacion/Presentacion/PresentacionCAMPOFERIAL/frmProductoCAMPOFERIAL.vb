@@ -1,8 +1,7 @@
-﻿Public Class frmProducto
-
+﻿Public Class frmProductoCAMPOFERIAL
     Private dt As New DataTable
-    Private Sub frmProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If frmInicioF.lbrol.Text = "UsuarioEMFOPESBE" Then
+    Private Sub frmProductoCAMPOFERIAL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If frmInicioF.lbrol.Text = "UsuarioCAMPOFERIAL" Then
             btnEditar.Enabled = False
             btnNuevo.Enabled = False
             btncategoria.Enabled = False
@@ -47,7 +46,7 @@
 
     Private Sub mostrar()
         Try
-            Dim func As New fProducto
+            Dim func As New fProductoCAMPOFERIAL
             dt = func.mostrar
             datalistado.Columns.Item("Eliminar").Visible = False
 
@@ -251,9 +250,9 @@
         End If
     End Sub
 
-   
 
- 
+
+
 
     Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
         Me.Close()
@@ -270,8 +269,6 @@
             imagen.BackgroundImage = Nothing
             imagen.Image = New Bitmap(dlg.FileName)
             imagen.SizeMode = PictureBoxSizeMode.StretchImage
-
-
         End If
 
 
@@ -292,19 +289,19 @@
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
         Try
             If txtTag.Text = "1" Then
-                frmDetalleVenta.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
-                frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
-                frmDetalleVenta.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
-                frmDetalleVenta.txtStock.Text = datalistado.SelectedCells.Item(6).Value
-                frmDetalleVenta.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
+                frmDetalleVentaCAMPOFERIAL.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+                frmDetalleVentaCAMPOFERIAL.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                frmDetalleVentaCAMPOFERIAL.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+                frmDetalleVentaCAMPOFERIAL.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                frmDetalleVentaCAMPOFERIAL.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
                 Me.Close()
 
             Else
-                frmDetalleVentaplanilla.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
-                frmDetalleVentaplanilla.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
-                frmDetalleVentaplanilla.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
-                frmDetalleVentaplanilla.txtStock.Text = datalistado.SelectedCells.Item(6).Value
-                frmDetalleVentaplanilla.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
+                frmDetalleVentaPlanillaCAMPOFERIAL.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+                frmDetalleVentaPlanillaCAMPOFERIAL.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                frmDetalleVentaPlanillaCAMPOFERIAL.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+                frmDetalleVentaPlanillaCAMPOFERIAL.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                frmDetalleVentaPlanillaCAMPOFERIAL.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
                 Me.Close()
 
 
@@ -391,9 +388,5 @@
         Else
             Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
         End If
-    End Sub
-
-    Private Sub imagen_Click(sender As Object, e As EventArgs) Handles imagen.Click
-
     End Sub
 End Class

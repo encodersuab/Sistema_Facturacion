@@ -1,12 +1,12 @@
 ﻿Imports System.Data.SqlClient
-Public Class fProducto
+Public Class fProductoCAMPOFERIAL
 
     Inherits Conexion
     Dim cmd As New SqlCommand
     Public Function mostrar() As DataTable
         Try
             conectado()
-            cmd = New SqlCommand("mostrar_producto_emfopesbe")
+            cmd = New SqlCommand("mostrar_producto_capoferial")
             cmd.CommandType = CommandType.StoredProcedure
 
             cmd.Connection = cnn

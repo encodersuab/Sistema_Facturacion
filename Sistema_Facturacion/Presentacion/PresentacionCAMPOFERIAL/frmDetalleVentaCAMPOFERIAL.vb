@@ -10,14 +10,14 @@ Imports System.Data.SqlClient
 Imports System.IO
 Imports System.Drawing.Imaging
 Imports System
-Partial Public Class frmDetalleVenta
+Partial Public Class frmDetalleVentaCAMPOFERIAL
     Private dt As New DataTable
     Private Sub frmDetalleVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
         QrCodeImgControl1.Visible = False
         limpiar()
         mostrarDatosImpuestos()
-        
+
         '  txtIdVenta.Text = datalistado.SelectedCells.Item(8).Value
     End Sub
 
@@ -61,7 +61,7 @@ Partial Public Class frmDetalleVenta
 
     Private Sub mostrar()
         txttotal.Text = 0
-        
+
         Try
             Dim func As New fDetalleVentaCAMPOFERIAL
             dt = func.mostrar
@@ -275,8 +275,8 @@ Partial Public Class frmDetalleVenta
     End Sub
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
-        frmProducto.txtTag.Text = "1"
-        frmProducto.ShowDialog()
+        frmProductoCAMPOFERIAL.txtTag.Text = "1"
+        frmProductoCAMPOFERIAL.ShowDialog()
     End Sub
 
 
@@ -404,12 +404,9 @@ Partial Public Class frmDetalleVenta
                     MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     frmReporteFactura.MdiParent = frmInicioF
                     frmReporteFactura.Show()
-
                     Me.Close()
-
                 Else
                     MessageBox.Show("No se a podido guardar la venta  Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
                 End If
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -554,7 +551,4 @@ Partial Public Class frmDetalleVenta
         'End If   
 
     End Sub
-
-
-
 End Class

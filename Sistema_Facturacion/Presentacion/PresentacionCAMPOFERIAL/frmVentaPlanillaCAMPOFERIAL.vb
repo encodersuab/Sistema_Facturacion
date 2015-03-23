@@ -1,4 +1,5 @@
-﻿Public Class frmVentaPlanilla
+﻿Public Class frmVentaPlanillaCAMPOFERIAL
+
     Private dt As New DataTable
     Private Sub frmVentaPlanilla_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrarVentaPlanilla()
@@ -167,30 +168,30 @@
 
 
 
-        frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
-        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
-        frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
-        frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
-        frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
-        frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
-        frmDetalleVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
-        frmDetalleVenta.txtDD.Text = 1
-        frmDetalleVenta.ShowDialog()
+        frmDetalleVentaCAMPOFERIAL.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        frmDetalleVentaCAMPOFERIAL.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
+        frmDetalleVentaCAMPOFERIAL.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
+        frmDetalleVentaCAMPOFERIAL.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
+        frmDetalleVentaCAMPOFERIAL.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
+        frmDetalleVentaCAMPOFERIAL.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
+        frmDetalleVentaCAMPOFERIAL.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
+        frmDetalleVentaCAMPOFERIAL.txtDD.Text = 1
+        frmDetalleVentaCAMPOFERIAL.ShowDialog()
 
     End Sub
     Private Sub cargar_detalle()
 
 
 
-        frmDetalleVentaplanilla.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
-        frmDetalleVentaplanilla.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
-        frmDetalleVentaplanilla.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
-        frmDetalleVentaplanilla.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
-        frmDetalleVentaplanilla.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
-        frmDetalleVentaplanilla.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
-        frmDetalleVentaplanilla.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
+        frmDetalleVentaPlanillaCAMPOFERIAL.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        frmDetalleVentaPlanillaCAMPOFERIAL.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
+        frmDetalleVentaPlanillaCAMPOFERIAL.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
+        frmDetalleVentaPlanillaCAMPOFERIAL.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
+        frmDetalleVentaPlanillaCAMPOFERIAL.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
+        frmDetalleVentaPlanillaCAMPOFERIAL.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
+        frmDetalleVentaPlanillaCAMPOFERIAL.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
 
-        frmDetalleVentaplanilla.ShowDialog()
+        frmDetalleVentaPlanillaCAMPOFERIAL.ShowDialog()
 
     End Sub
 
@@ -202,8 +203,8 @@
     End Sub
 
     Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
-        frmCliente.txtFlag.Text = "2"
-        frmCliente.ShowDialog()
+        frmClienteCAMPOFERIAL.txtFlag.Text = "2"
+        frmClienteCAMPOFERIAL.ShowDialog()
     End Sub
 
     Private Sub btnImprimirFacturaPlanilla_Click(sender As Object, e As EventArgs) Handles btnImprimirFacturaPlanilla.Click
@@ -280,5 +281,3 @@
         Me.Close()
     End Sub
 End Class
-
-

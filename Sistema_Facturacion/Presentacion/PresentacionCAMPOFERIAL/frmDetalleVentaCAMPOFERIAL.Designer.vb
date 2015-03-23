@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmDetalleVenta
+Partial Class frmDetalleVentaCAMPOFERIAL
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -23,7 +23,9 @@ Partial Class frmDetalleVenta
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVentaCAMPOFERIAL))
+        Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.txtDD = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.btnFinalizarVenta = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -68,16 +70,26 @@ Partial Class frmDetalleVenta
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.txtDD = New System.Windows.Forms.TextBox()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'erroricono
+        '
+        Me.erroricono.ContainerControl = Me
+        '
+        'txtDD
+        '
+        Me.txtDD.Location = New System.Drawing.Point(220, -3)
+        Me.txtDD.Name = "txtDD"
+        Me.txtDD.Size = New System.Drawing.Size(100, 20)
+        Me.txtDD.TabIndex = 10
+        Me.txtDD.Text = "0"
         '
         'GroupBox2
         '
@@ -96,7 +108,7 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.Location = New System.Drawing.Point(376, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(581, 400)
-        Me.GroupBox2.TabIndex = 5
+        Me.GroupBox2.TabIndex = 9
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
@@ -261,7 +273,7 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(358, 400)
-        Me.GroupBox1.TabIndex = 4
+        Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
@@ -525,28 +537,17 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'erroricono
-        '
-        Me.erroricono.ContainerControl = Me
-        '
-        'txtDD
-        '
-        Me.txtDD.Location = New System.Drawing.Point(220, -3)
-        Me.txtDD.Name = "txtDD"
-        Me.txtDD.Size = New System.Drawing.Size(100, 20)
-        Me.txtDD.TabIndex = 7
-        Me.txtDD.Text = "0"
-        '
-        'frmDetalleVenta
+        'frmDetalleVentaCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(967, 425)
+        Me.ClientSize = New System.Drawing.Size(966, 422)
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "frmDetalleVenta"
+        Me.Name = "frmDetalleVentaCAMPOFERIAL"
         Me.Text = ".:. listado de ventas .:."
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -555,16 +556,42 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.PerformLayout()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+    Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
+    Friend WithEvents txtDD As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents btnFinalizarVenta As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents lbnumAutor As System.Windows.Forms.Label
+    Friend WithEvents lbllave As System.Windows.Forms.Label
+    Friend WithEvents lbCC As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents txttotal As System.Windows.Forms.TextBox
+    Friend WithEvents QrCodeImgControl1 As Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl
+    Friend WithEvents btnquitar As System.Windows.Forms.Button
+    Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
     Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents lbmedida As System.Windows.Forms.Label
+    Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents txtnituab As System.Windows.Forms.TextBox
+    Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
+    Friend WithEvents txtPrecioUnitario As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents btnBuscarProducto As System.Windows.Forms.Button
+    Friend WithEvents txtNombreProducto As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents txtIdProducto As System.Windows.Forms.TextBox
     Friend WithEvents cbTipoDoc As System.Windows.Forms.ComboBox
     Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtNombreCLiente As System.Windows.Forms.TextBox
@@ -579,31 +606,4 @@ Partial Class frmDetalleVenta
     Friend WithEvents txtidCliente As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
-    Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
-    Friend WithEvents txtPrecioUnitario As System.Windows.Forms.TextBox
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents btnBuscarProducto As System.Windows.Forms.Button
-    Friend WithEvents txtNombreProducto As System.Windows.Forms.TextBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents txtIdProducto As System.Windows.Forms.TextBox
-    Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
-    Friend WithEvents btnquitar As System.Windows.Forms.Button
-    Friend WithEvents QrCodeImgControl1 As Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents txtnituab As System.Windows.Forms.TextBox
-    Friend WithEvents txttotal As System.Windows.Forms.TextBox
-    Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents lbCC As System.Windows.Forms.Label
-    Friend WithEvents lbllave As System.Windows.Forms.Label
-    Friend WithEvents lbnumAutor As System.Windows.Forms.Label
-    Friend WithEvents btnFinalizarVenta As System.Windows.Forms.Button
-    Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
-    Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
-    Friend WithEvents txtDD As System.Windows.Forms.TextBox
-    Friend WithEvents lbmedida As System.Windows.Forms.Label
 End Class

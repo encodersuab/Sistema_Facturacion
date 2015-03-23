@@ -233,13 +233,13 @@ Public Class frmInicioF
 
 
     Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
-        frmProductoFEXPOBENI.MdiParent = Me
-        frmProductoFEXPOBENI.Show()
+        frmVentaPlanillaCAMPOFERIAL.MdiParent = Me
+        frmVentaPlanillaCAMPOFERIAL.Show()
     End Sub
 
     Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
-        frmCategoriaFEXPOBENI.MdiParent = Me
-        frmCategoriaFEXPOBENI.Show()
+        frmProductoCAMPOFERIAL.MdiParent = Me
+        frmProductoCAMPOFERIAL.Show()
     End Sub
 
 
@@ -302,13 +302,12 @@ Public Class frmInicioF
     End Sub
 
     Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
-        frmCategoriaFEXPOBENI.MdiParent = Me
-        frmCategoriaFEXPOBENI.Show()
+        frmProductoCAMPOFERIAL.MdiParent = Me
+        frmProductoCAMPOFERIAL.Show()
     End Sub
 
     Private Sub ventaF_Click(sender As Object, e As EventArgs) Handles ventaF.Click
-        frmVentaFEXPOBENI.MdiParent = Me
-        frmVentaFEXPOBENI.Show()
+        
     End Sub
 
   
@@ -337,5 +336,24 @@ Public Class frmInicioF
     Private Sub RptVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RptVentaToolStripMenuItem.Click
         frmrptVentas.MdiParent = Me
         frmrptVentas.Show()
+    End Sub
+
+    Private Sub reporteF_Click(sender As Object, e As EventArgs) Handles reporteF.Click
+
+    End Sub
+
+    Private Sub reImprecionF_Click(sender As Object, e As EventArgs) Handles reImprecionF.Click
+
+    End Sub
+
+    Private Sub ContadoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ContadoToolStripMenuItem1.Click
+        frmVentaCAMPOFERIAL.MdiParent = Me
+        frmVentaCAMPOFERIAL.Show()
+    End Sub
+
+    Private Sub PorPlanillaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PorPlanillaToolStripMenuItem1.Click
+        frmVentaPlanillaCAMPOFERIAL.MdiParent = Me
+        frmVentaPlanillaCAMPOFERIAL.Show()
+
     End Sub
 End Class
