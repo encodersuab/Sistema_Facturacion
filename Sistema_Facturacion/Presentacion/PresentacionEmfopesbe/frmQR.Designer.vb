@@ -173,7 +173,7 @@ Partial Class frmQR
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(44, 261)
+        Me.Label3.Location = New System.Drawing.Point(82, 261)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(41, 13)
         Me.Label3.TabIndex = 36
@@ -209,7 +209,7 @@ Partial Class frmQR
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(44, 27)
+        Me.Label10.Location = New System.Drawing.Point(75, 27)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(48, 13)
         Me.Label10.TabIndex = 32
@@ -237,7 +237,7 @@ Partial Class frmQR
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(44, 235)
+        Me.Label9.Location = New System.Drawing.Point(79, 235)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(44, 13)
         Me.Label9.TabIndex = 26
@@ -246,7 +246,7 @@ Partial Class frmQR
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(44, 213)
+        Me.Label8.Location = New System.Drawing.Point(31, 209)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(92, 13)
         Me.Label8.TabIndex = 25
@@ -273,7 +273,7 @@ Partial Class frmQR
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(44, 161)
+        Me.Label6.Location = New System.Drawing.Point(92, 157)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(31, 13)
         Me.Label6.TabIndex = 21
@@ -300,7 +300,7 @@ Partial Class frmQR
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(40, 135)
+        Me.Label5.Location = New System.Drawing.Point(45, 133)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(78, 13)
         Me.Label5.TabIndex = 9
@@ -318,7 +318,7 @@ Partial Class frmQR
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(44, 104)
+        Me.Label4.Location = New System.Drawing.Point(30, 107)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(93, 13)
         Me.Label4.TabIndex = 7
@@ -327,7 +327,7 @@ Partial Class frmQR
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(44, 79)
+        Me.Label2.Location = New System.Drawing.Point(52, 79)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 13)
         Me.Label2.TabIndex = 3
@@ -345,7 +345,7 @@ Partial Class frmQR
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(44, 53)
+        Me.Label1.Location = New System.Drawing.Point(66, 53)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(57, 13)
         Me.Label1.TabIndex = 1

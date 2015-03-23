@@ -121,7 +121,7 @@ Partial Class frmProducto
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(49, 208)
+        Me.Label6.Location = New System.Drawing.Point(54, 208)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(83, 13)
         Me.Label6.TabIndex = 11
@@ -155,7 +155,7 @@ Partial Class frmProducto
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(41, 182)
+        Me.Label5.Location = New System.Drawing.Point(46, 182)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(91, 13)
         Me.Label5.TabIndex = 9
@@ -199,7 +199,7 @@ Partial Class frmProducto
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(97, 156)
+        Me.Label4.Location = New System.Drawing.Point(102, 156)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(35, 13)
         Me.Label4.TabIndex = 7
@@ -212,7 +212,7 @@ Partial Class frmProducto
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(69, 111)
+        Me.Label3.Location = New System.Drawing.Point(74, 111)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(63, 13)
         Me.Label3.TabIndex = 5
@@ -231,7 +231,7 @@ Partial Class frmProducto
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(25, 59)
+        Me.Label2.Location = New System.Drawing.Point(30, 59)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(107, 13)
         Me.Label2.TabIndex = 3
@@ -248,7 +248,7 @@ Partial Class frmProducto
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(70, 33)
+        Me.Label1.Location = New System.Drawing.Point(75, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(62, 13)
         Me.Label1.TabIndex = 1
@@ -306,7 +306,7 @@ Partial Class frmProducto
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(90, 287)
+        Me.Label11.Location = New System.Drawing.Point(95, 287)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(42, 13)
         Me.Label11.TabIndex = 28
@@ -325,7 +325,7 @@ Partial Class frmProducto
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(90, 260)
+        Me.Label10.Location = New System.Drawing.Point(95, 260)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(42, 13)
         Me.Label10.TabIndex = 27
@@ -365,7 +365,7 @@ Partial Class frmProducto
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(90, 312)
+        Me.Label9.Location = New System.Drawing.Point(95, 312)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 22
@@ -382,7 +382,7 @@ Partial Class frmProducto
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(20, 237)
+        Me.Label8.Location = New System.Drawing.Point(25, 237)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(112, 13)
         Me.Label8.TabIndex = 20
@@ -408,7 +408,7 @@ Partial Class frmProducto
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(80, 85)
+        Me.Label7.Location = New System.Drawing.Point(85, 85)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(52, 13)
         Me.Label7.TabIndex = 17

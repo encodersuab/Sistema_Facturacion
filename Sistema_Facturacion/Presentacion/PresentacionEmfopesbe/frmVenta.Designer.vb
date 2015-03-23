@@ -123,7 +123,7 @@ Partial Class frmVenta
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(43, 172)
+        Me.Label6.Location = New System.Drawing.Point(44, 172)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(83, 13)
         Me.Label6.TabIndex = 21
@@ -212,7 +212,7 @@ Partial Class frmVenta
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(59, 146)
+        Me.Label5.Location = New System.Drawing.Point(60, 146)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(67, 13)
         Me.Label5.TabIndex = 9
@@ -229,7 +229,7 @@ Partial Class frmVenta
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(75, 120)
+        Me.Label4.Location = New System.Drawing.Point(76, 120)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(51, 13)
         Me.Label4.TabIndex = 7
@@ -238,7 +238,7 @@ Partial Class frmVenta
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(89, 98)
+        Me.Label3.Location = New System.Drawing.Point(90, 98)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(37, 13)
         Me.Label3.TabIndex = 5
@@ -247,7 +247,7 @@ Partial Class frmVenta
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(87, 68)
+        Me.Label2.Location = New System.Drawing.Point(88, 68)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 3
@@ -265,7 +265,7 @@ Partial Class frmVenta
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(82, 42)
+        Me.Label1.Location = New System.Drawing.Point(83, 42)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(44, 13)
         Me.Label1.TabIndex = 1

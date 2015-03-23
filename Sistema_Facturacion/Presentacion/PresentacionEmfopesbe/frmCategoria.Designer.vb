@@ -174,7 +174,7 @@ Partial Class frmCategoria
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(31, 65)
+        Me.Label1.Location = New System.Drawing.Point(80, 65)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(61, 13)
         Me.Label1.TabIndex = 1

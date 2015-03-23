@@ -26,6 +26,7 @@ Partial Class frmDetalleVenta
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.btnFinalizarVenta = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.lbllave = New System.Windows.Forms.Label()
         Me.lbCC = New System.Windows.Forms.Label()
@@ -68,7 +69,6 @@ Partial Class frmDetalleVenta
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.txtDD = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -108,6 +108,15 @@ Partial Class frmDetalleVenta
         Me.btnFinalizarVenta.TabIndex = 40
         Me.btnFinalizarVenta.Text = "Finalizar Venta"
         Me.btnFinalizarVenta.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(407, 23)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(135, 47)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "Cancelar Venta"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'lbnumAutor
         '
@@ -276,7 +285,7 @@ Partial Class frmDetalleVenta
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(39, 183)
+        Me.Label12.Location = New System.Drawing.Point(42, 183)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(83, 13)
         Me.Label12.TabIndex = 34
@@ -294,7 +303,7 @@ Partial Class frmDetalleVenta
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(77, 27)
+        Me.Label10.Location = New System.Drawing.Point(80, 27)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(45, 13)
         Me.Label10.TabIndex = 32
@@ -329,7 +338,7 @@ Partial Class frmDetalleVenta
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(44, 283)
+        Me.Label9.Location = New System.Drawing.Point(47, 283)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(78, 13)
         Me.Label9.TabIndex = 26
@@ -338,7 +347,7 @@ Partial Class frmDetalleVenta
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(87, 257)
+        Me.Label8.Location = New System.Drawing.Point(90, 257)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 13)
         Me.Label8.TabIndex = 25
@@ -347,7 +356,7 @@ Partial Class frmDetalleVenta
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(73, 235)
+        Me.Label7.Location = New System.Drawing.Point(76, 235)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 13)
         Me.Label7.TabIndex = 24
@@ -374,7 +383,7 @@ Partial Class frmDetalleVenta
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(72, 210)
+        Me.Label6.Location = New System.Drawing.Point(75, 210)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(50, 13)
         Me.Label6.TabIndex = 21
@@ -447,7 +456,7 @@ Partial Class frmDetalleVenta
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(55, 157)
+        Me.Label5.Location = New System.Drawing.Point(58, 157)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(67, 13)
         Me.Label5.TabIndex = 9
@@ -465,7 +474,7 @@ Partial Class frmDetalleVenta
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(71, 131)
+        Me.Label4.Location = New System.Drawing.Point(74, 131)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(51, 13)
         Me.Label4.TabIndex = 7
@@ -474,7 +483,7 @@ Partial Class frmDetalleVenta
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(85, 109)
+        Me.Label3.Location = New System.Drawing.Point(88, 109)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(37, 13)
         Me.Label3.TabIndex = 5
@@ -483,7 +492,7 @@ Partial Class frmDetalleVenta
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(83, 83)
+        Me.Label2.Location = New System.Drawing.Point(86, 83)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 3
@@ -501,7 +510,7 @@ Partial Class frmDetalleVenta
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(78, 53)
+        Me.Label1.Location = New System.Drawing.Point(81, 53)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(44, 13)
         Me.Label1.TabIndex = 1
@@ -519,15 +528,6 @@ Partial Class frmDetalleVenta
         'erroricono
         '
         Me.erroricono.ContainerControl = Me
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(407, 23)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(135, 47)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Cancelar Venta"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'txtDD
         '
