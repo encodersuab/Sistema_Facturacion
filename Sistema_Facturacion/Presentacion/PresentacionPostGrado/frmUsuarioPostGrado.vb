@@ -1,6 +1,6 @@
 ﻿Public Class frmUsuarioPostGrado
     Private dt As New DataTable
-    Private Sub frmUsuario_LoadPostGrado(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmUsuarioPostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
 
     End Sub

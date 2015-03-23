@@ -89,9 +89,11 @@
     <Compile Include="datos\DatosFEXPOBENI\fVentaFEXPOBENI.vb" />
     <Compile Include="datos\DatosPostGrado\fCategoriaPostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fClientePostGrado.vb" />
+    <Compile Include="datos\DatosPostGrado\fDetalleVentaPlanillaPostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fDetalleVentaPostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fProductoPostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fUsuarioPostGrado.vb" />
+    <Compile Include="datos\DatosPostGrado\fVentaPlanillaPostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fVentaPostGrado.vb" />
     <Compile Include="datos\DatosREDRUBI\fCategoriaREDRUBI.vb" />
     <Compile Include="datos\DatosREDRUBI\fClienteREDRUBI.vb" />
@@ -124,9 +126,11 @@
     <Compile Include="Logica\LogicaFEXPOBENI\vVentaFEXPOBENI.vb" />
     <Compile Include="Logica\LogicaPostGrado\vCategoriaPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vClientePostGrado.vb" />
+    <Compile Include="Logica\LogicaPostGrado\vDetalleVentaPlanillaPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vDetalleVentaPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vProductoPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vUsuarioPostGrado.vb" />
+    <Compile Include="Logica\LogicaPostGrado\vVentaPlanillaPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vVentaPostGrado.vb" />
     <Compile Include="Logica\LogicaREDRUBI\vCategoriaREDRUBI.vb" />
     <Compile Include="Logica\LogicaREDRUBI\vClienteREDRUBI.vb" />
@@ -218,6 +222,12 @@
     <Compile Include="Presentacion\PresentacionPostGrado\frmClientePostGrado.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmDetalleVentaPlanillaPostGrado.Designer.vb">
+      <DependentUpon>frmDetalleVentaPlanillaPostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmDetalleVentaPlanillaPostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\PresentacionPostGrado\frmDetalleVentaPostGrado.Designer.vb">
       <DependentUpon>frmDetalleVentaPostGrado.vb</DependentUpon>
     </Compile>
@@ -234,6 +244,12 @@
       <DependentUpon>frmUsuarioPostGrado.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\PresentacionPostGrado\frmUsuarioPostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmVentaPlanillaPostGrado.Designer.vb">
+      <DependentUpon>frmVentaPlanillaPostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmVentaPlanillaPostGrado.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\PresentacionPostGrado\frmVentaPostGrado.Designer.vb">
@@ -436,6 +452,9 @@
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmClientePostGrado.resx">
       <DependentUpon>frmClientePostGrado.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmDetalleVentaPlanillaPostGrado.resx">
+      <DependentUpon>frmDetalleVentaPlanillaPostGrado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmDetalleVentaPostGrado.resx">
       <DependentUpon>frmDetalleVentaPostGrado.vb</DependentUpon>
     </EmbeddedResource>
@@ -444,6 +463,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmUsuarioPostGrado.resx">
       <DependentUpon>frmUsuarioPostGrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmVentaPlanillaPostGrado.resx">
+      <DependentUpon>frmVentaPlanillaPostGrado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmVentaPostGrado.resx">
       <DependentUpon>frmVentaPostGrado.vb</DependentUpon>

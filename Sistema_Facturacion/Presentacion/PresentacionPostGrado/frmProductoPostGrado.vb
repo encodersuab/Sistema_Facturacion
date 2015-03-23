@@ -1,7 +1,7 @@
 ﻿Public Class frmProductoPostGrado
 
     Private dt As New DataTable
-    Private Sub frmProductoREDRUBI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmProductoPostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If frmInicioF.lbrol.Text = "UsuarioPOSTGRADO" Then
             btnEditar.Enabled = False
             btnNuevo.Enabled = False

@@ -4,7 +4,7 @@
 
     End Sub
 
-    Private Sub frmCategoria_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmCategoriaPostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
     End Sub
 
