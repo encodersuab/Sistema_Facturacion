@@ -18,7 +18,7 @@
 
     Private Sub mostrar()
         Try
-            Dim func As New fVentaCAMPOFERIAL
+            Dim func As New fVenta
             dt = func.mostrar
             datalistado.Columns.Item("Eliminar").Visible = False
 
@@ -82,8 +82,8 @@
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNombreCLiente.Text <> "" And txtNumDoc.Text <> "" Then
             Try
-                Dim dts As New vVentaCAMPOFERIAL
-                Dim func As New fVentaCAMPOFERIAL
+                Dim dts As New vVenta
+                Dim func As New fVenta
 
                 dts.Gidcliente = txtidCliente.Text
                 dts.Gfecha_venta = dtpFecha.Value.Date.ToString
@@ -125,8 +125,8 @@
 
             If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNumDoc.Text <> "" And txtIdVenta.Text <> "" Then
                 Try
-                    Dim dts As New vVentaCAMPOFERIAL
-                    Dim func As New fVentaCAMPOFERIAL
+                    Dim dts As New vVenta
+                    Dim func As New fVenta
 
                     dts.Gidventa = txtIdVenta.Text
                     dts.Gidcliente = txtidCliente.Text

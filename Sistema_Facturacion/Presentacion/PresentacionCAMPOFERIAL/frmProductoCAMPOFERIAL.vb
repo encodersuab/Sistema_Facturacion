@@ -130,7 +130,7 @@
                 dts.gprecio_compra = txtprecio_compra.Text
                 dts.gprecio_venta = txtprecio_venta.Text
                 dts.gfecha_vencimiento = txtfecha_vencimiento.Text
-                dts.gmodulo = cbbmodulo.Text
+                dts.gmodulo = cbbModulo.Text
                 dts.gmedida = txtmedida.Text
 
                 Dim ms As New IO.MemoryStream()
@@ -183,7 +183,7 @@
                     dts.gprecio_compra = txtprecio_compra.Text
                     dts.gprecio_venta = txtprecio_venta.Text
                     dts.gfecha_vencimiento = txtfecha_vencimiento.Text
-                    dts.gmodulo = cbbmodulo.Text
+                    dts.gmodulo = cbbModulo.Text
                     dts.gmedida = txtmedida.Text
                     Dim ms As New IO.MemoryStream()
                     If Not imagen.Image Is Nothing Then
@@ -226,7 +226,7 @@
         txtprecio_compra.Text = datalistado.SelectedCells.Item(7).Value
         txtprecio_venta.Text = datalistado.SelectedCells.Item(8).Value
         txtfecha_vencimiento.Text = datalistado.SelectedCells.Item(9).Value
-        cbbmodulo.Text = datalistado.SelectedCells.Item(11).Value
+        cbbModulo.Text = datalistado.SelectedCells.Item(11).Value
         txtmedida.Text = datalistado.SelectedCells.Item(12).Value
         imagen.BackgroundImage = Nothing
         Dim b() As Byte = datalistado.SelectedCells.Item(10).Value

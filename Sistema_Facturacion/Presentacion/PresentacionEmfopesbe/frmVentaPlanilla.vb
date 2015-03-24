@@ -21,7 +21,7 @@
 
     Private Sub mostrarVentaPlanilla()
         Try
-            Dim func As New fVentaPlanillaCAMPOFERIAL
+            Dim func As New fVentaPlanilla
             dt = func.mostrarVentaPlanilla
             datalistado.Columns.Item("Eliminar").Visible = False
 
@@ -59,8 +59,8 @@
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNombreCLiente.Text <> "" And txtNumDoc.Text <> "" Then
             Try
-                Dim dts As New vVentaPlanillaCAMPOFERIAL
-                Dim func As New fVentaPlanillaCAMPOFERIAL
+                Dim dts As New vVentaPlanilla
+                Dim func As New fVentaPlanilla
 
                 dts.Gidcliente = txtidCliente.Text
                 dts.Gfecha_venta = dtpFecha.Value.Date.ToString
@@ -96,8 +96,8 @@
     Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
         If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNumDoc.Text <> "" And txtIdVenta.Text <> "" Then
             Try
-                Dim dts As New vVentaPlanillaCAMPOFERIAL
-                Dim func As New fVentaPlanillaCAMPOFERIAL
+                Dim dts As New vVentaPlanilla
+                Dim func As New fVentaPlanilla
 
                 dts.Gidventaplanilla = txtIdVenta.Text
                 dts.Gidcliente = txtidCliente.Text
@@ -243,8 +243,8 @@
 
             If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNumDoc.Text <> "" And txtIdVenta.Text <> "" Then
                 Try
-                    Dim dts As New vVentaPlanillaCAMPOFERIAL
-                    Dim func As New fVentaPlanillaCAMPOFERIAL
+                    Dim dts As New vVentaPlanilla
+                    Dim func As New fVentaPlanilla
 
                     dts.Gidventaplanilla = txtIdVenta.Text
                     dts.Gidcliente = txtidCliente.Text
@@ -278,6 +278,10 @@
 
     Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
         Me.Close()
+    End Sub
+
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
+
     End Sub
 End Class
 

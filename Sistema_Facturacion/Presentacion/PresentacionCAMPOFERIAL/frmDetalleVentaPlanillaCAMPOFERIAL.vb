@@ -13,10 +13,10 @@ Imports System
 Public Class frmDetalleVentaPlanillaCAMPOFERIAL
 
     Private dt As New DataTable
-    Private Sub frmDetalleVentaplanilla_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmDetalleVentaplanillaCAMPOFERIAL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrarDVPlanilla()
         limpiar()
-        mostrardatosimpuestos()
+        mostrarDatosImpuestos()
 
 
     End Sub

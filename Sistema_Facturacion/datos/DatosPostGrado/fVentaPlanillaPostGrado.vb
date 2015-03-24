@@ -28,7 +28,7 @@ Public Class fVentaPlanillaPostGrado
         End Try
     End Function
 
-    Public Function insertarventaPlanilla(ByVal dts As vVentaPlanilla) As Boolean
+    Public Function insertarventaPlanilla(ByVal dts As vVentaPlanillaPostGrado) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("insertar_venta")
@@ -57,7 +57,7 @@ Public Class fVentaPlanillaPostGrado
         End Try
     End Function
 
-    Public Function editarVentaPlanilla(ByVal dts As vVentaPlanilla) As Boolean
+    Public Function editarVentaPlanilla(ByVal dts As vVentaPlanillaPostGrado) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("editar_venta")
@@ -87,7 +87,7 @@ Public Class fVentaPlanillaPostGrado
     End Function
 
 
-    Public Function eliminarventaPlanilla(ByVal dts As vVentaPlanilla) As Boolean
+    Public Function eliminarventaPlanilla(ByVal dts As vVentaPlanillaPostGrado) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("eliminar_venta")

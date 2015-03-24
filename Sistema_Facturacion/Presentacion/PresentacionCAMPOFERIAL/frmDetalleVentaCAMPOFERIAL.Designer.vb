@@ -546,7 +546,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmDetalleVentaCAMPOFERIAL"
-        Me.Text = ".:. listado de ventas .:."
+        Me.Text = ".:. ventas CAMPOFERIAL .:."
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

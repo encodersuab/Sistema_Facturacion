@@ -63,7 +63,7 @@ Partial Public Class frmDetalleVenta
         txttotal.Text = 0
         
         Try
-            Dim func As New fDetalleVentaCAMPOFERIAL
+            Dim func As New fDetalleVenta
             dt = func.mostrar
 
 
@@ -136,8 +136,8 @@ Partial Public Class frmDetalleVenta
                 'System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
                 Try
 
-                    Dim dts As New vDetalleVentaCAMPOFERIAL
-                    Dim func As New fDetalleVentaCAMPOFERIAL
+                    Dim dts As New vDetalleVenta
+                    Dim func As New fDetalleVenta
 
                     dts.gidventa = txtIdVenta.Text
                     dts.gidproducto = txtIdProducto.Text
@@ -192,8 +192,8 @@ Partial Public Class frmDetalleVenta
 
                     If marcado Then
                         Dim onekey As Integer = Convert.ToInt32(row.Cells("idcliente").Value)
-                        Dim vdb As New vDetalleVentaCAMPOFERIAL
-                        Dim func As New fDetalleVentaCAMPOFERIAL
+                        Dim vdb As New vDetalleVenta
+                        Dim func As New fDetalleVenta
                         vdb.giddedatlle_venta = onekey
 
                         If func.eliminar(vdb) Then
@@ -242,8 +242,8 @@ Partial Public Class frmDetalleVenta
 
                     If marcado Then
                         Dim onekey As Integer = Convert.ToInt32(row.Cells("iddetalle_venta").Value)
-                        Dim vdb As New vDetalleVentaCAMPOFERIAL
-                        Dim func As New fDetalleVentaCAMPOFERIAL
+                        Dim vdb As New vDetalleVenta
+                        Dim func As New fDetalleVenta
                         vdb.giddedatlle_venta = onekey
                         vdb.gidproducto = datalistado.SelectedCells.Item(3).Value
                         vdb.gidventa = datalistado.SelectedCells.Item(2).Value
@@ -453,16 +453,16 @@ Partial Public Class frmDetalleVenta
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
         Dim result As DialogResult
-        Dim dts As New vDetalleVentaCAMPOFERIAL
-        Dim func As New fDetalleVentaCAMPOFERIAL
+        Dim dts As New vDetalleVenta
+        Dim func As New fDetalleVenta
         result = MessageBox.Show("Realmente desea eliminar la venta?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
         If result = DialogResult.OK Then
 
             dts.gidventa = txtIdVenta.Text
             ' func.eliminarproductoVenta(dts)
 
-            Dim dtsDV As New vVentaCAMPOFERIAL
-            Dim funcDV As New fVentaCAMPOFERIAL
+            Dim dtsDV As New vVenta
+            Dim funcDV As New fVenta
 
             dtsDV.Gidventa = txtIdVenta.Text
             '  funcDV.eliminar(dtsDV)

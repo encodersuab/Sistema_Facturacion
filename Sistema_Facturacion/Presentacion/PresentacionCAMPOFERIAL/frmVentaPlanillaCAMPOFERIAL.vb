@@ -1,7 +1,7 @@
 ﻿Public Class frmVentaPlanillaCAMPOFERIAL
 
     Private dt As New DataTable
-    Private Sub frmVentaPlanilla_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmVentaPlanillaCAMPOFERIAL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrarVentaPlanilla()
 
     End Sub

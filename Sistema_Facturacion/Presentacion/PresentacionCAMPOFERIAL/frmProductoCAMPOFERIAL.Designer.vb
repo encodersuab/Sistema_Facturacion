@@ -28,7 +28,6 @@ Partial Class frmProductoCAMPOFERIAL
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtmedida = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.cbbmodulo = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.btnlimpiar = New System.Windows.Forms.PictureBox()
         Me.btncargar = New System.Windows.Forms.PictureBox()
@@ -62,6 +61,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.cbbModulo = New System.Windows.Forms.Label()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,9 +86,9 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.cbbModulo)
         Me.GroupBox1.Controls.Add(Me.txtmedida)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.cbbmodulo)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.btnlimpiar)
         Me.GroupBox1.Controls.Add(Me.btncargar)
@@ -141,16 +141,6 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label11.Size = New System.Drawing.Size(42, 13)
         Me.Label11.TabIndex = 28
         Me.Label11.Text = "Medida"
-        '
-        'cbbmodulo
-        '
-        Me.cbbmodulo.FormattingEnabled = True
-        Me.cbbmodulo.Items.AddRange(New Object() {"CAMPO-FERIAL", "EMFOPESBE", "POST-GRADO", "RED-RUBI"})
-        Me.cbbmodulo.Location = New System.Drawing.Point(154, 257)
-        Me.cbbmodulo.Name = "cbbmodulo"
-        Me.cbbmodulo.Size = New System.Drawing.Size(172, 21)
-        Me.cbbmodulo.TabIndex = 17
-        Me.cbbmodulo.Text = "FEXPO-BENI"
         '
         'Label10
         '
@@ -452,7 +442,16 @@ Partial Class frmProductoCAMPOFERIAL
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
         '
-        'frmCategoriaFEXPOBENI
+        'cbbModulo
+        '
+        Me.cbbModulo.AutoSize = True
+        Me.cbbModulo.Location = New System.Drawing.Point(151, 260)
+        Me.cbbModulo.Name = "cbbModulo"
+        Me.cbbModulo.Size = New System.Drawing.Size(85, 13)
+        Me.cbbModulo.TabIndex = 30
+        Me.cbbModulo.Text = "CAMPO-FERIAL"
+        '
+        'frmProductoCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -460,8 +459,8 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Controls.Add(Me.txtTag)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Name = "frmCategoriaFEXPOBENI"
-        Me.Text = "Listado de categoria"
+        Me.Name = "frmProductoCAMPOFERIAL"
+        Me.Text = ".:. productos CAMPOFERIAL .:. "
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -480,7 +479,6 @@ Partial Class frmProductoCAMPOFERIAL
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents txtmedida As System.Windows.Forms.ComboBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents cbbmodulo As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents btnlimpiar As System.Windows.Forms.PictureBox
     Friend WithEvents btncargar As System.Windows.Forms.PictureBox
@@ -515,4 +513,5 @@ Partial Class frmProductoCAMPOFERIAL
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents cbbModulo As System.Windows.Forms.Label
 End Class

@@ -284,15 +284,15 @@ Partial Class frmVentaCAMPOFERIAL
         Me.txtIdVenta.Size = New System.Drawing.Size(166, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'frmVentaFEXPOBENI
+        'frmVentaCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(918, 323)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "frmVentaFEXPOBENI"
-        Me.Text = ".:. Listado Ventas .:."
+        Me.Name = "frmVentaCAMPOFERIAL"
+        Me.Text = ".:. ventas CAMPOFERIAL .:."
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

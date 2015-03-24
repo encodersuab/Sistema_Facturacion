@@ -28,7 +28,7 @@ Public Class fProducto
         End Try
     End Function
 
-    Public Function insertar(ByVal dts As vProductoCAMPOFERIAL) As Boolean
+    Public Function insertar(ByVal dts As vProducto) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("insertar_producto")
@@ -59,7 +59,7 @@ Public Class fProducto
         End Try
     End Function
 
-    Public Function editar(ByVal dts As vProductoCAMPOFERIAL) As Boolean
+    Public Function editar(ByVal dts As vProducto) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("editar_producto")
@@ -90,7 +90,7 @@ Public Class fProducto
             desconectado()
         End Try
     End Function
-    Public Function eliminar(ByVal dts As vProductoCAMPOFERIAL) As Boolean
+    Public Function eliminar(ByVal dts As vProducto) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("eliminar_producto")

@@ -121,8 +121,8 @@
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtNombre.Text <> "" And txtdescripcion.Text <> "" And txtstock.Text <> "" And txtprecio_compra.Text <> "" And txtprecio_venta.Text <> "" Then
             Try
-                Dim dts As New vProductoCAMPOFERIAL
-                Dim func As New fProductoCAMPOFERIAL
+                Dim dts As New vProducto
+                Dim func As New fProducto
 
                 dts.gnombre = txtNombre.Text
                 dts.gidcategoria = txtidcategoria.Text
@@ -173,8 +173,8 @@
 
             If Me.ValidateChildren = True And txtNombre.Text <> "" And txtdescripcion.Text <> "" And txtstock.Text <> "" And txtprecio_compra.Text <> "" And txtprecio_venta.Text <> "" And txtIdproducto.Text <> "" Then
                 Try
-                    Dim dts As New vProductoCAMPOFERIAL
-                    Dim func As New fProductoCAMPOFERIAL
+                    Dim dts As New vProducto
+                    Dim func As New fProducto
 
                     dts.gidproducto = txtIdproducto.Text
                     dts.gnombre = txtNombre.Text

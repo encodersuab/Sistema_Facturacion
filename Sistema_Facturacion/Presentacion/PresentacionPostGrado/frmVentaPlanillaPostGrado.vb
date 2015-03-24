@@ -59,8 +59,8 @@
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNombreCLiente.Text <> "" And txtNumDoc.Text <> "" Then
             Try
-                Dim dts As New vVentaPlanilla
-                Dim func As New fVentaPlanilla
+                Dim dts As New vVentaPlanillaPostGrado
+                Dim func As New fVentaPlanillaPostGrado
 
                 dts.Gidcliente = txtidCliente.Text
                 dts.Gfecha_venta = dtpFecha.Value.Date.ToString
@@ -96,8 +96,8 @@
     Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
         If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNumDoc.Text <> "" And txtIdVenta.Text <> "" Then
             Try
-                Dim dts As New vVentaPlanilla
-                Dim func As New fVentaPlanilla
+                Dim dts As New vVentaPlanillaPostGrado
+                Dim func As New fVentaPlanillaPostGrado
 
                 dts.Gidventaplanilla = txtIdVenta.Text
                 dts.Gidcliente = txtidCliente.Text
@@ -243,8 +243,8 @@
 
             If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNumDoc.Text <> "" And txtIdVenta.Text <> "" Then
                 Try
-                    Dim dts As New vVentaPlanilla
-                    Dim func As New fVentaPlanilla
+                    Dim dts As New vVentaPlanillaPostGrado
+                    Dim func As New fVentaPlanillaPostGrado
 
                     dts.Gidventaplanilla = txtIdVenta.Text
                     dts.Gidcliente = txtidCliente.Text

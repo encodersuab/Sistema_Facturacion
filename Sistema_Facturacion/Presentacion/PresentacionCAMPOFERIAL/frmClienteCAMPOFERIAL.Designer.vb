@@ -299,7 +299,7 @@ Partial Class frmClienteCAMPOFERIAL
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmClienteCAMPOFERIAL"
-        Me.Text = "frmClienteCAMPOFERIAL"
+        Me.Text = ".:. Cliente CAMPOFERIAL .:."
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()

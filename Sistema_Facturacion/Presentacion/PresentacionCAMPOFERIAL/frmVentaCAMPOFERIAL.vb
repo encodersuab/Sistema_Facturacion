@@ -1,6 +1,6 @@
 ﻿Public Class frmVentaCAMPOFERIAL
     Private dt As New DataTable
-    Private Sub frmVenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmVentaCAMPOFERIAL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
     End Sub
     Public Sub limpiar()

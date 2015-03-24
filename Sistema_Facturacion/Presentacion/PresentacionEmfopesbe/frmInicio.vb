@@ -233,13 +233,13 @@ Public Class frmInicioF
 
 
     Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
-        frmVentaPlanillaCAMPOFERIAL.MdiParent = Me
-        frmVentaPlanillaCAMPOFERIAL.Show()
+        frmProductoCAMPOFERIAL.MdiParent = Me
+        frmProductoCAMPOFERIAL.Show()
     End Sub
 
     Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
-        frmProductoCAMPOFERIAL.MdiParent = Me
-        frmProductoCAMPOFERIAL.Show()
+        frmCategoria.MdiParent = Me
+        frmCategoria.Show()
     End Sub
 
 
@@ -302,8 +302,8 @@ Public Class frmInicioF
     End Sub
 
     Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
-        frmProductoCAMPOFERIAL.MdiParent = Me
-        frmProductoCAMPOFERIAL.Show()
+        frmClienteCAMPOFERIAL.MdiParent = Me
+        frmClienteCAMPOFERIAL.Show()
     End Sub
 
     Private Sub ventaF_Click(sender As Object, e As EventArgs) Handles ventaF.Click
@@ -343,6 +343,8 @@ Public Class frmInicioF
     End Sub
 
     Private Sub reImprecionF_Click(sender As Object, e As EventArgs) Handles reImprecionF.Click
+        frmQR.MdiParent = Me
+        frmQR.Show()
 
     End Sub
 

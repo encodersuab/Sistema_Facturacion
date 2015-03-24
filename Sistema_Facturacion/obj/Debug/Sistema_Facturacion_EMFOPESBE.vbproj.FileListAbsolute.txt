@@ -216,3 +216,5 @@ D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Siste
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVentaPlanillaCAMPOFERIAL.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVentaCAMPOFERIAL.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmClienteCAMPOFERIAL.resources
+D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVentaplanillaPostGrado.resources
+D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVentaPlanillaPostGrado.resources

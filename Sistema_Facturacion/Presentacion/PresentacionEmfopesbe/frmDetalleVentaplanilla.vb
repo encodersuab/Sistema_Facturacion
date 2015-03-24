@@ -47,7 +47,7 @@ Public Class frmDetalleVentaplanilla
         txttotal.Text = 0
 
         Try
-            Dim func As New fDetalleVentaPlanillaCAMPOFERIAL
+            Dim func As New fDetalleVentaPlanilla
             dt = func.mostrarDVPlanilla
             datalistado.Columns.Item("Eliminar").Visible = False
 
@@ -106,8 +106,8 @@ Public Class frmDetalleVentaplanilla
                 'System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
                 Try
 
-                    Dim dtsp As New vDetalleVentaPlanillaCAMPOFERIAL
-                    Dim funcp As New fDetalleVentaPlanillaCAMPOFERIAL
+                    Dim dtsp As New vDetalleVentaPlanilla
+                    Dim funcp As New fDetalleVentaPlanilla
 
                     dtsp.gidproducto = txtIdProducto.Text
                     dtsp.gcantidad = txtCantidad.Text
@@ -157,8 +157,8 @@ Public Class frmDetalleVentaplanilla
 
                     If marcado Then
                         Dim onekey As Integer = Convert.ToInt32(row.Cells("iddetalle_venta_planilla").Value)
-                        Dim vdb As New vDetalleVentaPlanillaCAMPOFERIAL
-                        Dim func As New fDetalleVentaPlanillaCAMPOFERIAL
+                        Dim vdb As New vDetalleVentaPlanilla
+                        Dim func As New fDetalleVentaPlanilla
                         vdb.giddedatlle_venta = onekey
                         vdb.gidproducto = datalistado.SelectedCells.Item(3).Value
                         vdb.gidventaplanilla = datalistado.SelectedCells.Item(9).Value
@@ -312,8 +312,8 @@ Public Class frmDetalleVentaplanilla
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim result As DialogResult
-        Dim dts As New vDetalleVentaPlanillaCAMPOFERIAL
-        Dim func As New fDetalleVentaPlanillaCAMPOFERIAL
+        Dim dts As New vDetalleVentaPlanilla
+        Dim func As New fDetalleVentaPlanilla
 
         result = MessageBox.Show("Realmente desea eliminar la venta?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
         If result = DialogResult.OK Then
@@ -321,8 +321,8 @@ Public Class frmDetalleVentaplanilla
             dts.gidventaplanilla = txtIdVenta.Text
             ' func.eliminarproductoVenta(dts)
 
-            Dim dtsDV As New vVentaPlanillaCAMPOFERIAL
-            Dim funcDV As New fVentaPlanillaCAMPOFERIAL
+            Dim dtsDV As New vVentaPlanilla
+            Dim funcDV As New fVentaPlanilla
 
             dtsDV.Gidventaplanilla = txtIdVenta.Text
             '  funcDV.eliminar(dtsDV)
