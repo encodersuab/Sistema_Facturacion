@@ -6,7 +6,7 @@ Public Class fProductoPostGrado
     Public Function mostrar() As DataTable
         Try
             conectado()
-            cmd = New SqlCommand("mostrar_producto_emfopesbe")
+            cmd = New SqlCommand("mostrar_producto_postgrado")
             cmd.CommandType = CommandType.StoredProcedure
 
             cmd.Connection = cnn
