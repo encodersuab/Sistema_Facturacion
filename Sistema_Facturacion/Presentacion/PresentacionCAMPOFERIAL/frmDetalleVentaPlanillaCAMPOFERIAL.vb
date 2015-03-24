@@ -10,7 +10,8 @@ Imports System.Data.SqlClient
 Imports System.IO
 Imports System.Drawing.Imaging
 Imports System
-Public Class frmDetalleVentaplanilla
+Public Class frmDetalleVentaPlanillaCAMPOFERIAL
+
     Private dt As New DataTable
     Private Sub frmDetalleVentaplanilla_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrarDVPlanilla()
@@ -261,8 +262,8 @@ Public Class frmDetalleVentaplanilla
 
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
-        frmProducto.txtTag.Text = "2"
-        frmProducto.ShowDialog()
+        frmProductoCAMPOFERIAL.txtTag.Text = "2"
+        frmProductoCAMPOFERIAL.ShowDialog()
 
     End Sub
 

@@ -79,14 +79,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="datos\DatosCAMPOFERIAL\fDetalleVentaCAMPOFERIAL.vb" />
+    <Compile Include="datos\DatosCAMPOFERIAL\fDetalleVentaPlanillaCAMPOFERIAL.vb" />
+    <Compile Include="datos\DatosCAMPOFERIAL\fProductoCAMPOFERIAL.vb" />
+    <Compile Include="datos\DatosCAMPOFERIAL\fVentaCAMPOFERIAL.vb" />
+    <Compile Include="datos\DatosCAMPOFERIAL\fVentaPlanillaCAMPOFERIAL.vb" />
     <Compile Include="datos\DatosEmfopesbe\fVentaPlanilla.vb" />
     <Compile Include="datos\DatosEmfopesbe\fDetalleVentaPlanilla.vb" />
-    <Compile Include="datos\DatosFEXPOBENI\fCategoriaFEXPOBENI.vb" />
-    <Compile Include="datos\DatosFEXPOBENI\fClienteFEXPOBENI.vb" />
-    <Compile Include="datos\DatosFEXPOBENI\fDetalleVentaFEXPOBENI.vb" />
-    <Compile Include="datos\DatosFEXPOBENI\fProductoFEXPOBENI.vb" />
-    <Compile Include="datos\DatosFEXPOBENI\fUsuarioFEXPOBENI.vb" />
-    <Compile Include="datos\DatosFEXPOBENI\fVentaFEXPOBENI.vb" />
     <Compile Include="datos\DatosPostGrado\fCategoriaPostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fClientePostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fDetalleVentaPlanillaPostGrado.vb" />
@@ -116,14 +115,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbfacDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Logica\LogicaCAMPOFERIAL\vDetalleVentaCAMPOFERIAL.vb" />
+    <Compile Include="Logica\LogicaCAMPOFERIAL\vDetalleVentaPlanillaCAMPOFERIAL.vb" />
+    <Compile Include="Logica\LogicaCAMPOFERIAL\vProductoCAMPOFERIAL.vb" />
+    <Compile Include="Logica\LogicaCAMPOFERIAL\vVentaCAMPOFERIAL.vb" />
+    <Compile Include="Logica\LogicaCAMPOFERIAL\vVentaPlanillaCAMPOFERIAL.vb" />
     <Compile Include="Logica\LogicaEmfopesbe\vDetalleVentaPlanilla.vb" />
     <Compile Include="Logica\LogicaEmfopesbe\vVentaPlanilla.vb" />
-    <Compile Include="Logica\LogicaFEXPOBENI\vCategoriaFEXPOBENI.vb" />
-    <Compile Include="Logica\LogicaFEXPOBENI\vClienteFEXPOBENI.vb" />
-    <Compile Include="Logica\LogicaFEXPOBENI\vDetalleVentaFEXPOBENI.vb" />
-    <Compile Include="Logica\LogicaFEXPOBENI\vProductoFEXPOBENI.vb" />
-    <Compile Include="Logica\LogicaFEXPOBENI\vUsuarioFEXPOBENI.vb" />
-    <Compile Include="Logica\LogicaFEXPOBENI\vVentaFEXPOBENI.vb" />
     <Compile Include="Logica\LogicaPostGrado\vCategoriaPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vClientePostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vDetalleVentaPlanillaPostGrado.vb" />
@@ -162,6 +160,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmClienteCAMPOFERIAL.Designer.vb">
+      <DependentUpon>frmClienteCAMPOFERIAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmClienteCAMPOFERIAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\PresentacionEmfopesbe\frmDetalleVentaplanilla.Designer.vb">
       <DependentUpon>frmDetalleVentaplanilla.vb</DependentUpon>
     </Compile>
@@ -174,40 +178,34 @@
     <Compile Include="Presentacion\PresentacionEmfopesbe\frmVentaPlanilla.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmCategoriaFEXPOBENI.Designer.vb">
-      <DependentUpon>frmCategoriaFEXPOBENI.vb</DependentUpon>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmProductoCAMPOFERIAL.Designer.vb">
+      <DependentUpon>frmProductoCAMPOFERIAL.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmCategoriaFEXPOBENI.vb">
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmProductoCAMPOFERIAL.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmClienteFEXPOBENI.Designer.vb">
-      <DependentUpon>frmClienteFEXPOBENI.vb</DependentUpon>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmDetalleVentaPlanillaCAMPOFERIAL.Designer.vb">
+      <DependentUpon>frmDetalleVentaPlanillaCAMPOFERIAL.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmClienteFEXPOBENI.vb">
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmDetalleVentaPlanillaCAMPOFERIAL.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmDetalleVentaFEXPOBENI.Designer.vb">
-      <DependentUpon>frmDetalleVentaFEXPOBENI.vb</DependentUpon>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmDetalleVentaCAMPOFERIAL.Designer.vb">
+      <DependentUpon>frmDetalleVentaCAMPOFERIAL.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmDetalleVentaFEXPOBENI.vb">
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmDetalleVentaCAMPOFERIAL.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmProductoFEXPOBENI.Designer.vb">
-      <DependentUpon>frmProductoFEXPOBENI.vb</DependentUpon>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmVentaPlanillaCAMPOFERIAL.Designer.vb">
+      <DependentUpon>frmVentaPlanillaCAMPOFERIAL.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmProductoFEXPOBENI.vb">
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmVentaPlanillaCAMPOFERIAL.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmUsuarioFEXPOBENI.Designer.vb">
-      <DependentUpon>frmUsuarioFEXPOBENI.vb</DependentUpon>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmVentaCAMPOFERIAL.Designer.vb">
+      <DependentUpon>frmVentaCAMPOFERIAL.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmUsuarioFEXPOBENI.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmVentaFEXPOBENI.Designer.vb">
-      <DependentUpon>frmVentaFEXPOBENI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionFEXPOBENI\frmVentaFEXPOBENI.vb">
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmVentaCAMPOFERIAL.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\PresentacionPostGrado\frmCategoriaPostGrado.Designer.vb">
@@ -422,29 +420,29 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmClienteCAMPOFERIAL.resx">
+      <DependentUpon>frmClienteCAMPOFERIAL.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmDetalleVentaplanilla.resx">
       <DependentUpon>frmDetalleVentaplanilla.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmVentaPlanilla.resx">
       <DependentUpon>frmVentaPlanilla.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmCategoriaFEXPOBENI.resx">
-      <DependentUpon>frmCategoriaFEXPOBENI.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmProductoCAMPOFERIAL.resx">
+      <DependentUpon>frmProductoCAMPOFERIAL.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmClienteFEXPOBENI.resx">
-      <DependentUpon>frmClienteFEXPOBENI.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmDetalleVentaPlanillaCAMPOFERIAL.resx">
+      <DependentUpon>frmDetalleVentaPlanillaCAMPOFERIAL.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmDetalleVentaFEXPOBENI.resx">
-      <DependentUpon>frmDetalleVentaFEXPOBENI.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmDetalleVentaCAMPOFERIAL.resx">
+      <DependentUpon>frmDetalleVentaCAMPOFERIAL.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmProductoFEXPOBENI.resx">
-      <DependentUpon>frmProductoFEXPOBENI.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmVentaPlanillaCAMPOFERIAL.resx">
+      <DependentUpon>frmVentaPlanillaCAMPOFERIAL.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmUsuarioFEXPOBENI.resx">
-      <DependentUpon>frmUsuarioFEXPOBENI.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionFEXPOBENI\frmVentaFEXPOBENI.resx">
-      <DependentUpon>frmVentaFEXPOBENI.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmVentaCAMPOFERIAL.resx">
+      <DependentUpon>frmVentaCAMPOFERIAL.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmCategoriaPostGrado.resx">
       <DependentUpon>frmCategoriaPostGrado.vb</DependentUpon>

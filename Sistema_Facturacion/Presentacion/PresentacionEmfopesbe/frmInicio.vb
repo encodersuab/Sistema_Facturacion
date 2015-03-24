@@ -233,13 +233,13 @@ Public Class frmInicioF
 
 
     Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
-        frmProductoFEXPOBENI.MdiParent = Me
-        frmProductoFEXPOBENI.Show()
+        frmVentaPlanillaCAMPOFERIAL.MdiParent = Me
+        frmVentaPlanillaCAMPOFERIAL.Show()
     End Sub
 
     Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
-        frmCategoriaFEXPOBENI.MdiParent = Me
-        frmCategoriaFEXPOBENI.Show()
+        frmProductoCAMPOFERIAL.MdiParent = Me
+        frmProductoCAMPOFERIAL.Show()
     End Sub
 
 
@@ -302,13 +302,12 @@ Public Class frmInicioF
     End Sub
 
     Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
-        frmCategoriaFEXPOBENI.MdiParent = Me
-        frmCategoriaFEXPOBENI.Show()
+        frmProductoCAMPOFERIAL.MdiParent = Me
+        frmProductoCAMPOFERIAL.Show()
     End Sub
 
     Private Sub ventaF_Click(sender As Object, e As EventArgs) Handles ventaF.Click
-        frmVentaFEXPOBENI.MdiParent = Me
-        frmVentaFEXPOBENI.Show()
+        
     End Sub
 
   
@@ -339,43 +338,22 @@ Public Class frmInicioF
         frmrptVentas.Show()
     End Sub
 
+    Private Sub reporteF_Click(sender As Object, e As EventArgs) Handles reporteF.Click
+
+    End Sub
+
+    Private Sub reImprecionF_Click(sender As Object, e As EventArgs) Handles reImprecionF.Click
+
+    End Sub
+
     Private Sub ContadoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ContadoToolStripMenuItem1.Click
-        frmVentaPostGrado.MdiParent = Me
-        frmVentaPostGrado.Show()
+        frmVentaCAMPOFERIAL.MdiParent = Me
+        frmVentaCAMPOFERIAL.Show()
     End Sub
 
     Private Sub PorPlanillaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PorPlanillaToolStripMenuItem1.Click
-        frmVentaPlanillaPostGrado.MdiParent = Me
-        frmVentaPlanillaPostGrado.Show()
-    End Sub
+        frmVentaPlanillaCAMPOFERIAL.MdiParent = Me
+        frmVentaPlanillaCAMPOFERIAL.Show()
 
-    Private Sub ToolStripMenuItem19_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem19.Click
-        frmrptVentas.MdiParent = Me
-        frmrptVentas.Show()
-    End Sub
-
-    Private Sub ToolStripMenuItem20_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem20.Click
-        frmReporteProductos.MdiParent = Me
-        frmReporteProductos.Show()
-    End Sub
-
-    Private Sub ToolStripMenuItem21_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem21.Click
-        frmReporteCatergotria.MdiParent = Me
-        frmReporteCatergotria.Show()
-    End Sub
-
-    Private Sub RpteClienteToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles RpteClienteToolStripMenuItem1.Click
-        frmReporteCliente.MdiParent = Me
-        frmReporteCliente.Show()
-    End Sub
-
-    Private Sub RptUsuariosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles RptUsuariosToolStripMenuItem1.Click
-        frmReporteUsuarios.MdiParent = Me
-        frmReporteUsuarios.Show()
-    End Sub
-
-    Private Sub AnularFacturaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AnularFacturaToolStripMenuItem1.Click
-        frmQR.MdiParent = Me
-        frmQR.Show()
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿Imports System.Data.SqlClient
-Public Class fVenta
+Public Class fVentaCAMPOFERIAL
     Inherits Conexion
     Dim cmd As New SqlCommand
     Public Function mostrar() As DataTable

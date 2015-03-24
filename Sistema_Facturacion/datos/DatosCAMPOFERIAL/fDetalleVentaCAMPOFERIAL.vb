@@ -1,5 +1,5 @@
 ﻿Imports System.Data.SqlClient
-Public Class fDetalleVenta
+Public Class fDetalleVentaCAMPOFERIAL
     Inherits Conexion
     Dim cmd As New SqlCommand
     Dim retornarValor As Object
