@@ -22,7 +22,8 @@ Partial Class frmDetalleVentaplanillaPostGrado
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVentaPlanillaPostGrado))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVentaplanillaPostGrado))
+        Me.QrCodeImgControl1 = New Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl()
         Me.lbmedida = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
@@ -30,6 +31,7 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.txtnituab = New System.Windows.Forms.TextBox()
         Me.txtStock = New System.Windows.Forms.NumericUpDown()
         Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtPrecioUnitario = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -53,27 +55,38 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.datalistado = New System.Windows.Forms.DataGridView()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Inexistente = New System.Windows.Forms.LinkLabel()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.lbllave = New System.Windows.Forms.Label()
         Me.lbCC = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txttotal = New System.Windows.Forms.TextBox()
-        Me.QrCodeImgControl1 = New Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl()
         Me.btnquitar = New System.Windows.Forms.Button()
         Me.cbeliminar = New System.Windows.Forms.CheckBox()
-        Me.Inexistente = New System.Windows.Forms.LinkLabel()
-        Me.datalistado = New System.Windows.Forms.DataGridView()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'QrCodeImgControl1
+        '
+        Me.QrCodeImgControl1.ErrorCorrectLevel = Gma.QrCodeNet.Encoding.ErrorCorrectionLevel.M
+        Me.QrCodeImgControl1.Image = CType(resources.GetObject("QrCodeImgControl1.Image"), System.Drawing.Image)
+        Me.QrCodeImgControl1.Location = New System.Drawing.Point(314, 16)
+        Me.QrCodeImgControl1.Name = "QrCodeImgControl1"
+        Me.QrCodeImgControl1.QuietZoneModule = Gma.QrCodeNet.Encoding.Windows.Render.QuietZoneModules.Two
+        Me.QrCodeImgControl1.Size = New System.Drawing.Size(61, 54)
+        Me.QrCodeImgControl1.TabIndex = 32
+        Me.QrCodeImgControl1.TabStop = False
+        Me.QrCodeImgControl1.Text = "QrCodeImgControl1"
+        Me.QrCodeImgControl1.Visible = False
         '
         'lbmedida
         '
@@ -136,6 +149,44 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(139, 20)
         Me.txtCantidad.TabIndex = 28
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.lbmedida)
+        Me.GroupBox1.Controls.Add(Me.Label12)
+        Me.GroupBox1.Controls.Add(Me.txtNombreFac)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.txtnituab)
+        Me.GroupBox1.Controls.Add(Me.txtStock)
+        Me.GroupBox1.Controls.Add(Me.txtCantidad)
+        Me.GroupBox1.Controls.Add(Me.txtPrecioUnitario)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.btnBuscarProducto)
+        Me.GroupBox1.Controls.Add(Me.txtNombreProducto)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.txtIdProducto)
+        Me.GroupBox1.Controls.Add(Me.cbTipoDoc)
+        Me.GroupBox1.Controls.Add(Me.dtpFecha)
+        Me.GroupBox1.Controls.Add(Me.txtNombreCLiente)
+        Me.GroupBox1.Controls.Add(Me.btnGuardar)
+        Me.GroupBox1.Controls.Add(Me.btncancelar)
+        Me.GroupBox1.Controls.Add(Me.btnNuevo)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.txtNumDoc)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.txtidCliente)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.txtIdVenta)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(358, 384)
+        Me.GroupBox1.TabIndex = 9
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Mantenimiento"
         '
         'txtPrecioUnitario
         '
@@ -341,6 +392,59 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
         '
+        'datalistado
+        '
+        Me.datalistado.AllowUserToAddRows = False
+        Me.datalistado.AllowUserToDeleteRows = False
+        Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
+        Me.datalistado.Location = New System.Drawing.Point(6, 79)
+        Me.datalistado.Name = "datalistado"
+        Me.datalistado.ReadOnly = True
+        Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.datalistado.Size = New System.Drawing.Size(536, 221)
+        Me.datalistado.TabIndex = 0
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(381, 19)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(161, 52)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Cancelar Venta"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Inexistente
+        '
+        Me.Inexistente.AutoSize = True
+        Me.Inexistente.Location = New System.Drawing.Point(234, 203)
+        Me.Inexistente.Name = "Inexistente"
+        Me.Inexistente.Size = New System.Drawing.Size(94, 13)
+        Me.Inexistente.TabIndex = 3
+        Me.Inexistente.TabStop = True
+        Me.Inexistente.Text = "Datos Inexistentes"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Button2)
+        Me.GroupBox2.Controls.Add(Me.Button1)
+        Me.GroupBox2.Controls.Add(Me.lbnumAutor)
+        Me.GroupBox2.Controls.Add(Me.lbllave)
+        Me.GroupBox2.Controls.Add(Me.lbCC)
+        Me.GroupBox2.Controls.Add(Me.Label11)
+        Me.GroupBox2.Controls.Add(Me.txttotal)
+        Me.GroupBox2.Controls.Add(Me.QrCodeImgControl1)
+        Me.GroupBox2.Controls.Add(Me.btnquitar)
+        Me.GroupBox2.Controls.Add(Me.cbeliminar)
+        Me.GroupBox2.Controls.Add(Me.Inexistente)
+        Me.GroupBox2.Controls.Add(Me.datalistado)
+        Me.GroupBox2.Location = New System.Drawing.Point(367, 3)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(581, 384)
+        Me.GroupBox2.TabIndex = 10
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Listado de articulos de Venta"
+        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(381, 319)
@@ -398,19 +502,6 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.txttotal.Size = New System.Drawing.Size(100, 29)
         Me.txttotal.TabIndex = 34
         '
-        'QrCodeImgControl1
-        '
-        Me.QrCodeImgControl1.ErrorCorrectLevel = Gma.QrCodeNet.Encoding.ErrorCorrectionLevel.M
-        Me.QrCodeImgControl1.Image = CType(resources.GetObject("QrCodeImgControl1.Image"), System.Drawing.Image)
-        Me.QrCodeImgControl1.Location = New System.Drawing.Point(314, 16)
-        Me.QrCodeImgControl1.Name = "QrCodeImgControl1"
-        Me.QrCodeImgControl1.QuietZoneModule = Gma.QrCodeNet.Encoding.Windows.Render.QuietZoneModules.Two
-        Me.QrCodeImgControl1.Size = New System.Drawing.Size(61, 54)
-        Me.QrCodeImgControl1.TabIndex = 32
-        Me.QrCodeImgControl1.TabStop = False
-        Me.QrCodeImgControl1.Text = "QrCodeImgControl1"
-        Me.QrCodeImgControl1.Visible = False
-        '
         'btnquitar
         '
         Me.btnquitar.Location = New System.Drawing.Point(132, 36)
@@ -430,117 +521,27 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.cbeliminar.Text = "Eliminar"
         Me.cbeliminar.UseVisualStyleBackColor = True
         '
-        'Inexistente
-        '
-        Me.Inexistente.AutoSize = True
-        Me.Inexistente.Location = New System.Drawing.Point(234, 203)
-        Me.Inexistente.Name = "Inexistente"
-        Me.Inexistente.Size = New System.Drawing.Size(94, 13)
-        Me.Inexistente.TabIndex = 3
-        Me.Inexistente.TabStop = True
-        Me.Inexistente.Text = "Datos Inexistentes"
-        '
-        'datalistado
-        '
-        Me.datalistado.AllowUserToAddRows = False
-        Me.datalistado.AllowUserToDeleteRows = False
-        Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(6, 79)
-        Me.datalistado.Name = "datalistado"
-        Me.datalistado.ReadOnly = True
-        Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(536, 221)
-        Me.datalistado.TabIndex = 0
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.Button2)
-        Me.GroupBox2.Controls.Add(Me.Button1)
-        Me.GroupBox2.Controls.Add(Me.lbnumAutor)
-        Me.GroupBox2.Controls.Add(Me.lbllave)
-        Me.GroupBox2.Controls.Add(Me.lbCC)
-        Me.GroupBox2.Controls.Add(Me.Label11)
-        Me.GroupBox2.Controls.Add(Me.txttotal)
-        Me.GroupBox2.Controls.Add(Me.QrCodeImgControl1)
-        Me.GroupBox2.Controls.Add(Me.btnquitar)
-        Me.GroupBox2.Controls.Add(Me.cbeliminar)
-        Me.GroupBox2.Controls.Add(Me.Inexistente)
-        Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Location = New System.Drawing.Point(376, 9)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(581, 384)
-        Me.GroupBox2.TabIndex = 10
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Listado de articulos de Venta"
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(381, 19)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(161, 52)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Cancelar Venta"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.lbmedida)
-        Me.GroupBox1.Controls.Add(Me.Label12)
-        Me.GroupBox1.Controls.Add(Me.txtNombreFac)
-        Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Controls.Add(Me.txtnituab)
-        Me.GroupBox1.Controls.Add(Me.txtStock)
-        Me.GroupBox1.Controls.Add(Me.txtCantidad)
-        Me.GroupBox1.Controls.Add(Me.txtPrecioUnitario)
-        Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.btnBuscarProducto)
-        Me.GroupBox1.Controls.Add(Me.txtNombreProducto)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.txtIdProducto)
-        Me.GroupBox1.Controls.Add(Me.cbTipoDoc)
-        Me.GroupBox1.Controls.Add(Me.dtpFecha)
-        Me.GroupBox1.Controls.Add(Me.txtNombreCLiente)
-        Me.GroupBox1.Controls.Add(Me.btnGuardar)
-        Me.GroupBox1.Controls.Add(Me.btncancelar)
-        Me.GroupBox1.Controls.Add(Me.btnNuevo)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.txtNumDoc)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.txtidCliente)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.txtIdVenta)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 9)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(358, 384)
-        Me.GroupBox1.TabIndex = 9
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Mantenimiento"
-        '
-        'frmDetalleVentaPlanillaPostGrado
+        'frmDetalleVentaplanillaPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(973, 405)
-        Me.Controls.Add(Me.GroupBox2)
+        Me.ClientSize = New System.Drawing.Size(957, 405)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "frmDetalleVentaPlanillaPostGrado"
-        Me.Text = "frmDetalleVentaPlanillaPostGrado"
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Name = "frmDetalleVentaplanillaPostGrado"
+        Me.Text = "frmDetalleVentaplanillaPostGrado"
+        CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
+    Friend WithEvents QrCodeImgControl1 As Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl
     Friend WithEvents lbmedida As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
@@ -548,6 +549,7 @@ Partial Class frmDetalleVentaplanillaPostGrado
     Friend WithEvents txtnituab As System.Windows.Forms.TextBox
     Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
     Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents txtPrecioUnitario As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
@@ -571,18 +573,16 @@ Partial Class frmDetalleVentaplanillaPostGrado
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents datalistado As System.Windows.Forms.DataGridView
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents lbnumAutor As System.Windows.Forms.Label
     Friend WithEvents lbllave As System.Windows.Forms.Label
     Friend WithEvents lbCC As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents txttotal As System.Windows.Forms.TextBox
-    Friend WithEvents QrCodeImgControl1 As Gma.QrCodeNet.Encoding.Windows.Forms.QrCodeImgControl
     Friend WithEvents btnquitar As System.Windows.Forms.Button
     Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
-    Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
-    Friend WithEvents datalistado As System.Windows.Forms.DataGridView
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 End Class

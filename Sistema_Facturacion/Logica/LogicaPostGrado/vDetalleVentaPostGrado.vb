@@ -2,6 +2,7 @@
     Dim iddetalle_venta, idventa, idproducto As Integer
     Dim cantidad, precio_unitario As Double
     Dim imagen() As Byte
+    Dim validez As String
 
 
     Public Property giddedatlle_venta
@@ -57,24 +58,30 @@
             imagen = value
         End Set
     End Property
-
+    Public Property gvalidez
+        Get
+            Return validez
+        End Get
+        Set(value)
+            validez = value
+        End Set
+    End Property
 
     Public Sub New()
 
     End Sub
 
-    Public Sub New(ByVal iddetalle_venta As Integer, ByVal idventa As Integer, ByVal idproducto As Integer, ByVal cantidad As Double, ByVal precio_unitario As Double, ByVal imagen As Byte)
+    Public Sub New(ByVal iddetalle_venta As Integer, ByVal idventa As Integer, ByVal idproducto As Integer, ByVal cantidad As Double, ByVal precio_unitario As Double, ByVal imagen As Byte, ByVal validez As String)
         giddedatlle_venta = iddetalle_venta
         gidventa = idventa
         gidproducto = idproducto
         gcantidad = cantidad
         gprecio_unitario = precio_unitario
         gimagen = imagen
-
+        gvalidez = validez
     End Sub
 
     Private Function total()
         Return gcantidad * gprecio_unitario
     End Function
-
 End Class

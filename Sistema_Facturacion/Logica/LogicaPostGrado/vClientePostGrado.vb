@@ -1,5 +1,4 @@
 ﻿Public Class vClientePostGrado
-
     Dim idcliente As Integer
     Dim nombre, apellidos, direccion, telefono, ci As String
 
@@ -69,5 +68,4 @@
         gtelefono = telefono
         gci = ci
     End Sub
-
 End Class

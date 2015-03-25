@@ -15,10 +15,10 @@ Public Class frmDetalleVentaplanillaPostGrado
     Private Sub frmDetalleVentaplanillaPostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrarDVPlanilla()
         limpiar()
-        mostrarDatosImpuestos()
-
+        mostrardatosimpuestos()
 
     End Sub
+
     Public Sub mostrarDatosImpuestos()
         Dim dt1 As New DataTable
         Dim fdatosImp As New fDatosImpuestos
@@ -47,7 +47,7 @@ Public Class frmDetalleVentaplanillaPostGrado
         txttotal.Text = 0
 
         Try
-            Dim func As New fDetalleVentaPlanilla
+            Dim func As New fDetalleVentaPlanillaPostGrado
             dt = func.mostrarDVPlanilla
             datalistado.Columns.Item("Eliminar").Visible = False
 

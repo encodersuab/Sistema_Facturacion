@@ -22,12 +22,6 @@ Partial Class frmVentaPlanillaPostGrado
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.btnImprimirFacturaPlanilla = New System.Windows.Forms.Button()
-        Me.Inexistente = New System.Windows.Forms.LinkLabel()
-        Me.datalistado = New System.Windows.Forms.DataGridView()
-        Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtPago = New System.Windows.Forms.Label()
         Me.txtEstado = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -50,92 +44,16 @@ Partial Class frmVentaPlanillaPostGrado
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.GroupBox2.SuspendLayout()
+        Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.btnImprimirFacturaPlanilla = New System.Windows.Forms.Button()
+        Me.Inexistente = New System.Windows.Forms.LinkLabel()
+        Me.datalistado = New System.Windows.Forms.DataGridView()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.btnImprimirFacturaPlanilla)
-        Me.GroupBox2.Controls.Add(Me.Inexistente)
-        Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Location = New System.Drawing.Point(417, 12)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(496, 285)
-        Me.GroupBox2.TabIndex = 5
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Estado de ventas"
-        '
-        'btnImprimirFacturaPlanilla
-        '
-        Me.btnImprimirFacturaPlanilla.Location = New System.Drawing.Point(35, 34)
-        Me.btnImprimirFacturaPlanilla.Name = "btnImprimirFacturaPlanilla"
-        Me.btnImprimirFacturaPlanilla.Size = New System.Drawing.Size(444, 23)
-        Me.btnImprimirFacturaPlanilla.TabIndex = 4
-        Me.btnImprimirFacturaPlanilla.Text = "IMPRIMIR FACTURA DE VENTAS POR PLANILLA"
-        Me.btnImprimirFacturaPlanilla.UseVisualStyleBackColor = True
-        '
-        'Inexistente
-        '
-        Me.Inexistente.AutoSize = True
-        Me.Inexistente.Location = New System.Drawing.Point(216, 164)
-        Me.Inexistente.Name = "Inexistente"
-        Me.Inexistente.Size = New System.Drawing.Size(94, 13)
-        Me.Inexistente.TabIndex = 3
-        Me.Inexistente.TabStop = True
-        Me.Inexistente.Text = "Datos Inexistentes"
-        '
-        'datalistado
-        '
-        Me.datalistado.AllowUserToAddRows = False
-        Me.datalistado.AllowUserToDeleteRows = False
-        Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Enabled = False
-        Me.datalistado.Location = New System.Drawing.Point(35, 63)
-        Me.datalistado.Name = "datalistado"
-        Me.datalistado.ReadOnly = True
-        Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(444, 207)
-        Me.datalistado.TabIndex = 0
-        '
-        'eliminar
-        '
-        Me.eliminar.HeaderText = "Eliminar"
-        Me.eliminar.Name = "eliminar"
-        Me.eliminar.ReadOnly = True
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.txtPago)
-        Me.GroupBox1.Controls.Add(Me.txtEstado)
-        Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.Estado)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.txtNombreFac)
-        Me.GroupBox1.Controls.Add(Me.cbTipoDoc)
-        Me.GroupBox1.Controls.Add(Me.dtpFecha)
-        Me.GroupBox1.Controls.Add(Me.btnBuscarCliente)
-        Me.GroupBox1.Controls.Add(Me.txtNombreCLiente)
-        Me.GroupBox1.Controls.Add(Me.btnGuardar)
-        Me.GroupBox1.Controls.Add(Me.btnEditar)
-        Me.GroupBox1.Controls.Add(Me.btncancelar)
-        Me.GroupBox1.Controls.Add(Me.btnNuevo)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.txtNumDoc)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.txtidCliente)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.txtIdVenta)
-        Me.GroupBox1.Location = New System.Drawing.Point(16, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(395, 285)
-        Me.GroupBox1.TabIndex = 4
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Mantenimiento"
         '
         'txtPago
         '
@@ -331,28 +249,109 @@ Partial Class frmVentaPlanillaPostGrado
         Me.txtIdVenta.Size = New System.Drawing.Size(166, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'frmVentaPlanilla
+        'eliminar
+        '
+        Me.eliminar.HeaderText = "Eliminar"
+        Me.eliminar.Name = "eliminar"
+        Me.eliminar.ReadOnly = True
+        '
+        'btnImprimirFacturaPlanilla
+        '
+        Me.btnImprimirFacturaPlanilla.Location = New System.Drawing.Point(35, 34)
+        Me.btnImprimirFacturaPlanilla.Name = "btnImprimirFacturaPlanilla"
+        Me.btnImprimirFacturaPlanilla.Size = New System.Drawing.Size(444, 23)
+        Me.btnImprimirFacturaPlanilla.TabIndex = 4
+        Me.btnImprimirFacturaPlanilla.Text = "IMPRIMIR FACTURA DE VENTAS POR PLANILLA"
+        Me.btnImprimirFacturaPlanilla.UseVisualStyleBackColor = True
+        '
+        'Inexistente
+        '
+        Me.Inexistente.AutoSize = True
+        Me.Inexistente.Location = New System.Drawing.Point(216, 164)
+        Me.Inexistente.Name = "Inexistente"
+        Me.Inexistente.Size = New System.Drawing.Size(94, 13)
+        Me.Inexistente.TabIndex = 3
+        Me.Inexistente.TabStop = True
+        Me.Inexistente.Text = "Datos Inexistentes"
+        '
+        'datalistado
+        '
+        Me.datalistado.AllowUserToAddRows = False
+        Me.datalistado.AllowUserToDeleteRows = False
+        Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
+        Me.datalistado.Enabled = False
+        Me.datalistado.Location = New System.Drawing.Point(35, 63)
+        Me.datalistado.Name = "datalistado"
+        Me.datalistado.ReadOnly = True
+        Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.datalistado.Size = New System.Drawing.Size(444, 207)
+        Me.datalistado.TabIndex = 0
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.btnImprimirFacturaPlanilla)
+        Me.GroupBox2.Controls.Add(Me.Inexistente)
+        Me.GroupBox2.Controls.Add(Me.datalistado)
+        Me.GroupBox2.Location = New System.Drawing.Point(413, 12)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(496, 285)
+        Me.GroupBox2.TabIndex = 7
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Estado de ventas"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.txtPago)
+        Me.GroupBox1.Controls.Add(Me.txtEstado)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Estado)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.txtNombreFac)
+        Me.GroupBox1.Controls.Add(Me.cbTipoDoc)
+        Me.GroupBox1.Controls.Add(Me.dtpFecha)
+        Me.GroupBox1.Controls.Add(Me.btnBuscarCliente)
+        Me.GroupBox1.Controls.Add(Me.txtNombreCLiente)
+        Me.GroupBox1.Controls.Add(Me.btnGuardar)
+        Me.GroupBox1.Controls.Add(Me.btnEditar)
+        Me.GroupBox1.Controls.Add(Me.btncancelar)
+        Me.GroupBox1.Controls.Add(Me.btnNuevo)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.txtNumDoc)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.txtidCliente)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.txtIdVenta)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(395, 285)
+        Me.GroupBox1.TabIndex = 6
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'frmVentaPlanillaPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(925, 310)
+        Me.ClientSize = New System.Drawing.Size(921, 309)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "frmVentaPlanilla"
-        Me.Text = "frmVentaPlanilla"
+        Me.Name = "frmVentaPlanillaPostGrado"
+        Me.Text = "frmVentaPlanillaPostGrado"
+        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
-    Friend WithEvents datalistado As System.Windows.Forms.DataGridView
-    Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents txtPago As System.Windows.Forms.Label
+    Friend WithEvents txtEstado As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Estado As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
     Friend WithEvents cbTipoDoc As System.Windows.Forms.ComboBox
@@ -371,9 +370,10 @@ Partial Class frmVentaPlanillaPostGrado
     Friend WithEvents txtidCliente As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
+    Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents btnImprimirFacturaPlanilla As System.Windows.Forms.Button
-    Friend WithEvents txtPago As System.Windows.Forms.Label
-    Friend WithEvents txtEstado As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Estado As System.Windows.Forms.Label
+    Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
+    Friend WithEvents datalistado As System.Windows.Forms.DataGridView
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 End Class

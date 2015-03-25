@@ -1,11 +1,8 @@
 ﻿Public Class frmClientePostGrado
-
     Private dt As New DataTable
-    Private Sub frmClientePostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub frmCliebtePostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
     End Sub
-
     Public Sub limpiar()
         btnGuardar.Visible = True
         btnEditar.Visible = False
@@ -22,7 +19,19 @@
     Private Sub mostrar()
         Try
             Dim func As New fClientePostGrado
-            dt = func.mostrar
+            If txtFlag.Text = 2 Then
+                btnNuevo.Enabled = False
+                btnGuardar.Enabled = False
+                btnEditar.Enabled = False
+                dt = func.mostrarUAB
+
+            ElseIf txtFlag.Text = 1 Or txtFlag.Text = 0 Then
+                btnNuevo.Enabled = True
+                btnGuardar.Enabled = True
+                btnEditar.Enabled = True
+                dt = func.mostrar
+            End If
+
             datalistado.Columns.Item("Eliminar").Visible = False
 
             If dt.Rows.Count <> 0 Then
@@ -247,7 +256,6 @@
         If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then
             Dim chkcell As DataGridViewCheckBoxCell = Me.datalistado.Rows(e.RowIndex).Cells("Eliminar")
             chkcell.Value = Not chkcell.Value
-
         End If
     End Sub
 
@@ -266,10 +274,19 @@
             frmVentaPostGrado.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
             frmVentaPostGrado.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
             frmVentaPostGrado.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
+            txtFlag.Text = "0"
             Me.Close()
 
-
+        ElseIf txtFlag.Text = "2" Then
+            frmVentaPlanillaPostGrado.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
+            frmVentaPlanillaPostGrado.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
+            frmVentaPlanillaPostGrado.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
+            frmVentaPlanillaPostGrado.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
+            txtFlag.Text = "0"
+            Me.Close()
         End If
+
+
     End Sub
 
     Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
@@ -284,4 +301,6 @@
     Private Sub cbxListadoClientes_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
+
+
 End Class

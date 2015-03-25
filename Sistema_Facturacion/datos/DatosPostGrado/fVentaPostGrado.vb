@@ -40,6 +40,8 @@ Public Class fVentaPostGrado
             cmd.Parameters.AddWithValue("@tipo_documento", dts.Gtipo_documento)
             cmd.Parameters.AddWithValue("@num_documento", dts.Gnum_documento)
             cmd.Parameters.AddWithValue("@nombre_fac", dts.Gnombre_fac)
+            cmd.Parameters.AddWithValue("@estado", dts.Gestado)
+            cmd.Parameters.AddWithValue("@pago", dts.Gpago)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -66,6 +68,8 @@ Public Class fVentaPostGrado
             cmd.Parameters.AddWithValue("@tipo_documento", dts.Gtipo_documento)
             cmd.Parameters.AddWithValue("@num_documento", dts.Gnum_documento)
             cmd.Parameters.AddWithValue("@nombre_fac", dts.Gnombre_fac)
+            cmd.Parameters.AddWithValue("@estado", dts.Gestado)
+            cmd.Parameters.AddWithValue("@pago", dts.Gpago)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else

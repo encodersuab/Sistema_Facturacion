@@ -2,8 +2,8 @@
     Private dt As New DataTable
     Private Sub frmVentaPlanillaPostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrarVentaPlanilla()
-
     End Sub
+
 
     Public Sub limpiar()
         btnGuardar.Visible = True
@@ -21,7 +21,7 @@
 
     Private Sub mostrarVentaPlanilla()
         Try
-            Dim func As New fVentaPlanilla
+            Dim func As New fVentaPlanillaPostGrado
             dt = func.mostrarVentaPlanilla
             datalistado.Columns.Item("Eliminar").Visible = False
 
@@ -167,30 +167,31 @@
 
 
 
-        frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
-        frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
-        frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
-        frmDetalleVenta.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
-        frmDetalleVenta.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
-        frmDetalleVenta.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
-        frmDetalleVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
-        frmDetalleVenta.txtDD.Text = 1
-        frmDetalleVenta.ShowDialog()
+        frmDetalleVentaPostGrado.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        frmDetalleVentaPostGrado.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
+        frmDetalleVentaPostGrado.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
+        frmDetalleVentaPostGrado.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
+        frmDetalleVentaPostGrado.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
+        frmDetalleVentaPostGrado.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
+        frmDetalleVentaPostGrado.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
+        frmDetalleVentaPostGrado.txtDD.Text = 1
+
+        frmDetalleVentaPostGrado.ShowDialog()
 
     End Sub
     Private Sub cargar_detalle()
 
 
 
-        frmDetalleVentaplanilla.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
-        frmDetalleVentaplanilla.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
-        frmDetalleVentaplanilla.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
-        frmDetalleVentaplanilla.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
-        frmDetalleVentaplanilla.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
-        frmDetalleVentaplanilla.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
-        frmDetalleVentaplanilla.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
+        frmDetalleVentaplanillaPostGrado.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
+        frmDetalleVentaplanillaPostGrado.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
+        frmDetalleVentaplanillaPostGrado.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
+        frmDetalleVentaplanillaPostGrado.dtpFecha.Text = datalistado.SelectedCells.Item(5).Value
+        frmDetalleVentaplanillaPostGrado.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
+        frmDetalleVentaplanillaPostGrado.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
+        frmDetalleVentaplanillaPostGrado.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
 
-        frmDetalleVentaplanilla.ShowDialog()
+        frmDetalleVentaplanillaPostGrado.ShowDialog()
 
     End Sub
 
@@ -202,8 +203,8 @@
     End Sub
 
     Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
-        frmCliente.txtFlag.Text = "2"
-        frmCliente.ShowDialog()
+        frmClientePostGrado.txtFlag.Text = "2"
+        frmClientePostGrado.ShowDialog()
     End Sub
 
     Private Sub btnImprimirFacturaPlanilla_Click(sender As Object, e As EventArgs) Handles btnImprimirFacturaPlanilla.Click
@@ -279,6 +280,10 @@
     Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
         Me.Close()
     End Sub
+
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
+
+    End Sub
+
+
 End Class
-
-

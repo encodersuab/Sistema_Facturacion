@@ -1,8 +1,7 @@
 ﻿Public Class frmProductoPostGrado
-
     Private dt As New DataTable
     Private Sub frmProductoPostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If frmInicioF.lbrol.Text = "UsuarioPOSTGRADO" Then
+        If frmInicioF.lbrol.Text = "UsuarioEMFOPESBE" Then
             btnEditar.Enabled = False
             btnNuevo.Enabled = False
             btncategoria.Enabled = False
@@ -23,9 +22,7 @@
 
 
         mostrar()
-
     End Sub
-
     Public Sub limpiar()
         btnGuardar.Visible = True
         btnEditar.Visible = False
@@ -103,13 +100,13 @@
 
     End Sub
 
-    Private Sub txtNombre_Validated(sender As Object, e As EventArgs) Handles txtNombre.Validated
-        If DirectCast(sender, TextBox).Text.Length > 0 Then
-            Me.erroricono.SetError(sender, "")
-        Else
-            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
-        End If
-    End Sub
+    'Private Sub txtNombre_Validated(sender As Object, e As EventArgs) Handles txtNombre.Validated
+    '    If DirectCast(sender, TextBox).Text.Length > 0 Then
+    '        Me.erroricono.SetError(sender, "")
+    '    Else
+    '        Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+    '    End If
+    'End Sub
 
 
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
@@ -132,6 +129,7 @@
                 dts.gprecio_venta = txtprecio_venta.Text
                 dts.gfecha_vencimiento = txtfecha_vencimiento.Text
                 dts.gmodulo = cbbmodulo.Text
+                dts.gmedida = txtmedida.Text
 
                 Dim ms As New IO.MemoryStream()
                 If Not imagen.Image Is Nothing Then
@@ -184,6 +182,7 @@
                     dts.gprecio_venta = txtprecio_venta.Text
                     dts.gfecha_vencimiento = txtfecha_vencimiento.Text
                     dts.gmodulo = cbbmodulo.Text
+                    dts.gmedida = txtmedida.Text
                     Dim ms As New IO.MemoryStream()
                     If Not imagen.Image Is Nothing Then
                         imagen.Image.Save(ms, imagen.Image.RawFormat)
@@ -226,7 +225,7 @@
         txtprecio_venta.Text = datalistado.SelectedCells.Item(8).Value
         txtfecha_vencimiento.Text = datalistado.SelectedCells.Item(9).Value
         cbbmodulo.Text = datalistado.SelectedCells.Item(11).Value
-
+        txtmedida.Text = datalistado.SelectedCells.Item(12).Value
         imagen.BackgroundImage = Nothing
         Dim b() As Byte = datalistado.SelectedCells.Item(10).Value
         Dim ms As New IO.MemoryStream(b)
@@ -283,19 +282,39 @@
     End Sub
 
     Private Sub btncategoria_Click(sender As Object, e As EventArgs) Handles btncategoria.Click
-        frmCategoriaPostGrado.txtflag.Text = "1"
-        frmCategoriaPostGrado.ShowDialog()
+        frmCategoria.txtflag.Text = "1"
+        frmCategoria.ShowDialog()
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
-        If txtTag.Text = "1" Then
-            frmDetalleVentaPostGrado.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
-            frmDetalleVentaPostGrado.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
-            frmDetalleVentaPostGrado.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
-            frmDetalleVentaPostGrado.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+        Try
+            If txtTag.Text = "1" Then
+                frmDetalleVentaPostGrado.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+                frmDetalleVentaPostGrado.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                frmDetalleVentaPostGrado.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+                frmDetalleVentaPostGrado.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                frmDetalleVentaPostGrado.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
+                Me.Close()
 
-            Me.Close()
-        End If
+            Else
+                frmDetalleVentaplanillaPostGrado.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+                frmDetalleVentaplanillaPostGrado.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                frmDetalleVentaplanillaPostGrado.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+                frmDetalleVentaplanillaPostGrado.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                frmDetalleVentaplanillaPostGrado.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
+                Me.Close()
+
+
+            End If
+
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+
+
+
     End Sub
 
     Private Sub datalistado_CellErrorTextChanged(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellErrorTextChanged
@@ -370,4 +389,10 @@
             Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
         End If
     End Sub
+
+    Private Sub imagen_Click(sender As Object, e As EventArgs) Handles imagen.Click
+
+    End Sub
+
+
 End Class

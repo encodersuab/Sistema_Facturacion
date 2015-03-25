@@ -80,5 +80,4 @@
         gidventa = idventa
         gvalidez = validez
     End Sub
-
 End Class

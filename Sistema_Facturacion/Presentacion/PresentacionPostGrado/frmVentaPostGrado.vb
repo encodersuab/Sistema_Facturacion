@@ -11,6 +11,7 @@
         cbTipoDoc.Text = ""
         txtNumDoc.Text = ""
         txtIdVenta.Text = ""
+        txtNombreFac.Text = ""
         ' txtCi.Text = ""
 
     End Sub
@@ -72,8 +73,6 @@
         'datalistado.Columns(2).Visible = False
     End Sub
 
-
-
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
         limpiar()
         mostrar()
@@ -91,6 +90,8 @@
                 dts.Gtipo_documento = cbTipoDoc.Text
                 dts.Gnum_documento = txtNumDoc.Text
                 dts.Gnombre_fac = txtNombreFac.Text
+                dts.Gestado = 0
+                dts.Gpago = "CONTADO"
                 If func.insertar(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
@@ -198,6 +199,7 @@
         frmDetalleVentaPostGrado.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
         frmDetalleVentaPostGrado.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
         frmDetalleVentaPostGrado.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
+        frmDetalleVentaPostGrado.txtDD.Text = 0
         'frmDetalleVenta.txtidCliente.Text = txtidCliente.Text
         'frmDetalleVenta.txtIdVenta.Text = txtIdVenta.Text
         'frmDetalleVenta.txtNombreCLiente.Text = txtNombreCLiente.Text
@@ -216,6 +218,7 @@
     End Sub
 
     Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
+
         frmClientePostGrado.txtFlag.Text = "1"
         frmClientePostGrado.ShowDialog()
 
@@ -242,4 +245,10 @@
             Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
         End If
     End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs)
+
+    End Sub
+
+
 End Class

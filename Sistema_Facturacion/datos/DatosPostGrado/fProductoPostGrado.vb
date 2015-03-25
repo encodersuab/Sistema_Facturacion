@@ -44,6 +44,7 @@ Public Class fProductoPostGrado
             cmd.Parameters.AddWithValue("@fecha_vencimiento", dts.gfecha_vencimiento)
             cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
             cmd.Parameters.AddWithValue("@modulo", dts.gmodulo)
+            cmd.Parameters.AddWithValue("@medida", dts.gmedida)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -75,6 +76,7 @@ Public Class fProductoPostGrado
             cmd.Parameters.AddWithValue("@fecha_vencimiento", dts.gfecha_vencimiento)
             cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
             cmd.Parameters.AddWithValue("@modulo", dts.gmodulo)
+            cmd.Parameters.AddWithValue("@medida", dts.gmedida)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -88,7 +90,7 @@ Public Class fProductoPostGrado
             desconectado()
         End Try
     End Function
-    Public Function eliminar(ByVal dts As vProductoREDRUBI) As Boolean
+    Public Function eliminar(ByVal dts As vProductoPostGrado) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("eliminar_producto")
