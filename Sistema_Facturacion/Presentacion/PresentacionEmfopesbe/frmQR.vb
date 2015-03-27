@@ -197,8 +197,8 @@
 
                     If marcado Then
                         Dim onekey As Integer = Convert.ToInt32(row.Cells("idcliente").Value)
-                        Dim vdb As New vDetalleVentaCAMPOFERIAL
-                        Dim func As New fDetalleVentaCAMPOFERIAL
+                        Dim vdb As New vDetalleVenta
+                        Dim func As New fDetalleVenta
                         vdb.giddedatlle_venta = onekey
 
                         If func.eliminar(vdb) Then
@@ -393,10 +393,10 @@
                 Try
                     Dim dts As New vQr
                     Dim func As New fQr
-                    Dim dts1 As New vDetalleVentaCAMPOFERIAL
-                    Dim func1 As New fDetalleVentaCAMPOFERIAL
-                    Dim dts2 As New vDetalleVentaCAMPOFERIAL
-                    Dim func2 As New fDetalleVentaCAMPOFERIAL
+                    Dim dts1 As New vDetalleVenta
+                    Dim func1 As New fDetalleVenta
+                    Dim dts2 As New vDetalleVenta
+                    Dim func2 As New fDetalleVenta
 
                     dts.gIDCodQr = txtIDCodQr.Text
                     dts.gNit_Emisor = txtNit_Emisor.Text

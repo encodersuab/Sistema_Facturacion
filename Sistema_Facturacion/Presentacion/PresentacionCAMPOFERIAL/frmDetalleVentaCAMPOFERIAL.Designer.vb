@@ -42,15 +42,15 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lbmedida = New System.Windows.Forms.Label()
-        Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
+        Me.txtStock = New System.Windows.Forms.NumericUpDown()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtnituab = New System.Windows.Forms.TextBox()
-        Me.txtStock = New System.Windows.Forms.NumericUpDown()
         Me.txtPrecioUnitario = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnBuscarProducto = New System.Windows.Forms.Button()
         Me.txtNombreProducto = New System.Windows.Forms.TextBox()
@@ -75,8 +75,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'erroricono
@@ -285,15 +285,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.lbmedida.Size = New System.Drawing.Size(0, 13)
         Me.lbmedida.TabIndex = 35
         '
-        'txtCantidad
-        '
-        Me.txtCantidad.DecimalPlaces = 3
-        Me.txtCantidad.Location = New System.Drawing.Point(144, 259)
-        Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
-        Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(134, 20)
-        Me.txtCantidad.TabIndex = 29
-        '
         'Label12
         '
         Me.Label12.AutoSize = True
@@ -311,6 +302,33 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtNombreFac.Name = "txtNombreFac"
         Me.txtNombreFac.Size = New System.Drawing.Size(173, 20)
         Me.txtNombreFac.TabIndex = 33
+        '
+        'txtStock
+        '
+        Me.txtStock.Enabled = False
+        Me.txtStock.Location = New System.Drawing.Point(142, 285)
+        Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
+        Me.txtStock.Name = "txtStock"
+        Me.txtStock.Size = New System.Drawing.Size(173, 20)
+        Me.txtStock.TabIndex = 29
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(88, 285)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(35, 13)
+        Me.Label8.TabIndex = 25
+        Me.Label8.Text = "Stock"
+        '
+        'txtCantidad
+        '
+        Me.txtCantidad.DecimalPlaces = 3
+        Me.txtCantidad.Location = New System.Drawing.Point(144, 259)
+        Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
+        Me.txtCantidad.Name = "txtCantidad"
+        Me.txtCantidad.Size = New System.Drawing.Size(134, 20)
+        Me.txtCantidad.TabIndex = 29
         '
         'Label10
         '
@@ -330,15 +348,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtnituab.Size = New System.Drawing.Size(173, 20)
         Me.txtnituab.TabIndex = 31
         '
-        'txtStock
-        '
-        Me.txtStock.Enabled = False
-        Me.txtStock.Location = New System.Drawing.Point(142, 285)
-        Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
-        Me.txtStock.Name = "txtStock"
-        Me.txtStock.Size = New System.Drawing.Size(173, 20)
-        Me.txtStock.TabIndex = 29
-        '
         'txtPrecioUnitario
         '
         Me.txtPrecioUnitario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
@@ -355,15 +364,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.Label9.Size = New System.Drawing.Size(78, 13)
         Me.Label9.TabIndex = 26
         Me.Label9.Text = "PRecioUnitario"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(88, 285)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(35, 13)
-        Me.Label8.TabIndex = 25
-        Me.Label8.Text = "Stock"
         '
         'Label7
         '
@@ -541,7 +541,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1297, 422)
+        Me.ClientSize = New System.Drawing.Size(973, 422)
+        Me.ControlBox = False
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -554,8 +555,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
