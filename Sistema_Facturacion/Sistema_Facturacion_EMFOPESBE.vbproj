@@ -160,6 +160,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmCategoriaCAMPOFERIAL.Designer.vb">
+      <DependentUpon>frmCategoriaCAMPOFERIAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmCategoriaCAMPOFERIAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmClienteCAMPOFERIAL.Designer.vb">
       <DependentUpon>frmClienteCAMPOFERIAL.vb</DependentUpon>
     </Compile>
@@ -419,6 +425,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmCategoriaCAMPOFERIAL.resx">
+      <DependentUpon>frmCategoriaCAMPOFERIAL.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmClienteCAMPOFERIAL.resx">
       <DependentUpon>frmClienteCAMPOFERIAL.vb</DependentUpon>

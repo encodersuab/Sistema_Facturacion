@@ -26,13 +26,10 @@ Partial Class frmProductoCAMPOFERIAL
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtTag = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.cbbModulo = New System.Windows.Forms.Label()
-        Me.txtmedida = New System.Windows.Forms.ComboBox()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.btnlimpiar = New System.Windows.Forms.PictureBox()
-        Me.btncargar = New System.Windows.Forms.PictureBox()
-        Me.imagen = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtfecha_vencimiento = New System.Windows.Forms.DateTimePicker()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -46,16 +43,18 @@ Partial Class frmProductoCAMPOFERIAL
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtprecio_venta = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtprecio_compra = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtstock = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtdescripcion = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdproducto = New System.Windows.Forms.TextBox()
+        Me.txtmedida = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtprecio_compra = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtstock = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
@@ -63,13 +62,16 @@ Partial Class frmProductoCAMPOFERIAL
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.dlg = New System.Windows.Forms.OpenFileDialog()
+        Me.btnlimpiar = New System.Windows.Forms.PictureBox()
+        Me.btncargar = New System.Windows.Forms.PictureBox()
+        Me.imagen = New System.Windows.Forms.PictureBox()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btncargar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
-        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'erroricono
@@ -78,20 +80,22 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'txtTag
         '
-        Me.txtTag.Location = New System.Drawing.Point(268, -3)
+        Me.txtTag.Location = New System.Drawing.Point(254, -2)
         Me.txtTag.Name = "txtTag"
         Me.txtTag.Size = New System.Drawing.Size(140, 20)
         Me.txtTag.TabIndex = 29
         Me.txtTag.Text = "0"
-        Me.txtTag.Visible = False
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.cbbModulo)
-        Me.GroupBox1.Controls.Add(Me.txtmedida)
-        Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.btnlimpiar)
+        Me.GroupBox1.Controls.Add(Me.txtstock)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.txtprecio_venta)
         Me.GroupBox1.Controls.Add(Me.btncargar)
         Me.GroupBox1.Controls.Add(Me.imagen)
         Me.GroupBox1.Controls.Add(Me.Label9)
@@ -106,11 +110,6 @@ Partial Class frmProductoCAMPOFERIAL
         Me.GroupBox1.Controls.Add(Me.btncancelar)
         Me.GroupBox1.Controls.Add(Me.btnNuevo)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.txtprecio_venta)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.txtprecio_compra)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.txtstock)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.txtdescripcion)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -124,78 +123,47 @@ Partial Class frmProductoCAMPOFERIAL
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"LIBRE", "ALQUILADO"})
+        Me.ComboBox1.Location = New System.Drawing.Point(154, 259)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(172, 21)
+        Me.ComboBox1.TabIndex = 32
+        Me.ComboBox1.Text = "LIBRE"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(97, 262)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(40, 13)
+        Me.Label12.TabIndex = 31
+        Me.Label12.Text = "Estado"
+        '
         'cbbModulo
         '
         Me.cbbModulo.AutoSize = True
-        Me.cbbModulo.Location = New System.Drawing.Point(151, 260)
+        Me.cbbModulo.Location = New System.Drawing.Point(151, 209)
         Me.cbbModulo.Name = "cbbModulo"
         Me.cbbModulo.Size = New System.Drawing.Size(85, 13)
         Me.cbbModulo.TabIndex = 30
         Me.cbbModulo.Text = "CAMPO-FERIAL"
         '
-        'txtmedida
-        '
-        Me.txtmedida.FormattingEnabled = True
-        Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
-        Me.txtmedida.Location = New System.Drawing.Point(154, 284)
-        Me.txtmedida.Name = "txtmedida"
-        Me.txtmedida.Size = New System.Drawing.Size(121, 21)
-        Me.txtmedida.TabIndex = 29
-        Me.txtmedida.Text = "UNIDAD"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(95, 287)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(42, 13)
-        Me.Label11.TabIndex = 28
-        Me.Label11.Text = "Medida"
-        '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(95, 260)
+        Me.Label10.Location = New System.Drawing.Point(95, 209)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(42, 13)
         Me.Label10.TabIndex = 27
         Me.Label10.Text = "Modulo"
         '
-        'btnlimpiar
-        '
-        Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
-        Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(331, 387)
-        Me.btnlimpiar.Name = "btnlimpiar"
-        Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
-        Me.btnlimpiar.TabIndex = 25
-        Me.btnlimpiar.TabStop = False
-        '
-        'btncargar
-        '
-        Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
-        Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(331, 333)
-        Me.btncargar.Name = "btncargar"
-        Me.btncargar.Size = New System.Drawing.Size(45, 48)
-        Me.btncargar.TabIndex = 24
-        Me.btncargar.TabStop = False
-        '
-        'imagen
-        '
-        Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(154, 312)
-        Me.imagen.Name = "imagen"
-        Me.imagen.Size = New System.Drawing.Size(171, 133)
-        Me.imagen.TabIndex = 23
-        Me.imagen.TabStop = False
-        '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(95, 312)
+        Me.Label9.Location = New System.Drawing.Point(95, 292)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 22
@@ -204,7 +172,7 @@ Partial Class frmProductoCAMPOFERIAL
         'txtfecha_vencimiento
         '
         Me.txtfecha_vencimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.txtfecha_vencimiento.Location = New System.Drawing.Point(154, 231)
+        Me.txtfecha_vencimiento.Location = New System.Drawing.Point(154, 182)
         Me.txtfecha_vencimiento.Name = "txtfecha_vencimiento"
         Me.txtfecha_vencimiento.Size = New System.Drawing.Size(100, 20)
         Me.txtfecha_vencimiento.TabIndex = 21
@@ -212,7 +180,7 @@ Partial Class frmProductoCAMPOFERIAL
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(25, 237)
+        Me.Label8.Location = New System.Drawing.Point(25, 185)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(112, 13)
         Me.Label8.TabIndex = 20
@@ -254,7 +222,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(167, 454)
+        Me.btnGuardar.Location = New System.Drawing.Point(161, 454)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -263,7 +231,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(167, 454)
+        Me.btnEditar.Location = New System.Drawing.Point(161, 454)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -272,7 +240,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(252, 454)
+        Me.btncancelar.Location = New System.Drawing.Point(246, 454)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -281,7 +249,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(83, 454)
+        Me.btnNuevo.Location = New System.Drawing.Point(77, 454)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -291,53 +259,19 @@ Partial Class frmProductoCAMPOFERIAL
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(54, 208)
+        Me.Label6.Location = New System.Drawing.Point(63, 156)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(83, 13)
+        Me.Label6.Size = New System.Drawing.Size(74, 13)
         Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Precio de Venta"
+        Me.Label6.Text = "Precio Alquiler"
         '
         'txtprecio_venta
         '
         Me.txtprecio_venta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtprecio_venta.Location = New System.Drawing.Point(154, 205)
+        Me.txtprecio_venta.Location = New System.Drawing.Point(153, 156)
         Me.txtprecio_venta.Name = "txtprecio_venta"
         Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
         Me.txtprecio_venta.TabIndex = 10
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(46, 182)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(91, 13)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Precio de Compra"
-        '
-        'txtprecio_compra
-        '
-        Me.txtprecio_compra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtprecio_compra.Location = New System.Drawing.Point(154, 179)
-        Me.txtprecio_compra.Name = "txtprecio_compra"
-        Me.txtprecio_compra.Size = New System.Drawing.Size(56, 20)
-        Me.txtprecio_compra.TabIndex = 8
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(102, 156)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 13)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Stock"
-        '
-        'txtstock
-        '
-        Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtstock.Location = New System.Drawing.Point(154, 153)
-        Me.txtstock.Name = "txtstock"
-        Me.txtstock.Size = New System.Drawing.Size(56, 20)
-        Me.txtstock.TabIndex = 6
         '
         'Label3
         '
@@ -392,6 +326,59 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtIdproducto.Name = "txtIdproducto"
         Me.txtIdproducto.Size = New System.Drawing.Size(172, 20)
         Me.txtIdproducto.TabIndex = 0
+        '
+        'txtmedida
+        '
+        Me.txtmedida.FormattingEnabled = True
+        Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
+        Me.txtmedida.Location = New System.Drawing.Point(965, 97)
+        Me.txtmedida.Name = "txtmedida"
+        Me.txtmedida.Size = New System.Drawing.Size(121, 21)
+        Me.txtmedida.TabIndex = 29
+        Me.txtmedida.Text = "UNIDAD"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(906, 100)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(42, 13)
+        Me.Label11.TabIndex = 28
+        Me.Label11.Text = "Medida"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(858, 71)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(91, 13)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "Precio de Compra"
+        '
+        'txtprecio_compra
+        '
+        Me.txtprecio_compra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtprecio_compra.Location = New System.Drawing.Point(881, 168)
+        Me.txtprecio_compra.Name = "txtprecio_compra"
+        Me.txtprecio_compra.Size = New System.Drawing.Size(172, 20)
+        Me.txtprecio_compra.TabIndex = 8
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(102, 234)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(35, 13)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Stock"
+        '
+        'txtstock
+        '
+        Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtstock.Location = New System.Drawing.Point(154, 231)
+        Me.txtstock.Name = "txtstock"
+        Me.txtstock.Size = New System.Drawing.Size(56, 20)
+        Me.txtstock.TabIndex = 6
         '
         'GroupBox2
         '
@@ -454,27 +441,62 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'dlg
         '
-        Me.dlg.FileName = "dlg"
+        Me.dlg.FileName = "OpenFileDialog1"
+        '
+        'btnlimpiar
+        '
+        Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
+        Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnlimpiar.Location = New System.Drawing.Point(331, 367)
+        Me.btnlimpiar.Name = "btnlimpiar"
+        Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
+        Me.btnlimpiar.TabIndex = 25
+        Me.btnlimpiar.TabStop = False
+        '
+        'btncargar
+        '
+        Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
+        Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btncargar.Location = New System.Drawing.Point(331, 313)
+        Me.btncargar.Name = "btncargar"
+        Me.btncargar.Size = New System.Drawing.Size(45, 48)
+        Me.btncargar.TabIndex = 24
+        Me.btncargar.TabStop = False
+        '
+        'imagen
+        '
+        Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
+        Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
+        Me.imagen.Location = New System.Drawing.Point(154, 292)
+        Me.imagen.Name = "imagen"
+        Me.imagen.Size = New System.Drawing.Size(171, 133)
+        Me.imagen.TabIndex = 23
+        Me.imagen.TabStop = False
         '
         'frmProductoCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(934, 564)
+        Me.ClientSize = New System.Drawing.Size(1065, 522)
         Me.Controls.Add(Me.txtTag)
+        Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txtprecio_compra)
         Me.Name = "frmProductoCAMPOFERIAL"
         Me.Text = ".:. productos CAMPOFERIAL .:. "
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btncargar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imagen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btncargar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imagen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -517,7 +539,9 @@ Partial Class frmProductoCAMPOFERIAL
     Friend WithEvents cbxListadoClientes As System.Windows.Forms.ComboBox
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
-    'Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
+    '   Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
     Friend WithEvents cbbModulo As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
 End Class
