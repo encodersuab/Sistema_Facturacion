@@ -162,11 +162,9 @@ D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Siste
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.Resources.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVentaplanilla.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVentaPlanilla.resources
-D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmCategoriaPostGrado.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmClientePostGrado.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVentaPostGrado.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmProductoPostGrado.resources
-D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmUsuarioPostGrado.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVentaPostGrado.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmCategoriaREDRUBI.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmClienteREDRUBI.resources
@@ -217,3 +215,4 @@ D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\De
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVentaPostGrado.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVentaplanillaPostGrado.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmProductoPostGrado.resources
+D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmCategoriaCAMPOFERIAL.resources
