@@ -282,8 +282,8 @@
     End Sub
 
     Private Sub btncategoria_Click(sender As Object, e As EventArgs) Handles btncategoria.Click
-        frmCategoria.txtflag.Text = "1"
-        frmCategoria.ShowDialog()
+        frmCategoriaPostGrado.txtflag.Text = "1"
+        frmCategoriaPostGrado.ShowDialog()
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick

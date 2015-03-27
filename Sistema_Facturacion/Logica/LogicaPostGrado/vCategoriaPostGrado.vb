@@ -1,5 +1,5 @@
 ﻿Imports System.Data.SqlClient
-Public Class vCategoriaREDRUBI
+Public Class vCategoriaPostGrado
     Dim idcategoria As Integer
     Dim nombre_categoria As String
 

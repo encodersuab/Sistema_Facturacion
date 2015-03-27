@@ -1,10 +1,8 @@
-﻿Public Class vDetalleVentaREDRUBI
-    Dim iddetalle_venta, idventa, idproducto As Integer
+﻿Public Class vDetalleVentaPlanillaREDRUBI
+    Dim iddetalle_venta, idventa, idventaplanilla, idproducto As Integer
     Dim cantidad, precio_unitario As Double
     Dim imagen() As Byte
     Dim validez As String
-
-
     Public Property giddedatlle_venta
 
         Get
@@ -50,38 +48,36 @@
             precio_unitario = value
         End Set
     End Property
-    Public Property gimagen
+    Public Property gidventaplanilla
+
         Get
-            Return imagen
+            Return idventaplanilla
         End Get
-        Set(value)
-            imagen = value
+        Set(ByVal value)
+            idventaplanilla = value
         End Set
     End Property
     Public Property gvalidez
+
         Get
             Return validez
         End Get
-        Set(value)
+        Set(ByVal value)
             validez = value
         End Set
     End Property
-
     Public Sub New()
 
     End Sub
 
-    Public Sub New(ByVal iddetalle_venta As Integer, ByVal idventa As Integer, ByVal idproducto As Integer, ByVal cantidad As Double, ByVal precio_unitario As Double, ByVal imagen As Byte, ByVal validez As String)
+
+    Public Sub New(ByVal iddetalle_venta As Integer, ByVal idventa As Integer, ByVal idproducto As Integer, ByVal cantidad As Double, ByVal precio_unitario As Double, ByVal iddetalleventa As Integer, ByVal validez As String)
         giddedatlle_venta = iddetalle_venta
-        gidventa = idventa
+        gidventaplanilla = idventaplanilla
         gidproducto = idproducto
         gcantidad = cantidad
         gprecio_unitario = precio_unitario
-        gimagen = imagen
+        gidventa = idventa
         gvalidez = validez
     End Sub
-
-    Private Function total()
-        Return gcantidad * gprecio_unitario
-    End Function
 End Class

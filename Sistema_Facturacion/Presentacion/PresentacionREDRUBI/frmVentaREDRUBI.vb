@@ -1,8 +1,9 @@
 ﻿Public Class frmVentaREDRUBI
     Private dt As New DataTable
-    Private Sub frmVenta_LoadREDRUBI(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmVentaREDRUBI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
     End Sub
+
     Public Sub limpiar()
         btnGuardar.Visible = True
         btnEditar.Visible = False
@@ -11,6 +12,7 @@
         cbTipoDoc.Text = ""
         txtNumDoc.Text = ""
         txtIdVenta.Text = ""
+        txtNombreFac.Text = ""
         ' txtCi.Text = ""
 
     End Sub
@@ -39,7 +41,7 @@
         btnNuevo.Visible = True
         btnEditar.Visible = False
 
-        '      Buscar()
+        '       Buscar()
 
     End Sub
 
@@ -72,8 +74,6 @@
         'datalistado.Columns(2).Visible = False
     End Sub
 
-
-
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
         limpiar()
         mostrar()
@@ -91,6 +91,8 @@
                 dts.Gtipo_documento = cbTipoDoc.Text
                 dts.Gnum_documento = txtNumDoc.Text
                 dts.Gnombre_fac = txtNombreFac.Text
+                dts.Gestado = 0
+                dts.Gpago = "CONTADO"
                 If func.insertar(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
@@ -170,10 +172,10 @@
     End Sub
 
     Private Sub datalistado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellContentClick
-        If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then
-            Dim chkcell As DataGridViewCheckBoxCell = Me.datalistado.Rows(e.RowIndex).Cells("Eliminar")
-            chkcell.Value = Not chkcell.Value
-        End If
+        'If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then
+        '    Dim chkcell As DataGridViewCheckBoxCell = Me.datalistado.Rows(e.RowIndex).Cells("Eliminar")
+        '    chkcell.Value = Not chkcell.Value
+        'End If
     End Sub
 
 
@@ -198,6 +200,7 @@
         frmDetalleVentaREDRUBI.cbTipoDoc.Text = datalistado.SelectedCells.Item(6).Value
         frmDetalleVentaREDRUBI.txtNumDoc.Text = datalistado.SelectedCells.Item(7).Value
         frmDetalleVentaREDRUBI.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
+        frmDetalleVentaREDRUBI.txtDD.Text = 0
         'frmDetalleVenta.txtidCliente.Text = txtidCliente.Text
         'frmDetalleVenta.txtIdVenta.Text = txtIdVenta.Text
         'frmDetalleVenta.txtNombreCLiente.Text = txtNombreCLiente.Text
@@ -205,11 +208,13 @@
         'frmDetalleVenta.cbTipoDoc.Text = cbTipoDoc.Text
         'frmDetalleVenta.txtNumDoc.Text = txtNumDoc.Text
         'frmDetalleVenta.txtNombreFac.Text = txtNombreFac.Text
+
         frmDetalleVentaREDRUBI.ShowDialog()
+
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
-        cargar_detalle()
+        'cargar_detalle()
 
     End Sub
 
@@ -239,5 +244,9 @@
         Else
             Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
         End If
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs)
+
     End Sub
 End Class

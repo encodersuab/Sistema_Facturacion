@@ -144,7 +144,7 @@ Public Class fDetalleVenta
         End Try
     End Function
 
-    Public Function mostrarCantidadXidventa(ByVal dts As vDetalleVentaCAMPOFERIAL) As Double
+    Public Function mostrarCantidadXidventa(ByVal dts As vDetalleVenta) As Double
         Try
             conectado()
             cmd = New SqlCommand("mostrar_idproductoCAntidad")
@@ -181,7 +181,7 @@ Public Class fDetalleVenta
         End Try
     End Function
 
-    Public Function validezDetallaVenta(ByVal dts As vDetalleVentaCAMPOFERIAL) As Boolean
+    Public Function validezDetallaVenta(ByVal dts As vDetalleVenta) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("eliminar_detalle_venta")

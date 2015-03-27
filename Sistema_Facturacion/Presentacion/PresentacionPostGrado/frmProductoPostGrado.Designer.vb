@@ -36,7 +36,6 @@ Partial Class frmProductoPostGrado
         Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.dlg = New System.Windows.Forms.OpenFileDialog()
         Me.btncategoria = New System.Windows.Forms.Button()
         Me.txtnom_categoria = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -63,6 +62,7 @@ Partial Class frmProductoPostGrado
         Me.btnlimpiar = New System.Windows.Forms.PictureBox()
         Me.btncargar = New System.Windows.Forms.PictureBox()
         Me.imagen = New System.Windows.Forms.PictureBox()
+        Me.dlg = New System.Windows.Forms.OpenFileDialog()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -194,10 +194,6 @@ Partial Class frmProductoPostGrado
         Me.eliminar.HeaderText = "Eliminar"
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
-        '
-        'dlg
-        '
-        Me.dlg.FileName = "dlg"
         '
         'btncategoria
         '
@@ -457,6 +453,10 @@ Partial Class frmProductoPostGrado
         Me.imagen.TabIndex = 23
         Me.imagen.TabStop = False
         '
+        'dlg
+        '
+        Me.dlg.FileName = "dlg"
+        '
         'frmProductoPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -496,7 +496,6 @@ Partial Class frmProductoPostGrado
     Friend WithEvents cbxListadoClientes As System.Windows.Forms.ComboBox
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
     Friend WithEvents btncategoria As System.Windows.Forms.Button
     Friend WithEvents txtnom_categoria As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
@@ -520,4 +519,5 @@ Partial Class frmProductoPostGrado
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents txtIdproducto As System.Windows.Forms.TextBox
+    Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
 End Class

@@ -1,8 +1,7 @@
 ﻿Public Class frmProductoREDRUBI
-
     Private dt As New DataTable
-    Private Sub frmProductoREDRUBI_LoadREDRUBI(sender As Object, e As EventArgs) Handles MyBase.Load
-        If frmInicioF.lbrol.Text = "UsuarioREDRUBI" Then
+    Private Sub frmProductoREDRUBI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If frmInicioF.lbrol.Text = "UsuarioEMFOPESBE" Then
             btnEditar.Enabled = False
             btnNuevo.Enabled = False
             btncategoria.Enabled = False
@@ -103,13 +102,13 @@
 
     End Sub
 
-    Private Sub txtNombre_Validated(sender As Object, e As EventArgs) Handles txtNombre.Validated
-        If DirectCast(sender, TextBox).Text.Length > 0 Then
-            Me.erroricono.SetError(sender, "")
-        Else
-            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
-        End If
-    End Sub
+    'Private Sub txtNombre_Validated(sender As Object, e As EventArgs) Handles txtNombre.Validated
+    '    If DirectCast(sender, TextBox).Text.Length > 0 Then
+    '        Me.erroricono.SetError(sender, "")
+    '    Else
+    '        Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+    '    End If
+    'End Sub
 
 
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
@@ -132,6 +131,7 @@
                 dts.gprecio_venta = txtprecio_venta.Text
                 dts.gfecha_vencimiento = txtfecha_vencimiento.Text
                 dts.gmodulo = cbbmodulo.Text
+                dts.gmedida = txtmedida.Text
 
                 Dim ms As New IO.MemoryStream()
                 If Not imagen.Image Is Nothing Then
@@ -184,6 +184,7 @@
                     dts.gprecio_venta = txtprecio_venta.Text
                     dts.gfecha_vencimiento = txtfecha_vencimiento.Text
                     dts.gmodulo = cbbmodulo.Text
+                    dts.gmedida = txtmedida.Text
                     Dim ms As New IO.MemoryStream()
                     If Not imagen.Image Is Nothing Then
                         imagen.Image.Save(ms, imagen.Image.RawFormat)
@@ -226,7 +227,7 @@
         txtprecio_venta.Text = datalistado.SelectedCells.Item(8).Value
         txtfecha_vencimiento.Text = datalistado.SelectedCells.Item(9).Value
         cbbmodulo.Text = datalistado.SelectedCells.Item(11).Value
-
+        txtmedida.Text = datalistado.SelectedCells.Item(12).Value
         imagen.BackgroundImage = Nothing
         Dim b() As Byte = datalistado.SelectedCells.Item(10).Value
         Dim ms As New IO.MemoryStream(b)
@@ -288,14 +289,34 @@
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
-        If txtTag.Text = "1" Then
-            frmDetalleVentaREDRUBI.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
-            frmDetalleVentaREDRUBI.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
-            frmDetalleVentaREDRUBI.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
-            frmDetalleVentaREDRUBI.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+        Try
+            If txtTag.Text = "1" Then
+                frmDetalleVentaREDRUBI.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+                frmDetalleVentaREDRUBI.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                frmDetalleVentaREDRUBI.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+                frmDetalleVentaREDRUBI.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                frmDetalleVentaREDRUBI.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
+                Me.Close()
 
-            Me.Close()
-        End If
+            Else
+                frmDetalleVentaplanillaREDRUBI.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+                frmDetalleVentaplanillaREDRUBI.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                frmDetalleVentaplanillaREDRUBI.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+                frmDetalleVentaplanillaREDRUBI.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                frmDetalleVentaplanillaREDRUBI.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
+                Me.Close()
+
+
+            End If
+
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+
+
+
     End Sub
 
     Private Sub datalistado_CellErrorTextChanged(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellErrorTextChanged
@@ -370,4 +391,9 @@
             Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
         End If
     End Sub
+
+    Private Sub imagen_Click(sender As Object, e As EventArgs) Handles imagen.Click
+
+    End Sub
+
 End Class
