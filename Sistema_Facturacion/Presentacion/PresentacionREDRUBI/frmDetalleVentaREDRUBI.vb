@@ -10,15 +10,17 @@ Imports System.Data.SqlClient
 Imports System.IO
 Imports System.Drawing.Imaging
 Imports System
-Partial Public Class frmDetalleVentaREDRUBI
+Public Class frmDetalleVentaREDRUBI
     Private dt As New DataTable
-    Private Sub frmDetalleVentaREDRUBI_LoadREDRUBI(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmDetalleVentaREDRUBI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
         QrCodeImgControl1.Visible = False
         limpiar()
         mostrarDatosImpuestos()
 
+        '  txtIdVenta.Text = datalistado.SelectedCells.Item(8).Value
     End Sub
+
 
     Public Sub mostrarDatosImpuestos()
         Dim dt1 As New DataTable
@@ -36,8 +38,25 @@ Partial Public Class frmDetalleVentaREDRUBI
         txtPrecioUnitario.Text = ""
         txtCantidad.Text = 0
         txtStock.Text = 0
-
-
+        If txtDD.Text = 1 Then
+            Button2.Enabled = False
+            btnBuscarProducto.Enabled = False
+            txtCantidad.Enabled = False
+            txtPrecioUnitario.Enabled = False
+            lbmedida.Visible = False
+            btncancelar.Enabled = False
+            btnGuardar.Enabled = False
+            btnNuevo.Enabled = False
+        Else
+            Button2.Enabled = True
+            btnBuscarProducto.Enabled = True
+            txtCantidad.Enabled = True
+            txtPrecioUnitario.Enabled = True
+            lbmedida.Visible = True
+            btncancelar.Enabled = True
+            btnGuardar.Enabled = True
+            btnNuevo.Enabled = True
+        End If
 
     End Sub
 
@@ -47,6 +66,9 @@ Partial Public Class frmDetalleVentaREDRUBI
         Try
             Dim func As New fDetalleVentaREDRUBI
             dt = func.mostrar
+
+
+
             datalistado.Columns.Item("Eliminar").Visible = False
 
             If dt.Rows.Count <> 0 Then
@@ -64,7 +86,11 @@ Partial Public Class frmDetalleVentaREDRUBI
         End Try
         btnNuevo.Visible = True
 
+
         Buscar()
+
+
+
 
     End Sub
 
@@ -97,62 +123,53 @@ Partial Public Class frmDetalleVentaREDRUBI
         'datalistado.Columns(2).Visible = False
         'datalistado.Columns(3).Visible = False
     End Sub
-
-
-
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
         limpiar()
         mostrar()
 
     End Sub
-
-
-
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        If Me.ValidateChildren = True And txtIdProducto.Text <> "" And txtCantidad.Text <> "" And txtPrecioUnitario.Text <> "" Then
-            Try
-
-
-
-                Dim dts As New vDetalleVentaREDRUBI
-                Dim func As New fDetalleVentaREDRUBI
-
-                dts.gidventa = txtIdVenta.Text
-                dts.gidproducto = txtIdProducto.Text
-                dts.gcantidad = txtCantidad.Text
-                dts.gprecio_unitario = txtPrecioUnitario.Text
-
-                '''''''''''''''''''''''''''''''''''''''''''
-                Dim ms As New IO.MemoryStream()
-
-
-
-
-
-
-
-
-                '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-                If func.insertar(dts) Then
-                    If func.disminuir_stock(dts) Then
-
-                    End If
-                    MessageBox.Show("articulo añadido correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    mostrar()
-                    txttotal.Text = sumar().ToString
-                    limpiar()
-                Else
-                    MessageBox.Show("articulo no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    mostrar()
-                    limpiar()
-                End If
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
+        If txtCantidad.Text = 0 Then
+            MessageBox.Show("CANTIDAD INCORRECTA")
         Else
-            MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
+            If Me.ValidateChildren = True And txtIdProducto.Text <> "" And txtCantidad.Text <> "" And txtPrecioUnitario.Text <> "" Then
+                'System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
+                Try
+
+                    Dim dts As New vDetalleVentaREDRUBI
+                    Dim func As New fDetalleVentaREDRUBI
+
+                    dts.gidventa = txtIdVenta.Text
+                    dts.gidproducto = txtIdProducto.Text
+                    dts.gcantidad = txtCantidad.Text
+                    dts.gprecio_unitario = txtPrecioUnitario.Text
+                    dts.gvalidez = "V"
+                    '''''''''''''''''''''''''''''''''''''''''''
+                    Dim ms As New IO.MemoryStream()
+
+                    '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+                    If func.insertar(dts) Then
+                        If func.disminuir_stock(dts) Then
+
+                        End If
+                        MessageBox.Show("articulo añadido correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        mostrar()
+                        txttotal.Text = sumar().ToString
+                        limpiar()
+                    Else
+                        MessageBox.Show("articulo no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        mostrar()
+                        limpiar()
+                    End If
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
+            Else
+                MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            End If
         End If
 
     End Sub
@@ -218,7 +235,7 @@ Partial Public Class frmDetalleVentaREDRUBI
     Private Sub btnquitar_Click(sender As Object, e As EventArgs) Handles btnquitar.Click
         Dim result As DialogResult
 
-        result = MessageBox.Show("Realmente desea quitar los seleccionados?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        result = MessageBox.Show("Realmente desea quitar los productos seleccionados?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
         If result = DialogResult.OK Then
             Try
                 For Each row As DataGridViewRow In datalistado.Rows
@@ -232,6 +249,7 @@ Partial Public Class frmDetalleVentaREDRUBI
                         vdb.gidproducto = datalistado.SelectedCells.Item(3).Value
                         vdb.gidventa = datalistado.SelectedCells.Item(2).Value
                         vdb.gcantidad = datalistado.SelectedCells.Item(5).Value
+                        vdb.gvalidez = "V"
                         If func.eliminar(vdb) Then
                             If func.aumentar_stock(vdb) Then
                             End If
@@ -249,6 +267,12 @@ Partial Public Class frmDetalleVentaREDRUBI
             Call mostrar()
 
         End If
+        mostrar()
+        txttotal.Text = sumar().ToString
+        limpiar()
+        cbeliminar.Checked = False
+
+
     End Sub
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
@@ -256,23 +280,7 @@ Partial Public Class frmDetalleVentaREDRUBI
         frmProductoREDRUBI.ShowDialog()
     End Sub
 
-    Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
-        Dim cant As Double
-        cant = txtCantidad.Value
-        If txtCantidad.Value > txtStock.Value Then
-            MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
-            btnGuardar.Visible = 0
-            txtCantidad.Value = txtStock.Value
-        Else
-            btnGuardar.Visible = 1
-        End If
-        If txtCantidad.Value = 0 Then
-            btnGuardar.Visible = 0
-        Else
-            btnGuardar.Visible = 1
-        End If
 
-    End Sub
 
     Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs)
 
@@ -291,13 +299,7 @@ Partial Public Class frmDetalleVentaREDRUBI
     End Sub
 
 
-    Private Sub btnimprimir_Click(sender As Object, e As EventArgs) Handles btnimprimir.Click
 
-
-
-
-
-    End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
 
@@ -357,61 +359,63 @@ Partial Public Class frmDetalleVentaREDRUBI
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFinalizarVenta.Click
+        txttotal.Text = sumar().ToString
+        If txttotal.Text = 0 Then
+            MessageBox.Show("SELECCIONAR ARTICULOS")
+        Else
+            'para generar el codigo Control
 
-        'para generar el codigo Control
-
-        Dim fecha, monto As String
-        fecha = CalcularFechaParaCC()
-        monto = calcularMontoCC(txttotal.Text)
-
-        lbCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
-        ''''''''''''''''''''''''''''''''''
-        Try
-
-
-            Dim ms As New IO.MemoryStream()
-            Dim dts As New vQr
-            Dim func As New fQr
-            Dim f, aux As String
-
-            aux = func.mostrarUltimoQR.ToString + 1
-
-            f = dtpFecha.Value.Date
-            QrCodeImgControl1.Visible = True
-            QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
-            QrCodeImgControl1.Enabled = True
-            QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
+            Dim fecha, monto As String
+            fecha = CalcularFechaParaCC()
+            monto = calcularMontoCC(txttotal.Text)
 
 
+            lbCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
+            ''''''''''''''''''''''''''''''''''
+            Try
 
 
-            ' ''''''''''''' 
-            dts.gfecha_emision = f.ToString
-            dts.gNit_Emisor = txtnituab.Text
-            dts.gNum_Factura = aux
-            dts.gNum_Autorizacion = lbnumAutor.Text
-            dts.gTotal = txttotal.Text
-            dts.gCodigo_Control = lbCC.Text
-            dts.gCi_Nit_Comprador = txtNumDoc.Text
-            dts.gimagen = ms.GetBuffer
-            dts.gIdVenta = txtIdVenta.Text
+                Dim ms As New IO.MemoryStream()
+                Dim dts As New vQr
+                Dim func As New fQr
+                Dim f, aux As String
 
-            ''''''''
+                aux = func.mostrarUltimoQR.ToString + 1
 
-            If func.insertar(dts) Then
+                f = dtpFecha.Value.Date
+                ' QrCodeImgControl1.Visible = True
+                QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
+                'QrCodeImgControl1.Enabled = True
+                QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
+                '''''''' 
+                dts.gfecha_emision = f.ToString
+                dts.gNit_Emisor = txtnituab.Text
+                dts.gNum_Factura = aux
+                dts.gNum_Autorizacion = lbnumAutor.Text
+                dts.gTotal = txttotal.Text
+                dts.gCodigo_Control = lbCC.Text
+                dts.gCi_Nit_Comprador = txtNumDoc.Text
+                dts.gimagen = ms.GetBuffer
+                dts.gIdVenta = txtIdVenta.Text
+                dts.gvalidez = "V"
+                ''''''''
+                If func.insertar(dts) Then
+                    frmReporteFactura.txtnumfactura.Text = aux
+                    MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    frmReporteFactura.MdiParent = frmInicioF
+                    frmReporteFactura.Show()
 
-                MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                Me.Close()
+                    Me.Close()
 
-            Else
-                MessageBox.Show("No se a podido guardar la venta  Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    MessageBox.Show("No se a podido guardar la venta  Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-            End If
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
+                End If
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+        End If
     End Sub
 
     Private Sub txtnituab_TextChanged(sender As Object, e As EventArgs) Handles txtnituab.TextChanged
@@ -449,18 +453,27 @@ Partial Public Class frmDetalleVentaREDRUBI
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
+        Dim result As DialogResult
         Dim dts As New vDetalleVentaREDRUBI
         Dim func As New fDetalleVentaREDRUBI
-        dts.gidventa = txtIdVenta.Text
-        func.eliminar(dts)
+        result = MessageBox.Show("Realmente desea eliminar la venta?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        If result = DialogResult.OK Then
 
+            dts.gidventa = txtIdVenta.Text
+            ' func.eliminarproductoVenta(dts)
 
-        Dim dtsDV As New vVentaREDRUBI
-        Dim funcDV As New fVentaREDRUBI
-        dtsDV.Gidventa = txtIdVenta.Text
+            Dim dtsDV As New vVentaREDRUBI
+            Dim funcDV As New fVentaREDRUBI
 
-        funcDV.eliminar(dtsDV)
-        Me.Close()
+            dtsDV.Gidventa = txtIdVenta.Text
+            '  funcDV.eliminar(dtsDV)
+
+            If (func.eliminarproductoVenta(dts) And funcDV.eliminar(dtsDV)) Then
+                MessageBox.Show("Venta Eliminada", "eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+            Me.Close()
+        End If
+
 
     End Sub
 
@@ -468,4 +481,79 @@ Partial Public Class frmDetalleVentaREDRUBI
     ''''''''''''''
 
     '''''''''''
+
+    Private Sub txtPrecioUnitario_TextChanged(sender As Object, e As EventArgs) Handles txtPrecioUnitario.TextChanged
+
+    End Sub
+
+
+
+    Private Sub txtCantidad_KeyPress1(sender As Object, e As KeyPressEventArgs)
+        If ((e.KeyChar = "."c) OrElse (e.KeyChar = ","c)) Then
+            ' Obtenemos el carácter separador decimal existente
+            ' actualmente en la configuración regional de Windows.
+            ' 
+            e.KeyChar = _
+                Threading.Thread.CurrentThread. _
+                CurrentCulture.NumberFormat.NumberDecimalSeparator.Chars(0)
+
+        End If
+    End Sub
+
+    Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress
+        If ((e.KeyChar = "."c) OrElse (e.KeyChar = ","c)) Then
+            ' Obtenemos el carácter separador decimal existente
+            ' actualmente en la configuración regional de Windows.
+            ' 
+            e.KeyChar = _
+                Threading.Thread.CurrentThread. _
+                CurrentCulture.NumberFormat.NumberDecimalSeparator.Chars(0)
+
+        End If
+    End Sub
+
+
+
+    'Private Sub txtCantidad_TextChanged(sender As Object, e As EventArgs)
+
+
+
+    '    Try
+    '        Dim cant As Double
+    '        cant = txtCantidad.Text
+    '        If txtCantidad.Text > txtStock.Value Then
+    '            MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
+    '            btnGuardar.Visible = 0
+    '            txtCantidad.Text = txtStock.Value
+    '        Else
+    '            btnGuardar.Visible = 1
+    '        End If
+    '        If txtCantidad.Text = 0 Then
+    '            btnGuardar.Visible = 0
+    '        Else
+    '            btnGuardar.Visible = 1
+    '        End If
+
+    '    Catch ex As Exception
+    '        MessageBox.Show("ingrese un monto  a vender")
+    '    End Try
+    'End Sub
+    Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
+        Dim cant As Double
+        cant = txtCantidad.Text
+        If txtCantidad.Text > txtStock.Value Then
+            MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
+            'btnGuardar.Visible = 0
+            txtCantidad.Text = txtStock.Value
+        Else
+            btnGuardar.Visible = 1
+        End If
+        'If txtCantidad.Text = 0 Then
+        '    btnGuardar.Visible = 0
+        'Else
+        '    btnGuardar.Visible = 1
+        'End If   
+
+    End Sub
+
 End Class

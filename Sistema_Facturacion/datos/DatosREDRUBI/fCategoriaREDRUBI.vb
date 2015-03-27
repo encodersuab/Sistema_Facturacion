@@ -1,12 +1,11 @@
 ﻿Imports System.Data.SqlClient
-
 Public Class fCategoriaREDRUBI
     Inherits Conexion
     Dim cmd As New SqlCommand
     Public Function mostrar() As DataTable
         Try
             conectado()
-            cmd = New SqlCommand("Mostrar_Categoria")
+            cmd = New SqlCommand("mostrar_categoria")
             cmd.CommandType = CommandType.StoredProcedure
 
             cmd.Connection = cnn
@@ -58,7 +57,7 @@ Public Class fCategoriaREDRUBI
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-            cmd.Parameters.AddWithValue("@idcategotia", dts.gidcategoria)
+            cmd.Parameters.AddWithValue("@id_categoria", dts.gidcategoria)
             cmd.Parameters.AddWithValue("@nombre_categoria", dts.gnombre_categoria)
 
 
@@ -75,6 +74,7 @@ Public Class fCategoriaREDRUBI
             desconectado()
         End Try
     End Function
+
     Public Function eliminar(ByVal dts As vCategoriaREDRUBI) As Boolean
         Try
             conectado()
@@ -82,7 +82,7 @@ Public Class fCategoriaREDRUBI
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-            cmd.Parameters.Add("@idcategoria", SqlDbType.NVarChar, 50).Value = dts.gidcategoria
+            cmd.Parameters.Add("@id_categoria", SqlDbType.NVarChar, 50).Value = dts.gidcategoria
             If cmd.ExecuteNonQuery Then
                 Return True
             Else

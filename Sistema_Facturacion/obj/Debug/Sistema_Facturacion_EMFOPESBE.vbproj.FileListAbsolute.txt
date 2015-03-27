@@ -43,11 +43,9 @@ D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\De
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmUsuario.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVenta.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion_EMFOPESBE.vbproj.GenerateResource.Cache
-D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmCategoriaREDRUBI.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmClienteREDRUBI.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmProductoREDRUBI.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVentaREDRUBI.resources
-D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmUsuarioREDRUBI.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVentaREDRUBI.resources
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmCategoriaFEXPOBENI.resources
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmClienteFEXPOBENI.resources
@@ -217,3 +215,5 @@ D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\De
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVentaPostGrado.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVentaplanillaPostGrado.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmProductoPostGrado.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVentaPlanillaREDRUBI.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVentaPlanillaREDRUBI.resources

@@ -1,10 +1,6 @@
-﻿Public Class frmCategoriaREDRUBI
+﻿Public Class frmCategoriaPostGrado
     Private dt As New DataTable
-    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
-
-    End Sub
-
-    Private Sub frmCategoria_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmCategoriaPostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
     End Sub
 
@@ -19,7 +15,7 @@
 
     Private Sub mostrar()
         Try
-            Dim func As New fCategoriaREDRUBI
+            Dim func As New fCategoriaPostGrado
             dt = func.mostrar
             datalistado.Columns.Item("Eliminar").Visible = False
 
@@ -88,8 +84,8 @@
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtNombre.Text <> "" Then
             Try
-                Dim dts As New vCategoriaREDRUBI
-                Dim func As New fCategoriaREDRUBI
+                Dim dts As New vCategoriaPostGrado
+                Dim func As New fCategoriaPostGrado
 
 
 
@@ -125,8 +121,8 @@
 
             If Me.ValidateChildren = True And txtNombre.Text <> "" And txtIdcategoria.Text <> "" Then
                 Try
-                    Dim dts As New vCategoriaREDRUBI
-                    Dim func As New fCategoriaREDRUBI
+                    Dim dts As New vCategoriaPostGrado
+                    Dim func As New fCategoriaPostGrado
 
                     dts.gidcategoria = txtIdcategoria.Text
                     dts.gnombre_categoria = txtNombre.Text
@@ -183,8 +179,8 @@
 
                     If marcado Then
                         Dim onekey As Integer = Convert.ToInt32(row.Cells("idcategoria").Value)
-                        Dim vdb As New vCategoriaREDRUBI
-                        Dim func As New fCategoriaREDRUBI
+                        Dim vdb As New vCategoriaPostGrado
+                        Dim func As New fCategoriaPostGrado
                         vdb.gidcategoria = onekey
 
                         If func.eliminar(vdb) Then
@@ -220,8 +216,8 @@
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
         If txtflag.Text = "1" Then
-            frmProducto.txtidcategoria.Text = datalistado.SelectedCells.Item(1).Value
-            frmProducto.txtnom_categoria.Text = datalistado.SelectedCells.Item(2).Value
+            frmProductoPostGrado.txtidcategoria.Text = datalistado.SelectedCells.Item(1).Value
+            frmProductoPostGrado.txtnom_categoria.Text = datalistado.SelectedCells.Item(2).Value
             Me.Close()
 
         End If
@@ -244,4 +240,6 @@
     Private Sub txtIdcategoria_Validated(sender As Object, e As EventArgs) Handles txtIdcategoria.Validated
 
     End Sub
+
+
 End Class

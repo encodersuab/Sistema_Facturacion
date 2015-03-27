@@ -272,13 +272,12 @@ Public Class frmInicioF
     End Sub
 
     Private Sub ToolStripMenuItem27_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem27.Click
-        frmCategoriaREDRUBI.MdiParent = Me
-        frmCategoriaREDRUBI.Show()
+        frmCategoria.MdiParent = Me
+        frmCategoria.Show()
     End Sub
 
     Private Sub VentaR_Click(sender As Object, e As EventArgs) Handles VentaR.Click
-        frmVentaREDRUBI.MdiParent = Me
-        frmVentaREDRUBI.Show()
+     
     End Sub
 
     Private Sub ToolStripMenuItem14_Click(sender As Object, e As EventArgs)
@@ -387,5 +386,40 @@ Public Class frmInicioF
     Private Sub ToolStripMenuItem33_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem33.Click
         frmQR.MdiParent = Me
         frmQR.Show()
+    End Sub
+
+    Private Sub ContadoToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ContadoToolStripMenuItem2.Click
+        frmVentaREDRUBI.MdiParent = Me
+        frmVentaREDRUBI.Show()
+    End Sub
+
+    Private Sub PorPlanillaToolStripMenuItem2_Click(sender As Object, e As EventArgs)
+        frmVentaPlanillaREDRUBI.MdiParent = Me
+        frmVentaPlanillaREDRUBI.Show()
+    End Sub
+
+    Private Sub REImprecionR_Click(sender As Object, e As EventArgs) Handles REImprecionR.Click
+        frmQR.MdiParent = Me
+        frmQR.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem28_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem28.Click
+        frmReporteCliente.MdiParent = Me
+        frmReporteCliente.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem29_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem29.Click
+        frmReporteUsuarios.MdiParent = Me
+        frmReporteUsuarios.Show()
+    End Sub
+
+    Private Sub ClientesToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles ClientesToolStripMenuItem.Click
+        frmReporteCliente.MdiParent = Me
+        frmReporteCliente.Show()
+    End Sub
+
+    Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
+        frmReporteUsuarios.MdiParent = Me
+        frmReporteUsuarios.Show()
     End Sub
 End Class

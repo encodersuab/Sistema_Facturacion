@@ -86,18 +86,13 @@
     <Compile Include="datos\DatosCAMPOFERIAL\fVentaPlanillaCAMPOFERIAL.vb" />
     <Compile Include="datos\DatosEmfopesbe\fVentaPlanilla.vb" />
     <Compile Include="datos\DatosEmfopesbe\fDetalleVentaPlanilla.vb" />
+    <Compile Include="datos\DatosPostGrado\fCategoriaPostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fClientePostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fDetalleVentaPlanillaPostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fDetalleVentaPostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fProductoPostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fVentaPlanillaPostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fVentaPostGrado.vb" />
-    <Compile Include="datos\DatosREDRUBI\fCategoriaREDRUBI.vb" />
-    <Compile Include="datos\DatosREDRUBI\fClienteREDRUBI.vb" />
-    <Compile Include="datos\DatosREDRUBI\fDetalleVentaREDRUBI.vb" />
-    <Compile Include="datos\DatosREDRUBI\fProductoREDRUBI.vb" />
-    <Compile Include="datos\DatosREDRUBI\fUsuarioREDRUBI.vb" />
-    <Compile Include="datos\DatosREDRUBI\fVentaREDRUBI.vb" />
     <Compile Include="datos\DatosEmfopesbe\fCC.vb" />
     <Compile Include="datos\DatosEmfopesbe\Conexion.vb" />
     <Compile Include="datos\DatosEmfopesbe\fCategoria.vb" />
@@ -108,6 +103,13 @@
     <Compile Include="datos\DatosEmfopesbe\fQr.vb" />
     <Compile Include="datos\DatosEmfopesbe\fUsuario.vb" />
     <Compile Include="datos\DatosEmfopesbe\fVenta.vb" />
+    <Compile Include="datos\DatosREDRUBI\fCategoriaREDRUBI.vb" />
+    <Compile Include="datos\DatosREDRUBI\fClienteREDRUBI.vb" />
+    <Compile Include="datos\DatosREDRUBI\fDetalleVentaPlanillaREDRUBI.vb" />
+    <Compile Include="datos\DatosREDRUBI\fDetalleVentaREDRUBI.vb" />
+    <Compile Include="datos\DatosREDRUBI\fProductoREDRUBI.vb" />
+    <Compile Include="datos\DatosREDRUBI\fVentaPlanillaREDRUBI.vb" />
+    <Compile Include="datos\DatosREDRUBI\fVentaREDRUBI.vb" />
     <Compile Include="dbfacDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -120,18 +122,13 @@
     <Compile Include="Logica\LogicaCAMPOFERIAL\vVentaPlanillaCAMPOFERIAL.vb" />
     <Compile Include="Logica\LogicaEmfopesbe\vDetalleVentaPlanilla.vb" />
     <Compile Include="Logica\LogicaEmfopesbe\vVentaPlanilla.vb" />
+    <Compile Include="Logica\LogicaPostGrado\vCategoriaPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vClientePostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vDetalleVentaPlanillaPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vDetalleVentaPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vProductoPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vVentaPlanillaPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vVentaPostGrado.vb" />
-    <Compile Include="Logica\LogicaREDRUBI\vCategoriaREDRUBI.vb" />
-    <Compile Include="Logica\LogicaREDRUBI\vClienteREDRUBI.vb" />
-    <Compile Include="Logica\LogicaREDRUBI\vDetalleVentaREDRUBI.vb" />
-    <Compile Include="Logica\LogicaREDRUBI\vProductoREDRUBI.vb" />
-    <Compile Include="Logica\LogicaREDRUBI\vUsuarioREDRUBI.vb" />
-    <Compile Include="Logica\LogicaREDRUBI\vVentaREDRUBI.vb" />
     <Compile Include="Logica\LogicaEmfopesbe\CC.vb" />
     <Compile Include="Logica\LogicaEmfopesbe\vCategoria.vb" />
     <Compile Include="Logica\LogicaEmfopesbe\vCliente.vb" />
@@ -141,6 +138,13 @@
     <Compile Include="Logica\LogicaEmfopesbe\vQr.vb" />
     <Compile Include="Logica\LogicaEmfopesbe\vUsuario.vb" />
     <Compile Include="Logica\LogicaEmfopesbe\vVenta.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vCategoriaREDRUBI.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vClienteREDRUBI.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vDetalleVentaPlanillaREDRUBI.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vDetalleVentaREDRUBI.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vProductoREDRUBI.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vVentaPlanillaREDRUBI.vb" />
+    <Compile Include="Logica\LogicaREDRUBI\vVentaREDRUBI.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -204,6 +208,12 @@
     <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmVentaCAMPOFERIAL.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmCategoriaPostGrado.Designer.vb">
+      <DependentUpon>frmCategoriaPostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmCategoriaPostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\PresentacionPostGrado\frmClientePostGrado.Designer.vb">
       <DependentUpon>frmClientePostGrado.vb</DependentUpon>
     </Compile>
@@ -238,42 +248,6 @@
       <DependentUpon>frmVentaPostGrado.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\PresentacionPostGrado\frmVentaPostGrado.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionREDRUBI\frmCategoriaREDRUBI.Designer.vb">
-      <DependentUpon>frmCategoriaREDRUBI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionREDRUBI\frmCategoriaREDRUBI.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionREDRUBI\frmClienteREDRUBI.Designer.vb">
-      <DependentUpon>frmClienteREDRUBI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionREDRUBI\frmClienteREDRUBI.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaREDRUBI.Designer.vb">
-      <DependentUpon>frmDetalleVentaREDRUBI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaREDRUBI.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.Designer.vb">
-      <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionREDRUBI\frmUsuarioREDRUBI.Designer.vb">
-      <DependentUpon>frmUsuarioREDRUBI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionREDRUBI\frmUsuarioREDRUBI.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.Designer.vb">
-      <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\PresentacionEmfopesbe\frmCategoria.Designer.vb">
@@ -340,6 +314,48 @@
       <DependentUpon>frmVistaCategoria.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\PresentacionEmfopesbe\frmVistaCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmCategoriaREDRUBI.Designer.vb">
+      <DependentUpon>frmCategoriaREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmCategoriaREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmClienteREDRUBI.Designer.vb">
+      <DependentUpon>frmClienteREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmClienteREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaPlanillaREDRUBI.Designer.vb">
+      <DependentUpon>frmDetalleVentaPlanillaREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaPlanillaREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaREDRUBI.Designer.vb">
+      <DependentUpon>frmDetalleVentaREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.Designer.vb">
+      <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaPlanillaREDRUBI.Designer.vb">
+      <DependentUpon>frmVentaPlanillaREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaPlanillaREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.Designer.vb">
+      <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmrptVentas.Designer.vb">
@@ -428,6 +444,9 @@
     <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmVentaCAMPOFERIAL.resx">
       <DependentUpon>frmVentaCAMPOFERIAL.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmCategoriaPostGrado.resx">
+      <DependentUpon>frmCategoriaPostGrado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmClientePostGrado.resx">
       <DependentUpon>frmClientePostGrado.vb</DependentUpon>
     </EmbeddedResource>
@@ -445,24 +464,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmVentaPostGrado.resx">
       <DependentUpon>frmVentaPostGrado.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmCategoriaREDRUBI.resx">
-      <DependentUpon>frmCategoriaREDRUBI.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmClienteREDRUBI.resx">
-      <DependentUpon>frmClienteREDRUBI.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaREDRUBI.resx">
-      <DependentUpon>frmDetalleVentaREDRUBI.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.resx">
-      <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmUsuarioREDRUBI.resx">
-      <DependentUpon>frmUsuarioREDRUBI.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.resx">
-      <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmCategoria.resx">
       <DependentUpon>frmCategoria.vb</DependentUpon>
@@ -493,6 +494,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmVenta.resx">
       <DependentUpon>frmVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmCategoriaREDRUBI.resx">
+      <DependentUpon>frmCategoriaREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmClienteREDRUBI.resx">
+      <DependentUpon>frmClienteREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaPlanillaREDRUBI.resx">
+      <DependentUpon>frmDetalleVentaPlanillaREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaREDRUBI.resx">
+      <DependentUpon>frmDetalleVentaREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.resx">
+      <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmVentaPlanillaREDRUBI.resx">
+      <DependentUpon>frmVentaPlanillaREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.resx">
+      <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCatergotria.resx">
       <DependentUpon>frmReporteCatergotria.vb</DependentUpon>

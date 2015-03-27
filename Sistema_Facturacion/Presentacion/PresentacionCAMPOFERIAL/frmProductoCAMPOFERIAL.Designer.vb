@@ -26,6 +26,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtTag = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbbModulo = New System.Windows.Forms.Label()
         Me.txtmedida = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -61,7 +62,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.cbbModulo = New System.Windows.Forms.Label()
+        Me.dlg = New System.Windows.Forms.OpenFileDialog()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,6 +123,15 @@ Partial Class frmProductoCAMPOFERIAL
         Me.GroupBox1.TabIndex = 27
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'cbbModulo
+        '
+        Me.cbbModulo.AutoSize = True
+        Me.cbbModulo.Location = New System.Drawing.Point(151, 260)
+        Me.cbbModulo.Name = "cbbModulo"
+        Me.cbbModulo.Size = New System.Drawing.Size(85, 13)
+        Me.cbbModulo.TabIndex = 30
+        Me.cbbModulo.Text = "CAMPO-FERIAL"
         '
         'txtmedida
         '
@@ -442,14 +452,9 @@ Partial Class frmProductoCAMPOFERIAL
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
         '
-        'cbbModulo
+        'dlg
         '
-        Me.cbbModulo.AutoSize = True
-        Me.cbbModulo.Location = New System.Drawing.Point(151, 260)
-        Me.cbbModulo.Name = "cbbModulo"
-        Me.cbbModulo.Size = New System.Drawing.Size(85, 13)
-        Me.cbbModulo.TabIndex = 30
-        Me.cbbModulo.Text = "CAMPO-FERIAL"
+        Me.dlg.FileName = "dlg"
         '
         'frmProductoCAMPOFERIAL
         '
@@ -512,6 +517,7 @@ Partial Class frmProductoCAMPOFERIAL
     Friend WithEvents cbxListadoClientes As System.Windows.Forms.ComboBox
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
+    'Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
     Friend WithEvents cbbModulo As System.Windows.Forms.Label
+    Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
 End Class

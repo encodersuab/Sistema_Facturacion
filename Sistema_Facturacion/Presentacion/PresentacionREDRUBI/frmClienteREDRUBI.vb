@@ -1,7 +1,6 @@
 ﻿Public Class frmClienteREDRUBI
-
     Private dt As New DataTable
-    Private Sub frmClienteREDRUBI_LoadREDRUBI(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frmClienteREDRUBI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
     End Sub
 
@@ -21,7 +20,19 @@
     Private Sub mostrar()
         Try
             Dim func As New fClienteREDRUBI
-            dt = func.mostrar
+            If txtFlag.Text = 2 Then
+                btnNuevo.Enabled = False
+                btnGuardar.Enabled = False
+                btnEditar.Enabled = False
+                dt = func.mostrarUAB
+
+            ElseIf txtFlag.Text = 1 Or txtFlag.Text = 0 Then
+                btnNuevo.Enabled = True
+                btnGuardar.Enabled = True
+                btnEditar.Enabled = True
+                dt = func.mostrar
+            End If
+
             datalistado.Columns.Item("Eliminar").Visible = False
 
             If dt.Rows.Count <> 0 Then
@@ -246,7 +257,6 @@
         If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then
             Dim chkcell As DataGridViewCheckBoxCell = Me.datalistado.Rows(e.RowIndex).Cells("Eliminar")
             chkcell.Value = Not chkcell.Value
-
         End If
     End Sub
 
@@ -265,8 +275,19 @@
             frmVentaREDRUBI.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
             frmVentaREDRUBI.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
             frmVentaREDRUBI.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
+            txtFlag.Text = "0"
+            Me.Close()
+
+        ElseIf txtFlag.Text = "2" Then
+            frmVentaPlanillaREDRUBI.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
+            frmVentaPlanillaREDRUBI.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
+            frmVentaPlanillaREDRUBI.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
+            frmVentaPlanillaREDRUBI.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
+            txtFlag.Text = "0"
             Me.Close()
         End If
+
+
     End Sub
 
     Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
@@ -281,4 +302,5 @@
     Private Sub cbxListadoClientes_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
+
 End Class
