@@ -156,12 +156,12 @@ Public Class frmDetalleVentaplanilla
                     Dim marcado As Boolean = Convert.ToBoolean(row.Cells("Eliminar").Value)
 
                     If marcado Then
-                        Dim onekey As Integer = Convert.ToInt32(row.Cells("iddetalle_venta_planilla").Value)
+                        Dim onekey As Integer = Convert.ToInt32(row.Cells("iddetalle_venta").Value)
                         Dim vdb As New vDetalleVentaPlanilla
                         Dim func As New fDetalleVentaPlanilla
                         vdb.giddedatlle_venta = onekey
                         vdb.gidproducto = datalistado.SelectedCells.Item(3).Value
-                        vdb.gidventaplanilla = datalistado.SelectedCells.Item(9).Value
+                        'vdb.gidventaplanilla = datalistado.SelectedCells.Item(9).Value
                         vdb.gcantidad = datalistado.SelectedCells.Item(5).Value
                         vdb.gvalidez = "V"
                         If func.eliminar(vdb) Then
@@ -311,26 +311,77 @@ Public Class frmDetalleVentaplanilla
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        '    Dim result As DialogResult
+        '    Dim dts As New vDetalleVentaPlanilla
+        '    Dim func As New fDetalleVentaPlanilla
+
+        '    result = MessageBox.Show("Realmente desea eliminar la venta?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        '    If result = DialogResult.OK Then
+
+        '        dts.gidventaplanilla = txtIdVenta.Text
+        '        ' func.eliminarproductoVenta(dts)
+
+        '        Dim dtsDV As New vVentaPlanilla
+        '        Dim funcDV As New fVentaPlanilla
+
+        '        dtsDV.Gidventaplanilla = txtIdVenta.Text
+        '        '  funcDV.eliminar(dtsDV)
+
+        '        If (func.eliminarproductoVenta(dts) And funcDV.eliminarventaPlanilla(dtsDV)) Then
+        '            MessageBox.Show("Venta Eliminada", "eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        '        End If
+        '        Me.Close()
+        '    End If
+
+
         Dim result As DialogResult
-        Dim dts As New vDetalleVentaPlanilla
-        Dim func As New fDetalleVentaPlanilla
+        Dim dts As New vDetalleVenta
+        Dim func As New fDetalleVenta
+
+
+        Dim dts1 As New vDetalleVenta
+        Dim func1 As New fDetalleVenta
+        Dim dts2 As New vDetalleVenta
+        Dim func2 As New fDetalleVenta
+
+
 
         result = MessageBox.Show("Realmente desea eliminar la venta?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
         If result = DialogResult.OK Then
 
-            dts.gidventaplanilla = txtIdVenta.Text
+            dts.gidventa = txtIdVenta.Text
+            dts1.gidventa = txtIdVenta.Text
             ' func.eliminarproductoVenta(dts)
 
-            Dim dtsDV As New vVentaPlanilla
-            Dim funcDV As New fVentaPlanilla
+            Dim dtsDV As New vVenta
+            Dim funcDV As New fVenta
 
-            dtsDV.Gidventaplanilla = txtIdVenta.Text
+            dtsDV.Gidventa = txtIdVenta.Text
             '  funcDV.eliminar(dtsDV)
 
-            If (func.eliminarproductoVenta(dts) And funcDV.eliminarventaPlanilla(dtsDV)) Then
+
+            Do While func1.mostraridprodXidventa(dts1) <> 0
+
+                dts2.gidproducto = func1.mostraridprodXidventa(dts1)
+                dts2.gcantidad = func1.mostrarCantidadXidventa(dts1)
+                func2.aumentar_stock(dts2)
+                dts2.giddedatlle_venta = func1.mostrariddetalleventaXidventa(dts1)
+                dts2.gvalidez = "A"
+                func2.editarValidez(dts2)
+                func1.eliminar(dts2)
+            Loop
+            mostrarDVPlanilla()
+            limpiar()
+
+
+            If (func.eliminarproductoVenta(dts) And funcDV.eliminar(dtsDV)) Then
                 MessageBox.Show("Venta Eliminada", "eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
             Me.Close()
         End If
+
     End Sub
+
+
+
 End Class
