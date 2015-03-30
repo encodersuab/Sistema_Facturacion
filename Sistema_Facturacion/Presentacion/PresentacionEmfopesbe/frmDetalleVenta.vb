@@ -487,12 +487,6 @@ Partial Public Class frmDetalleVenta
             Loop
             mostrar()
             limpiar()
-
-
-
-
-
-
             If (func.eliminarproductoVenta(dts) And funcDV.eliminar(dtsDV)) Then
                 MessageBox.Show("Venta Eliminada", "eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If

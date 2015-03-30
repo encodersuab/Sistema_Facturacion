@@ -33,7 +33,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtnituab = New System.Windows.Forms.TextBox()
-        Me.txtStock = New System.Windows.Forms.NumericUpDown()
+        Me.txtncuota = New System.Windows.Forms.NumericUpDown()
         Me.txtPrecioUnitario = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -73,7 +73,7 @@ Partial Class frmDetalleVentaPostGrado
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtncuota, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,7 +115,7 @@ Partial Class frmDetalleVentaPostGrado
         'txtCantidad
         '
         Me.txtCantidad.DecimalPlaces = 3
-        Me.txtCantidad.Location = New System.Drawing.Point(144, 233)
+        Me.txtCantidad.Location = New System.Drawing.Point(144, 234)
         Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(134, 20)
@@ -157,14 +157,13 @@ Partial Class frmDetalleVentaPostGrado
         Me.txtnituab.Size = New System.Drawing.Size(173, 20)
         Me.txtnituab.TabIndex = 31
         '
-        'txtStock
+        'txtncuota
         '
-        Me.txtStock.Enabled = False
-        Me.txtStock.Location = New System.Drawing.Point(144, 255)
-        Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
-        Me.txtStock.Name = "txtStock"
-        Me.txtStock.Size = New System.Drawing.Size(173, 20)
-        Me.txtStock.TabIndex = 29
+        Me.txtncuota.Location = New System.Drawing.Point(144, 256)
+        Me.txtncuota.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
+        Me.txtncuota.Name = "txtncuota"
+        Me.txtncuota.Size = New System.Drawing.Size(173, 20)
+        Me.txtncuota.TabIndex = 29
         '
         'txtPrecioUnitario
         '
@@ -182,7 +181,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.txtnituab)
-        Me.GroupBox1.Controls.Add(Me.txtStock)
+        Me.GroupBox1.Controls.Add(Me.txtncuota)
         Me.GroupBox1.Controls.Add(Me.txtPrecioUnitario)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
@@ -224,16 +223,16 @@ Partial Class frmDetalleVentaPostGrado
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(90, 257)
+        Me.Label8.Location = New System.Drawing.Point(2, 258)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(35, 13)
+        Me.Label8.Size = New System.Drawing.Size(123, 13)
         Me.Label8.TabIndex = 25
-        Me.Label8.Text = "Stock"
+        Me.Label8.Text = "(Stock)Numero de cuota"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(76, 235)
+        Me.Label7.Location = New System.Drawing.Point(76, 236)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 13)
         Me.Label7.TabIndex = 24
@@ -541,7 +540,7 @@ Partial Class frmDetalleVentaPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(966, 425)
+        Me.ClientSize = New System.Drawing.Size(1097, 425)
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
@@ -550,7 +549,7 @@ Partial Class frmDetalleVentaPostGrado
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtncuota, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -570,7 +569,7 @@ Partial Class frmDetalleVentaPostGrado
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtnituab As System.Windows.Forms.TextBox
-    Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
+    Friend WithEvents txtncuota As System.Windows.Forms.NumericUpDown
     Friend WithEvents txtPrecioUnitario As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label

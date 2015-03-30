@@ -37,7 +37,7 @@ Public Class frmDetalleVentaPostGrado
         txtNombreProducto.Text = ""
         txtPrecioUnitario.Text = ""
         txtCantidad.Text = 0
-        txtStock.Text = 0
+        txtncuota.Text = 0
         If txtDD.Text = 1 Then
             Button2.Enabled = False
             btnBuscarProducto.Enabled = False
@@ -145,21 +145,22 @@ Public Class frmDetalleVentaPostGrado
                     dts.gcantidad = txtCantidad.Text
                     dts.gprecio_unitario = txtPrecioUnitario.Text
                     dts.gvalidez = "V"
+                    dts.gncuota = txtncuota.Text
                     '''''''''''''''''''''''''''''''''''''''''''
                     Dim ms As New IO.MemoryStream()
 
                     '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
                     If func.insertar(dts) Then
-                        If func.disminuir_stock(dts) Then
+                        'If func.disminuir_stock(dts) Then
 
-                        End If
-                        MessageBox.Show("articulo añadido correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        'End If
+                        MessageBox.Show("Cuota registrada correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         mostrar()
                         txttotal.Text = sumar().ToString
                         limpiar()
                     Else
-                        MessageBox.Show("articulo no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        MessageBox.Show("Cuota no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
                         mostrar()
                         limpiar()
                     End If
@@ -585,10 +586,10 @@ Public Class frmDetalleVentaPostGrado
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
         Dim cant As Double
         cant = txtCantidad.Text
-        If txtCantidad.Text > txtStock.Value Then
+        If txtCantidad.Text > txtncuota.Value Then
             MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
             'btnGuardar.Visible = 0
-            txtCantidad.Text = txtStock.Value
+            txtCantidad.Text = txtncuota.Value
         Else
             btnGuardar.Visible = 1
         End If

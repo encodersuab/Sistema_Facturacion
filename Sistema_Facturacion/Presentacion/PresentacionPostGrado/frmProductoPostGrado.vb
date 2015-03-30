@@ -32,7 +32,7 @@
         txtprecio_compra.Text = "0"
         txtprecio_venta.Text = "0"
         txtIdproducto.Text = ""
-        cbbmodulo.Text = ""
+        ' cbbmodulo.Text = ""
 
         imagen.Image = Nothing
         imagen.BackgroundImage = My.Resources.fondo_transparente_fotos
@@ -292,7 +292,7 @@
                 frmDetalleVentaPostGrado.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
                 frmDetalleVentaPostGrado.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
                 frmDetalleVentaPostGrado.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
-                frmDetalleVentaPostGrado.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                frmDetalleVentaPostGrado.txtncuota.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaPostGrado.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
                 Me.Close()
 

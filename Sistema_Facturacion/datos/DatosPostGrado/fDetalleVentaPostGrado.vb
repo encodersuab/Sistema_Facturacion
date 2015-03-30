@@ -6,7 +6,7 @@ Public Class fDetalleVentaPostGrado
     Public Function mostrar() As DataTable
         Try
             conectado()
-            cmd = New SqlCommand("mostrar_detalle_venta")
+            cmd = New SqlCommand("mostrar_detalle_venta_PG")
             cmd.CommandType = CommandType.StoredProcedure
 
             cmd.Connection = cnn
@@ -31,7 +31,7 @@ Public Class fDetalleVentaPostGrado
     Public Function insertar(ByVal dts As vDetalleVentaPostGrado) As Boolean
         Try
             conectado()
-            cmd = New SqlCommand("insertar_detalle_venta")
+            cmd = New SqlCommand("insertar_detalle_venta_PG")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
@@ -41,6 +41,7 @@ Public Class fDetalleVentaPostGrado
             cmd.Parameters.AddWithValue("@idproducto", dts.gidproducto)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
+            cmd.Parameters.AddWithValue("@ncuota", dts.gncuota)
             'cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
 
 
@@ -60,7 +61,7 @@ Public Class fDetalleVentaPostGrado
     Public Function editar(ByVal dts As vDetalleVentaPostGrado) As Boolean
         Try
             conectado()
-            cmd = New SqlCommand("editar_detalle_venta")
+            cmd = New SqlCommand("editar_detalle_venta_PG")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
@@ -70,7 +71,7 @@ Public Class fDetalleVentaPostGrado
             cmd.Parameters.AddWithValue("@idproducto", dts.gidproducto)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
-
+            cmd.Parameters.AddWithValue("@ncuota", dts.gncuota)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
