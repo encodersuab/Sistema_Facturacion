@@ -37,7 +37,7 @@ Public Class frmDetalleVentaplanillaPostGrado
         txtNombreProducto.Text = ""
         txtPrecioUnitario.Text = ""
         txtCantidad.Text = 0
-        txtStock.Text = 0
+        txtncuota.Text = 0
 
 
 
@@ -114,6 +114,7 @@ Public Class frmDetalleVentaplanillaPostGrado
                     dtsp.gprecio_unitario = txtPrecioUnitario.Text
                     dtsp.gidventaplanilla = txtIdVenta.Text
                     dtsp.gvalidez = "V"
+                    dtsp.gncuota = txtncuota.Text
                     '''''''''''''''''''''''''''''''''''''''''''
                     Dim ms As New IO.MemoryStream()
                     '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -288,10 +289,10 @@ Public Class frmDetalleVentaplanillaPostGrado
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
         Dim cant As Double
         cant = txtCantidad.Text
-        If txtCantidad.Text > txtStock.Value Then
+        If txtCantidad.Text > txtncuota.Value Then
             MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
             'btnGuardar.Visible = 0
-            txtCantidad.Text = txtStock.Value
+            txtCantidad.Text = txtncuota.Value
         Else
             btnGuardar.Visible = 1
         End If

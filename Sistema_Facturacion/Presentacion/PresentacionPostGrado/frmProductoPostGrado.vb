@@ -300,7 +300,7 @@
                 frmDetalleVentaplanillaPostGrado.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
                 frmDetalleVentaplanillaPostGrado.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
                 frmDetalleVentaplanillaPostGrado.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
-                frmDetalleVentaplanillaPostGrado.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                frmDetalleVentaplanillaPostGrado.txtncuota.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaplanillaPostGrado.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
                 Me.Close()
 

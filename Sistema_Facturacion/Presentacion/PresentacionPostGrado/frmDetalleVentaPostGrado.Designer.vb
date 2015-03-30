@@ -120,6 +120,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(134, 20)
         Me.txtCantidad.TabIndex = 29
+        Me.txtCantidad.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'Label12
         '
@@ -540,7 +541,7 @@ Partial Class frmDetalleVentaPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1097, 425)
+        Me.ClientSize = New System.Drawing.Size(1122, 425)
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)

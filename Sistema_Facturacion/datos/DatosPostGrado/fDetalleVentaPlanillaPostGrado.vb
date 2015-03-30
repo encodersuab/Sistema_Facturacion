@@ -31,7 +31,7 @@ Public Class fDetalleVentaPlanillaPostGrado
     Public Function insertarDVPlanilla(ByVal dts As vDetalleVentaPlanillaPostGrado) As Boolean
         Try
             conectado()
-            cmd = New SqlCommand("insertar_detalle_venta")
+            cmd = New SqlCommand("insertar_detalle_venta_PG")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
@@ -40,6 +40,8 @@ Public Class fDetalleVentaPlanillaPostGrado
             cmd.Parameters.AddWithValue("@cantidad", dts.gcantidad)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
+            cmd.Parameters.AddWithValue("@ncuota", dts.gncuota)
+
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -56,7 +58,7 @@ Public Class fDetalleVentaPlanillaPostGrado
     Public Function editar(ByVal dts As vDetalleVentaPlanillaPostGrado) As Boolean
         Try
             conectado()
-            cmd = New SqlCommand("editar_detalle_venta")
+            cmd = New SqlCommand("editar_detalle_venta_PG")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
@@ -66,7 +68,7 @@ Public Class fDetalleVentaPlanillaPostGrado
             cmd.Parameters.AddWithValue("@idproducto", dts.gidproducto)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
-
+            cmd.Parameters.AddWithValue("@ncuota", dts.gncuota)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else

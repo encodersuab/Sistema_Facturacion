@@ -29,7 +29,7 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtnituab = New System.Windows.Forms.TextBox()
-        Me.txtStock = New System.Windows.Forms.NumericUpDown()
+        Me.txtncuota = New System.Windows.Forms.NumericUpDown()
         Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtPrecioUnitario = New System.Windows.Forms.TextBox()
@@ -68,7 +68,7 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.btnquitar = New System.Windows.Forms.Button()
         Me.cbeliminar = New System.Windows.Forms.CheckBox()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtncuota, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -132,14 +132,13 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.txtnituab.Size = New System.Drawing.Size(173, 20)
         Me.txtnituab.TabIndex = 31
         '
-        'txtStock
+        'txtncuota
         '
-        Me.txtStock.Enabled = False
-        Me.txtStock.Location = New System.Drawing.Point(144, 255)
-        Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
-        Me.txtStock.Name = "txtStock"
-        Me.txtStock.Size = New System.Drawing.Size(173, 20)
-        Me.txtStock.TabIndex = 29
+        Me.txtncuota.Location = New System.Drawing.Point(144, 255)
+        Me.txtncuota.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
+        Me.txtncuota.Name = "txtncuota"
+        Me.txtncuota.Size = New System.Drawing.Size(173, 20)
+        Me.txtncuota.TabIndex = 29
         '
         'txtCantidad
         '
@@ -149,6 +148,7 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(139, 20)
         Me.txtCantidad.TabIndex = 28
+        Me.txtCantidad.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'GroupBox1
         '
@@ -157,7 +157,7 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.txtnituab)
-        Me.GroupBox1.Controls.Add(Me.txtStock)
+        Me.GroupBox1.Controls.Add(Me.txtncuota)
         Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.txtPrecioUnitario)
         Me.GroupBox1.Controls.Add(Me.Label9)
@@ -208,11 +208,11 @@ Partial Class frmDetalleVentaplanillaPostGrado
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(95, 257)
+        Me.Label8.Location = New System.Drawing.Point(40, 257)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(35, 13)
+        Me.Label8.Size = New System.Drawing.Size(90, 13)
         Me.Label8.TabIndex = 25
-        Me.Label8.Text = "Stock"
+        Me.Label8.Text = "Numero de Cuota"
         '
         'Label7
         '
@@ -525,13 +525,13 @@ Partial Class frmDetalleVentaplanillaPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(957, 405)
+        Me.ClientSize = New System.Drawing.Size(1173, 405)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "frmDetalleVentaplanillaPostGrado"
         Me.Text = "frmDetalleVentaplanillaPostGrado"
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtncuota, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -547,7 +547,7 @@ Partial Class frmDetalleVentaplanillaPostGrado
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtnituab As System.Windows.Forms.TextBox
-    Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
+    Friend WithEvents txtncuota As System.Windows.Forms.NumericUpDown
     Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents txtPrecioUnitario As System.Windows.Forms.TextBox
