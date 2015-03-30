@@ -452,10 +452,20 @@ Partial Public Class frmDetalleVenta
         Dim result As DialogResult
         Dim dts As New vDetalleVenta
         Dim func As New fDetalleVenta
+
+
+        Dim dts1 As New vDetalleVenta
+        Dim func1 As New fDetalleVenta
+        Dim dts2 As New vDetalleVenta
+        Dim func2 As New fDetalleVenta
+
+
+
         result = MessageBox.Show("Realmente desea eliminar la venta?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
         If result = DialogResult.OK Then
 
             dts.gidventa = txtIdVenta.Text
+            dts1.gidventa = txtIdVenta.Text
             ' func.eliminarproductoVenta(dts)
 
             Dim dtsDV As New vVenta
@@ -463,6 +473,25 @@ Partial Public Class frmDetalleVenta
 
             dtsDV.Gidventa = txtIdVenta.Text
             '  funcDV.eliminar(dtsDV)
+
+           
+            Do While func1.mostraridprodXidventa(dts1) <> 0
+
+                dts2.gidproducto = func1.mostraridprodXidventa(dts1)
+                dts2.gcantidad = func1.mostrarCantidadXidventa(dts1)
+                func2.aumentar_stock(dts2)
+                dts2.giddedatlle_venta = func1.mostrariddetalleventaXidventa(dts1)
+                dts2.gvalidez = "A"
+                func2.editarValidez(dts2)
+                func1.eliminar(dts2)
+            Loop
+            mostrar()
+            limpiar()
+
+
+
+
+
 
             If (func.eliminarproductoVenta(dts) And funcDV.eliminar(dtsDV)) Then
                 MessageBox.Show("Venta Eliminada", "eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
