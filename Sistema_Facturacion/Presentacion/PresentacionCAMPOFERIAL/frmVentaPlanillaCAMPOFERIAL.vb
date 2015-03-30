@@ -223,7 +223,7 @@
                     frmDetalleVenta.txtDD.Text = 1
                 End If
             Else
-                MessageBox.Show("venta no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("error al imprimir facturas", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 mostrarVentaPlanilla()
                 limpiar()
 

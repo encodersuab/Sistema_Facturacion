@@ -156,12 +156,12 @@ Public Class frmDetalleVentaplanilla
                     Dim marcado As Boolean = Convert.ToBoolean(row.Cells("Eliminar").Value)
 
                     If marcado Then
-                        Dim onekey As Integer = Convert.ToInt32(row.Cells("iddetalle_venta_planilla").Value)
-                        Dim vdb As New vDetalleVentaPlanilla
-                        Dim func As New fDetalleVentaPlanilla
+                        Dim onekey As Integer = Convert.ToInt32(row.Cells("iddetalle_venta").Value)
+                        Dim vdb As New vDetalleVenta
+                        Dim func As New fDetalleVenta
                         vdb.giddedatlle_venta = onekey
                         vdb.gidproducto = datalistado.SelectedCells.Item(3).Value
-                        vdb.gidventaplanilla = datalistado.SelectedCells.Item(9).Value
+                        vdb.gidventa = datalistado.SelectedCells.Item(8).Value
                         vdb.gcantidad = datalistado.SelectedCells.Item(5).Value
                         vdb.gvalidez = "V"
                         If func.eliminar(vdb) Then

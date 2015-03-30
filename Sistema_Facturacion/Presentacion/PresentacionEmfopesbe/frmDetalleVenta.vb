@@ -369,12 +369,9 @@ Partial Public Class frmDetalleVenta
             fecha = CalcularFechaParaCC()
             monto = calcularMontoCC(txttotal.Text)
 
-
             lbCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
             ''''''''''''''''''''''''''''''''''
             Try
-
-
                 Dim ms As New IO.MemoryStream()
                 Dim dts As New vQr
                 Dim func As New fQr

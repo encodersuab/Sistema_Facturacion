@@ -26,10 +26,14 @@ Partial Class frmProductoCAMPOFERIAL
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtTag = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.cbbModulo = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.btnlimpiar = New System.Windows.Forms.PictureBox()
+        Me.txtstock = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtprecio_venta = New System.Windows.Forms.TextBox()
+        Me.btncargar = New System.Windows.Forms.PictureBox()
+        Me.imagen = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtfecha_vencimiento = New System.Windows.Forms.DateTimePicker()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -42,7 +46,6 @@ Partial Class frmProductoCAMPOFERIAL
         Me.btncancelar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtprecio_venta = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtdescripcion = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -53,8 +56,6 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtprecio_compra = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtstock = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
@@ -62,16 +63,13 @@ Partial Class frmProductoCAMPOFERIAL
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.dlg = New System.Windows.Forms.OpenFileDialog()
-        Me.btnlimpiar = New System.Windows.Forms.PictureBox()
-        Me.btncargar = New System.Windows.Forms.PictureBox()
-        Me.imagen = New System.Windows.Forms.PictureBox()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btncargar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'erroricono
@@ -88,8 +86,6 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.cbbModulo)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.btnlimpiar)
@@ -123,25 +119,6 @@ Partial Class frmProductoCAMPOFERIAL
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"LIBRE", "ALQUILADO"})
-        Me.ComboBox1.Location = New System.Drawing.Point(154, 259)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(172, 21)
-        Me.ComboBox1.TabIndex = 32
-        Me.ComboBox1.Text = "LIBRE"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(97, 262)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(40, 13)
-        Me.Label12.TabIndex = 31
-        Me.Label12.Text = "Estado"
-        '
         'cbbModulo
         '
         Me.cbbModulo.AutoSize = True
@@ -160,10 +137,66 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label10.TabIndex = 27
         Me.Label10.Text = "Modulo"
         '
+        'btnlimpiar
+        '
+        Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
+        Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnlimpiar.Location = New System.Drawing.Point(331, 351)
+        Me.btnlimpiar.Name = "btnlimpiar"
+        Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
+        Me.btnlimpiar.TabIndex = 25
+        Me.btnlimpiar.TabStop = False
+        '
+        'txtstock
+        '
+        Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtstock.Location = New System.Drawing.Point(154, 231)
+        Me.txtstock.Name = "txtstock"
+        Me.txtstock.Size = New System.Drawing.Size(56, 20)
+        Me.txtstock.TabIndex = 6
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(102, 234)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(35, 13)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Stock"
+        '
+        'txtprecio_venta
+        '
+        Me.txtprecio_venta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtprecio_venta.Location = New System.Drawing.Point(153, 156)
+        Me.txtprecio_venta.Name = "txtprecio_venta"
+        Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
+        Me.txtprecio_venta.TabIndex = 10
+        '
+        'btncargar
+        '
+        Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
+        Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btncargar.Location = New System.Drawing.Point(331, 297)
+        Me.btncargar.Name = "btncargar"
+        Me.btncargar.Size = New System.Drawing.Size(45, 48)
+        Me.btncargar.TabIndex = 24
+        Me.btncargar.TabStop = False
+        '
+        'imagen
+        '
+        Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
+        Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
+        Me.imagen.Location = New System.Drawing.Point(154, 276)
+        Me.imagen.Name = "imagen"
+        Me.imagen.Size = New System.Drawing.Size(171, 133)
+        Me.imagen.TabIndex = 23
+        Me.imagen.TabStop = False
+        '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(95, 292)
+        Me.Label9.Location = New System.Drawing.Point(95, 276)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 22
@@ -265,14 +298,6 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Precio Alquiler"
         '
-        'txtprecio_venta
-        '
-        Me.txtprecio_venta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtprecio_venta.Location = New System.Drawing.Point(153, 156)
-        Me.txtprecio_venta.Name = "txtprecio_venta"
-        Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
-        Me.txtprecio_venta.TabIndex = 10
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -331,16 +356,16 @@ Partial Class frmProductoCAMPOFERIAL
         '
         Me.txtmedida.FormattingEnabled = True
         Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
-        Me.txtmedida.Location = New System.Drawing.Point(965, 97)
+        Me.txtmedida.Location = New System.Drawing.Point(978, 63)
         Me.txtmedida.Name = "txtmedida"
-        Me.txtmedida.Size = New System.Drawing.Size(121, 21)
+        Me.txtmedida.Size = New System.Drawing.Size(75, 21)
         Me.txtmedida.TabIndex = 29
         Me.txtmedida.Text = "UNIDAD"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(906, 100)
+        Me.Label11.Location = New System.Drawing.Point(919, 66)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(42, 13)
         Me.Label11.TabIndex = 28
@@ -349,7 +374,7 @@ Partial Class frmProductoCAMPOFERIAL
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(858, 71)
+        Me.Label5.Location = New System.Drawing.Point(878, 38)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(91, 13)
         Me.Label5.TabIndex = 9
@@ -358,27 +383,10 @@ Partial Class frmProductoCAMPOFERIAL
         'txtprecio_compra
         '
         Me.txtprecio_compra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtprecio_compra.Location = New System.Drawing.Point(881, 168)
+        Me.txtprecio_compra.Location = New System.Drawing.Point(978, 35)
         Me.txtprecio_compra.Name = "txtprecio_compra"
-        Me.txtprecio_compra.Size = New System.Drawing.Size(172, 20)
+        Me.txtprecio_compra.Size = New System.Drawing.Size(75, 20)
         Me.txtprecio_compra.TabIndex = 8
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(102, 234)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 13)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Stock"
-        '
-        'txtstock
-        '
-        Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtstock.Location = New System.Drawing.Point(154, 231)
-        Me.txtstock.Name = "txtstock"
-        Me.txtstock.Size = New System.Drawing.Size(56, 20)
-        Me.txtstock.TabIndex = 6
         '
         'GroupBox2
         '
@@ -443,37 +451,6 @@ Partial Class frmProductoCAMPOFERIAL
         '
         Me.dlg.FileName = "OpenFileDialog1"
         '
-        'btnlimpiar
-        '
-        Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
-        Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(331, 367)
-        Me.btnlimpiar.Name = "btnlimpiar"
-        Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
-        Me.btnlimpiar.TabIndex = 25
-        Me.btnlimpiar.TabStop = False
-        '
-        'btncargar
-        '
-        Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
-        Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(331, 313)
-        Me.btncargar.Name = "btncargar"
-        Me.btncargar.Size = New System.Drawing.Size(45, 48)
-        Me.btncargar.TabIndex = 24
-        Me.btncargar.TabStop = False
-        '
-        'imagen
-        '
-        Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(154, 292)
-        Me.imagen.Name = "imagen"
-        Me.imagen.Size = New System.Drawing.Size(171, 133)
-        Me.imagen.TabIndex = 23
-        Me.imagen.TabStop = False
-        '
         'frmProductoCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -491,12 +468,12 @@ Partial Class frmProductoCAMPOFERIAL
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncargar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -541,7 +518,5 @@ Partial Class frmProductoCAMPOFERIAL
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     '   Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
     Friend WithEvents cbbModulo As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
 End Class
