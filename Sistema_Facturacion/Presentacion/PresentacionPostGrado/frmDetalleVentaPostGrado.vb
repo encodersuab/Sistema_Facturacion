@@ -36,12 +36,12 @@ Public Class frmDetalleVentaPostGrado
         txtIdProducto.Text = ""
         txtNombreProducto.Text = ""
         txtPrecioUnitario.Text = ""
-        txtCantidad.Text = 0
+        txtCantidad.Text = 1
         txtncuota.Text = 0
         If txtDD.Text = 1 Then
             Button2.Enabled = False
             btnBuscarProducto.Enabled = False
-            txtCantidad.Enabled = False
+            '  txtCantidad.Enabled = False
             txtPrecioUnitario.Enabled = False
             lbmedida.Visible = False
             btncancelar.Enabled = False
@@ -50,7 +50,7 @@ Public Class frmDetalleVentaPostGrado
         Else
             Button2.Enabled = True
             btnBuscarProducto.Enabled = True
-            txtCantidad.Enabled = True
+            ' txtCantidad.Enabled = True
             txtPrecioUnitario.Enabled = True
             lbmedida.Visible = True
             btncancelar.Enabled = True
@@ -326,14 +326,10 @@ Public Class frmDetalleVentaPostGrado
     Public Function sumar() As Double
 
         Dim total As Double
-
         For Each rowtotal As DataGridViewRow In datalistado.Rows
             total += Convert.ToDouble(rowtotal.Cells("Total Parcial").Value)
-
         Next
-
         Return total
-
     End Function
 
 

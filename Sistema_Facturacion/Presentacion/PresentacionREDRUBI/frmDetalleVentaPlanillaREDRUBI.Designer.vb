@@ -122,7 +122,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         'txtStock
         '
         Me.txtStock.Enabled = False
-        Me.txtStock.Location = New System.Drawing.Point(144, 255)
+        Me.txtStock.Location = New System.Drawing.Point(1018, 28)
         Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
         Me.txtStock.Name = "txtStock"
         Me.txtStock.Size = New System.Drawing.Size(173, 20)
@@ -140,7 +140,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         'txtPrecioUnitario
         '
         Me.txtPrecioUnitario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtPrecioUnitario.Location = New System.Drawing.Point(144, 280)
+        Me.txtPrecioUnitario.Location = New System.Drawing.Point(144, 259)
         Me.txtPrecioUnitario.Name = "txtPrecioUnitario"
         Me.txtPrecioUnitario.Size = New System.Drawing.Size(173, 20)
         Me.txtPrecioUnitario.TabIndex = 27
@@ -148,7 +148,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(52, 283)
+        Me.Label9.Location = New System.Drawing.Point(52, 262)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(78, 13)
         Me.Label9.TabIndex = 26
@@ -157,7 +157,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(95, 257)
+        Me.Label8.Location = New System.Drawing.Point(969, 30)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 13)
         Me.Label8.TabIndex = 25
@@ -238,7 +238,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(147, 328)
+        Me.btnGuardar.Location = New System.Drawing.Point(150, 317)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 35)
         Me.btnGuardar.TabIndex = 15
@@ -247,7 +247,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(232, 328)
+        Me.btncancelar.Location = New System.Drawing.Point(235, 317)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 35)
         Me.btncancelar.TabIndex = 13
@@ -256,7 +256,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(63, 328)
+        Me.btnNuevo.Location = New System.Drawing.Point(66, 317)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 35)
         Me.btnNuevo.TabIndex = 12
@@ -490,11 +490,9 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.txtnituab)
-        Me.GroupBox1.Controls.Add(Me.txtStock)
         Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.txtPrecioUnitario)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.btnBuscarProducto)
         Me.GroupBox1.Controls.Add(Me.txtNombreProducto)
@@ -525,9 +523,11 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(974, 407)
+        Me.ClientSize = New System.Drawing.Size(1137, 407)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.txtStock)
+        Me.Controls.Add(Me.Label8)
         Me.Name = "frmDetalleVentaPlanillaREDRUBI"
         Me.Text = "frmDetalleVentaPlanillaREDRUBI"
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
@@ -539,6 +539,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents lbmedida As System.Windows.Forms.Label

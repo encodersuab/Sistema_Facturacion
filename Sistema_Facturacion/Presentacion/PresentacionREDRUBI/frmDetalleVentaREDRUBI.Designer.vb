@@ -147,7 +147,7 @@ Partial Class frmDetalleVentaREDRUBI
         'txtStock
         '
         Me.txtStock.Enabled = False
-        Me.txtStock.Location = New System.Drawing.Point(144, 255)
+        Me.txtStock.Location = New System.Drawing.Point(1010, 22)
         Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
         Me.txtStock.Name = "txtStock"
         Me.txtStock.Size = New System.Drawing.Size(173, 20)
@@ -161,10 +161,8 @@ Partial Class frmDetalleVentaREDRUBI
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.txtnituab)
-        Me.GroupBox1.Controls.Add(Me.txtStock)
         Me.GroupBox1.Controls.Add(Me.txtPrecioUnitario)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.btnBuscarProducto)
         Me.GroupBox1.Controls.Add(Me.txtNombreProducto)
@@ -194,7 +192,7 @@ Partial Class frmDetalleVentaREDRUBI
         'txtPrecioUnitario
         '
         Me.txtPrecioUnitario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtPrecioUnitario.Location = New System.Drawing.Point(144, 280)
+        Me.txtPrecioUnitario.Location = New System.Drawing.Point(142, 259)
         Me.txtPrecioUnitario.Name = "txtPrecioUnitario"
         Me.txtPrecioUnitario.Size = New System.Drawing.Size(173, 20)
         Me.txtPrecioUnitario.TabIndex = 27
@@ -202,7 +200,7 @@ Partial Class frmDetalleVentaREDRUBI
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(47, 283)
+        Me.Label9.Location = New System.Drawing.Point(45, 262)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(78, 13)
         Me.Label9.TabIndex = 26
@@ -211,7 +209,7 @@ Partial Class frmDetalleVentaREDRUBI
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(90, 257)
+        Me.Label8.Location = New System.Drawing.Point(956, 24)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 13)
         Me.Label8.TabIndex = 25
@@ -541,10 +539,12 @@ Partial Class frmDetalleVentaREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(968, 423)
+        Me.ClientSize = New System.Drawing.Size(1173, 423)
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.txtStock)
+        Me.Controls.Add(Me.Label8)
         Me.Name = "frmDetalleVentaREDRUBI"
         Me.Text = "frmDetalleVentaREDRUBI"
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()

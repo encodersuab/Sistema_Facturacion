@@ -58,11 +58,11 @@ Partial Class frmProductoPostGrado
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtIdproducto = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbbmodulo = New System.Windows.Forms.Label()
         Me.btnlimpiar = New System.Windows.Forms.PictureBox()
         Me.btncargar = New System.Windows.Forms.PictureBox()
         Me.imagen = New System.Windows.Forms.PictureBox()
         Me.dlg = New System.Windows.Forms.OpenFileDialog()
-        Me.cbbmodulo = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -103,7 +103,7 @@ Partial Class frmProductoPostGrado
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(95, 312)
+        Me.Label9.Location = New System.Drawing.Point(95, 264)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 22
@@ -408,11 +408,20 @@ Partial Class frmProductoPostGrado
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
+        'cbbmodulo
+        '
+        Me.cbbmodulo.AutoSize = True
+        Me.cbbmodulo.Location = New System.Drawing.Point(156, 240)
+        Me.cbbmodulo.Name = "cbbmodulo"
+        Me.cbbmodulo.Size = New System.Drawing.Size(78, 13)
+        Me.cbbmodulo.TabIndex = 28
+        Me.cbbmodulo.Text = "POST-GRADO"
+        '
         'btnlimpiar
         '
         Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
         Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(331, 387)
+        Me.btnlimpiar.Location = New System.Drawing.Point(331, 339)
         Me.btnlimpiar.Name = "btnlimpiar"
         Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
         Me.btnlimpiar.TabIndex = 25
@@ -422,7 +431,7 @@ Partial Class frmProductoPostGrado
         '
         Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
         Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(331, 333)
+        Me.btncargar.Location = New System.Drawing.Point(331, 285)
         Me.btncargar.Name = "btncargar"
         Me.btncargar.Size = New System.Drawing.Size(45, 48)
         Me.btncargar.TabIndex = 24
@@ -433,7 +442,7 @@ Partial Class frmProductoPostGrado
         Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
         Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(154, 312)
+        Me.imagen.Location = New System.Drawing.Point(154, 264)
         Me.imagen.Name = "imagen"
         Me.imagen.Size = New System.Drawing.Size(171, 133)
         Me.imagen.TabIndex = 23
@@ -443,20 +452,11 @@ Partial Class frmProductoPostGrado
         '
         Me.dlg.FileName = "dlg"
         '
-        'cbbmodulo
-        '
-        Me.cbbmodulo.AutoSize = True
-        Me.cbbmodulo.Location = New System.Drawing.Point(156, 240)
-        Me.cbbmodulo.Name = "cbbmodulo"
-        Me.cbbmodulo.Size = New System.Drawing.Size(78, 13)
-        Me.cbbmodulo.TabIndex = 28
-        Me.cbbmodulo.Text = "POST-GRADO"
-        '
         'frmProductoPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1086, 528)
+        Me.ClientSize = New System.Drawing.Size(883, 521)
         Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label11)

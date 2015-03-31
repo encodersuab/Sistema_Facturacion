@@ -90,8 +90,8 @@ Partial Class frmProductoCAMPOFERIAL
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.btnlimpiar)
         Me.GroupBox1.Controls.Add(Me.txtstock)
-        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txtprecio_venta)
+        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.btncargar)
         Me.GroupBox1.Controls.Add(Me.imagen)
         Me.GroupBox1.Controls.Add(Me.Label9)
@@ -122,7 +122,7 @@ Partial Class frmProductoCAMPOFERIAL
         'cbbModulo
         '
         Me.cbbModulo.AutoSize = True
-        Me.cbbModulo.Location = New System.Drawing.Point(151, 209)
+        Me.cbbModulo.Location = New System.Drawing.Point(150, 237)
         Me.cbbModulo.Name = "cbbModulo"
         Me.cbbModulo.Size = New System.Drawing.Size(85, 13)
         Me.cbbModulo.TabIndex = 30
@@ -131,7 +131,7 @@ Partial Class frmProductoCAMPOFERIAL
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(95, 209)
+        Me.Label10.Location = New System.Drawing.Point(94, 237)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(42, 13)
         Me.Label10.TabIndex = 27
@@ -141,7 +141,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
         Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(331, 351)
+        Me.btnlimpiar.Location = New System.Drawing.Point(330, 341)
         Me.btnlimpiar.Name = "btnlimpiar"
         Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
         Me.btnlimpiar.TabIndex = 25
@@ -150,7 +150,7 @@ Partial Class frmProductoCAMPOFERIAL
         'txtstock
         '
         Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtstock.Location = New System.Drawing.Point(154, 231)
+        Me.txtstock.Location = New System.Drawing.Point(153, 182)
         Me.txtstock.Name = "txtstock"
         Me.txtstock.Size = New System.Drawing.Size(56, 20)
         Me.txtstock.TabIndex = 6
@@ -158,7 +158,7 @@ Partial Class frmProductoCAMPOFERIAL
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(102, 234)
+        Me.Label4.Location = New System.Drawing.Point(101, 185)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(35, 13)
         Me.Label4.TabIndex = 7
@@ -176,7 +176,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
         Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(331, 297)
+        Me.btncargar.Location = New System.Drawing.Point(330, 287)
         Me.btncargar.Name = "btncargar"
         Me.btncargar.Size = New System.Drawing.Size(45, 48)
         Me.btncargar.TabIndex = 24
@@ -187,7 +187,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
         Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(154, 276)
+        Me.imagen.Location = New System.Drawing.Point(153, 266)
         Me.imagen.Name = "imagen"
         Me.imagen.Size = New System.Drawing.Size(171, 133)
         Me.imagen.TabIndex = 23
@@ -196,7 +196,7 @@ Partial Class frmProductoCAMPOFERIAL
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(95, 276)
+        Me.Label9.Location = New System.Drawing.Point(94, 266)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 22
@@ -205,7 +205,7 @@ Partial Class frmProductoCAMPOFERIAL
         'txtfecha_vencimiento
         '
         Me.txtfecha_vencimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.txtfecha_vencimiento.Location = New System.Drawing.Point(154, 182)
+        Me.txtfecha_vencimiento.Location = New System.Drawing.Point(153, 210)
         Me.txtfecha_vencimiento.Name = "txtfecha_vencimiento"
         Me.txtfecha_vencimiento.Size = New System.Drawing.Size(100, 20)
         Me.txtfecha_vencimiento.TabIndex = 21
@@ -213,7 +213,7 @@ Partial Class frmProductoCAMPOFERIAL
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(25, 185)
+        Me.Label8.Location = New System.Drawing.Point(24, 213)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(112, 13)
         Me.Label8.TabIndex = 20
@@ -255,7 +255,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(161, 454)
+        Me.btnGuardar.Location = New System.Drawing.Point(162, 426)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -264,7 +264,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(161, 454)
+        Me.btnEditar.Location = New System.Drawing.Point(162, 426)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -273,7 +273,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(246, 454)
+        Me.btncancelar.Location = New System.Drawing.Point(247, 426)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -282,7 +282,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(77, 454)
+        Me.btnNuevo.Location = New System.Drawing.Point(78, 426)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -455,7 +455,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1065, 522)
+        Me.ClientSize = New System.Drawing.Size(879, 522)
         Me.Controls.Add(Me.txtTag)
         Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.GroupBox1)

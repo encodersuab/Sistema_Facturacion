@@ -28,19 +28,13 @@ Public Class frmDetalleVentaplanillaPostGrado
         lbllave.Text = dt1.Rows(0)("llave").ToString
         lbnumAutor.Text = dt1.Rows(0)("numAutorizacion").ToString
     End Sub
-
-
-
     Public Sub limpiar()
         btnGuardar.Visible = True
         txtIdProducto.Text = ""
         txtNombreProducto.Text = ""
         txtPrecioUnitario.Text = ""
-        txtCantidad.Text = 0
+        txtCantidad.Text = 1
         txtncuota.Text = 0
-
-
-
     End Sub
 
     Private Sub mostrarDVPlanilla()
@@ -65,9 +59,7 @@ Public Class frmDetalleVentaplanillaPostGrado
             MsgBox(ex.Message)
         End Try
         btnNuevo.Visible = True
-
         Buscar()
-
     End Sub
 
     Private Sub Buscar()
@@ -378,5 +370,9 @@ Public Class frmDetalleVentaplanillaPostGrado
             End If
         End If
         Me.Close()
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class
