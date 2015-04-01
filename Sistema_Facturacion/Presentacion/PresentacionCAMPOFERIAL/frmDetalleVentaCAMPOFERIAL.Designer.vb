@@ -317,9 +317,9 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(88, 285)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(35, 13)
+        Me.Label8.Size = New System.Drawing.Size(40, 13)
         Me.Label8.TabIndex = 25
-        Me.Label8.Text = "Stock"
+        Me.Label8.Text = "Estado"
         '
         'txtCantidad
         '

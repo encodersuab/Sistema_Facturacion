@@ -218,18 +218,18 @@ Partial Class frmDetalleVentaPostGrado
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(47, 283)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(78, 13)
+        Me.Label9.Size = New System.Drawing.Size(73, 13)
         Me.Label9.TabIndex = 26
-        Me.Label9.Text = "PRecioUnitario"
+        Me.Label9.Text = "PrecioUnitario"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(2, 258)
+        Me.Label8.Location = New System.Drawing.Point(31, 258)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(123, 13)
+        Me.Label8.Size = New System.Drawing.Size(89, 13)
         Me.Label8.TabIndex = 25
-        Me.Label8.Text = "(Stock)Numero de cuota"
+        Me.Label8.Text = "Numero de cuota"
         '
         'Label7
         '
