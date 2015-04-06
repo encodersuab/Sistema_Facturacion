@@ -371,6 +371,8 @@ Partial Class frmQR
         Me.ClientSize = New System.Drawing.Size(953, 366)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmQR"
         Me.Text = "frmQR"
         Me.GroupBox2.ResumeLayout(False)

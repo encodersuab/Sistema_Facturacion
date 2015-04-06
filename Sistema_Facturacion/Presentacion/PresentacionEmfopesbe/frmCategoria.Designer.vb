@@ -132,7 +132,7 @@ Partial Class frmCategoria
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(383, 88)
+        Me.datalistado.Size = New System.Drawing.Size(303, 88)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -199,7 +199,7 @@ Partial Class frmCategoria
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(315, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(404, 214)
+        Me.GroupBox2.Size = New System.Drawing.Size(321, 214)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Categorias"
@@ -233,10 +233,13 @@ Partial Class frmCategoria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(730, 239)
+        Me.ClientSize = New System.Drawing.Size(642, 239)
         Me.Controls.Add(Me.txtflag)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(746, 278)
         Me.Name = "frmCategoria"
         Me.Text = "Listado de categoria"
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()

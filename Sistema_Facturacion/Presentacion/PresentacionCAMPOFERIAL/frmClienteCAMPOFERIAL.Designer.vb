@@ -298,6 +298,8 @@ Partial Class frmClienteCAMPOFERIAL
         Me.Controls.Add(Me.txtFlag)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmClienteCAMPOFERIAL"
         Me.Text = ".:. Cliente CAMPOFERIAL .:."
         Me.GroupBox2.ResumeLayout(False)

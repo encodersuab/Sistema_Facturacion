@@ -36,7 +36,6 @@ Partial Class frmDetalleVentaREDRUBI
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtPrecioUnitario = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnBuscarProducto = New System.Windows.Forms.Button()
         Me.txtNombreProducto = New System.Windows.Forms.TextBox()
@@ -56,6 +55,7 @@ Partial Class frmDetalleVentaREDRUBI
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -205,15 +205,6 @@ Partial Class frmDetalleVentaREDRUBI
         Me.Label9.Size = New System.Drawing.Size(78, 13)
         Me.Label9.TabIndex = 26
         Me.Label9.Text = "PRecioUnitario"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(956, 24)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(35, 13)
-        Me.Label8.TabIndex = 25
-        Me.Label8.Text = "Stock"
         '
         'Label7
         '
@@ -387,6 +378,15 @@ Partial Class frmDetalleVentaREDRUBI
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(956, 24)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(35, 13)
+        Me.Label8.TabIndex = 25
+        Me.Label8.Text = "Stock"
+        '
         'eliminar
         '
         Me.eliminar.HeaderText = "Eliminar"
@@ -545,6 +545,8 @@ Partial Class frmDetalleVentaREDRUBI
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.txtStock)
         Me.Controls.Add(Me.Label8)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmDetalleVentaREDRUBI"
         Me.Text = "frmDetalleVentaREDRUBI"
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()

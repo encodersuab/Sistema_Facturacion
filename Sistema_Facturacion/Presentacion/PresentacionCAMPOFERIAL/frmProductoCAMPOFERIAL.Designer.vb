@@ -463,6 +463,8 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtprecio_compra)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmProductoCAMPOFERIAL"
         Me.Text = ".:. productos CAMPOFERIAL .:. "
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()

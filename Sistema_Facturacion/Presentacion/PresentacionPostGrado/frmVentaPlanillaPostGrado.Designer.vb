@@ -338,6 +338,8 @@ Partial Class frmVentaPlanillaPostGrado
         Me.ClientSize = New System.Drawing.Size(921, 309)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmVentaPlanillaPostGrado"
         Me.Text = "frmVentaPlanillaPostGrado"
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()

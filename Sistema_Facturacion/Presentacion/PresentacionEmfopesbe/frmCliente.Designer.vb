@@ -226,7 +226,7 @@ Partial Class frmCliente
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(315, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(532, 245)
+        Me.GroupBox2.Size = New System.Drawing.Size(673, 245)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Clientes"
@@ -246,7 +246,7 @@ Partial Class frmCliente
         Me.txtBuscar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtBuscar.Location = New System.Drawing.Point(159, 25)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(349, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(508, 20)
         Me.txtBuscar.TabIndex = 2
         '
         'cbxListadoClientes
@@ -269,7 +269,7 @@ Partial Class frmCliente
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(502, 177)
+        Me.datalistado.Size = New System.Drawing.Size(661, 177)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -294,11 +294,14 @@ Partial Class frmCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(857, 267)
+        Me.ClientSize = New System.Drawing.Size(993, 266)
         Me.Controls.Add(Me.txtFlag)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmCliente"
+        Me.ShowIcon = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.Text = ".:.Listado de clientes.:."
         Me.GroupBox1.ResumeLayout(False)

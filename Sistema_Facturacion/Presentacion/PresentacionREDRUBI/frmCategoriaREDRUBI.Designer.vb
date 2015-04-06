@@ -237,6 +237,8 @@ Partial Class frmCategoriaREDRUBI
         Me.Controls.Add(Me.txtflag)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmCategoriaREDRUBI"
         Me.Text = "frmCategoriaREDRUBI"
         Me.GroupBox2.ResumeLayout(False)

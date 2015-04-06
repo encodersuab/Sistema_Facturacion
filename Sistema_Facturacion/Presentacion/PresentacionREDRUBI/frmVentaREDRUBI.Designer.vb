@@ -291,6 +291,8 @@ Partial Class frmVentaREDRUBI
         Me.ClientSize = New System.Drawing.Size(892, 281)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmVentaREDRUBI"
         Me.Text = "frmVentaREDRUBI"
         Me.GroupBox1.ResumeLayout(False)

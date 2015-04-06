@@ -259,6 +259,8 @@ Partial Class frmDatosImpuestos
         Me.ClientSize = New System.Drawing.Size(941, 191)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmDatosImpuestos"
         Me.Text = "frmDatosImpuestos"
         Me.GroupBox1.ResumeLayout(False)

@@ -529,6 +529,8 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.ClientSize = New System.Drawing.Size(954, 394)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmDetalleVentaplanillaPostGrado"
         Me.Text = "frmDetalleVentaplanillaPostGrado"
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()

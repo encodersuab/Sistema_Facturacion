@@ -465,6 +465,8 @@ Partial Class frmProducto
         Me.Controls.Add(Me.txtTag)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmProducto"
         Me.Text = "Listado del Catalogo de Productos"
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()

@@ -350,6 +350,8 @@ Partial Class frmVentaPlanillaCAMPOFERIAL
         Me.ClientSize = New System.Drawing.Size(922, 304)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmVentaPlanillaCAMPOFERIAL"
         Me.Text = ".:. venta planilla CAMPOFERIAL"
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()

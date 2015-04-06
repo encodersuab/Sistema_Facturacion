@@ -546,6 +546,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmDetalleVentaCAMPOFERIAL"
         Me.Text = ".:. ventas CAMPOFERIAL .:."
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()

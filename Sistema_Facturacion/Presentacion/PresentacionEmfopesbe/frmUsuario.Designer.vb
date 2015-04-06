@@ -372,6 +372,8 @@ Partial Class frmUsuario
         Me.ClientSize = New System.Drawing.Size(862, 357)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmUsuario"
         Me.Text = "frmUsuario"
         Me.GroupBox2.ResumeLayout(False)

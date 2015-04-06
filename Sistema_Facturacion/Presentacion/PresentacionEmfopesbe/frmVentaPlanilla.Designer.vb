@@ -338,6 +338,8 @@ Partial Class frmVentaPlanilla
         Me.ClientSize = New System.Drawing.Size(925, 310)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmVentaPlanilla"
         Me.Text = "frmVentaPlanilla"
         Me.GroupBox2.ResumeLayout(False)

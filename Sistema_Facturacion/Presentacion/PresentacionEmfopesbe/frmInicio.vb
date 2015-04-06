@@ -100,12 +100,15 @@ Public Class frmInicioF
             emfopesbe.Enabled = True
             postgrado.Enabled = False
             registroE.Enabled = False
+            DatosImpuestos.Enabled = False
+
         Else
             If lbrol.Text = "AdministradorEMFOPESBE" Then
                 redrubi.Enabled = False
                 emfopesbe.Enabled = True
                 postgrado.Enabled = False
                 fexpobeni.Enabled = False
+                DatosImpuestos.Enabled = False
             Else
                 If lbrol.Text = "UsuarioREDRUBI" Then
                     fexpobeni.Enabled = False
@@ -113,12 +116,14 @@ Public Class frmInicioF
                     emfopesbe.Enabled = False
                     postgrado.Enabled = False
                     registroR.Enabled = False
+                    DatosImpuestos.Enabled = False
                 Else
                     If lbrol.Text = "AdministradorREDRUBI" Then
                         fexpobeni.Enabled = False
                         redrubi.Enabled = True
                         emfopesbe.Enabled = False
                         postgrado.Enabled = False
+                        DatosImpuestos.Enabled = False
                     Else
                         If lbrol.Text = "UsuarioPOSGRADO" Then
                             fexpobeni.Enabled = False
@@ -126,12 +131,14 @@ Public Class frmInicioF
                             emfopesbe.Enabled = False
                             postgrado.Enabled = True
                             registroP.Enabled = False
+                            DatosImpuestos.Enabled = False
                         Else
                             If lbrol.Text = "AdministradorPOSGRADO" Then
                                 fexpobeni.Enabled = False
                                 redrubi.Enabled = False
                                 emfopesbe.Enabled = False
                                 postgrado.Enabled = True
+                                DatosImpuestos.Enabled = False
                             Else
                                 If lbrol.Text = "UsuarioFEXPOBENI" Then
                                     fexpobeni.Enabled = True
@@ -139,12 +146,14 @@ Public Class frmInicioF
                                     emfopesbe.Enabled = False
                                     postgrado.Enabled = False
                                     registroF.Enabled = False
+                                    DatosImpuestos.Enabled = False
                                 Else
                                     If lbrol.Text = "AdministradorFEXPOBENI" Then
                                         fexpobeni.Enabled = True
                                         redrubi.Enabled = False
                                         emfopesbe.Enabled = False
                                         postgrado.Enabled = False
+                                        DatosImpuestos.Enabled = False
                                     End If
                                 End If
                             End If
@@ -421,5 +430,10 @@ Public Class frmInicioF
     Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
         frmReporteUsuarios.MdiParent = Me
         frmReporteUsuarios.Show()
+    End Sub
+
+    Private Sub DatosImpuestosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DatosImpuestos.Click
+        frmDatosImpuestos.MdiParent = Me
+        frmDatosImpuestos.Show()
     End Sub
 End Class

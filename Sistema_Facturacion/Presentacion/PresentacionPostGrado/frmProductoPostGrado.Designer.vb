@@ -464,6 +464,8 @@ Partial Class frmProductoPostGrado
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtprecio_compra)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmProductoPostGrado"
         Me.Text = "frmProductoPostGrado"
         Me.GroupBox2.ResumeLayout(False)

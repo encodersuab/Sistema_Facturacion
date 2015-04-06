@@ -338,6 +338,8 @@ Partial Class frmVentaPlanillaREDRUBI
         Me.ClientSize = New System.Drawing.Size(918, 305)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmVentaPlanillaREDRUBI"
         Me.Text = "frmVentaPlanillaREDRUBI"
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()

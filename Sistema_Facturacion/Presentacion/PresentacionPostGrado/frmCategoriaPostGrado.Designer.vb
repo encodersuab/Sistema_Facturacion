@@ -237,6 +237,8 @@ Partial Class frmCategoriaPostGrado
         Me.Controls.Add(Me.txtflag)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmCategoriaPostGrado"
         Me.Text = "frmCategoriaPostGrado"
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()

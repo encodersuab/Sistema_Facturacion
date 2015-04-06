@@ -291,6 +291,8 @@ Partial Class frmVentaPostGrado
         Me.ClientSize = New System.Drawing.Size(887, 289)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmVentaPostGrado"
         Me.Text = "frmVentaPostGrado"
         Me.GroupBox1.ResumeLayout(False)

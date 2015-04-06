@@ -291,6 +291,8 @@ Partial Class frmVenta
         Me.ClientSize = New System.Drawing.Size(894, 282)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmVenta"
         Me.Text = ".:. Listado Ventas .:."
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()

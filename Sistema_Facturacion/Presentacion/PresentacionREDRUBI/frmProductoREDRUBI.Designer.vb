@@ -59,10 +59,10 @@ Partial Class frmProductoREDRUBI
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtIdproducto = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbbmodulo = New System.Windows.Forms.Label()
         Me.btnlimpiar = New System.Windows.Forms.PictureBox()
         Me.btncargar = New System.Windows.Forms.PictureBox()
         Me.imagen = New System.Windows.Forms.PictureBox()
-        Me.cbbmodulo = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -411,6 +411,15 @@ Partial Class frmProductoREDRUBI
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
+        'cbbmodulo
+        '
+        Me.cbbmodulo.AutoSize = True
+        Me.cbbmodulo.Location = New System.Drawing.Point(151, 208)
+        Me.cbbmodulo.Name = "cbbmodulo"
+        Me.cbbmodulo.Size = New System.Drawing.Size(59, 13)
+        Me.cbbmodulo.TabIndex = 30
+        Me.cbbmodulo.Text = "RED-RUBI"
+        '
         'btnlimpiar
         '
         Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
@@ -442,15 +451,6 @@ Partial Class frmProductoREDRUBI
         Me.imagen.TabIndex = 23
         Me.imagen.TabStop = False
         '
-        'cbbmodulo
-        '
-        Me.cbbmodulo.AutoSize = True
-        Me.cbbmodulo.Location = New System.Drawing.Point(151, 208)
-        Me.cbbmodulo.Name = "cbbmodulo"
-        Me.cbbmodulo.Size = New System.Drawing.Size(59, 13)
-        Me.cbbmodulo.TabIndex = 30
-        Me.cbbmodulo.Text = "RED-RUBI"
-        '
         'frmProductoREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -465,6 +465,8 @@ Partial Class frmProductoREDRUBI
         Me.Controls.Add(Me.txtstock)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtprecio_compra)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmProductoREDRUBI"
         Me.Text = "frmProductoREDRUBI"
         Me.GroupBox2.ResumeLayout(False)

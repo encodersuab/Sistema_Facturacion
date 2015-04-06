@@ -536,6 +536,8 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         Me.ControlBox = False
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmDetalleVentaPlanillaCAMPOFERIAL"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.Text = ".:. detalle venta planilla CAMPOFERIAL.:."

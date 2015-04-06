@@ -528,6 +528,8 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.txtStock)
         Me.Controls.Add(Me.Label8)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmDetalleVentaPlanillaREDRUBI"
         Me.Text = "frmDetalleVentaPlanillaREDRUBI"
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()

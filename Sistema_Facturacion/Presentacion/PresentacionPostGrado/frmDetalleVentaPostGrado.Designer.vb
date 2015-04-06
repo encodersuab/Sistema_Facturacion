@@ -546,6 +546,8 @@ Partial Class frmDetalleVentaPostGrado
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "frmDetalleVentaPostGrado"
         Me.Text = "frmDetalleVentaPostGrado"
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()
