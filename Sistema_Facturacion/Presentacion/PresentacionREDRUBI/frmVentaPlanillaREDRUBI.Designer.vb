@@ -341,7 +341,7 @@ Partial Class frmVentaPlanillaREDRUBI
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmVentaPlanillaREDRUBI"
-        Me.Text = "frmVentaPlanillaREDRUBI"
+        Me.Text = ".:. ventas planilla REDRUBI .:."
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

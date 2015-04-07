@@ -167,10 +167,10 @@ Partial Class frmLogin
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Sistema_Facturacion.My.Resources.Resources.Unitag_QRCode_1426797072421
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 79)
+        Me.PictureBox1.Image = Global.Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios___copia
+        Me.PictureBox1.Location = New System.Drawing.Point(2, 86)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(164, 162)
+        Me.PictureBox1.Size = New System.Drawing.Size(175, 150)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False

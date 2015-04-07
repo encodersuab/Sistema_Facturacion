@@ -468,7 +468,7 @@ Partial Class frmProducto
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmProducto"
-        Me.Text = "Listado del Catalogo de Productos"
+        Me.Text = ".:. producto EMFOPESBE .:."
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)

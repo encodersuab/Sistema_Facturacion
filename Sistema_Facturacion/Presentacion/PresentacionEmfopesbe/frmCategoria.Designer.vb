@@ -241,7 +241,7 @@ Partial Class frmCategoria
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(746, 278)
         Me.Name = "frmCategoria"
-        Me.Text = "Listado de categoria"
+        Me.Text = ".:. categoria .:."
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)

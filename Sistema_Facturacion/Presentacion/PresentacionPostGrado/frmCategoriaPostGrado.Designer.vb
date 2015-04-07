@@ -240,7 +240,7 @@ Partial Class frmCategoriaPostGrado
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmCategoriaPostGrado"
-        Me.Text = "frmCategoriaPostGrado"
+        Me.Text = ".:. categoria POSTGRADO .:."
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)

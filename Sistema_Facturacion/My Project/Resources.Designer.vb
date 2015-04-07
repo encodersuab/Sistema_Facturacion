@@ -93,6 +93,56 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property factura_electronica_beneficios() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("factura-electronica-beneficios", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property factura_electronica_beneficios___copia() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("factura-electronica-beneficios - copia", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property factura_electronica_beneficios1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("factura-electronica-beneficios1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property factura_electronica_beneficios2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("factura-electronica-beneficios2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property factura_electronica_beneficios3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("factura-electronica-beneficios3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property fondo_transparente_fotos() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("fondo_transparente_fotos", resourceCulture)
@@ -126,6 +176,16 @@ Namespace My.Resources
         Friend ReadOnly Property Unitag_QRCode_1426797072421() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Unitag_QRCode_1426797072421", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ventas_online() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ventas_online", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

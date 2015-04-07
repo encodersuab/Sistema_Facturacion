@@ -374,7 +374,7 @@ Partial Class frmQR
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmQR"
-        Me.Text = "frmQR"
+        Me.Text = ".:. QR .:."
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()

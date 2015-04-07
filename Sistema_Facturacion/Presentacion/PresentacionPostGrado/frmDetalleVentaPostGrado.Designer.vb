@@ -549,7 +549,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmDetalleVentaPostGrado"
-        Me.Text = "frmDetalleVentaPostGrado"
+        Me.Text = ".:. detalle venta POSTGRADO .:."
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()

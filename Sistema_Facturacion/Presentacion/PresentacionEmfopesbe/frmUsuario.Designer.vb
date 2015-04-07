@@ -375,7 +375,7 @@ Partial Class frmUsuario
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmUsuario"
-        Me.Text = "frmUsuario"
+        Me.Text = ".:. usuario .:."
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()

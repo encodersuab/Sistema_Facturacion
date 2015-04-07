@@ -262,7 +262,7 @@ Partial Class frmDatosImpuestos
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmDatosImpuestos"
-        Me.Text = "frmDatosImpuestos"
+        Me.Text = ".:. datos Impuestos .:."
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

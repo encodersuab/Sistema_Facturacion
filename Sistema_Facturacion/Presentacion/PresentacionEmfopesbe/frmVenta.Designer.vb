@@ -294,7 +294,7 @@ Partial Class frmVenta
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmVenta"
-        Me.Text = ".:. Listado Ventas .:."
+        Me.Text = ".:. ventas EMFOPESBE .:."
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)

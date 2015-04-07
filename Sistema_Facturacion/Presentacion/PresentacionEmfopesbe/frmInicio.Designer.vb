@@ -85,6 +85,7 @@ Partial Class frmInicioF
         Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
         Me.reImprecionF = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DatosImpuestos = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -103,7 +104,6 @@ Partial Class frmInicioF
         Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DatosImpuestos = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
@@ -115,7 +115,7 @@ Partial Class frmInicioF
         '
         'MenuStrip
         '
-        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicioToolStripMenuItem, Me.emfopesbe, Me.postgrado, Me.redrubi, Me.fexpobeni, Me.ViewMenu, Me.ToolsMenu, Me.WindowsMenu, Me.HelpMenu, Me.SalirToolStripMenuItem, Me.DatosImpuestos})
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicioToolStripMenuItem, Me.emfopesbe, Me.postgrado, Me.redrubi, Me.fexpobeni, Me.DatosImpuestos, Me.ViewMenu, Me.ToolsMenu, Me.WindowsMenu, Me.HelpMenu, Me.SalirToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.MdiWindowListItem = Me.WindowsMenu
         Me.MenuStrip.Name = "MenuStrip"
@@ -234,7 +234,7 @@ Partial Class frmInicioF
         '
         Me.registroP.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem6, Me.ToolStripMenuItem7, Me.ToolStripMenuItem11})
         Me.registroP.Name = "registroP"
-        Me.registroP.Size = New System.Drawing.Size(152, 22)
+        Me.registroP.Size = New System.Drawing.Size(151, 22)
         Me.registroP.Text = "Registro"
         '
         'ToolStripMenuItem6
@@ -259,7 +259,7 @@ Partial Class frmInicioF
         '
         Me.ToolStripMenuItem12.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem13, Me.ToolStripMenuItem17})
         Me.ToolStripMenuItem12.Name = "ToolStripMenuItem12"
-        Me.ToolStripMenuItem12.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem12.Size = New System.Drawing.Size(151, 22)
         Me.ToolStripMenuItem12.Text = "Venta"
         '
         'ToolStripMenuItem13
@@ -278,7 +278,7 @@ Partial Class frmInicioF
         '
         Me.ToolStripMenuItem18.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem22, Me.ToolStripMenuItem23, Me.ToolStripMenuItem24, Me.ToolStripMenuItem28, Me.ToolStripMenuItem29})
         Me.ToolStripMenuItem18.Name = "ToolStripMenuItem18"
-        Me.ToolStripMenuItem18.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem18.Size = New System.Drawing.Size(151, 22)
         Me.ToolStripMenuItem18.Text = "Reporte"
         '
         'ToolStripMenuItem22
@@ -314,7 +314,7 @@ Partial Class frmInicioF
         'ToolStripMenuItem33
         '
         Me.ToolStripMenuItem33.Name = "ToolStripMenuItem33"
-        Me.ToolStripMenuItem33.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem33.Size = New System.Drawing.Size(151, 22)
         Me.ToolStripMenuItem33.Text = "Anular Factura"
         '
         'redrubi
@@ -328,7 +328,7 @@ Partial Class frmInicioF
         '
         Me.registroR.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem25, Me.ToolStripMenuItem26, Me.ToolStripMenuItem27})
         Me.registroR.Name = "registroR"
-        Me.registroR.Size = New System.Drawing.Size(152, 22)
+        Me.registroR.Size = New System.Drawing.Size(151, 22)
         Me.registroR.Text = "Registro"
         '
         'ToolStripMenuItem25
@@ -353,7 +353,7 @@ Partial Class frmInicioF
         '
         Me.VentaR.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContadoToolStripMenuItem2, Me.PorPlanillaToolStripMenuItem2})
         Me.VentaR.Name = "VentaR"
-        Me.VentaR.Size = New System.Drawing.Size(152, 22)
+        Me.VentaR.Size = New System.Drawing.Size(151, 22)
         Me.VentaR.Text = "Venta"
         '
         'ContadoToolStripMenuItem2
@@ -372,7 +372,7 @@ Partial Class frmInicioF
         '
         Me.reporteR.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem30, Me.ToolStripMenuItem31, Me.ToolStripMenuItem32, Me.ClientesToolStripMenuItem, Me.UsuariosToolStripMenuItem})
         Me.reporteR.Name = "reporteR"
-        Me.reporteR.Size = New System.Drawing.Size(152, 22)
+        Me.reporteR.Size = New System.Drawing.Size(151, 22)
         Me.reporteR.Text = "Reporte"
         '
         'ToolStripMenuItem30
@@ -408,7 +408,7 @@ Partial Class frmInicioF
         'REImprecionR
         '
         Me.REImprecionR.Name = "REImprecionR"
-        Me.REImprecionR.Size = New System.Drawing.Size(152, 22)
+        Me.REImprecionR.Size = New System.Drawing.Size(151, 22)
         Me.REImprecionR.Text = "Anular Factura"
         '
         'fexpobeni
@@ -492,6 +492,12 @@ Partial Class frmInicioF
         Me.reImprecionF.Name = "reImprecionF"
         Me.reImprecionF.Size = New System.Drawing.Size(151, 22)
         Me.reImprecionF.Text = "Anular Factura"
+        '
+        'DatosImpuestos
+        '
+        Me.DatosImpuestos.Name = "DatosImpuestos"
+        Me.DatosImpuestos.Size = New System.Drawing.Size(123, 20)
+        Me.DatosImpuestos.Text = "DATOS IMPUESTOS"
         '
         'ViewMenu
         '
@@ -615,12 +621,6 @@ Partial Class frmInicioF
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
         Me.SalirToolStripMenuItem.Text = "SALIR"
         '
-        'DatosImpuestos
-        '
-        Me.DatosImpuestos.Name = "DatosImpuestos"
-        Me.DatosImpuestos.Size = New System.Drawing.Size(123, 20)
-        Me.DatosImpuestos.Text = "DATOS IMPUESTOS"
-        '
         'StatusStrip
         '
         Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel})
@@ -640,27 +640,28 @@ Partial Class frmInicioF
         '
         Me.lbrol.AutoSize = True
         Me.lbrol.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbrol.Location = New System.Drawing.Point(1115, 24)
+        Me.lbrol.Location = New System.Drawing.Point(1075, 20)
         Me.lbrol.Name = "lbrol"
-        Me.lbrol.Size = New System.Drawing.Size(57, 20)
+        Me.lbrol.Size = New System.Drawing.Size(81, 20)
         Me.lbrol.TabIndex = 9
-        Me.lbrol.Text = "Label1"
+        Me.lbrol.Text = "FUNCION"
         '
         'lbUsurio
         '
         Me.lbUsurio.AutoSize = True
         Me.lbUsurio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbUsurio.Location = New System.Drawing.Point(1115, 44)
+        Me.lbUsurio.Location = New System.Drawing.Point(1075, 0)
         Me.lbUsurio.Name = "lbUsurio"
-        Me.lbUsurio.Size = New System.Drawing.Size(57, 20)
+        Me.lbUsurio.Size = New System.Drawing.Size(84, 20)
         Me.lbUsurio.TabIndex = 11
-        Me.lbUsurio.Text = "Label0"
+        Me.lbUsurio.Text = "USUARIO"
         '
         'frmInicioF
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.slider3
+        Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios3
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1172, 508)
         Me.Controls.Add(Me.lbUsurio)
@@ -670,7 +671,7 @@ Partial Class frmInicioF
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip
         Me.Name = "frmInicioF"
-        Me.Text = "frmInicio"
+        Me.Text = ".:. Inicio .:."
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()

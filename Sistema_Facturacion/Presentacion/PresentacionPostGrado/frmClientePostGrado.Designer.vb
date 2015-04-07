@@ -301,7 +301,7 @@ Partial Class frmClientePostGrado
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmClientePostGrado"
-        Me.Text = "frmCliebtePostGrado"
+        Me.Text = ".:. cliente POSTGRADO .:."
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)

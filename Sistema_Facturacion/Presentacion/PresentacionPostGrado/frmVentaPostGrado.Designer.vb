@@ -294,7 +294,7 @@ Partial Class frmVentaPostGrado
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmVentaPostGrado"
-        Me.Text = "frmVentaPostGrado"
+        Me.Text = ".:. venta POSTGRADO .:. "
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

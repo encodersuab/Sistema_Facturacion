@@ -341,7 +341,7 @@ Partial Class frmVentaPlanillaPostGrado
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmVentaPlanillaPostGrado"
-        Me.Text = "frmVentaPlanillaPostGrado"
+        Me.Text = ".:. venta planilla POSTGRADO .:."
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

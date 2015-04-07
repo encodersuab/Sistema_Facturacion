@@ -455,7 +455,7 @@ Partial Class frmProductoREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1064, 523)
+        Me.ClientSize = New System.Drawing.Size(877, 523)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.txtTag)
@@ -468,7 +468,7 @@ Partial Class frmProductoREDRUBI
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmProductoREDRUBI"
-        Me.Text = "frmProductoREDRUBI"
+        Me.Text = ".:. producto REDRUBI .:."
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()

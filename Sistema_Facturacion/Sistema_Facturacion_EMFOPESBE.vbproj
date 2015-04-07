@@ -595,7 +595,24 @@
   <ItemGroup>
     <None Include="Resources\Unitag_QRCode_1426797072421.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ventas_online.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura-electronica-beneficios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura-electronica-beneficios1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura-electronica-beneficios2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura-electronica-beneficios3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura-electronica-beneficios - copia.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

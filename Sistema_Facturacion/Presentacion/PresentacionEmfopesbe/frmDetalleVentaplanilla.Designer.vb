@@ -531,7 +531,7 @@ Partial Class frmDetalleVentaplanilla
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmDetalleVentaplanilla"
-        Me.Text = "frmDetallVentaplanilla"
+        Me.Text = ".:. detalle venta planilla EMFOPESBE .:."
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()

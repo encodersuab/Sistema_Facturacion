@@ -303,7 +303,7 @@ Partial Class frmCliente
         Me.Name = "frmCliente"
         Me.ShowIcon = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
-        Me.Text = ".:.Listado de clientes.:."
+        Me.Text = ".:. cliente EMFOPESBE .:."
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

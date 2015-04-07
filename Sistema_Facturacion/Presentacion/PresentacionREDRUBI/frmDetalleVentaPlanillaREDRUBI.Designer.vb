@@ -523,7 +523,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1137, 407)
+        Me.ClientSize = New System.Drawing.Size(971, 407)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.txtStock)
@@ -531,7 +531,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmDetalleVentaPlanillaREDRUBI"
-        Me.Text = "frmDetalleVentaPlanillaREDRUBI"
+        Me.Text = ".:. detalle venta planilla REDRUBI .:."
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()

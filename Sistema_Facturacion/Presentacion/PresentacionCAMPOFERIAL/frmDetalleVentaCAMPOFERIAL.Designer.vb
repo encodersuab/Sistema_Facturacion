@@ -549,7 +549,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmDetalleVentaCAMPOFERIAL"
-        Me.Text = ".:. ventas CAMPOFERIAL .:."
+        Me.Text = ".:. detalle venta CAMPOFERIAL .:."
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

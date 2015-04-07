@@ -127,6 +127,21 @@
   <data name="descarga (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\descarga (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="factura-electronica-beneficios3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\factura-electronica-beneficios3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ventas_online" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ventas_online.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="factura-electronica-beneficios1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\factura-electronica-beneficios1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Unitag_QRCode_1426797072421" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Unitag_QRCode_1426797072421.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="factura-electronica-beneficios2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\factura-electronica-beneficios2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="images (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,7 +151,10 @@
   <data name="slider3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\slider3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Unitag_QRCode_1426797072421" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Unitag_QRCode_1426797072421.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="factura-electronica-beneficios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\factura-electronica-beneficios.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="factura-electronica-beneficios - copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\factura-electronica-beneficios - copia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

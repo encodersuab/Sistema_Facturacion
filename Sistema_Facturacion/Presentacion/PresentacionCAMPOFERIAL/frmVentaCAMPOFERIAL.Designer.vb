@@ -294,7 +294,7 @@ Partial Class frmVentaCAMPOFERIAL
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmVentaCAMPOFERIAL"
-        Me.Text = ".:. ventas CAMPOFERIAL .:."
+        Me.Text = ".:. venta CAMPOFERIAL .:."
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

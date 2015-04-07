@@ -301,7 +301,7 @@ Partial Class frmClienteREDRUBI
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmClienteREDRUBI"
-        Me.Text = "frmClienteREDRUBI"
+        Me.Text = ".:. cliente REDRUBI .:."
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)

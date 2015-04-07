@@ -539,7 +539,7 @@ Partial Class frmDetalleVentaREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1173, 423)
+        Me.ClientSize = New System.Drawing.Size(961, 423)
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
@@ -548,7 +548,7 @@ Partial Class frmDetalleVentaREDRUBI
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmDetalleVentaREDRUBI"
-        Me.Text = "frmDetalleVentaREDRUBI"
+        Me.Text = ".:. detalle venta REDRUBI .:."
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()

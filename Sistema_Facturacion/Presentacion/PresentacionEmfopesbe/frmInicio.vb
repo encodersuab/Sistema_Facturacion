@@ -436,4 +436,10 @@ Public Class frmInicioF
         frmDatosImpuestos.MdiParent = Me
         frmDatosImpuestos.Show()
     End Sub
+
+    Private Sub PorPlanillaToolStripMenuItem2_Click_1(sender As Object, e As EventArgs) Handles PorPlanillaToolStripMenuItem2.Click
+        frmVentaPlanillaREDRUBI.MdiParent = Me
+        frmVentaPlanillaREDRUBI.Show()
+
+    End Sub
 End Class

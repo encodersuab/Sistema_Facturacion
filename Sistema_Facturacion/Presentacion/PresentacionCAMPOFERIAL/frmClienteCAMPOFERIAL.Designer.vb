@@ -301,7 +301,7 @@ Partial Class frmClienteCAMPOFERIAL
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmClienteCAMPOFERIAL"
-        Me.Text = ".:. Cliente CAMPOFERIAL .:."
+        Me.Text = ".:. cliente CAMPOFERIAL .:."
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()

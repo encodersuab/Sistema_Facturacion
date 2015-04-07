@@ -294,7 +294,7 @@ Partial Class frmVentaREDRUBI
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmVentaREDRUBI"
-        Me.Text = "frmVentaREDRUBI"
+        Me.Text = ".:. ventas REDRUBI .:."
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
