@@ -216,7 +216,7 @@ Partial Class frmProductoREDRUBI
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(839, 46)
+        Me.Label5.Location = New System.Drawing.Point(895, 97)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(91, 13)
         Me.Label5.TabIndex = 9
@@ -229,6 +229,7 @@ Partial Class frmProductoREDRUBI
         Me.txtprecio_compra.Name = "txtprecio_compra"
         Me.txtprecio_compra.Size = New System.Drawing.Size(56, 20)
         Me.txtprecio_compra.TabIndex = 8
+        Me.txtprecio_compra.Text = "0"
         '
         'Label4
         '

@@ -131,7 +131,7 @@
 
                     dts.gidcategoria = txtIdcategoria.Text
                     dts.gnombre_categoria = txtNombre.Text
-
+                    dts.gmodulo = lbModulo.Text
 
                     If func.editar(dts) Then
                         MessageBox.Show("Categoria modificada correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -221,8 +221,8 @@
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
         If txtflag.Text = "1" Then
-            frmProducto.txtidcategoria.Text = datalistado.SelectedCells.Item(1).Value
-            frmProducto.txtnom_categoria.Text = datalistado.SelectedCells.Item(2).Value
+            frmProductoREDRUBI.txtidcategoria.Text = datalistado.SelectedCells.Item(1).Value
+            frmProductoREDRUBI.txtnom_categoria.Text = datalistado.SelectedCells.Item(2).Value
             Me.Close()
 
         End If

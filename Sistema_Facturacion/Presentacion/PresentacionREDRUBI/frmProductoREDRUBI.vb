@@ -34,7 +34,7 @@
         txtprecio_compra.Text = "0"
         txtprecio_venta.Text = "0"
         txtIdproducto.Text = ""
-        cbbmodulo.Text = ""
+        'cbbmodulo.Text = ""
 
         imagen.Image = Nothing
         imagen.BackgroundImage = My.Resources.fondo_transparente_fotos
@@ -99,7 +99,9 @@
     Private Sub ocultar_columnas()
         datalistado.Columns(1).Visible = False
         datalistado.Columns(2).Visible = False
-
+        datalistado.Columns(7).Visible = False
+        datalistado.Columns(6).Visible = False
+        datalistado.Columns(12).Visible = False
     End Sub
 
     'Private Sub txtNombre_Validated(sender As Object, e As EventArgs) Handles txtNombre.Validated

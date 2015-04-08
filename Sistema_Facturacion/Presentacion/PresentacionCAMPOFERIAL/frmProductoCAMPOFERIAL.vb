@@ -34,7 +34,7 @@
         txtprecio_compra.Text = "0"
         txtprecio_venta.Text = "0"
         txtIdproducto.Text = ""
-        cbbmodulo.Text = ""
+        '  cbbmodulo.Text = ""
 
         imagen.Image = Nothing
         imagen.BackgroundImage = My.Resources.fondo_transparente_fotos

@@ -43,7 +43,7 @@ Partial Class frmLogin
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.GroupBox1.BackColor = System.Drawing.Color.LightGray
         Me.GroupBox1.Controls.Add(Me.lblHOra)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.btnIngresar)
@@ -53,7 +53,7 @@ Partial Class frmLogin
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox1.Location = New System.Drawing.Point(182, 79)
+        Me.GroupBox1.Location = New System.Drawing.Point(362, 69)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(306, 163)
         Me.GroupBox1.TabIndex = 1
@@ -149,7 +149,7 @@ Partial Class frmLogin
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Franklin Gothic Demi", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(164, 15)
+        Me.Label3.Location = New System.Drawing.Point(414, 21)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(204, 21)
         Me.Label3.TabIndex = 2
@@ -158,19 +158,19 @@ Partial Class frmLogin
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Franklin Gothic Demi", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(75, 36)
+        Me.Label4.Font = New System.Drawing.Font("Franklin Gothic Demi", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(393, 42)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(383, 21)
+        Me.Label4.Size = New System.Drawing.Size(246, 14)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "EMSOPESBE RED-RUBI CAMPO-FERIAL POST-GRADO"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios___copia
-        Me.PictureBox1.Location = New System.Drawing.Point(2, 86)
+        Me.PictureBox1.Location = New System.Drawing.Point(2, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(175, 150)
+        Me.PictureBox1.Size = New System.Drawing.Size(385, 249)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
@@ -179,11 +179,11 @@ Partial Class frmLogin
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(500, 253)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.ClientSize = New System.Drawing.Size(691, 253)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

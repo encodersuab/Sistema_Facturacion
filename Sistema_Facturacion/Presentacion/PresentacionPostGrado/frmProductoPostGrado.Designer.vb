@@ -457,7 +457,7 @@ Partial Class frmProductoPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(876, 521)
+        Me.ClientSize = New System.Drawing.Size(874, 521)
         Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label11)

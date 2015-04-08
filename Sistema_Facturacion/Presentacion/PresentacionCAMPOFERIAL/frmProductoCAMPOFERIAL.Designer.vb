@@ -387,6 +387,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtprecio_compra.Name = "txtprecio_compra"
         Me.txtprecio_compra.Size = New System.Drawing.Size(75, 20)
         Me.txtprecio_compra.TabIndex = 8
+        Me.txtprecio_compra.Text = "0"
         '
         'GroupBox2
         '
@@ -455,7 +456,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(879, 522)
+        Me.ClientSize = New System.Drawing.Size(880, 522)
         Me.Controls.Add(Me.txtTag)
         Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.GroupBox1)
