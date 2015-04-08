@@ -1,11 +1,11 @@
 ﻿Imports System.Data.SqlClient
-Public Class fCategoriaPostGrado
+Public Class fCategoriaCAMPOFERIAL
     Inherits Conexion
     Dim cmd As New SqlCommand
     Public Function mostrar() As DataTable
         Try
             conectado()
-            cmd = New SqlCommand("mostrar_categoria_postgrado")
+            cmd = New SqlCommand("mostrar_categoria_campoferial")
             cmd.CommandType = CommandType.StoredProcedure
 
             cmd.Connection = cnn
@@ -27,7 +27,7 @@ Public Class fCategoriaPostGrado
         End Try
     End Function
 
-    Public Function insertar(ByVal dts As vCategoriaPostGrado) As Boolean
+    Public Function insertar(ByVal dts As vCategoriaCAMPOFERIAL) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("insertar_categoria")
@@ -36,7 +36,6 @@ Public Class fCategoriaPostGrado
 
             cmd.Parameters.AddWithValue("@nombre_categoria", dts.gnombre_categoria)
             cmd.Parameters.AddWithValue("@modulo", dts.gmodulo)
-
 
             If cmd.ExecuteNonQuery Then
                 Return True
@@ -51,7 +50,7 @@ Public Class fCategoriaPostGrado
             desconectado()
         End Try
     End Function
-    Public Function editar(ByVal dts As vCategoriaPostGrado) As Boolean
+    Public Function editar(ByVal dts As vCategoriaCAMPOFERIAL) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("editar_categoria")
@@ -76,7 +75,7 @@ Public Class fCategoriaPostGrado
         End Try
     End Function
 
-    Public Function eliminar(ByVal dts As vCategoriaPostGrado) As Boolean
+    Public Function eliminar(ByVal dts As vCategoriaCAMPOFERIAL) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("eliminar_categoria")

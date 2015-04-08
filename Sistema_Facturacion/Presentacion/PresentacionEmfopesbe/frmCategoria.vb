@@ -94,6 +94,7 @@
 
 
                 dts.gnombre_categoria = txtNombre.Text
+                dts.gmodulo = lbModulo.Text
 
 
                 If func.insertar(dts) Then

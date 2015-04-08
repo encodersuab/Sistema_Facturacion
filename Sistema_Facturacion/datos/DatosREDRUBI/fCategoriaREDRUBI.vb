@@ -5,7 +5,7 @@ Public Class fCategoriaREDRUBI
     Public Function mostrar() As DataTable
         Try
             conectado()
-            cmd = New SqlCommand("mostrar_categoria")
+            cmd = New SqlCommand("mostrar_categoria_redrubi")
             cmd.CommandType = CommandType.StoredProcedure
 
             cmd.Connection = cnn
@@ -35,7 +35,7 @@ Public Class fCategoriaREDRUBI
             cmd.Connection = cnn
 
             cmd.Parameters.AddWithValue("@nombre_categoria", dts.gnombre_categoria)
-
+            cmd.Parameters.AddWithValue("@modulo", dts.gmodulo)
 
             If cmd.ExecuteNonQuery Then
                 Return True
@@ -59,7 +59,7 @@ Public Class fCategoriaREDRUBI
 
             cmd.Parameters.AddWithValue("@id_categoria", dts.gidcategoria)
             cmd.Parameters.AddWithValue("@nombre_categoria", dts.gnombre_categoria)
-
+            cmd.Parameters.AddWithValue("@modulo", dts.gmodulo)
 
             If cmd.ExecuteNonQuery Then
                 Return True

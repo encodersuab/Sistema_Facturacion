@@ -1,5 +1,5 @@
 ﻿Imports System.Data.SqlClient
-Public Class vCategoriaREDRUBI
+Public Class vCategoriaCAMPOFERIAL
     Dim idcategoria As Integer
     Dim nombre_categoria, modulo As String
 
@@ -22,7 +22,6 @@ Public Class vCategoriaREDRUBI
             nombre_categoria = value
         End Set
     End Property
-
     Public Property gmodulo
         Get
             Return modulo
@@ -40,4 +39,5 @@ Public Class vCategoriaREDRUBI
         gnombre_categoria = nombre_categoria
         gmodulo = modulo
     End Sub
+
 End Class

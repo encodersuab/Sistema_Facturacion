@@ -90,6 +90,7 @@
 
 
                 dts.gnombre_categoria = txtNombre.Text
+                dts.gmodulo = lbModulo.Text
 
 
                 If func.insertar(dts) Then
@@ -242,4 +243,7 @@
     End Sub
 
 
+    Private Sub lbModulo_Click(sender As Object, e As EventArgs) Handles lbModulo.Click
+
+    End Sub
 End Class

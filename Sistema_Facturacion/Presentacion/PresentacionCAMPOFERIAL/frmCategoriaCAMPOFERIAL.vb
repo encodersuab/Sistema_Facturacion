@@ -16,7 +16,7 @@
 
     Private Sub mostrar()
         Try
-            Dim func As New fCategoria
+            Dim func As New fCategoriaCAMPOFERIAL
             dt = func.mostrar
             datalistado.Columns.Item("Eliminar").Visible = False
 
@@ -85,12 +85,13 @@
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If Me.ValidateChildren = True And txtNombre.Text <> "" Then
             Try
-                Dim dts As New vCategoria
-                Dim func As New fCategoria
+                Dim dts As New vCategoriaCAMPOFERIAL
+                Dim func As New fCategoriaCAMPOFERIAL
 
 
 
                 dts.gnombre_categoria = txtNombre.Text
+                dts.gmodulo = lbModulo.Text
 
 
                 If func.insertar(dts) Then
@@ -122,8 +123,8 @@
 
             If Me.ValidateChildren = True And txtNombre.Text <> "" And txtIdcategoria.Text <> "" Then
                 Try
-                    Dim dts As New vCategoria
-                    Dim func As New fCategoria
+                    Dim dts As New vCategoriaCAMPOFERIAL
+                    Dim func As New fCategoriaCAMPOFERIAL
 
                     dts.gidcategoria = txtIdcategoria.Text
                     dts.gnombre_categoria = txtNombre.Text
@@ -180,8 +181,8 @@
 
                     If marcado Then
                         Dim onekey As Integer = Convert.ToInt32(row.Cells("idcategoria").Value)
-                        Dim vdb As New vCategoria
-                        Dim func As New fCategoria
+                        Dim vdb As New vCategoriaCAMPOFERIAL
+                        Dim func As New fCategoriaCAMPOFERIAL
                         vdb.gidcategoria = onekey
 
                         If func.eliminar(vdb) Then
@@ -239,6 +240,10 @@
     End Sub
 
     Private Sub txtIdcategoria_Validated(sender As Object, e As EventArgs) Handles txtIdcategoria.Validated
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
 End Class

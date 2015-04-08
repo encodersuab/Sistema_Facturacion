@@ -38,6 +38,8 @@ Partial Class frmCategoriaREDRUBI
         Me.txtIdcategoria = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lbModulo = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btncancelar = New System.Windows.Forms.Button()
@@ -178,6 +180,8 @@ Partial Class frmCategoriaREDRUBI
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.lbModulo)
+        Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.btnGuardar)
         Me.GroupBox1.Controls.Add(Me.btnEditar)
         Me.GroupBox1.Controls.Add(Me.btncancelar)
@@ -192,6 +196,24 @@ Partial Class frmCategoriaREDRUBI
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'lbModulo
+        '
+        Me.lbModulo.AutoSize = True
+        Me.lbModulo.Location = New System.Drawing.Point(167, 122)
+        Me.lbModulo.Name = "lbModulo"
+        Me.lbModulo.Size = New System.Drawing.Size(59, 13)
+        Me.lbModulo.TabIndex = 19
+        Me.lbModulo.Text = "RED-RUBI"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(99, 122)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(42, 13)
+        Me.Label3.TabIndex = 18
+        Me.Label3.Text = "Modulo"
         '
         'btnGuardar
         '
@@ -270,4 +292,6 @@ Partial Class frmCategoriaREDRUBI
     Friend WithEvents btnEditar As System.Windows.Forms.Button
     Friend WithEvents btncancelar As System.Windows.Forms.Button
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
+    Friend WithEvents lbModulo As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class
