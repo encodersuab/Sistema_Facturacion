@@ -47,7 +47,6 @@ Partial Class frmProducto
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtmedida = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.cbbmodulo = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.btnlimpiar = New System.Windows.Forms.PictureBox()
         Me.btncargar = New System.Windows.Forms.PictureBox()
@@ -63,6 +62,7 @@ Partial Class frmProducto
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dlg = New System.Windows.Forms.OpenFileDialog()
         Me.txtTag = New System.Windows.Forms.TextBox()
+        Me.cbbmodulo = New System.Windows.Forms.Label()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -166,7 +166,7 @@ Partial Class frmProducto
         Me.txtprecio_compra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtprecio_compra.Location = New System.Drawing.Point(154, 179)
         Me.txtprecio_compra.Name = "txtprecio_compra"
-        Me.txtprecio_compra.Size = New System.Drawing.Size(56, 20)
+        Me.txtprecio_compra.Size = New System.Drawing.Size(172, 20)
         Me.txtprecio_compra.TabIndex = 8
         '
         'txtstock
@@ -174,7 +174,7 @@ Partial Class frmProducto
         Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtstock.Location = New System.Drawing.Point(154, 153)
         Me.txtstock.Name = "txtstock"
-        Me.txtstock.Size = New System.Drawing.Size(56, 20)
+        Me.txtstock.Size = New System.Drawing.Size(172, 20)
         Me.txtstock.TabIndex = 6
         '
         'datalistado
@@ -256,9 +256,9 @@ Partial Class frmProducto
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.cbbmodulo)
         Me.GroupBox1.Controls.Add(Me.txtmedida)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.cbbmodulo)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.btnlimpiar)
         Me.GroupBox1.Controls.Add(Me.btncargar)
@@ -299,7 +299,7 @@ Partial Class frmProducto
         Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
         Me.txtmedida.Location = New System.Drawing.Point(154, 284)
         Me.txtmedida.Name = "txtmedida"
-        Me.txtmedida.Size = New System.Drawing.Size(121, 21)
+        Me.txtmedida.Size = New System.Drawing.Size(172, 21)
         Me.txtmedida.TabIndex = 29
         Me.txtmedida.Text = "UNIDAD"
         '
@@ -311,16 +311,6 @@ Partial Class frmProducto
         Me.Label11.Size = New System.Drawing.Size(42, 13)
         Me.Label11.TabIndex = 28
         Me.Label11.Text = "Medida"
-        '
-        'cbbmodulo
-        '
-        Me.cbbmodulo.FormattingEnabled = True
-        Me.cbbmodulo.Items.AddRange(New Object() {"CAMPO-FERIAL", "EMFOPESBE", "POST-GRADO", "RED-RUBI"})
-        Me.cbbmodulo.Location = New System.Drawing.Point(154, 257)
-        Me.cbbmodulo.Name = "cbbmodulo"
-        Me.cbbmodulo.Size = New System.Drawing.Size(172, 21)
-        Me.cbbmodulo.TabIndex = 17
-        Me.cbbmodulo.Text = "FEXPO-BENI"
         '
         'Label10
         '
@@ -376,7 +366,7 @@ Partial Class frmProducto
         Me.txtfecha_vencimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.txtfecha_vencimiento.Location = New System.Drawing.Point(154, 231)
         Me.txtfecha_vencimiento.Name = "txtfecha_vencimiento"
-        Me.txtfecha_vencimiento.Size = New System.Drawing.Size(100, 20)
+        Me.txtfecha_vencimiento.Size = New System.Drawing.Size(171, 20)
         Me.txtfecha_vencimiento.TabIndex = 21
         '
         'Label8
@@ -457,6 +447,15 @@ Partial Class frmProducto
         Me.txtTag.Text = "0"
         Me.txtTag.Visible = False
         '
+        'cbbmodulo
+        '
+        Me.cbbmodulo.AutoSize = True
+        Me.cbbmodulo.Location = New System.Drawing.Point(151, 260)
+        Me.cbbmodulo.Name = "cbbmodulo"
+        Me.cbbmodulo.Size = New System.Drawing.Size(72, 13)
+        Me.cbbmodulo.TabIndex = 30
+        Me.cbbmodulo.Text = "EMFOPESBE"
+        '
         'frmProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -518,8 +517,8 @@ Partial Class frmProducto
     Friend WithEvents btnlimpiar As System.Windows.Forms.PictureBox
     Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
     Friend WithEvents txtTag As System.Windows.Forms.TextBox
-    Friend WithEvents cbbmodulo As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents txtmedida As System.Windows.Forms.ComboBox
+    Friend WithEvents cbbmodulo As System.Windows.Forms.Label
 End Class

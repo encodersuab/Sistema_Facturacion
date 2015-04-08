@@ -15,8 +15,8 @@
 
     Private Sub mostrar()
         Try
-            Dim func As New fCategoriaPostGrado
-            dt = func.mostrar
+            Dim func As New fCategoria
+            dt = func.mostrarPG
             datalistado.Columns.Item("Eliminar").Visible = False
 
             If dt.Rows.Count <> 0 Then
@@ -90,7 +90,6 @@
 
 
                 dts.gnombre_categoria = txtNombre.Text
-                dts.gmodulo = lbModulo.Text
 
 
                 If func.insertar(dts) Then
@@ -243,7 +242,7 @@
     End Sub
 
 
-    Private Sub lbModulo_Click(sender As Object, e As EventArgs) Handles lbModulo.Click
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
 
     End Sub
 End Class

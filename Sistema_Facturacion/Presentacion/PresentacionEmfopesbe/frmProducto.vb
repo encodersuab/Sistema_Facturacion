@@ -35,7 +35,7 @@
         txtprecio_compra.Text = "0"
         txtprecio_venta.Text = "0"
         txtIdproducto.Text = ""
-        cbbmodulo.Text = ""
+        '  cbbmodulo.Text = ""
 
         imagen.Image = Nothing
         imagen.BackgroundImage = My.Resources.fondo_transparente_fotos
@@ -369,6 +369,22 @@
         End If
     End Sub
 
+    Private Sub txtprecio_compra_Click(sender As Object, e As EventArgs) Handles txtprecio_compra.Click
+
+    End Sub
+
+    Private Sub txtprecio_compra_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtprecio_compra.KeyPress
+        If ((e.KeyChar = "."c) OrElse (e.KeyChar = ","c)) Then
+            ' Obtenemos el carácter separador decimal existente
+            ' actualmente en la configuración regional de Windows.
+            ' 
+            e.KeyChar = _
+                Threading.Thread.CurrentThread. _
+                CurrentCulture.NumberFormat.NumberDecimalSeparator.Chars(0)
+
+        End If
+    End Sub
+
     Private Sub txtprecio_compra_TextChanged(sender As Object, e As EventArgs) Handles txtprecio_compra.TextChanged
 
     End Sub
@@ -378,6 +394,18 @@
             Me.erroricono.SetError(sender, "")
         Else
             Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub txtprecio_venta_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtprecio_venta.KeyPress
+        If ((e.KeyChar = "."c) OrElse (e.KeyChar = ","c)) Then
+            ' Obtenemos el carácter separador decimal existente
+            ' actualmente en la configuración regional de Windows.
+            ' 
+            e.KeyChar = _
+                Threading.Thread.CurrentThread. _
+                CurrentCulture.NumberFormat.NumberDecimalSeparator.Chars(0)
+
         End If
     End Sub
 

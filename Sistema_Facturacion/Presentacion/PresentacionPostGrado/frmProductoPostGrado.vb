@@ -378,6 +378,18 @@
         End If
     End Sub
 
+    Private Sub txtprecio_venta_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtprecio_venta.KeyPress
+        If ((e.KeyChar = "."c) OrElse (e.KeyChar = ","c)) Then
+            ' Obtenemos el carácter separador decimal existente
+            ' actualmente en la configuración regional de Windows.
+            ' 
+            e.KeyChar = _
+                Threading.Thread.CurrentThread. _
+                CurrentCulture.NumberFormat.NumberDecimalSeparator.Chars(0)
+
+        End If
+    End Sub
+
     Private Sub txtprecio_venta_TextChanged(sender As Object, e As EventArgs) Handles txtprecio_venta.TextChanged
 
     End Sub

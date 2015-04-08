@@ -27,6 +27,79 @@ Public Class fCategoria
 
         End Try
     End Function
+    Public Function mostrarCF() As DataTable
+        Try
+            conectado()
+            cmd = New SqlCommand("mostrar_categoria_campoferial")
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Connection = cnn
+
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dt)
+                Return dt
+            Else
+                Return Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            desconectado()
+
+        End Try
+    End Function
+    Public Function mostrarRB() As DataTable
+        Try
+            conectado()
+            cmd = New SqlCommand("mostrar_categoria_redrubi")
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Connection = cnn
+
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dt)
+                Return dt
+            Else
+                Return Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            desconectado()
+
+        End Try
+    End Function
+    Public Function mostrarPG() As DataTable
+        Try
+            conectado()
+            cmd = New SqlCommand("mostrar_categoria_postgrado")
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Connection = cnn
+
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dt)
+                Return dt
+            Else
+                Return Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            desconectado()
+
+        End Try
+    End Function
+  
 
     Public Function insertar(ByVal dts As vCategoria) As Boolean
         Try

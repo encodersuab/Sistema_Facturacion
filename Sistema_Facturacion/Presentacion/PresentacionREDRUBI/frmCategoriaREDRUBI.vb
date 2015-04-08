@@ -19,8 +19,8 @@
 
     Private Sub mostrar()
         Try
-            Dim func As New fCategoriaREDRUBI
-            dt = func.mostrar
+            Dim func As New fCategoria
+            dt = func.mostrarRB
             datalistado.Columns.Item("Eliminar").Visible = False
 
             If dt.Rows.Count <> 0 Then
