@@ -94,7 +94,7 @@ Partial Class frmProductoPostGrado
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(95, 240)
+        Me.Label10.Location = New System.Drawing.Point(96, 273)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(42, 13)
         Me.Label10.TabIndex = 27
@@ -103,7 +103,7 @@ Partial Class frmProductoPostGrado
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(95, 264)
+        Me.Label9.Location = New System.Drawing.Point(96, 297)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 22
@@ -112,7 +112,7 @@ Partial Class frmProductoPostGrado
         'txtfecha_vencimiento
         '
         Me.txtfecha_vencimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.txtfecha_vencimiento.Location = New System.Drawing.Point(154, 208)
+        Me.txtfecha_vencimiento.Location = New System.Drawing.Point(155, 241)
         Me.txtfecha_vencimiento.Name = "txtfecha_vencimiento"
         Me.txtfecha_vencimiento.Size = New System.Drawing.Size(100, 20)
         Me.txtfecha_vencimiento.TabIndex = 21
@@ -120,7 +120,7 @@ Partial Class frmProductoPostGrado
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(25, 214)
+        Me.Label8.Location = New System.Drawing.Point(26, 247)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(112, 13)
         Me.Label8.TabIndex = 20
@@ -258,7 +258,7 @@ Partial Class frmProductoPostGrado
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(52, 158)
+        Me.Label6.Location = New System.Drawing.Point(53, 191)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(85, 13)
         Me.Label6.TabIndex = 11
@@ -267,7 +267,7 @@ Partial Class frmProductoPostGrado
         'txtprecio_venta
         '
         Me.txtprecio_venta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtprecio_venta.Location = New System.Drawing.Point(154, 155)
+        Me.txtprecio_venta.Location = New System.Drawing.Point(155, 188)
         Me.txtprecio_venta.Name = "txtprecio_venta"
         Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
         Me.txtprecio_venta.TabIndex = 10
@@ -288,6 +288,7 @@ Partial Class frmProductoPostGrado
         Me.txtprecio_compra.Name = "txtprecio_compra"
         Me.txtprecio_compra.Size = New System.Drawing.Size(56, 20)
         Me.txtprecio_compra.TabIndex = 8
+        Me.txtprecio_compra.Text = "0"
         '
         'txtTag
         '
@@ -301,7 +302,7 @@ Partial Class frmProductoPostGrado
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(43, 185)
+        Me.Label4.Location = New System.Drawing.Point(44, 218)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(94, 13)
         Me.Label4.TabIndex = 7
@@ -310,7 +311,7 @@ Partial Class frmProductoPostGrado
         'txtstock
         '
         Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtstock.Location = New System.Drawing.Point(154, 182)
+        Me.txtstock.Location = New System.Drawing.Point(155, 215)
         Me.txtstock.Name = "txtstock"
         Me.txtstock.Size = New System.Drawing.Size(56, 20)
         Me.txtstock.TabIndex = 6
@@ -331,7 +332,7 @@ Partial Class frmProductoPostGrado
         Me.txtdescripcion.Multiline = True
         Me.txtdescripcion.Name = "txtdescripcion"
         Me.txtdescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtdescripcion.Size = New System.Drawing.Size(172, 39)
+        Me.txtdescripcion.Size = New System.Drawing.Size(172, 74)
         Me.txtdescripcion.TabIndex = 4
         '
         'Label2
@@ -411,7 +412,7 @@ Partial Class frmProductoPostGrado
         'cbbmodulo
         '
         Me.cbbmodulo.AutoSize = True
-        Me.cbbmodulo.Location = New System.Drawing.Point(156, 240)
+        Me.cbbmodulo.Location = New System.Drawing.Point(157, 273)
         Me.cbbmodulo.Name = "cbbmodulo"
         Me.cbbmodulo.Size = New System.Drawing.Size(78, 13)
         Me.cbbmodulo.TabIndex = 28
@@ -421,7 +422,7 @@ Partial Class frmProductoPostGrado
         '
         Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
         Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(331, 339)
+        Me.btnlimpiar.Location = New System.Drawing.Point(332, 372)
         Me.btnlimpiar.Name = "btnlimpiar"
         Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
         Me.btnlimpiar.TabIndex = 25
@@ -431,7 +432,7 @@ Partial Class frmProductoPostGrado
         '
         Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
         Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(331, 285)
+        Me.btncargar.Location = New System.Drawing.Point(332, 318)
         Me.btncargar.Name = "btncargar"
         Me.btncargar.Size = New System.Drawing.Size(45, 48)
         Me.btncargar.TabIndex = 24
@@ -442,7 +443,7 @@ Partial Class frmProductoPostGrado
         Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
         Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(154, 264)
+        Me.imagen.Location = New System.Drawing.Point(155, 297)
         Me.imagen.Name = "imagen"
         Me.imagen.Size = New System.Drawing.Size(171, 133)
         Me.imagen.TabIndex = 23
@@ -456,7 +457,7 @@ Partial Class frmProductoPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(883, 521)
+        Me.ClientSize = New System.Drawing.Size(894, 521)
         Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label11)
