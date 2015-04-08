@@ -288,6 +288,7 @@ Partial Class frmProductoPostGrado
         Me.txtprecio_compra.Name = "txtprecio_compra"
         Me.txtprecio_compra.Size = New System.Drawing.Size(56, 20)
         Me.txtprecio_compra.TabIndex = 8
+        Me.txtprecio_compra.Text = "0"
         '
         'txtTag
         '
@@ -456,7 +457,7 @@ Partial Class frmProductoPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(883, 521)
+        Me.ClientSize = New System.Drawing.Size(876, 521)
         Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label11)
