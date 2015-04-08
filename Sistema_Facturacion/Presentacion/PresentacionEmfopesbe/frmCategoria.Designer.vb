@@ -42,6 +42,8 @@ Partial Class frmCategoria
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtflag = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lbModulo = New System.Windows.Forms.Label()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -206,6 +208,8 @@ Partial Class frmCategoria
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.lbModulo)
+        Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.btnGuardar)
         Me.GroupBox1.Controls.Add(Me.btnEditar)
         Me.GroupBox1.Controls.Add(Me.btncancelar)
@@ -228,6 +232,24 @@ Partial Class frmCategoria
         Me.txtflag.Size = New System.Drawing.Size(36, 20)
         Me.txtflag.TabIndex = 4
         Me.txtflag.Text = "0"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(99, 122)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(42, 13)
+        Me.Label3.TabIndex = 16
+        Me.Label3.Text = "Modulo"
+        '
+        'lbModulo
+        '
+        Me.lbModulo.AutoSize = True
+        Me.lbModulo.Location = New System.Drawing.Point(167, 122)
+        Me.lbModulo.Name = "lbModulo"
+        Me.lbModulo.Size = New System.Drawing.Size(72, 13)
+        Me.lbModulo.TabIndex = 17
+        Me.lbModulo.Text = "EMFOPESBE"
         '
         'frmCategoria
         '
@@ -271,4 +293,6 @@ Partial Class frmCategoria
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdcategoria As System.Windows.Forms.TextBox
     Friend WithEvents txtflag As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents lbModulo As System.Windows.Forms.Label
 End Class

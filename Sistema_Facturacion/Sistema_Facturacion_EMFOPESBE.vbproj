@@ -79,6 +79,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="datos\DatosCAMPOFERIAL\fCategoriaCAMPOFERIAL.vb" />
     <Compile Include="datos\DatosCAMPOFERIAL\fDetalleVentaCAMPOFERIAL.vb" />
     <Compile Include="datos\DatosCAMPOFERIAL\fDetalleVentaPlanillaCAMPOFERIAL.vb" />
     <Compile Include="datos\DatosCAMPOFERIAL\fProductoCAMPOFERIAL.vb" />
@@ -115,6 +116,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbfacDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Logica\LogicaCAMPOFERIAL\vCategoriaCAMPOFERIAL.vb" />
     <Compile Include="Logica\LogicaCAMPOFERIAL\vDetalleVentaCAMPOFERIAL.vb" />
     <Compile Include="Logica\LogicaCAMPOFERIAL\vDetalleVentaPlanillaCAMPOFERIAL.vb" />
     <Compile Include="Logica\LogicaCAMPOFERIAL\vProductoCAMPOFERIAL.vb" />
