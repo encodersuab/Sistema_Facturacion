@@ -69,6 +69,7 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
+        Me.cbbestado = New System.Windows.Forms.ComboBox()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -232,6 +233,7 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.cbbestado)
         Me.GroupBox1.Controls.Add(Me.lbmedida)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
@@ -315,11 +317,12 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         'txtStock
         '
         Me.txtStock.Enabled = False
-        Me.txtStock.Location = New System.Drawing.Point(144, 257)
+        Me.txtStock.Location = New System.Drawing.Point(48, 257)
         Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
         Me.txtStock.Name = "txtStock"
-        Me.txtStock.Size = New System.Drawing.Size(173, 20)
+        Me.txtStock.Size = New System.Drawing.Size(36, 20)
         Me.txtStock.TabIndex = 29
+        Me.txtStock.Visible = False
         '
         'txtCantidad
         '
@@ -528,6 +531,16 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
+        'cbbestado
+        '
+        Me.cbbestado.Enabled = False
+        Me.cbbestado.FormattingEnabled = True
+        Me.cbbestado.Items.AddRange(New Object() {"LIBRE", "OCUPADO"})
+        Me.cbbestado.Location = New System.Drawing.Point(144, 256)
+        Me.cbbestado.Name = "cbbestado"
+        Me.cbbestado.Size = New System.Drawing.Size(173, 21)
+        Me.cbbestado.TabIndex = 38
+        '
         'frmDetalleVentaPlanillaCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -598,4 +611,5 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents cbbestado As System.Windows.Forms.ComboBox
 End Class

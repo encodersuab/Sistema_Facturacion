@@ -285,26 +285,6 @@ Public Class frmInicioF
         frmCategoriaREDRUBI.Show()
     End Sub
 
-    Private Sub VentaR_Click(sender As Object, e As EventArgs) Handles VentaR.Click
-     
-    End Sub
-
-    Private Sub ToolStripMenuItem14_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub ToolStripMenuItem15_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub ToolStripMenuItem16_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub ventaP_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
         frmClienteCAMPOFERIAL.MdiParent = Me
         frmClienteCAMPOFERIAL.Show()

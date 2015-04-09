@@ -289,7 +289,7 @@ Public Class frmDetalleVentaPlanillaCAMPOFERIAL
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
         Dim cant As Double
         cant = txtCantidad.Text
-        If txtCantidad.Text > txtStock.Value Then
+        If txtCantidad.Text >= txtStock.Value Then
             MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
             'btnGuardar.Visible = 0
             txtCantidad.Text = txtStock.Value

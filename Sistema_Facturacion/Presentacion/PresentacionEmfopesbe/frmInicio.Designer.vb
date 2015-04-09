@@ -109,6 +109,7 @@ Partial Class frmInicioF
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.lbrol = New System.Windows.Forms.Label()
         Me.lbUsurio = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -116,7 +117,7 @@ Partial Class frmInicioF
         'MenuStrip
         '
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicioToolStripMenuItem, Me.emfopesbe, Me.postgrado, Me.redrubi, Me.fexpobeni, Me.DatosImpuestos, Me.ViewMenu, Me.ToolsMenu, Me.WindowsMenu, Me.HelpMenu, Me.SalirToolStripMenuItem})
-        Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip.Location = New System.Drawing.Point(0, 24)
         Me.MenuStrip.MdiWindowListItem = Me.WindowsMenu
         Me.MenuStrip.Name = "MenuStrip"
         Me.MenuStrip.Size = New System.Drawing.Size(1172, 24)
@@ -640,7 +641,7 @@ Partial Class frmInicioF
         '
         Me.lbrol.AutoSize = True
         Me.lbrol.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbrol.Location = New System.Drawing.Point(1075, 20)
+        Me.lbrol.Location = New System.Drawing.Point(150, 4)
         Me.lbrol.Name = "lbrol"
         Me.lbrol.Size = New System.Drawing.Size(81, 20)
         Me.lbrol.TabIndex = 9
@@ -650,11 +651,19 @@ Partial Class frmInicioF
         '
         Me.lbUsurio.AutoSize = True
         Me.lbUsurio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbUsurio.Location = New System.Drawing.Point(1075, 0)
+        Me.lbUsurio.Location = New System.Drawing.Point(12, 4)
         Me.lbUsurio.Name = "lbUsurio"
         Me.lbUsurio.Size = New System.Drawing.Size(84, 20)
         Me.lbUsurio.TabIndex = 11
         Me.lbUsurio.Text = "USUARIO"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1172, 24)
+        Me.MenuStrip1.TabIndex = 13
+        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'frmInicioF
         '
@@ -665,9 +674,10 @@ Partial Class frmInicioF
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1172, 508)
         Me.Controls.Add(Me.lbUsurio)
+        Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.lbrol)
         Me.Controls.Add(Me.MenuStrip)
-        Me.Controls.Add(Me.StatusStrip)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip
         Me.Name = "frmInicioF"
@@ -765,5 +775,6 @@ Partial Class frmInicioF
     Friend WithEvents ClientesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents UsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DatosImpuestos As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
 
 End Class

@@ -44,7 +44,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.lbmedida = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
-        Me.txtStock = New System.Windows.Forms.NumericUpDown()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -70,13 +69,15 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
+        Me.txtStock = New System.Windows.Forms.NumericUpDown()
+        Me.cbbestado = New System.Windows.Forms.ComboBox()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'erroricono
@@ -241,6 +242,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.cbbestado)
         Me.GroupBox1.Controls.Add(Me.lbmedida)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
@@ -303,15 +305,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtNombreFac.Size = New System.Drawing.Size(173, 20)
         Me.txtNombreFac.TabIndex = 33
         '
-        'txtStock
-        '
-        Me.txtStock.Enabled = False
-        Me.txtStock.Location = New System.Drawing.Point(142, 285)
-        Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
-        Me.txtStock.Name = "txtStock"
-        Me.txtStock.Size = New System.Drawing.Size(173, 20)
-        Me.txtStock.TabIndex = 29
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -327,7 +320,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtCantidad.Location = New System.Drawing.Point(144, 259)
         Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(134, 20)
+        Me.txtCantidad.Size = New System.Drawing.Size(92, 20)
         Me.txtCantidad.TabIndex = 29
         '
         'Label10
@@ -537,6 +530,26 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
+        'txtStock
+        '
+        Me.txtStock.Enabled = False
+        Me.txtStock.Location = New System.Drawing.Point(43, 283)
+        Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
+        Me.txtStock.Name = "txtStock"
+        Me.txtStock.Size = New System.Drawing.Size(39, 20)
+        Me.txtStock.TabIndex = 29
+        Me.txtStock.Visible = False
+        '
+        'cbbestado
+        '
+        Me.cbbestado.Enabled = False
+        Me.cbbestado.FormattingEnabled = True
+        Me.cbbestado.Items.AddRange(New Object() {"LIBRE", "OCUPADO"})
+        Me.cbbestado.Location = New System.Drawing.Point(143, 282)
+        Me.cbbestado.Name = "cbbestado"
+        Me.cbbestado.Size = New System.Drawing.Size(174, 21)
+        Me.cbbestado.TabIndex = 36
+        '
         'frmDetalleVentaCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -557,8 +570,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -586,7 +599,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtnituab As System.Windows.Forms.TextBox
-    Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
     Friend WithEvents txtPrecioUnitario As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
@@ -609,4 +621,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
     Friend WithEvents txtidCliente As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
+    Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
+    Friend WithEvents cbbestado As System.Windows.Forms.ComboBox
 End Class

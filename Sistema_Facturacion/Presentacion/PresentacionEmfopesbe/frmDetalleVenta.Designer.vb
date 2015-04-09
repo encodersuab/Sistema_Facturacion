@@ -279,7 +279,7 @@ Partial Class frmDetalleVenta
         Me.txtCantidad.Location = New System.Drawing.Point(144, 233)
         Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(134, 20)
+        Me.txtCantidad.Size = New System.Drawing.Size(114, 20)
         Me.txtCantidad.TabIndex = 29
         '
         'Label12
@@ -324,7 +324,7 @@ Partial Class frmDetalleVenta
         Me.txtStock.Location = New System.Drawing.Point(144, 255)
         Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
         Me.txtStock.Name = "txtStock"
-        Me.txtStock.Size = New System.Drawing.Size(173, 20)
+        Me.txtStock.Size = New System.Drawing.Size(114, 20)
         Me.txtStock.TabIndex = 29
         '
         'txtPrecioUnitario

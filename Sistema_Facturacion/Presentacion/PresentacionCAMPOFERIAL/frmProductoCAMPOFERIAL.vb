@@ -17,6 +17,8 @@
             btnlimpiar.Enabled = False
             txtidcategoria.Enabled = False
             txtnom_categoria.Enabled = False
+            cbbestado.Enabled = False
+            
         End If
 
 
@@ -46,6 +48,8 @@
 
     Private Sub mostrar()
         Try
+            
+           
             Dim func As New fProductoCAMPOFERIAL
             dt = func.mostrar
             datalistado.Columns.Item("Eliminar").Visible = False
@@ -239,6 +243,13 @@
         btnEditar.Visible = True
         btnGuardar.Visible = False
 
+        If txtstock.Text = "1,00" Then
+            cbbestado.Text = "LIBRE"
+        ElseIf txtstock.Text = "0,00" Then
+            cbbestado.Text = "OCUPADO"
+        ElseIf txtstock.Text = "" Then
+        End If
+
 
     End Sub
 
@@ -294,6 +305,12 @@
                 frmDetalleVentaCAMPOFERIAL.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVentaCAMPOFERIAL.txtStock.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaCAMPOFERIAL.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
+                If datalistado.SelectedCells.Item(6).Value = 1 Then
+                    frmDetalleVentaCAMPOFERIAL.cbbestado.Text = "LIBRE"
+                ElseIf datalistado.SelectedCells.Item(6).Value = 0 Then
+                    frmDetalleVentaCAMPOFERIAL.cbbestado.Text = "OCUPADO"
+                ElseIf cbbestado.Text = "" Then
+                End If
                 Me.Close()
 
             Else
@@ -302,8 +319,8 @@
                 frmDetalleVentaPlanillaCAMPOFERIAL.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVentaPlanillaCAMPOFERIAL.txtStock.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaPlanillaCAMPOFERIAL.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
-                Me.Close()
 
+                Me.Close()
 
             End If
 
@@ -399,6 +416,22 @@
             Me.erroricono.SetError(sender, "")
         Else
             Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+        End If
+    End Sub
+
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub DomainUpDown1_SelectedItemChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub cbbestado_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbbestado.SelectedIndexChanged
+        If cbbestado.Text = "LIBRE" Then
+            txtstock.Text = "1"
+        ElseIf cbbestado.Text = "OCUPADO" Then
+            txtstock.Text = "0"
         End If
     End Sub
 End Class

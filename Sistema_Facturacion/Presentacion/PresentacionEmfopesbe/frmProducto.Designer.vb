@@ -45,6 +45,7 @@ Partial Class frmProducto
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbbmodulo = New System.Windows.Forms.Label()
         Me.txtmedida = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -62,7 +63,6 @@ Partial Class frmProducto
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dlg = New System.Windows.Forms.OpenFileDialog()
         Me.txtTag = New System.Windows.Forms.TextBox()
-        Me.cbbmodulo = New System.Windows.Forms.Label()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -293,13 +293,22 @@ Partial Class frmProducto
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
+        'cbbmodulo
+        '
+        Me.cbbmodulo.AutoSize = True
+        Me.cbbmodulo.Location = New System.Drawing.Point(151, 260)
+        Me.cbbmodulo.Name = "cbbmodulo"
+        Me.cbbmodulo.Size = New System.Drawing.Size(72, 13)
+        Me.cbbmodulo.TabIndex = 30
+        Me.cbbmodulo.Text = "EMFOPESBE"
+        '
         'txtmedida
         '
         Me.txtmedida.FormattingEnabled = True
         Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
         Me.txtmedida.Location = New System.Drawing.Point(154, 284)
         Me.txtmedida.Name = "txtmedida"
-        Me.txtmedida.Size = New System.Drawing.Size(172, 21)
+        Me.txtmedida.Size = New System.Drawing.Size(107, 21)
         Me.txtmedida.TabIndex = 29
         Me.txtmedida.Text = "UNIDAD"
         '
@@ -446,15 +455,6 @@ Partial Class frmProducto
         Me.txtTag.TabIndex = 26
         Me.txtTag.Text = "0"
         Me.txtTag.Visible = False
-        '
-        'cbbmodulo
-        '
-        Me.cbbmodulo.AutoSize = True
-        Me.cbbmodulo.Location = New System.Drawing.Point(151, 260)
-        Me.cbbmodulo.Name = "cbbmodulo"
-        Me.cbbmodulo.Size = New System.Drawing.Size(72, 13)
-        Me.cbbmodulo.TabIndex = 30
-        Me.cbbmodulo.Text = "EMFOPESBE"
         '
         'frmProducto
         '

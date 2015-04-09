@@ -17,7 +17,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
         QrCodeImgControl1.Visible = False
         limpiar()
         mostrarDatosImpuestos()
-
+        
         '  txtIdVenta.Text = datalistado.SelectedCells.Item(8).Value
     End Sub
 
@@ -87,7 +87,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
 
 
         Buscar()
-
+        
 
 
 
@@ -579,7 +579,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
         Dim cant As Double
         cant = txtCantidad.Text
-        If txtCantidad.Text > txtStock.Value Then
+        If txtCantidad.Text >= txtStock.Value Then
             MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
             'btnGuardar.Visible = 0
             txtCantidad.Text = txtStock.Value
@@ -592,5 +592,9 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
         '    btnGuardar.Visible = 1
         'End If   
 
+    End Sub
+
+    Private Sub txtStock_ValueChanged(sender As Object, e As EventArgs) Handles txtStock.ValueChanged
+        
     End Sub
 End Class
