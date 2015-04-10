@@ -42,6 +42,7 @@ Public Class fDetalleVentaPostGrado
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
             cmd.Parameters.AddWithValue("@ncuota", dts.gncuota)
+            cmd.Parameters.AddWithValue("@detalle", dts.gdetalle)
             'cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
 
 

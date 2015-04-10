@@ -294,6 +294,7 @@
             If txtTag.Text = "1" Then
                 frmDetalleVenta.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
                 frmDetalleVenta.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                frmDetalleVenta.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
                 frmDetalleVenta.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVenta.txtStock.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVenta.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
@@ -302,6 +303,7 @@
             Else
                 frmDetalleVentaplanilla.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
                 frmDetalleVentaplanilla.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                frmDetalleVentaplanilla.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
                 frmDetalleVentaplanilla.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVentaplanilla.txtStock.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaplanilla.lbmedida.Text = datalistado.SelectedCells.Item(12).Value

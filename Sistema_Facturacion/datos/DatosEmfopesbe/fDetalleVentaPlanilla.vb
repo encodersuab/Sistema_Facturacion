@@ -41,6 +41,7 @@ Public Class fDetalleVentaPlanilla
             cmd.Parameters.AddWithValue("@cantidad", dts.gcantidad)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
+            cmd.Parameters.AddWithValue("@detalle", dts.gdetalle)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else

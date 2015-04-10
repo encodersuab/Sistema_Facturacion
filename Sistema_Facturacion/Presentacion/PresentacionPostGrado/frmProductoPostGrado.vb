@@ -291,6 +291,7 @@
             If txtTag.Text = "1" Then
                 frmDetalleVentaPostGrado.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
                 frmDetalleVentaPostGrado.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                frmDetalleVentaPostGrado.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
                 frmDetalleVentaPostGrado.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVentaPostGrado.txtncuota.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaPostGrado.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
@@ -299,6 +300,7 @@
             Else
                 frmDetalleVentaplanillaPostGrado.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
                 frmDetalleVentaplanillaPostGrado.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                frmDetalleVentaplanillaPostGrado.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
                 frmDetalleVentaplanillaPostGrado.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVentaplanillaPostGrado.txtncuota.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaplanillaPostGrado.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
