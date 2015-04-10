@@ -41,7 +41,6 @@ Public Class fDetalleVentaREDRUBI
             cmd.Parameters.AddWithValue("@idproducto", dts.gidproducto)
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
-            cmd.Parameters.AddWithValue("@detalle", dts.gdetalle)
             'cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
 
 

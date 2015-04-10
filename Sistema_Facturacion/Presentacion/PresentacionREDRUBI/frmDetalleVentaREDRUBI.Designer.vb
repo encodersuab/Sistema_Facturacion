@@ -70,7 +70,6 @@ Partial Class frmDetalleVentaREDRUBI
         Me.btnquitar = New System.Windows.Forms.Button()
         Me.cbeliminar = New System.Windows.Forms.CheckBox()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
-        Me.lbdetalle = New System.Windows.Forms.Label()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -409,7 +408,6 @@ Partial Class frmDetalleVentaREDRUBI
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.lbdetalle)
         Me.GroupBox2.Controls.Add(Me.btnFinalizarVenta)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
@@ -537,21 +535,11 @@ Partial Class frmDetalleVentaREDRUBI
         Me.Inexistente.TabStop = True
         Me.Inexistente.Text = "Datos Inexistentes"
         '
-        'lbdetalle
-        '
-        Me.lbdetalle.AutoSize = True
-        Me.lbdetalle.Location = New System.Drawing.Point(6, 384)
-        Me.lbdetalle.Name = "lbdetalle"
-        Me.lbdetalle.Size = New System.Drawing.Size(45, 13)
-        Me.lbdetalle.TabIndex = 43
-        Me.lbdetalle.Text = "Label13"
-        '
         'frmDetalleVentaREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(961, 423)
-        Me.ControlBox = False
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
@@ -620,5 +608,4 @@ Partial Class frmDetalleVentaREDRUBI
     Friend WithEvents Inexistente As System.Windows.Forms.LinkLabel
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents lbdetalle As System.Windows.Forms.Label
 End Class

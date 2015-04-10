@@ -17,7 +17,7 @@
             btnlimpiar.Enabled = False
             txtidcategoria.Enabled = False
             txtnom_categoria.Enabled = False
-            ' cbbestado.Enabled = False
+            cbbestado.Enabled = False
             
         End If
 
@@ -239,8 +239,17 @@
         imagen.Image = Image.FromStream(ms)
         imagen.SizeMode = PictureBoxSizeMode.StretchImage
 
+
         btnEditar.Visible = True
         btnGuardar.Visible = False
+
+        If txtstock.Text = "1,00" Then
+            cbbestado.Text = "LIBRE"
+        ElseIf txtstock.Text = "0,00" Then
+            cbbestado.Text = "OCUPADO"
+        ElseIf txtstock.Text = "" Then
+        End If
+
 
     End Sub
 
@@ -293,20 +302,14 @@
             If txtTag.Text = "1" Then
                 frmDetalleVentaCAMPOFERIAL.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
                 frmDetalleVentaCAMPOFERIAL.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
-                frmDetalleVentaCAMPOFERIAL.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
                 frmDetalleVentaCAMPOFERIAL.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVentaCAMPOFERIAL.txtStock.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaCAMPOFERIAL.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
-<<<<<<< HEAD
-=======
-               
->>>>>>> origin/master
                 Me.Close()
 
             Else
                 frmDetalleVentaPlanillaCAMPOFERIAL.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
                 frmDetalleVentaPlanillaCAMPOFERIAL.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
-                frmDetalleVentaPlanillaCAMPOFERIAL.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
                 frmDetalleVentaPlanillaCAMPOFERIAL.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVentaPlanillaCAMPOFERIAL.txtStock.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaPlanillaCAMPOFERIAL.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
@@ -418,10 +421,12 @@
 
     End Sub
 
-    
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
+    Private Sub cbbestado_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbbestado.SelectedIndexChanged
+        If cbbestado.Text = "LIBRE" Then
+            txtstock.Text = "1"
+        ElseIf cbbestado.Text = "OCUPADO" Then
+            txtstock.Text = "0"
+        End If
     End Sub
 
     Private Sub txtmedida_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtmedida.SelectedIndexChanged
