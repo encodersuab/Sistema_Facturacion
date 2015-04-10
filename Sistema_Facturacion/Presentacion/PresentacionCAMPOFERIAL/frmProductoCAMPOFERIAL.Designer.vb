@@ -29,10 +29,10 @@ Partial Class frmProductoCAMPOFERIAL
         Me.cbbModulo = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.btnlimpiar = New System.Windows.Forms.PictureBox()
-        Me.txtstock = New System.Windows.Forms.TextBox()
         Me.txtprecio_venta = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtstock = New System.Windows.Forms.TextBox()
         Me.btncargar = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.imagen = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtfecha_vencimiento = New System.Windows.Forms.DateTimePicker()
@@ -63,7 +63,6 @@ Partial Class frmProductoCAMPOFERIAL
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.dlg = New System.Windows.Forms.OpenFileDialog()
-        Me.cbbestado = New System.Windows.Forms.ComboBox()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,7 +90,9 @@ Partial Class frmProductoCAMPOFERIAL
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.btnlimpiar)
         Me.GroupBox1.Controls.Add(Me.txtprecio_venta)
+        Me.GroupBox1.Controls.Add(Me.txtstock)
         Me.GroupBox1.Controls.Add(Me.btncargar)
+        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.imagen)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.txtfecha_vencimiento)
@@ -146,15 +147,6 @@ Partial Class frmProductoCAMPOFERIAL
         Me.btnlimpiar.TabIndex = 25
         Me.btnlimpiar.TabStop = False
         '
-        'txtstock
-        '
-        Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtstock.Enabled = False
-        Me.txtstock.Location = New System.Drawing.Point(69, 487)
-        Me.txtstock.Name = "txtstock"
-        Me.txtstock.Size = New System.Drawing.Size(30, 20)
-        Me.txtstock.TabIndex = 6
-        '
         'txtprecio_venta
         '
         Me.txtprecio_venta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
@@ -163,14 +155,14 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
         Me.txtprecio_venta.TabIndex = 10
         '
-        'Label4
+        'txtstock
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(13, 490)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 13)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Estado"
+        Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtstock.Enabled = False
+        Me.txtstock.Location = New System.Drawing.Point(153, 208)
+        Me.txtstock.Name = "txtstock"
+        Me.txtstock.Size = New System.Drawing.Size(30, 20)
+        Me.txtstock.TabIndex = 6
         '
         'btncargar
         '
@@ -181,6 +173,15 @@ Partial Class frmProductoCAMPOFERIAL
         Me.btncargar.Size = New System.Drawing.Size(45, 48)
         Me.btncargar.TabIndex = 24
         Me.btncargar.TabStop = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(97, 211)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(40, 13)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Estado"
         '
         'imagen
         '
@@ -391,13 +392,10 @@ Partial Class frmProductoCAMPOFERIAL
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.cbbestado)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.txtBuscar)
         Me.GroupBox2.Controls.Add(Me.cbxListadoClientes)
-        Me.GroupBox2.Controls.Add(Me.txtstock)
         Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Location = New System.Drawing.Point(400, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(470, 499)
@@ -438,7 +436,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(6, 59)
+        Me.datalistado.Location = New System.Drawing.Point(-7, 60)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -455,20 +453,11 @@ Partial Class frmProductoCAMPOFERIAL
         '
         Me.dlg.FileName = "OpenFileDialog1"
         '
-        'cbbestado
-        '
-        Me.cbbestado.FormattingEnabled = True
-        Me.cbbestado.Items.AddRange(New Object() {"LIBRE", "OCUPADO"})
-        Me.cbbestado.Location = New System.Drawing.Point(105, 486)
-        Me.cbbestado.Name = "cbbestado"
-        Me.cbbestado.Size = New System.Drawing.Size(135, 21)
-        Me.cbbestado.TabIndex = 31
-        '
         'frmProductoCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1020, 522)
+        Me.ClientSize = New System.Drawing.Size(1075, 522)
         Me.Controls.Add(Me.txtTag)
         Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.GroupBox1)
@@ -534,5 +523,4 @@ Partial Class frmProductoCAMPOFERIAL
     '   Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
     Friend WithEvents cbbModulo As System.Windows.Forms.Label
     Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
-    Friend WithEvents cbbestado As System.Windows.Forms.ComboBox
 End Class
