@@ -420,4 +420,8 @@
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
 
     End Sub
+
+    Private Sub txtfecha_vencimiento_ValueChanged(sender As Object, e As EventArgs) Handles txtfecha_vencimiento.ValueChanged
+
+    End Sub
 End Class

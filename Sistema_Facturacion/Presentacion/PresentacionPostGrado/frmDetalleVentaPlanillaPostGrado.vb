@@ -259,7 +259,7 @@ Public Class frmDetalleVentaplanillaPostGrado
         
         frmProductoPostGrado.txtTag.Text = "2"
         frmProductoPostGrado.ShowDialog()
-        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text
+        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "nCUOTA:" + txtncuota.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text
 
 
     End Sub
