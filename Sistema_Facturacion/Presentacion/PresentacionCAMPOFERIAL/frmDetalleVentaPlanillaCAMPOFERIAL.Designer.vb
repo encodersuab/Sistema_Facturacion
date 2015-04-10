@@ -40,6 +40,7 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbbestado = New System.Windows.Forms.ComboBox()
         Me.lbmedida = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
@@ -69,7 +70,7 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.cbbestado = New System.Windows.Forms.ComboBox()
+        Me.lbdetalle = New System.Windows.Forms.Label()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,6 +86,7 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.lbdetalle)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
@@ -269,6 +271,16 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'cbbestado
+        '
+        Me.cbbestado.Enabled = False
+        Me.cbbestado.FormattingEnabled = True
+        Me.cbbestado.Items.AddRange(New Object() {"LIBRE", "OCUPADO"})
+        Me.cbbestado.Location = New System.Drawing.Point(144, 256)
+        Me.cbbestado.Name = "cbbestado"
+        Me.cbbestado.Size = New System.Drawing.Size(173, 21)
+        Me.cbbestado.TabIndex = 38
         '
         'lbmedida
         '
@@ -531,15 +543,14 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'cbbestado
+        'lbdetalle
         '
-        Me.cbbestado.Enabled = False
-        Me.cbbestado.FormattingEnabled = True
-        Me.cbbestado.Items.AddRange(New Object() {"LIBRE", "OCUPADO"})
-        Me.cbbestado.Location = New System.Drawing.Point(144, 256)
-        Me.cbbestado.Name = "cbbestado"
-        Me.cbbestado.Size = New System.Drawing.Size(173, 21)
-        Me.cbbestado.TabIndex = 38
+        Me.lbdetalle.AutoSize = True
+        Me.lbdetalle.Location = New System.Drawing.Point(7, 371)
+        Me.lbdetalle.Name = "lbdetalle"
+        Me.lbdetalle.Size = New System.Drawing.Size(45, 13)
+        Me.lbdetalle.TabIndex = 41
+        Me.lbdetalle.Text = "Label13"
         '
         'frmDetalleVentaPlanillaCAMPOFERIAL
         '
@@ -612,4 +623,5 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents cbbestado As System.Windows.Forms.ComboBox
+    Friend WithEvents lbdetalle As System.Windows.Forms.Label
 End Class

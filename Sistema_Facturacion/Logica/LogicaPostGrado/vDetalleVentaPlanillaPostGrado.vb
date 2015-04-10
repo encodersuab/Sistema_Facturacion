@@ -2,7 +2,7 @@
     Dim iddetalle_venta, idventa, idventaplanilla, idproducto As Integer
     Dim cantidad, precio_unitario As Double
     Dim imagen() As Byte
-    Dim validez, ncuota As String
+    Dim validez, ncuota, detalle As String
     Public Property giddedatlle_venta
 
         Get
@@ -75,12 +75,21 @@
             ncuota = value
         End Set
     End Property
+    Public Property gdetalle
+
+        Get
+            Return detalle
+        End Get
+        Set(ByVal value)
+            detalle = value
+        End Set
+    End Property
     Public Sub New()
 
     End Sub
 
 
-    Public Sub New(ByVal iddetalle_venta As Integer, ByVal idventa As Integer, ByVal idproducto As Integer, ByVal cantidad As Double, ByVal precio_unitario As Double, ByVal iddetalleventa As Integer, ByVal validez As String, ByVal ncuota As String)
+    Public Sub New(ByVal iddetalle_venta As Integer, ByVal idventa As Integer, ByVal idproducto As Integer, ByVal cantidad As Double, ByVal precio_unitario As Double, ByVal iddetalleventa As Integer, ByVal validez As String, ByVal ncuota As String, ByVal detalle As String)
         giddedatlle_venta = iddetalle_venta
         gidventaplanilla = idventaplanilla
         gidproducto = idproducto
@@ -89,5 +98,6 @@
         gidventa = idventa
         gvalidez = validez
         gncuota = ncuota
+        gdetalle = detalle
     End Sub
 End Class

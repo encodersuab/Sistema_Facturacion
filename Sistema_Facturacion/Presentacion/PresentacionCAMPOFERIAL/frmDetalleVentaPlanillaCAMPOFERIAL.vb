@@ -115,6 +115,7 @@ Public Class frmDetalleVentaPlanillaCAMPOFERIAL
                     dtsp.gprecio_unitario = txtPrecioUnitario.Text
                     dtsp.gidventaplanilla = txtIdVenta.Text
                     dtsp.gvalidez = "V"
+                    dtsp.gdetalle = lbdetalle.Text
                     '''''''''''''''''''''''''''''''''''''''''''
                     Dim ms As New IO.MemoryStream()
                     '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -262,8 +263,10 @@ Public Class frmDetalleVentaPlanillaCAMPOFERIAL
 
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
+        lbdetalle.Text = ""
         frmProductoCAMPOFERIAL.txtTag.Text = "2"
         frmProductoCAMPOFERIAL.ShowDialog()
+        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text
 
     End Sub
 

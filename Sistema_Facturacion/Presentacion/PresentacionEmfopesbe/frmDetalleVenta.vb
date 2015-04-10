@@ -17,7 +17,7 @@ Partial Public Class frmDetalleVenta
         QrCodeImgControl1.Visible = False
         limpiar()
         mostrarDatosImpuestos()
-        
+        '  lbdetalle.Text = lbdetalle.Text + "" + txtNombreCLiente.Text + "" + txtNumDoc.Text
         '  txtIdVenta.Text = datalistado.SelectedCells.Item(8).Value
     End Sub
 
@@ -66,7 +66,7 @@ Partial Public Class frmDetalleVenta
             Dim func As New fDetalleVenta
             dt = func.mostrar
 
-
+            ' lbdetalle.Text = lbdetalle.Text + "" + txtNombreCLiente.Text + "" + txtNumDoc.Text
 
             datalistado.Columns.Item("Eliminar").Visible = False
 
@@ -144,6 +144,7 @@ Partial Public Class frmDetalleVenta
                     dts.gcantidad = txtCantidad.Text
                     dts.gprecio_unitario = txtPrecioUnitario.Text
                     dts.gvalidez = "V"
+                    dts.gdetalle = lbdetalle.Text
                     '''''''''''''''''''''''''''''''''''''''''''
                     Dim ms As New IO.MemoryStream()
 
@@ -275,8 +276,11 @@ Partial Public Class frmDetalleVenta
     End Sub
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
+        lbdetalle.Text = ""
         frmProducto.txtTag.Text = "1"
         frmProducto.ShowDialog()
+        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text
+        
     End Sub
 
 
@@ -577,4 +581,7 @@ Partial Public Class frmDetalleVenta
 
 
 
+    Private Sub lbdetalle_Click(sender As Object, e As EventArgs) Handles lbdetalle.Click
+
+    End Sub
 End Class
