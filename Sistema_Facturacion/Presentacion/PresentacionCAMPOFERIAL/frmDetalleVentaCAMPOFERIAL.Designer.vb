@@ -71,7 +71,10 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
+<<<<<<< HEAD
+=======
         Me.lbdetalle = New System.Windows.Forms.Label()
+>>>>>>> origin/master
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -244,7 +247,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.cbbestado)
         Me.GroupBox1.Controls.Add(Me.lbmedida)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
@@ -294,7 +296,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'lbmedida
         '
         Me.lbmedida.AutoSize = True
-        Me.lbmedida.Location = New System.Drawing.Point(284, 261)
+        Me.lbmedida.Location = New System.Drawing.Point(218, 265)
         Me.lbmedida.Name = "lbmedida"
         Me.lbmedida.Size = New System.Drawing.Size(0, 13)
         Me.lbmedida.TabIndex = 35
@@ -320,26 +322,34 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'txtStock
         '
         Me.txtStock.Enabled = False
+<<<<<<< HEAD
+        Me.txtStock.Location = New System.Drawing.Point(148, 261)
+        Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
+        Me.txtStock.Name = "txtStock"
+        Me.txtStock.Size = New System.Drawing.Size(54, 20)
+        Me.txtStock.TabIndex = 29
+=======
         Me.txtStock.Location = New System.Drawing.Point(43, 283)
         Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
         Me.txtStock.Name = "txtStock"
         Me.txtStock.Size = New System.Drawing.Size(39, 20)
         Me.txtStock.TabIndex = 29
         Me.txtStock.Visible = False
+>>>>>>> origin/master
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(88, 285)
+        Me.Label8.Location = New System.Drawing.Point(38, 261)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(40, 13)
+        Me.Label8.Size = New System.Drawing.Size(90, 13)
         Me.Label8.TabIndex = 25
-        Me.Label8.Text = "Estado"
+        Me.Label8.Text = "Campo disponible"
         '
         'txtCantidad
         '
         Me.txtCantidad.DecimalPlaces = 3
-        Me.txtCantidad.Location = New System.Drawing.Point(144, 259)
+        Me.txtCantidad.Location = New System.Drawing.Point(147, 235)
         Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(92, 20)
@@ -366,7 +376,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'txtPrecioUnitario
         '
         Me.txtPrecioUnitario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtPrecioUnitario.Location = New System.Drawing.Point(144, 233)
+        Me.txtPrecioUnitario.Location = New System.Drawing.Point(144, 287)
         Me.txtPrecioUnitario.Name = "txtPrecioUnitario"
         Me.txtPrecioUnitario.Size = New System.Drawing.Size(173, 20)
         Me.txtPrecioUnitario.TabIndex = 27
@@ -374,7 +384,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(47, 236)
+        Me.Label9.Location = New System.Drawing.Point(47, 290)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(78, 13)
         Me.Label9.TabIndex = 26
@@ -383,7 +393,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(76, 261)
+        Me.Label7.Location = New System.Drawing.Point(79, 237)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 13)
         Me.Label7.TabIndex = 24
@@ -552,6 +562,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
+<<<<<<< HEAD
+=======
         'lbdetalle
         '
         Me.lbdetalle.AutoSize = True
@@ -561,11 +573,12 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.lbdetalle.TabIndex = 42
         Me.lbdetalle.Text = "Label13"
         '
+>>>>>>> origin/master
         'frmDetalleVentaCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(973, 422)
+        Me.ClientSize = New System.Drawing.Size(971, 425)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox2)
@@ -633,6 +646,9 @@ Partial Class frmDetalleVentaCAMPOFERIAL
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
     Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
+<<<<<<< HEAD
+=======
     Friend WithEvents cbbestado As System.Windows.Forms.ComboBox
     Friend WithEvents lbdetalle As System.Windows.Forms.Label
+>>>>>>> origin/master
 End Class
