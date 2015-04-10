@@ -297,7 +297,10 @@
                 frmDetalleVentaCAMPOFERIAL.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVentaCAMPOFERIAL.txtStock.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaCAMPOFERIAL.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
+<<<<<<< HEAD
+=======
                
+>>>>>>> origin/master
                 Me.Close()
 
             Else
@@ -418,6 +421,14 @@
     
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub txtmedida_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtmedida.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
 
     End Sub
 End Class
