@@ -67,7 +67,6 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.txttotal = New System.Windows.Forms.TextBox()
         Me.btnquitar = New System.Windows.Forms.Button()
         Me.cbeliminar = New System.Windows.Forms.CheckBox()
-        Me.lbdetalle = New System.Windows.Forms.Label()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtncuota, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -428,7 +427,6 @@ Partial Class frmDetalleVentaplanillaPostGrado
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.lbdetalle)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
@@ -524,21 +522,11 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.cbeliminar.Text = "Eliminar"
         Me.cbeliminar.UseVisualStyleBackColor = True
         '
-        'lbdetalle
-        '
-        Me.lbdetalle.AutoSize = True
-        Me.lbdetalle.Location = New System.Drawing.Point(7, 370)
-        Me.lbdetalle.Name = "lbdetalle"
-        Me.lbdetalle.Size = New System.Drawing.Size(45, 13)
-        Me.lbdetalle.TabIndex = 41
-        Me.lbdetalle.Text = "Label13"
-        '
         'frmDetalleVentaplanillaPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(954, 394)
-        Me.ControlBox = False
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -600,5 +588,4 @@ Partial Class frmDetalleVentaplanillaPostGrado
     Friend WithEvents txttotal As System.Windows.Forms.TextBox
     Friend WithEvents btnquitar As System.Windows.Forms.Button
     Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
-    Friend WithEvents lbdetalle As System.Windows.Forms.Label
 End Class

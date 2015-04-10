@@ -144,7 +144,6 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
                     dts.gcantidad = txtCantidad.Text
                     dts.gprecio_unitario = txtPrecioUnitario.Text
                     dts.gvalidez = "V"
-                    dts.gdetalle = lbdetalle.Text
                     '''''''''''''''''''''''''''''''''''''''''''
                     Dim ms As New IO.MemoryStream()
 
@@ -276,11 +275,8 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
     End Sub
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
-        lbdetalle.Text = ""
         frmProductoCAMPOFERIAL.txtTag.Text = "1"
         frmProductoCAMPOFERIAL.ShowDialog()
-        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text
-
     End Sub
 
 
@@ -516,6 +512,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
                 MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
+        Me.Close()
 
     End Sub
 
@@ -600,5 +597,13 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
 
     Private Sub txtStock_ValueChanged(sender As Object, e As EventArgs) Handles txtStock.ValueChanged
         
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class
