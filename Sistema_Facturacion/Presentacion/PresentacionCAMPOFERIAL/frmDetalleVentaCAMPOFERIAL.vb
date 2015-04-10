@@ -512,6 +512,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
                 MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
+        Me.Close()
 
     End Sub
 
@@ -596,5 +597,13 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
 
     Private Sub txtStock_ValueChanged(sender As Object, e As EventArgs) Handles txtStock.ValueChanged
         
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class

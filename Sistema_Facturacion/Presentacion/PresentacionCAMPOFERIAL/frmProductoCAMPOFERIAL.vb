@@ -305,12 +305,6 @@
                 frmDetalleVentaCAMPOFERIAL.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVentaCAMPOFERIAL.txtStock.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaCAMPOFERIAL.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
-                If datalistado.SelectedCells.Item(6).Value = 1 Then
-                    frmDetalleVentaCAMPOFERIAL.cbbestado.Text = "LIBRE"
-                ElseIf datalistado.SelectedCells.Item(6).Value = 0 Then
-                    frmDetalleVentaCAMPOFERIAL.cbbestado.Text = "OCUPADO"
-                ElseIf cbbestado.Text = "" Then
-                End If
                 Me.Close()
 
             Else
@@ -433,5 +427,13 @@
         ElseIf cbbestado.Text = "OCUPADO" Then
             txtstock.Text = "0"
         End If
+    End Sub
+
+    Private Sub txtmedida_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtmedida.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+
     End Sub
 End Class
