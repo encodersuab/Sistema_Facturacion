@@ -25,6 +25,7 @@ Partial Class frmDetalleVenta
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lbdetalle = New System.Windows.Forms.Label()
         Me.btnFinalizarVenta = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
@@ -81,6 +82,7 @@ Partial Class frmDetalleVenta
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.lbdetalle)
         Me.GroupBox2.Controls.Add(Me.btnFinalizarVenta)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
@@ -99,6 +101,15 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
+        '
+        'lbdetalle
+        '
+        Me.lbdetalle.AutoSize = True
+        Me.lbdetalle.Location = New System.Drawing.Point(6, 384)
+        Me.lbdetalle.Name = "lbdetalle"
+        Me.lbdetalle.Size = New System.Drawing.Size(45, 13)
+        Me.lbdetalle.TabIndex = 41
+        Me.lbdetalle.Text = "Label13"
         '
         'btnFinalizarVenta
         '
@@ -542,6 +553,7 @@ Partial Class frmDetalleVenta
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(967, 423)
+        Me.ControlBox = False
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -608,4 +620,5 @@ Partial Class frmDetalleVenta
     Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
     Friend WithEvents txtDD As System.Windows.Forms.TextBox
     Friend WithEvents lbmedida As System.Windows.Forms.Label
+    Friend WithEvents lbdetalle As System.Windows.Forms.Label
 End Class

@@ -114,6 +114,8 @@ Public Class frmDetalleVentaplanilla
                     dtsp.gprecio_unitario = txtPrecioUnitario.Text
                     dtsp.gidventaplanilla = txtIdVenta.Text
                     dtsp.gvalidez = "V"
+                    dtsp.gdetalle = lbdetalle.Text
+
                     '''''''''''''''''''''''''''''''''''''''''''
                     Dim ms As New IO.MemoryStream()
                     '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -261,8 +263,10 @@ Public Class frmDetalleVentaplanilla
 
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
+        lbdetalle.Text = ""
         frmProducto.txtTag.Text = "2"
         frmProducto.ShowDialog()
+        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text
 
     End Sub
 

@@ -67,6 +67,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lbdetalle = New System.Windows.Forms.Label()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -455,6 +456,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.lbdetalle)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
@@ -519,11 +521,21 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
+        'lbdetalle
+        '
+        Me.lbdetalle.AutoSize = True
+        Me.lbdetalle.Location = New System.Drawing.Point(7, 370)
+        Me.lbdetalle.Name = "lbdetalle"
+        Me.lbdetalle.Size = New System.Drawing.Size(45, 13)
+        Me.lbdetalle.TabIndex = 41
+        Me.lbdetalle.Text = "Label13"
+        '
         'frmDetalleVentaPlanillaREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(971, 407)
+        Me.ControlBox = False
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.txtStock)
@@ -588,4 +600,5 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents lbdetalle As System.Windows.Forms.Label
 End Class
