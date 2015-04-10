@@ -146,7 +146,6 @@ Public Class frmDetalleVentaPostGrado
                     dts.gprecio_unitario = txtPrecioUnitario.Text
                     dts.gvalidez = "V"
                     dts.gncuota = txtncuota.Text
-                    dts.gdetalle = lbdetalle.Text
                     '''''''''''''''''''''''''''''''''''''''''''
                     Dim ms As New IO.MemoryStream()
 
@@ -278,10 +277,8 @@ Public Class frmDetalleVentaPostGrado
     End Sub
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
-        lbdetalle.Text = ""
         frmProductoPostGrado.txtTag.Text = "1"
         frmProductoPostGrado.ShowDialog()
-        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text
     End Sub
 
 
