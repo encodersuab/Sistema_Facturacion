@@ -120,11 +120,11 @@ Partial Class frmProductoPostGrado
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(25, 214)
+        Me.Label8.Location = New System.Drawing.Point(31, 214)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(112, 13)
+        Me.Label8.Size = New System.Drawing.Size(106, 13)
         Me.Label8.TabIndex = 20
-        Me.Label8.Text = "Fecha de vencimiento"
+        Me.Label8.Text = "Fecha de conclusion"
         '
         'GroupBox2
         '
@@ -221,7 +221,7 @@ Partial Class frmProductoPostGrado
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(167, 454)
+        Me.btnGuardar.Location = New System.Drawing.Point(154, 434)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -230,7 +230,7 @@ Partial Class frmProductoPostGrado
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(167, 454)
+        Me.btnEditar.Location = New System.Drawing.Point(154, 434)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -239,7 +239,7 @@ Partial Class frmProductoPostGrado
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(252, 454)
+        Me.btncancelar.Location = New System.Drawing.Point(239, 434)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -248,7 +248,7 @@ Partial Class frmProductoPostGrado
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(83, 454)
+        Me.btnNuevo.Location = New System.Drawing.Point(70, 434)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12

@@ -120,11 +120,11 @@ Partial Class frmProductoREDRUBI
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(25, 185)
+        Me.Label8.Location = New System.Drawing.Point(21, 185)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(112, 13)
+        Me.Label8.Size = New System.Drawing.Size(116, 13)
         Me.Label8.TabIndex = 20
-        Me.Label8.Text = "Fecha de vencimiento"
+        Me.Label8.Text = "Fecha limite de emision"
         '
         'btncategoria
         '
@@ -199,11 +199,11 @@ Partial Class frmProductoREDRUBI
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(54, 156)
+        Me.Label6.Location = New System.Drawing.Point(37, 156)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(83, 13)
+        Me.Label6.Size = New System.Drawing.Size(100, 13)
         Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Precio de Venta"
+        Me.Label6.Text = "Tarifa de publicidad"
         '
         'txtprecio_venta
         '
