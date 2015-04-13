@@ -59,7 +59,6 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
         Me.txtNombreCLiente = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
-        Me.btncancelar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtNumDoc = New System.Windows.Forms.TextBox()
@@ -260,7 +259,6 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         Me.GroupBox1.Controls.Add(Me.dtpFecha)
         Me.GroupBox1.Controls.Add(Me.txtNombreCLiente)
         Me.GroupBox1.Controls.Add(Me.btnGuardar)
-        Me.GroupBox1.Controls.Add(Me.btncancelar)
         Me.GroupBox1.Controls.Add(Me.btnNuevo)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.txtNumDoc)
@@ -439,15 +437,6 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
         Me.btnGuardar.Text = "Agregar Articulo"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
-        'btncancelar
-        '
-        Me.btncancelar.Location = New System.Drawing.Point(232, 328)
-        Me.btncancelar.Name = "btncancelar"
-        Me.btncancelar.Size = New System.Drawing.Size(67, 35)
-        Me.btncancelar.TabIndex = 13
-        Me.btncancelar.Text = "Salir"
-        Me.btncancelar.UseVisualStyleBackColor = True
-        '
         'btnNuevo
         '
         Me.btnNuevo.Location = New System.Drawing.Point(63, 328)
@@ -582,7 +571,6 @@ Partial Class frmDetalleVentaPlanillaCAMPOFERIAL
     Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtNombreCLiente As System.Windows.Forms.TextBox
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
-    Friend WithEvents btncancelar As System.Windows.Forms.Button
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtNumDoc As System.Windows.Forms.TextBox

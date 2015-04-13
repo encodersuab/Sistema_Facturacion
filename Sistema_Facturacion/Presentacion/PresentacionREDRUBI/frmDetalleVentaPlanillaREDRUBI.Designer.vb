@@ -42,7 +42,6 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
         Me.txtNombreCLiente = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
-        Me.btncancelar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtNumDoc = New System.Windows.Forms.TextBox()
@@ -65,9 +64,9 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lbdetalle = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.lbdetalle = New System.Windows.Forms.Label()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -239,25 +238,16 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(150, 317)
+        Me.btnGuardar.Location = New System.Drawing.Point(228, 328)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 35)
         Me.btnGuardar.TabIndex = 15
         Me.btnGuardar.Text = "Agregar Articulo"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
-        'btncancelar
-        '
-        Me.btncancelar.Location = New System.Drawing.Point(235, 317)
-        Me.btncancelar.Name = "btncancelar"
-        Me.btncancelar.Size = New System.Drawing.Size(67, 35)
-        Me.btncancelar.TabIndex = 13
-        Me.btncancelar.Text = "Salir"
-        Me.btncancelar.UseVisualStyleBackColor = True
-        '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(66, 317)
+        Me.btnNuevo.Location = New System.Drawing.Point(144, 328)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 35)
         Me.btnNuevo.TabIndex = 12
@@ -476,6 +466,15 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
+        'lbdetalle
+        '
+        Me.lbdetalle.AutoSize = True
+        Me.lbdetalle.Location = New System.Drawing.Point(7, 370)
+        Me.lbdetalle.Name = "lbdetalle"
+        Me.lbdetalle.Size = New System.Drawing.Size(45, 13)
+        Me.lbdetalle.TabIndex = 41
+        Me.lbdetalle.Text = "Label13"
+        '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(381, 19)
@@ -504,7 +503,6 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.GroupBox1.Controls.Add(Me.dtpFecha)
         Me.GroupBox1.Controls.Add(Me.txtNombreCLiente)
         Me.GroupBox1.Controls.Add(Me.btnGuardar)
-        Me.GroupBox1.Controls.Add(Me.btncancelar)
         Me.GroupBox1.Controls.Add(Me.btnNuevo)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.txtNumDoc)
@@ -520,15 +518,6 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
-        '
-        'lbdetalle
-        '
-        Me.lbdetalle.AutoSize = True
-        Me.lbdetalle.Location = New System.Drawing.Point(7, 370)
-        Me.lbdetalle.Name = "lbdetalle"
-        Me.lbdetalle.Size = New System.Drawing.Size(45, 13)
-        Me.lbdetalle.TabIndex = 41
-        Me.lbdetalle.Text = "Label13"
         '
         'frmDetalleVentaPlanillaREDRUBI
         '
@@ -575,7 +564,6 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
     Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtNombreCLiente As System.Windows.Forms.TextBox
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
-    Friend WithEvents btncancelar As System.Windows.Forms.Button
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtNumDoc As System.Windows.Forms.TextBox

@@ -266,7 +266,7 @@ Public Class frmDetalleVentaplanillaPostGrado
 
 
 
-    Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
+    Private Sub btncancelar_Click(sender As Object, e As EventArgs)
         Me.Close()
 
     End Sub
@@ -309,28 +309,6 @@ Public Class frmDetalleVentaplanillaPostGrado
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'Dim result As DialogResult
-        'Dim dts As New vDetalleVentaPlanillaPostGrado
-        'Dim func As New fDetalleVentaPlanillaPostGrado
-
-        'result = MessageBox.Show("Realmente desea eliminar la venta?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
-        'If result = DialogResult.OK Then
-
-        '    dts.gidventaplanilla = txtIdVenta.Text
-        '    ' func.eliminarproductoVenta(dts)
-
-        '    Dim dtsDV As New vVentaPlanillaPostGrado
-        '    Dim funcDV As New fVentaPlanillaPostGrado
-
-        '    dtsDV.Gidventaplanilla = txtIdVenta.Text
-        '    '  funcDV.eliminar(dtsDV)
-
-        '    If (func.eliminarproductoVenta(dts) And funcDV.eliminarventaPlanilla(dtsDV)) Then
-        '        MessageBox.Show("Venta Eliminada", "eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        '    End If
-        '    Me.Close()
-        'End If
-
 
         Dim result As DialogResult
         result = MessageBox.Show("realizar la anulacion de la venta?", "Anulando venta", MessageBoxButtons.OKCancel)
@@ -338,15 +316,17 @@ Public Class frmDetalleVentaplanillaPostGrado
             If Me.ValidateChildren = True And txtIdVenta.Text <> "" Then
                 Try
 
-                    Dim dts1 As New vDetalleVentaCAMPOFERIAL
-                    Dim func1 As New fDetalleVentaCAMPOFERIAL
-                    Dim dts2 As New vDetalleVentaCAMPOFERIAL
-                    Dim func2 As New fDetalleVentaCAMPOFERIAL
-
+                    Dim dts1 As New vDetalleVentaPostGrado
+                    Dim func1 As New fDetalleVentaPostGrado
+                    Dim dts2 As New vDetalleVentaPostGrado
+                    Dim func2 As New fDetalleVentaPostGrado
+                    Dim dts3 As New vVentaPostGrado
+                    Dim func3 As New fVentaPostGrado
 
                     Dim res As DialogResult
                     res = MessageBox.Show("REALMENTE QUIERE ANULAR LA VENTA", "VENTA ANULADA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
                     dts1.gidventa = txtIdVenta.Text
+                    dts3.Gidventa = txtIdVenta.Text
                     If (res = Windows.Forms.DialogResult.Yes) Then
                         'func.editar(dts)
                         Do While func1.mostraridprodXidventa(dts1) <> 0
@@ -359,6 +339,7 @@ Public Class frmDetalleVentaplanillaPostGrado
                             func2.editarValidez(dts2)
                             func1.eliminar(dts2)
                         Loop
+                        func3.eliminar(dts3)
                         mostrarDVPlanilla()
                         limpiar()
                     Else
@@ -366,7 +347,7 @@ Public Class frmDetalleVentaplanillaPostGrado
                         mostrarDVPlanilla()
                         limpiar()
                     End If
-
+                    Me.Close()
                 Catch ex As Exception
                     MsgBox(ex.Message)
                 End Try
@@ -374,7 +355,7 @@ Public Class frmDetalleVentaplanillaPostGrado
                 MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
-        Me.Close()
+
     End Sub
 
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter

@@ -60,7 +60,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
         Me.txtNombreCLiente = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
-        Me.btncancelar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtNumDoc = New System.Windows.Forms.TextBox()
@@ -133,7 +132,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(407, 23)
+        Me.Button2.Location = New System.Drawing.Point(407, 19)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(135, 47)
         Me.Button2.TabIndex = 6
@@ -269,7 +268,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.GroupBox1.Controls.Add(Me.dtpFecha)
         Me.GroupBox1.Controls.Add(Me.txtNombreCLiente)
         Me.GroupBox1.Controls.Add(Me.btnGuardar)
-        Me.GroupBox1.Controls.Add(Me.btncancelar)
         Me.GroupBox1.Controls.Add(Me.btnNuevo)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.txtNumDoc)
@@ -441,25 +439,16 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(145, 331)
+        Me.btnGuardar.Location = New System.Drawing.Point(229, 336)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 35)
         Me.btnGuardar.TabIndex = 15
         Me.btnGuardar.Text = "Agregar Articulo"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
-        'btncancelar
-        '
-        Me.btncancelar.Location = New System.Drawing.Point(235, 331)
-        Me.btncancelar.Name = "btncancelar"
-        Me.btncancelar.Size = New System.Drawing.Size(67, 35)
-        Me.btncancelar.TabIndex = 13
-        Me.btncancelar.Text = "Salir"
-        Me.btncancelar.UseVisualStyleBackColor = True
-        '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(61, 331)
+        Me.btnNuevo.Location = New System.Drawing.Point(145, 336)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 35)
         Me.btnNuevo.TabIndex = 12
@@ -598,7 +587,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
     Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtNombreCLiente As System.Windows.Forms.TextBox
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
-    Friend WithEvents btncancelar As System.Windows.Forms.Button
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtNumDoc As System.Windows.Forms.TextBox

@@ -272,7 +272,7 @@ Public Class frmDetalleVentaPlanillaCAMPOFERIAL
 
 
 
-    Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
+    Private Sub btncancelar_Click(sender As Object, e As EventArgs)
         Me.Close()
 
     End Sub
@@ -315,27 +315,7 @@ Public Class frmDetalleVentaPlanillaCAMPOFERIAL
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'Dim result As DialogResult
-        'Dim dts As New vDetalleVentaPlanillaCAMPOFERIAL
-        'Dim func As New fDetalleVentaPlanillaCAMPOFERIAL
 
-        'result = MessageBox.Show("Realmente desea eliminar la venta?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
-        'If result = DialogResult.OK Then
-
-        '    dts.gidventaplanilla = txtIdVenta.Text
-        '    ' func.eliminarproductoVenta(dts)
-
-        '    Dim dtsDV As New vVentaPlanillaCAMPOFERIAL
-        '    Dim funcDV As New fVentaPlanillaCAMPOFERIAL
-
-        '    dtsDV.Gidventaplanilla = txtIdVenta.Text
-        '    '  funcDV.eliminar(dtsDV)
-
-        '    If (func.eliminarproductoVenta(dts) And funcDV.eliminarventaPlanilla(dtsDV)) Then
-        '        MessageBox.Show("Venta Eliminada", "eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        '    End If
-        '    Me.Close()
-        'End If
         Dim result As DialogResult
         result = MessageBox.Show("realizar la anulacion de la venta?", "Anulando venta", MessageBoxButtons.OKCancel)
         If result = DialogResult.OK Then
@@ -346,11 +326,13 @@ Public Class frmDetalleVentaPlanillaCAMPOFERIAL
                     Dim func1 As New fDetalleVentaCAMPOFERIAL
                     Dim dts2 As New vDetalleVentaCAMPOFERIAL
                     Dim func2 As New fDetalleVentaCAMPOFERIAL
-
+                    Dim dts3 As New vVentaCAMPOFERIAL
+                    Dim func3 As New fVentaCAMPOFERIAL
 
                     Dim res As DialogResult
                     res = MessageBox.Show("REALMENTE QUIERE ANULAR LA VENTA", "VENTA ANULADA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
                     dts1.gidventa = txtIdVenta.Text
+                    dts3.Gidventa = txtIdVenta.Text
                     If (res = Windows.Forms.DialogResult.Yes) Then
                         'func.editar(dts)
                         Do While func1.mostraridprodXidventa(dts1) <> 0
@@ -363,6 +345,7 @@ Public Class frmDetalleVentaPlanillaCAMPOFERIAL
                             func2.editarValidez(dts2)
                             func1.eliminar(dts2)
                         Loop
+                        func3.eliminar(dts3)
                         mostrarDVPlanilla()
                         limpiar()
                     Else
@@ -370,7 +353,7 @@ Public Class frmDetalleVentaPlanillaCAMPOFERIAL
                         mostrarDVPlanilla()
                         limpiar()
                     End If
-
+                    Me.Close()
                 Catch ex As Exception
                     MsgBox(ex.Message)
                 End Try

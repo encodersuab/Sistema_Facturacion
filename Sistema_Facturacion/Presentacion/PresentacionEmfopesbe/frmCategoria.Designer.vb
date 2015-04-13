@@ -41,9 +41,9 @@ Partial Class frmCategoria
         Me.txtIdcategoria = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.txtflag = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.lbModulo = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtflag = New System.Windows.Forms.TextBox()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -225,13 +225,14 @@ Partial Class frmCategoria
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
-        'txtflag
+        'lbModulo
         '
-        Me.txtflag.Location = New System.Drawing.Point(273, -2)
-        Me.txtflag.Name = "txtflag"
-        Me.txtflag.Size = New System.Drawing.Size(36, 20)
-        Me.txtflag.TabIndex = 4
-        Me.txtflag.Text = "0"
+        Me.lbModulo.AutoSize = True
+        Me.lbModulo.Location = New System.Drawing.Point(167, 122)
+        Me.lbModulo.Name = "lbModulo"
+        Me.lbModulo.Size = New System.Drawing.Size(72, 13)
+        Me.lbModulo.TabIndex = 17
+        Me.lbModulo.Text = "EMFOPESBE"
         '
         'Label3
         '
@@ -242,14 +243,13 @@ Partial Class frmCategoria
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "Modulo"
         '
-        'lbModulo
+        'txtflag
         '
-        Me.lbModulo.AutoSize = True
-        Me.lbModulo.Location = New System.Drawing.Point(167, 122)
-        Me.lbModulo.Name = "lbModulo"
-        Me.lbModulo.Size = New System.Drawing.Size(72, 13)
-        Me.lbModulo.TabIndex = 17
-        Me.lbModulo.Text = "EMFOPESBE"
+        Me.txtflag.Location = New System.Drawing.Point(273, -2)
+        Me.txtflag.Name = "txtflag"
+        Me.txtflag.Size = New System.Drawing.Size(36, 20)
+        Me.txtflag.TabIndex = 4
+        Me.txtflag.Text = "0"
         '
         'frmCategoria
         '

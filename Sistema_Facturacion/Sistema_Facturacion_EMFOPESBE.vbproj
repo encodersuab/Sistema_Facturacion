@@ -116,6 +116,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbfacDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dbfacDataSet.vb">
+      <DependentUpon>dbfacDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Logica\LogicaCAMPOFERIAL\vCategoriaCAMPOFERIAL.vb" />
     <Compile Include="Logica\LogicaCAMPOFERIAL\vDetalleVentaCAMPOFERIAL.vb" />
     <Compile Include="Logica\LogicaCAMPOFERIAL\vDetalleVentaPlanillaCAMPOFERIAL.vb" />

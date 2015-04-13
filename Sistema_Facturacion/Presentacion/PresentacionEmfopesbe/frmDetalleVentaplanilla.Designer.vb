@@ -25,6 +25,7 @@ Partial Class frmDetalleVentaplanilla
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVentaplanilla))
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lbdetalle = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.lbllave = New System.Windows.Forms.Label()
@@ -57,7 +58,6 @@ Partial Class frmDetalleVentaplanilla
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
         Me.txtNombreCLiente = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
-        Me.btncancelar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtNumDoc = New System.Windows.Forms.TextBox()
@@ -67,7 +67,6 @@ Partial Class frmDetalleVentaplanilla
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.lbdetalle = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,6 +105,15 @@ Partial Class frmDetalleVentaplanilla
         Me.GroupBox2.TabIndex = 8
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
+        '
+        'lbdetalle
+        '
+        Me.lbdetalle.AutoSize = True
+        Me.lbdetalle.Location = New System.Drawing.Point(0, 370)
+        Me.lbdetalle.Name = "lbdetalle"
+        Me.lbdetalle.Size = New System.Drawing.Size(46, 13)
+        Me.lbdetalle.TabIndex = 41
+        Me.lbdetalle.Text = "lbdetalle"
         '
         'Button1
         '
@@ -246,7 +254,6 @@ Partial Class frmDetalleVentaplanilla
         Me.GroupBox1.Controls.Add(Me.dtpFecha)
         Me.GroupBox1.Controls.Add(Me.txtNombreCLiente)
         Me.GroupBox1.Controls.Add(Me.btnGuardar)
-        Me.GroupBox1.Controls.Add(Me.btncancelar)
         Me.GroupBox1.Controls.Add(Me.btnNuevo)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.txtNumDoc)
@@ -426,25 +433,16 @@ Partial Class frmDetalleVentaplanilla
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(147, 328)
+        Me.btnGuardar.Location = New System.Drawing.Point(228, 328)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 35)
         Me.btnGuardar.TabIndex = 15
         Me.btnGuardar.Text = "Agregar Articulo"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
-        'btncancelar
-        '
-        Me.btncancelar.Location = New System.Drawing.Point(232, 328)
-        Me.btncancelar.Name = "btncancelar"
-        Me.btncancelar.Size = New System.Drawing.Size(67, 35)
-        Me.btncancelar.TabIndex = 13
-        Me.btncancelar.Text = "Salir"
-        Me.btncancelar.UseVisualStyleBackColor = True
-        '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(63, 328)
+        Me.btnNuevo.Location = New System.Drawing.Point(144, 328)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 35)
         Me.btnNuevo.TabIndex = 12
@@ -523,15 +521,6 @@ Partial Class frmDetalleVentaplanilla
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'lbdetalle
-        '
-        Me.lbdetalle.AutoSize = True
-        Me.lbdetalle.Location = New System.Drawing.Point(0, 370)
-        Me.lbdetalle.Name = "lbdetalle"
-        Me.lbdetalle.Size = New System.Drawing.Size(46, 13)
-        Me.lbdetalle.TabIndex = 41
-        Me.lbdetalle.Text = "lbdetalle"
-        '
         'frmDetalleVentaplanilla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -588,7 +577,6 @@ Partial Class frmDetalleVentaplanilla
     Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtNombreCLiente As System.Windows.Forms.TextBox
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
-    Friend WithEvents btncancelar As System.Windows.Forms.Button
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtNumDoc As System.Windows.Forms.TextBox

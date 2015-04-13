@@ -44,7 +44,7 @@ Public Class frmDetalleVentaPostGrado
             '  txtCantidad.Enabled = False
             txtPrecioUnitario.Enabled = False
             lbmedida.Visible = False
-            btncancelar.Enabled = False
+            '     btncancelar.Enabled = False
             btnGuardar.Enabled = False
             btnNuevo.Enabled = False
         Else
@@ -53,7 +53,7 @@ Public Class frmDetalleVentaPostGrado
             ' txtCantidad.Enabled = True
             txtPrecioUnitario.Enabled = True
             lbmedida.Visible = True
-            btncancelar.Enabled = True
+            '   btncancelar.Enabled = True
             btnGuardar.Enabled = True
             btnNuevo.Enabled = True
         End If
@@ -229,7 +229,7 @@ Public Class frmDetalleVentaPostGrado
 
     End Sub
 
-    Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
+    Private Sub btncancelar_Click(sender As Object, e As EventArgs)
         Me.Close()
 
     End Sub
@@ -453,42 +453,23 @@ Public Class frmDetalleVentaPostGrado
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        'Dim result As DialogResult
-        'Dim dts As New vDetalleVentaPostGrado
-        'Dim func As New fDetalleVentaPostGrado
-        'result = MessageBox.Show("Realmente desea eliminar la venta?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
-        'If result = DialogResult.OK Then
-
-        '    dts.gidventa = txtIdVenta.Text
-        '    ' func.eliminarproductoVenta(dts)
-
-        '    Dim dtsDV As New vVenta
-        '    Dim funcDV As New fVenta
-
-        '    dtsDV.Gidventa = txtIdVenta.Text
-        '    '  funcDV.eliminar(dtsDV)
-
-        '    If (func.eliminarproductoVenta(dts) And funcDV.eliminar(dtsDV)) Then
-        '        MessageBox.Show("Venta Eliminada", "eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        '    End If
-        '    Me.Close()
-        'End If
-        '////////////////////
-        Dim result As DialogResult
+          Dim result As DialogResult
         result = MessageBox.Show("realizar la anulacion de la venta?", "Anulando venta", MessageBoxButtons.OKCancel)
         If result = DialogResult.OK Then
             If Me.ValidateChildren = True And txtIdVenta.Text <> "" Then
                 Try
 
-                    Dim dts1 As New vDetalleVentaCAMPOFERIAL
-                    Dim func1 As New fDetalleVentaCAMPOFERIAL
-                    Dim dts2 As New vDetalleVentaCAMPOFERIAL
-                    Dim func2 As New fDetalleVentaCAMPOFERIAL
-
+                    Dim dts1 As New vDetalleVentaPostGrado
+                    Dim func1 As New fDetalleVentaPostGrado
+                    Dim dts2 As New vDetalleVentaPostGrado
+                    Dim func2 As New fDetalleVentaPostGrado
+                    Dim dts3 As New vVentaPostGrado
+                    Dim func3 As New fVentaPostGrado
 
                     Dim res As DialogResult
                     res = MessageBox.Show("REALMENTE QUIERE ANULAR LA VENTA", "VENTA ANULADA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
                     dts1.gidventa = txtIdVenta.Text
+                    dts3.Gidventa = txtIdVenta.Text
                     If (res = Windows.Forms.DialogResult.Yes) Then
                         'func.editar(dts)
                         Do While func1.mostraridprodXidventa(dts1) <> 0
@@ -501,6 +482,7 @@ Public Class frmDetalleVentaPostGrado
                             func2.editarValidez(dts2)
                             func1.eliminar(dts2)
                         Loop
+                        func3.eliminar(dts3)
                         mostrar()
                         limpiar()
                     Else
@@ -508,7 +490,7 @@ Public Class frmDetalleVentaPostGrado
                         mostrar()
                         limpiar()
                     End If
-
+                    Me.Close()
                 Catch ex As Exception
                     MsgBox(ex.Message)
                 End Try
@@ -516,8 +498,6 @@ Public Class frmDetalleVentaPostGrado
                 MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
-        Me.Close()
-        '//////////////////////
 
     End Sub
 

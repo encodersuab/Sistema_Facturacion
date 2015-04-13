@@ -271,7 +271,7 @@ Public Class frmDetalleVentaPlanillaREDRUBI
 
 
 
-    Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
+    Private Sub btncancelar_Click(sender As Object, e As EventArgs)
         Me.Close()
 
     End Sub
@@ -315,25 +315,49 @@ Public Class frmDetalleVentaPlanillaREDRUBI
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim result As DialogResult
-        Dim dts As New vDetalleVentaPlanillaREDRUBI
-        Dim func As New fDetalleVentaPlanillaREDRUBI
-
-        result = MessageBox.Show("Realmente desea eliminar la venta?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+        result = MessageBox.Show("realizar la anulacion de la venta?", "Anulando venta", MessageBoxButtons.OKCancel)
         If result = DialogResult.OK Then
+            If Me.ValidateChildren = True And txtIdVenta.Text <> "" Then
+                Try
 
-            dts.gidventaplanilla = txtIdVenta.Text
-            ' func.eliminarproductoVenta(dts)
+                    Dim dts1 As New vDetalleVentaREDRUBI
+                    Dim func1 As New fDetalleVentaREDRUBI
+                    Dim dts2 As New vDetalleVentaREDRUBI
+                    Dim func2 As New fDetalleVentaREDRUBI
+                    Dim dts3 As New vVentaREDRUBI
+                    Dim func3 As New fVentaREDRUBI
 
-            Dim dtsDV As New vVentaPlanillaREDRUBI
-            Dim funcDV As New fVentaPlanillaREDRUBI
+                    Dim res As DialogResult
+                    res = MessageBox.Show("REALMENTE QUIERE ANULAR LA VENTA", "VENTA ANULADA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+                    dts1.gidventa = txtIdVenta.Text
+                    dts3.Gidventa = txtIdVenta.Text
+                    If (res = Windows.Forms.DialogResult.Yes) Then
+                        'func.editar(dts)
+                        Do While func1.mostraridprodXidventa(dts1) <> 0
 
-            dtsDV.Gidventaplanilla = txtIdVenta.Text
-            '  funcDV.eliminar(dtsDV)
-
-            If (func.eliminarproductoVenta(dts) And funcDV.eliminarventaPlanilla(dtsDV)) Then
-                MessageBox.Show("Venta Eliminada", "eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            dts2.gidproducto = func1.mostraridprodXidventa(dts1)
+                            dts2.gcantidad = func1.mostrarCantidadXidventa(dts1)
+                            func2.aumentar_stock(dts2)
+                            dts2.giddedatlle_venta = func1.mostrariddetalleventaXidventa(dts1)
+                            dts2.gvalidez = "A"
+                            func2.editarValidez(dts2)
+                            func1.eliminar(dts2)
+                        Loop
+                        func3.eliminar(dts3)
+                        mostrarDVPlanilla()
+                        limpiar()
+                    Else
+                        MessageBox.Show("ERROR AL ANULAR ESTA VENTA", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        mostrarDVPlanilla()
+                        limpiar()
+                    End If
+                    Me.Close()
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
+            Else
+                MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
-            Me.Close()
         End If
     End Sub
 End Class

@@ -17903,18 +17903,18 @@ Namespace dbfacDataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_nombre_categoria", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre_categoria", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TCategoria] ([nombre_categoria]) VALUES (@nombre_categoria);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)& _ 
-                "SELECT idcategoria, nombre_categoria FROM TCategoria WHERE (idcategoria = SCOPE_"& _ 
-                "IDENTITY())"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TCategoria] ([nombre_categoria]) VALUES (@nombre_categoria);"&Global.Microsoft.VisualBasic.ChrW(10)&"S"& _ 
+                "ELECT idcategoria, nombre_categoria FROM TCategoria WHERE (idcategoria = SCOPE_I"& _ 
+                "DENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre_categoria", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre_categoria", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[TCategoria] SET [nombre_categoria] = @nombre_categoria WHERE (([idc"& _ 
                 "ategoria] = @Original_idcategoria) AND ((@IsNull_nombre_categoria = 1 AND [nombr"& _ 
-                "e_categoria] IS NULL) OR ([nombre_categoria] = @Original_nombre_categoria)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"S"& _ 
-                "ELECT idcategoria, nombre_categoria FROM TCategoria WHERE (idcategoria = @idcate"& _ 
-                "goria)"
+                "e_categoria] IS NULL) OR ([nombre_categoria] = @Original_nombre_categoria)));"&Global.Microsoft.VisualBasic.ChrW(10)&"SE"& _ 
+                "LECT idcategoria, nombre_categoria FROM TCategoria WHERE (idcategoria = @idcateg"& _ 
+                "oria)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre_categoria", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre_categoria", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_idcategoria", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idcategoria", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
@@ -18251,8 +18251,8 @@ Namespace dbfacDataSetTableAdapters
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TCliente] ([nombre], [apellidos], [direccion], [telefono], [ci"& _ 
                 "], [funcionarioUAB]) VALUES (@nombre, @apellidos, @direccion, @telefono, @ci, @f"& _ 
-                "uncionarioUAB);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idcliente, nombre, apellidos, direccion, telefono, ci, f"& _ 
-                "uncionarioUAB FROM TCliente WHERE (idcliente = SCOPE_IDENTITY())"
+                "uncionarioUAB);"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idcliente, nombre, apellidos, direccion, telefono, ci, fu"& _ 
+                "ncionarioUAB FROM TCliente WHERE (idcliente = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@apellidos", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "apellidos", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -18271,8 +18271,8 @@ Namespace dbfacDataSetTableAdapters
                 "AND ((@IsNull_telefono = 1 AND [telefono] IS NULL) OR ([telefono] = @Original_te"& _ 
                 "lefono)) AND ((@IsNull_ci = 1 AND [ci] IS NULL) OR ([ci] = @Original_ci)) AND (("& _ 
                 "@IsNull_funcionarioUAB = 1 AND [funcionarioUAB] IS NULL) OR ([funcionarioUAB] = "& _ 
-                "@Original_funcionarioUAB)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idcliente, nombre, apellidos, direccion, te"& _ 
-                "lefono, ci, funcionarioUAB FROM TCliente WHERE (idcliente = @idcliente)"
+                "@Original_funcionarioUAB)));"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idcliente, nombre, apellidos, direccion, tel"& _ 
+                "efono, ci, funcionarioUAB FROM TCliente WHERE (idcliente = @idcliente)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@apellidos", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "apellidos", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -18729,8 +18729,8 @@ Namespace dbfacDataSetTableAdapters
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TDatosImpuestos] ([nitEmisor], [numAutorizacion], [llave]) VAL"& _ 
-                "UES (@nitEmisor, @numAutorizacion, @llave);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT id_datosImp, nitEmisor, numA"& _ 
-                "utorizacion, llave FROM TDatosImpuestos WHERE (id_datosImp = SCOPE_IDENTITY())"
+                "UES (@nitEmisor, @numAutorizacion, @llave);"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT id_datosImp, nitEmisor, numAu"& _ 
+                "torizacion, llave FROM TDatosImpuestos WHERE (id_datosImp = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nitEmisor", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nitEmisor", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@numAutorizacion", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "numAutorizacion", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -18741,9 +18741,9 @@ Namespace dbfacDataSetTableAdapters
                 "@numAutorizacion, [llave] = @llave WHERE (([id_datosImp] = @Original_id_datosImp"& _ 
                 ") AND ((@IsNull_nitEmisor = 1 AND [nitEmisor] IS NULL) OR ([nitEmisor] = @Origin"& _ 
                 "al_nitEmisor)) AND ((@IsNull_numAutorizacion = 1 AND [numAutorizacion] IS NULL) "& _ 
-                "OR ([numAutorizacion] = @Original_numAutorizacion)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT id_datosImp, nitEm"& _ 
-                "isor, numAutorizacion, llave FROM TDatosImpuestos WHERE (id_datosImp = @id_datos"& _ 
-                "Imp)"
+                "OR ([numAutorizacion] = @Original_numAutorizacion)));"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT id_datosImp, nitEmi"& _ 
+                "sor, numAutorizacion, llave FROM TDatosImpuestos WHERE (id_datosImp = @id_datosI"& _ 
+                "mp)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nitEmisor", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nitEmisor", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@numAutorizacion", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "numAutorizacion", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -19111,9 +19111,9 @@ Namespace dbfacDataSetTableAdapters
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TDetalleVenta] ([idventa], [idproducto], [cantidad], [precio_u"& _ 
                 "nitario], [idventaplanilla], [validez]) VALUES (@idventa, @idproducto, @cantidad"& _ 
-                ", @precio_unitario, @idventaplanilla, @validez);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT iddetalle_venta, idvent"& _ 
-                "a, idproducto, cantidad, precio_unitario, idventaplanilla, validez FROM TDetalle"& _ 
-                "Venta WHERE (iddetalle_venta = SCOPE_IDENTITY())"
+                ", @precio_unitario, @idventaplanilla, @validez);"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT iddetalle_venta, idventa"& _ 
+                ", idproducto, cantidad, precio_unitario, idventaplanilla, validez FROM TDetalleV"& _ 
+                "enta WHERE (iddetalle_venta = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@idventa", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idventa", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@idproducto", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idproducto", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -19133,9 +19133,9 @@ Namespace dbfacDataSetTableAdapters
                 " 1 AND [precio_unitario] IS NULL) OR ([precio_unitario] = @Original_precio_unita"& _ 
                 "rio)) AND ((@IsNull_idventaplanilla = 1 AND [idventaplanilla] IS NULL) OR ([idve"& _ 
                 "ntaplanilla] = @Original_idventaplanilla)) AND ((@IsNull_validez = 1 AND [valide"& _ 
-                "z] IS NULL) OR ([validez] = @Original_validez)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT iddetalle_venta, idven"& _ 
-                "ta, idproducto, cantidad, precio_unitario, idventaplanilla, validez FROM TDetall"& _ 
-                "eVenta WHERE (iddetalle_venta = @iddetalle_venta)"
+                "z] IS NULL) OR ([validez] = @Original_validez)));"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT iddetalle_venta, idvent"& _ 
+                "a, idproducto, cantidad, precio_unitario, idventaplanilla, validez FROM TDetalle"& _ 
+                "Venta WHERE (iddetalle_venta = @iddetalle_venta)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@idventa", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idventa", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@idproducto", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idproducto", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -19623,9 +19623,9 @@ Namespace dbfacDataSetTableAdapters
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TProducto] ([idcategoria], [nombre], [descripcion], [stock], ["& _ 
                 "precio_compra], [precio_venta], [fecha_vencimiento], [imagen], [modulo], [medida"& _ 
                 "]) VALUES (@idcategoria, @nombre, @descripcion, @stock, @precio_compra, @precio_"& _ 
-                "venta, @fecha_vencimiento, @imagen, @modulo, @medida);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idproducto, idcat"& _ 
-                "egoria, nombre, descripcion, stock, precio_compra, precio_venta, fecha_vencimien"& _ 
-                "to, imagen, modulo, medida FROM TProducto WHERE (idproducto = SCOPE_IDENTITY())"
+                "venta, @fecha_vencimiento, @imagen, @modulo, @medida);"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idproducto, idcate"& _ 
+                "goria, nombre, descripcion, stock, precio_compra, precio_venta, fecha_vencimient"& _ 
+                "o, imagen, modulo, medida FROM TProducto WHERE (idproducto = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@idcategoria", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idcategoria", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -19654,9 +19654,9 @@ Namespace dbfacDataSetTableAdapters
                 "encimiento] IS NULL) OR ([fecha_vencimiento] = @Original_fecha_vencimiento)) AND"& _ 
                 " ((@IsNull_modulo = 1 AND [modulo] IS NULL) OR ([modulo] = @Original_modulo)) AN"& _ 
                 "D ((@IsNull_medida = 1 AND [medida] IS NULL) OR ([medida] = @Original_medida)));"& _ 
-                ""&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idproducto, idcategoria, nombre, descripcion, stock, precio_compra, pre"& _ 
-                "cio_venta, fecha_vencimiento, imagen, modulo, medida FROM TProducto WHERE (idpro"& _ 
-                "ducto = @idproducto)"
+                ""&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idproducto, idcategoria, nombre, descripcion, stock, precio_compra, prec"& _ 
+                "io_venta, fecha_vencimiento, imagen, modulo, medida FROM TProducto WHERE (idprod"& _ 
+                "ucto = @idproducto)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@idcategoria", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idcategoria", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -20278,10 +20278,10 @@ Namespace dbfacDataSetTableAdapters
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TQrCode] ([Nit_Emisor], [Num_Factura], [Num_Autorizacion], [Fe"& _ 
                 "cha_emision], [Total], [Codigo_Control], [Ci_Nit_Comprador], [imagen], [IdVenta]"& _ 
                 ", [validez]) VALUES (@Nit_Emisor, @Num_Factura, @Num_Autorizacion, @Fecha_emisio"& _ 
-                "n, @Total, @Codigo_Control, @Ci_Nit_Comprador, @imagen, @IdVenta, @validez);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SE"& _ 
-                "LECT IDCodQr, Nit_Emisor, Num_Factura, Num_Autorizacion, Fecha_emision, Total, C"& _ 
-                "odigo_Control, Ci_Nit_Comprador, imagen, IdVenta, validez FROM TQrCode WHERE (ID"& _ 
-                "CodQr = SCOPE_IDENTITY())"
+                "n, @Total, @Codigo_Control, @Ci_Nit_Comprador, @imagen, @IdVenta, @validez);"&Global.Microsoft.VisualBasic.ChrW(10)&"SEL"& _ 
+                "ECT IDCodQr, Nit_Emisor, Num_Factura, Num_Autorizacion, Fecha_emision, Total, Co"& _ 
+                "digo_Control, Ci_Nit_Comprador, imagen, IdVenta, validez FROM TQrCode WHERE (IDC"& _ 
+                "odQr = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Nit_Emisor", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Nit_Emisor", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Num_Factura", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Num_Factura", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -20310,10 +20310,10 @@ Namespace dbfacDataSetTableAdapters
                 "o_Control)) AND ((@IsNull_Ci_Nit_Comprador = 1 AND [Ci_Nit_Comprador] IS NULL) O"& _ 
                 "R ([Ci_Nit_Comprador] = @Original_Ci_Nit_Comprador)) AND ((@IsNull_IdVenta = 1 A"& _ 
                 "ND [IdVenta] IS NULL) OR ([IdVenta] = @Original_IdVenta)) AND ((@IsNull_validez "& _ 
-                "= 1 AND [validez] IS NULL) OR ([validez] = @Original_validez)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT IDCodQr"& _ 
-                ", Nit_Emisor, Num_Factura, Num_Autorizacion, Fecha_emision, Total, Codigo_Contro"& _ 
-                "l, Ci_Nit_Comprador, imagen, IdVenta, validez FROM TQrCode WHERE (IDCodQr = @IDC"& _ 
-                "odQr)"
+                "= 1 AND [validez] IS NULL) OR ([validez] = @Original_validez)));"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT IDCodQr,"& _ 
+                " Nit_Emisor, Num_Factura, Num_Autorizacion, Fecha_emision, Total, Codigo_Control"& _ 
+                ", Ci_Nit_Comprador, imagen, IdVenta, validez FROM TQrCode WHERE (IDCodQr = @IDCo"& _ 
+                "dQr)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Nit_Emisor", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Nit_Emisor", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Num_Factura", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Num_Factura", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -20931,9 +20931,9 @@ Namespace dbfacDataSetTableAdapters
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TUsuario] ([nombre], [apellidos], [ci], [direccion], [telefono"& _ 
                 "], [login], [password], [acceso], [rol]) VALUES (@nombre, @apellidos, @ci, @dire"& _ 
-                "ccion, @telefono, @login, @password, @acceso, @rol);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idusuario, nombre, "& _ 
-                "apellidos, ci, direccion, telefono, login, password, acceso, rol FROM TUsuario W"& _ 
-                "HERE (idusuario = SCOPE_IDENTITY())"
+                "ccion, @telefono, @login, @password, @acceso, @rol);"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idusuario, nombre, a"& _ 
+                "pellidos, ci, direccion, telefono, login, password, acceso, rol FROM TUsuario WH"& _ 
+                "ERE (idusuario = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@apellidos", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "apellidos", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -20958,9 +20958,9 @@ Namespace dbfacDataSetTableAdapters
                 "R ([login] = @Original_login)) AND ((@IsNull_password = 1 AND [password] IS NULL"& _ 
                 ") OR ([password] = @Original_password)) AND ((@IsNull_acceso = 1 AND [acceso] IS"& _ 
                 " NULL) OR ([acceso] = @Original_acceso)) AND ((@IsNull_rol = 1 AND [rol] IS NULL"& _ 
-                ") OR ([rol] = @Original_rol)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idusuario, nombre, apellidos, ci, direcc"& _ 
-                "ion, telefono, login, password, acceso, rol FROM TUsuario WHERE (idusuario = @id"& _ 
-                "usuario)"
+                ") OR ([rol] = @Original_rol)));"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idusuario, nombre, apellidos, ci, direcci"& _ 
+                "on, telefono, login, password, acceso, rol FROM TUsuario WHERE (idusuario = @idu"& _ 
+                "suario)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nombre", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nombre", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@apellidos", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "apellidos", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -21531,9 +21531,9 @@ Namespace dbfacDataSetTableAdapters
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TVentas] ([idcliente], [fecha_venta], [tipo_documento], [num_d"& _ 
                 "ocumento], [nombre_fac], [estado], [pago]) VALUES (@idcliente, @fecha_venta, @ti"& _ 
-                "po_documento, @num_documento, @nombre_fac, @estado, @pago);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idventa, idc"& _ 
-                "liente, fecha_venta, tipo_documento, num_documento, nombre_fac, estado, pago FRO"& _ 
-                "M TVentas WHERE (idventa = SCOPE_IDENTITY())"
+                "po_documento, @num_documento, @nombre_fac, @estado, @pago);"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idventa, idcl"& _ 
+                "iente, fecha_venta, tipo_documento, num_documento, nombre_fac, estado, pago FROM"& _ 
+                " TVentas WHERE (idventa = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@idcliente", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idcliente", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@fecha_venta", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "fecha_venta", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -21555,9 +21555,9 @@ Namespace dbfacDataSetTableAdapters
                 "] = @Original_num_documento)) AND ((@IsNull_nombre_fac = 1 AND [nombre_fac] IS N"& _ 
                 "ULL) OR ([nombre_fac] = @Original_nombre_fac)) AND ((@IsNull_estado = 1 AND [est"& _ 
                 "ado] IS NULL) OR ([estado] = @Original_estado)) AND ((@IsNull_pago = 1 AND [pago"& _ 
-                "] IS NULL) OR ([pago] = @Original_pago)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idventa, idcliente, fecha_ven"& _ 
-                "ta, tipo_documento, num_documento, nombre_fac, estado, pago FROM TVentas WHERE ("& _ 
-                "idventa = @idventa)"
+                "] IS NULL) OR ([pago] = @Original_pago)));"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idventa, idcliente, fecha_vent"& _ 
+                "a, tipo_documento, num_documento, nombre_fac, estado, pago FROM TVentas WHERE (i"& _ 
+                "dventa = @idventa)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@idcliente", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idcliente", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@fecha_venta", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "fecha_venta", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -22074,9 +22074,9 @@ Namespace dbfacDataSetTableAdapters
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TVentasPlanilla] ([idcliente], [fecha_venta], [tipo_documento]"& _ 
                 ", [num_documento], [nombre_fac], [estado]) VALUES (@idcliente, @fecha_venta, @ti"& _ 
-                "po_documento, @num_documento, @nombre_fac, @estado);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idventaplanilla, id"& _ 
-                "cliente, fecha_venta, tipo_documento, num_documento, nombre_fac, estado FROM TVe"& _ 
-                "ntasPlanilla WHERE (idventaplanilla = SCOPE_IDENTITY())"
+                "po_documento, @num_documento, @nombre_fac, @estado);"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idventaplanilla, idc"& _ 
+                "liente, fecha_venta, tipo_documento, num_documento, nombre_fac, estado FROM TVen"& _ 
+                "tasPlanilla WHERE (idventaplanilla = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@idcliente", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idcliente", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@fecha_venta", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "fecha_venta", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -22096,9 +22096,9 @@ Namespace dbfacDataSetTableAdapters
                 "umento)) AND ((@IsNull_num_documento = 1 AND [num_documento] IS NULL) OR ([num_d"& _ 
                 "ocumento] = @Original_num_documento)) AND ((@IsNull_nombre_fac = 1 AND [nombre_f"& _ 
                 "ac] IS NULL) OR ([nombre_fac] = @Original_nombre_fac)) AND ((@IsNull_estado = 1 "& _ 
-                "AND [estado] IS NULL) OR ([estado] = @Original_estado)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idventaplanill"& _ 
-                "a, idcliente, fecha_venta, tipo_documento, num_documento, nombre_fac, estado FRO"& _ 
-                "M TVentasPlanilla WHERE (idventaplanilla = @idventaplanilla)"
+                "AND [estado] IS NULL) OR ([estado] = @Original_estado)));"&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT idventaplanilla"& _ 
+                ", idcliente, fecha_venta, tipo_documento, num_documento, nombre_fac, estado FROM"& _ 
+                " TVentasPlanilla WHERE (idventaplanilla = @idventaplanilla)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@idcliente", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "idcliente", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@fecha_venta", Global.System.Data.SqlDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "fecha_venta", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))

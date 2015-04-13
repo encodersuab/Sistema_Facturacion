@@ -90,7 +90,7 @@
 
 
                 dts.gnombre_categoria = txtNombre.Text
-
+                dts.gmodulo = lbModulo.Text
 
                 If func.insertar(dts) Then
                     MessageBox.Show("Categoria registrado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -126,7 +126,7 @@
 
                     dts.gidcategoria = txtIdcategoria.Text
                     dts.gnombre_categoria = txtNombre.Text
-
+                    dts.gmodulo = lbModulo.Text
 
                     If func.editar(dts) Then
                         MessageBox.Show("Categoria modificada correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
