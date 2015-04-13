@@ -369,6 +369,12 @@
     <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCuotas.Designer.vb">
+      <DependentUpon>frmReporteCuotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCuotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmrptVentas.Designer.vb">
       <DependentUpon>frmrptVentas.vb</DependentUpon>
     </Compile>
@@ -536,6 +542,9 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCliente.resx">
       <DependentUpon>frmReporteCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCuotas.resx">
+      <DependentUpon>frmReporteCuotas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteFactura.resx">
       <DependentUpon>frmReporteFactura.vb</DependentUpon>
     </EmbeddedResource>
@@ -554,6 +563,8 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmrptVentas.resx">
       <DependentUpon>frmrptVentas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\ReporteCuotas.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\ReporteFactura.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptcategoria.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptFactura.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptProducto.rdlc" />
