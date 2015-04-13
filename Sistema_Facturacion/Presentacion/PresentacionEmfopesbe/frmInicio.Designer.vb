@@ -110,6 +110,7 @@ Partial Class frmInicioF
         Me.lbrol = New System.Windows.Forms.Label()
         Me.lbUsurio = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -665,6 +666,15 @@ Partial Class frmInicioF
         Me.MenuStrip1.TabIndex = 13
         Me.MenuStrip1.Text = "MenuStrip1"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(955, 105)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Label1"
+        '
         'frmInicioF
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -673,6 +683,7 @@ Partial Class frmInicioF
         Me.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios3
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1172, 508)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbUsurio)
         Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.lbrol)
@@ -776,5 +787,6 @@ Partial Class frmInicioF
     Friend WithEvents UsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DatosImpuestos As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 
 End Class
