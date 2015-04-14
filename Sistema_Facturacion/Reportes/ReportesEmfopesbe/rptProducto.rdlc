@@ -6,30 +6,30 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.53368cm</Width>
+              <Width>0.66056cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.14222cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.56556cm</Width>
+              <Width>2.2216cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.985cm</Width>
+              <Width>1.42937cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.4525cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.28833cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.5cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>4.00812cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.75271cm</Height>
+              <Height>0.59396cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -40,7 +40,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>id</Value>
+                              <Value>Id</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -160,7 +160,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Fecha Vencimiento</Value>
+                              <Value>Fecha Venc.</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -244,7 +244,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>2.20792cm</Height>
+              <Height>3.5573cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -259,7 +259,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>idproducto</rd:DefaultName>
@@ -289,7 +291,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>NombreProducto</rd:DefaultName>
@@ -319,7 +323,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>NombreCategoria</rd:DefaultName>
@@ -349,7 +355,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Stock</rd:DefaultName>
@@ -379,7 +387,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>FechaVencimiento</rd:DefaultName>
@@ -409,7 +419,9 @@
                               <Style />
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Modulo</rd:DefaultName>
@@ -467,10 +479,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>3.43641cm</Top>
-        <Left>1.47849cm</Left>
-        <Height>2.96062cm</Height>
-        <Width>16.67896cm</Width>
+        <Top>2.27542cm</Top>
+        <Height>4.15126cm</Height>
+        <Width>15.25021cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -495,8 +506,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>1.16099cm</Top>
-        <Left>4.91808cm</Left>
+        <Top>0.39688cm</Top>
+        <Left>1.905cm</Left>
         <Height>1.49958cm</Height>
         <Width>11.79771cm</Width>
         <ZIndex>1</ZIndex>
@@ -511,10 +522,10 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>3.66667in</Height>
+    <Height>2.53125in</Height>
     <Style />
   </Body>
-  <Width>8.13542in</Width>
+  <Width>6.00402in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

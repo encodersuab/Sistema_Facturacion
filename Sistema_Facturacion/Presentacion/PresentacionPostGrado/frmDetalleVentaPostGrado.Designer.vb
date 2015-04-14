@@ -70,6 +70,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.btnConsultarCuotas = New System.Windows.Forms.Button()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -179,6 +180,7 @@ Partial Class frmDetalleVentaPostGrado
         '
         Me.GroupBox1.Controls.Add(Me.lbmedida)
         Me.GroupBox1.Controls.Add(Me.txtCantidad)
+        Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -395,9 +397,9 @@ Partial Class frmDetalleVentaPostGrado
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.btnConsultarCuotas)
         Me.GroupBox2.Controls.Add(Me.lbdetalle)
         Me.GroupBox2.Controls.Add(Me.btnFinalizarVenta)
-        Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
         Me.GroupBox2.Controls.Add(Me.lbllave)
         Me.GroupBox2.Controls.Add(Me.lbCC)
@@ -435,9 +437,9 @@ Partial Class frmDetalleVentaPostGrado
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(407, 23)
+        Me.Button2.Location = New System.Drawing.Point(34, 331)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(135, 47)
+        Me.Button2.Size = New System.Drawing.Size(96, 35)
         Me.Button2.TabIndex = 6
         Me.Button2.Text = "Cancelar Venta"
         Me.Button2.UseVisualStyleBackColor = True
@@ -538,6 +540,15 @@ Partial Class frmDetalleVentaPostGrado
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
         '
+        'btnConsultarCuotas
+        '
+        Me.btnConsultarCuotas.Location = New System.Drawing.Point(407, 19)
+        Me.btnConsultarCuotas.Name = "btnConsultarCuotas"
+        Me.btnConsultarCuotas.Size = New System.Drawing.Size(135, 44)
+        Me.btnConsultarCuotas.TabIndex = 44
+        Me.btnConsultarCuotas.Text = "Consultar Cuotas"
+        Me.btnConsultarCuotas.UseVisualStyleBackColor = True
+        '
         'frmDetalleVentaPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -610,4 +621,5 @@ Partial Class frmDetalleVentaPostGrado
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents lbdetalle As System.Windows.Forms.Label
+    Friend WithEvents btnConsultarCuotas As System.Windows.Forms.Button
 End Class

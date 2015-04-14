@@ -111,6 +111,7 @@ Partial Class frmInicioF
         Me.lbUsurio = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -330,32 +331,32 @@ Partial Class frmInicioF
         '
         Me.registroR.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem25, Me.ToolStripMenuItem26, Me.ToolStripMenuItem27})
         Me.registroR.Name = "registroR"
-        Me.registroR.Size = New System.Drawing.Size(151, 22)
+        Me.registroR.Size = New System.Drawing.Size(152, 22)
         Me.registroR.Text = "Registro"
         '
         'ToolStripMenuItem25
         '
         Me.ToolStripMenuItem25.Name = "ToolStripMenuItem25"
-        Me.ToolStripMenuItem25.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem25.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem25.Text = "Cliente"
         '
         'ToolStripMenuItem26
         '
         Me.ToolStripMenuItem26.Name = "ToolStripMenuItem26"
-        Me.ToolStripMenuItem26.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem26.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem26.Text = "Producto"
         '
         'ToolStripMenuItem27
         '
         Me.ToolStripMenuItem27.Name = "ToolStripMenuItem27"
-        Me.ToolStripMenuItem27.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem27.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem27.Text = "Categoria"
         '
         'VentaR
         '
         Me.VentaR.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContadoToolStripMenuItem2, Me.PorPlanillaToolStripMenuItem2})
         Me.VentaR.Name = "VentaR"
-        Me.VentaR.Size = New System.Drawing.Size(151, 22)
+        Me.VentaR.Size = New System.Drawing.Size(152, 22)
         Me.VentaR.Text = "Venta"
         '
         'ContadoToolStripMenuItem2
@@ -374,7 +375,7 @@ Partial Class frmInicioF
         '
         Me.reporteR.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem30, Me.ToolStripMenuItem31, Me.ToolStripMenuItem32, Me.ClientesToolStripMenuItem, Me.UsuariosToolStripMenuItem})
         Me.reporteR.Name = "reporteR"
-        Me.reporteR.Size = New System.Drawing.Size(151, 22)
+        Me.reporteR.Size = New System.Drawing.Size(152, 22)
         Me.reporteR.Text = "Reporte"
         '
         'ToolStripMenuItem30
@@ -410,7 +411,7 @@ Partial Class frmInicioF
         'REImprecionR
         '
         Me.REImprecionR.Name = "REImprecionR"
-        Me.REImprecionR.Size = New System.Drawing.Size(151, 22)
+        Me.REImprecionR.Size = New System.Drawing.Size(152, 22)
         Me.REImprecionR.Text = "Anular Factura"
         '
         'fexpobeni
@@ -642,7 +643,7 @@ Partial Class frmInicioF
         '
         Me.lbrol.AutoSize = True
         Me.lbrol.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbrol.Location = New System.Drawing.Point(150, 4)
+        Me.lbrol.Location = New System.Drawing.Point(242, 5)
         Me.lbrol.Name = "lbrol"
         Me.lbrol.Size = New System.Drawing.Size(81, 20)
         Me.lbrol.TabIndex = 9
@@ -652,7 +653,7 @@ Partial Class frmInicioF
         '
         Me.lbUsurio.AutoSize = True
         Me.lbUsurio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbUsurio.Location = New System.Drawing.Point(12, 4)
+        Me.lbUsurio.Location = New System.Drawing.Point(65, 4)
         Me.lbUsurio.Name = "lbUsurio"
         Me.lbUsurio.Size = New System.Drawing.Size(84, 20)
         Me.lbUsurio.TabIndex = 11
@@ -669,11 +670,20 @@ Partial Class frmInicioF
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(955, 105)
+        Me.Label1.Location = New System.Drawing.Point(13, 10)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(46, 13)
+        Me.Label1.TabIndex = 17
+        Me.Label1.Text = "Usuario:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(188, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(48, 13)
+        Me.Label2.TabIndex = 18
+        Me.Label2.Text = "Funcion:"
         '
         'frmInicioF
         '
@@ -683,6 +693,7 @@ Partial Class frmInicioF
         Me.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios3
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1172, 508)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbUsurio)
         Me.Controls.Add(Me.StatusStrip)
@@ -788,5 +799,6 @@ Partial Class frmInicioF
     Friend WithEvents DatosImpuestos As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 
 End Class

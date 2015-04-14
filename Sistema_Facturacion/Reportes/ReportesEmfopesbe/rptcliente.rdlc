@@ -6,7 +6,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.85958cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.5cm</Width>
@@ -21,7 +21,7 @@
               <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>6.60104cm</Width>
+              <Width>3.4525cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -37,7 +37,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>idcliente</Value>
+                              <Value>Id</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -424,10 +424,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>4.04495cm</Top>
-        <Left>0.86995cm</Left>
+        <Top>1.42903cm</Top>
         <Height>1.2cm</Height>
-        <Width>19.10104cm</Width>
+        <Width>14.31208cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -452,8 +451,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox37</rd:DefaultName>
-        <Top>1.37266cm</Top>
-        <Left>7.14058cm</Left>
+        <Left>2.19287cm</Left>
         <Height>1.28792cm</Height>
         <Width>8.215cm</Width>
         <ZIndex>1</ZIndex>
@@ -468,10 +466,10 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>3.5625in</Height>
+    <Height>1.05208in</Height>
     <Style />
   </Body>
-  <Width>8.91667in</Width>
+  <Width>5.63468in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

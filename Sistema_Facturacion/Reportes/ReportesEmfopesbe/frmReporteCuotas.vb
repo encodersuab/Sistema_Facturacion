@@ -10,7 +10,7 @@
         Me.Mostrar_producto_postgradoTableAdapter.Fill(Me.DbfacDataSet.mostrar_producto_postgrado)
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnbuscar.Click
 
         'TODO: esta línea de código carga datos en la tabla 'DbfacDataSet.mostrar_cliente_servicio_cuota' Puede moverla o quitarla según sea necesario.
         Me.mostrar_cliente_servicio_cuotaTableAdapter.Fill(Me.DbfacDataSet.mostrar_cliente_servicio_cuota, cbservicio.Text, txtci.Text)

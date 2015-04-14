@@ -24,45 +24,60 @@ Partial Class frmReporteCuotas
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.mostrar_cliente_servicio_cuotaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
+        Me.btnbuscar = New System.Windows.Forms.Button()
         Me.cbservicio = New System.Windows.Forms.ComboBox()
+        Me.MostrarproductopostgradoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.txtci = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.DbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
-        Me.MostrarproductopostgradoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Mostrar_producto_postgradoTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_producto_postgradoTableAdapter()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.mostrar_cliente_servicio_cuotaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.mostrar_cliente_servicio_cuotaTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_cliente_servicio_cuotaTableAdapter()
+        CType(Me.mostrar_cliente_servicio_cuotaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MostrarproductopostgradoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.mostrar_cliente_servicio_cuotaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'mostrar_cliente_servicio_cuotaBindingSource
         '
-        Me.Button1.Location = New System.Drawing.Point(759, 22)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 39)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.mostrar_cliente_servicio_cuotaBindingSource.DataMember = "mostrar_cliente_servicio_cuota"
+        Me.mostrar_cliente_servicio_cuotaBindingSource.DataSource = Me.DbfacDataSet
+        '
+        'DbfacDataSet
+        '
+        Me.DbfacDataSet.DataSetName = "dbfacDataSet"
+        Me.DbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'btnbuscar
+        '
+        Me.btnbuscar.Location = New System.Drawing.Point(612, 6)
+        Me.btnbuscar.Name = "btnbuscar"
+        Me.btnbuscar.Size = New System.Drawing.Size(75, 22)
+        Me.btnbuscar.TabIndex = 0
+        Me.btnbuscar.Text = "Buscar"
+        Me.btnbuscar.UseVisualStyleBackColor = True
         '
         'cbservicio
         '
         Me.cbservicio.DataSource = Me.MostrarproductopostgradoBindingSource
         Me.cbservicio.DisplayMember = "NombreProducto"
         Me.cbservicio.FormattingEnabled = True
-        Me.cbservicio.Location = New System.Drawing.Point(135, 32)
+        Me.cbservicio.Location = New System.Drawing.Point(300, 6)
         Me.cbservicio.Name = "cbservicio"
         Me.cbservicio.Size = New System.Drawing.Size(284, 21)
         Me.cbservicio.TabIndex = 1
         Me.cbservicio.ValueMember = "NombreProducto"
         '
+        'MostrarproductopostgradoBindingSource
+        '
+        Me.MostrarproductopostgradoBindingSource.DataMember = "mostrar_producto_postgrado"
+        Me.MostrarproductopostgradoBindingSource.DataSource = Me.DbfacDataSet
+        '
         'txtci
         '
-        Me.txtci.Location = New System.Drawing.Point(531, 33)
+        Me.txtci.Location = New System.Drawing.Point(74, 6)
         Me.txtci.Name = "txtci"
         Me.txtci.Size = New System.Drawing.Size(162, 20)
         Me.txtci.TabIndex = 2
@@ -70,7 +85,7 @@ Partial Class frmReporteCuotas
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(84, 35)
+        Me.Label1.Location = New System.Drawing.Point(249, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(45, 13)
         Me.Label1.TabIndex = 3
@@ -79,21 +94,11 @@ Partial Class frmReporteCuotas
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(487, 36)
+        Me.Label2.Location = New System.Drawing.Point(30, 9)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(17, 13)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "CI"
-        '
-        'DbfacDataSet
-        '
-        Me.DbfacDataSet.DataSetName = "dbfacDataSet"
-        Me.DbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'MostrarproductopostgradoBindingSource
-        '
-        Me.MostrarproductopostgradoBindingSource.DataMember = "mostrar_producto_postgrado"
-        Me.MostrarproductopostgradoBindingSource.DataSource = Me.DbfacDataSet
         '
         'Mostrar_producto_postgradoTableAdapter
         '
@@ -105,15 +110,10 @@ Partial Class frmReporteCuotas
         ReportDataSource1.Value = Me.mostrar_cliente_servicio_cuotaBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.ReporteCuotas.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(-2, 99)
+        Me.ReportViewer1.Location = New System.Drawing.Point(2, 34)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(919, 363)
         Me.ReportViewer1.TabIndex = 5
-        '
-        'mostrar_cliente_servicio_cuotaBindingSource
-        '
-        Me.mostrar_cliente_servicio_cuotaBindingSource.DataMember = "mostrar_cliente_servicio_cuota"
-        Me.mostrar_cliente_servicio_cuotaBindingSource.DataSource = Me.DbfacDataSet
         '
         'mostrar_cliente_servicio_cuotaTableAdapter
         '
@@ -123,23 +123,23 @@ Partial Class frmReporteCuotas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(920, 474)
+        Me.ClientSize = New System.Drawing.Size(920, 397)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtci)
         Me.Controls.Add(Me.cbservicio)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnbuscar)
         Me.Name = "frmReporteCuotas"
         Me.Text = "frmReporteCuotas"
+        CType(Me.mostrar_cliente_servicio_cuotaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MostrarproductopostgradoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.mostrar_cliente_servicio_cuotaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnbuscar As System.Windows.Forms.Button
     Friend WithEvents cbservicio As System.Windows.Forms.ComboBox
     Friend WithEvents txtci As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label

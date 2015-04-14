@@ -565,7 +565,7 @@ Public Class frmDetalleVentaPostGrado
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
         Dim cant As Double
         cant = txtCantidad.Text
-        If txtCantidad.Text >= txtncuota.Value Then
+        If txtCantidad.Text > txtncuota.Value Then
             MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
             'btnGuardar.Visible = 0
             txtCantidad.Text = txtncuota.Value
@@ -582,4 +582,9 @@ Public Class frmDetalleVentaPostGrado
 
 
 
+    Private Sub btnConsultarCuotas_Click(sender As Object, e As EventArgs) Handles btnConsultarCuotas.Click
+        frmReporteCuotas.txtci.Text = txtNumDoc.Text
+        '   frmReporteCuotas.MdiParent = frmInicioF
+        frmReporteCuotas.Show()
+    End Sub
 End Class
