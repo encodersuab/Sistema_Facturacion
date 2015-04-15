@@ -2194,119 +2194,6 @@
           </Border>
         </Style>
       </Rectangle>
-      <Textbox Name="Textbox8">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>UNIVERSIDAD AUTÓNOMA DEL BENI</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontSize>6pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Center</TextAlign>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>“JOSE BALLIVIAN”</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontSize>6pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <LeftIndent>0cm</LeftIndent>
-            <RightIndent>0cm</RightIndent>
-            <Style>
-              <TextAlign>Center</TextAlign>
-              <LineHeight>12pt</LineHeight>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Av. 6 de agosto</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontSize>6pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <LeftIndent>0cm</LeftIndent>
-            <RightIndent>0cm</RightIndent>
-            <Style>
-              <TextAlign>Center</TextAlign>
-              <LineHeight>12pt</LineHeight>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Edificio Antonio Vaca Diez</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontSize>6pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <LeftIndent>0cm</LeftIndent>
-            <RightIndent>0cm</RightIndent>
-            <Style>
-              <TextAlign>Center</TextAlign>
-              <LineHeight>12pt</LineHeight>
-            </Style>
-          </Paragraph>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Trinidad-Beni-Bolivia</Value>
-                <Style>
-                  <FontStyle>Normal</FontStyle>
-                  <FontSize>6pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextDecoration>None</TextDecoration>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <LeftIndent>0cm</LeftIndent>
-            <RightIndent>0cm</RightIndent>
-            <Style>
-              <TextAlign>Center</TextAlign>
-              <LineHeight>12pt</LineHeight>
-            </Style>
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox6</rd:DefaultName>
-        <Top>1.11691cm</Top>
-        <Left>8.82287cm</Left>
-        <Height>1.47737cm</Height>
-        <Width>3.89347cm</Width>
-        <ZIndex>24</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
       <Image Name="Image5">
         <Source>Embedded</Source>
         <Value>facturaelectronicabeneficioscopia</Value>
@@ -2315,7 +2202,7 @@
         <Left>9.08933cm</Left>
         <Height>0.97048cm</Height>
         <Width>3.27271cm</Width>
-        <ZIndex>25</ZIndex>
+        <ZIndex>24</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2345,7 +2232,7 @@
         <Left>12.85618cm</Left>
         <Height>0.6cm</Height>
         <Width>2.3825cm</Width>
-        <ZIndex>26</ZIndex>
+        <ZIndex>25</ZIndex>
         <Style>
           <Border>
             <Color>LightGrey</Color>
@@ -2380,7 +2267,7 @@
             </Paragraphs>
             <rd:DefaultName>Nit_Emisor</rd:DefaultName>
             <Top>0.03528cm</Top>
-            <Left>2.15319cm</Left>
+            <Left>5.97611cm</Left>
             <Height>0.37949cm</Height>
             <Width>2.5cm</Width>
             <Style>
@@ -2413,7 +2300,7 @@
             </Paragraphs>
             <rd:DefaultName>NumeroFactura</rd:DefaultName>
             <Top>0.48533cm</Top>
-            <Left>2.22375cm</Left>
+            <Left>6.04667cm</Left>
             <Height>0.37949cm</Height>
             <Width>2.5cm</Width>
             <ZIndex>1</ZIndex>
@@ -2447,7 +2334,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox24</rd:DefaultName>
             <Top>0.48533cm</Top>
-            <Left>0.07055cm</Left>
+            <Left>3.89347cm</Left>
             <Height>0.37949cm</Height>
             <Width>2.04736cm</Width>
             <ZIndex>2</ZIndex>
@@ -2481,7 +2368,7 @@
             </Paragraphs>
             <rd:DefaultName>Num_Autorizacion</rd:DefaultName>
             <Top>0.93538cm</Top>
-            <Left>2.22375cm</Left>
+            <Left>6.04667cm</Left>
             <Height>0.37949cm</Height>
             <Width>2.5cm</Width>
             <ZIndex>3</ZIndex>
@@ -2515,7 +2402,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
             <Top>0.93538cm</Top>
-            <Left>0.07055cm</Left>
+            <Left>3.89347cm</Left>
             <Height>0.37949cm</Height>
             <Width>2.04736cm</Width>
             <ZIndex>4</ZIndex>
@@ -2549,7 +2436,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox24</rd:DefaultName>
             <Top>0.03528cm</Top>
-            <Left>0.07055cm</Left>
+            <Left>3.89347cm</Left>
             <Height>0.37949cm</Height>
             <Width>2.04736cm</Width>
             <ZIndex>5</ZIndex>
@@ -2563,13 +2450,125 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Textbox Name="Textbox8">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>UNIVERSIDAD AUTÓNOMA DEL BENI</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontSize>6pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>“JOSE BALLIVIAN”</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontSize>6pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <LeftIndent>0cm</LeftIndent>
+                <RightIndent>0cm</RightIndent>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                  <LineHeight>12pt</LineHeight>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Av. 6 de agosto</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontSize>6pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <LeftIndent>0cm</LeftIndent>
+                <RightIndent>0cm</RightIndent>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                  <LineHeight>12pt</LineHeight>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Edificio Antonio Vaca Diez</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontSize>6pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <LeftIndent>0cm</LeftIndent>
+                <RightIndent>0cm</RightIndent>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                  <LineHeight>12pt</LineHeight>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Trinidad-Beni-Bolivia</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontSize>6pt</FontSize>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <LeftIndent>0cm</LeftIndent>
+                <RightIndent>0cm</RightIndent>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                  <LineHeight>12pt</LineHeight>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox6</rd:DefaultName>
+            <Top>1.1116cm</Top>
+            <Height>1.47737cm</Height>
+            <Width>3.89347cm</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
         <KeepTogether>true</KeepTogether>
         <Top>0.14625cm</Top>
-        <Left>12.85618cm</Left>
-        <Height>1.31487cm</Height>
-        <Width>4.72375cm</Width>
-        <ZIndex>27</ZIndex>
+        <Left>9.03326cm</Left>
+        <Height>2.58897cm</Height>
+        <Width>8.54667cm</Width>
+        <ZIndex>26</ZIndex>
         <Style>
           <Border>
             <Style>Solid</Style>
