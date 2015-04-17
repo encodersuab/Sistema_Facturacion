@@ -321,7 +321,7 @@ Partial Public Class frmDetalleVenta
         lbdetalle.Text = ""
         frmProducto.txtTag.Text = "1"
         frmProducto.ShowDialog()
-        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text
+        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text + "/USUARIO:" + frmInicioF.lbUsurio.Text
         
     End Sub
 
@@ -392,7 +392,7 @@ Partial Public Class frmDetalleVenta
 
     Public Function calcularMontoCC(ByRef monto As String) As String
         'CALCULAR EL MONTO
-        System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
+        'System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
         Dim real As Double = Double.Parse(monto)
         real = Math.Round(real, 0)
         Dim total As String = real.ToString()

@@ -265,7 +265,7 @@ Public Class frmDetalleVentaPlanillaREDRUBI
         lbdetalle.Text = ""
         frmProductoREDRUBI.txtTag.Text = "2"
         frmProductoREDRUBI.ShowDialog()
-        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text
+        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text + "/USUARIO:" + frmInicioF.lbUsurio.Text
 
     End Sub
 

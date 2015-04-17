@@ -36,6 +36,7 @@ Partial Class frmLogin
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lbidusuario = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -175,11 +176,21 @@ Partial Class frmLogin
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
+        'lbidusuario
+        '
+        Me.lbidusuario.AutoSize = True
+        Me.lbidusuario.Location = New System.Drawing.Point(635, 100)
+        Me.lbidusuario.Name = "lbidusuario"
+        Me.lbidusuario.Size = New System.Drawing.Size(39, 13)
+        Me.lbidusuario.TabIndex = 7
+        Me.lbidusuario.Text = "Label5"
+        '
         'frmLogin
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(691, 253)
+        Me.Controls.Add(Me.lbidusuario)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.GroupBox1)
@@ -210,4 +221,5 @@ Partial Class frmLogin
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents lbidusuario As System.Windows.Forms.Label
 End Class

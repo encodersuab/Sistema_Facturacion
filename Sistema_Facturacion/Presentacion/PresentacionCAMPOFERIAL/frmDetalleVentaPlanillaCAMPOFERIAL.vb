@@ -266,7 +266,7 @@ Public Class frmDetalleVentaPlanillaCAMPOFERIAL
         lbdetalle.Text = ""
         frmProductoCAMPOFERIAL.txtTag.Text = "2"
         frmProductoCAMPOFERIAL.ShowDialog()
-        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text
+        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text + "/USUARIO:" + frmInicioF.lbUsurio.Text
 
     End Sub
 
