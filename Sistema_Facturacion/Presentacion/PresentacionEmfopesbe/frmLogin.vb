@@ -20,6 +20,7 @@
 
 
    
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
         Try
             Dim dts As New vUsuario
@@ -27,15 +28,16 @@
 
             dts.glogin = txtLogin.Text
             dts.gpassword = txtPassord.Text
-
+            frmInicioF.lbUsurio.Text = txtLogin.Text
             If func.validar_usuario(dts) = True Then
                 Dim rol As String
-
                 rol = func.mostrarROL(dts)
-
-                frmInicioF.lbUsurio.Text = txtLogin.Text
                 frmInicioF.lbrol.Text = rol.ToString
-
+                If func.validar_usuario(dts) = True Then
+                    Dim idu As Integer
+                    idu = func.mostrarIDUSUARIO(dts)
+                    frmInicioF.lbidusuario.Text = idu.ToString
+                End If
                 frmInicioF.Show()
                 Me.Hide()
             Else

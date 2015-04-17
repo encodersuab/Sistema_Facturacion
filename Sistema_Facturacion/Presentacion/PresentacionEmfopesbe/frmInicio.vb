@@ -422,4 +422,8 @@ Public Class frmInicioF
         frmVentaPlanillaREDRUBI.Show()
 
     End Sub
+
+    Private Sub lbUsurio_Click(sender As Object, e As EventArgs) Handles lbUsurio.Click
+
+    End Sub
 End Class

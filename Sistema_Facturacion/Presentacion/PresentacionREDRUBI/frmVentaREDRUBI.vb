@@ -1,6 +1,7 @@
 ﻿Public Class frmVentaREDRUBI
     Private dt As New DataTable
     Private Sub frmVentaREDRUBI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lbusuario.Text = frmInicioF.lbidusuario.Text
         mostrar()
     End Sub
 
@@ -93,6 +94,7 @@
                 dts.Gnombre_fac = txtNombreFac.Text
                 dts.Gestado = 0
                 dts.Gpago = "CONTADO"
+                dts.Gidusuario = frmInicioF.lbidusuario.Text
                 If func.insertar(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
 

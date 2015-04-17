@@ -99,6 +99,28 @@ Public Class fUsuario
         End If
 
     End Function
+    Public Function mostrarIDUSUARIO(ByVal dts As vUsuario)
+
+        Dim cmd = New SqlCommand("validar_usuario_idusuario", cnn)
+        cmd.CommandType = CommandType.StoredProcedure
+
+        cmd.Parameters.AddWithValue("@login", dts.glogin)
+        cmd.Parameters.AddWithValue("@password", dts.gpassword)
+
+        Dim da = New SqlDataAdapter(cmd)
+        Dim ds = New DataTable()
+        da.Fill(ds)
+
+        If (ds.Rows.Count > 0) Then
+            Dim row = ds.Rows(0)
+            Dim a As String
+            a = Convert.ToString(row("idusuario"))
+            Return a
+        Else
+            Return False
+        End If
+
+    End Function
 
     Public Function insertar(ByVal dts As vUsuario) As Boolean
         Try

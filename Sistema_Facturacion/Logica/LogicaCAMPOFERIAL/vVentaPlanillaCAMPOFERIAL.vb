@@ -1,5 +1,5 @@
 ﻿Public Class vVentaPlanillaCAMPOFERIAL
-    Dim idventaplanilla, idcliente As Integer
+    Dim idventaplanilla, idcliente, idusuario As Integer
     Dim fecha_venta As Date
     Dim tipo_documento, num_documento, nombre_fac, estado, pago As String
 
@@ -67,6 +67,14 @@
             pago = value
         End Set
     End Property
+    Public Property Gidusuario
+        Get
+            Return idusuario
+        End Get
+        Set(ByVal value)
+            idusuario = value
+        End Set
+    End Property
     Public Sub New()
 
     End Sub
@@ -80,5 +88,6 @@
         Gnombre_fac = nombre_fac
         Gestado = estado
         Gpago = pago
+        Gidusuario = idusuario
     End Sub
 End Class

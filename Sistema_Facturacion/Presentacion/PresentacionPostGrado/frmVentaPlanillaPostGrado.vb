@@ -69,6 +69,7 @@
                 dts.Gnombre_fac = txtNombreFac.Text
                 dts.Gestado = 1
                 dts.Gpago = "PLANILLA"
+                dts.Gidusuario = frmInicioF.lbidusuario.Text
                 If func.insertarventaPlanilla(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
 

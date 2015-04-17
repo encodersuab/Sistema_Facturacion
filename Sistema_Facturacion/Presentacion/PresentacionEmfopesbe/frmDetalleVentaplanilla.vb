@@ -266,7 +266,7 @@ Public Class frmDetalleVentaplanilla
         lbdetalle.Text = ""
         frmProducto.txtTag.Text = "2"
         frmProducto.ShowDialog()
-        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text
+        lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text + "/USUARIO:" + frmInicioF.lbUsurio.Text
 
     End Sub
 

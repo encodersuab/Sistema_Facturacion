@@ -47,6 +47,7 @@ Partial Class frmVentaREDRUBI
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.lbusuario = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -284,11 +285,21 @@ Partial Class frmVentaREDRUBI
         '
         Me.erroricono.ContainerControl = Me
         '
+        'lbusuario
+        '
+        Me.lbusuario.AutoSize = True
+        Me.lbusuario.Location = New System.Drawing.Point(0, -4)
+        Me.lbusuario.Name = "lbusuario"
+        Me.lbusuario.Size = New System.Drawing.Size(39, 13)
+        Me.lbusuario.TabIndex = 6
+        Me.lbusuario.Text = "Label7"
+        '
         'frmVentaREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(892, 281)
+        Me.Controls.Add(Me.lbusuario)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -302,6 +313,7 @@ Partial Class frmVentaREDRUBI
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
@@ -328,4 +340,5 @@ Partial Class frmVentaREDRUBI
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
+    Friend WithEvents lbusuario As System.Windows.Forms.Label
 End Class

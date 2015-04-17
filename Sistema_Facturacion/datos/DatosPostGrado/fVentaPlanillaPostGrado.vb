@@ -43,6 +43,7 @@ Public Class fVentaPlanillaPostGrado
             cmd.Parameters.AddWithValue("@nombre_fac", dts.Gnombre_fac)
             cmd.Parameters.AddWithValue("@estado", dts.Gestado)
             cmd.Parameters.AddWithValue("@pago", dts.Gpago)
+            cmd.Parameters.AddWithValue("@idusuario", dts.Gidusuario)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
