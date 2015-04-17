@@ -23,22 +23,18 @@ Partial Class frmeditarproducto
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnEditarDescripcion = New System.Windows.Forms.Button()
+        Me.btnEditarStock = New System.Windows.Forms.Button()
+        Me.btnEditarPresioCompra = New System.Windows.Forms.Button()
+        Me.btnEditarFechaVenc = New System.Windows.Forms.Button()
+        Me.btnEditarMedida = New System.Windows.Forms.Button()
+        Me.btnEditarImagen = New System.Windows.Forms.Button()
+        Me.btnEditarPresioVenta = New System.Windows.Forms.Button()
+        Me.btnEditarNombreProd = New System.Windows.Forms.Button()
         Me.cbbmodulo = New System.Windows.Forms.Label()
         Me.txtmedida = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.btnlimpiar = New System.Windows.Forms.PictureBox()
-        Me.btncargar = New System.Windows.Forms.PictureBox()
         Me.imagen = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtfecha_vencimiento = New System.Windows.Forms.DateTimePicker()
@@ -46,10 +42,6 @@ Partial Class frmeditarproducto
         Me.txtnom_categoria = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtidcategoria = New System.Windows.Forms.TextBox()
-        Me.btnGuardar = New System.Windows.Forms.Button()
-        Me.btnEditar = New System.Windows.Forms.Button()
-        Me.btncancelar = New System.Windows.Forms.Button()
-        Me.btnNuevo = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtprecio_venta = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -63,29 +55,23 @@ Partial Class frmeditarproducto
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdproducto = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btncargar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button12)
-        Me.GroupBox1.Controls.Add(Me.Button11)
-        Me.GroupBox1.Controls.Add(Me.Button10)
-        Me.GroupBox1.Controls.Add(Me.Button9)
-        Me.GroupBox1.Controls.Add(Me.Button8)
-        Me.GroupBox1.Controls.Add(Me.Button7)
-        Me.GroupBox1.Controls.Add(Me.Button6)
-        Me.GroupBox1.Controls.Add(Me.Button5)
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.btnEditarDescripcion)
+        Me.GroupBox1.Controls.Add(Me.btnEditarStock)
+        Me.GroupBox1.Controls.Add(Me.btnEditarPresioCompra)
+        Me.GroupBox1.Controls.Add(Me.btnEditarFechaVenc)
+        Me.GroupBox1.Controls.Add(Me.btnEditarMedida)
+        Me.GroupBox1.Controls.Add(Me.btnEditarImagen)
+        Me.GroupBox1.Controls.Add(Me.btnEditarPresioVenta)
+        Me.GroupBox1.Controls.Add(Me.btnEditarNombreProd)
         Me.GroupBox1.Controls.Add(Me.cbbmodulo)
         Me.GroupBox1.Controls.Add(Me.txtmedida)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Controls.Add(Me.btnlimpiar)
-        Me.GroupBox1.Controls.Add(Me.btncargar)
         Me.GroupBox1.Controls.Add(Me.imagen)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.txtfecha_vencimiento)
@@ -93,10 +79,6 @@ Partial Class frmeditarproducto
         Me.GroupBox1.Controls.Add(Me.txtnom_categoria)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.txtidcategoria)
-        Me.GroupBox1.Controls.Add(Me.btnGuardar)
-        Me.GroupBox1.Controls.Add(Me.btnEditar)
-        Me.GroupBox1.Controls.Add(Me.btncancelar)
-        Me.GroupBox1.Controls.Add(Me.btnNuevo)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.txtprecio_venta)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -116,95 +98,77 @@ Partial Class frmeditarproducto
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
-        'Button12
+        'btnEditarDescripcion
         '
-        Me.Button12.Location = New System.Drawing.Point(413, 82)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(75, 20)
-        Me.Button12.TabIndex = 42
-        Me.Button12.Text = "Editar"
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.btnEditarDescripcion.Location = New System.Drawing.Point(413, 108)
+        Me.btnEditarDescripcion.Name = "btnEditarDescripcion"
+        Me.btnEditarDescripcion.Size = New System.Drawing.Size(75, 39)
+        Me.btnEditarDescripcion.TabIndex = 41
+        Me.btnEditarDescripcion.Text = "Editar"
+        Me.btnEditarDescripcion.UseVisualStyleBackColor = True
         '
-        'Button11
+        'btnEditarStock
         '
-        Me.Button11.Location = New System.Drawing.Point(413, 108)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(75, 39)
-        Me.Button11.TabIndex = 41
-        Me.Button11.Text = "Editar"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.btnEditarStock.Location = New System.Drawing.Point(413, 153)
+        Me.btnEditarStock.Name = "btnEditarStock"
+        Me.btnEditarStock.Size = New System.Drawing.Size(75, 20)
+        Me.btnEditarStock.TabIndex = 40
+        Me.btnEditarStock.Text = "Editar"
+        Me.btnEditarStock.UseVisualStyleBackColor = True
         '
-        'Button10
+        'btnEditarPresioCompra
         '
-        Me.Button10.Location = New System.Drawing.Point(413, 153)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(75, 20)
-        Me.Button10.TabIndex = 40
-        Me.Button10.Text = "Editar"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.btnEditarPresioCompra.Location = New System.Drawing.Point(413, 179)
+        Me.btnEditarPresioCompra.Name = "btnEditarPresioCompra"
+        Me.btnEditarPresioCompra.Size = New System.Drawing.Size(75, 20)
+        Me.btnEditarPresioCompra.TabIndex = 39
+        Me.btnEditarPresioCompra.Text = "Editar"
+        Me.btnEditarPresioCompra.UseVisualStyleBackColor = True
         '
-        'Button9
+        'btnEditarFechaVenc
         '
-        Me.Button9.Location = New System.Drawing.Point(413, 179)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 20)
-        Me.Button9.TabIndex = 39
-        Me.Button9.Text = "Editar"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.btnEditarFechaVenc.Location = New System.Drawing.Point(413, 230)
+        Me.btnEditarFechaVenc.Name = "btnEditarFechaVenc"
+        Me.btnEditarFechaVenc.Size = New System.Drawing.Size(75, 20)
+        Me.btnEditarFechaVenc.TabIndex = 38
+        Me.btnEditarFechaVenc.Text = "Editar"
+        Me.btnEditarFechaVenc.UseVisualStyleBackColor = True
         '
-        'Button8
+        'btnEditarMedida
         '
-        Me.Button8.Location = New System.Drawing.Point(413, 230)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 20)
-        Me.Button8.TabIndex = 38
-        Me.Button8.Text = "Editar"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btnEditarMedida.Location = New System.Drawing.Point(414, 284)
+        Me.btnEditarMedida.Name = "btnEditarMedida"
+        Me.btnEditarMedida.Size = New System.Drawing.Size(75, 21)
+        Me.btnEditarMedida.TabIndex = 37
+        Me.btnEditarMedida.Text = "Editar"
+        Me.btnEditarMedida.UseVisualStyleBackColor = True
         '
-        'Button7
+        'btnEditarImagen
         '
-        Me.Button7.Location = New System.Drawing.Point(414, 284)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 21)
-        Me.Button7.TabIndex = 37
-        Me.Button7.Text = "Editar"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnEditarImagen.Location = New System.Drawing.Point(414, 312)
+        Me.btnEditarImagen.Name = "btnEditarImagen"
+        Me.btnEditarImagen.Size = New System.Drawing.Size(75, 123)
+        Me.btnEditarImagen.TabIndex = 36
+        Me.btnEditarImagen.Text = "Editar"
+        Me.btnEditarImagen.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btnEditarPresioVenta
         '
-        Me.Button6.Location = New System.Drawing.Point(414, 312)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 123)
-        Me.Button6.TabIndex = 36
-        Me.Button6.Text = "Editar"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnEditarPresioVenta.Location = New System.Drawing.Point(413, 205)
+        Me.btnEditarPresioVenta.Name = "btnEditarPresioVenta"
+        Me.btnEditarPresioVenta.Size = New System.Drawing.Size(75, 20)
+        Me.btnEditarPresioVenta.TabIndex = 35
+        Me.btnEditarPresioVenta.Text = "Editar"
+        Me.btnEditarPresioVenta.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnEditarNombreProd
         '
-        Me.Button5.Location = New System.Drawing.Point(413, 205)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 20)
-        Me.Button5.TabIndex = 35
-        Me.Button5.Text = "Editar"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(413, 52)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 20)
-        Me.Button3.TabIndex = 33
-        Me.Button3.Text = "Editar"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(414, 25)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 20)
-        Me.Button2.TabIndex = 32
-        Me.Button2.Text = "Editar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnEditarNombreProd.Location = New System.Drawing.Point(413, 52)
+        Me.btnEditarNombreProd.Name = "btnEditarNombreProd"
+        Me.btnEditarNombreProd.Size = New System.Drawing.Size(75, 20)
+        Me.btnEditarNombreProd.TabIndex = 33
+        Me.btnEditarNombreProd.Text = "Editar"
+        Me.btnEditarNombreProd.UseVisualStyleBackColor = True
         '
         'cbbmodulo
         '
@@ -242,26 +206,6 @@ Partial Class frmeditarproducto
         Me.Label10.Size = New System.Drawing.Size(42, 13)
         Me.Label10.TabIndex = 27
         Me.Label10.Text = "Modulo"
-        '
-        'btnlimpiar
-        '
-        Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
-        Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(331, 387)
-        Me.btnlimpiar.Name = "btnlimpiar"
-        Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
-        Me.btnlimpiar.TabIndex = 25
-        Me.btnlimpiar.TabStop = False
-        '
-        'btncargar
-        '
-        Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
-        Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(331, 333)
-        Me.btncargar.Name = "btncargar"
-        Me.btncargar.Size = New System.Drawing.Size(45, 48)
-        Me.btncargar.TabIndex = 24
-        Me.btncargar.TabStop = False
         '
         'imagen
         '
@@ -325,42 +269,6 @@ Partial Class frmeditarproducto
         Me.txtidcategoria.Name = "txtidcategoria"
         Me.txtidcategoria.Size = New System.Drawing.Size(29, 20)
         Me.txtidcategoria.TabIndex = 16
-        '
-        'btnGuardar
-        '
-        Me.btnGuardar.Location = New System.Drawing.Point(167, 473)
-        Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
-        Me.btnGuardar.TabIndex = 15
-        Me.btnGuardar.Text = "Guardar"
-        Me.btnGuardar.UseVisualStyleBackColor = True
-        '
-        'btnEditar
-        '
-        Me.btnEditar.Location = New System.Drawing.Point(167, 454)
-        Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(67, 26)
-        Me.btnEditar.TabIndex = 14
-        Me.btnEditar.Text = "Editar"
-        Me.btnEditar.UseVisualStyleBackColor = True
-        '
-        'btncancelar
-        '
-        Me.btncancelar.Location = New System.Drawing.Point(252, 454)
-        Me.btncancelar.Name = "btncancelar"
-        Me.btncancelar.Size = New System.Drawing.Size(67, 26)
-        Me.btncancelar.TabIndex = 13
-        Me.btncancelar.Text = "Cancelar"
-        Me.btncancelar.UseVisualStyleBackColor = True
-        '
-        'btnNuevo
-        '
-        Me.btnNuevo.Location = New System.Drawing.Point(83, 454)
-        Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
-        Me.btnNuevo.TabIndex = 12
-        Me.btnNuevo.Text = "Nuevo"
-        Me.btnNuevo.UseVisualStyleBackColor = True
         '
         'Label6
         '
@@ -477,8 +385,6 @@ Partial Class frmeditarproducto
         Me.Text = "frmeditarproducto"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btncargar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -488,8 +394,6 @@ Partial Class frmeditarproducto
     Friend WithEvents txtmedida As System.Windows.Forms.ComboBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents btnlimpiar As System.Windows.Forms.PictureBox
-    Friend WithEvents btncargar As System.Windows.Forms.PictureBox
     Friend WithEvents imagen As System.Windows.Forms.PictureBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents txtfecha_vencimiento As System.Windows.Forms.DateTimePicker
@@ -497,10 +401,6 @@ Partial Class frmeditarproducto
     Friend WithEvents txtnom_categoria As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txtidcategoria As System.Windows.Forms.TextBox
-    Friend WithEvents btnGuardar As System.Windows.Forms.Button
-    Friend WithEvents btnEditar As System.Windows.Forms.Button
-    Friend WithEvents btncancelar As System.Windows.Forms.Button
-    Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtprecio_venta As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
@@ -513,14 +413,12 @@ Partial Class frmeditarproducto
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdproducto As System.Windows.Forms.TextBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button12 As System.Windows.Forms.Button
-    Friend WithEvents Button11 As System.Windows.Forms.Button
-    Friend WithEvents Button10 As System.Windows.Forms.Button
-    Friend WithEvents Button9 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btnEditarDescripcion As System.Windows.Forms.Button
+    Friend WithEvents btnEditarStock As System.Windows.Forms.Button
+    Friend WithEvents btnEditarPresioCompra As System.Windows.Forms.Button
+    Friend WithEvents btnEditarFechaVenc As System.Windows.Forms.Button
+    Friend WithEvents btnEditarMedida As System.Windows.Forms.Button
+    Friend WithEvents btnEditarImagen As System.Windows.Forms.Button
+    Friend WithEvents btnEditarPresioVenta As System.Windows.Forms.Button
+    Friend WithEvents btnEditarNombreProd As System.Windows.Forms.Button
 End Class
