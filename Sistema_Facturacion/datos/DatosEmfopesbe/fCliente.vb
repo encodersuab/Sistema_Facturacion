@@ -52,6 +52,7 @@ Public Class fCliente
         End Try
     End Function
 
+
     Public Function insertar(ByVal dts As vCliente) As Boolean
         Try
             conectado()
@@ -78,6 +79,8 @@ Public Class fCliente
             desconectado()
         End Try
     End Function
+
+
     Public Function editar(ByVal dts As vCliente) As Boolean
         Try
             conectado()
