@@ -74,10 +74,10 @@ Partial Class frmUsuarios
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(105, 303)
+        Me.btnGuardar.Location = New System.Drawing.Point(105, 313)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
-        Me.btnGuardar.TabIndex = 15
+        Me.btnGuardar.TabIndex = 10
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
@@ -95,7 +95,7 @@ Partial Class frmUsuarios
         Me.btncancelar.Location = New System.Drawing.Point(190, 313)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
-        Me.btncancelar.TabIndex = 13
+        Me.btncancelar.TabIndex = 12
         Me.btncancelar.Text = "Cancelar"
         Me.btncancelar.UseVisualStyleBackColor = True
         '
@@ -104,7 +104,7 @@ Partial Class frmUsuarios
         Me.btnNuevo.Location = New System.Drawing.Point(21, 313)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
-        Me.btnNuevo.TabIndex = 12
+        Me.btnNuevo.TabIndex = 11
         Me.btnNuevo.Text = "Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = True
         '
@@ -123,7 +123,7 @@ Partial Class frmUsuarios
         Me.txtCi.Location = New System.Drawing.Point(94, 108)
         Me.txtCi.Name = "txtCi"
         Me.txtCi.Size = New System.Drawing.Size(163, 20)
-        Me.txtCi.TabIndex = 10
+        Me.txtCi.TabIndex = 3
         '
         'Label5
         '
@@ -141,7 +141,7 @@ Partial Class frmUsuarios
         Me.cbxListadoClientes.Location = New System.Drawing.Point(6, 25)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
         Me.cbxListadoClientes.Size = New System.Drawing.Size(147, 21)
-        Me.cbxListadoClientes.TabIndex = 1
+        Me.cbxListadoClientes.TabIndex = 0
         Me.cbxListadoClientes.Text = "nombre"
         '
         'datalistado
@@ -155,7 +155,7 @@ Partial Class frmUsuarios
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.datalistado.Size = New System.Drawing.Size(757, 304)
-        Me.datalistado.TabIndex = 0
+        Me.datalistado.TabIndex = 2
         '
         'eliminar
         '
@@ -169,7 +169,7 @@ Partial Class frmUsuarios
         Me.txtTelefono.Location = New System.Drawing.Point(94, 160)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(163, 20)
-        Me.txtTelefono.TabIndex = 8
+        Me.txtTelefono.TabIndex = 5
         '
         'Label4
         '
@@ -186,7 +186,7 @@ Partial Class frmUsuarios
         Me.txtDireccion.Location = New System.Drawing.Point(94, 134)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(163, 20)
-        Me.txtDireccion.TabIndex = 6
+        Me.txtDireccion.TabIndex = 4
         '
         'txtBuscar
         '
@@ -194,7 +194,7 @@ Partial Class frmUsuarios
         Me.txtBuscar.Location = New System.Drawing.Point(159, 25)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(604, 20)
-        Me.txtBuscar.TabIndex = 2
+        Me.txtBuscar.TabIndex = 1
         '
         'Label3
         '
@@ -210,7 +210,7 @@ Partial Class frmUsuarios
         Me.txtFlag.Location = New System.Drawing.Point(219, -1)
         Me.txtFlag.Name = "txtFlag"
         Me.txtFlag.Size = New System.Drawing.Size(100, 20)
-        Me.txtFlag.TabIndex = 19
+        Me.txtFlag.TabIndex = 0
         Me.txtFlag.Text = "0"
         '
         'txtApellido
@@ -219,7 +219,7 @@ Partial Class frmUsuarios
         Me.txtApellido.Location = New System.Drawing.Point(94, 82)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(163, 20)
-        Me.txtApellido.TabIndex = 4
+        Me.txtApellido.TabIndex = 2
         '
         'Label2
         '
@@ -236,7 +236,7 @@ Partial Class frmUsuarios
         Me.txtNombre.Location = New System.Drawing.Point(94, 56)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(163, 20)
-        Me.txtNombre.TabIndex = 2
+        Me.txtNombre.TabIndex = 1
         '
         'Label1
         '
@@ -269,7 +269,7 @@ Partial Class frmUsuarios
         Me.GroupBox2.Location = New System.Drawing.Point(315, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(769, 362)
-        Me.GroupBox2.TabIndex = 18
+        Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Clientes"
         '
@@ -302,7 +302,7 @@ Partial Class frmUsuarios
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(297, 362)
-        Me.GroupBox1.TabIndex = 17
+        Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
@@ -322,7 +322,7 @@ Partial Class frmUsuarios
         Me.cbRol.Location = New System.Drawing.Point(94, 265)
         Me.cbRol.Name = "cbRol"
         Me.cbRol.Size = New System.Drawing.Size(163, 21)
-        Me.cbRol.TabIndex = 22
+        Me.cbRol.TabIndex = 9
         '
         'Label9
         '
@@ -339,7 +339,7 @@ Partial Class frmUsuarios
         Me.txtacceso.Location = New System.Drawing.Point(94, 238)
         Me.txtacceso.Name = "txtacceso"
         Me.txtacceso.Size = New System.Drawing.Size(163, 20)
-        Me.txtacceso.TabIndex = 20
+        Me.txtacceso.TabIndex = 8
         '
         'Label8
         '
@@ -356,7 +356,7 @@ Partial Class frmUsuarios
         Me.txtPassword.Location = New System.Drawing.Point(94, 212)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(163, 20)
-        Me.txtPassword.TabIndex = 18
+        Me.txtPassword.TabIndex = 7
         '
         'Label7
         '
@@ -373,7 +373,7 @@ Partial Class frmUsuarios
         Me.txtLogin.Location = New System.Drawing.Point(94, 186)
         Me.txtLogin.Name = "txtLogin"
         Me.txtLogin.Size = New System.Drawing.Size(163, 20)
-        Me.txtLogin.TabIndex = 16
+        Me.txtLogin.TabIndex = 6
         '
         'frmUsuarios
         '

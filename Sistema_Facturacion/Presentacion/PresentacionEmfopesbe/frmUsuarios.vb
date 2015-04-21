@@ -144,6 +144,8 @@
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
         limpiar()
         mostrar()
+        txtNombre.Focus()
+
 
     End Sub
 
