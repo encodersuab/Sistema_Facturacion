@@ -209,6 +209,12 @@
     <Compile Include="Presentacion\PresentacionEmfopesbe\FrmEditarProducto2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmUsuarios.Designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\PresentacionEmfopesbe\frmVentaPlanilla.Designer.vb">
       <DependentUpon>frmVentaPlanilla.vb</DependentUpon>
     </Compile>
@@ -507,6 +513,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\FrmEditarProducto2.resx">
       <DependentUpon>FrmEditarProducto2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmVentaPlanilla.resx">
       <DependentUpon>frmVentaPlanilla.vb</DependentUpon>

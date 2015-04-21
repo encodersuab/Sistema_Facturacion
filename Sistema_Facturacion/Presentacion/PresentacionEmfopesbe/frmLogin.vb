@@ -21,6 +21,7 @@
 
    
 
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
         Try
             Dim dts As New vUsuario

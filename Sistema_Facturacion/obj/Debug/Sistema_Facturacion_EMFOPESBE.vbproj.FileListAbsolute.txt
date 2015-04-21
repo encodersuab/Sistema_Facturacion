@@ -233,3 +233,6 @@ D:\Users\Blady\Desktop\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema
 D:\Users\Blady\Desktop\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.pdb
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmEditarProducto2CAMPOFERIAL.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmeditarproductoCAMPOFERIAL.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmEditarProducto2CAMPOFERIAL.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmeditarproductoCAMPOFERIAL.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmUsuarios.resources
