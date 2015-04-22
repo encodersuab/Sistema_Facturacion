@@ -604,6 +604,12 @@
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaREDRUBI.resx">
       <DependentUpon>frmDetalleVentaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmEditarProducto2REDRUBI.resx">
+      <DependentUpon>frmEditarProducto2REDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmEditarProductoREDRUBI.resx">
+      <DependentUpon>frmEditarProductoREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.resx">
       <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
     </EmbeddedResource>

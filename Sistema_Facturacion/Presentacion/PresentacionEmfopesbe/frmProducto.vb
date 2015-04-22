@@ -1,7 +1,7 @@
 ﻿Public Class frmProducto
 
     Private dt As New DataTable
-    Private Sub frmProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub frmProducto_Load() Handles MyBase.Load
         If frmInicioF.lbrol.Text = "UsuarioEMFOPESBE" Then
             btnEditar.Enabled = False
             btnNuevo.Enabled = False
@@ -19,9 +19,7 @@
             txtidcategoria.Enabled = False
             txtnom_categoria.Enabled = False
         End If
-
-
-
+        limpiar()
         mostrar()
 
     End Sub
@@ -182,7 +180,7 @@
 
 
 
-        frmeditarproducto.Show()
+        frmeditarproducto.ShowDialog()
 
 
         'Dim result As DialogResult

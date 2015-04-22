@@ -35,6 +35,7 @@ Partial Class frmEditarProductoPostGrado
         Me.txtmedida = New System.Windows.Forms.ComboBox()
         Me.l6 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.imagen = New System.Windows.Forms.PictureBox()
         Me.l7 = New System.Windows.Forms.Label()
         Me.txtfecha_vencimiento = New System.Windows.Forms.DateTimePicker()
         Me.l5 = New System.Windows.Forms.Label()
@@ -53,7 +54,6 @@ Partial Class frmEditarProductoPostGrado
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdproducto = New System.Windows.Forms.TextBox()
-        Me.imagen = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -208,6 +208,18 @@ Partial Class frmEditarProductoPostGrado
         Me.Label10.Size = New System.Drawing.Size(42, 13)
         Me.Label10.TabIndex = 27
         Me.Label10.Text = "Modulo"
+        '
+        'imagen
+        '
+        Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
+        Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
+        Me.imagen.Location = New System.Drawing.Point(153, 285)
+        Me.imagen.Name = "imagen"
+        Me.imagen.Size = New System.Drawing.Size(171, 133)
+        Me.imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.imagen.TabIndex = 23
+        Me.imagen.TabStop = False
         '
         'l7
         '
@@ -372,18 +384,6 @@ Partial Class frmEditarProductoPostGrado
         Me.txtIdproducto.Name = "txtIdproducto"
         Me.txtIdproducto.Size = New System.Drawing.Size(172, 20)
         Me.txtIdproducto.TabIndex = 0
-        '
-        'imagen
-        '
-        Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(153, 285)
-        Me.imagen.Name = "imagen"
-        Me.imagen.Size = New System.Drawing.Size(171, 133)
-        Me.imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.imagen.TabIndex = 23
-        Me.imagen.TabStop = False
         '
         'frmEditarProductoPostGrado
         '

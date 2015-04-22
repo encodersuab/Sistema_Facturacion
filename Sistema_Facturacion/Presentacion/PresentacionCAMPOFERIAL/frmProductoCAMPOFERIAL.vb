@@ -1,6 +1,6 @@
 ﻿Public Class frmProductoCAMPOFERIAL
     Private dt As New DataTable
-    Private Sub frmProductoCAMPOFERIAL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub frmProductoCAMPOFERIAL_Load() Handles MyBase.Load
         If frmInicioF.lbrol.Text = "UsuarioCAMPOFERIAL" Then
             btnEditar.Enabled = False
             btnNuevo.Enabled = False
@@ -11,20 +11,17 @@
             txtprecio_compra.Enabled = False
             txtprecio_venta.Enabled = False
             txtIdproducto.Enabled = False
-            cbbmodulo.Enabled = False
+            cbbModulo.Enabled = False
             txtfecha_vencimiento.Enabled = False
             btncargar.Enabled = False
             btnlimpiar.Enabled = False
             txtidcategoria.Enabled = False
             txtnom_categoria.Enabled = False
             ' cbbestado.Enabled = False
-            
+
         End If
-
-
-
+        limpiar()
         mostrar()
-
     End Sub
 
     Public Sub limpiar()

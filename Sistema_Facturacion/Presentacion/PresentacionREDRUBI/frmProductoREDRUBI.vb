@@ -1,6 +1,6 @@
 ﻿Public Class frmProductoREDRUBI
     Private dt As New DataTable
-    Private Sub frmProductoREDRUBI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub frmProductoREDRUBI_Load() Handles MyBase.Load
         If frmInicioF.lbrol.Text = "UsuarioEMFOPESBE" Then
             btnEditar.Enabled = False
             btnNuevo.Enabled = False
@@ -18,11 +18,8 @@
             txtidcategoria.Enabled = False
             txtnom_categoria.Enabled = False
         End If
-
-
-
+        limpiar()
         mostrar()
-
     End Sub
 
     Public Sub limpiar()
