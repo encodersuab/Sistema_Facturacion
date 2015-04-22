@@ -91,10 +91,10 @@ Partial Class frmeditarproducto
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtIdproducto)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(539, 499)
-        Me.GroupBox1.TabIndex = 3
+        Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
@@ -127,7 +127,7 @@ Partial Class frmeditarproducto
         '
         'btnEditarFechaVenc
         '
-        Me.btnEditarFechaVenc.Location = New System.Drawing.Point(413, 230)
+        Me.btnEditarFechaVenc.Location = New System.Drawing.Point(412, 230)
         Me.btnEditarFechaVenc.Name = "btnEditarFechaVenc"
         Me.btnEditarFechaVenc.Size = New System.Drawing.Size(75, 20)
         Me.btnEditarFechaVenc.TabIndex = 38
@@ -136,7 +136,7 @@ Partial Class frmeditarproducto
         '
         'btnEditarMedida
         '
-        Me.btnEditarMedida.Location = New System.Drawing.Point(414, 284)
+        Me.btnEditarMedida.Location = New System.Drawing.Point(413, 284)
         Me.btnEditarMedida.Name = "btnEditarMedida"
         Me.btnEditarMedida.Size = New System.Drawing.Size(75, 21)
         Me.btnEditarMedida.TabIndex = 37
@@ -145,7 +145,7 @@ Partial Class frmeditarproducto
         '
         'btnEditarImagen
         '
-        Me.btnEditarImagen.Location = New System.Drawing.Point(414, 312)
+        Me.btnEditarImagen.Location = New System.Drawing.Point(413, 312)
         Me.btnEditarImagen.Name = "btnEditarImagen"
         Me.btnEditarImagen.Size = New System.Drawing.Size(75, 123)
         Me.btnEditarImagen.TabIndex = 36
@@ -154,7 +154,7 @@ Partial Class frmeditarproducto
         '
         'btnEditarPresioVenta
         '
-        Me.btnEditarPresioVenta.Location = New System.Drawing.Point(413, 205)
+        Me.btnEditarPresioVenta.Location = New System.Drawing.Point(412, 205)
         Me.btnEditarPresioVenta.Name = "btnEditarPresioVenta"
         Me.btnEditarPresioVenta.Size = New System.Drawing.Size(75, 20)
         Me.btnEditarPresioVenta.TabIndex = 35
@@ -174,7 +174,7 @@ Partial Class frmeditarproducto
         '
         Me.cbbmodulo.AutoSize = True
         Me.cbbmodulo.Enabled = False
-        Me.cbbmodulo.Location = New System.Drawing.Point(151, 260)
+        Me.cbbmodulo.Location = New System.Drawing.Point(150, 260)
         Me.cbbmodulo.Name = "cbbmodulo"
         Me.cbbmodulo.Size = New System.Drawing.Size(72, 13)
         Me.cbbmodulo.TabIndex = 30
@@ -185,7 +185,7 @@ Partial Class frmeditarproducto
         Me.txtmedida.Enabled = False
         Me.txtmedida.FormattingEnabled = True
         Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
-        Me.txtmedida.Location = New System.Drawing.Point(154, 284)
+        Me.txtmedida.Location = New System.Drawing.Point(153, 284)
         Me.txtmedida.Name = "txtmedida"
         Me.txtmedida.Size = New System.Drawing.Size(107, 21)
         Me.txtmedida.TabIndex = 29
@@ -194,7 +194,7 @@ Partial Class frmeditarproducto
         'l7
         '
         Me.l7.AutoSize = True
-        Me.l7.Location = New System.Drawing.Point(95, 287)
+        Me.l7.Location = New System.Drawing.Point(94, 287)
         Me.l7.Name = "l7"
         Me.l7.Size = New System.Drawing.Size(42, 13)
         Me.l7.TabIndex = 28
@@ -203,7 +203,7 @@ Partial Class frmeditarproducto
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(95, 260)
+        Me.Label10.Location = New System.Drawing.Point(94, 260)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(42, 13)
         Me.Label10.TabIndex = 27
@@ -214,7 +214,7 @@ Partial Class frmeditarproducto
         Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
         Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(154, 312)
+        Me.imagen.Location = New System.Drawing.Point(153, 312)
         Me.imagen.Name = "imagen"
         Me.imagen.Size = New System.Drawing.Size(171, 133)
         Me.imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -224,7 +224,7 @@ Partial Class frmeditarproducto
         'l8
         '
         Me.l8.AutoSize = True
-        Me.l8.Location = New System.Drawing.Point(95, 312)
+        Me.l8.Location = New System.Drawing.Point(94, 312)
         Me.l8.Name = "l8"
         Me.l8.Size = New System.Drawing.Size(42, 13)
         Me.l8.TabIndex = 22
@@ -234,7 +234,7 @@ Partial Class frmeditarproducto
         '
         Me.txtfecha_vencimiento.Enabled = False
         Me.txtfecha_vencimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.txtfecha_vencimiento.Location = New System.Drawing.Point(154, 231)
+        Me.txtfecha_vencimiento.Location = New System.Drawing.Point(153, 231)
         Me.txtfecha_vencimiento.Name = "txtfecha_vencimiento"
         Me.txtfecha_vencimiento.Size = New System.Drawing.Size(171, 20)
         Me.txtfecha_vencimiento.TabIndex = 21
@@ -242,7 +242,7 @@ Partial Class frmeditarproducto
         'l6
         '
         Me.l6.AutoSize = True
-        Me.l6.Location = New System.Drawing.Point(25, 237)
+        Me.l6.Location = New System.Drawing.Point(24, 237)
         Me.l6.Name = "l6"
         Me.l6.Size = New System.Drawing.Size(112, 13)
         Me.l6.TabIndex = 20
@@ -278,7 +278,7 @@ Partial Class frmeditarproducto
         'l5
         '
         Me.l5.AutoSize = True
-        Me.l5.Location = New System.Drawing.Point(54, 208)
+        Me.l5.Location = New System.Drawing.Point(53, 208)
         Me.l5.Name = "l5"
         Me.l5.Size = New System.Drawing.Size(83, 13)
         Me.l5.TabIndex = 11
@@ -288,7 +288,7 @@ Partial Class frmeditarproducto
         '
         Me.txtprecio_venta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtprecio_venta.Enabled = False
-        Me.txtprecio_venta.Location = New System.Drawing.Point(154, 205)
+        Me.txtprecio_venta.Location = New System.Drawing.Point(153, 205)
         Me.txtprecio_venta.Name = "txtprecio_venta"
         Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
         Me.txtprecio_venta.TabIndex = 10
@@ -400,6 +400,14 @@ Partial Class frmeditarproducto
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents btnEditarDescripcion As System.Windows.Forms.Button
+    Friend WithEvents btnEditarStock As System.Windows.Forms.Button
+    Friend WithEvents btnEditarPresioCompra As System.Windows.Forms.Button
+    Friend WithEvents btnEditarFechaVenc As System.Windows.Forms.Button
+    Friend WithEvents btnEditarMedida As System.Windows.Forms.Button
+    Friend WithEvents btnEditarImagen As System.Windows.Forms.Button
+    Friend WithEvents btnEditarPresioVenta As System.Windows.Forms.Button
+    Friend WithEvents btnEditarNombreProd As System.Windows.Forms.Button
     Friend WithEvents cbbmodulo As System.Windows.Forms.Label
     Friend WithEvents txtmedida As System.Windows.Forms.ComboBox
     Friend WithEvents l7 As System.Windows.Forms.Label
@@ -423,12 +431,4 @@ Partial Class frmeditarproducto
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdproducto As System.Windows.Forms.TextBox
-    Friend WithEvents btnEditarDescripcion As System.Windows.Forms.Button
-    Friend WithEvents btnEditarStock As System.Windows.Forms.Button
-    Friend WithEvents btnEditarPresioCompra As System.Windows.Forms.Button
-    Friend WithEvents btnEditarFechaVenc As System.Windows.Forms.Button
-    Friend WithEvents btnEditarMedida As System.Windows.Forms.Button
-    Friend WithEvents btnEditarImagen As System.Windows.Forms.Button
-    Friend WithEvents btnEditarPresioVenta As System.Windows.Forms.Button
-    Friend WithEvents btnEditarNombreProd As System.Windows.Forms.Button
 End Class

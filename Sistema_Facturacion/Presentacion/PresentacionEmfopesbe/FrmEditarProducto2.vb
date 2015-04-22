@@ -131,11 +131,9 @@
 
                 Else
                     MessageBox.Show("Producto no fue modificado", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
-
-
                 End If
-               
+                frmeditarproducto.Close()
+                frmProducto.frmProducto_Load()
                 Me.Close()
 
             Catch ex As Exception
@@ -143,13 +141,8 @@
             End Try
         Else
             MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
         End If
-
     End Sub
-
-   
-
     Private Sub Label9_Click(sender As Object, e As EventArgs)
 
     End Sub

@@ -23,7 +23,10 @@ Partial Class frmEditarProducto2CAMPOFERIAL
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gbimagen = New System.Windows.Forms.GroupBox()
+        Me.imagen = New System.Windows.Forms.PictureBox()
+        Me.btnlimpiar = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.btncargar = New System.Windows.Forms.PictureBox()
         Me.gbFechaVencimiento = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -43,15 +46,12 @@ Partial Class frmEditarProducto2CAMPOFERIAL
         Me.Button1 = New System.Windows.Forms.Button()
         Me.dtpfechaModificacion = New System.Windows.Forms.DateTimePicker()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.imagen = New System.Windows.Forms.PictureBox()
-        Me.btnlimpiar = New System.Windows.Forms.PictureBox()
-        Me.btncargar = New System.Windows.Forms.PictureBox()
         Me.gbimagen.SuspendLayout()
-        Me.gbFechaVencimiento.SuspendLayout()
-        Me.gbdetalle.SuspendLayout()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btncargar, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbFechaVencimiento.SuspendLayout()
+        Me.gbdetalle.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbimagen
@@ -67,6 +67,28 @@ Partial Class frmEditarProducto2CAMPOFERIAL
         Me.gbimagen.TabStop = False
         Me.gbimagen.Text = "imagen"
         '
+        'imagen
+        '
+        Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
+        Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
+        Me.imagen.Location = New System.Drawing.Point(69, 33)
+        Me.imagen.Name = "imagen"
+        Me.imagen.Size = New System.Drawing.Size(171, 133)
+        Me.imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.imagen.TabIndex = 31
+        Me.imagen.TabStop = False
+        '
+        'btnlimpiar
+        '
+        Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
+        Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnlimpiar.Location = New System.Drawing.Point(246, 108)
+        Me.btnlimpiar.Name = "btnlimpiar"
+        Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
+        Me.btnlimpiar.TabIndex = 33
+        Me.btnlimpiar.TabStop = False
+        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -75,6 +97,16 @@ Partial Class frmEditarProducto2CAMPOFERIAL
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 30
         Me.Label9.Text = "Imagen"
+        '
+        'btncargar
+        '
+        Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
+        Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btncargar.Location = New System.Drawing.Point(246, 54)
+        Me.btncargar.Name = "btncargar"
+        Me.btncargar.Size = New System.Drawing.Size(45, 48)
+        Me.btncargar.TabIndex = 32
+        Me.btncargar.TabStop = False
         '
         'gbFechaVencimiento
         '
@@ -260,38 +292,6 @@ Partial Class frmEditarProducto2CAMPOFERIAL
         Me.Label8.TabIndex = 34
         Me.Label8.Text = "Fecha de Modificacion"
         '
-        'imagen
-        '
-        Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(69, 33)
-        Me.imagen.Name = "imagen"
-        Me.imagen.Size = New System.Drawing.Size(171, 133)
-        Me.imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.imagen.TabIndex = 31
-        Me.imagen.TabStop = False
-        '
-        'btnlimpiar
-        '
-        Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
-        Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(246, 108)
-        Me.btnlimpiar.Name = "btnlimpiar"
-        Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
-        Me.btnlimpiar.TabIndex = 33
-        Me.btnlimpiar.TabStop = False
-        '
-        'btncargar
-        '
-        Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
-        Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(246, 54)
-        Me.btncargar.Name = "btncargar"
-        Me.btncargar.Size = New System.Drawing.Size(45, 48)
-        Me.btncargar.TabIndex = 32
-        Me.btncargar.TabStop = False
-        '
         'frmEditarProducto2CAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -311,13 +311,13 @@ Partial Class frmEditarProducto2CAMPOFERIAL
         Me.Text = "frmEditarProducto2CAMPOFERIAL"
         Me.gbimagen.ResumeLayout(False)
         Me.gbimagen.PerformLayout()
+        CType(Me.imagen, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btncargar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbFechaVencimiento.ResumeLayout(False)
         Me.gbFechaVencimiento.PerformLayout()
         Me.gbdetalle.ResumeLayout(False)
         Me.gbdetalle.PerformLayout()
-        CType(Me.imagen, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btncargar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
