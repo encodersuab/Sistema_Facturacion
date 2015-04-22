@@ -86,6 +86,7 @@ Partial Class frmDetalleVentaREDRUBI
         Me.txtDD.Size = New System.Drawing.Size(100, 20)
         Me.txtDD.TabIndex = 10
         Me.txtDD.Text = "0"
+        Me.txtDD.Visible = False
         '
         'erroricono
         '

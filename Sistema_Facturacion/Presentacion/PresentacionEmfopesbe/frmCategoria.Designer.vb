@@ -250,6 +250,7 @@ Partial Class frmCategoria
         Me.txtflag.Size = New System.Drawing.Size(36, 20)
         Me.txtflag.TabIndex = 4
         Me.txtflag.Text = "0"
+        Me.txtflag.Visible = False
         '
         'frmCategoria
         '

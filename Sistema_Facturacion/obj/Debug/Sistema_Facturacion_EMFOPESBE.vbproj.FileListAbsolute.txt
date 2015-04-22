@@ -237,3 +237,5 @@ D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\De
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmeditarproductoCAMPOFERIAL.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmUsuarios.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmUsuarios.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmEditarProducto2PostGrado.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmEditarProductoPostGrado.resources

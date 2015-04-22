@@ -83,6 +83,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtTag.Size = New System.Drawing.Size(140, 20)
         Me.txtTag.TabIndex = 29
         Me.txtTag.Text = "0"
+        Me.txtTag.Visible = False
         '
         'GroupBox1
         '

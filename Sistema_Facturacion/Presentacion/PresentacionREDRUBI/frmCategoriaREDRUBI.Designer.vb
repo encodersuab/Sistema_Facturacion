@@ -57,6 +57,7 @@ Partial Class frmCategoriaREDRUBI
         Me.txtflag.Size = New System.Drawing.Size(36, 20)
         Me.txtflag.TabIndex = 7
         Me.txtflag.Text = "0"
+        Me.txtflag.Visible = False
         '
         'GroupBox2
         '

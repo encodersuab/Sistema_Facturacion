@@ -36,6 +36,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.txtncuota = New System.Windows.Forms.NumericUpDown()
         Me.txtPrecioUnitario = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -57,9 +58,9 @@ Partial Class frmDetalleVentaPostGrado
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.btnConsultarCuotas = New System.Windows.Forms.Button()
         Me.lbdetalle = New System.Windows.Forms.Label()
         Me.btnFinalizarVenta = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
         Me.lbllave = New System.Windows.Forms.Label()
         Me.lbCC = New System.Windows.Forms.Label()
@@ -70,7 +71,6 @@ Partial Class frmDetalleVentaPostGrado
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.btnConsultarCuotas = New System.Windows.Forms.Button()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -104,6 +104,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.txtDD.Size = New System.Drawing.Size(100, 20)
         Me.txtDD.TabIndex = 10
         Me.txtDD.Text = "0"
+        Me.txtDD.Visible = False
         '
         'lbmedida
         '
@@ -213,6 +214,15 @@ Partial Class frmDetalleVentaPostGrado
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(34, 331)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(96, 35)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "Cancelar Venta"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Label9
         '
@@ -417,6 +427,15 @@ Partial Class frmDetalleVentaPostGrado
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
+        'btnConsultarCuotas
+        '
+        Me.btnConsultarCuotas.Location = New System.Drawing.Point(407, 19)
+        Me.btnConsultarCuotas.Name = "btnConsultarCuotas"
+        Me.btnConsultarCuotas.Size = New System.Drawing.Size(135, 44)
+        Me.btnConsultarCuotas.TabIndex = 44
+        Me.btnConsultarCuotas.Text = "Consultar Cuotas"
+        Me.btnConsultarCuotas.UseVisualStyleBackColor = True
+        '
         'lbdetalle
         '
         Me.lbdetalle.AutoSize = True
@@ -434,15 +453,6 @@ Partial Class frmDetalleVentaPostGrado
         Me.btnFinalizarVenta.TabIndex = 40
         Me.btnFinalizarVenta.Text = "Finalizar Venta"
         Me.btnFinalizarVenta.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(34, 331)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(96, 35)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Cancelar Venta"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'lbnumAutor
         '
@@ -539,15 +549,6 @@ Partial Class frmDetalleVentaPostGrado
         Me.eliminar.HeaderText = "Eliminar"
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
-        '
-        'btnConsultarCuotas
-        '
-        Me.btnConsultarCuotas.Location = New System.Drawing.Point(407, 19)
-        Me.btnConsultarCuotas.Name = "btnConsultarCuotas"
-        Me.btnConsultarCuotas.Size = New System.Drawing.Size(135, 44)
-        Me.btnConsultarCuotas.TabIndex = 44
-        Me.btnConsultarCuotas.Text = "Consultar Cuotas"
-        Me.btnConsultarCuotas.UseVisualStyleBackColor = True
         '
         'frmDetalleVentaPostGrado
         '

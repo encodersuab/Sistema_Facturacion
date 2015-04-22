@@ -119,6 +119,7 @@ Partial Class FrmEditarProducto2
         Me.txtflag.Name = "txtflag"
         Me.txtflag.Size = New System.Drawing.Size(45, 20)
         Me.txtflag.TabIndex = 29
+        Me.txtflag.Visible = False
         '
         'erroricono
         '
