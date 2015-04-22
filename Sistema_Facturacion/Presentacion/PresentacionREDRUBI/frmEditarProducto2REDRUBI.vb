@@ -17,16 +17,16 @@
                 Dim dts1 As New vHistorialProducto
                 Dim func1 As New fHistorialProducto
 
-                dts.gidproducto = frmProducto.txtIdproducto.Text
-                dts.gnombre = frmProducto.txtNombre.Text
-                dts.gidcategoria = frmProducto.txtidcategoria.Text
-                dts.gdescripcion = frmProducto.txtdescripcion.Text
-                dts.gstock = frmProducto.txtstock.Text
-                dts.gprecio_compra = frmProducto.txtprecio_compra.Text
-                dts.gprecio_venta = frmProducto.txtprecio_venta.Text
-                dts.gfecha_vencimiento = frmProducto.txtfecha_vencimiento.Text
-                dts.gmodulo = frmProducto.cbbmodulo.Text
-                dts.gmedida = frmProducto.txtmedida.Text
+                dts.gidproducto = frmProductoREDRUBI.txtIdproducto.Text
+                dts.gnombre = frmProductoREDRUBI.txtNombre.Text
+                dts.gidcategoria = frmProductoREDRUBI.txtidcategoria.Text
+                dts.gdescripcion = frmProductoREDRUBI.txtdescripcion.Text
+                dts.gstock = frmProductoREDRUBI.txtstock.Text
+                dts.gprecio_compra = frmProductoREDRUBI.txtprecio_compra.Text
+                dts.gprecio_venta = frmProductoREDRUBI.txtprecio_venta.Text
+                dts.gfecha_vencimiento = frmProductoREDRUBI.txtfecha_vencimiento.Text
+                dts.gmodulo = frmProductoREDRUBI.cbbmodulo.Text
+                dts.gmedida = frmProductoREDRUBI.txtmedida.Text
                 Dim ms As New IO.MemoryStream()
 
 

@@ -88,7 +88,7 @@
 
                 End If
 
-                dts1.gidproducto = frmeditarproducto.txtIdproducto.Text
+                dts1.gidproducto = frmEditarProductoPostGrado.txtIdproducto.Text
                 dts1.gidusuario = frmInicioF.lbidusuario.Text
                 dts1.gfechaModificacion = dtpfechaModificacion.Text
                 dts1.gdescripcionAct = txtdescripcion.Text
