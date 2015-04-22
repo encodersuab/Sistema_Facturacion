@@ -49,9 +49,6 @@ Partial Class frmProducto
         Me.txtmedida = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.btnlimpiar = New System.Windows.Forms.PictureBox()
-        Me.btncargar = New System.Windows.Forms.PictureBox()
-        Me.imagen = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtfecha_vencimiento = New System.Windows.Forms.DateTimePicker()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -63,13 +60,16 @@ Partial Class frmProducto
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dlg = New System.Windows.Forms.OpenFileDialog()
         Me.txtTag = New System.Windows.Forms.TextBox()
+        Me.btnlimpiar = New System.Windows.Forms.PictureBox()
+        Me.btncargar = New System.Windows.Forms.PictureBox()
+        Me.imagen = New System.Windows.Forms.PictureBox()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btncargar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Inexistente
@@ -84,7 +84,7 @@ Partial Class frmProducto
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(167, 440)
+        Me.btnGuardar.Location = New System.Drawing.Point(167, 439)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15
@@ -330,37 +330,6 @@ Partial Class frmProducto
         Me.Label10.TabIndex = 27
         Me.Label10.Text = "Modulo"
         '
-        'btnlimpiar
-        '
-        Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
-        Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(331, 387)
-        Me.btnlimpiar.Name = "btnlimpiar"
-        Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
-        Me.btnlimpiar.TabIndex = 25
-        Me.btnlimpiar.TabStop = False
-        '
-        'btncargar
-        '
-        Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
-        Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(331, 333)
-        Me.btncargar.Name = "btncargar"
-        Me.btncargar.Size = New System.Drawing.Size(45, 48)
-        Me.btncargar.TabIndex = 24
-        Me.btncargar.TabStop = False
-        '
-        'imagen
-        '
-        Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(154, 312)
-        Me.imagen.Name = "imagen"
-        Me.imagen.Size = New System.Drawing.Size(171, 133)
-        Me.imagen.TabIndex = 23
-        Me.imagen.TabStop = False
-        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -456,6 +425,37 @@ Partial Class frmProducto
         Me.txtTag.Text = "0"
         Me.txtTag.Visible = False
         '
+        'btnlimpiar
+        '
+        Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
+        Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnlimpiar.Location = New System.Drawing.Point(331, 387)
+        Me.btnlimpiar.Name = "btnlimpiar"
+        Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
+        Me.btnlimpiar.TabIndex = 25
+        Me.btnlimpiar.TabStop = False
+        '
+        'btncargar
+        '
+        Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
+        Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btncargar.Location = New System.Drawing.Point(331, 333)
+        Me.btncargar.Name = "btncargar"
+        Me.btncargar.Size = New System.Drawing.Size(45, 48)
+        Me.btncargar.TabIndex = 24
+        Me.btncargar.TabStop = False
+        '
+        'imagen
+        '
+        Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
+        Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
+        Me.imagen.Location = New System.Drawing.Point(154, 312)
+        Me.imagen.Name = "imagen"
+        Me.imagen.Size = New System.Drawing.Size(171, 133)
+        Me.imagen.TabIndex = 23
+        Me.imagen.TabStop = False
+        '
         'frmProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -472,11 +472,11 @@ Partial Class frmProducto
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncargar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

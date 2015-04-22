@@ -33,24 +33,24 @@ Partial Class frmeditarproducto
         Me.btnEditarNombreProd = New System.Windows.Forms.Button()
         Me.cbbmodulo = New System.Windows.Forms.Label()
         Me.txtmedida = New System.Windows.Forms.ComboBox()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.l7 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.imagen = New System.Windows.Forms.PictureBox()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.l8 = New System.Windows.Forms.Label()
         Me.txtfecha_vencimiento = New System.Windows.Forms.DateTimePicker()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.l6 = New System.Windows.Forms.Label()
         Me.txtnom_categoria = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtidcategoria = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.l5 = New System.Windows.Forms.Label()
         Me.txtprecio_venta = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.l4 = New System.Windows.Forms.Label()
         Me.txtprecio_compra = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.l3 = New System.Windows.Forms.Label()
         Me.txtstock = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.l2 = New System.Windows.Forms.Label()
         Me.txtdescripcion = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.l1 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdproducto = New System.Windows.Forms.TextBox()
@@ -70,24 +70,24 @@ Partial Class frmeditarproducto
         Me.GroupBox1.Controls.Add(Me.btnEditarNombreProd)
         Me.GroupBox1.Controls.Add(Me.cbbmodulo)
         Me.GroupBox1.Controls.Add(Me.txtmedida)
-        Me.GroupBox1.Controls.Add(Me.Label11)
+        Me.GroupBox1.Controls.Add(Me.l7)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.imagen)
-        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.l8)
         Me.GroupBox1.Controls.Add(Me.txtfecha_vencimiento)
-        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.l6)
         Me.GroupBox1.Controls.Add(Me.txtnom_categoria)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.txtidcategoria)
-        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.l5)
         Me.GroupBox1.Controls.Add(Me.txtprecio_venta)
-        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.l4)
         Me.GroupBox1.Controls.Add(Me.txtprecio_compra)
-        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.l3)
         Me.GroupBox1.Controls.Add(Me.txtstock)
-        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.l2)
         Me.GroupBox1.Controls.Add(Me.txtdescripcion)
-        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.l1)
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtIdproducto)
@@ -191,14 +191,14 @@ Partial Class frmeditarproducto
         Me.txtmedida.TabIndex = 29
         Me.txtmedida.Text = "UNIDAD"
         '
-        'Label11
+        'l7
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(95, 287)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(42, 13)
-        Me.Label11.TabIndex = 28
-        Me.Label11.Text = "Medida"
+        Me.l7.AutoSize = True
+        Me.l7.Location = New System.Drawing.Point(95, 287)
+        Me.l7.Name = "l7"
+        Me.l7.Size = New System.Drawing.Size(42, 13)
+        Me.l7.TabIndex = 28
+        Me.l7.Text = "Medida"
         '
         'Label10
         '
@@ -221,14 +221,14 @@ Partial Class frmeditarproducto
         Me.imagen.TabIndex = 23
         Me.imagen.TabStop = False
         '
-        'Label9
+        'l8
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(95, 312)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(42, 13)
-        Me.Label9.TabIndex = 22
-        Me.Label9.Text = "Imagen"
+        Me.l8.AutoSize = True
+        Me.l8.Location = New System.Drawing.Point(95, 312)
+        Me.l8.Name = "l8"
+        Me.l8.Size = New System.Drawing.Size(42, 13)
+        Me.l8.TabIndex = 22
+        Me.l8.Text = "Imagen"
         '
         'txtfecha_vencimiento
         '
@@ -239,14 +239,14 @@ Partial Class frmeditarproducto
         Me.txtfecha_vencimiento.Size = New System.Drawing.Size(171, 20)
         Me.txtfecha_vencimiento.TabIndex = 21
         '
-        'Label8
+        'l6
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(25, 237)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(112, 13)
-        Me.Label8.TabIndex = 20
-        Me.Label8.Text = "Fecha de vencimiento"
+        Me.l6.AutoSize = True
+        Me.l6.Location = New System.Drawing.Point(25, 237)
+        Me.l6.Name = "l6"
+        Me.l6.Size = New System.Drawing.Size(112, 13)
+        Me.l6.TabIndex = 20
+        Me.l6.Text = "Fecha de vencimiento"
         '
         'txtnom_categoria
         '
@@ -275,14 +275,14 @@ Partial Class frmeditarproducto
         Me.txtidcategoria.Size = New System.Drawing.Size(29, 20)
         Me.txtidcategoria.TabIndex = 16
         '
-        'Label6
+        'l5
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(54, 208)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(83, 13)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Precio de Venta"
+        Me.l5.AutoSize = True
+        Me.l5.Location = New System.Drawing.Point(54, 208)
+        Me.l5.Name = "l5"
+        Me.l5.Size = New System.Drawing.Size(83, 13)
+        Me.l5.TabIndex = 11
+        Me.l5.Text = "Precio de Venta"
         '
         'txtprecio_venta
         '
@@ -293,14 +293,14 @@ Partial Class frmeditarproducto
         Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
         Me.txtprecio_venta.TabIndex = 10
         '
-        'Label5
+        'l4
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(46, 182)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(91, 13)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Precio de Compra"
+        Me.l4.AutoSize = True
+        Me.l4.Location = New System.Drawing.Point(46, 182)
+        Me.l4.Name = "l4"
+        Me.l4.Size = New System.Drawing.Size(91, 13)
+        Me.l4.TabIndex = 9
+        Me.l4.Text = "Precio de Compra"
         '
         'txtprecio_compra
         '
@@ -311,14 +311,14 @@ Partial Class frmeditarproducto
         Me.txtprecio_compra.Size = New System.Drawing.Size(172, 20)
         Me.txtprecio_compra.TabIndex = 8
         '
-        'Label4
+        'l3
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(102, 156)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 13)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Stock"
+        Me.l3.AutoSize = True
+        Me.l3.Location = New System.Drawing.Point(102, 156)
+        Me.l3.Name = "l3"
+        Me.l3.Size = New System.Drawing.Size(35, 13)
+        Me.l3.TabIndex = 7
+        Me.l3.Text = "Stock"
         '
         'txtstock
         '
@@ -329,14 +329,14 @@ Partial Class frmeditarproducto
         Me.txtstock.Size = New System.Drawing.Size(172, 20)
         Me.txtstock.TabIndex = 6
         '
-        'Label3
+        'l2
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(74, 111)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(63, 13)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Descripcion"
+        Me.l2.AutoSize = True
+        Me.l2.Location = New System.Drawing.Point(74, 111)
+        Me.l2.Name = "l2"
+        Me.l2.Size = New System.Drawing.Size(63, 13)
+        Me.l2.TabIndex = 5
+        Me.l2.Text = "Descripcion"
         '
         'txtdescripcion
         '
@@ -349,14 +349,14 @@ Partial Class frmeditarproducto
         Me.txtdescripcion.Size = New System.Drawing.Size(172, 39)
         Me.txtdescripcion.TabIndex = 4
         '
-        'Label2
+        'l1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(30, 59)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(107, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Nombre del Producto"
+        Me.l1.AutoSize = True
+        Me.l1.Location = New System.Drawing.Point(30, 59)
+        Me.l1.Name = "l1"
+        Me.l1.Size = New System.Drawing.Size(107, 13)
+        Me.l1.TabIndex = 3
+        Me.l1.Text = "Nombre del Producto"
         '
         'txtNombre
         '
@@ -402,24 +402,24 @@ Partial Class frmeditarproducto
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents cbbmodulo As System.Windows.Forms.Label
     Friend WithEvents txtmedida As System.Windows.Forms.ComboBox
-    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents l7 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents imagen As System.Windows.Forms.PictureBox
-    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents l8 As System.Windows.Forms.Label
     Friend WithEvents txtfecha_vencimiento As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents l6 As System.Windows.Forms.Label
     Friend WithEvents txtnom_categoria As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txtidcategoria As System.Windows.Forms.TextBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents l5 As System.Windows.Forms.Label
     Friend WithEvents txtprecio_venta As System.Windows.Forms.TextBox
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents l4 As System.Windows.Forms.Label
     Friend WithEvents txtprecio_compra As System.Windows.Forms.TextBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents l3 As System.Windows.Forms.Label
     Friend WithEvents txtstock As System.Windows.Forms.TextBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents l2 As System.Windows.Forms.Label
     Friend WithEvents txtdescripcion As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents l1 As System.Windows.Forms.Label
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdproducto As System.Windows.Forms.TextBox

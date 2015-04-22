@@ -171,7 +171,7 @@ Partial Class frmProductoCAMPOFERIAL
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(32, 184)
+        Me.Label4.Location = New System.Drawing.Point(37, 184)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(100, 13)
         Me.Label4.TabIndex = 7

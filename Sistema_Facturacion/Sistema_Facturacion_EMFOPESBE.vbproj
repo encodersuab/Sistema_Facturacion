@@ -547,6 +547,12 @@
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmDetalleVentaPostGrado.resx">
       <DependentUpon>frmDetalleVentaPostGrado.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmEditarProducto2PostGrado.resx">
+      <DependentUpon>frmEditarProducto2PostGrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmEditarProductoPostGrado.resx">
+      <DependentUpon>frmEditarProductoPostGrado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmProductoPostGrado.resx">
       <DependentUpon>frmProductoPostGrado.vb</DependentUpon>
     </EmbeddedResource>
