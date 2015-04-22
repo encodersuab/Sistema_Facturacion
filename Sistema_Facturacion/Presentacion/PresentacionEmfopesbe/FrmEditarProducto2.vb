@@ -4,14 +4,14 @@
 
 
     End Sub
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtdescripcionEditada.TextChanged
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -150,21 +150,21 @@
 
    
 
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+    Private Sub Label9_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub btnlimpiar_Click(sender As Object, e As EventArgs) Handles btnlimpiar.Click
+    Private Sub btnlimpiar_Click(sender As Object, e As EventArgs)
         imagen.Image = Nothing
         imagen.BackgroundImage = My.Resources.fondo_transparente_fotos
         imagen.SizeMode = PictureBoxSizeMode.StretchImage
     End Sub
 
-    Private Sub imagen_Click(sender As Object, e As EventArgs) Handles imagen.Click
+    Private Sub imagen_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub btncargar_Click(sender As Object, e As EventArgs) Handles btncargar.Click
+    Private Sub btncargar_Click(sender As Object, e As EventArgs)
 
         If dlg.ShowDialog() = DialogResult.OK Then
             imagen.BackgroundImage = Nothing

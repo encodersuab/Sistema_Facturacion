@@ -77,22 +77,19 @@
     Private Sub btnEditarImagen_Click(sender As Object, e As EventArgs) Handles btnEditarImagen.Click
         FrmEditarProducto2.txtflag.Text = 7
         FrmEditarProducto2.gbdetalle.Visible = False
-        FrmEditarProducto2.gbimagen.Visible = True
         FrmEditarProducto2.gbFechaVencimiento.Visible = False
+        FrmEditarProducto2.gbimagen.Visible = True
+
         FrmEditarProducto2.imagen.Image = Me.imagen.Image
         FrmEditarProducto2.lbnombreproducto.Text = txtNombre.Text
         FrmEditarProducto2.ShowDialog()
-
-
-      
-
     End Sub
 
     Private Sub btnEditarFechaVenc_Click(sender As Object, e As EventArgs) Handles btnEditarFechaVenc.Click
+
+        FrmEditarProducto2.gbFechaVencimiento.Visible = True
         FrmEditarProducto2.gbdetalle.Visible = False
         FrmEditarProducto2.gbimagen.Visible = False
-        FrmEditarProducto2.gbFechaVencimiento.Visible = True
-
         FrmEditarProducto2.txtflag.Text = 8
         FrmEditarProducto2.dtpfecha_vencimientoActual.Text = Me.txtfecha_vencimiento.Text
         FrmEditarProducto2.lbnombreproducto.Text = txtNombre.Text
