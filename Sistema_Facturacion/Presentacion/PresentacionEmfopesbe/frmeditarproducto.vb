@@ -47,7 +47,7 @@
         FrmEditarProducto2.gbdetalle.Visible = True
         FrmEditarProducto2.gbimagen.Visible = False
         FrmEditarProducto2.gbFechaVencimiento.Visible = False
-        FrmEditarProducto2.txtflag.Text = 3
+        FrmEditarProducto2.txtflag.Text = 4
         FrmEditarProducto2.txtdescripcion.Text = Me.txtprecio_compra.Text
         FrmEditarProducto2.lbnombreproducto.Text = txtNombre.Text
         FrmEditarProducto2.ShowDialog()
@@ -57,7 +57,7 @@
         FrmEditarProducto2.gbdetalle.Visible = True
         FrmEditarProducto2.gbimagen.Visible = False
         FrmEditarProducto2.gbFechaVencimiento.Visible = False
-        FrmEditarProducto2.txtflag.Text = 3
+        FrmEditarProducto2.txtflag.Text = 5
         FrmEditarProducto2.txtdescripcion.Text = Me.txtprecio_venta.Text
         FrmEditarProducto2.lbnombreproducto.Text = txtNombre.Text
         FrmEditarProducto2.ShowDialog()

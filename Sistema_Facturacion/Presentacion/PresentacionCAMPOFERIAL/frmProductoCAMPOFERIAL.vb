@@ -169,55 +169,71 @@
     End Sub
 
     Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
-        Dim result As DialogResult
-        result = MessageBox.Show("Realmente desea realizar los cambios en el Producto?", "Modificando registro", MessageBoxButtons.OKCancel)
 
-        If result = DialogResult.OK Then
+        frmeditarproductoCAMPOFERIAL.txtIdproducto.Text = Me.txtIdproducto.Text
+        frmeditarproductoCAMPOFERIAL.txtNombre.Text = Me.txtNombre.Text
+        frmeditarproductoCAMPOFERIAL.txtidcategoria.Text = Me.txtidcategoria.Text
+        frmeditarproductoCAMPOFERIAL.txtnom_categoria.Text = Me.txtnom_categoria.Text
+        frmeditarproductoCAMPOFERIAL.txtdescripcion.Text = Me.txtdescripcion.Text
+        frmeditarproductoCAMPOFERIAL.txtstock.Text = Me.txtstock.Text
+        frmeditarproductoCAMPOFERIAL.txtprecio_compra.Text = Me.txtprecio_compra.Text
+        frmeditarproductoCAMPOFERIAL.txtprecio_venta.Text = Me.txtprecio_venta.Text
+        frmeditarproductoCAMPOFERIAL.txtfecha_vencimiento.Text = Me.txtfecha_vencimiento.Text
+        frmeditarproductoCAMPOFERIAL.txtmedida.Text = Me.txtmedida.Text
+        frmeditarproductoCAMPOFERIAL.imagen.Image = Me.imagen.Image
 
-            If Me.ValidateChildren = True And txtNombre.Text <> "" And txtdescripcion.Text <> "" And txtstock.Text <> "" And txtprecio_compra.Text <> "" And txtprecio_venta.Text <> "" And txtIdproducto.Text <> "" Then
-                Try
-                    Dim dts As New vProductoCAMPOFERIAL
-                    Dim func As New fProductoCAMPOFERIAL
 
-                    dts.gidproducto = txtIdproducto.Text
-                    dts.gnombre = txtNombre.Text
-                    dts.gidcategoria = txtidcategoria.Text
-                    dts.gdescripcion = txtdescripcion.Text
-                    dts.gstock = txtstock.Text
-                    dts.gprecio_compra = txtprecio_compra.Text
-                    dts.gprecio_venta = txtprecio_venta.Text
-                    dts.gfecha_vencimiento = txtfecha_vencimiento.Text
-                    dts.gmodulo = cbbModulo.Text
-                    dts.gmedida = txtmedida.Text
-                    Dim ms As New IO.MemoryStream()
-                    If Not imagen.Image Is Nothing Then
-                        imagen.Image.Save(ms, imagen.Image.RawFormat)
-                    Else
-                        imagen.Image = My.Resources.fondo_transparente_fotos
-                        imagen.Image.Save(ms, imagen.Image.RawFormat)
-                    End If
 
-                    dts.gimagen = ms.GetBuffer
+        frmeditarproductoCAMPOFERIAL.Show()
+        'Dim result As DialogResult
+        'result = MessageBox.Show("Realmente desea realizar los cambios en el Producto?", "Modificando registro", MessageBoxButtons.OKCancel)
 
-                    If func.editar(dts) Then
-                        MessageBox.Show("Producto modificado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        mostrar()
-                        limpiar()
-                    Else
-                        MessageBox.Show("Producto no fue modificado", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                        mostrar()
-                        limpiar()
+        'If result = DialogResult.OK Then
 
-                    End If
+        '    If Me.ValidateChildren = True And txtNombre.Text <> "" And txtdescripcion.Text <> "" And txtstock.Text <> "" And txtprecio_compra.Text <> "" And txtprecio_venta.Text <> "" And txtIdproducto.Text <> "" Then
+        '        Try
+        '            Dim dts As New vProductoCAMPOFERIAL
+        '            Dim func As New fProductoCAMPOFERIAL
 
-                Catch ex As Exception
-                    MsgBox(ex.Message)
-                End Try
-            Else
-                MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        '            dts.gidproducto = txtIdproducto.Text
+        '            dts.gnombre = txtNombre.Text
+        '            dts.gidcategoria = txtidcategoria.Text
+        '            dts.gdescripcion = txtdescripcion.Text
+        '            dts.gstock = txtstock.Text
+        '            dts.gprecio_compra = txtprecio_compra.Text
+        '            dts.gprecio_venta = txtprecio_venta.Text
+        '            dts.gfecha_vencimiento = txtfecha_vencimiento.Text
+        '            dts.gmodulo = cbbModulo.Text
+        '            dts.gmedida = txtmedida.Text
+        '            Dim ms As New IO.MemoryStream()
+        '            If Not imagen.Image Is Nothing Then
+        '                imagen.Image.Save(ms, imagen.Image.RawFormat)
+        '            Else
+        '                imagen.Image = My.Resources.fondo_transparente_fotos
+        '                imagen.Image.Save(ms, imagen.Image.RawFormat)
+        '            End If
 
-            End If
-        End If
+        '            dts.gimagen = ms.GetBuffer
+
+        '            If func.editar(dts) Then
+        '                MessageBox.Show("Producto modificado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        '                mostrar()
+        '                limpiar()
+        '            Else
+        '                MessageBox.Show("Producto no fue modificado", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        '                mostrar()
+        '                limpiar()
+
+        '            End If
+
+        '        Catch ex As Exception
+        '            MsgBox(ex.Message)
+        '        End Try
+        '    Else
+        '        MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        '    End If
+        'End If
     End Sub
 
     Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick

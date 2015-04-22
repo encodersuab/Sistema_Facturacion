@@ -84,7 +84,7 @@ Partial Class frmProducto
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(167, 454)
+        Me.btnGuardar.Location = New System.Drawing.Point(167, 440)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15

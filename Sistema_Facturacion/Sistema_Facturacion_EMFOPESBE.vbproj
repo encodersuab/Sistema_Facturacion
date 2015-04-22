@@ -179,6 +179,18 @@
     <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmClienteCAMPOFERIAL.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmEditarProducto2CAMPOFERIAL.Designer.vb">
+      <DependentUpon>frmEditarProducto2CAMPOFERIAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmEditarProducto2CAMPOFERIAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmEditarProductoCAMPOFERIAL.Designer.vb">
+      <DependentUpon>frmEditarProductoCAMPOFERIAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmEditarProductoCAMPOFERIAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\PresentacionEmfopesbe\frmDetalleVentaplanilla.Designer.vb">
       <DependentUpon>frmDetalleVentaplanilla.vb</DependentUpon>
     </Compile>
@@ -255,6 +267,18 @@
       <DependentUpon>frmDetalleVentaPostGrado.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\PresentacionPostGrado\frmDetalleVentaPostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmEditarProducto2PostGrado.Designer.vb">
+      <DependentUpon>frmEditarProducto2PostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmEditarProducto2PostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmEditarProductoPostGrado.Designer.vb">
+      <DependentUpon>frmEditarProductoPostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmEditarProductoPostGrado.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\PresentacionPostGrado\frmProductoPostGrado.Designer.vb">
@@ -365,6 +389,18 @@
     <Compile Include="Presentacion\PresentacionREDRUBI\frmDetalleVentaREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmEditarProducto2REDRUBI.Designer.vb">
+      <DependentUpon>frmEditarProducto2REDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmEditarProducto2REDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmEditarProductoREDRUBI.Designer.vb">
+      <DependentUpon>frmEditarProductoREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmEditarProductoREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.Designer.vb">
       <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
     </Compile>
@@ -456,6 +492,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmClienteCAMPOFERIAL.resx">
       <DependentUpon>frmClienteCAMPOFERIAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmEditarProducto2CAMPOFERIAL.resx">
+      <DependentUpon>frmEditarProducto2CAMPOFERIAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmEditarProductoCAMPOFERIAL.resx">
+      <DependentUpon>frmEditarProductoCAMPOFERIAL.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmDetalleVentaplanilla.resx">
       <DependentUpon>frmDetalleVentaplanilla.vb</DependentUpon>
