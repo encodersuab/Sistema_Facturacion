@@ -93,7 +93,7 @@ Partial Class frmeditarproducto
         Me.GroupBox1.Controls.Add(Me.txtIdproducto)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(803, 499)
+        Me.GroupBox1.Size = New System.Drawing.Size(539, 499)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
@@ -173,6 +173,7 @@ Partial Class frmeditarproducto
         'cbbmodulo
         '
         Me.cbbmodulo.AutoSize = True
+        Me.cbbmodulo.Enabled = False
         Me.cbbmodulo.Location = New System.Drawing.Point(151, 260)
         Me.cbbmodulo.Name = "cbbmodulo"
         Me.cbbmodulo.Size = New System.Drawing.Size(72, 13)
@@ -181,6 +182,7 @@ Partial Class frmeditarproducto
         '
         'txtmedida
         '
+        Me.txtmedida.Enabled = False
         Me.txtmedida.FormattingEnabled = True
         Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
         Me.txtmedida.Location = New System.Drawing.Point(154, 284)
@@ -230,6 +232,7 @@ Partial Class frmeditarproducto
         '
         'txtfecha_vencimiento
         '
+        Me.txtfecha_vencimiento.Enabled = False
         Me.txtfecha_vencimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.txtfecha_vencimiento.Location = New System.Drawing.Point(154, 231)
         Me.txtfecha_vencimiento.Name = "txtfecha_vencimiento"
@@ -248,6 +251,7 @@ Partial Class frmeditarproducto
         'txtnom_categoria
         '
         Me.txtnom_categoria.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtnom_categoria.Enabled = False
         Me.txtnom_categoria.Location = New System.Drawing.Point(189, 82)
         Me.txtnom_categoria.Name = "txtnom_categoria"
         Me.txtnom_categoria.Size = New System.Drawing.Size(137, 20)
@@ -265,6 +269,7 @@ Partial Class frmeditarproducto
         'txtidcategoria
         '
         Me.txtidcategoria.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtidcategoria.Enabled = False
         Me.txtidcategoria.Location = New System.Drawing.Point(154, 82)
         Me.txtidcategoria.Name = "txtidcategoria"
         Me.txtidcategoria.Size = New System.Drawing.Size(29, 20)
@@ -282,6 +287,7 @@ Partial Class frmeditarproducto
         'txtprecio_venta
         '
         Me.txtprecio_venta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtprecio_venta.Enabled = False
         Me.txtprecio_venta.Location = New System.Drawing.Point(154, 205)
         Me.txtprecio_venta.Name = "txtprecio_venta"
         Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
@@ -299,6 +305,7 @@ Partial Class frmeditarproducto
         'txtprecio_compra
         '
         Me.txtprecio_compra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtprecio_compra.Enabled = False
         Me.txtprecio_compra.Location = New System.Drawing.Point(154, 179)
         Me.txtprecio_compra.Name = "txtprecio_compra"
         Me.txtprecio_compra.Size = New System.Drawing.Size(172, 20)
@@ -316,6 +323,7 @@ Partial Class frmeditarproducto
         'txtstock
         '
         Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtstock.Enabled = False
         Me.txtstock.Location = New System.Drawing.Point(154, 153)
         Me.txtstock.Name = "txtstock"
         Me.txtstock.Size = New System.Drawing.Size(172, 20)
@@ -333,6 +341,7 @@ Partial Class frmeditarproducto
         'txtdescripcion
         '
         Me.txtdescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtdescripcion.Enabled = False
         Me.txtdescripcion.Location = New System.Drawing.Point(154, 108)
         Me.txtdescripcion.Multiline = True
         Me.txtdescripcion.Name = "txtdescripcion"
@@ -352,6 +361,7 @@ Partial Class frmeditarproducto
         'txtNombre
         '
         Me.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtNombre.Enabled = False
         Me.txtNombre.Location = New System.Drawing.Point(154, 52)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(172, 20)
@@ -379,7 +389,7 @@ Partial Class frmeditarproducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(864, 520)
+        Me.ClientSize = New System.Drawing.Size(564, 520)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmeditarproducto"
         Me.Text = "frmeditarproducto"

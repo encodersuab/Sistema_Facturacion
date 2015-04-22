@@ -59,24 +59,31 @@
 
                 If txtflag.Text = 1 Then
                     dts.gnombre = Me.txtdescripcionEditada.Text
+                    frmeditarproducto.txtNombre.Text = txtdescripcionEditada.Text
                 Else
                     If txtflag.Text = 2 Then
                         dts.gdescripcion = Me.txtdescripcionEditada.Text
+                        frmeditarproducto.txtdescripcion.Text = txtdescripcionEditada.Text
                     Else
                         If txtflag.Text = 3 Then
                             dts.gstock = Me.txtdescripcionEditada.Text
+                            frmeditarproducto.txtstock.Text = txtdescripcionEditada.Text
                         Else
                             If txtflag.Text = 4 Then
                                 dts.gprecio_compra = Me.txtdescripcionEditada.Text
+                                frmeditarproducto.txtprecio_compra.Text = txtdescripcionEditada.Text
                             Else
                                 If txtflag.Text = 5 Then
                                     dts.gprecio_venta = Me.txtdescripcionEditada.Text
+                                    frmeditarproducto.txtprecio_venta.Text = txtdescripcionEditada.Text
                                 Else
                                     If txtflag.Text = 6 Then
                                         dts.gmedida = Me.txtdescripcionEditada.Text
+                                        frmeditarproducto.txtmedida.Text = txtdescripcionEditada.Text
                                     Else
                                         If txtflag.Text = 8 Then
                                             dts.gfecha_vencimiento = Me.dtpfecha_vencimientoNueva.Text()
+                                            frmeditarproducto.txtfecha_vencimiento.Text = txtdescripcionEditada.Text
                                         End If
                                     End If
                                 End If
@@ -92,8 +99,9 @@
                     Else
                         imagen.Image = My.Resources.fondo_transparente_fotos
                         imagen.Image.Save(ms, imagen.Image.RawFormat)
-                    End If
 
+                    End If
+                    frmeditarproducto.imagen.Image = imagen.Image
                     dts.gimagen = ms.GetBuffer
 
                 End If

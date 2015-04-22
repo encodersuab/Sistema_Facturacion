@@ -80,7 +80,6 @@
         FrmEditarProducto2.gbimagen.Visible = True
         FrmEditarProducto2.gbFechaVencimiento.Visible = False
         FrmEditarProducto2.imagen.Image = Me.imagen.Image
-
         FrmEditarProducto2.lbnombreproducto.Text = txtNombre.Text
         FrmEditarProducto2.ShowDialog()
 
