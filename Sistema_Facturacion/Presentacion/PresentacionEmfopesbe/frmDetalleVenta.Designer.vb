@@ -40,6 +40,7 @@ Partial Class frmDetalleVenta
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnsalir = New System.Windows.Forms.Button()
         Me.lbmedida = New System.Windows.Forms.Label()
         Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -70,7 +71,6 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtDD = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -240,7 +240,7 @@ Partial Class frmDetalleVenta
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.btnsalir)
         Me.GroupBox1.Controls.Add(Me.lbmedida)
         Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.Label12)
@@ -275,6 +275,16 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'btnsalir
+        '
+        Me.btnsalir.Location = New System.Drawing.Point(45, 331)
+        Me.btnsalir.Name = "btnsalir"
+        Me.btnsalir.Size = New System.Drawing.Size(75, 35)
+        Me.btnsalir.TabIndex = 36
+        Me.btnsalir.Text = "Salir"
+        Me.btnsalir.UseVisualStyleBackColor = True
+        Me.btnsalir.Visible = False
         '
         'lbmedida
         '
@@ -540,15 +550,6 @@ Partial Class frmDetalleVenta
         Me.txtDD.Text = "0"
         Me.txtDD.Visible = False
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(45, 331)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 35)
-        Me.Button1.TabIndex = 36
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -621,5 +622,5 @@ Partial Class frmDetalleVenta
     Friend WithEvents txtDD As System.Windows.Forms.TextBox
     Friend WithEvents lbmedida As System.Windows.Forms.Label
     Friend WithEvents lbdetalle As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnsalir As System.Windows.Forms.Button
 End Class

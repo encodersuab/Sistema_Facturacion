@@ -43,6 +43,7 @@ Partial Public Class frmDetalleVenta
             txtCantidad.Enabled = False
             txtPrecioUnitario.Enabled = False
             lbmedida.Visible = False
+            btnsalir.Visible = True
             '  btncancelar.Enabled = False
             btnGuardar.Enabled = False
             btnNuevo.Enabled = False
@@ -52,6 +53,7 @@ Partial Public Class frmDetalleVenta
             txtCantidad.Enabled = True
             txtPrecioUnitario.Enabled = True
             lbmedida.Visible = True
+            btnsalir.Visible = False
             '    btncancelar.Enabled = True
             btnGuardar.Enabled = True
             btnNuevo.Enabled = True
@@ -89,7 +91,7 @@ Partial Public Class frmDetalleVenta
 
         Buscar()
 
-        ocultar_columnas()
+        'ocultar_columnas()
 
 
     End Sub
@@ -119,8 +121,8 @@ Partial Public Class frmDetalleVenta
     End Sub
 
     Private Sub ocultar_columnas()
-        datalistado.Columns(1).Visible = False
-        datalistado.Columns(2).Visible = False
+        'datalistado.Columns(1).Visible = False
+        'datalistado.Columns(2).Visible = False
         'datalistado.Columns(3).Visible = False
     End Sub
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
@@ -625,6 +627,35 @@ Partial Public Class frmDetalleVenta
 
 
     Private Sub lbdetalle_Click(sender As Object, e As EventArgs) Handles lbdetalle.Click
+
+    End Sub
+
+    Private Sub btnsalir_Click(sender As Object, e As EventArgs) Handles btnsalir.Click
+
+        Try
+            Dim dts As New vVentaPlanilla
+            Dim func As New fVentaPlanilla
+
+            dts.Gidventaplanilla = txtIdVenta.Text
+            dts.Gidcliente = txtidCliente.Text
+            dts.Gfecha_venta = dtpFecha.Value.Date.ToString
+            dts.Gtipo_documento = cbTipoDoc.Text
+            dts.Gnum_documento = txtNumDoc.Text
+            dts.Gnombre_fac = txtNombreFac.Text
+            dts.Gestado = CInt(1)
+            dts.Gpago = "PLANILLA"
+            If func.editarVentaPlanilla(dts) Then
+                Me.Close()
+            Else
+                MsgBox("no se puede serrar")
+
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+
 
     End Sub
 End Class

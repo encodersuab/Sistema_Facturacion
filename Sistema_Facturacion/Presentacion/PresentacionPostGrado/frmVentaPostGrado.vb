@@ -39,6 +39,8 @@
         End Try
         btnNuevo.Visible = True
         btnEditar.Visible = False
+        ocultar_columnas()
+
 
         '       Buscar()
 
@@ -69,8 +71,8 @@
     'End Sub
 
     Private Sub ocultar_columnas()
-        'datalistado.Columns(1).Visible = False
-        'datalistado.Columns(2).Visible = False
+        datalistado.Columns(1).Visible = False
+        datalistado.Columns(2).Visible = False
     End Sub
 
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click

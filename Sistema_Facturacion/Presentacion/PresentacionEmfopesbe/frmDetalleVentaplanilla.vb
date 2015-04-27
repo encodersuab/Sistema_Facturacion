@@ -67,7 +67,7 @@ Public Class frmDetalleVentaplanilla
         btnNuevo.Visible = True
 
         Buscar()
-        ocultar_columnas()
+
 
     End Sub
 
@@ -95,8 +95,8 @@ Public Class frmDetalleVentaplanilla
         End Try
     End Sub
     Private Sub ocultar_columnas()
-        datalistado.Columns(1).Visible = False
-        datalistado.Columns(2).Visible = False
+        'datalistado.Columns(1).Visible = False
+        'datalistado.Columns(2).Visible = False
         'datalistado.Columns(3).Visible = False
     End Sub
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click

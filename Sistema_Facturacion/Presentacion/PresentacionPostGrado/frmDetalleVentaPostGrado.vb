@@ -119,9 +119,11 @@ Public Class frmDetalleVentaPostGrado
     End Sub
 
     Private Sub ocultar_columnas()
-        'datalistado.Columns(1).Visible = False
-        'datalistado.Columns(2).Visible = False
-        'datalistado.Columns(3).Visible = False
+        If dt.Rows.Count <> 0 Then
+            datalistado.Columns(1).Visible = False
+            datalistado.Columns(2).Visible = False
+        End If
+
     End Sub
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
         limpiar()
