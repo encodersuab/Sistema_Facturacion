@@ -3,36 +3,40 @@
     Private dt As New DataTable
     Public Sub frmProducto_Load() Handles MyBase.Load
         If frmInicioF.lbrol.Text = "UsuarioEMFOPESBE" Then
-            btnEditar.Enabled = False
-            btnNuevo.Enabled = False
-            btncategoria.Enabled = False
-            txtstock.Enabled = False
-            txtNombre.Enabled = False
-            txtdescripcion.Enabled = False
-            txtprecio_compra.Enabled = False
-            txtprecio_venta.Enabled = False
-            txtIdproducto.Enabled = False
-            cbbmodulo.Enabled = False
-            txtfecha_vencimiento.Enabled = False
-            btncargar.Enabled = False
-            btnlimpiar.Enabled = False
-            txtidcategoria.Enabled = False
-            txtnom_categoria.Enabled = False
+            borrar()
         End If
         limpiar()
         mostrar()
 
     End Sub
-
+    Public Sub borrar()
+        btnEditar.Enabled = False
+        btnNuevo.Enabled = False
+        btncategoria.Enabled = False
+        txtstock.Enabled = False
+        txtNombre.Enabled = False
+        txtdescripcion.Enabled = False
+        txtprecio_compra.Enabled = False
+        txtprecio_venta.Enabled = False
+        txtIdproducto.Enabled = False
+        cbbmodulo.Enabled = False
+        txtfecha_vencimiento.Enabled = False
+        btncargar.Enabled = False
+        btnlimpiar.Enabled = False
+        txtidcategoria.Enabled = False
+        txtnom_categoria.Enabled = False
+    End Sub
     Public Sub limpiar()
         btnGuardar.Visible = True
         btnEditar.Visible = False
         txtNombre.Text = ""
         txtdescripcion.Text = ""
-        txtstock.Text = "0"
-        txtprecio_compra.Text = "0"
-        txtprecio_venta.Text = "0"
+        txtstock.Text = ""
+        txtprecio_compra.Text = ""
+        txtprecio_venta.Text = ""
         txtIdproducto.Text = ""
+        txtidcategoria.Text = ""
+        txtnom_categoria.Text = ""
         '  cbbmodulo.Text = ""
 
         imagen.Image = Nothing

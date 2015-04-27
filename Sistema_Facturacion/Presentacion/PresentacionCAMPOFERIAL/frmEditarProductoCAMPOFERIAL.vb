@@ -7,6 +7,8 @@
         frmEditarProducto2CAMPOFERIAL.txtflag.Text = 1
         frmEditarProducto2CAMPOFERIAL.txtdescripcion.Text = Me.txtNombre.Text
         frmEditarProducto2CAMPOFERIAL.lbnombreproducto.Text = l1.Text
+        frmEditarProducto2CAMPOFERIAL.dtpfecha_vencimientoNueva.Text = ""
+        frmEditarProducto2CAMPOFERIAL.txtdescripcionEditada.Text = ""
         frmEditarProducto2CAMPOFERIAL.ShowDialog()
     End Sub
 
@@ -17,6 +19,8 @@
         frmEditarProducto2CAMPOFERIAL.txtflag.Text = 2
         frmEditarProducto2CAMPOFERIAL.txtdescripcion.Text = Me.txtdescripcion.Text
         frmEditarProducto2CAMPOFERIAL.lbnombreproducto.Text = l2.Text
+        frmEditarProducto2CAMPOFERIAL.dtpfecha_vencimientoNueva.Text = ""
+        frmEditarProducto2CAMPOFERIAL.txtdescripcionEditada.Text = ""
         frmEditarProducto2CAMPOFERIAL.ShowDialog()
     End Sub
 
@@ -27,6 +31,8 @@
         frmEditarProducto2CAMPOFERIAL.txtflag.Text = 3
         frmEditarProducto2CAMPOFERIAL.txtdescripcion.Text = Me.txtstock.Text
         frmEditarProducto2CAMPOFERIAL.lbnombreproducto.Text = l4.Text
+        frmEditarProducto2CAMPOFERIAL.dtpfecha_vencimientoNueva.Text = ""
+        frmEditarProducto2CAMPOFERIAL.txtdescripcionEditada.Text = ""
         frmEditarProducto2CAMPOFERIAL.ShowDialog()
     End Sub
 
@@ -37,6 +43,8 @@
         frmEditarProducto2CAMPOFERIAL.txtflag.Text = 4
         frmEditarProducto2CAMPOFERIAL.txtdescripcion.Text = Me.txtprecio_compra.Text
         frmEditarProducto2CAMPOFERIAL.lbnombreproducto.Text = txtprecio_compra.Text
+        frmEditarProducto2CAMPOFERIAL.dtpfecha_vencimientoNueva.Text = ""
+        frmEditarProducto2CAMPOFERIAL.txtdescripcionEditada.Text = ""
         frmEditarProducto2CAMPOFERIAL.ShowDialog()
     End Sub
 
@@ -47,6 +55,8 @@
         frmEditarProducto2CAMPOFERIAL.txtflag.Text = 5
         frmEditarProducto2CAMPOFERIAL.txtdescripcion.Text = Me.txtprecio_venta.Text
         frmEditarProducto2CAMPOFERIAL.lbnombreproducto.Text = l3.Text
+        frmEditarProducto2CAMPOFERIAL.dtpfecha_vencimientoNueva.Text = ""
+        frmEditarProducto2CAMPOFERIAL.txtdescripcionEditada.Text = ""
         frmEditarProducto2CAMPOFERIAL.ShowDialog()
     End Sub
 
@@ -57,6 +67,8 @@
         frmEditarProducto2CAMPOFERIAL.txtflag.Text = 8
         frmEditarProducto2CAMPOFERIAL.dtpfecha_vencimientoActual.Text = Me.txtfecha_vencimiento.Text
         frmEditarProducto2CAMPOFERIAL.lbnombreproducto.Text = l5.Text
+        frmEditarProducto2CAMPOFERIAL.dtpfecha_vencimientoNueva.Text = ""
+        frmEditarProducto2CAMPOFERIAL.txtdescripcionEditada.Text = ""
         frmEditarProducto2CAMPOFERIAL.ShowDialog()
     End Sub
 
@@ -67,6 +79,8 @@
         frmEditarProducto2CAMPOFERIAL.txtflag.Text = 6
         frmEditarProducto2CAMPOFERIAL.txtdescripcion.Text = Me.txtmedida.Text
         frmEditarProducto2CAMPOFERIAL.lbnombreproducto.Text = l6.Text
+        frmEditarProducto2CAMPOFERIAL.dtpfecha_vencimientoNueva.Text = ""
+        frmEditarProducto2CAMPOFERIAL.txtdescripcionEditada.Text = ""
         frmEditarProducto2CAMPOFERIAL.ShowDialog()
     End Sub
 
@@ -77,6 +91,8 @@
         frmEditarProducto2CAMPOFERIAL.gbimagen.Visible = True
         frmEditarProducto2CAMPOFERIAL.imagen.Image = Me.imagen.Image
         frmEditarProducto2CAMPOFERIAL.lbnombreproducto.Text = l7.Text
+        frmEditarProducto2CAMPOFERIAL.dtpfecha_vencimientoNueva.Text = ""
+        frmEditarProducto2CAMPOFERIAL.txtdescripcionEditada.Text = ""
         frmEditarProducto2CAMPOFERIAL.ShowDialog()
     End Sub
 

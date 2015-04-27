@@ -55,6 +55,8 @@
         FrmEditarProducto2.txtflag.Text = 1
         FrmEditarProducto2.txtdescripcion.Text = Me.txtNombre.Text
         FrmEditarProducto2.lbnombreproducto.Text = l1.Text
+        FrmEditarProducto2.dtpfecha_vencimientoNueva.Text = ""
+        FrmEditarProducto2.txtdescripcionEditada.Text = ""
         FrmEditarProducto2.ShowDialog()
     End Sub
 
@@ -65,6 +67,8 @@
         FrmEditarProducto2.txtflag.Text = 2
         FrmEditarProducto2.txtdescripcion.Text = Me.txtdescripcion.Text
         FrmEditarProducto2.lbnombreproducto.Text = l2.Text
+        FrmEditarProducto2.dtpfecha_vencimientoNueva.Text = ""
+        FrmEditarProducto2.txtdescripcionEditada.Text = ""
         FrmEditarProducto2.ShowDialog()
     End Sub
 
@@ -75,6 +79,8 @@
         FrmEditarProducto2.txtflag.Text = 3
         FrmEditarProducto2.txtdescripcion.Text = Me.txtstock.Text
         FrmEditarProducto2.lbnombreproducto.Text = l3.Text
+        FrmEditarProducto2.dtpfecha_vencimientoNueva.Text = ""
+        FrmEditarProducto2.txtdescripcionEditada.Text = ""
         FrmEditarProducto2.ShowDialog()
     End Sub
 
@@ -85,6 +91,8 @@
         FrmEditarProducto2.txtflag.Text = 4
         FrmEditarProducto2.txtdescripcion.Text = Me.txtprecio_compra.Text
         FrmEditarProducto2.lbnombreproducto.Text = l4.Text
+        FrmEditarProducto2.dtpfecha_vencimientoNueva.Text = ""
+        FrmEditarProducto2.txtdescripcionEditada.Text = ""
         FrmEditarProducto2.ShowDialog()
     End Sub
 
@@ -95,6 +103,8 @@
         FrmEditarProducto2.txtflag.Text = 5
         FrmEditarProducto2.txtdescripcion.Text = Me.txtprecio_venta.Text
         FrmEditarProducto2.lbnombreproducto.Text = l5.Text
+        FrmEditarProducto2.dtpfecha_vencimientoNueva.Text = ""
+        FrmEditarProducto2.txtdescripcionEditada.Text = ""
         FrmEditarProducto2.ShowDialog()
     End Sub
 
@@ -105,6 +115,8 @@
         FrmEditarProducto2.txtflag.Text = 8
         FrmEditarProducto2.dtpfecha_vencimientoActual.Text = Me.txtfecha_vencimiento.Text
         FrmEditarProducto2.lbnombreproducto.Text = l6.Text
+        FrmEditarProducto2.dtpfecha_vencimientoNueva.Text = ""
+        FrmEditarProducto2.txtdescripcionEditada.Text = ""
         FrmEditarProducto2.ShowDialog()
     End Sub
 
@@ -115,6 +127,8 @@
         FrmEditarProducto2.txtflag.Text = 6
         FrmEditarProducto2.txtdescripcion.Text = Me.txtmedida.Text
         FrmEditarProducto2.lbnombreproducto.Text = l7.Text
+        FrmEditarProducto2.dtpfecha_vencimientoNueva.Text = ""
+        FrmEditarProducto2.txtdescripcionEditada.Text = ""
         FrmEditarProducto2.ShowDialog()
     End Sub
 
@@ -123,9 +137,14 @@
         FrmEditarProducto2.gbdetalle.Visible = False
         FrmEditarProducto2.gbFechaVencimiento.Visible = False
         FrmEditarProducto2.gbimagen.Visible = True
-
         FrmEditarProducto2.imagen.Image = Me.imagen.Image
         FrmEditarProducto2.lbnombreproducto.Text = l8.Text
+        FrmEditarProducto2.dtpfecha_vencimientoNueva.Text = ""
+        FrmEditarProducto2.txtdescripcionEditada.Text = ""
         FrmEditarProducto2.ShowDialog()
+    End Sub
+
+    Private Sub frmeditarproducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

@@ -126,4 +126,9 @@
             MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
+
+    Private Sub frmEditarProducto2REDRUBI_Load(sender As Object, e As EventArgs)
+      
+
+    End Sub
 End Class

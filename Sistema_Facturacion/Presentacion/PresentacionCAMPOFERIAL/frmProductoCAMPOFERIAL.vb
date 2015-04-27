@@ -29,10 +29,12 @@
         btnEditar.Visible = False
         txtNombre.Text = ""
         txtdescripcion.Text = ""
-        txtstock.Text = "0"
-        txtprecio_compra.Text = "0"
-        txtprecio_venta.Text = "0"
+        txtstock.Text = ""
+        txtprecio_compra.Text = ""
+        txtprecio_venta.Text = ""
         txtIdproducto.Text = ""
+        txtidcategoria.Text = ""
+        txtnom_categoria.Text = ""
         '  cbbmodulo.Text = ""
 
         imagen.Image = Nothing
