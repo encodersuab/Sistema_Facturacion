@@ -656,6 +656,7 @@
       <DependentUpon>frmrptReImpresionFactura.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReporte VentasXFecha.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptreporte.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptUsuarios.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentas.rdlc" />
   </ItemGroup>
