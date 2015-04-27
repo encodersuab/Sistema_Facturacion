@@ -68,7 +68,6 @@
             Try
                 Dim dts As New vVentaPlanilla
                 Dim func As New fVentaPlanilla
-
                 dts.Gidcliente = txtidCliente.Text
                 dts.Gfecha_venta = dtpFecha.Value.Date.ToString
                 dts.Gtipo_documento = cbTipoDoc.Text
@@ -79,25 +78,19 @@
                 dts.Gidusuario = frmInicioF.lbidusuario.Text
                 If func.insertarventaPlanilla(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
                     mostrarVentaPlanilla()
                     cargar_detalle()
                     limpiar()
-
-
                 Else
                     MessageBox.Show("venta no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     mostrarVentaPlanilla()
                     limpiar()
-
                 End If
-
             Catch ex As Exception
                 MsgBox(ex.Message)
             End Try
         Else
             MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
         End If
     End Sub
 
