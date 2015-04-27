@@ -184,6 +184,7 @@ Partial Class frmLogin
         Me.lbidusuario.Size = New System.Drawing.Size(39, 13)
         Me.lbidusuario.TabIndex = 7
         Me.lbidusuario.Text = "Label5"
+        Me.lbidusuario.Visible = False
         '
         'frmLogin
         '

@@ -125,7 +125,7 @@ Public Class frmInicioF
                         postgrado.Enabled = False
                         SUPERADMIN.Enabled = False
                     Else
-                        If lbrol.Text = "UsuarioPOSGRADO" Then
+                        If lbrol.Text = "UsuarioPOSTGRADO" Then
                             fexpobeni.Enabled = False
                             redrubi.Enabled = False
                             emfopesbe.Enabled = False
@@ -133,7 +133,7 @@ Public Class frmInicioF
                             registroP.Enabled = False
                             SUPERADMIN.Enabled = False
                         Else
-                            If lbrol.Text = "AdministradorPOSGRADO" Then
+                            If lbrol.Text = "AdministradorPOSTGRADO" Then
                                 fexpobeni.Enabled = False
                                 redrubi.Enabled = False
                                 emfopesbe.Enabled = False
@@ -435,5 +435,9 @@ Public Class frmInicioF
     Private Sub REGISTRODEUSUARIOSToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles REGISTRODEUSUARIOSToolStripMenuItem.Click
         frmUsuario.MdiParent = Me
         frmUsuario.Show()
+    End Sub
+
+    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+
     End Sub
 End Class
