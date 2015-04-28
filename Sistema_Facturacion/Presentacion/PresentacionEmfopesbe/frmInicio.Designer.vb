@@ -115,6 +115,7 @@ Partial Class frmInicioF
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lbidusuario = New System.Windows.Forms.Label()
+        Me.REPORTESToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -501,7 +502,7 @@ Partial Class frmInicioF
         '
         'SUPERADMIN
         '
-        Me.SUPERADMIN.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DATOSIMPUESTOSToolStripMenuItem, Me.REGISTRODEUSUARIOSToolStripMenuItem})
+        Me.SUPERADMIN.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DATOSIMPUESTOSToolStripMenuItem, Me.REGISTRODEUSUARIOSToolStripMenuItem, Me.REPORTESToolStripMenuItem})
         Me.SUPERADMIN.Name = "SUPERADMIN"
         Me.SUPERADMIN.Size = New System.Drawing.Size(95, 20)
         Me.SUPERADMIN.Text = "SUPER ADMIN"
@@ -710,6 +711,12 @@ Partial Class frmInicioF
         Me.lbidusuario.TabIndex = 20
         Me.lbidusuario.Text = "L"
         '
+        'REPORTESToolStripMenuItem
+        '
+        Me.REPORTESToolStripMenuItem.Name = "REPORTESToolStripMenuItem"
+        Me.REPORTESToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
+        Me.REPORTESToolStripMenuItem.Text = "REPORTES"
+        '
         'frmInicioF
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -829,5 +836,6 @@ Partial Class frmInicioF
     Friend WithEvents lbidusuario As System.Windows.Forms.Label
     Friend WithEvents DATOSIMPUESTOSToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents REGISTRODEUSUARIOSToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents REPORTESToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

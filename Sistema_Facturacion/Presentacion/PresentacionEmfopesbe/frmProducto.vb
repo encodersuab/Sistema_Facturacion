@@ -25,6 +25,8 @@
         btnlimpiar.Enabled = False
         txtidcategoria.Enabled = False
         txtnom_categoria.Enabled = False
+        txtmedida.Enabled = False
+
     End Sub
     Public Sub limpiar()
         btnGuardar.Visible = True

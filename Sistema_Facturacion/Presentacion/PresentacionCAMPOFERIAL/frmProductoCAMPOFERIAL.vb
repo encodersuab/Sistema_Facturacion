@@ -18,6 +18,7 @@
             txtidcategoria.Enabled = False
             txtnom_categoria.Enabled = False
             ' cbbestado.Enabled = False
+            txtmedida.Enabled = False
 
         End If
         limpiar()
