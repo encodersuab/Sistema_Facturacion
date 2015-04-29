@@ -170,7 +170,7 @@ Partial Class frmVenta
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(78, 206)
+        Me.btnNuevo.Location = New System.Drawing.Point(79, 217)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 12
@@ -179,7 +179,7 @@ Partial Class frmVenta
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(247, 206)
+        Me.btncancelar.Location = New System.Drawing.Point(248, 217)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 13
@@ -188,7 +188,7 @@ Partial Class frmVenta
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(162, 206)
+        Me.btnEditar.Location = New System.Drawing.Point(163, 217)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 14
@@ -197,7 +197,7 @@ Partial Class frmVenta
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(162, 206)
+        Me.btnGuardar.Location = New System.Drawing.Point(163, 217)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 15

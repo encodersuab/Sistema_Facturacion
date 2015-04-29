@@ -44,6 +44,7 @@
         '       Buscar()
 
     End Sub
+   
 
     'Private Sub Buscar()
 
@@ -94,6 +95,7 @@
                 dts.Gestado = 0
                 dts.Gpago = "CONTADO"
                 dts.Gidusuario = frmInicioF.lbidusuario.Text
+                dts.Gmodulo = "EMFOPESBE"
                 If func.insertar(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
 

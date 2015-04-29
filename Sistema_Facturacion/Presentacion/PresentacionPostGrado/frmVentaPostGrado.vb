@@ -39,7 +39,7 @@
         End Try
         btnNuevo.Visible = True
         btnEditar.Visible = False
-        ocultar_columnas()
+        'ocultar_columnas()
 
 
         '       Buscar()

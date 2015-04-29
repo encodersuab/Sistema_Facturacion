@@ -19,6 +19,12 @@ End Class
 
 Namespace dbfacDataSetTableAdapters
     
+    Partial Class mostrar_facturaTableAdapter
+
+        
+
+    End Class
+
     Partial Public Class mostrar_reciboTableAdapter
     End Class
 End Namespace
