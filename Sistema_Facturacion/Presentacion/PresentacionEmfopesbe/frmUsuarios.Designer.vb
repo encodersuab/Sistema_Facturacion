@@ -319,7 +319,7 @@ Partial Class frmUsuarios
         'cbRol
         '
         Me.cbRol.FormattingEnabled = True
-        Me.cbRol.Items.AddRange(New Object() {"AdministradorEMFOPESBE", "AdministradorREDRUBI", "AdministradorPOSGRADO", "AdministradorFEXPOBEN", "UsuarioFEXPOBENI", "UsuarioEMFOPESBE", "UsuarioREDRUBI", "UsuarioPOSGRADO"})
+        Me.cbRol.Items.AddRange(New Object() {"AdministradorEMFOPESBE", "AdministradorREDRUBI", "AdministradorPOSGRADO", "AdministradorCAMPOFERIAL", "UsuarioCAMPOFERIALI", "UsuarioEMFOPESBE", "UsuarioREDRUBI", "UsuarioPOSGRADO"})
         Me.cbRol.Location = New System.Drawing.Point(94, 265)
         Me.cbRol.Name = "cbRol"
         Me.cbRol.Size = New System.Drawing.Size(163, 21)
