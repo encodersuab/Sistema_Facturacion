@@ -201,6 +201,7 @@ Partial Class frmUsuario
         '
         'txtContraceña
         '
+        Me.txtContraceña.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtContraceña.Location = New System.Drawing.Point(132, 199)
         Me.txtContraceña.Name = "txtContraceña"
         Me.txtContraceña.Size = New System.Drawing.Size(140, 20)
@@ -217,6 +218,7 @@ Partial Class frmUsuario
         '
         'txtLogin
         '
+        Me.txtLogin.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtLogin.Location = New System.Drawing.Point(132, 173)
         Me.txtLogin.Name = "txtLogin"
         Me.txtLogin.Size = New System.Drawing.Size(140, 20)
