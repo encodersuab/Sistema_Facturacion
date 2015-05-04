@@ -23,7 +23,6 @@ Partial Class frmVentaPlanilla
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.btnImprimirFacturaPlanilla = New System.Windows.Forms.Button()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
@@ -57,29 +56,19 @@ Partial Class frmVentaPlanilla
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.btnImprimirFacturaPlanilla)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(417, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(936, 285)
+        Me.GroupBox2.Size = New System.Drawing.Size(578, 285)
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Estado de ventas"
         '
-        'btnImprimirFacturaPlanilla
-        '
-        Me.btnImprimirFacturaPlanilla.Location = New System.Drawing.Point(35, 34)
-        Me.btnImprimirFacturaPlanilla.Name = "btnImprimirFacturaPlanilla"
-        Me.btnImprimirFacturaPlanilla.Size = New System.Drawing.Size(548, 23)
-        Me.btnImprimirFacturaPlanilla.TabIndex = 4
-        Me.btnImprimirFacturaPlanilla.Text = "IMPRIMIR FACTURA DE VENTAS POR PLANILLA"
-        Me.btnImprimirFacturaPlanilla.UseVisualStyleBackColor = True
-        '
         'Inexistente
         '
         Me.Inexistente.AutoSize = True
-        Me.Inexistente.Location = New System.Drawing.Point(216, 164)
+        Me.Inexistente.Location = New System.Drawing.Point(251, 151)
         Me.Inexistente.Name = "Inexistente"
         Me.Inexistente.Size = New System.Drawing.Size(94, 13)
         Me.Inexistente.TabIndex = 3
@@ -92,11 +81,11 @@ Partial Class frmVentaPlanilla
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(35, 63)
+        Me.datalistado.Location = New System.Drawing.Point(15, 31)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(548, 207)
+        Me.datalistado.Size = New System.Drawing.Size(548, 239)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -334,7 +323,7 @@ Partial Class frmVentaPlanilla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1347, 310)
+        Me.ClientSize = New System.Drawing.Size(1006, 310)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -372,7 +361,6 @@ Partial Class frmVentaPlanilla
     Friend WithEvents txtidCliente As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
-    Friend WithEvents btnImprimirFacturaPlanilla As System.Windows.Forms.Button
     Friend WithEvents txtPago As System.Windows.Forms.Label
     Friend WithEvents txtEstado As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label

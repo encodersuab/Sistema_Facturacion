@@ -17,6 +17,7 @@ Partial Public Class frmDetalleVenta
         QrCodeImgControl1.Visible = False
         limpiar()
         mostrarDatosImpuestos()
+      
         '  lbdetalle.Text = lbdetalle.Text + "" + txtNombreCLiente.Text + "" + txtNumDoc.Text
         '  txtIdVenta.Text = datalistado.SelectedCells.Item(8).Value
     End Sub
@@ -47,6 +48,7 @@ Partial Public Class frmDetalleVenta
             '  btncancelar.Enabled = False
             btnGuardar.Enabled = False
             btnNuevo.Enabled = False
+            'btnFinalizarVenta.PerformClick()
         Else
             Button2.Enabled = True
             btnBuscarProducto.Enabled = True
@@ -54,7 +56,7 @@ Partial Public Class frmDetalleVenta
             txtPrecioUnitario.Enabled = True
             lbmedida.Visible = True
             btnsalir.Visible = False
-            '    btncancelar.Enabled = True
+            '   btncancelar.Enabled = True
             btnGuardar.Enabled = True
             btnNuevo.Enabled = True
         End If
@@ -407,7 +409,7 @@ Partial Public Class frmDetalleVenta
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFinalizarVenta.Click
+    Public Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFinalizarVenta.Click
         txttotal.Text = sumar().ToString
         If txttotal.Text = 0 Then
             MessageBox.Show("SELECCIONAR ARTICULOS")

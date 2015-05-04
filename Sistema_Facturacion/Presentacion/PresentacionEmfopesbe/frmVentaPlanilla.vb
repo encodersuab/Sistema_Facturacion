@@ -44,11 +44,13 @@
         btnEditar.Visible = False
         ocultar_columnas()
 
-        datalistado.Enabled = False
+        'datalistado.Enabled = False
 
 
         '       Buscar()
-
+        'frmDetalleVenta.Show()
+        'frmDetalleVenta.btnFinalizarVenta.PerformClick()
+        'frmrptReImpresionFactura.Show()
     End Sub
     Private Sub ocultar_columnas()
         If dt.Rows.Count <> 0 Then
@@ -167,8 +169,6 @@
 
     Private Sub cargar_detalle_factura()
 
-
-
         frmDetalleVenta.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
         frmDetalleVenta.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
         frmDetalleVenta.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
@@ -178,12 +178,10 @@
         frmDetalleVenta.txtNombreFac.Text = datalistado.SelectedCells.Item(8).Value
         frmDetalleVenta.txtDD.Text = 1
         frmDetalleVenta.ShowDialog()
+        'frmDetalleVenta.btnFinalizarVenta.PerformClick()
 
     End Sub
     Private Sub cargar_detalle()
-
-
-
         frmDetalleVentaplanilla.txtidCliente.Text = datalistado.SelectedCells.Item(2).Value
         frmDetalleVentaplanilla.txtIdVenta.Text = datalistado.SelectedCells.Item(1).Value
         frmDetalleVentaplanilla.txtNombreCLiente.Text = datalistado.SelectedCells.Item(3).Value
@@ -208,36 +206,38 @@
         frmCliente.ShowDialog()
     End Sub
 
-    Private Sub btnImprimirFacturaPlanilla_Click(sender As Object, e As EventArgs) Handles btnImprimirFacturaPlanilla.Click
-        Try
-            Dim result As Integer = MessageBox.Show("DESEA IMPRIMIR LAS FACTURAS DE VENTAS POR PLANILLA ", "IMPRIMIR FACTURAS", MessageBoxButtons.YesNoCancel)
+    'Private Sub btnImprimirFacturaPlanilla_Click(sender As Object, e As EventArgs) Handles btnImprimirFacturaPlanilla.Click
+    '    Try
+    '        Dim result As Integer = MessageBox.Show("DESEA IMPRIMIR LAS FACTURAS DE VENTAS POR PLANILLA ", "IMPRIMIR FACTURAS", MessageBoxButtons.YesNoCancel)
 
-            If result = DialogResult.Cancel Then
+    '        If result = DialogResult.Cancel Then
 
-            ElseIf result = DialogResult.No Then
+    '        ElseIf result = DialogResult.No Then
 
-            ElseIf result = DialogResult.Yes Then
-                datalistado.Enabled = True
+    '        ElseIf result = DialogResult.Yes Then
+    '            datalistado.Enabled = True
 
 
-                If datalistado.SelectedCells.Item(9).Value = 1 Then
-                    frmDetalleVenta.txtDD.Text = 1
-                End If
-            Else
-                MessageBox.Show("venta no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                mostrarVentaPlanilla()
-                limpiar()
+    '            If datalistado.SelectedCells.Item(9).Value = 1 Then
+    '                frmDetalleVenta.txtDD.Text = 1
+    '            End If
+    '        Else
+    '            MessageBox.Show("venta no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
+    '            mostrarVentaPlanilla()
+    '            limpiar()
 
-            End If
+    '        End If
 
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+    '    Catch ex As Exception
+    '        MsgBox(ex.Message)
+    '    End Try
+
+    'End Sub
+
+    Private Sub datalistado_CellContextMenuStripChanged(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellContextMenuStripChanged
 
     End Sub
-
-    Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
-
+    Public Sub ventaImprimir()
         Dim result As DialogResult
         result = MessageBox.Show("IMPRIMIR FACTURAS POR PLANILLA", "FACTURAS", MessageBoxButtons.OKCancel)
 
@@ -259,6 +259,7 @@
                     If func.editarVentaPlanilla(dts) Then
                         cargar_detalle_factura()
                         mostrarVentaPlanilla()
+
                     Else
                     End If
 
@@ -270,6 +271,46 @@
 
             End If
         End If
+    End Sub
+    Public Sub ventaImprimirCanlel()
+        Dim result As DialogResult
+        result = MessageBox.Show("IMPRIMIR FACTURAS POR PLANILLA", "FACTURAS", MessageBoxButtons.OKCancel)
+
+        If result = DialogResult.OK Then
+
+            If Me.ValidateChildren = True And txtidCliente.Text <> "" And txtNumDoc.Text <> "" And txtIdVenta.Text <> "" Then
+                Try
+                    Dim dts As New vVentaPlanilla
+                    Dim func As New fVentaPlanilla
+
+                    dts.Gidventaplanilla = txtIdVenta.Text
+                    dts.Gidcliente = txtidCliente.Text
+                    dts.Gfecha_venta = dtpFecha.Value.Date.ToString
+                    dts.Gtipo_documento = cbTipoDoc.Text
+                    dts.Gnum_documento = txtNumDoc.Text
+                    dts.Gnombre_fac = txtNombreFac.Text
+                    dts.Gestado = CInt(1)
+                    dts.Gpago = "PLANILLA"
+                    If func.editarVentaPlanilla(dts) Then
+                        cargar_detalle_factura()
+                        mostrarVentaPlanilla()
+
+                    Else
+                    End If
+
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
+            Else
+                MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            End If
+        End If
+    End Sub
+
+    Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
+
+        ventaImprimir()
 
     End Sub
 

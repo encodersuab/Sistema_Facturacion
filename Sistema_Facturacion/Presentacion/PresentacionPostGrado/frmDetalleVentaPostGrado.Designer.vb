@@ -168,6 +168,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.txtncuota.Name = "txtncuota"
         Me.txtncuota.Size = New System.Drawing.Size(173, 20)
         Me.txtncuota.TabIndex = 29
+        Me.txtncuota.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'txtPrecioUnitario
         '
@@ -537,7 +538,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(6, 76)
+        Me.datalistado.Location = New System.Drawing.Point(0, 79)
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -554,7 +555,7 @@ Partial Class frmDetalleVentaPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(967, 425)
+        Me.ClientSize = New System.Drawing.Size(968, 425)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox1)

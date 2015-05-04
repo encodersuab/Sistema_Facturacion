@@ -1,7 +1,7 @@
 ﻿Public Class vVentaPlanillaREDRUBI
     Dim idventaplanilla, idcliente, idusuario As Integer
     Dim fecha_venta As Date
-    Dim tipo_documento, num_documento, nombre_fac, estado, pago As String
+    Dim tipo_documento, num_documento, nombre_fac, estado, pago, modulo As String
 
     Public Property Gidventaplanilla
         Get
@@ -75,11 +75,19 @@
             idusuario = value
         End Set
     End Property
+    Public Property Gmodulo
+        Get
+            Return modulo
+        End Get
+        Set(ByVal value)
+            modulo = value
+        End Set
+    End Property
     Public Sub New()
 
     End Sub
 
-    Public Sub New(ByVal idventaplanilla As Integer, ByVal idcliente As Integer, ByVal fecha_venta As Date, ByVal tipo_documento As String, ByVal num_documento As String, ByVal nombre_fac As String, ByVal estado As String, ByVal pago As String, ByVal idusuario As Integer)
+    Public Sub New(ByVal idventaplanilla As Integer, ByVal idcliente As Integer, ByVal fecha_venta As Date, ByVal tipo_documento As String, ByVal num_documento As String, ByVal nombre_fac As String, ByVal estado As String, ByVal pago As String, ByVal idusuario As Integer, ByVal modulo As String)
         Gidventaplanilla = idventaplanilla
         Gidcliente = idcliente
         Gfecha_venta = fecha_venta
@@ -89,5 +97,6 @@
         Gestado = estado
         Gpago = pago
         Gidusuario = idusuario
+        Gmodulo = modulo
     End Sub
 End Class

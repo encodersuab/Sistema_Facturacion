@@ -49,8 +49,8 @@
 
     End Sub
     Private Sub ocultar_columnas()
-        datalistado.Columns(1).Visible = False
-        datalistado.Columns(2).Visible = False
+        'datalistado.Columns(1).Visible = False
+        'datalistado.Columns(2).Visible = False
     End Sub
 
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
@@ -72,6 +72,7 @@
                 dts.Gestado = 1
                 dts.Gpago = "PLANILLA"
                 dts.Gidusuario = frmInicioF.lbidusuario.Text
+                dts.Gmodulo = "REDRUBI"
                 If func.insertarventaPlanilla(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
 

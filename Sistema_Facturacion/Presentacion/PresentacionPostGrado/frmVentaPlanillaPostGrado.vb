@@ -70,6 +70,7 @@
                 dts.Gestado = 1
                 dts.Gpago = "PLANILLA"
                 dts.Gidusuario = frmInicioF.lbidusuario.Text
+                dts.Gmodulo = "POSTGRADO"
                 If func.insertarventaPlanilla(dts) Then
                     MessageBox.Show("venta registrada correctamente vamos a añadir porductos", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
