@@ -95,12 +95,12 @@ Partial Class frmUsuario
         'cbxListadoClientes
         '
         Me.cbxListadoClientes.FormattingEnabled = True
-        Me.cbxListadoClientes.Items.AddRange(New Object() {"Nombre", "Apellidos", "CI"})
+        Me.cbxListadoClientes.Items.AddRange(New Object() {"rol", "Nombre", "Apellidos", "CI"})
         Me.cbxListadoClientes.Location = New System.Drawing.Point(6, 24)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
         Me.cbxListadoClientes.Size = New System.Drawing.Size(174, 21)
         Me.cbxListadoClientes.TabIndex = 1
-        Me.cbxListadoClientes.Text = "Nombre"
+        Me.cbxListadoClientes.Text = "rol"
         '
         'datalistado
         '

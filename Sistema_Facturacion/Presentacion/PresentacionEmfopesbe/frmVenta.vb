@@ -41,8 +41,7 @@
         btnEditar.Visible = False
         ocultar_columnas()
 
-        '       Buscar()
-
+        '       Buscar(
     End Sub
    
 

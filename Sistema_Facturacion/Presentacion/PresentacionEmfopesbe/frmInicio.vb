@@ -94,67 +94,74 @@ Public Class frmInicioF
         'UsuarioPOSGRADO()
         'AdministradorFEXPOBENI()
         'UsuarioFEXPOBENI()
-        If lbrol.Text = "UsuarioEMFOPESBE" Then
-            fexpobeni.Enabled = False
-            redrubi.Enabled = False
-            emfopesbe.Enabled = True
-            postgrado.Enabled = False
-            registroE.Enabled = False
-            SUPERADMIN.Enabled = False
-
+        If lbrol.Text = "SUPER USUARIO" Then
+           
         Else
-            If lbrol.Text = "AdministradorEMFOPESBE" Then
+            If lbrol.Text = "UsuarioEMFOPESBE" Then
+                fexpobeni.Enabled = False
                 redrubi.Enabled = False
                 emfopesbe.Enabled = True
                 postgrado.Enabled = False
-                fexpobeni.Enabled = False
+                registroE.Enabled = False
                 SUPERADMIN.Enabled = False
+
             Else
-                If lbrol.Text = "UsuarioREDRUBI" Then
-                    fexpobeni.Enabled = False
-                    redrubi.Enabled = True
-                    emfopesbe.Enabled = False
+                If lbrol.Text = "AdministradorEMFOPESBE" Then
+                    redrubi.Enabled = False
+                    emfopesbe.Enabled = True
                     postgrado.Enabled = False
-                    registroR.Enabled = False
+                    fexpobeni.Enabled = False
                     SUPERADMIN.Enabled = False
                 Else
-                    If lbrol.Text = "AdministradorREDRUBI" Then
+                    If lbrol.Text = "UsuarioREDRUBI" Then
                         fexpobeni.Enabled = False
                         redrubi.Enabled = True
                         emfopesbe.Enabled = False
                         postgrado.Enabled = False
+                        registroR.Enabled = False
                         SUPERADMIN.Enabled = False
                     Else
-                        If lbrol.Text = "UsuarioPOSTGRADO" Then
+                        If lbrol.Text = "AdministradorREDRUBI" Then
                             fexpobeni.Enabled = False
-                            redrubi.Enabled = False
+                            redrubi.Enabled = True
                             emfopesbe.Enabled = False
-                            postgrado.Enabled = True
-                            registroP.Enabled = False
+                            postgrado.Enabled = False
                             SUPERADMIN.Enabled = False
                         Else
-                            If lbrol.Text = "AdministradorPOSTGRADO" Then
+                            If lbrol.Text = "UsuarioPOSTGRADO" Then
                                 fexpobeni.Enabled = False
                                 redrubi.Enabled = False
                                 emfopesbe.Enabled = False
                                 postgrado.Enabled = True
+                                registroP.Enabled = False
                                 SUPERADMIN.Enabled = False
                             Else
-                                If lbrol.Text = "UsuarioFEXPOBENI" Then
-                                    fexpobeni.Enabled = True
+                                If lbrol.Text = "AdministradorPOSTGRADO" Then
+                                    fexpobeni.Enabled = False
                                     redrubi.Enabled = False
                                     emfopesbe.Enabled = False
-                                    postgrado.Enabled = False
-                                    registroF.Enabled = False
+                                    postgrado.Enabled = True
                                     SUPERADMIN.Enabled = False
                                 Else
-                                    If lbrol.Text = "AdministradorFEXPOBENI" Then
+                                    If lbrol.Text = "UsuarioCAMPOFERIAL" Then
                                         fexpobeni.Enabled = True
                                         redrubi.Enabled = False
                                         emfopesbe.Enabled = False
                                         postgrado.Enabled = False
+                                        registroF.Enabled = False
                                         SUPERADMIN.Enabled = False
                                     Else
+                                        If lbrol.Text = "AdministradorCAMPOFERIAL" Then
+                                            fexpobeni.Enabled = True
+                                            redrubi.Enabled = False
+                                            emfopesbe.Enabled = False
+                                            postgrado.Enabled = False
+                                            SUPERADMIN.Enabled = False
+                                        Else
+                                            MessageBox.Show("USAURIO INCORRECTO")
+                                            Me.Close()
+                                            frmLogin.Show()
+                                        End If
                                     End If
                                 End If
                             End If
