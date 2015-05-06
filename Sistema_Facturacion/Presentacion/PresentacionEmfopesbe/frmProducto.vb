@@ -370,6 +370,17 @@
 
     End Sub
 
+    Private Sub txtstock_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtstock.KeyPress
+        If Char.IsDigit(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+
+        End If
+    End Sub
+
     Private Sub txtstock_TextChanged(sender As Object, e As EventArgs) Handles txtstock.TextChanged
 
     End Sub
@@ -378,7 +389,7 @@
         If DirectCast(sender, TextBox).Text.Length > 0 Then
             Me.erroricono.SetError(sender, "")
         Else
-            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
+            Me.erroricono.SetError(sender, "ingrese el stock, ese dato es obligatorio")
         End If
     End Sub
 
@@ -451,6 +462,10 @@
     End Sub
 
     Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+
+    End Sub
+
+    Private Sub MaskedTextBox1_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs)
 
     End Sub
 End Class

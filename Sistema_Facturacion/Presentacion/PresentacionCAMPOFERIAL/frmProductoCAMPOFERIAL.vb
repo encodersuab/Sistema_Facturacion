@@ -31,7 +31,7 @@
         txtNombre.Text = ""
         txtdescripcion.Text = ""
         txtstock.Text = ""
-        txtprecio_compra.Text = ""
+        'txtprecio_compra.Text = ""
         txtprecio_venta.Text = ""
         txtIdproducto.Text = ""
         txtidcategoria.Text = ""
