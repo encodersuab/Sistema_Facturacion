@@ -163,7 +163,7 @@ Public Class fCategoria
                 Return False
             End If
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox("Ya Existen productos asociados con esta Categoria ")
             Return False
         End Try
     End Function

@@ -190,7 +190,7 @@
 
                         If func.eliminar(vdb) Then
                         Else
-                            MessageBox.Show("Categoria no fue eliminada", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+                            MessageBox.Show("Categoria no fue eliminada", "Eliminando registro", MessageBoxButtons.OK, MessageBoxIcon.Question)
                         End If
                     End If
                 Next
