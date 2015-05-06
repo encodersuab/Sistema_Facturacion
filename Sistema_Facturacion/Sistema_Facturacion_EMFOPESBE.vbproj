@@ -116,6 +116,7 @@
     <Compile Include="datos\DatosEmfopesbe\fVentaPlanilla.vb" />
     <Compile Include="datos\DatosEmfopesbe\fDetalleVentaPlanilla.vb" />
     <Compile Include="datos\DatosEmfopesbe\fHistorialProducto.vb" />
+    <Compile Include="datos\DatosEmfopesbe\Numaled.vb" />
     <Compile Include="datos\DatosPostGrado\fCategoriaPostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fClientePostGrado.vb" />
     <Compile Include="datos\DatosPostGrado\fDetalleVentaPlanillaPostGrado.vb" />

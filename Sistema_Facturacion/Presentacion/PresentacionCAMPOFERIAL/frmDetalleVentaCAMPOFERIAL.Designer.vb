@@ -69,6 +69,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
+        Me.lbSon = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,6 +95,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label8)
+        Me.GroupBox2.Controls.Add(Me.lbSon)
         Me.GroupBox2.Controls.Add(Me.lbdetalle)
         Me.GroupBox2.Controls.Add(Me.btnFinalizarVenta)
         Me.GroupBox2.Controls.Add(Me.Button2)
@@ -116,7 +120,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'lbdetalle
         '
         Me.lbdetalle.AutoSize = True
-        Me.lbdetalle.Location = New System.Drawing.Point(3, 384)
+        Me.lbdetalle.Location = New System.Drawing.Point(6, 384)
         Me.lbdetalle.Name = "lbdetalle"
         Me.lbdetalle.Size = New System.Drawing.Size(45, 13)
         Me.lbdetalle.TabIndex = 42
@@ -528,11 +532,29 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
+        'lbSon
+        '
+        Me.lbSon.AutoSize = True
+        Me.lbSon.Location = New System.Drawing.Point(43, 369)
+        Me.lbSon.Name = "lbSon"
+        Me.lbSon.Size = New System.Drawing.Size(39, 13)
+        Me.lbSon.TabIndex = 43
+        Me.lbSon.Text = "Label8"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(6, 369)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(33, 13)
+        Me.Label8.TabIndex = 44
+        Me.Label8.Text = "SON:"
+        '
         'frmDetalleVentaCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(973, 422)
+        Me.ClientSize = New System.Drawing.Size(972, 422)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox2)
@@ -599,4 +621,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
     Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
     Friend WithEvents lbdetalle As System.Windows.Forms.Label
+    Friend WithEvents lbSon As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
 End Class

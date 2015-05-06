@@ -54,7 +54,7 @@ Partial Class frmLogin
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox1.Location = New System.Drawing.Point(362, 69)
+        Me.GroupBox1.Location = New System.Drawing.Point(333, 78)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(306, 163)
         Me.GroupBox1.TabIndex = 1
@@ -97,6 +97,7 @@ Partial Class frmLogin
         'txtPassord
         '
         Me.txtPassord.BackColor = System.Drawing.Color.Silver
+        Me.txtPassord.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtPassord.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassord.ForeColor = System.Drawing.Color.Black
         Me.txtPassord.Location = New System.Drawing.Point(124, 60)
@@ -108,6 +109,7 @@ Partial Class frmLogin
         'txtLogin
         '
         Me.txtLogin.BackColor = System.Drawing.Color.Silver
+        Me.txtLogin.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLogin.ForeColor = System.Drawing.Color.Black
         Me.txtLogin.Location = New System.Drawing.Point(124, 28)
@@ -150,7 +152,7 @@ Partial Class frmLogin
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Franklin Gothic Demi", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(414, 21)
+        Me.Label3.Location = New System.Drawing.Point(372, 21)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(204, 21)
         Me.Label3.TabIndex = 2
@@ -160,7 +162,7 @@ Partial Class frmLogin
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Franklin Gothic Demi", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(393, 42)
+        Me.Label4.Location = New System.Drawing.Point(357, 42)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(246, 14)
         Me.Label4.TabIndex = 3
@@ -169,9 +171,9 @@ Partial Class frmLogin
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios___copia
-        Me.PictureBox1.Location = New System.Drawing.Point(2, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(-30, -20)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(385, 249)
+        Me.PictureBox1.Size = New System.Drawing.Size(457, 308)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
@@ -179,7 +181,7 @@ Partial Class frmLogin
         'lbidusuario
         '
         Me.lbidusuario.AutoSize = True
-        Me.lbidusuario.Location = New System.Drawing.Point(635, 100)
+        Me.lbidusuario.Location = New System.Drawing.Point(600, 62)
         Me.lbidusuario.Name = "lbidusuario"
         Me.lbidusuario.Size = New System.Drawing.Size(39, 13)
         Me.lbidusuario.TabIndex = 7
@@ -190,7 +192,7 @@ Partial Class frmLogin
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(691, 253)
+        Me.ClientSize = New System.Drawing.Size(651, 253)
         Me.Controls.Add(Me.lbidusuario)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
