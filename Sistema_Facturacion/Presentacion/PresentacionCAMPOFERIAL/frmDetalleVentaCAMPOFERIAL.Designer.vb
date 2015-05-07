@@ -27,6 +27,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtDD = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.lbdetalle = New System.Windows.Forms.Label()
         Me.btnFinalizarVenta = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -69,8 +70,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.lbSon = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lbliteral = New System.Windows.Forms.Label()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,7 +96,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Controls.Add(Me.lbSon)
+        Me.GroupBox2.Controls.Add(Me.lbliteral)
         Me.GroupBox2.Controls.Add(Me.lbdetalle)
         Me.GroupBox2.Controls.Add(Me.btnFinalizarVenta)
         Me.GroupBox2.Controls.Add(Me.Button2)
@@ -116,6 +116,15 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.GroupBox2.TabIndex = 9
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(6, 369)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(33, 13)
+        Me.Label8.TabIndex = 44
+        Me.Label8.Text = "SON:"
         '
         'lbdetalle
         '
@@ -258,7 +267,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.GroupBox1.Controls.Add(Me.lbmedida)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
-        Me.GroupBox1.Controls.Add(Me.txtStock)
         Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.txtnituab)
@@ -318,7 +326,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'txtStock
         '
         Me.txtStock.Enabled = False
-        Me.txtStock.Location = New System.Drawing.Point(16, 291)
+        Me.txtStock.Location = New System.Drawing.Point(1017, 46)
         Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
         Me.txtStock.Name = "txtStock"
         Me.txtStock.Size = New System.Drawing.Size(39, 20)
@@ -532,33 +540,24 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'lbSon
+        'lbliteral
         '
-        Me.lbSon.AutoSize = True
-        Me.lbSon.Location = New System.Drawing.Point(43, 369)
-        Me.lbSon.Name = "lbSon"
-        Me.lbSon.Size = New System.Drawing.Size(39, 13)
-        Me.lbSon.TabIndex = 43
-        Me.lbSon.Text = "Label8"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(6, 369)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(33, 13)
-        Me.Label8.TabIndex = 44
-        Me.Label8.Text = "SON:"
+        Me.lbliteral.AutoSize = True
+        Me.lbliteral.Location = New System.Drawing.Point(43, 369)
+        Me.lbliteral.Name = "lbliteral"
+        Me.lbliteral.Size = New System.Drawing.Size(0, 13)
+        Me.lbliteral.TabIndex = 43
         '
         'frmDetalleVentaCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(972, 422)
+        Me.ClientSize = New System.Drawing.Size(968, 422)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.txtStock)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmDetalleVentaCAMPOFERIAL"
@@ -621,6 +620,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
     Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
     Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
     Friend WithEvents lbdetalle As System.Windows.Forms.Label
-    Friend WithEvents lbSon As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents lbliteral As System.Windows.Forms.Label
 End Class

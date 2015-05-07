@@ -72,7 +72,7 @@ Partial Class frmUsuario
         Me.GroupBox2.Size = New System.Drawing.Size(532, 333)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Listado de Clientes"
+        Me.GroupBox2.Text = "Listado de Usuario"
         '
         'Inexistente
         '

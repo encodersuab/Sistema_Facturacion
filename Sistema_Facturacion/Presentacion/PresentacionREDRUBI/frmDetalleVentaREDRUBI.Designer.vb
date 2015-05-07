@@ -58,6 +58,7 @@ Partial Class frmDetalleVentaREDRUBI
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lbliteral = New System.Windows.Forms.Label()
         Me.lbdetalle = New System.Windows.Forms.Label()
         Me.btnFinalizarVenta = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -70,6 +71,7 @@ Partial Class frmDetalleVentaREDRUBI
         Me.btnquitar = New System.Windows.Forms.Button()
         Me.cbeliminar = New System.Windows.Forms.CheckBox()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
+        Me.Label13 = New System.Windows.Forms.Label()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -399,6 +401,8 @@ Partial Class frmDetalleVentaREDRUBI
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label13)
+        Me.GroupBox2.Controls.Add(Me.lbliteral)
         Me.GroupBox2.Controls.Add(Me.lbdetalle)
         Me.GroupBox2.Controls.Add(Me.btnFinalizarVenta)
         Me.GroupBox2.Controls.Add(Me.Button2)
@@ -418,6 +422,15 @@ Partial Class frmDetalleVentaREDRUBI
         Me.GroupBox2.TabIndex = 9
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
+        '
+        'lbliteral
+        '
+        Me.lbliteral.AutoSize = True
+        Me.lbliteral.Location = New System.Drawing.Point(47, 370)
+        Me.lbliteral.Name = "lbliteral"
+        Me.lbliteral.Size = New System.Drawing.Size(45, 13)
+        Me.lbliteral.TabIndex = 44
+        Me.lbliteral.Text = "Label13"
         '
         'lbdetalle
         '
@@ -536,6 +549,15 @@ Partial Class frmDetalleVentaREDRUBI
         Me.Inexistente.TabStop = True
         Me.Inexistente.Text = "Datos Inexistentes"
         '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(12, 370)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(39, 13)
+        Me.Label13.TabIndex = 47
+        Me.Label13.Text = "SON : "
+        '
         'frmDetalleVentaREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -610,4 +632,6 @@ Partial Class frmDetalleVentaREDRUBI
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents lbdetalle As System.Windows.Forms.Label
+    Friend WithEvents lbliteral As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
 End Class

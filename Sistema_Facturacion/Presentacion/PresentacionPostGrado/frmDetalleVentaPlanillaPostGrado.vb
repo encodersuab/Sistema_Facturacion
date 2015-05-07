@@ -117,6 +117,7 @@ Public Class frmDetalleVentaplanillaPostGrado
                         MessageBox.Show("articulo añadido correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         mostrarDVPlanilla()
                         txttotal.Text = sumar().ToString
+                        lbliteral.Text = Numalet.ToCardinal(CDbl(txttotal.Text)).ToString
                         limpiar()
                     Else
                         MessageBox.Show("articulo no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -359,6 +360,10 @@ Public Class frmDetalleVentaplanillaPostGrado
     End Sub
 
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles lbliteral.Click
 
     End Sub
 End Class

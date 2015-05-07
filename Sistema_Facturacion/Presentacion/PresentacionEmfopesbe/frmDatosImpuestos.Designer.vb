@@ -180,7 +180,7 @@ Partial Class frmDatosImpuestos
         Me.GroupBox2.Size = New System.Drawing.Size(455, 167)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Listado de articulos de Venta"
+        Me.GroupBox2.Text = "Listado de Datos de Impuestos"
         '
         'txttotal
         '

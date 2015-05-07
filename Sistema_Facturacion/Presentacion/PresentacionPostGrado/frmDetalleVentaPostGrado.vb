@@ -161,6 +161,7 @@ Public Class frmDetalleVentaPostGrado
                         MessageBox.Show("Cuota registrada correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         mostrar()
                         txttotal.Text = sumar().ToString
+                        lbliteral.Text = Numalet.ToCardinal(CDbl(txttotal.Text)).ToString
                         limpiar()
                     Else
                         MessageBox.Show("Cuota no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -363,6 +364,7 @@ Public Class frmDetalleVentaPostGrado
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFinalizarVenta.Click
         txttotal.Text = sumar().ToString
+        lbliteral.Text = Numalet.ToCardinal(CDbl(txttotal.Text)).ToString
         If txttotal.Text = 0 Then
             MessageBox.Show("SELECCIONAR ARTICULOS")
         Else
@@ -401,6 +403,8 @@ Public Class frmDetalleVentaPostGrado
                 dts.gimagen = ms.GetBuffer
                 dts.gIdVenta = txtIdVenta.Text
                 dts.gvalidez = "V"
+                dts.gliteral = lbliteral.text
+
                 ''''''''
                 If func.insertar(dts) Then
                     frmReporteFactura.txtnumfactura.Text = aux
@@ -588,5 +592,13 @@ Public Class frmDetalleVentaPostGrado
         frmReporteCuotas.txtci.Text = txtNumDoc.Text
         '   frmReporteCuotas.MdiParent = frmInicioF
         frmReporteCuotas.Show()
+    End Sub
+
+    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+
+    End Sub
+
+    Private Sub lbliteral_Click(sender As Object, e As EventArgs) Handles lbliteral.Click
+
     End Sub
 End Class

@@ -158,6 +158,7 @@ Public Class frmDetalleVentaREDRUBI
                         MessageBox.Show("articulo añadido correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         mostrar()
                         txttotal.Text = sumar().ToString
+                        lbliteral.Text = Numalet.ToCardinal(CDbl(txttotal.Text)).ToString
                         limpiar()
                     Else
                         MessageBox.Show("articulo no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -364,6 +365,7 @@ Public Class frmDetalleVentaREDRUBI
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFinalizarVenta.Click
         txttotal.Text = sumar().ToString
+        lbliteral.Text = Numalet.ToCardinal(CDbl(txttotal.Text)).ToString
         If txttotal.Text = 0 Then
             MessageBox.Show("SELECCIONAR ARTICULOS")
         Else
@@ -402,6 +404,7 @@ Public Class frmDetalleVentaREDRUBI
                 dts.gimagen = ms.GetBuffer
                 dts.gIdVenta = txtIdVenta.Text
                 dts.gvalidez = "V"
+                dts.gliteral = lbliteral.Text
                 ''''''''
                 If func.insertar(dts) Then
                     frmReporteFactura.txtnumfactura.Text = aux

@@ -117,6 +117,7 @@ Public Class frmDetalleVentaplanilla
                     dtsp.gvalidez = "V"
                     dtsp.gdetalle = lbdetalle.Text
 
+
                     '''''''''''''''''''''''''''''''''''''''''''
                     Dim ms As New IO.MemoryStream()
                     '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -126,6 +127,7 @@ Public Class frmDetalleVentaplanilla
                         MessageBox.Show("articulo añadido correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         mostrarDVPlanilla()
                         txttotal.Text = sumar().ToString
+                        lbliteral.Text = Numalet.ToCardinal(CDbl(txttotal.Text)).ToString
                         limpiar()
                     Else
                         MessageBox.Show("articulo no registrada", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)

@@ -159,7 +159,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
                         MessageBox.Show("articulo añadido correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         mostrar()
                         txttotal.Text = sumar().ToString
-                        lbSon.Text = Numalet.ToCardinal(CDbl(txttotal.Text)).ToString
+                        lbliteral.Text = Numalet.ToCardinal(CDbl(txttotal.Text)).ToString
                         'lbSon.Text = Num2Text(CDbl(txttotal.Text)).ToString
                         limpiar()
                     Else
@@ -461,6 +461,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFinalizarVenta.Click
         txttotal.Text = sumar().ToString
+        lbliteral.Text = Numalet.ToCardinal(CDbl(txttotal.Text)).ToString
         If txttotal.Text = 0 Then
             MessageBox.Show("SELECCIONAR ARTICULOS")
         Else
@@ -499,6 +500,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
                 dts.gimagen = ms.GetBuffer
                 dts.gIdVenta = txtIdVenta.Text
                 dts.gvalidez = "V"
+                dts.gliteral = lbliteral.Text
                 ''''''''
                 If func.insertar(dts) Then
                     frmReporteFactura.txtnumfactura.Text = aux

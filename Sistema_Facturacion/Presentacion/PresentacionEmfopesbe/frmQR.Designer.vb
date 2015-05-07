@@ -71,7 +71,7 @@ Partial Class frmQR
         Me.GroupBox2.Size = New System.Drawing.Size(557, 345)
         Me.GroupBox2.TabIndex = 7
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Listado de Datos Impuestos"
+        Me.GroupBox2.Text = "Listado de Facturas Emitidas"
         '
         'txtBuscar
         '

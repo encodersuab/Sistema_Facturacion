@@ -74,6 +74,7 @@ Public Class fQr
             cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
             cmd.Parameters.AddWithValue("@IdVenta", dts.gIdVenta)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
+            cmd.Parameters.AddWithValue("@literal", dts.gliteral)
 
             If cmd.ExecuteNonQuery Then
                 Return True

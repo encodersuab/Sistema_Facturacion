@@ -58,6 +58,8 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lbliteral = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.lbdetalle = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
@@ -417,6 +419,8 @@ Partial Class frmDetalleVentaplanillaPostGrado
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.lbliteral)
+        Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.lbdetalle)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
@@ -437,6 +441,23 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
+        'lbliteral
+        '
+        Me.lbliteral.AutoSize = True
+        Me.lbliteral.Location = New System.Drawing.Point(58, 354)
+        Me.lbliteral.Name = "lbliteral"
+        Me.lbliteral.Size = New System.Drawing.Size(0, 13)
+        Me.lbliteral.TabIndex = 43
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(7, 354)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(36, 13)
+        Me.Label13.TabIndex = 42
+        Me.Label13.Text = "SON: "
+        '
         'lbdetalle
         '
         Me.lbdetalle.AutoSize = True
@@ -448,7 +469,7 @@ Partial Class frmDetalleVentaplanillaPostGrado
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(381, 319)
+        Me.Button1.Location = New System.Drawing.Point(381, 311)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(161, 52)
         Me.Button1.TabIndex = 40
@@ -488,7 +509,7 @@ Partial Class frmDetalleVentaplanillaPostGrado
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(187, 339)
+        Me.Label11.Location = New System.Drawing.Point(187, 331)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(71, 13)
         Me.Label11.TabIndex = 35
@@ -498,7 +519,7 @@ Partial Class frmDetalleVentaplanillaPostGrado
         '
         Me.txttotal.Enabled = False
         Me.txttotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txttotal.Location = New System.Drawing.Point(264, 328)
+        Me.txttotal.Location = New System.Drawing.Point(264, 320)
         Me.txttotal.Name = "txttotal"
         Me.txttotal.Size = New System.Drawing.Size(100, 29)
         Me.txttotal.TabIndex = 34
@@ -589,4 +610,6 @@ Partial Class frmDetalleVentaplanillaPostGrado
     Friend WithEvents btnquitar As System.Windows.Forms.Button
     Friend WithEvents cbeliminar As System.Windows.Forms.CheckBox
     Friend WithEvents lbdetalle As System.Windows.Forms.Label
+    Friend WithEvents lbliteral As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
 End Class
