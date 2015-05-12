@@ -151,7 +151,6 @@ Partial Class frmDetalleVentaplanillaPostGrado
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(139, 20)
         Me.txtCantidad.TabIndex = 28
-        Me.txtCantidad.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'GroupBox1
         '

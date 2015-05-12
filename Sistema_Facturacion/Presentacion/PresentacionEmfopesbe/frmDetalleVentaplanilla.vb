@@ -37,7 +37,7 @@ Public Class frmDetalleVentaplanilla
         txtNombreProducto.Text = ""
         txtPrecioUnitario.Text = ""
         txtCantidad.Text = 0
-        txtStock.Text = 0
+        'txtStock.Text = 0
 
 
 

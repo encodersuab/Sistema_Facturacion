@@ -285,20 +285,20 @@ Public Class frmDetalleVentaplanillaPostGrado
     End Sub
 
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
-        Dim cant As Double
-        cant = txtCantidad.Text
-        If txtCantidad.Text >= txtncuota.Value Then
-            MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
+        'Dim cant As Double
+        'cant = txtCantidad.Text
+        If txtCantidad.Text < 0 Then
+            MessageBox.Show("La cantidad que intenta vender no es la correcta", "Error al vender")
             'btnGuardar.Visible = 0
-            txtCantidad.Text = txtncuota.Value
+            txtCantidad.Text = 0
         Else
-            btnGuardar.Visible = 1
+            '    btnGuardar.Visible = 1
         End If
-        'If txtCantidad.Text = 0 Then
-        '    btnGuardar.Visible = 0
-        'Else
-        '    btnGuardar.Visible = 1
-        'End If
+        ''If txtCantidad.Text = 0 Then
+        ''    btnGuardar.Visible = 0
+        ''Else
+        ''    btnGuardar.Visible = 1
+        ''End If
 
     End Sub
 
@@ -365,6 +365,14 @@ Public Class frmDetalleVentaplanillaPostGrado
     End Sub
 
     Private Sub Label14_Click(sender As Object, e As EventArgs) Handles lbliteral.Click
+
+    End Sub
+
+    Private Sub txtidCliente_TextChanged(sender As Object, e As EventArgs) Handles txtidCliente.TextChanged
+
+    End Sub
+
+    Private Sub txtNombreCLiente_TextChanged(sender As Object, e As EventArgs) Handles txtNombreCLiente.TextChanged
 
     End Sub
 End Class

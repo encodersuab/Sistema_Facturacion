@@ -288,4 +288,11 @@
     End Sub
 
 
+    Private Sub txtidCliente_TextChanged(sender As Object, e As EventArgs) Handles txtidCliente.TextChanged
+
+    End Sub
+
+    Private Sub txtNombreCLiente_TextChanged(sender As Object, e As EventArgs) Handles txtNombreCLiente.TextChanged
+
+    End Sub
 End Class
