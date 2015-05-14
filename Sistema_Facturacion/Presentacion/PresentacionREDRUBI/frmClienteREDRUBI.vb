@@ -178,6 +178,7 @@
                 dts.gdireccion = txtDireccion.Text
                 dts.gtelefono = txtTelefono.Text
                 dts.gci = txtCi.Text
+                dts.gfuncionario = "---"
 
                 If func.insertar(dts) Then
                     MessageBox.Show("cliente registrado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)

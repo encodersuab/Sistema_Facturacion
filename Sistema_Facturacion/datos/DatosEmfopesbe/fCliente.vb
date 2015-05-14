@@ -65,6 +65,7 @@ Public Class fCliente
             cmd.Parameters.AddWithValue("@direccion", dts.gdireccion)
             cmd.Parameters.AddWithValue("@telefono", dts.gtelefono)
             cmd.Parameters.AddWithValue("@ci", dts.gci)
+            cmd.Parameters.AddWithValue("@funcionario", dts.gfuncionario)
 
             If cmd.ExecuteNonQuery Then
                 Return True

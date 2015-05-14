@@ -1,7 +1,7 @@
 ﻿Public Class vCliente
 
     Dim idcliente As Integer
-    Dim nombre, apellidos, direccion, telefono, ci As String
+    Dim nombre, apellidos, direccion, telefono, ci, funcionario As String
 
     Public Property gicliente
         Get
@@ -56,18 +56,26 @@
             ci = value
         End Set
     End Property
-
+    Public Property gfuncionario
+        Get
+            Return funcionario
+        End Get
+        Set(ByVal value)
+            funcionario = value
+        End Set
+    End Property
     Public Sub New()
 
     End Sub
 
-    Public Sub New(ByVal idcliente As Integer, ByVal nombre As String, ByVal apellidos As String, ByVal direccion As String, ByVal telefono As String, ByVal ci As String)
+    Public Sub New(ByVal idcliente As Integer, ByVal nombre As String, ByVal apellidos As String, ByVal direccion As String, ByVal telefono As String, ByVal ci As String, ByVal funcionario As String)
         gicliente = idcliente
         gnombre = nombre
         gapellidos = apellidos
         gdireccion = direccion
         gtelefono = telefono
         gci = ci
+        gfuncionario = funcionario
     End Sub
 
 End Class
