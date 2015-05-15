@@ -33,6 +33,8 @@ Partial Class frmrptVentas
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.mostrar_venta_porFechaTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFechaTableAdapter()
+        Me.cbfuncionario = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.mostrar_venta_porFechaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -83,7 +85,7 @@ Partial Class frmrptVentas
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(567, 26)
+        Me.Button1.Location = New System.Drawing.Point(749, 26)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 39)
         Me.Button1.TabIndex = 4
@@ -105,11 +107,31 @@ Partial Class frmrptVentas
         '
         Me.mostrar_venta_porFechaTableAdapter.ClearBeforeFill = True
         '
+        'cbfuncionario
+        '
+        Me.cbfuncionario.FormattingEnabled = True
+        Me.cbfuncionario.Items.AddRange(New Object() {"UAB", "---"})
+        Me.cbfuncionario.Location = New System.Drawing.Point(607, 31)
+        Me.cbfuncionario.Name = "cbfuncionario"
+        Me.cbfuncionario.Size = New System.Drawing.Size(121, 21)
+        Me.cbfuncionario.TabIndex = 6
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(539, 39)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(62, 13)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Funcionario"
+        '
         'frmrptVentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1018, 587)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.cbfuncionario)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
@@ -133,4 +155,6 @@ Partial Class frmrptVentas
     Friend WithEvents mostrar_venta_porFechaBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents dbfacDataSet As Sistema_Facturacion.dbfacDataSet
     Friend WithEvents mostrar_venta_porFechaTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFechaTableAdapter
+    Friend WithEvents cbfuncionario As System.Windows.Forms.ComboBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -144,9 +144,6 @@
     <Compile Include="dbfacDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>dbfacDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dbfacDataSet.vb">
       <DependentUpon>dbfacDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Logica\LogicaCAMPOFERIAL\vCategoriaCAMPOFERIAL.vb" />
@@ -448,6 +445,12 @@
     <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes Campo Ferial\frmReporteVentasFechaCampoFerial.Designer.vb">
+      <DependentUpon>frmReporteVentasFechaCampoFerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Campo Ferial\frmReporteVentasFechaCampoFerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCuotas.Designer.vb">
       <DependentUpon>frmReporteCuotas.vb</DependentUpon>
     </Compile>
@@ -639,6 +642,11 @@
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.resx">
       <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\frmReporteVentasFechaCampoFerial.resx">
+      <DependentUpon>frmReporteVentasFechaCampoFerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\Report1.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptVentasFechaCampoFerial.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCatergotria.resx">
       <DependentUpon>frmReporteCatergotria.vb</DependentUpon>
     </EmbeddedResource>
@@ -750,6 +758,10 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\Reportes Post Grado\" />
+    <Folder Include="Reportes\Reportes RedRubi\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

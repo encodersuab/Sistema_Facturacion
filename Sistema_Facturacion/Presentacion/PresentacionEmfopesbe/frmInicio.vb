@@ -326,8 +326,7 @@ Public Class frmInicioF
 
 
     Private Sub RptVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RptVentaToolStripMenuItem.Click
-        frmrptVentas.MdiParent = Me
-        frmrptVentas.Show()
+       
     End Sub
 
     Private Sub reporteF_Click(sender As Object, e As EventArgs) Handles reporteF.Click
@@ -446,5 +445,10 @@ Public Class frmInicioF
 
     Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
 
+    End Sub
+
+    Private Sub ReporteDeVentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteDeVentasToolStripMenuItem.Click
+        frmrptVentas.MdiParent = Me
+        frmrptVentas.Show()
     End Sub
 End Class

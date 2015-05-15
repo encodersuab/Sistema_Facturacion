@@ -6,110 +6,7 @@ Sistema_Facturacion
 </name>
 </assembly>
 <members>
-<member name="P:Sistema_Facturacion.My.Resources.Resources.ResourceManager">
-	<summary>
-  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.Culture">
-	<summary>
-  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
-  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.descarga__1_">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.descarga__3_">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.descarga__4_">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios___copia">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios1">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios2">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios3">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.images__3_">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.slider3">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.Unitag_QRCode_1426797072421">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.ventas_online">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="T:Sistema_Facturacion.My.Resources.Resources">
-	<summary>
-  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
-</summary>
-</member><member name="P:Sistema_Facturacion.Numalet.Decimales">
-	<summary>
- Indica la cantidad de decimales que se pasarán a entero para la conversión
- </summary>
-	<remarks>Esta propiedad cambia al cambiar MascaraDecimal por un valor que empieze con '0'</remarks>
-</member><member name="P:Sistema_Facturacion.Numalet.CultureInfo">
-	<summary>
- Objeto CultureInfo utilizado para convertir las cadenas de entrada en números
- </summary>
-</member><member name="P:Sistema_Facturacion.Numalet.SeparadorDecimalSalida">
-	<summary>
- Indica la cadena a intercalar entre la parte entera y la decimal del número
- </summary>
-</member><member name="P:Sistema_Facturacion.Numalet.MascaraSalidaDecimal">
-	<summary>
- Indica el formato que se le dara a la parte decimal del número
- </summary>
-</member><member name="P:Sistema_Facturacion.Numalet.LetraCapital">
-	<summary>
- Indica si la primera letra del resultado debe estár en mayúscula
- </summary>
-</member><member name="P:Sistema_Facturacion.Numalet.ConvertirDecimales">
-	<summary>
- Indica si se deben convertir los decimales a su expresión nominal
- </summary>
-</member><member name="P:Sistema_Facturacion.Numalet.ApocoparUnoParteEntera">
-	<summary>
- Indica si de debe cambiar "uno" por "un" en las unidades.
- </summary>
-</member><member name="P:Sistema_Facturacion.Numalet.ApocoparUnoParteDecimal">
-	<summary>
- Determina si se debe apococopar el "uno" en la parte decimal
- </summary>
-	<remarks>El valor de esta propiedad cambia al setear ConvertirDecimales</remarks>
-</member><member name="T:Sistema_Facturacion.Numalet">
-	<summary>
- Convierte números en su expresión numérica a su numeral cardinal
- </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.TCategoriaDataTable">
+<member name="T:Sistema_Facturacion.dbfacDataSet.TCategoriaDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -122,6 +19,10 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.TDetalleVentaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.THistorialProductoDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -229,6 +130,10 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_reciboDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_ultimo_qrDataTable">
 	<summary>
 Represents the strongly named DataTable class.
@@ -241,7 +146,15 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_campoferialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_planillaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_planilla_estadoDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -249,11 +162,35 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_campoferialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_emfopesbeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_postgradoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_redrubiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_postgradoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_redrubiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.validar_usuarioDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_reciboDataTable">
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.validar_usuario_idusuarioDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -270,6 +207,10 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.TDetalleVentaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.THistorialProductoRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -377,6 +318,10 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_reciboRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_ultimo_qrRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -389,7 +334,15 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_campoferialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_planillaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_planilla_estadoRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -397,11 +350,35 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_campoferialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_emfopesbeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_postgradoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_redrubiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_postgradoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_redrubiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.validar_usuarioRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_reciboRow">
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.validar_usuario_idusuarioRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -418,6 +395,10 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.TDetalleVentaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.THistorialProductoRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -525,6 +506,10 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_reciboRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_ultimo_qrRowChangeEvent">
 	<summary>
 Row event argument class
@@ -537,7 +522,15 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_campoferialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_planillaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_planilla_estadoRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -545,11 +538,35 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_campoferialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_emfopesbeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_postgradoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_redrubiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_postgradoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_redrubiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.validar_usuarioRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_reciboRowChangeEvent">
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.validar_usuario_idusuarioRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -570,6 +587,10 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.TDetalleVentaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.THistorialProductoTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -677,6 +698,10 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_reciboTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_ultimo_qrTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
@@ -689,7 +714,15 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_campoferialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_planillaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_planilla_estadoTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -697,11 +730,35 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_campoferialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_emfopesbeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_postgradoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_redrubiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_postgradoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_redrubiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.validar_usuarioTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_reciboTableAdapter">
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.validar_usuario_idusuarioTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -741,6 +798,109 @@ Used to sort self-referenced table's rows
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.descarga__1_">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.descarga__3_">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.descarga__4_">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios___copia">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios1">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios2">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios3">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.images__3_">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.slider3">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.Unitag_QRCode_1426797072421">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.ventas_online">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Sistema_Facturacion.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="P:Sistema_Facturacion.Numalet.Decimales">
+	<summary>
+ Indica la cantidad de decimales que se pasarán a entero para la conversión
+ </summary>
+	<remarks>Esta propiedad cambia al cambiar MascaraDecimal por un valor que empieze con '0'</remarks>
+</member><member name="P:Sistema_Facturacion.Numalet.CultureInfo">
+	<summary>
+ Objeto CultureInfo utilizado para convertir las cadenas de entrada en números
+ </summary>
+</member><member name="P:Sistema_Facturacion.Numalet.SeparadorDecimalSalida">
+	<summary>
+ Indica la cadena a intercalar entre la parte entera y la decimal del número
+ </summary>
+</member><member name="P:Sistema_Facturacion.Numalet.MascaraSalidaDecimal">
+	<summary>
+ Indica el formato que se le dara a la parte decimal del número
+ </summary>
+</member><member name="P:Sistema_Facturacion.Numalet.LetraCapital">
+	<summary>
+ Indica si la primera letra del resultado debe estár en mayúscula
+ </summary>
+</member><member name="P:Sistema_Facturacion.Numalet.ConvertirDecimales">
+	<summary>
+ Indica si se deben convertir los decimales a su expresión nominal
+ </summary>
+</member><member name="P:Sistema_Facturacion.Numalet.ApocoparUnoParteEntera">
+	<summary>
+ Indica si de debe cambiar "uno" por "un" en las unidades.
+ </summary>
+</member><member name="P:Sistema_Facturacion.Numalet.ApocoparUnoParteDecimal">
+	<summary>
+ Determina si se debe apococopar el "uno" en la parte decimal
+ </summary>
+	<remarks>El valor de esta propiedad cambia al setear ConvertirDecimales</remarks>
+</member><member name="T:Sistema_Facturacion.Numalet">
+	<summary>
+ Convierte números en su expresión numérica a su numeral cardinal
+ </summary>
 </member>
 </members>
 </doc>
