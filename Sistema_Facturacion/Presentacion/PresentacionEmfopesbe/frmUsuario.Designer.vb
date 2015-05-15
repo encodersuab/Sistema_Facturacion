@@ -157,7 +157,7 @@ Partial Class frmUsuario
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(73, 227)
+        Me.Label10.Location = New System.Drawing.Point(52, 232)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(43, 13)
         Me.Label10.TabIndex = 24
@@ -166,7 +166,7 @@ Partial Class frmUsuario
         'txtAcceso
         '
         Me.txtAcceso.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtAcceso.Location = New System.Drawing.Point(133, 224)
+        Me.txtAcceso.Location = New System.Drawing.Point(112, 229)
         Me.txtAcceso.Name = "txtAcceso"
         Me.txtAcceso.Size = New System.Drawing.Size(140, 20)
         Me.txtAcceso.TabIndex = 23
@@ -175,7 +175,7 @@ Partial Class frmUsuario
         '
         Me.txtRol.FormattingEnabled = True
         Me.txtRol.Items.AddRange(New Object() {"AdministradorEMFOPESBE", "UsuarioEMFOPESBE", "AdministradorREDRUBI", "UsuarioREDRUBI", "AdministradorPOSGRADO", "UsuarioPOSGRADO", "AdministradorFEXPOBENI", "UsuarioFEXPOBENI"})
-        Me.txtRol.Location = New System.Drawing.Point(132, 249)
+        Me.txtRol.Location = New System.Drawing.Point(111, 254)
         Me.txtRol.Name = "txtRol"
         Me.txtRol.Size = New System.Drawing.Size(141, 21)
         Me.txtRol.TabIndex = 22
@@ -184,7 +184,7 @@ Partial Class frmUsuario
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(93, 255)
+        Me.Label9.Location = New System.Drawing.Point(72, 260)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(23, 13)
         Me.Label9.TabIndex = 21
@@ -193,7 +193,7 @@ Partial Class frmUsuario
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(53, 202)
+        Me.Label8.Location = New System.Drawing.Point(32, 207)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(62, 13)
         Me.Label8.TabIndex = 19
@@ -202,7 +202,7 @@ Partial Class frmUsuario
         'txtContraceña
         '
         Me.txtContraceña.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtContraceña.Location = New System.Drawing.Point(132, 199)
+        Me.txtContraceña.Location = New System.Drawing.Point(111, 204)
         Me.txtContraceña.Name = "txtContraceña"
         Me.txtContraceña.Size = New System.Drawing.Size(140, 20)
         Me.txtContraceña.TabIndex = 18
@@ -210,7 +210,7 @@ Partial Class frmUsuario
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(82, 176)
+        Me.Label7.Location = New System.Drawing.Point(61, 181)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(33, 13)
         Me.Label7.TabIndex = 17
@@ -219,7 +219,7 @@ Partial Class frmUsuario
         'txtLogin
         '
         Me.txtLogin.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtLogin.Location = New System.Drawing.Point(132, 173)
+        Me.txtLogin.Location = New System.Drawing.Point(111, 178)
         Me.txtLogin.Name = "txtLogin"
         Me.txtLogin.Size = New System.Drawing.Size(140, 20)
         Me.txtLogin.TabIndex = 16
@@ -263,7 +263,7 @@ Partial Class frmUsuario
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(99, 98)
+        Me.Label6.Location = New System.Drawing.Point(78, 103)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(16, 13)
         Me.Label6.TabIndex = 11
@@ -272,7 +272,7 @@ Partial Class frmUsuario
         'txtCi
         '
         Me.txtCi.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtCi.Location = New System.Drawing.Point(133, 95)
+        Me.txtCi.Location = New System.Drawing.Point(112, 100)
         Me.txtCi.Name = "txtCi"
         Me.txtCi.Size = New System.Drawing.Size(140, 20)
         Me.txtCi.TabIndex = 10
@@ -280,7 +280,7 @@ Partial Class frmUsuario
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(66, 150)
+        Me.Label5.Location = New System.Drawing.Point(45, 155)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(49, 13)
         Me.Label5.TabIndex = 9
@@ -289,7 +289,7 @@ Partial Class frmUsuario
         'txtTelefono
         '
         Me.txtTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtTelefono.Location = New System.Drawing.Point(132, 147)
+        Me.txtTelefono.Location = New System.Drawing.Point(111, 152)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(140, 20)
         Me.txtTelefono.TabIndex = 8
@@ -297,7 +297,7 @@ Partial Class frmUsuario
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(63, 124)
+        Me.Label4.Location = New System.Drawing.Point(42, 129)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(52, 13)
         Me.Label4.TabIndex = 7
@@ -306,7 +306,7 @@ Partial Class frmUsuario
         'txtDireccion
         '
         Me.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtDireccion.Location = New System.Drawing.Point(132, 121)
+        Me.txtDireccion.Location = New System.Drawing.Point(111, 126)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(140, 20)
         Me.txtDireccion.TabIndex = 6
@@ -314,7 +314,7 @@ Partial Class frmUsuario
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(66, 72)
+        Me.Label3.Location = New System.Drawing.Point(45, 77)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(49, 13)
         Me.Label3.TabIndex = 5
@@ -323,7 +323,7 @@ Partial Class frmUsuario
         'txtApellido
         '
         Me.txtApellido.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtApellido.Location = New System.Drawing.Point(133, 69)
+        Me.txtApellido.Location = New System.Drawing.Point(112, 74)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(140, 20)
         Me.txtApellido.TabIndex = 4
@@ -331,7 +331,7 @@ Partial Class frmUsuario
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(71, 46)
+        Me.Label2.Location = New System.Drawing.Point(50, 51)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 13)
         Me.Label2.TabIndex = 3
@@ -340,7 +340,7 @@ Partial Class frmUsuario
         'txtNombre
         '
         Me.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtNombre.Location = New System.Drawing.Point(133, 43)
+        Me.txtNombre.Location = New System.Drawing.Point(112, 48)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(140, 20)
         Me.txtNombre.TabIndex = 2
@@ -348,7 +348,7 @@ Partial Class frmUsuario
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(67, 20)
+        Me.Label1.Location = New System.Drawing.Point(46, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(48, 13)
         Me.Label1.TabIndex = 1
@@ -358,7 +358,7 @@ Partial Class frmUsuario
         '
         Me.txtIdUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtIdUsuario.Enabled = False
-        Me.txtIdUsuario.Location = New System.Drawing.Point(133, 17)
+        Me.txtIdUsuario.Location = New System.Drawing.Point(112, 22)
         Me.txtIdUsuario.Name = "txtIdUsuario"
         Me.txtIdUsuario.Size = New System.Drawing.Size(140, 20)
         Me.txtIdUsuario.TabIndex = 0
