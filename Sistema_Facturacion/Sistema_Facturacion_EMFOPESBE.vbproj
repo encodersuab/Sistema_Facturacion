@@ -454,10 +454,10 @@
     <Compile Include="Reportes\Reportes Campo Ferial\frmReporteXclienteCAMPOFERIAL.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCuotas.Designer.vb">
+    <Compile Include="Reportes\Reportes PostGrado\frmReporteCuotas.Designer.vb">
       <DependentUpon>frmReporteCuotas.vb</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCuotas.vb">
+    <Compile Include="Reportes\Reportes PostGrado\frmReporteCuotas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentasGeneral.Designer.vb">
@@ -472,34 +472,16 @@
     <Compile Include="Reportes\ReportesEmfopesbe\frmrptVentas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCatergotria.Designer.vb">
-      <DependentUpon>frmReporteCatergotria.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCatergotria.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCliente.Designer.vb">
-      <DependentUpon>frmReporteCliente.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCliente.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteFactura.Designer.vb">
+    <Compile Include="Reportes\Reportes Generales\frmReporteFactura.Designer.vb">
       <DependentUpon>frmReporteFactura.vb</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteFactura.vb">
+    <Compile Include="Reportes\Reportes Generales\frmReporteFactura.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteProductos.Designer.vb">
-      <DependentUpon>frmReporteProductos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteProductos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteUsuarios.Designer.vb">
+    <Compile Include="Reportes\Reportes Generales\frmReporteUsuarios.Designer.vb">
       <DependentUpon>frmReporteUsuarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteUsuarios.vb">
+    <Compile Include="Reportes\Reportes Generales\frmReporteUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentasPlanillas.Designer.vb">
@@ -508,10 +490,10 @@
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentasPlanillas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmrptReImpresionFactura.Designer.vb">
+    <Compile Include="Reportes\Reportes Generales\frmrptReImpresionFactura.Designer.vb">
       <DependentUpon>frmrptReImpresionFactura.vb</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmrptReImpresionFactura.vb">
+    <Compile Include="Reportes\Reportes Generales\frmrptReImpresionFactura.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -649,22 +631,13 @@
       <DependentUpon>frmReporteXclienteCAMPOFERIAL.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptReporteVentasXClienteCAMPOFERIAL.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCatergotria.resx">
-      <DependentUpon>frmReporteCatergotria.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCliente.resx">
-      <DependentUpon>frmReporteCliente.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCuotas.resx">
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteCuotas.resx">
       <DependentUpon>frmReporteCuotas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteFactura.resx">
+    <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteFactura.resx">
       <DependentUpon>frmReporteFactura.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteProductos.resx">
-      <DependentUpon>frmReporteProductos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteUsuarios.resx">
+    <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteUsuarios.resx">
       <DependentUpon>frmReporteUsuarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentasGeneral.resx">
@@ -676,18 +649,14 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmrptVentas.resx">
       <DependentUpon>frmrptVentas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\ReporteCuotas.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\ReporteFactura.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptcategoria.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptFactura.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptProducto.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptcliente.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmrptReImpresionFactura.resx">
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptCuotas.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptFactura.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\frmrptReImpresionFactura.resx">
       <DependentUpon>frmrptReImpresionFactura.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReporte VentasXFecha.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptreporte.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptUsuarios.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptreporte.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptUsuarios.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentasGeneral.rdlc" />
   </ItemGroup>
   <ItemGroup>
@@ -760,6 +729,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\Reportes RedRubi\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

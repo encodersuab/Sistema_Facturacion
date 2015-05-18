@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmReporteProductos
+Partial Class frmrptReImpresionFactura
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -24,55 +24,67 @@ Partial Class frmReporteProductos
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.mostrar_facturaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
-        Me.mostrar_producto_emfopesbeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.mostrar_producto_emfopesbeTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_producto_emfopesbeTableAdapter()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.txtNumFactura = New System.Windows.Forms.TextBox()
+        Me.mostrar_facturaTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_facturaTableAdapter()
+        CType(Me.mostrar_facturaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.mostrar_producto_emfopesbeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ReportViewer1
+        'mostrar_facturaBindingSource
         '
-        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
-        ReportDataSource1.Name = "DataSet1"
-        ReportDataSource1.Value = Me.mostrar_producto_emfopesbeBindingSource
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptProducto.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
-        Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(899, 442)
-        Me.ReportViewer1.TabIndex = 0
+        Me.mostrar_facturaBindingSource.DataMember = "mostrar_factura"
+        Me.mostrar_facturaBindingSource.DataSource = Me.dbfacDataSet
         '
         'dbfacDataSet
         '
         Me.dbfacDataSet.DataSetName = "dbfacDataSet"
         Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'mostrar_producto_emfopesbeBindingSource
+        'ReportViewer1
         '
-        Me.mostrar_producto_emfopesbeBindingSource.DataMember = "mostrar_producto_emfopesbe"
-        Me.mostrar_producto_emfopesbeBindingSource.DataSource = Me.dbfacDataSet
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+        ReportDataSource1.Name = "DataSet1"
+        ReportDataSource1.Value = Me.mostrar_facturaBindingSource
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptFactura.rdlc"
+        Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.Size = New System.Drawing.Size(712, 441)
+        Me.ReportViewer1.TabIndex = 0
         '
-        'mostrar_producto_emfopesbeTableAdapter
+        'txtNumFactura
         '
-        Me.mostrar_producto_emfopesbeTableAdapter.ClearBeforeFill = True
+        Me.txtNumFactura.Location = New System.Drawing.Point(29, 32)
+        Me.txtNumFactura.Name = "txtNumFactura"
+        Me.txtNumFactura.Size = New System.Drawing.Size(100, 20)
+        Me.txtNumFactura.TabIndex = 2
+        Me.txtNumFactura.Visible = False
         '
-        'frmReporteProductos
+        'mostrar_facturaTableAdapter
+        '
+        Me.mostrar_facturaTableAdapter.ClearBeforeFill = True
+        '
+        'frmrptReImpresionFactura
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(899, 442)
+        Me.ClientSize = New System.Drawing.Size(712, 441)
+        Me.Controls.Add(Me.txtNumFactura)
         Me.Controls.Add(Me.ReportViewer1)
-        Me.Name = "frmReporteProductos"
-        Me.Text = "frmReporteProductos"
+        Me.Name = "frmrptReImpresionFactura"
+        Me.Text = "rptReImpresionFactura"
+        CType(Me.mostrar_facturaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.mostrar_producto_emfopesbeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
-    Friend WithEvents mostrar_producto_emfopesbeBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents mostrar_facturaBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents dbfacDataSet As Sistema_Facturacion.dbfacDataSet
-    Friend WithEvents mostrar_producto_emfopesbeTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_producto_emfopesbeTableAdapter
+    Friend WithEvents txtNumFactura As System.Windows.Forms.TextBox
+    Friend WithEvents mostrar_facturaTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_facturaTableAdapter
 End Class

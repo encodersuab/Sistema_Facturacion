@@ -261,20 +261,20 @@ Public Class frmInicioF
 
 
     Private Sub RpteProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RpteProductoToolStripMenuItem.Click
-        frmReporteProductos.MdiParent = Me
-        frmReporteProductos.Show()
+        'frmReporteProductos.MdiParent = Me
+        'frmReporteProductos.Show()
 
     End Sub
 
     Private Sub RpteClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RpteClienteToolStripMenuItem.Click
-        frmReporteCliente.MdiParent = Me
-        frmReporteCliente.Show()
+        'frmReporteCliente.MdiParent = Me
+        'frmReporteCliente.Show()
 
     End Sub
 
     Private Sub CategoriaToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem2.Click
-        frmReporteCatergotria.MdiParent = Me
-        frmReporteCatergotria.Show()
+        'frmReporteCatergotria.MdiParent = Me
+        'frmReporteCatergotria.Show()
 
     End Sub
 
@@ -400,8 +400,8 @@ Public Class frmInicioF
     End Sub
 
     Private Sub ToolStripMenuItem28_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem28.Click
-        frmReporteCliente.MdiParent = Me
-        frmReporteCliente.Show()
+        'frmReporteCliente.MdiParent = Me
+        'frmReporteCliente.Show()
     End Sub
 
     Private Sub ToolStripMenuItem29_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem29.Click
@@ -410,8 +410,8 @@ Public Class frmInicioF
     End Sub
 
     Private Sub ClientesToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles ClientesToolStripMenuItem.Click
-        frmReporteCliente.MdiParent = Me
-        frmReporteCliente.Show()
+        ''frmReporteCliente.MdiParent = Me
+        ''frmReporteCliente.Show()
     End Sub
 
     Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
