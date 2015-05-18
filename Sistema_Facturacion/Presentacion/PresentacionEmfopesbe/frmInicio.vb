@@ -455,4 +455,14 @@ Public Class frmInicioF
         frmrptVentas.MdiParent = Me
         frmrptVentas.Show()
     End Sub
+
+    Private Sub VentasEnGeneralToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentasEnGeneralToolStripMenuItem.Click
+        frmReporteVentasGeneral.MdiParent = Me
+        frmReporteVentasGeneral.Show()
+
+    End Sub
+
+    Private Sub REPORTESToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles REPORTESToolStripMenuItem.Click
+
+    End Sub
 End Class

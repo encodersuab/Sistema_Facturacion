@@ -454,6 +454,12 @@
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCuotas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentasGeneral.Designer.vb">
+      <DependentUpon>frmReporteVentasGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentasGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmrptVentas.Designer.vb">
       <DependentUpon>frmrptVentas.vb</DependentUpon>
     </Compile>
@@ -488,12 +494,6 @@
       <DependentUpon>frmReporteUsuarios.vb</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteUsuarios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentas.Designer.vb">
-      <DependentUpon>frmReporteVentas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentasPlanillas.Designer.vb">
@@ -657,8 +657,8 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteUsuarios.resx">
       <DependentUpon>frmReporteUsuarios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentas.resx">
-      <DependentUpon>frmReporteVentas.vb</DependentUpon>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentasGeneral.resx">
+      <DependentUpon>frmReporteVentasGeneral.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentasPlanillas.resx">
       <DependentUpon>frmReporteVentasPlanillas.vb</DependentUpon>
@@ -678,7 +678,7 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReporte VentasXFecha.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptreporte.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptUsuarios.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentas.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentasGeneral.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dbfacDataSet.xsc">
