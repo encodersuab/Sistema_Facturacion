@@ -448,6 +448,12 @@
     <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes Campo Ferial\frmReporteXclienteCAMPOFERIAL.Designer.vb">
+      <DependentUpon>frmReporteXclienteCAMPOFERIAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Campo Ferial\frmReporteXclienteCAMPOFERIAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCuotas.Designer.vb">
       <DependentUpon>frmReporteCuotas.vb</DependentUpon>
     </Compile>
@@ -639,6 +645,10 @@
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.resx">
       <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\frmReporteXclienteCAMPOFERIAL.resx">
+      <DependentUpon>frmReporteXclienteCAMPOFERIAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptReporteVentasXClienteCAMPOFERIAL.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCatergotria.resx">
       <DependentUpon>frmReporteCatergotria.vb</DependentUpon>
     </EmbeddedResource>

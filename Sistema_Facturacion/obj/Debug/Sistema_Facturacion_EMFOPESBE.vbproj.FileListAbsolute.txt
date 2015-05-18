@@ -251,3 +251,4 @@ D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Siste
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.exe.manifest
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.application
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteVentasGeneral.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteXclienteCAMPOFERIAL.resources

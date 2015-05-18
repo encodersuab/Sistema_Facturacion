@@ -261,7 +261,7 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_generalXfecha1DataTable">
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_campoferialDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -417,7 +417,7 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_generalXfecha1Row">
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_campoferialRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -573,7 +573,7 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_generalXfecha1RowChangeEvent">
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFecha_campoferialRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -733,7 +733,7 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_generalXfecha1TableAdapter">
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_campoferialTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

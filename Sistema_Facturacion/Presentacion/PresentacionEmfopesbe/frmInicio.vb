@@ -465,4 +465,9 @@ Public Class frmInicioF
     Private Sub REPORTESToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles REPORTESToolStripMenuItem.Click
 
     End Sub
+
+    Private Sub ToolStripMenuItem8_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem8.Click
+        frmReporteXclienteCAMPOFERIAL.MdiParent = Me
+        frmReporteXclienteCAMPOFERIAL.Show()
+    End Sub
 End Class
