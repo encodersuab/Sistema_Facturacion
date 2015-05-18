@@ -28,3 +28,9 @@ Namespace dbfacDataSetTableAdapters
     Partial Public Class mostrar_reciboTableAdapter
     End Class
 End Namespace
+
+Namespace dbfacDataSetTableAdapters
+
+    Partial Public Class mostrar_venta_porFechaTableAdapter
+    End Class
+End Namespace

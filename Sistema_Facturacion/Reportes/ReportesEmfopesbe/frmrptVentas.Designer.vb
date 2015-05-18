@@ -24,28 +24,20 @@ Partial Class frmrptVentas
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.mostrar_venta_porFechaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.cbfuncionario = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.mostrar_venta_porFechaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
         Me.mostrar_venta_porFechaTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFechaTableAdapter()
         CType(Me.mostrar_venta_porFechaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'mostrar_venta_porFechaBindingSource
-        '
-        Me.mostrar_venta_porFechaBindingSource.DataMember = "mostrar_venta_porFecha"
-        Me.mostrar_venta_porFechaBindingSource.DataSource = Me.dbfacDataSet
-        '
-        'dbfacDataSet
-        '
-        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
-        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'dtpFechaInicio
         '
@@ -83,7 +75,7 @@ Partial Class frmrptVentas
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(567, 26)
+        Me.Button1.Location = New System.Drawing.Point(767, 26)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 39)
         Me.Button1.TabIndex = 4
@@ -101,6 +93,34 @@ Partial Class frmrptVentas
         Me.ReportViewer1.Size = New System.Drawing.Size(1004, 520)
         Me.ReportViewer1.TabIndex = 5
         '
+        'cbfuncionario
+        '
+        Me.cbfuncionario.FormattingEnabled = True
+        Me.cbfuncionario.Items.AddRange(New Object() {"UAB", "---"})
+        Me.cbfuncionario.Location = New System.Drawing.Point(623, 33)
+        Me.cbfuncionario.Name = "cbfuncionario"
+        Me.cbfuncionario.Size = New System.Drawing.Size(121, 21)
+        Me.cbfuncionario.TabIndex = 6
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(542, 39)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(62, 13)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Funcionario"
+        '
+        'mostrar_venta_porFechaBindingSource
+        '
+        Me.mostrar_venta_porFechaBindingSource.DataMember = "mostrar_venta_porFecha"
+        Me.mostrar_venta_porFechaBindingSource.DataSource = Me.dbfacDataSet
+        '
+        'dbfacDataSet
+        '
+        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
+        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'mostrar_venta_porFechaTableAdapter
         '
         Me.mostrar_venta_porFechaTableAdapter.ClearBeforeFill = True
@@ -110,6 +130,8 @@ Partial Class frmrptVentas
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1018, 587)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.cbfuncionario)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
@@ -133,4 +155,6 @@ Partial Class frmrptVentas
     Friend WithEvents mostrar_venta_porFechaBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents dbfacDataSet As Sistema_Facturacion.dbfacDataSet
     Friend WithEvents mostrar_venta_porFechaTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFechaTableAdapter
+    Friend WithEvents cbfuncionario As System.Windows.Forms.ComboBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

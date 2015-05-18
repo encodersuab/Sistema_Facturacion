@@ -245,15 +245,15 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFechaDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.validar_usuarioDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_reciboDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFechaDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -393,15 +393,15 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFechaRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.validar_usuarioRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_reciboRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFechaRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -541,15 +541,15 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFechaRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.validar_usuarioRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_reciboRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_venta_porFechaRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -693,15 +693,15 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFechaTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.validar_usuarioTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_reciboTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFechaTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
