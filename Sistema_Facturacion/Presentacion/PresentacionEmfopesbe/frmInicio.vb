@@ -482,4 +482,14 @@ Public Class frmInicioF
         frmReporteVentasGeneralEmfopesbe.MdiParent = Me
         frmReporteVentasGeneralEmfopesbe.Show()
     End Sub
+
+    Private Sub redrubi_Click(sender As Object, e As EventArgs) Handles redrubi.Click
+
+    End Sub
+
+    Private Sub PorClientesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PorClientesToolStripMenuItem.Click
+        frmReporteVentasXClienteRedRubi.MdiParent = Me
+        frmReporteVentasXClienteRedRubi.Show()
+
+    End Sub
 End Class

@@ -103,8 +103,6 @@ Partial Public Class dbfacDataSet
     
     Private tablemostrar_venta_planilla_estado As mostrar_venta_planilla_estadoDataTable
     
-    Private tablemostrar_venta_porFecha As mostrar_venta_porFechaDataTable
-    
     Private tablemostrar_venta_porFecha_campoferial As mostrar_venta_porFecha_campoferialDataTable
     
     Private tablemostrar_venta_porFecha_emfopesbe As mostrar_venta_porFecha_emfopesbeDataTable
@@ -120,6 +118,8 @@ Partial Public Class dbfacDataSet
     Private tablevalidar_usuario As validar_usuarioDataTable
     
     Private tablevalidar_usuario_idusuario As validar_usuario_idusuarioDataTable
+    
+    Private tablemostrar_venta_porFecha As mostrar_venta_porFechaDataTable
     
     Private relationFK_TDetalleVenta_TProducto As Global.System.Data.DataRelation
     
@@ -285,9 +285,6 @@ Partial Public Class dbfacDataSet
             If (Not (ds.Tables("mostrar_venta_planilla_estado")) Is Nothing) Then
                 MyBase.Tables.Add(New mostrar_venta_planilla_estadoDataTable(ds.Tables("mostrar_venta_planilla_estado")))
             End If
-            If (Not (ds.Tables("mostrar_venta_porFecha")) Is Nothing) Then
-                MyBase.Tables.Add(New mostrar_venta_porFechaDataTable(ds.Tables("mostrar_venta_porFecha")))
-            End If
             If (Not (ds.Tables("mostrar_venta_porFecha_campoferial")) Is Nothing) Then
                 MyBase.Tables.Add(New mostrar_venta_porFecha_campoferialDataTable(ds.Tables("mostrar_venta_porFecha_campoferial")))
             End If
@@ -311,6 +308,9 @@ Partial Public Class dbfacDataSet
             End If
             If (Not (ds.Tables("validar_usuario_idusuario")) Is Nothing) Then
                 MyBase.Tables.Add(New validar_usuario_idusuarioDataTable(ds.Tables("validar_usuario_idusuario")))
+            End If
+            If (Not (ds.Tables("mostrar_venta_porFecha")) Is Nothing) Then
+                MyBase.Tables.Add(New mostrar_venta_porFechaDataTable(ds.Tables("mostrar_venta_porFecha")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -723,16 +723,6 @@ Partial Public Class dbfacDataSet
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
      Global.System.ComponentModel.Browsable(false),  _
      Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
-    Public ReadOnly Property mostrar_venta_porFecha() As mostrar_venta_porFechaDataTable
-        Get
-            Return Me.tablemostrar_venta_porFecha
-        End Get
-    End Property
-    
-    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-     Global.System.ComponentModel.Browsable(false),  _
-     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
     Public ReadOnly Property mostrar_venta_porFecha_campoferial() As mostrar_venta_porFecha_campoferialDataTable
         Get
             Return Me.tablemostrar_venta_porFecha_campoferial
@@ -806,6 +796,16 @@ Partial Public Class dbfacDataSet
     Public ReadOnly Property validar_usuario_idusuario() As validar_usuario_idusuarioDataTable
         Get
             Return Me.tablevalidar_usuario_idusuario
+        End Get
+    End Property
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+     Global.System.ComponentModel.Browsable(false),  _
+     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
+    Public ReadOnly Property mostrar_venta_porFecha() As mostrar_venta_porFechaDataTable
+        Get
+            Return Me.tablemostrar_venta_porFecha
         End Get
     End Property
     
@@ -993,9 +993,6 @@ Partial Public Class dbfacDataSet
             If (Not (ds.Tables("mostrar_venta_planilla_estado")) Is Nothing) Then
                 MyBase.Tables.Add(New mostrar_venta_planilla_estadoDataTable(ds.Tables("mostrar_venta_planilla_estado")))
             End If
-            If (Not (ds.Tables("mostrar_venta_porFecha")) Is Nothing) Then
-                MyBase.Tables.Add(New mostrar_venta_porFechaDataTable(ds.Tables("mostrar_venta_porFecha")))
-            End If
             If (Not (ds.Tables("mostrar_venta_porFecha_campoferial")) Is Nothing) Then
                 MyBase.Tables.Add(New mostrar_venta_porFecha_campoferialDataTable(ds.Tables("mostrar_venta_porFecha_campoferial")))
             End If
@@ -1019,6 +1016,9 @@ Partial Public Class dbfacDataSet
             End If
             If (Not (ds.Tables("validar_usuario_idusuario")) Is Nothing) Then
                 MyBase.Tables.Add(New validar_usuario_idusuarioDataTable(ds.Tables("validar_usuario_idusuario")))
+            End If
+            If (Not (ds.Tables("mostrar_venta_porFecha")) Is Nothing) Then
+                MyBase.Tables.Add(New mostrar_venta_porFechaDataTable(ds.Tables("mostrar_venta_porFecha")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -1286,12 +1286,6 @@ Partial Public Class dbfacDataSet
                 Me.tablemostrar_venta_planilla_estado.InitVars
             End If
         End If
-        Me.tablemostrar_venta_porFecha = CType(MyBase.Tables("mostrar_venta_porFecha"),mostrar_venta_porFechaDataTable)
-        If (initTable = true) Then
-            If (Not (Me.tablemostrar_venta_porFecha) Is Nothing) Then
-                Me.tablemostrar_venta_porFecha.InitVars
-            End If
-        End If
         Me.tablemostrar_venta_porFecha_campoferial = CType(MyBase.Tables("mostrar_venta_porFecha_campoferial"),mostrar_venta_porFecha_campoferialDataTable)
         If (initTable = true) Then
             If (Not (Me.tablemostrar_venta_porFecha_campoferial) Is Nothing) Then
@@ -1338,6 +1332,12 @@ Partial Public Class dbfacDataSet
         If (initTable = true) Then
             If (Not (Me.tablevalidar_usuario_idusuario) Is Nothing) Then
                 Me.tablevalidar_usuario_idusuario.InitVars
+            End If
+        End If
+        Me.tablemostrar_venta_porFecha = CType(MyBase.Tables("mostrar_venta_porFecha"),mostrar_venta_porFechaDataTable)
+        If (initTable = true) Then
+            If (Not (Me.tablemostrar_venta_porFecha) Is Nothing) Then
+                Me.tablemostrar_venta_porFecha.InitVars
             End If
         End If
         Me.relationFK_TDetalleVenta_TProducto = Me.Relations("FK_TDetalleVenta_TProducto")
@@ -1437,8 +1437,6 @@ Partial Public Class dbfacDataSet
         MyBase.Tables.Add(Me.tablemostrar_venta_planilla)
         Me.tablemostrar_venta_planilla_estado = New mostrar_venta_planilla_estadoDataTable()
         MyBase.Tables.Add(Me.tablemostrar_venta_planilla_estado)
-        Me.tablemostrar_venta_porFecha = New mostrar_venta_porFechaDataTable()
-        MyBase.Tables.Add(Me.tablemostrar_venta_porFecha)
         Me.tablemostrar_venta_porFecha_campoferial = New mostrar_venta_porFecha_campoferialDataTable()
         MyBase.Tables.Add(Me.tablemostrar_venta_porFecha_campoferial)
         Me.tablemostrar_venta_porFecha_emfopesbe = New mostrar_venta_porFecha_emfopesbeDataTable()
@@ -1455,6 +1453,8 @@ Partial Public Class dbfacDataSet
         MyBase.Tables.Add(Me.tablevalidar_usuario)
         Me.tablevalidar_usuario_idusuario = New validar_usuario_idusuarioDataTable()
         MyBase.Tables.Add(Me.tablevalidar_usuario_idusuario)
+        Me.tablemostrar_venta_porFecha = New mostrar_venta_porFechaDataTable()
+        MyBase.Tables.Add(Me.tablemostrar_venta_porFecha)
         Me.relationFK_TDetalleVenta_TProducto = New Global.System.Data.DataRelation("FK_TDetalleVenta_TProducto", New Global.System.Data.DataColumn() {Me.tableTProducto.idproductoColumn}, New Global.System.Data.DataColumn() {Me.tableTDetalleVenta.idproductoColumn}, false)
         Me.Relations.Add(Me.relationFK_TDetalleVenta_TProducto)
         Me.relationFK_TDetalleVenta_TVentas = New Global.System.Data.DataRelation("FK_TDetalleVenta_TVentas", New Global.System.Data.DataColumn() {Me.tableTVentas.idventaColumn}, New Global.System.Data.DataColumn() {Me.tableTDetalleVenta.idventaColumn}, false)
@@ -1711,12 +1711,6 @@ Partial Public Class dbfacDataSet
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-    Private Function ShouldSerializemostrar_venta_porFecha() As Boolean
-        Return false
-    End Function
-    
-    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Private Function ShouldSerializemostrar_venta_porFecha_campoferial() As Boolean
         Return false
     End Function
@@ -1760,6 +1754,12 @@ Partial Public Class dbfacDataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Private Function ShouldSerializevalidar_usuario_idusuario() As Boolean
+        Return false
+    End Function
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Private Function ShouldSerializemostrar_venta_porFecha() As Boolean
         Return false
     End Function
     
@@ -1939,9 +1939,6 @@ Partial Public Class dbfacDataSet
     Public Delegate Sub mostrar_venta_planilla_estadoRowChangeEventHandler(ByVal sender As Object, ByVal e As mostrar_venta_planilla_estadoRowChangeEvent)
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-    Public Delegate Sub mostrar_venta_porFechaRowChangeEventHandler(ByVal sender As Object, ByVal e As mostrar_venta_porFechaRowChangeEvent)
-    
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Delegate Sub mostrar_venta_porFecha_campoferialRowChangeEventHandler(ByVal sender As Object, ByVal e As mostrar_venta_porFecha_campoferialRowChangeEvent)
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -1964,6 +1961,9 @@ Partial Public Class dbfacDataSet
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Delegate Sub validar_usuario_idusuarioRowChangeEventHandler(ByVal sender As Object, ByVal e As validar_usuario_idusuarioRowChangeEvent)
+    
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Delegate Sub mostrar_venta_porFechaRowChangeEventHandler(ByVal sender As Object, ByVal e As mostrar_venta_porFechaRowChangeEvent)
     
     '''<summary>
     '''Represents the strongly named DataTable class.
@@ -2737,12 +2737,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByid_datosImp(ByVal id_datosImp As Integer) As TDatosImpuestosRow
-            Return CType(Me.Rows.Find(New Object() {id_datosImp}),TDatosImpuestosRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As TDatosImpuestosDataTable = CType(MyBase.Clone,TDatosImpuestosDataTable)
             cln.InitVars
@@ -2775,13 +2769,11 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnnumAutorizacion)
             Me.columnllave = New Global.System.Data.DataColumn("llave", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnllave)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnid_datosImp}, true))
             Me.columnid_datosImp.AutoIncrement = true
             Me.columnid_datosImp.AutoIncrementSeed = -1
             Me.columnid_datosImp.AutoIncrementStep = -1
             Me.columnid_datosImp.AllowDBNull = false
             Me.columnid_datosImp.ReadOnly = true
-            Me.columnid_datosImp.Unique = true
             Me.columnnitEmisor.MaxLength = 50
             Me.columnnumAutorizacion.MaxLength = 50
             Me.columnllave.MaxLength = 2147483647
@@ -5798,12 +5790,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidventa(ByVal idventa As Integer) As generar_comprobanteRow
-            Return CType(Me.Rows.Find(New Object() {idventa}),generar_comprobanteRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As generar_comprobanteDataTable = CType(MyBase.Clone,generar_comprobanteDataTable)
             cln.InitVars
@@ -5857,11 +5843,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnprecio_unitario)
             Me.columnTotal_Parcial = New Global.System.Data.DataColumn("Total_Parcial", GetType(Decimal), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnTotal_Parcial)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidventa}, true))
             Me.columnidventa.AutoIncrement = true
             Me.columnidventa.AllowDBNull = false
             Me.columnidventa.ReadOnly = true
-            Me.columnidventa.Unique = true
             Me.columnnombre.MaxLength = 50
             Me.columnapellidos.MaxLength = 50
             Me.columnci.MaxLength = 9
@@ -6118,12 +6102,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidcategoria(ByVal idcategoria As Integer) As mostrar_categoriaRow
-            Return CType(Me.Rows.Find(New Object() {idcategoria}),mostrar_categoriaRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_categoriaDataTable = CType(MyBase.Clone,mostrar_categoriaDataTable)
             cln.InitVars
@@ -6153,11 +6131,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnnombre_categoria)
             Me.columnmodulo = New Global.System.Data.DataColumn("modulo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmodulo)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidcategoria}, true))
             Me.columnidcategoria.AutoIncrement = true
             Me.columnidcategoria.AllowDBNull = false
             Me.columnidcategoria.ReadOnly = true
-            Me.columnidcategoria.Unique = true
             Me.columnnombre_categoria.MaxLength = 50
             Me.columnmodulo.MaxLength = 50
         End Sub
@@ -6409,12 +6385,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidcategoria(ByVal idcategoria As Integer) As mostrar_categoria_campoferialRow
-            Return CType(Me.Rows.Find(New Object() {idcategoria}),mostrar_categoria_campoferialRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_categoria_campoferialDataTable = CType(MyBase.Clone,mostrar_categoria_campoferialDataTable)
             cln.InitVars
@@ -6444,11 +6414,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnnombre_categoria)
             Me.columnmodulo = New Global.System.Data.DataColumn("modulo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmodulo)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidcategoria}, true))
             Me.columnidcategoria.AutoIncrement = true
             Me.columnidcategoria.AllowDBNull = false
             Me.columnidcategoria.ReadOnly = true
-            Me.columnidcategoria.Unique = true
             Me.columnnombre_categoria.MaxLength = 50
             Me.columnmodulo.MaxLength = 50
         End Sub
@@ -6700,12 +6668,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidcategoria(ByVal idcategoria As Integer) As mostrar_categoria_postgradoRow
-            Return CType(Me.Rows.Find(New Object() {idcategoria}),mostrar_categoria_postgradoRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_categoria_postgradoDataTable = CType(MyBase.Clone,mostrar_categoria_postgradoDataTable)
             cln.InitVars
@@ -6735,11 +6697,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnnombre_categoria)
             Me.columnmodulo = New Global.System.Data.DataColumn("modulo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmodulo)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidcategoria}, true))
             Me.columnidcategoria.AutoIncrement = true
             Me.columnidcategoria.AllowDBNull = false
             Me.columnidcategoria.ReadOnly = true
-            Me.columnidcategoria.Unique = true
             Me.columnnombre_categoria.MaxLength = 50
             Me.columnmodulo.MaxLength = 50
         End Sub
@@ -6991,12 +6951,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidcategoria(ByVal idcategoria As Integer) As mostrar_categoria_redrubiRow
-            Return CType(Me.Rows.Find(New Object() {idcategoria}),mostrar_categoria_redrubiRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_categoria_redrubiDataTable = CType(MyBase.Clone,mostrar_categoria_redrubiDataTable)
             cln.InitVars
@@ -7026,11 +6980,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnnombre_categoria)
             Me.columnmodulo = New Global.System.Data.DataColumn("modulo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmodulo)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidcategoria}, true))
             Me.columnidcategoria.AutoIncrement = true
             Me.columnidcategoria.AllowDBNull = false
             Me.columnidcategoria.ReadOnly = true
-            Me.columnidcategoria.Unique = true
             Me.columnnombre_categoria.MaxLength = 50
             Me.columnmodulo.MaxLength = 50
         End Sub
@@ -7322,12 +7274,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidcliente(ByVal idcliente As Integer) As mostrar_clienteRow
-            Return CType(Me.Rows.Find(New Object() {idcliente}),mostrar_clienteRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_clienteDataTable = CType(MyBase.Clone,mostrar_clienteDataTable)
             cln.InitVars
@@ -7369,11 +7315,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnci)
             Me.columnfuncionarioUAB = New Global.System.Data.DataColumn("funcionarioUAB", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnfuncionarioUAB)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidcliente}, true))
             Me.columnidcliente.AutoIncrement = true
             Me.columnidcliente.AllowDBNull = false
             Me.columnidcliente.ReadOnly = true
-            Me.columnidcliente.Unique = true
             Me.columnnombre.MaxLength = 50
             Me.columnapellidos.MaxLength = 50
             Me.columndireccion.MaxLength = 100
@@ -8047,12 +7991,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidcliente(ByVal idcliente As Integer) As mostrar_clienteUABRow
-            Return CType(Me.Rows.Find(New Object() {idcliente}),mostrar_clienteUABRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_clienteUABDataTable = CType(MyBase.Clone,mostrar_clienteUABDataTable)
             cln.InitVars
@@ -8094,11 +8032,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnci)
             Me.columnfuncionarioUAB = New Global.System.Data.DataColumn("funcionarioUAB", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnfuncionarioUAB)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidcliente}, true))
             Me.columnidcliente.AutoIncrement = true
             Me.columnidcliente.AllowDBNull = false
             Me.columnidcliente.ReadOnly = true
-            Me.columnidcliente.Unique = true
             Me.columnnombre.MaxLength = 50
             Me.columnapellidos.MaxLength = 50
             Me.columndireccion.MaxLength = 100
@@ -8364,12 +8300,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByid_datosImp(ByVal id_datosImp As Integer) As mostrar_datos_impuestosRow
-            Return CType(Me.Rows.Find(New Object() {id_datosImp}),mostrar_datos_impuestosRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_datos_impuestosDataTable = CType(MyBase.Clone,mostrar_datos_impuestosDataTable)
             cln.InitVars
@@ -8402,11 +8332,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnnumAutorizacion)
             Me.columnllave = New Global.System.Data.DataColumn("llave", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnllave)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnid_datosImp}, true))
             Me.columnid_datosImp.AutoIncrement = true
             Me.columnid_datosImp.AllowDBNull = false
             Me.columnid_datosImp.ReadOnly = true
-            Me.columnid_datosImp.Unique = true
             Me.columnnitEmisor.MaxLength = 50
             Me.columnnumAutorizacion.MaxLength = 50
             Me.columnllave.MaxLength = 2147483647
@@ -8739,12 +8667,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByIDCodQr(ByVal IDCodQr As Integer) As mostrar_datos_QRRow
-            Return CType(Me.Rows.Find(New Object() {IDCodQr}),mostrar_datos_QRRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_datos_QRDataTable = CType(MyBase.Clone,mostrar_datos_QRDataTable)
             cln.InitVars
@@ -8798,11 +8720,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnIdVenta)
             Me.columnvalidez = New Global.System.Data.DataColumn("validez", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnvalidez)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnIDCodQr}, true))
             Me.columnIDCodQr.AutoIncrement = true
             Me.columnIDCodQr.AllowDBNull = false
             Me.columnIDCodQr.ReadOnly = true
-            Me.columnIDCodQr.Unique = true
             Me.columnNit_Emisor.MaxLength = 50
             Me.columnNum_Autorizacion.MaxLength = 50
             Me.columnCodigo_Control.MaxLength = 50
@@ -9107,12 +9027,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByiddetalle_venta(ByVal iddetalle_venta As Integer) As mostrar_detalle_ventaRow
-            Return CType(Me.Rows.Find(New Object() {iddetalle_venta}),mostrar_detalle_ventaRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_detalle_ventaDataTable = CType(MyBase.Clone,mostrar_detalle_ventaDataTable)
             cln.InitVars
@@ -9161,11 +9075,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnTotal_Parcial)
             Me.columndetalle = New Global.System.Data.DataColumn("detalle", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columndetalle)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columniddetalle_venta}, true))
             Me.columniddetalle_venta.AutoIncrement = true
             Me.columniddetalle_venta.AllowDBNull = false
             Me.columniddetalle_venta.ReadOnly = true
-            Me.columniddetalle_venta.Unique = true
             Me.columnNombre_Producto.MaxLength = 50
             Me.columnTotal_Parcial.ReadOnly = true
             Me.columndetalle.MaxLength = 2147483647
@@ -9468,12 +9380,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByiddetalle_venta(ByVal iddetalle_venta As Integer) As mostrar_detalle_venta_PGRow
-            Return CType(Me.Rows.Find(New Object() {iddetalle_venta}),mostrar_detalle_venta_PGRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_detalle_venta_PGDataTable = CType(MyBase.Clone,mostrar_detalle_venta_PGDataTable)
             cln.InitVars
@@ -9522,11 +9428,9 @@ Partial Public Class dbfacDataSet
             Me.columnTotal_Parcial.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "columnTotal_Parcial")
             Me.columnTotal_Parcial.ExtendedProperties.Add("Generator_UserColumnName", "Total Parcial")
             MyBase.Columns.Add(Me.columnTotal_Parcial)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columniddetalle_venta}, true))
             Me.columniddetalle_venta.AutoIncrement = true
             Me.columniddetalle_venta.AllowDBNull = false
             Me.columniddetalle_venta.ReadOnly = true
-            Me.columniddetalle_venta.Unique = true
             Me.columnNombre_Producto.MaxLength = 50
             Me.columnCuota.MaxLength = 50
             Me.columnTotal_Parcial.ReadOnly = true
@@ -9829,12 +9733,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByiddetalle_venta(ByVal iddetalle_venta As Integer) As mostrar_detalle_ventaXidplanillaRow
-            Return CType(Me.Rows.Find(New Object() {iddetalle_venta}),mostrar_detalle_ventaXidplanillaRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_detalle_ventaXidplanillaDataTable = CType(MyBase.Clone,mostrar_detalle_ventaXidplanillaDataTable)
             cln.InitVars
@@ -9883,11 +9781,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnTotal_Parcial)
             Me.columnidventa = New Global.System.Data.DataColumn("idventa", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnidventa)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columniddetalle_venta}, true))
             Me.columniddetalle_venta.AutoIncrement = true
             Me.columniddetalle_venta.AllowDBNull = false
             Me.columniddetalle_venta.ReadOnly = true
-            Me.columniddetalle_venta.Unique = true
             Me.columnnombre.MaxLength = 50
             Me.columnTotal_Parcial.ReadOnly = true
         End Sub
@@ -10295,12 +10191,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByNumeroFactura(ByVal NumeroFactura As Integer) As mostrar_facturaRow
-            Return CType(Me.Rows.Find(New Object() {NumeroFactura}),mostrar_facturaRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_facturaDataTable = CType(MyBase.Clone,mostrar_facturaDataTable)
             cln.InitVars
@@ -10372,11 +10262,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnmedida)
             Me.columnliteral = New Global.System.Data.DataColumn("literal", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnliteral)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnNumeroFactura}, true))
             Me.columnNumeroFactura.AutoIncrement = true
             Me.columnNumeroFactura.AllowDBNull = false
             Me.columnNumeroFactura.ReadOnly = true
-            Me.columnNumeroFactura.Unique = true
             Me.columnNit_Emisor.MaxLength = 50
             Me.columnCodigo_Control.MaxLength = 50
             Me.columnCi_Nit_Comprador.MaxLength = 50
@@ -10617,12 +10505,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByiddetalle_venta(ByVal iddetalle_venta As Integer) As mostrar_iddetalleventaXidventaRow
-            Return CType(Me.Rows.Find(New Object() {iddetalle_venta}),mostrar_iddetalleventaXidventaRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_iddetalleventaXidventaDataTable = CType(MyBase.Clone,mostrar_iddetalleventaXidventaDataTable)
             cln.InitVars
@@ -10646,11 +10528,9 @@ Partial Public Class dbfacDataSet
         Private Sub InitClass()
             Me.columniddetalle_venta = New Global.System.Data.DataColumn("iddetalle_venta", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columniddetalle_venta)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columniddetalle_venta}, true))
             Me.columniddetalle_venta.AutoIncrement = true
             Me.columniddetalle_venta.AllowDBNull = false
             Me.columniddetalle_venta.ReadOnly = true
-            Me.columniddetalle_venta.Unique = true
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -11132,12 +11012,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidproducto(ByVal idproducto As Integer) As mostrar_idproductoXidventaRow
-            Return CType(Me.Rows.Find(New Object() {idproducto}),mostrar_idproductoXidventaRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_idproductoXidventaDataTable = CType(MyBase.Clone,mostrar_idproductoXidventaDataTable)
             cln.InitVars
@@ -11161,11 +11035,9 @@ Partial Public Class dbfacDataSet
         Private Sub InitClass()
             Me.columnidproducto = New Global.System.Data.DataColumn("idproducto", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnidproducto)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidproducto}, true))
             Me.columnidproducto.AutoIncrement = true
             Me.columnidproducto.AllowDBNull = false
             Me.columnidproducto.ReadOnly = true
-            Me.columnidproducto.Unique = true
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -11505,12 +11377,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidproducto(ByVal idproducto As Integer) As mostrar_producto_capoferialRow
-            Return CType(Me.Rows.Find(New Object() {idproducto}),mostrar_producto_capoferialRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_producto_capoferialDataTable = CType(MyBase.Clone,mostrar_producto_capoferialDataTable)
             cln.InitVars
@@ -11567,11 +11433,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnModulo)
             Me.columnmedida = New Global.System.Data.DataColumn("medida", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmedida)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidproducto}, true))
             Me.columnidproducto.AutoIncrement = true
             Me.columnidproducto.AllowDBNull = false
             Me.columnidproducto.ReadOnly = true
-            Me.columnidproducto.Unique = true
             Me.columnNombreCategoria.MaxLength = 50
             Me.columnNombreProducto.MaxLength = 50
             Me.columnDescripcion.MaxLength = 255
@@ -11916,12 +11780,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidproducto(ByVal idproducto As Integer) As mostrar_producto_emfopesbeRow
-            Return CType(Me.Rows.Find(New Object() {idproducto}),mostrar_producto_emfopesbeRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_producto_emfopesbeDataTable = CType(MyBase.Clone,mostrar_producto_emfopesbeDataTable)
             cln.InitVars
@@ -11978,11 +11836,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnModulo)
             Me.columnmedida = New Global.System.Data.DataColumn("medida", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmedida)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidproducto}, true))
             Me.columnidproducto.AutoIncrement = true
             Me.columnidproducto.AllowDBNull = false
             Me.columnidproducto.ReadOnly = true
-            Me.columnidproducto.Unique = true
             Me.columnNombreCategoria.MaxLength = 50
             Me.columnNombreProducto.MaxLength = 50
             Me.columnDescripcion.MaxLength = 255
@@ -12327,12 +12183,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidproducto(ByVal idproducto As Integer) As mostrar_producto_postgradoRow
-            Return CType(Me.Rows.Find(New Object() {idproducto}),mostrar_producto_postgradoRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_producto_postgradoDataTable = CType(MyBase.Clone,mostrar_producto_postgradoDataTable)
             cln.InitVars
@@ -12389,11 +12239,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnModulo)
             Me.columnmedida = New Global.System.Data.DataColumn("medida", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmedida)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidproducto}, true))
             Me.columnidproducto.AutoIncrement = true
             Me.columnidproducto.AllowDBNull = false
             Me.columnidproducto.ReadOnly = true
-            Me.columnidproducto.Unique = true
             Me.columnNombreCategoria.MaxLength = 50
             Me.columnNombreProducto.MaxLength = 50
             Me.columnDescripcion.MaxLength = 255
@@ -12738,12 +12586,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidproducto(ByVal idproducto As Integer) As mostrar_producto_redrubiRow
-            Return CType(Me.Rows.Find(New Object() {idproducto}),mostrar_producto_redrubiRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_producto_redrubiDataTable = CType(MyBase.Clone,mostrar_producto_redrubiDataTable)
             cln.InitVars
@@ -12800,11 +12642,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnModulo)
             Me.columnmedida = New Global.System.Data.DataColumn("medida", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmedida)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidproducto}, true))
             Me.columnidproducto.AutoIncrement = true
             Me.columnidproducto.AllowDBNull = false
             Me.columnidproducto.ReadOnly = true
-            Me.columnidproducto.Unique = true
             Me.columnNombreCategoria.MaxLength = 50
             Me.columnNombreProducto.MaxLength = 50
             Me.columnDescripcion.MaxLength = 255
@@ -13495,12 +13335,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByIDCodQr(ByVal IDCodQr As Integer) As mostrar_ultimo_qrRow
-            Return CType(Me.Rows.Find(New Object() {IDCodQr}),mostrar_ultimo_qrRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_ultimo_qrDataTable = CType(MyBase.Clone,mostrar_ultimo_qrDataTable)
             cln.InitVars
@@ -13524,11 +13358,9 @@ Partial Public Class dbfacDataSet
         Private Sub InitClass()
             Me.columnIDCodQr = New Global.System.Data.DataColumn("IDCodQr", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnIDCodQr)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnIDCodQr}, true))
             Me.columnIDCodQr.AutoIncrement = true
             Me.columnIDCodQr.AllowDBNull = false
             Me.columnIDCodQr.ReadOnly = true
-            Me.columnIDCodQr.Unique = true
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -13848,12 +13680,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidusuario(ByVal idusuario As Integer) As mostrar_usuarioRow
-            Return CType(Me.Rows.Find(New Object() {idusuario}),mostrar_usuarioRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_usuarioDataTable = CType(MyBase.Clone,mostrar_usuarioDataTable)
             cln.InitVars
@@ -13904,11 +13730,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnacceso)
             Me.columnrol = New Global.System.Data.DataColumn("rol", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnrol)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidusuario}, true))
             Me.columnidusuario.AutoIncrement = true
             Me.columnidusuario.AllowDBNull = false
             Me.columnidusuario.ReadOnly = true
-            Me.columnidusuario.Unique = true
             Me.columnnombre.MaxLength = 50
             Me.columnapellidos.MaxLength = 50
             Me.columnci.MaxLength = 9
@@ -14237,12 +14061,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByID_Venta(ByVal ID_Venta As Integer) As mostrar_ventaRow
-            Return CType(Me.Rows.Find(New Object() {ID_Venta}),mostrar_ventaRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_ventaDataTable = CType(MyBase.Clone,mostrar_ventaDataTable)
             cln.InitVars
@@ -14293,11 +14111,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnestado)
             Me.columnpago = New Global.System.Data.DataColumn("pago", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnpago)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID_Venta}, true))
             Me.columnID_Venta.AutoIncrement = true
             Me.columnID_Venta.AllowDBNull = false
             Me.columnID_Venta.ReadOnly = true
-            Me.columnID_Venta.Unique = true
             Me.columnApellidos.MaxLength = 50
             Me.columnCI.MaxLength = 9
             Me.columnTipo_Documento.MaxLength = 50
@@ -14624,12 +14440,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByID_Venta(ByVal ID_Venta As Integer) As mostrar_venta_campoferialRow
-            Return CType(Me.Rows.Find(New Object() {ID_Venta}),mostrar_venta_campoferialRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_venta_campoferialDataTable = CType(MyBase.Clone,mostrar_venta_campoferialDataTable)
             cln.InitVars
@@ -14680,11 +14490,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnestado)
             Me.columnpago = New Global.System.Data.DataColumn("pago", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnpago)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID_Venta}, true))
             Me.columnID_Venta.AutoIncrement = true
             Me.columnID_Venta.AllowDBNull = false
             Me.columnID_Venta.ReadOnly = true
-            Me.columnID_Venta.Unique = true
             Me.columnApellidos.MaxLength = 50
             Me.columnCI.MaxLength = 9
             Me.columnTipo_Documento.MaxLength = 50
@@ -15001,12 +14809,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByIDCodQr(ByVal IDCodQr As Integer) As mostrar_venta_generalXfechaRow
-            Return CType(Me.Rows.Find(New Object() {IDCodQr}),mostrar_venta_generalXfechaRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_venta_generalXfechaDataTable = CType(MyBase.Clone,mostrar_venta_generalXfechaDataTable)
             cln.InitVars
@@ -15054,11 +14856,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnFechaInicio)
             Me.columnFechaFin = New Global.System.Data.DataColumn("FechaFin", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnFechaFin)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnIDCodQr}, true))
             Me.columnIDCodQr.AutoIncrement = true
             Me.columnIDCodQr.AllowDBNull = false
             Me.columnIDCodQr.ReadOnly = true
-            Me.columnIDCodQr.Unique = true
             Me.columnCi_Nit_Comprador.MaxLength = 50
             Me.columnnombre.MaxLength = 50
             Me.columnapellidos.MaxLength = 50
@@ -15384,12 +15184,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByID_Venta(ByVal ID_Venta As Integer) As mostrar_venta_planillaRow
-            Return CType(Me.Rows.Find(New Object() {ID_Venta}),mostrar_venta_planillaRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_venta_planillaDataTable = CType(MyBase.Clone,mostrar_venta_planillaDataTable)
             cln.InitVars
@@ -15440,11 +15234,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnestado)
             Me.columnpago = New Global.System.Data.DataColumn("pago", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnpago)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID_Venta}, true))
             Me.columnID_Venta.AutoIncrement = true
             Me.columnID_Venta.AllowDBNull = false
             Me.columnID_Venta.ReadOnly = true
-            Me.columnID_Venta.Unique = true
             Me.columnApellidos.MaxLength = 50
             Me.columnCI.MaxLength = 9
             Me.columnTipo_Documento.MaxLength = 50
@@ -15741,12 +15533,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByidventaplanilla(ByVal idventaplanilla As Integer) As mostrar_venta_planilla_estadoRow
-            Return CType(Me.Rows.Find(New Object() {idventaplanilla}),mostrar_venta_planilla_estadoRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_venta_planilla_estadoDataTable = CType(MyBase.Clone,mostrar_venta_planilla_estadoDataTable)
             cln.InitVars
@@ -15788,11 +15574,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnnombre_fac)
             Me.columnestado = New Global.System.Data.DataColumn("estado", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnestado)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnidventaplanilla}, true))
             Me.columnidventaplanilla.AutoIncrement = true
             Me.columnidventaplanilla.AllowDBNull = false
             Me.columnidventaplanilla.ReadOnly = true
-            Me.columnidventaplanilla.Unique = true
             Me.columntipo_documento.MaxLength = 50
             Me.columnnum_documento.MaxLength = 50
             Me.columnnombre_fac.MaxLength = 50
@@ -15883,379 +15667,6 @@ Partial Public Class dbfacDataSet
             Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
             attribute2.Name = "tableTypeName"
             attribute2.FixedValue = "mostrar_venta_planilla_estadoDataTable"
-            type.Attributes.Add(attribute2)
-            type.Particle = sequence
-            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
-            If xs.Contains(dsSchema.TargetNamespace) Then
-                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
-                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
-                Try 
-                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
-                    dsSchema.Write(s1)
-                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
-                    Do While schemas.MoveNext
-                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
-                        s2.SetLength(0)
-                        schema.Write(s2)
-                        If (s1.Length = s2.Length) Then
-                            s1.Position = 0
-                            s2.Position = 0
-                            
-                            Do While ((s1.Position <> s1.Length)  _
-                                        AndAlso (s1.ReadByte = s2.ReadByte))
-                                
-                                
-                            Loop
-                            If (s1.Position = s1.Length) Then
-                                Return type
-                            End If
-                        End If
-                        
-                    Loop
-                Finally
-                    If (Not (s1) Is Nothing) Then
-                        s1.Close
-                    End If
-                    If (Not (s2) Is Nothing) Then
-                        s2.Close
-                    End If
-                End Try
-            End If
-            xs.Add(dsSchema)
-            Return type
-        End Function
-    End Class
-    
-    '''<summary>
-    '''Represents the strongly named DataTable class.
-    '''</summary>
-    <Global.System.Serializable(),  _
-     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
-    Partial Public Class mostrar_venta_porFechaDataTable
-        Inherits Global.System.Data.TypedTableBase(Of mostrar_venta_porFechaRow)
-        
-        Private columnIDCodQr As Global.System.Data.DataColumn
-        
-        Private columnFecha_emision As Global.System.Data.DataColumn
-        
-        Private columnTotal As Global.System.Data.DataColumn
-        
-        Private columnCi_Nit_Comprador As Global.System.Data.DataColumn
-        
-        Private columnnombre As Global.System.Data.DataColumn
-        
-        Private columnapellidos As Global.System.Data.DataColumn
-        
-        Private columnfuncionarioUAB As Global.System.Data.DataColumn
-        
-        Private columnFechaInicio As Global.System.Data.DataColumn
-        
-        Private columnFechaFin As Global.System.Data.DataColumn
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub New()
-            MyBase.New
-            Me.TableName = "mostrar_venta_porFecha"
-            Me.BeginInit
-            Me.InitClass
-            Me.EndInit
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Friend Sub New(ByVal table As Global.System.Data.DataTable)
-            MyBase.New
-            Me.TableName = table.TableName
-            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
-                Me.CaseSensitive = table.CaseSensitive
-            End If
-            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
-                Me.Locale = table.Locale
-            End If
-            If (table.Namespace <> table.DataSet.Namespace) Then
-                Me.Namespace = table.Namespace
-            End If
-            Me.Prefix = table.Prefix
-            Me.MinimumCapacity = table.MinimumCapacity
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
-            MyBase.New(info, context)
-            Me.InitVars
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property IDCodQrColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnIDCodQr
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property Fecha_emisionColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnFecha_emision
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property TotalColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnTotal
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property Ci_Nit_CompradorColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnCi_Nit_Comprador
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property nombreColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnnombre
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property apellidosColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnapellidos
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property funcionarioUABColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnfuncionarioUAB
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property FechaInicioColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnFechaInicio
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property FechaFinColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnFechaFin
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Browsable(false)>  _
-        Public ReadOnly Property Count() As Integer
-            Get
-                Return Me.Rows.Count
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Default ReadOnly Property Item(ByVal index As Integer) As mostrar_venta_porFechaRow
-            Get
-                Return CType(Me.Rows(index),mostrar_venta_porFechaRow)
-            End Get
-        End Property
-        
-        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Event mostrar_venta_porFechaRowChanging As mostrar_venta_porFechaRowChangeEventHandler
-        
-        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Event mostrar_venta_porFechaRowChanged As mostrar_venta_porFechaRowChangeEventHandler
-        
-        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Event mostrar_venta_porFechaRowDeleting As mostrar_venta_porFechaRowChangeEventHandler
-        
-        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Event mostrar_venta_porFechaRowDeleted As mostrar_venta_porFechaRowChangeEventHandler
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Sub Addmostrar_venta_porFechaRow(ByVal row As mostrar_venta_porFechaRow)
-            Me.Rows.Add(row)
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function Addmostrar_venta_porFechaRow(ByVal Fecha_emision As Date, ByVal Total As Decimal, ByVal Ci_Nit_Comprador As String, ByVal nombre As String, ByVal apellidos As String, ByVal funcionarioUAB As String, ByVal FechaInicio As Date, ByVal FechaFin As Date) As mostrar_venta_porFechaRow
-            Dim rowmostrar_venta_porFechaRow As mostrar_venta_porFechaRow = CType(Me.NewRow,mostrar_venta_porFechaRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Fecha_emision, Total, Ci_Nit_Comprador, nombre, apellidos, funcionarioUAB, FechaInicio, FechaFin}
-            rowmostrar_venta_porFechaRow.ItemArray = columnValuesArray
-            Me.Rows.Add(rowmostrar_venta_porFechaRow)
-            Return rowmostrar_venta_porFechaRow
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByIDCodQr(ByVal IDCodQr As Integer) As mostrar_venta_porFechaRow
-            Return CType(Me.Rows.Find(New Object() {IDCodQr}),mostrar_venta_porFechaRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overrides Function Clone() As Global.System.Data.DataTable
-            Dim cln As mostrar_venta_porFechaDataTable = CType(MyBase.Clone,mostrar_venta_porFechaDataTable)
-            cln.InitVars
-            Return cln
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
-            Return New mostrar_venta_porFechaDataTable()
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Friend Sub InitVars()
-            Me.columnIDCodQr = MyBase.Columns("IDCodQr")
-            Me.columnFecha_emision = MyBase.Columns("Fecha_emision")
-            Me.columnTotal = MyBase.Columns("Total")
-            Me.columnCi_Nit_Comprador = MyBase.Columns("Ci_Nit_Comprador")
-            Me.columnnombre = MyBase.Columns("nombre")
-            Me.columnapellidos = MyBase.Columns("apellidos")
-            Me.columnfuncionarioUAB = MyBase.Columns("funcionarioUAB")
-            Me.columnFechaInicio = MyBase.Columns("FechaInicio")
-            Me.columnFechaFin = MyBase.Columns("FechaFin")
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Sub InitClass()
-            Me.columnIDCodQr = New Global.System.Data.DataColumn("IDCodQr", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnIDCodQr)
-            Me.columnFecha_emision = New Global.System.Data.DataColumn("Fecha_emision", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnFecha_emision)
-            Me.columnTotal = New Global.System.Data.DataColumn("Total", GetType(Decimal), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnTotal)
-            Me.columnCi_Nit_Comprador = New Global.System.Data.DataColumn("Ci_Nit_Comprador", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnCi_Nit_Comprador)
-            Me.columnnombre = New Global.System.Data.DataColumn("nombre", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnnombre)
-            Me.columnapellidos = New Global.System.Data.DataColumn("apellidos", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnapellidos)
-            Me.columnfuncionarioUAB = New Global.System.Data.DataColumn("funcionarioUAB", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnfuncionarioUAB)
-            Me.columnFechaInicio = New Global.System.Data.DataColumn("FechaInicio", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnFechaInicio)
-            Me.columnFechaFin = New Global.System.Data.DataColumn("FechaFin", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnFechaFin)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnIDCodQr}, true))
-            Me.columnIDCodQr.AutoIncrement = true
-            Me.columnIDCodQr.AllowDBNull = false
-            Me.columnIDCodQr.ReadOnly = true
-            Me.columnIDCodQr.Unique = true
-            Me.columnCi_Nit_Comprador.MaxLength = 50
-            Me.columnnombre.MaxLength = 50
-            Me.columnapellidos.MaxLength = 50
-            Me.columnfuncionarioUAB.MaxLength = 3
-            Me.columnFechaInicio.ReadOnly = true
-            Me.columnFechaFin.ReadOnly = true
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Newmostrar_venta_porFechaRow() As mostrar_venta_porFechaRow
-            Return CType(Me.NewRow,mostrar_venta_porFechaRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
-            Return New mostrar_venta_porFechaRow(builder)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Function GetRowType() As Global.System.Type
-            Return GetType(mostrar_venta_porFechaRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
-            MyBase.OnRowChanged(e)
-            If (Not (Me.mostrar_venta_porFechaRowChangedEvent) Is Nothing) Then
-                RaiseEvent mostrar_venta_porFechaRowChanged(Me, New mostrar_venta_porFechaRowChangeEvent(CType(e.Row,mostrar_venta_porFechaRow), e.Action))
-            End If
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
-            MyBase.OnRowChanging(e)
-            If (Not (Me.mostrar_venta_porFechaRowChangingEvent) Is Nothing) Then
-                RaiseEvent mostrar_venta_porFechaRowChanging(Me, New mostrar_venta_porFechaRowChangeEvent(CType(e.Row,mostrar_venta_porFechaRow), e.Action))
-            End If
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
-            MyBase.OnRowDeleted(e)
-            If (Not (Me.mostrar_venta_porFechaRowDeletedEvent) Is Nothing) Then
-                RaiseEvent mostrar_venta_porFechaRowDeleted(Me, New mostrar_venta_porFechaRowChangeEvent(CType(e.Row,mostrar_venta_porFechaRow), e.Action))
-            End If
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
-            MyBase.OnRowDeleting(e)
-            If (Not (Me.mostrar_venta_porFechaRowDeletingEvent) Is Nothing) Then
-                RaiseEvent mostrar_venta_porFechaRowDeleting(Me, New mostrar_venta_porFechaRowChangeEvent(CType(e.Row,mostrar_venta_porFechaRow), e.Action))
-            End If
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Removemostrar_venta_porFechaRow(ByVal row As mostrar_venta_porFechaRow)
-            Me.Rows.Remove(row)
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
-            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
-            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
-            Dim ds As dbfacDataSet = New dbfacDataSet()
-            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
-            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
-            any1.MinOccurs = New Decimal(0)
-            any1.MaxOccurs = Decimal.MaxValue
-            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
-            sequence.Items.Add(any1)
-            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
-            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
-            any2.MinOccurs = New Decimal(1)
-            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
-            sequence.Items.Add(any2)
-            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
-            attribute1.Name = "namespace"
-            attribute1.FixedValue = ds.Namespace
-            type.Attributes.Add(attribute1)
-            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
-            attribute2.Name = "tableTypeName"
-            attribute2.FixedValue = "mostrar_venta_porFechaDataTable"
             type.Attributes.Add(attribute2)
             type.Particle = sequence
             Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
@@ -16489,12 +15900,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByIDCodQr(ByVal IDCodQr As Integer) As mostrar_venta_porFecha_campoferialRow
-            Return CType(Me.Rows.Find(New Object() {IDCodQr}),mostrar_venta_porFecha_campoferialRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_venta_porFecha_campoferialDataTable = CType(MyBase.Clone,mostrar_venta_porFecha_campoferialDataTable)
             cln.InitVars
@@ -16545,11 +15950,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnFechaFin)
             Me.columnmodulo = New Global.System.Data.DataColumn("modulo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmodulo)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnIDCodQr}, true))
             Me.columnIDCodQr.AutoIncrement = true
             Me.columnIDCodQr.AllowDBNull = false
             Me.columnIDCodQr.ReadOnly = true
-            Me.columnIDCodQr.Unique = true
             Me.columnCi_Nit_Comprador.MaxLength = 50
             Me.columnnombre.MaxLength = 50
             Me.columnapellidos.MaxLength = 50
@@ -16876,12 +16279,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByIDCodQr(ByVal IDCodQr As Integer) As mostrar_venta_porFecha_emfopesbeRow
-            Return CType(Me.Rows.Find(New Object() {IDCodQr}),mostrar_venta_porFecha_emfopesbeRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_venta_porFecha_emfopesbeDataTable = CType(MyBase.Clone,mostrar_venta_porFecha_emfopesbeDataTable)
             cln.InitVars
@@ -16932,11 +16329,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnFechaFin)
             Me.columnmodulo = New Global.System.Data.DataColumn("modulo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmodulo)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnIDCodQr}, true))
             Me.columnIDCodQr.AutoIncrement = true
             Me.columnIDCodQr.AllowDBNull = false
             Me.columnIDCodQr.ReadOnly = true
-            Me.columnIDCodQr.Unique = true
             Me.columnCi_Nit_Comprador.MaxLength = 50
             Me.columnnombre.MaxLength = 50
             Me.columnapellidos.MaxLength = 50
@@ -17263,12 +16658,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByIDCodQr(ByVal IDCodQr As Integer) As mostrar_venta_porFecha_postgradoRow
-            Return CType(Me.Rows.Find(New Object() {IDCodQr}),mostrar_venta_porFecha_postgradoRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_venta_porFecha_postgradoDataTable = CType(MyBase.Clone,mostrar_venta_porFecha_postgradoDataTable)
             cln.InitVars
@@ -17319,11 +16708,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnFechaFin)
             Me.columnmodulo = New Global.System.Data.DataColumn("modulo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmodulo)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnIDCodQr}, true))
             Me.columnIDCodQr.AutoIncrement = true
             Me.columnIDCodQr.AllowDBNull = false
             Me.columnIDCodQr.ReadOnly = true
-            Me.columnIDCodQr.Unique = true
             Me.columnCi_Nit_Comprador.MaxLength = 50
             Me.columnnombre.MaxLength = 50
             Me.columnapellidos.MaxLength = 50
@@ -17650,12 +17037,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByIDCodQr(ByVal IDCodQr As Integer) As mostrar_venta_porFecha_redrubiRow
-            Return CType(Me.Rows.Find(New Object() {IDCodQr}),mostrar_venta_porFecha_redrubiRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_venta_porFecha_redrubiDataTable = CType(MyBase.Clone,mostrar_venta_porFecha_redrubiDataTable)
             cln.InitVars
@@ -17706,11 +17087,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnFechaFin)
             Me.columnmodulo = New Global.System.Data.DataColumn("modulo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmodulo)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnIDCodQr}, true))
             Me.columnIDCodQr.AutoIncrement = true
             Me.columnIDCodQr.AllowDBNull = false
             Me.columnIDCodQr.ReadOnly = true
-            Me.columnIDCodQr.Unique = true
             Me.columnCi_Nit_Comprador.MaxLength = 50
             Me.columnnombre.MaxLength = 50
             Me.columnapellidos.MaxLength = 50
@@ -18037,12 +17416,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByID_Venta(ByVal ID_Venta As Integer) As mostrar_venta_postgradoRow
-            Return CType(Me.Rows.Find(New Object() {ID_Venta}),mostrar_venta_postgradoRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_venta_postgradoDataTable = CType(MyBase.Clone,mostrar_venta_postgradoDataTable)
             cln.InitVars
@@ -18093,11 +17466,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnestado)
             Me.columnpago = New Global.System.Data.DataColumn("pago", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnpago)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID_Venta}, true))
             Me.columnID_Venta.AutoIncrement = true
             Me.columnID_Venta.AllowDBNull = false
             Me.columnID_Venta.ReadOnly = true
-            Me.columnID_Venta.Unique = true
             Me.columnApellidos.MaxLength = 50
             Me.columnCI.MaxLength = 9
             Me.columnTipo_Documento.MaxLength = 50
@@ -18424,12 +17795,6 @@ Partial Public Class dbfacDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function FindByID_Venta(ByVal ID_Venta As Integer) As mostrar_venta_redrubiRow
-            Return CType(Me.Rows.Find(New Object() {ID_Venta}),mostrar_venta_redrubiRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_venta_redrubiDataTable = CType(MyBase.Clone,mostrar_venta_redrubiDataTable)
             cln.InitVars
@@ -18480,11 +17845,9 @@ Partial Public Class dbfacDataSet
             MyBase.Columns.Add(Me.columnestado)
             Me.columnpago = New Global.System.Data.DataColumn("pago", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnpago)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID_Venta}, true))
             Me.columnID_Venta.AutoIncrement = true
             Me.columnID_Venta.AllowDBNull = false
             Me.columnID_Venta.ReadOnly = true
-            Me.columnID_Venta.Unique = true
             Me.columnApellidos.MaxLength = 50
             Me.columnCI.MaxLength = 9
             Me.columnTipo_Documento.MaxLength = 50
@@ -19094,6 +18457,369 @@ Partial Public Class dbfacDataSet
             Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
             attribute2.Name = "tableTypeName"
             attribute2.FixedValue = "validar_usuario_idusuarioDataTable"
+            type.Attributes.Add(attribute2)
+            type.Particle = sequence
+            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
+            If xs.Contains(dsSchema.TargetNamespace) Then
+                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Try 
+                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
+                    dsSchema.Write(s1)
+                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
+                    Do While schemas.MoveNext
+                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
+                        s2.SetLength(0)
+                        schema.Write(s2)
+                        If (s1.Length = s2.Length) Then
+                            s1.Position = 0
+                            s2.Position = 0
+                            
+                            Do While ((s1.Position <> s1.Length)  _
+                                        AndAlso (s1.ReadByte = s2.ReadByte))
+                                
+                                
+                            Loop
+                            If (s1.Position = s1.Length) Then
+                                Return type
+                            End If
+                        End If
+                        
+                    Loop
+                Finally
+                    If (Not (s1) Is Nothing) Then
+                        s1.Close
+                    End If
+                    If (Not (s2) Is Nothing) Then
+                        s2.Close
+                    End If
+                End Try
+            End If
+            xs.Add(dsSchema)
+            Return type
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the strongly named DataTable class.
+    '''</summary>
+    <Global.System.Serializable(),  _
+     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
+    Partial Public Class mostrar_venta_porFechaDataTable
+        Inherits Global.System.Data.TypedTableBase(Of mostrar_venta_porFechaRow)
+        
+        Private columnFecha_emision As Global.System.Data.DataColumn
+        
+        Private columnTotal As Global.System.Data.DataColumn
+        
+        Private columnCi_Nit_Comprador As Global.System.Data.DataColumn
+        
+        Private columnnombre As Global.System.Data.DataColumn
+        
+        Private columnapellidos As Global.System.Data.DataColumn
+        
+        Private columnfuncionarioUAB As Global.System.Data.DataColumn
+        
+        Private columnFechaInicio As Global.System.Data.DataColumn
+        
+        Private columnFechaFin As Global.System.Data.DataColumn
+        
+        Private columnmodulo As Global.System.Data.DataColumn
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.TableName = "mostrar_venta_porFecha"
+            Me.BeginInit
+            Me.InitClass
+            Me.EndInit
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal table As Global.System.Data.DataTable)
+            MyBase.New
+            Me.TableName = table.TableName
+            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
+                Me.CaseSensitive = table.CaseSensitive
+            End If
+            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
+                Me.Locale = table.Locale
+            End If
+            If (table.Namespace <> table.DataSet.Namespace) Then
+                Me.Namespace = table.Namespace
+            End If
+            Me.Prefix = table.Prefix
+            Me.MinimumCapacity = table.MinimumCapacity
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
+            MyBase.New(info, context)
+            Me.InitVars
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Fecha_emisionColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnFecha_emision
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property TotalColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnTotal
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Ci_Nit_CompradorColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCi_Nit_Comprador
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property nombreColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnnombre
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property apellidosColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnapellidos
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property funcionarioUABColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnfuncionarioUAB
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property FechaInicioColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnFechaInicio
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property FechaFinColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnFechaFin
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property moduloColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnmodulo
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Browsable(false)>  _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Default ReadOnly Property Item(ByVal index As Integer) As mostrar_venta_porFechaRow
+            Get
+                Return CType(Me.Rows(index),mostrar_venta_porFechaRow)
+            End Get
+        End Property
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event mostrar_venta_porFechaRowChanging As mostrar_venta_porFechaRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event mostrar_venta_porFechaRowChanged As mostrar_venta_porFechaRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event mostrar_venta_porFechaRowDeleting As mostrar_venta_porFechaRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event mostrar_venta_porFechaRowDeleted As mostrar_venta_porFechaRowChangeEventHandler
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Sub Addmostrar_venta_porFechaRow(ByVal row As mostrar_venta_porFechaRow)
+            Me.Rows.Add(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Function Addmostrar_venta_porFechaRow(ByVal Fecha_emision As Date, ByVal Total As Decimal, ByVal Ci_Nit_Comprador As String, ByVal nombre As String, ByVal apellidos As String, ByVal funcionarioUAB As String, ByVal FechaInicio As Date, ByVal FechaFin As Date, ByVal modulo As String) As mostrar_venta_porFechaRow
+            Dim rowmostrar_venta_porFechaRow As mostrar_venta_porFechaRow = CType(Me.NewRow,mostrar_venta_porFechaRow)
+            Dim columnValuesArray() As Object = New Object() {Fecha_emision, Total, Ci_Nit_Comprador, nombre, apellidos, funcionarioUAB, FechaInicio, FechaFin, modulo}
+            rowmostrar_venta_porFechaRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowmostrar_venta_porFechaRow)
+            Return rowmostrar_venta_porFechaRow
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As mostrar_venta_porFechaDataTable = CType(MyBase.Clone,mostrar_venta_porFechaDataTable)
+            cln.InitVars
+            Return cln
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New mostrar_venta_porFechaDataTable()
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub InitVars()
+            Me.columnFecha_emision = MyBase.Columns("Fecha_emision")
+            Me.columnTotal = MyBase.Columns("Total")
+            Me.columnCi_Nit_Comprador = MyBase.Columns("Ci_Nit_Comprador")
+            Me.columnnombre = MyBase.Columns("nombre")
+            Me.columnapellidos = MyBase.Columns("apellidos")
+            Me.columnfuncionarioUAB = MyBase.Columns("funcionarioUAB")
+            Me.columnFechaInicio = MyBase.Columns("FechaInicio")
+            Me.columnFechaFin = MyBase.Columns("FechaFin")
+            Me.columnmodulo = MyBase.Columns("modulo")
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitClass()
+            Me.columnFecha_emision = New Global.System.Data.DataColumn("Fecha_emision", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnFecha_emision)
+            Me.columnTotal = New Global.System.Data.DataColumn("Total", GetType(Decimal), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTotal)
+            Me.columnCi_Nit_Comprador = New Global.System.Data.DataColumn("Ci_Nit_Comprador", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCi_Nit_Comprador)
+            Me.columnnombre = New Global.System.Data.DataColumn("nombre", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnnombre)
+            Me.columnapellidos = New Global.System.Data.DataColumn("apellidos", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnapellidos)
+            Me.columnfuncionarioUAB = New Global.System.Data.DataColumn("funcionarioUAB", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnfuncionarioUAB)
+            Me.columnFechaInicio = New Global.System.Data.DataColumn("FechaInicio", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnFechaInicio)
+            Me.columnFechaFin = New Global.System.Data.DataColumn("FechaFin", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnFechaFin)
+            Me.columnmodulo = New Global.System.Data.DataColumn("modulo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnmodulo)
+            Me.columnCi_Nit_Comprador.MaxLength = 50
+            Me.columnnombre.MaxLength = 50
+            Me.columnapellidos.MaxLength = 50
+            Me.columnfuncionarioUAB.MaxLength = 3
+            Me.columnFechaInicio.ReadOnly = true
+            Me.columnFechaFin.ReadOnly = true
+            Me.columnmodulo.MaxLength = 50
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function Newmostrar_venta_porFechaRow() As mostrar_venta_porFechaRow
+            Return CType(Me.NewRow,mostrar_venta_porFechaRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New mostrar_venta_porFechaRow(builder)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(mostrar_venta_porFechaRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.mostrar_venta_porFechaRowChangedEvent) Is Nothing) Then
+                RaiseEvent mostrar_venta_porFechaRowChanged(Me, New mostrar_venta_porFechaRowChangeEvent(CType(e.Row,mostrar_venta_porFechaRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.mostrar_venta_porFechaRowChangingEvent) Is Nothing) Then
+                RaiseEvent mostrar_venta_porFechaRowChanging(Me, New mostrar_venta_porFechaRowChangeEvent(CType(e.Row,mostrar_venta_porFechaRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.mostrar_venta_porFechaRowDeletedEvent) Is Nothing) Then
+                RaiseEvent mostrar_venta_porFechaRowDeleted(Me, New mostrar_venta_porFechaRowChangeEvent(CType(e.Row,mostrar_venta_porFechaRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.mostrar_venta_porFechaRowDeletingEvent) Is Nothing) Then
+                RaiseEvent mostrar_venta_porFechaRowDeleting(Me, New mostrar_venta_porFechaRowChangeEvent(CType(e.Row,mostrar_venta_porFechaRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub Removemostrar_venta_porFechaRow(ByVal row As mostrar_venta_porFechaRow)
+            Me.Rows.Remove(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
+            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
+            Dim ds As dbfacDataSet = New dbfacDataSet()
+            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
+            any1.MinOccurs = New Decimal(0)
+            any1.MaxOccurs = Decimal.MaxValue
+            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any1)
+            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
+            any2.MinOccurs = New Decimal(1)
+            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any2)
+            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute1.Name = "namespace"
+            attribute1.FixedValue = ds.Namespace
+            type.Attributes.Add(attribute1)
+            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute2.Name = "tableTypeName"
+            attribute2.FixedValue = "mostrar_venta_porFechaDataTable"
             type.Attributes.Add(attribute2)
             type.Particle = sequence
             Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
@@ -27747,255 +27473,6 @@ Partial Public Class dbfacDataSet
     '''<summary>
     '''Represents strongly named DataRow class.
     '''</summary>
-    Partial Public Class mostrar_venta_porFechaRow
-        Inherits Global.System.Data.DataRow
-        
-        Private tablemostrar_venta_porFecha As mostrar_venta_porFechaDataTable
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
-            MyBase.New(rb)
-            Me.tablemostrar_venta_porFecha = CType(Me.Table,mostrar_venta_porFechaDataTable)
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property IDCodQr() As Integer
-            Get
-                Return CType(Me(Me.tablemostrar_venta_porFecha.IDCodQrColumn),Integer)
-            End Get
-            Set
-                Me(Me.tablemostrar_venta_porFecha.IDCodQrColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Fecha_emision() As Date
-            Get
-                Try 
-                    Return CType(Me(Me.tablemostrar_venta_porFecha.Fecha_emisionColumn),Date)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Fecha_emision' de la tabla 'mostrar_venta_porFecha' es DB"& _ 
-                            "Null.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tablemostrar_venta_porFecha.Fecha_emisionColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Total() As Decimal
-            Get
-                Try 
-                    Return CType(Me(Me.tablemostrar_venta_porFecha.TotalColumn),Decimal)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Total' de la tabla 'mostrar_venta_porFecha' es DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tablemostrar_venta_porFecha.TotalColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Ci_Nit_Comprador() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tablemostrar_venta_porFecha.Ci_Nit_CompradorColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Ci_Nit_Comprador' de la tabla 'mostrar_venta_porFecha' es"& _ 
-                            " DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tablemostrar_venta_porFecha.Ci_Nit_CompradorColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property nombre() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tablemostrar_venta_porFecha.nombreColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'nombre' de la tabla 'mostrar_venta_porFecha' es DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tablemostrar_venta_porFecha.nombreColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property apellidos() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tablemostrar_venta_porFecha.apellidosColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'apellidos' de la tabla 'mostrar_venta_porFecha' es DBNull"& _ 
-                            ".", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tablemostrar_venta_porFecha.apellidosColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property funcionarioUAB() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tablemostrar_venta_porFecha.funcionarioUABColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'funcionarioUAB' de la tabla 'mostrar_venta_porFecha' es D"& _ 
-                            "BNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tablemostrar_venta_porFecha.funcionarioUABColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property FechaInicio() As Date
-            Get
-                Try 
-                    Return CType(Me(Me.tablemostrar_venta_porFecha.FechaInicioColumn),Date)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'FechaInicio' de la tabla 'mostrar_venta_porFecha' es DBNu"& _ 
-                            "ll.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tablemostrar_venta_porFecha.FechaInicioColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property FechaFin() As Date
-            Get
-                Try 
-                    Return CType(Me(Me.tablemostrar_venta_porFecha.FechaFinColumn),Date)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'FechaFin' de la tabla 'mostrar_venta_porFecha' es DBNull."& _ 
-                            "", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tablemostrar_venta_porFecha.FechaFinColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsFecha_emisionNull() As Boolean
-            Return Me.IsNull(Me.tablemostrar_venta_porFecha.Fecha_emisionColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetFecha_emisionNull()
-            Me(Me.tablemostrar_venta_porFecha.Fecha_emisionColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsTotalNull() As Boolean
-            Return Me.IsNull(Me.tablemostrar_venta_porFecha.TotalColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetTotalNull()
-            Me(Me.tablemostrar_venta_porFecha.TotalColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsCi_Nit_CompradorNull() As Boolean
-            Return Me.IsNull(Me.tablemostrar_venta_porFecha.Ci_Nit_CompradorColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetCi_Nit_CompradorNull()
-            Me(Me.tablemostrar_venta_porFecha.Ci_Nit_CompradorColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsnombreNull() As Boolean
-            Return Me.IsNull(Me.tablemostrar_venta_porFecha.nombreColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetnombreNull()
-            Me(Me.tablemostrar_venta_porFecha.nombreColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsapellidosNull() As Boolean
-            Return Me.IsNull(Me.tablemostrar_venta_porFecha.apellidosColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetapellidosNull()
-            Me(Me.tablemostrar_venta_porFecha.apellidosColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsfuncionarioUABNull() As Boolean
-            Return Me.IsNull(Me.tablemostrar_venta_porFecha.funcionarioUABColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetfuncionarioUABNull()
-            Me(Me.tablemostrar_venta_porFecha.funcionarioUABColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsFechaInicioNull() As Boolean
-            Return Me.IsNull(Me.tablemostrar_venta_porFecha.FechaInicioColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetFechaInicioNull()
-            Me(Me.tablemostrar_venta_porFecha.FechaInicioColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsFechaFinNull() As Boolean
-            Return Me.IsNull(Me.tablemostrar_venta_porFecha.FechaFinColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetFechaFinNull()
-            Me(Me.tablemostrar_venta_porFecha.FechaFinColumn) = Global.System.Convert.DBNull
-        End Sub
-    End Class
-    
-    '''<summary>
-    '''Represents strongly named DataRow class.
-    '''</summary>
     Partial Public Class mostrar_venta_porFecha_campoferialRow
         Inherits Global.System.Data.DataRow
         
@@ -29732,6 +29209,271 @@ Partial Public Class dbfacDataSet
     End Class
     
     '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class mostrar_venta_porFechaRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tablemostrar_venta_porFecha As mostrar_venta_porFechaDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tablemostrar_venta_porFecha = CType(Me.Table,mostrar_venta_porFechaDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Fecha_emision() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tablemostrar_venta_porFecha.Fecha_emisionColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Fecha_emision' de la tabla 'mostrar_venta_porFecha' es DB"& _ 
+                            "Null.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablemostrar_venta_porFecha.Fecha_emisionColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Total() As Decimal
+            Get
+                Try 
+                    Return CType(Me(Me.tablemostrar_venta_porFecha.TotalColumn),Decimal)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Total' de la tabla 'mostrar_venta_porFecha' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablemostrar_venta_porFecha.TotalColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Ci_Nit_Comprador() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tablemostrar_venta_porFecha.Ci_Nit_CompradorColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Ci_Nit_Comprador' de la tabla 'mostrar_venta_porFecha' es"& _ 
+                            " DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablemostrar_venta_porFecha.Ci_Nit_CompradorColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property nombre() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tablemostrar_venta_porFecha.nombreColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'nombre' de la tabla 'mostrar_venta_porFecha' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablemostrar_venta_porFecha.nombreColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property apellidos() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tablemostrar_venta_porFecha.apellidosColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'apellidos' de la tabla 'mostrar_venta_porFecha' es DBNull"& _ 
+                            ".", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablemostrar_venta_porFecha.apellidosColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property funcionarioUAB() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tablemostrar_venta_porFecha.funcionarioUABColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'funcionarioUAB' de la tabla 'mostrar_venta_porFecha' es D"& _ 
+                            "BNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablemostrar_venta_porFecha.funcionarioUABColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property FechaInicio() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tablemostrar_venta_porFecha.FechaInicioColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'FechaInicio' de la tabla 'mostrar_venta_porFecha' es DBNu"& _ 
+                            "ll.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablemostrar_venta_porFecha.FechaInicioColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property FechaFin() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tablemostrar_venta_porFecha.FechaFinColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'FechaFin' de la tabla 'mostrar_venta_porFecha' es DBNull."& _ 
+                            "", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablemostrar_venta_porFecha.FechaFinColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property modulo() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tablemostrar_venta_porFecha.moduloColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'modulo' de la tabla 'mostrar_venta_porFecha' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablemostrar_venta_porFecha.moduloColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsFecha_emisionNull() As Boolean
+            Return Me.IsNull(Me.tablemostrar_venta_porFecha.Fecha_emisionColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetFecha_emisionNull()
+            Me(Me.tablemostrar_venta_porFecha.Fecha_emisionColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsTotalNull() As Boolean
+            Return Me.IsNull(Me.tablemostrar_venta_porFecha.TotalColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetTotalNull()
+            Me(Me.tablemostrar_venta_porFecha.TotalColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCi_Nit_CompradorNull() As Boolean
+            Return Me.IsNull(Me.tablemostrar_venta_porFecha.Ci_Nit_CompradorColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCi_Nit_CompradorNull()
+            Me(Me.tablemostrar_venta_porFecha.Ci_Nit_CompradorColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsnombreNull() As Boolean
+            Return Me.IsNull(Me.tablemostrar_venta_porFecha.nombreColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetnombreNull()
+            Me(Me.tablemostrar_venta_porFecha.nombreColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsapellidosNull() As Boolean
+            Return Me.IsNull(Me.tablemostrar_venta_porFecha.apellidosColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetapellidosNull()
+            Me(Me.tablemostrar_venta_porFecha.apellidosColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsfuncionarioUABNull() As Boolean
+            Return Me.IsNull(Me.tablemostrar_venta_porFecha.funcionarioUABColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetfuncionarioUABNull()
+            Me(Me.tablemostrar_venta_porFecha.funcionarioUABColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsFechaInicioNull() As Boolean
+            Return Me.IsNull(Me.tablemostrar_venta_porFecha.FechaInicioColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetFechaInicioNull()
+            Me(Me.tablemostrar_venta_porFecha.FechaInicioColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsFechaFinNull() As Boolean
+            Return Me.IsNull(Me.tablemostrar_venta_porFecha.FechaFinColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetFechaFinNull()
+            Me(Me.tablemostrar_venta_porFecha.FechaFinColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsmoduloNull() As Boolean
+            Return Me.IsNull(Me.tablemostrar_venta_porFecha.moduloColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetmoduloNull()
+            Me(Me.tablemostrar_venta_porFecha.moduloColumn) = Global.System.Convert.DBNull
+        End Sub
+    End Class
+    
+    '''<summary>
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -31139,42 +30881,6 @@ Partial Public Class dbfacDataSet
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-    Public Class mostrar_venta_porFechaRowChangeEvent
-        Inherits Global.System.EventArgs
-        
-        Private eventRow As mostrar_venta_porFechaRow
-        
-        Private eventAction As Global.System.Data.DataRowAction
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub New(ByVal row As mostrar_venta_porFechaRow, ByVal action As Global.System.Data.DataRowAction)
-            MyBase.New
-            Me.eventRow = row
-            Me.eventAction = action
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property Row() As mostrar_venta_porFechaRow
-            Get
-                Return Me.eventRow
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
-            Get
-                Return Me.eventAction
-            End Get
-        End Property
-    End Class
-    
-    '''<summary>
-    '''Row event argument class
-    '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Class mostrar_venta_porFecha_campoferialRowChangeEvent
         Inherits Global.System.EventArgs
         
@@ -31445,6 +31151,42 @@ Partial Public Class dbfacDataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property Row() As validar_usuario_idusuarioRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class mostrar_venta_porFechaRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As mostrar_venta_porFechaRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As mostrar_venta_porFechaRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As mostrar_venta_porFechaRow
             Get
                 Return Me.eventRow
             End Get
@@ -32677,14 +32419,6 @@ Namespace dbfacDataSetTableAdapters
                     Me.Adapter.UpdateCommand.Connection.Close
                 End If
             End Try
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal nitEmisor As String, ByVal numAutorizacion As String, ByVal llave As String, ByVal Original_id_datosImp As Integer, ByVal Original_nitEmisor As String, ByVal Original_numAutorizacion As String) As Integer
-            Return Me.Update(nitEmisor, numAutorizacion, llave, Original_id_datosImp, Original_nitEmisor, Original_numAutorizacion, Original_id_datosImp)
         End Function
     End Class
     
@@ -42217,221 +41951,6 @@ Namespace dbfacDataSetTableAdapters
      Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
      Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-    Partial Public Class mostrar_venta_porFechaTableAdapter
-        Inherits Global.System.ComponentModel.Component
-        
-        Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-        
-        Private _connection As Global.System.Data.SqlClient.SqlConnection
-        
-        Private _transaction As Global.System.Data.SqlClient.SqlTransaction
-        
-        Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-        
-        Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Friend ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
-            Get
-                If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
-                End If
-                Return Me._adapter
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
-            Get
-                If (Me._connection Is Nothing) Then
-                    Me.InitConnection
-                End If
-                Return Me._connection
-            End Get
-            Set
-                Me._connection = value
-                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
-                    Me.Adapter.InsertCommand.Connection = value
-                End If
-                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
-                    Me.Adapter.DeleteCommand.Connection = value
-                End If
-                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
-                    Me.Adapter.UpdateCommand.Connection = value
-                End If
-                Dim i As Integer = 0
-                Do While (i < Me.CommandCollection.Length)
-                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
-                    End If
-                    i = (i + 1)
-                Loop
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Friend Property Transaction() As Global.System.Data.SqlClient.SqlTransaction
-            Get
-                Return Me._transaction
-            End Get
-            Set
-                Me._transaction = value
-                Dim i As Integer = 0
-                Do While (i < Me.CommandCollection.Length)
-                    Me.CommandCollection(i).Transaction = Me._transaction
-                    i = (i + 1)
-                Loop
-                If ((Not (Me.Adapter) Is Nothing)  _
-                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
-                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
-                End If
-                If ((Not (Me.Adapter) Is Nothing)  _
-                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
-                    Me.Adapter.InsertCommand.Transaction = Me._transaction
-                End If
-                If ((Not (Me.Adapter) Is Nothing)  _
-                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
-                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
-                End If
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
-            Get
-                If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
-                End If
-                Return Me._commandCollection
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property ClearBeforeFill() As Boolean
-            Get
-                Return Me._clearBeforeFill
-            End Get
-            Set
-                Me._clearBeforeFill = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Sub InitAdapter()
-            Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter()
-            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
-            tableMapping.SourceTable = "Table"
-            tableMapping.DataSetTable = "mostrar_venta_porFecha"
-            tableMapping.ColumnMappings.Add("IDCodQr", "IDCodQr")
-            tableMapping.ColumnMappings.Add("Fecha_emision", "Fecha_emision")
-            tableMapping.ColumnMappings.Add("Total", "Total")
-            tableMapping.ColumnMappings.Add("Ci_Nit_Comprador", "Ci_Nit_Comprador")
-            tableMapping.ColumnMappings.Add("nombre", "nombre")
-            tableMapping.ColumnMappings.Add("apellidos", "apellidos")
-            tableMapping.ColumnMappings.Add("funcionarioUAB", "funcionarioUAB")
-            tableMapping.ColumnMappings.Add("FechaInicio", "FechaInicio")
-            tableMapping.ColumnMappings.Add("FechaFin", "FechaFin")
-            Me._adapter.TableMappings.Add(tableMapping)
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Sub InitConnection()
-            Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.Sistema_Facturacion.My.MySettings.Default.dbfacConnectionString
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
-            Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "dbo.mostrar_venta_porFecha"
-            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.StoredProcedure
-            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@fechaInicio", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@FechaFin", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@funcionario", Global.System.Data.SqlDbType.VarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As dbfacDataSet.mostrar_venta_porFechaDataTable, ByVal fechaInicio As Global.System.Nullable(Of Date), ByVal FechaFin As Global.System.Nullable(Of Date), ByVal funcionario As String) As Integer
-            Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (fechaInicio.HasValue = true) Then
-                Me.Adapter.SelectCommand.Parameters(1).Value = CType(fechaInicio.Value,Date)
-            Else
-                Me.Adapter.SelectCommand.Parameters(1).Value = Global.System.DBNull.Value
-            End If
-            If (FechaFin.HasValue = true) Then
-                Me.Adapter.SelectCommand.Parameters(2).Value = CType(FechaFin.Value,Date)
-            Else
-                Me.Adapter.SelectCommand.Parameters(2).Value = Global.System.DBNull.Value
-            End If
-            If (funcionario Is Nothing) Then
-                Me.Adapter.SelectCommand.Parameters(3).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.SelectCommand.Parameters(3).Value = CType(funcionario,String)
-            End If
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
-            End If
-            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
-            Return returnValue
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData(ByVal fechaInicio As Global.System.Nullable(Of Date), ByVal FechaFin As Global.System.Nullable(Of Date), ByVal funcionario As String) As dbfacDataSet.mostrar_venta_porFechaDataTable
-            Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (fechaInicio.HasValue = true) Then
-                Me.Adapter.SelectCommand.Parameters(1).Value = CType(fechaInicio.Value,Date)
-            Else
-                Me.Adapter.SelectCommand.Parameters(1).Value = Global.System.DBNull.Value
-            End If
-            If (FechaFin.HasValue = true) Then
-                Me.Adapter.SelectCommand.Parameters(2).Value = CType(FechaFin.Value,Date)
-            Else
-                Me.Adapter.SelectCommand.Parameters(2).Value = Global.System.DBNull.Value
-            End If
-            If (funcionario Is Nothing) Then
-                Me.Adapter.SelectCommand.Parameters(3).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.SelectCommand.Parameters(3).Value = CType(funcionario,String)
-            End If
-            Dim dataTable As dbfacDataSet.mostrar_venta_porFechaDataTable = New dbfacDataSet.mostrar_venta_porFechaDataTable()
-            Me.Adapter.Fill(dataTable)
-            Return dataTable
-        End Function
-    End Class
-    
-    '''<summary>
-    '''Represents the connection and commands used to retrieve and save data.
-    '''</summary>
-    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
     Partial Public Class mostrar_venta_porFecha_campoferialTableAdapter
         Inherits Global.System.ComponentModel.Component
         
@@ -44040,6 +43559,221 @@ Namespace dbfacDataSetTableAdapters
                 Me.Adapter.SelectCommand.Parameters(2).Value = CType(password,String)
             End If
             Dim dataTable As dbfacDataSet.validar_usuario_idusuarioDataTable = New dbfacDataSet.validar_usuario_idusuarioDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    Partial Public Class mostrar_venta_porFechaTableAdapter
+        Inherits Global.System.ComponentModel.Component
+        
+        Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
+        
+        Private _connection As Global.System.Data.SqlClient.SqlConnection
+        
+        Private _transaction As Global.System.Data.SqlClient.SqlTransaction
+        
+        Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
+        
+        Private _clearBeforeFill As Boolean
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.ClearBeforeFill = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Friend ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection
+                End If
+                Return Me._connection
+            End Get
+            Set
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Transaction() As Global.System.Data.SqlClient.SqlTransaction
+            Get
+                Return Me._transaction
+            End Get
+            Set
+                Me._transaction = value
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    Me.CommandCollection(i).Transaction = Me._transaction
+                    i = (i + 1)
+                Loop
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
+                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
+                    Me.Adapter.InsertCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
+                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
+                End If
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter()
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
+            tableMapping.SourceTable = "Table"
+            tableMapping.DataSetTable = "mostrar_venta_porFecha"
+            tableMapping.ColumnMappings.Add("Fecha_emision", "Fecha_emision")
+            tableMapping.ColumnMappings.Add("Total", "Total")
+            tableMapping.ColumnMappings.Add("Ci_Nit_Comprador", "Ci_Nit_Comprador")
+            tableMapping.ColumnMappings.Add("nombre", "nombre")
+            tableMapping.ColumnMappings.Add("apellidos", "apellidos")
+            tableMapping.ColumnMappings.Add("funcionarioUAB", "funcionarioUAB")
+            tableMapping.ColumnMappings.Add("FechaInicio", "FechaInicio")
+            tableMapping.ColumnMappings.Add("FechaFin", "FechaFin")
+            tableMapping.ColumnMappings.Add("modulo", "modulo")
+            Me._adapter.TableMappings.Add(tableMapping)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitConnection()
+            Me._connection = New Global.System.Data.SqlClient.SqlConnection()
+            Me._connection.ConnectionString = Global.Sistema_Facturacion.My.MySettings.Default.dbfacConnectionString
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
+            Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(0).Connection = Me.Connection
+            Me._commandCollection(0).CommandText = "dbo.mostrar_venta_porFecha"
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.StoredProcedure
+            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@fechaInicio", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@FechaFin", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@funcionario", Global.System.Data.SqlDbType.VarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+        Public Overloads Overridable Function Fill(ByVal dataTable As dbfacDataSet.mostrar_venta_porFechaDataTable, ByVal fechaInicio As Global.System.Nullable(Of Date), ByVal FechaFin As Global.System.Nullable(Of Date), ByVal funcionario As String) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            If (fechaInicio.HasValue = true) Then
+                Me.Adapter.SelectCommand.Parameters(1).Value = CType(fechaInicio.Value,Date)
+            Else
+                Me.Adapter.SelectCommand.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (FechaFin.HasValue = true) Then
+                Me.Adapter.SelectCommand.Parameters(2).Value = CType(FechaFin.Value,Date)
+            Else
+                Me.Adapter.SelectCommand.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            If (funcionario Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.SelectCommand.Parameters(3).Value = CType(funcionario,String)
+            End If
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+        Public Overloads Overridable Function GetData(ByVal fechaInicio As Global.System.Nullable(Of Date), ByVal FechaFin As Global.System.Nullable(Of Date), ByVal funcionario As String) As dbfacDataSet.mostrar_venta_porFechaDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            If (fechaInicio.HasValue = true) Then
+                Me.Adapter.SelectCommand.Parameters(1).Value = CType(fechaInicio.Value,Date)
+            Else
+                Me.Adapter.SelectCommand.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (FechaFin.HasValue = true) Then
+                Me.Adapter.SelectCommand.Parameters(2).Value = CType(FechaFin.Value,Date)
+            Else
+                Me.Adapter.SelectCommand.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            If (funcionario Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.SelectCommand.Parameters(3).Value = CType(funcionario,String)
+            End If
+            Dim dataTable As dbfacDataSet.mostrar_venta_porFechaDataTable = New dbfacDataSet.mostrar_venta_porFechaDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function

@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sistema_Facturacion.exe" size="2640896">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sistema_Facturacion.exe" size="2677760">
       <assemblyIdentity name="Sistema_Facturacion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QdbtmbOAL4JhtK5gdjJz6AxFCO6qb7ca5L/GI5Km+JA=</dsig:DigestValue>
+        <dsig:DigestValue>zLW7CCWViRnTXEKCiuFAEMhannQlmvRmN1s0q1E/3MM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
