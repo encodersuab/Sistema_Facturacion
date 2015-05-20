@@ -311,10 +311,10 @@ Public Class frmDetalleVentaPlanillaCAMPOFERIAL
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        frmReporteVentasPlanillas.MdiParent = frmInicioF
-        frmReporteVentasPlanillas.txtidventa.Text = Me.txtIdVenta.Text
+        frmReporteRecibo.MdiParent = frmInicioF
+        frmReporteRecibo.txtidventa.Text = Me.txtIdVenta.Text
 
-        frmReporteVentasPlanillas.Show()
+        frmReporteRecibo.Show()
         Me.Close()
 
     End Sub

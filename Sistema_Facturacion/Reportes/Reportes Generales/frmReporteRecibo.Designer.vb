@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmReporteVentasPlanillas
+Partial Class frmReporteRecibo
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -61,20 +61,20 @@ Partial Class frmReporteVentasPlanillas
         ReportDataSource1.Name = "DataSet1"
         ReportDataSource1.Value = Me.mostrar_reciboBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptreporte.rdlc"
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptreporteRecibo.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(670, 427)
         Me.ReportViewer1.TabIndex = 3
         '
-        'frmReporteVentasPlanillas
+        'frmReporteRecibo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(670, 427)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Controls.Add(Me.txtidventa)
-        Me.Name = "frmReporteVentasPlanillas"
+        Me.Name = "frmReporteRecibo"
         Me.Text = "frmReporteVentasPlanillas"
         CType(Me.mostrar_reciboBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()

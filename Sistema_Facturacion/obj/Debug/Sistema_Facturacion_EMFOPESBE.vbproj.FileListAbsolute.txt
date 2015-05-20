@@ -90,7 +90,6 @@ D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\D
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVentaPlanilla.resources
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteVentasPlanillas.resources
 D:\Users\Blady\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmImpresionfacturaPlanilla.resources
-D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteVentasPlanillas.resources
 D:\Users\Blady\Desktop\REPOSITORIO1\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion.exe.config
 D:\Users\Blady\Desktop\REPOSITORIO1\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.exe
 D:\Users\Blady\Desktop\REPOSITORIO1\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.xml
@@ -187,7 +186,6 @@ D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Siste
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion_EMFOPESBE.vbproj.GenerateResource.Cache
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\RdlCompile.cache
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\RdlCompile.compiled
-D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmrptVentas.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmrptVentas.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmProductoCAMPOFERIAL.resources
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalleVentaPlanillaCAMPOFERIAL.resources
@@ -247,5 +245,8 @@ D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Siste
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\bin\Debug\Sistema_Facturacion.application
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.exe.manifest
 D:\Users\Blady\Desktop\R\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.application
-D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteVentasGeneral.resources
 D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteXclienteCAMPOFERIAL.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteRecibo.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteVentasGeneralEmfopesbe.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteVentasXclienteEmfopesbe.resources
+D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteVentasGeneralCliente.resources
