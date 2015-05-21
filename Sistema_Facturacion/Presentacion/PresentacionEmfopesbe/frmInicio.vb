@@ -518,4 +518,16 @@ Public Class frmInicioF
         frmReporteventasGeneralPostGrado.Show()
 
     End Sub
+
+    Private Sub PorClienteToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles PorClienteToolStripMenuItem2.Click
+        frmReporteXclienteCAMPOFERIAL.MdiParent = Me
+        frmReporteXclienteCAMPOFERIAL.Show()
+
+    End Sub
+
+    Private Sub GeneralToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles GeneralToolStripMenuItem3.Click
+        frmReporteVentasGeneralCampoFerial.MdiParent = Me
+        frmReporteVentasGeneralCampoFerial.Show()
+
+    End Sub
 End Class
