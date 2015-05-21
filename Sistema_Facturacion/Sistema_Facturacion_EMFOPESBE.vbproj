@@ -490,6 +490,12 @@
     <Compile Include="Reportes\Reportes Generales\frmrptReImpresionFactura.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes RedRubi\frmReporteVentasGeneralRedRubi.Designer.vb">
+      <DependentUpon>frmReporteVentasGeneralRedRubi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes RedRubi\frmReporteVentasGeneralRedRubi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\Reportes RedRubi\frmReporteVentasXClienteRedRubi.Designer.vb">
       <DependentUpon>frmReporteVentasXClienteRedRubi.vb</DependentUpon>
     </Compile>
@@ -664,10 +670,14 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\frmrptReImpresionFactura.resx">
       <DependentUpon>frmrptReImpresionFactura.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes RedRubi\frmReporteVentasGeneralRedRubi.resx">
+      <DependentUpon>frmReporteVentasGeneralRedRubi.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes RedRubi\frmReporteVentasXClienteRedRubi.resx">
       <DependentUpon>frmReporteVentasXClienteRedRubi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteVentasXClienteREDRUBI.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes RedRubi\rptventasGeneralRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentasGeneralEmfopesbe.resx">
       <DependentUpon>frmReporteVentasGeneralEmfopesbe.vb</DependentUpon>
     </EmbeddedResource>

@@ -492,4 +492,10 @@ Public Class frmInicioF
         frmReporteVentasXClienteRedRubi.Show()
 
     End Sub
+
+    Private Sub GeneralToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles GeneralToolStripMenuItem1.Click
+        frmReporteVentasGeneralRedRubi.MdiParent = Me
+        frmReporteVentasGeneralRedRubi.Show()
+
+    End Sub
 End Class
