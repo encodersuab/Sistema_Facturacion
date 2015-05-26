@@ -460,6 +460,12 @@
     <Compile Include="Reportes\Reportes Campo Ferial\frmReporteXclienteCAMPOFERIAL.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmReporteVentasGeneral.Designer.vb">
+      <DependentUpon>frmReporteVentasGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmReporteVentasGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\Reportes Generales\frmReporteVentasgeneralCliente.Designer.vb">
       <DependentUpon>frmReporteVentasgeneralCliente.vb</DependentUpon>
     </Compile>
@@ -671,9 +677,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptReporteVentasXClienteCAMPOFERIAL.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptventasGeneralCampoFerial.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteVentasGeneral.resx">
+      <DependentUpon>frmReporteVentasGeneral.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteVentasgeneralCliente.resx">
       <DependentUpon>frmReporteVentasgeneralCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasGeneral.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasgeneralCliente.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteCuotas.resx">
       <DependentUpon>frmReporteCuotas.vb</DependentUpon>
