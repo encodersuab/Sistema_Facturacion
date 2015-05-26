@@ -526,6 +526,18 @@
     <Compile Include="Reportes\Reportes RedRubi\frmReporteVentasXClienteRedRubi.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCategoriaEmfopesbe.Designer.vb">
+      <DependentUpon>frmReporteCategoriaEmfopesbe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCategoriaEmfopesbe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteProductosEmfopesbe.Designer.vb">
+      <DependentUpon>frmReporteProductosEmfopesbe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmReporteProductosEmfopesbe.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteVentasGeneralEmfopesbe.Designer.vb">
       <DependentUpon>frmReporteVentasGeneralEmfopesbe.vb</DependentUpon>
     </Compile>
@@ -718,12 +730,20 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteVentasXClienteREDRUBI.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptventasGeneralRedRubi.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCategoriaEmfopesbe.resx">
+      <DependentUpon>frmReporteCategoriaEmfopesbe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteProductosEmfopesbe.resx">
+      <DependentUpon>frmReporteProductosEmfopesbe.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentasGeneralEmfopesbe.resx">
       <DependentUpon>frmReporteVentasGeneralEmfopesbe.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentasXclienteEmfopesbe.resx">
       <DependentUpon>frmReporteVentasXclienteEmfopesbe.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReportecategoriaEmfopesbe.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReporteProductoEMFOPESBE.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReporteVentasXClienteEmfopesbe.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptreporteRecibo.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptUsuarios.rdlc" />

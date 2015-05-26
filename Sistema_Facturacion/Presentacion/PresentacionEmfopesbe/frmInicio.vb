@@ -261,20 +261,16 @@ Public Class frmInicioF
 
 
     Private Sub RpteProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RpteProductoToolStripMenuItem.Click
-        'frmReporteProductos.MdiParent = Me
-        'frmReporteProductos.Show()
+        frmReporteProductosEmfopesbe.MdiParent = Me
+        frmReporteProductosEmfopesbe.Show()
 
     End Sub
 
-    Private Sub RpteClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RpteClienteToolStripMenuItem.Click
-        'frmReporteCliente.MdiParent = Me
-        'frmReporteCliente.Show()
-
-    End Sub
+   
 
     Private Sub CategoriaToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem2.Click
-        'frmReporteCatergotria.MdiParent = Me
-        'frmReporteCatergotria.Show()
+        frmReporteCategoriaEmfopesbe.MdiParent = Me
+        frmReporteCategoriaEmfopesbe.Show()
 
     End Sub
 
@@ -304,9 +300,8 @@ Public Class frmInicioF
 
 
 
-    Private Sub RptUsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RptUsuariosToolStripMenuItem.Click
-        frmReporteUsuarios.MdiParent = Me
-        frmReporteUsuarios.Show()
+    Private Sub RptUsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
     End Sub
 
     Private Sub ContadoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ContadoToolStripMenuItem.Click
@@ -399,22 +394,22 @@ Public Class frmInicioF
         frmQR.Show()
     End Sub
 
-    Private Sub ToolStripMenuItem28_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem28.Click
+    Private Sub ToolStripMenuItem28_Click(sender As Object, e As EventArgs)
         'frmReporteCliente.MdiParent = Me
         'frmReporteCliente.Show()
     End Sub
 
-    Private Sub ToolStripMenuItem29_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem29.Click
+    Private Sub ToolStripMenuItem29_Click(sender As Object, e As EventArgs)
         frmReporteUsuarios.MdiParent = Me
         frmReporteUsuarios.Show()
     End Sub
 
-    Private Sub ClientesToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles ClientesToolStripMenuItem.Click
+    Private Sub ClientesToolStripMenuItem_Click_1(sender As Object, e As EventArgs)
         ''frmReporteCliente.MdiParent = Me
         ''frmReporteCliente.Show()
     End Sub
 
-    Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
+    Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmReporteUsuarios.MdiParent = Me
         frmReporteUsuarios.Show()
     End Sub
@@ -531,6 +526,19 @@ Public Class frmInicioF
     Private Sub GeneralToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles GeneralToolStripMenuItem3.Click
         frmReporteVentasGeneralCampoFerial.MdiParent = Me
         frmReporteVentasGeneralCampoFerial.Show()
+
+    End Sub
+
+    Private Sub UsuariosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem1.Click
+        frmReporteUsuarios.MdiParent = Me
+        frmReporteUsuarios.Show()
+    End Sub
+
+    Private Sub postgrado_Click(sender As Object, e As EventArgs) Handles postgrado.Click
+
+    End Sub
+
+    Private Sub reporteR_Click(sender As Object, e As EventArgs) Handles reporteR.Click
 
     End Sub
 End Class
