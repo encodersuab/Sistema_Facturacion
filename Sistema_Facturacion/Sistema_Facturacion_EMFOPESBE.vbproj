@@ -13,7 +13,7 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>H:\qqqqqq\</PublishUrl>
+    <PublishUrl>H:\HIVE-beta\hive\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -502,6 +502,12 @@
     <Compile Include="Reportes\Reportes Generales\frmrptReImpresionFactura.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes PostGrado\frmReporteProductoPostGrado.Designer.vb">
+      <DependentUpon>frmReporteProductoPostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes PostGrado\frmReporteProductoPostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\Reportes PostGrado\frmReporteventasGeneralPostGrado.Designer.vb">
       <DependentUpon>frmReporteventasGeneralPostGrado.vb</DependentUpon>
     </Compile>
@@ -530,6 +536,12 @@
       <DependentUpon>frmReporteCategoriaEmfopesbe.vb</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCategoriaEmfopesbe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes PostGrado\frmReporteCategoriaPostGrado.Designer.vb">
+      <DependentUpon>frmReporteCategoriaPostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes PostGrado\frmReporteCategoriaPostGrado.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteProductosEmfopesbe.Designer.vb">
@@ -709,12 +721,17 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteRecibo.resx">
       <DependentUpon>frmReporteRecibo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteProductoPostGrado.resx">
+      <DependentUpon>frmReporteProductoPostGrado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteventasGeneralPostGrado.resx">
       <DependentUpon>frmReporteventasGeneralPostGrado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteVentasXClientePostGrado.resx">
       <DependentUpon>frmReporteVentasXClientePostGrado.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptCategotiaPostGrado.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteProductoPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteVentasXClientePostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptCuotas.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptFactura.rdlc" />
@@ -732,6 +749,9 @@
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptventasGeneralRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCategoriaEmfopesbe.resx">
       <DependentUpon>frmReporteCategoriaEmfopesbe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteCategoriaPostGrado.resx">
+      <DependentUpon>frmReporteCategoriaPostGrado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteProductosEmfopesbe.resx">
       <DependentUpon>frmReporteProductosEmfopesbe.vb</DependentUpon>

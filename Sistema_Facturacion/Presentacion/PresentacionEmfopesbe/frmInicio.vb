@@ -541,4 +541,16 @@ Public Class frmInicioF
     Private Sub reporteR_Click(sender As Object, e As EventArgs) Handles reporteR.Click
 
     End Sub
+
+    Private Sub ToolStripMenuItem24_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem24.Click
+        frmReporteCategoriaPostGrado.MdiParent = Me
+        frmReporteCategoriaPostGrado.Show()
+
+    End Sub
+
+    Private Sub ToolStripMenuItem23_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem23.Click
+        frmReporteProductoPostGrado.MdiParent = Me
+        frmReporteProductoPostGrado.Show()
+
+    End Sub
 End Class
