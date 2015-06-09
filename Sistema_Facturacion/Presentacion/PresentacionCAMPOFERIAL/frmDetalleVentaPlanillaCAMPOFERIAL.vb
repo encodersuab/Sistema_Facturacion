@@ -270,6 +270,7 @@ Public Class frmDetalleVentaPlanillaCAMPOFERIAL
         frmProductoCAMPOFERIAL.txtTag.Text = "2"
         frmProductoCAMPOFERIAL.ShowDialog()
         lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text + "/USUARIO:" + frmInicioF.lbUsurio.Text
+
     End Sub
 
 
@@ -292,20 +293,20 @@ Public Class frmDetalleVentaPlanillaCAMPOFERIAL
     End Sub
 
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
-        'Dim cant As Double
-        'cant = txtCantidad.Text
-        'If txtCantidad.Text >= txtStock.Value Then
-        '    MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
-        '    'btnGuardar.Visible = 0
-        '    txtCantidad.Text = txtStock.Value
+        Dim cant As Double
+        cant = txtCantidad.Text
+        If txtCantidad.Text >= txtStock.Value Then
+            MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
+            'btnGuardar.Visible = 0
+            txtCantidad.Text = txtStock.Value
+        Else
+            btnGuardar.Visible = 1
+        End If
+        'If txtCantidad.Text = 0 Then
+        '    btnGuardar.Visible = 0
         'Else
         '    btnGuardar.Visible = 1
         'End If
-        ''If txtCantidad.Text = 0 Then
-        ''    btnGuardar.Visible = 0
-        ''Else
-        ''    btnGuardar.Visible = 1
-        ''End If
 
     End Sub
 

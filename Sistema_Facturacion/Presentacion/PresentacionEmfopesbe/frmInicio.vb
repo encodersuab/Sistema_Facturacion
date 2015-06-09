@@ -198,6 +198,7 @@ Public Class frmInicioF
     End Sub
 
     Private Sub ReporteDeProductoToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
@@ -338,7 +339,7 @@ Public Class frmInicioF
         frmVentaCAMPOFERIAL.Show()
     End Sub
 
-    Private Sub PorPlanillaToolStripMenuItem1_Click(sender As Object, e As EventArgs)
+    Private Sub PorPlanillaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PorPlanillaToolStripMenuItem1.Click
         frmVentaPlanillaCAMPOFERIAL.MdiParent = Me
         frmVentaPlanillaCAMPOFERIAL.Show()
 
@@ -538,18 +539,6 @@ Public Class frmInicioF
     End Sub
 
     Private Sub reporteR_Click(sender As Object, e As EventArgs) Handles reporteR.Click
-
-    End Sub
-
-    Private Sub ToolStripMenuItem24_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem24.Click
-        frmReporteCategoriaPostGrado.MdiParent = Me
-        frmReporteCategoriaPostGrado.Show()
-
-    End Sub
-
-    Private Sub ToolStripMenuItem23_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem23.Click
-        frmReporteProductoPostGrado.MdiParent = Me
-        frmReporteProductoPostGrado.Show()
 
     End Sub
 End Class
