@@ -28,6 +28,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtDD = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.lbliteral = New System.Windows.Forms.Label()
         Me.lbdetalle = New System.Windows.Forms.Label()
         Me.btnFinalizarVenta = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -46,7 +47,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.lbmedida = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
-        Me.txtStock = New System.Windows.Forms.NumericUpDown()
         Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtnituab = New System.Windows.Forms.TextBox()
@@ -70,14 +70,14 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtidCliente = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
-        Me.lbliteral = New System.Windows.Forms.Label()
+        Me.txtStock = New System.Windows.Forms.NumericUpDown()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'erroricono
@@ -125,6 +125,14 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.Label8.Size = New System.Drawing.Size(33, 13)
         Me.Label8.TabIndex = 44
         Me.Label8.Text = "SON:"
+        '
+        'lbliteral
+        '
+        Me.lbliteral.AutoSize = True
+        Me.lbliteral.Location = New System.Drawing.Point(43, 369)
+        Me.lbliteral.Name = "lbliteral"
+        Me.lbliteral.Size = New System.Drawing.Size(0, 13)
+        Me.lbliteral.TabIndex = 43
         '
         'lbdetalle
         '
@@ -322,16 +330,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtNombreFac.Name = "txtNombreFac"
         Me.txtNombreFac.Size = New System.Drawing.Size(173, 20)
         Me.txtNombreFac.TabIndex = 33
-        '
-        'txtStock
-        '
-        Me.txtStock.Enabled = False
-        Me.txtStock.Location = New System.Drawing.Point(1017, 46)
-        Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
-        Me.txtStock.Name = "txtStock"
-        Me.txtStock.Size = New System.Drawing.Size(39, 20)
-        Me.txtStock.TabIndex = 29
-        Me.txtStock.Visible = False
         '
         'txtCantidad
         '
@@ -540,19 +538,22 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtIdVenta.Size = New System.Drawing.Size(173, 20)
         Me.txtIdVenta.TabIndex = 0
         '
-        'lbliteral
+        'txtStock
         '
-        Me.lbliteral.AutoSize = True
-        Me.lbliteral.Location = New System.Drawing.Point(43, 369)
-        Me.lbliteral.Name = "lbliteral"
-        Me.lbliteral.Size = New System.Drawing.Size(0, 13)
-        Me.lbliteral.TabIndex = 43
+        Me.txtStock.Enabled = False
+        Me.txtStock.Location = New System.Drawing.Point(1017, 46)
+        Me.txtStock.Maximum = New Decimal(New Integer() {1000000000, 0, 0, 0})
+        Me.txtStock.Name = "txtStock"
+        Me.txtStock.Size = New System.Drawing.Size(39, 20)
+        Me.txtStock.TabIndex = 29
+        Me.txtStock.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.txtStock.Visible = False
         '
         'frmDetalleVentaCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(968, 422)
+        Me.ClientSize = New System.Drawing.Size(1067, 422)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox2)
@@ -569,8 +570,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
