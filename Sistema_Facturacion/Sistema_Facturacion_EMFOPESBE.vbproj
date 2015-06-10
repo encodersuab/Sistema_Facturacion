@@ -472,6 +472,12 @@
     <Compile Include="Reportes\Reportes Generales\frmReporteVentasgeneralCliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes PostGrado\frmReporteProductosPostGrado.Designer.vb">
+      <DependentUpon>frmReporteProductosPostGrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes PostGrado\frmReporteProductosPostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\Reportes PostGrado\frmReporteCategoriaPostGrado.Designer.vb">
       <DependentUpon>frmReporteCategoriaPostGrado.vb</DependentUpon>
     </Compile>
@@ -518,6 +524,18 @@
       <DependentUpon>frmReporteVentasXClientePostGrado.vb</DependentUpon>
     </Compile>
     <Compile Include="Reportes\Reportes PostGrado\frmReporteVentasXClientePostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes RedRubi\frmReporteCategoriaREDRUBI.Designer.vb">
+      <DependentUpon>frmReporteCategoriaREDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes RedRubi\frmReporteCategoriaREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes RedRubi\frmReporteProductosRedRubi.Designer.vb">
+      <DependentUpon>frmReporteProductosRedRubi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes RedRubi\frmReporteProductosRedRubi.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\Reportes RedRubi\frmReporteVentasGeneralRedRubi.Designer.vb">
@@ -703,6 +721,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasGeneral.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasgeneralCliente.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteProductosPostGrado.resx">
+      <DependentUpon>frmReporteProductosPostGrado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteCategoriaPostGrado.resx">
       <DependentUpon>frmReporteCategoriaPostGrado.vb</DependentUpon>
     </EmbeddedResource>
@@ -725,6 +746,7 @@
       <DependentUpon>frmReporteVentasXClientePostGrado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteCategoriaPostGrado.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteProductoPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteVentasXClientePostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptCuotas.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptFactura.rdlc" />
@@ -732,12 +754,20 @@
       <DependentUpon>frmrptReImpresionFactura.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptventasGeneralPostGrado.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes RedRubi\frmReporteCategoriaREDRUBI.resx">
+      <DependentUpon>frmReporteCategoriaREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes RedRubi\frmReporteProductosRedRubi.resx">
+      <DependentUpon>frmReporteProductosRedRubi.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes RedRubi\frmReporteVentasGeneralRedRubi.resx">
       <DependentUpon>frmReporteVentasGeneralRedRubi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes RedRubi\frmReporteVentasXClienteRedRubi.resx">
       <DependentUpon>frmReporteVentasXClienteRedRubi.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteCategoriaRedRubi.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteProductosRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteVentasXClienteREDRUBI.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptventasGeneralRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCategoriaEmfopesbe.resx">
