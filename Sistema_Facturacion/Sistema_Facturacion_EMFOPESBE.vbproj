@@ -448,6 +448,18 @@
     <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes Campo Ferial\frmReporteCategoriaCampoFerial.Designer.vb">
+      <DependentUpon>frmReporteCategoriaCampoFerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Campo Ferial\frmReporteCategoriaCampoFerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes Campo Ferial\frmReporteProductosCampoFerial.Designer.vb">
+      <DependentUpon>frmReporteProductosCampoFerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Campo Ferial\frmReporteProductosCampoFerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\Reportes Campo Ferial\frmReporteVentasGeneralCampoFerial.Designer.vb">
       <DependentUpon>frmReporteVentasGeneralCampoFerial.vb</DependentUpon>
     </Compile>
@@ -705,12 +717,20 @@
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.resx">
       <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\frmReporteCategoriaCampoFerial.resx">
+      <DependentUpon>frmReporteCategoriaCampoFerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\frmReporteProductosCampoFerial.resx">
+      <DependentUpon>frmReporteProductosCampoFerial.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\frmReporteVentasGeneralCampoFerial.resx">
       <DependentUpon>frmReporteVentasGeneralCampoFerial.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\frmReporteXclienteCAMPOFERIAL.resx">
       <DependentUpon>frmReporteXclienteCAMPOFERIAL.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptReporteCategoriaCampoFerial.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptReporteProductosCampoFerial.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptReporteVentasXClienteCAMPOFERIAL.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptventasGeneralCampoFerial.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteVentasGeneral.resx">

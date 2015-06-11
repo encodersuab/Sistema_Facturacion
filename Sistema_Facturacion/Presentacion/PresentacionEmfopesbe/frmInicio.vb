@@ -565,4 +565,16 @@ Public Class frmInicioF
         frmReporteProductosRedRubi.MdiParent = Me
         frmReporteProductosRedRubi.Show()
     End Sub
+
+    Private Sub ToolStripMenuItem10_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem10.Click
+        frmReporteCategoriaCampoFerial.MdiParent = Me
+        frmReporteCategoriaCampoFerial.Show()
+
+    End Sub
+
+    Private Sub ToolStripMenuItem9_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem9.Click
+        frmReporteProductosCampoFerial.MdiParent = Me
+        frmReporteProductosCampoFerial.Show()
+
+    End Sub
 End Class
