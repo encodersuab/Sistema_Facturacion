@@ -171,7 +171,7 @@ Public Class CC
         Return table_inv(c)
     End Function
     Private Shared Function verhoeff_add_recursive(number As String, digits As Integer) As String
-        Dim temp As String = number
+        Dim temp As Long = Long.Parse(number)
         Dim x As Integer
         While digits > 0
             '   MsgBox(temp)

@@ -41,7 +41,7 @@ Partial Class frmPruebaCC
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(110, 285)
+        Me.Button1.Location = New System.Drawing.Point(45, 253)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
@@ -146,7 +146,7 @@ Partial Class frmPruebaCC
         '
         'txtresultCC
         '
-        Me.txtresultCC.Location = New System.Drawing.Point(234, 285)
+        Me.txtresultCC.Location = New System.Drawing.Point(169, 253)
         Me.txtresultCC.Name = "txtresultCC"
         Me.txtresultCC.Size = New System.Drawing.Size(168, 20)
         Me.txtresultCC.TabIndex = 13

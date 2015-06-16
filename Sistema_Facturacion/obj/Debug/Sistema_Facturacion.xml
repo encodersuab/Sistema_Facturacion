@@ -6,110 +6,7 @@ Sistema_Facturacion
 </name>
 </assembly>
 <members>
-<member name="P:Sistema_Facturacion.My.Resources.Resources.ResourceManager">
-	<summary>
-  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.Culture">
-	<summary>
-  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
-  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.descarga__1_">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.descarga__3_">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.descarga__4_">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios___copia">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios1">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios2">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios3">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.images__3_">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.slider3">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.Unitag_QRCode_1426797072421">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Sistema_Facturacion.My.Resources.Resources.ventas_online">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="T:Sistema_Facturacion.My.Resources.Resources">
-	<summary>
-  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
-</summary>
-</member><member name="P:Sistema_Facturacion.Numalet.Decimales">
-	<summary>
- Indica la cantidad de decimales que se pasarán a entero para la conversión
- </summary>
-	<remarks>Esta propiedad cambia al cambiar MascaraDecimal por un valor que empieze con '0'</remarks>
-</member><member name="P:Sistema_Facturacion.Numalet.CultureInfo">
-	<summary>
- Objeto CultureInfo utilizado para convertir las cadenas de entrada en números
- </summary>
-</member><member name="P:Sistema_Facturacion.Numalet.SeparadorDecimalSalida">
-	<summary>
- Indica la cadena a intercalar entre la parte entera y la decimal del número
- </summary>
-</member><member name="P:Sistema_Facturacion.Numalet.MascaraSalidaDecimal">
-	<summary>
- Indica el formato que se le dara a la parte decimal del número
- </summary>
-</member><member name="P:Sistema_Facturacion.Numalet.LetraCapital">
-	<summary>
- Indica si la primera letra del resultado debe estár en mayúscula
- </summary>
-</member><member name="P:Sistema_Facturacion.Numalet.ConvertirDecimales">
-	<summary>
- Indica si se deben convertir los decimales a su expresión nominal
- </summary>
-</member><member name="P:Sistema_Facturacion.Numalet.ApocoparUnoParteEntera">
-	<summary>
- Indica si de debe cambiar "uno" por "un" en las unidades.
- </summary>
-</member><member name="P:Sistema_Facturacion.Numalet.ApocoparUnoParteDecimal">
-	<summary>
- Determina si se debe apococopar el "uno" en la parte decimal
- </summary>
-	<remarks>El valor de esta propiedad cambia al setear ConvertirDecimales</remarks>
-</member><member name="T:Sistema_Facturacion.Numalet">
-	<summary>
- Convierte números en su expresión numérica a su numeral cardinal
- </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.TCategoriaDataTable">
+<member name="T:Sistema_Facturacion.dbfacDataSet.TCategoriaDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -980,6 +877,109 @@ Used to sort self-referenced table's rows
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.TableAdapterManager">
 	<summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:Sistema_Facturacion.Numalet.Decimales">
+	<summary>
+ Indica la cantidad de decimales que se pasarán a entero para la conversión
+ </summary>
+	<remarks>Esta propiedad cambia al cambiar MascaraDecimal por un valor que empieze con '0'</remarks>
+</member><member name="P:Sistema_Facturacion.Numalet.CultureInfo">
+	<summary>
+ Objeto CultureInfo utilizado para convertir las cadenas de entrada en números
+ </summary>
+</member><member name="P:Sistema_Facturacion.Numalet.SeparadorDecimalSalida">
+	<summary>
+ Indica la cadena a intercalar entre la parte entera y la decimal del número
+ </summary>
+</member><member name="P:Sistema_Facturacion.Numalet.MascaraSalidaDecimal">
+	<summary>
+ Indica el formato que se le dara a la parte decimal del número
+ </summary>
+</member><member name="P:Sistema_Facturacion.Numalet.LetraCapital">
+	<summary>
+ Indica si la primera letra del resultado debe estár en mayúscula
+ </summary>
+</member><member name="P:Sistema_Facturacion.Numalet.ConvertirDecimales">
+	<summary>
+ Indica si se deben convertir los decimales a su expresión nominal
+ </summary>
+</member><member name="P:Sistema_Facturacion.Numalet.ApocoparUnoParteEntera">
+	<summary>
+ Indica si de debe cambiar "uno" por "un" en las unidades.
+ </summary>
+</member><member name="P:Sistema_Facturacion.Numalet.ApocoparUnoParteDecimal">
+	<summary>
+ Determina si se debe apococopar el "uno" en la parte decimal
+ </summary>
+	<remarks>El valor de esta propiedad cambia al setear ConvertirDecimales</remarks>
+</member><member name="T:Sistema_Facturacion.Numalet">
+	<summary>
+ Convierte números en su expresión numérica a su numeral cardinal
+ </summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.descarga__1_">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.descarga__3_">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.descarga__4_">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios___copia">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios1">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios2">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.factura_electronica_beneficios3">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.images__3_">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.slider3">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.Unitag_QRCode_1426797072421">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sistema_Facturacion.My.Resources.Resources.ventas_online">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Sistema_Facturacion.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
 </summary>
 </member>
 </members>
