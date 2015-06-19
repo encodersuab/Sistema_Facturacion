@@ -35,6 +35,7 @@ Partial Class frmPruebaCC
         Me.txtllave = New System.Windows.Forms.TextBox()
         Me.txtresultCC = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.dtpfecha = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
         '
         'Button1
@@ -155,11 +156,19 @@ Partial Class frmPruebaCC
         Me.Button2.Text = "LIMPIAR"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'dtpfecha
+        '
+        Me.dtpfecha.Location = New System.Drawing.Point(144, 21)
+        Me.dtpfecha.Name = "dtpfecha"
+        Me.dtpfecha.Size = New System.Drawing.Size(200, 20)
+        Me.dtpfecha.TabIndex = 15
+        '
         'frmPruebaCC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(384, 378)
+        Me.Controls.Add(Me.dtpfecha)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.txtresultCC)
         Me.Controls.Add(Me.Label6)
@@ -192,4 +201,5 @@ Partial Class frmPruebaCC
     Friend WithEvents txtllave As System.Windows.Forms.TextBox
     Friend WithEvents txtresultCC As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents dtpfecha As System.Windows.Forms.DateTimePicker
 End Class

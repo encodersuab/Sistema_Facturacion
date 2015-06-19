@@ -9,7 +9,7 @@
     End Sub
     Public Function CalcularFechaParaCC() As String
         'CALCULAR LA FECHA
-        Dim x As DateTime = DateTime.Now
+        Dim x As DateTime = dtpfecha.Value.Date
         Dim FECHA As Integer = ((x.Year * 100) + x.Month) * 100 + x.Day
         Return FECHA.ToString()
 

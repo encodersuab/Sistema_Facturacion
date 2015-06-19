@@ -22,6 +22,7 @@ Partial Class frmEditarProducto2PostGrado
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.gbimagen = New System.Windows.Forms.GroupBox()
         Me.imagen = New System.Windows.Forms.PictureBox()
         Me.btnlimpiar = New System.Windows.Forms.PictureBox()
@@ -46,12 +47,14 @@ Partial Class frmEditarProducto2PostGrado
         Me.Button1 = New System.Windows.Forms.Button()
         Me.dtpfechaModificacion = New System.Windows.Forms.DateTimePicker()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.gbimagen.SuspendLayout()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btncargar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbFechaVencimiento.SuspendLayout()
         Me.gbdetalle.SuspendLayout()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'gbimagen
@@ -293,6 +296,10 @@ Partial Class frmEditarProducto2PostGrado
         Me.Label8.TabIndex = 34
         Me.Label8.Text = "Fecha de Modificacion"
         '
+        'erroricono
+        '
+        Me.erroricono.ContainerControl = Me
+        '
         'frmEditarProducto2PostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -319,6 +326,7 @@ Partial Class frmEditarProducto2PostGrado
         Me.gbFechaVencimiento.PerformLayout()
         Me.gbdetalle.ResumeLayout(False)
         Me.gbdetalle.PerformLayout()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -347,4 +355,5 @@ Partial Class frmEditarProducto2PostGrado
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents dtpfechaModificacion As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
 End Class

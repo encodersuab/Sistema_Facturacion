@@ -23,9 +23,10 @@ Partial Class frmeditarproductoCAMPOFERIAL
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.l4 = New System.Windows.Forms.Label()
+        Me.l3 = New System.Windows.Forms.Label()
         Me.btnEditarDescripcion = New System.Windows.Forms.Button()
         Me.btnEditarStock = New System.Windows.Forms.Button()
-        Me.btnEditarPresioCompra = New System.Windows.Forms.Button()
         Me.btnEditarFechaVenc = New System.Windows.Forms.Button()
         Me.btnEditarMedida = New System.Windows.Forms.Button()
         Me.btnEditarImagen = New System.Windows.Forms.Button()
@@ -43,8 +44,6 @@ Partial Class frmeditarproductoCAMPOFERIAL
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtidcategoria = New System.Windows.Forms.TextBox()
         Me.txtprecio_venta = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtprecio_compra = New System.Windows.Forms.TextBox()
         Me.txtstock = New System.Windows.Forms.TextBox()
         Me.l2 = New System.Windows.Forms.Label()
         Me.txtdescripcion = New System.Windows.Forms.TextBox()
@@ -52,8 +51,9 @@ Partial Class frmeditarproductoCAMPOFERIAL
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdproducto = New System.Windows.Forms.TextBox()
-        Me.l4 = New System.Windows.Forms.Label()
-        Me.l3 = New System.Windows.Forms.Label()
+        Me.btnEditarPresioCompra = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtprecio_compra = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -90,10 +90,28 @@ Partial Class frmeditarproductoCAMPOFERIAL
         Me.GroupBox1.Controls.Add(Me.txtIdproducto)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(539, 499)
+        Me.GroupBox1.Size = New System.Drawing.Size(539, 457)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'l4
+        '
+        Me.l4.AutoSize = True
+        Me.l4.Location = New System.Drawing.Point(37, 183)
+        Me.l4.Name = "l4"
+        Me.l4.Size = New System.Drawing.Size(100, 13)
+        Me.l4.TabIndex = 42
+        Me.l4.Text = "Espacio en metros2"
+        '
+        'l3
+        '
+        Me.l3.AutoSize = True
+        Me.l3.Location = New System.Drawing.Point(47, 157)
+        Me.l3.Name = "l3"
+        Me.l3.Size = New System.Drawing.Size(90, 13)
+        Me.l3.TabIndex = 43
+        Me.l3.Text = "Precio por metro2"
         '
         'btnEditarDescripcion
         '
@@ -112,15 +130,6 @@ Partial Class frmeditarproductoCAMPOFERIAL
         Me.btnEditarStock.TabIndex = 40
         Me.btnEditarStock.Text = "Editar"
         Me.btnEditarStock.UseVisualStyleBackColor = True
-        '
-        'btnEditarPresioCompra
-        '
-        Me.btnEditarPresioCompra.Location = New System.Drawing.Point(560, 64)
-        Me.btnEditarPresioCompra.Name = "btnEditarPresioCompra"
-        Me.btnEditarPresioCompra.Size = New System.Drawing.Size(75, 20)
-        Me.btnEditarPresioCompra.TabIndex = 39
-        Me.btnEditarPresioCompra.Text = "Editar"
-        Me.btnEditarPresioCompra.UseVisualStyleBackColor = True
         '
         'btnEditarFechaVenc
         '
@@ -281,24 +290,6 @@ Partial Class frmeditarproductoCAMPOFERIAL
         Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
         Me.txtprecio_venta.TabIndex = 10
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(557, 37)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(91, 13)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Precio de Compra"
-        '
-        'txtprecio_compra
-        '
-        Me.txtprecio_compra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtprecio_compra.Enabled = False
-        Me.txtprecio_compra.Location = New System.Drawing.Point(665, 34)
-        Me.txtprecio_compra.Name = "txtprecio_compra"
-        Me.txtprecio_compra.Size = New System.Drawing.Size(172, 20)
-        Me.txtprecio_compra.TabIndex = 8
-        '
         'txtstock
         '
         Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
@@ -364,29 +355,38 @@ Partial Class frmeditarproductoCAMPOFERIAL
         Me.txtIdproducto.Size = New System.Drawing.Size(172, 20)
         Me.txtIdproducto.TabIndex = 0
         '
-        'l4
+        'btnEditarPresioCompra
         '
-        Me.l4.AutoSize = True
-        Me.l4.Location = New System.Drawing.Point(37, 183)
-        Me.l4.Name = "l4"
-        Me.l4.Size = New System.Drawing.Size(100, 13)
-        Me.l4.TabIndex = 42
-        Me.l4.Text = "Espacio en metros2"
+        Me.btnEditarPresioCompra.Location = New System.Drawing.Point(560, 64)
+        Me.btnEditarPresioCompra.Name = "btnEditarPresioCompra"
+        Me.btnEditarPresioCompra.Size = New System.Drawing.Size(75, 20)
+        Me.btnEditarPresioCompra.TabIndex = 39
+        Me.btnEditarPresioCompra.Text = "Editar"
+        Me.btnEditarPresioCompra.UseVisualStyleBackColor = True
         '
-        'l3
+        'Label5
         '
-        Me.l3.AutoSize = True
-        Me.l3.Location = New System.Drawing.Point(47, 157)
-        Me.l3.Name = "l3"
-        Me.l3.Size = New System.Drawing.Size(90, 13)
-        Me.l3.TabIndex = 43
-        Me.l3.Text = "Precio por metro2"
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(557, 37)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(91, 13)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "Precio de Compra"
+        '
+        'txtprecio_compra
+        '
+        Me.txtprecio_compra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtprecio_compra.Enabled = False
+        Me.txtprecio_compra.Location = New System.Drawing.Point(665, 34)
+        Me.txtprecio_compra.Name = "txtprecio_compra"
+        Me.txtprecio_compra.Size = New System.Drawing.Size(172, 20)
+        Me.txtprecio_compra.TabIndex = 8
         '
         'frmeditarproductoCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(834, 518)
+        Me.ClientSize = New System.Drawing.Size(559, 478)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.txtprecio_compra)
         Me.Controls.Add(Me.Label5)
