@@ -708,7 +708,6 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>0.03528cm</Top>
-        <Left>0cm</Left>
         <Height>2.64901cm</Height>
         <Width>25.84666cm</Width>
         <Style>
@@ -721,27 +720,13 @@
     <Height>1.05681in</Height>
     <Style />
   </Body>
-  <Width>10.2071in</Width>
+  <Width>10.21752in</Width>
   <Page>
     <PageHeader>
       <Height>2.54cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Image Name="Image3">
-          <Source>Embedded</Source>
-          <Value>imagen</Value>
-          <Sizing>FitProportional</Sizing>
-          <Top>0.02718cm</Top>
-          <Left>1.04479cm</Left>
-          <Height>2.14877cm</Height>
-          <Width>1.60583cm</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
         <Textbox Name="Textbox3">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -774,10 +759,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>0.02718cm</Top>
+          <Left>0.07938cm</Left>
           <Height>1.32119cm</Height>
           <Width>25.87312cm</Width>
-          <ZIndex>1</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -788,6 +772,21 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
+        <Image Name="Image3">
+          <Source>Embedded</Source>
+          <Value>imagen</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.02718cm</Top>
+          <Left>1.04479cm</Left>
+          <Height>2.14877cm</Height>
+          <Width>1.60583cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
         <Textbox Name="Textbox2">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -809,7 +808,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>1.38365cm</Top>
+          <Top>1.35647cm</Top>
+          <Left>0.07938cm</Left>
           <Height>1.12917cm</Height>
           <Width>25.87312cm</Width>
           <ZIndex>2</ZIndex>
@@ -855,7 +855,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
           <Top>0.0525cm</Top>
-          <Left>0.07938cm</Left>
+          <Left>0.05292cm</Left>
           <Height>0.6cm</Height>
           <Width>25.84666cm</Width>
           <Style>

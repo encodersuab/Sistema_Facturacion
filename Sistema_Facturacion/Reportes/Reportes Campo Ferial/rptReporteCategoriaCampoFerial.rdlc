@@ -234,7 +234,7 @@
         <Top>0.03528cm</Top>
         <Left>4.33797cm</Left>
         <Height>1.2cm</Height>
-        <Width>10.14963cm</Width>
+        <Width>10.14962cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -245,26 +245,13 @@
     <Height>0.51042in</Height>
     <Style />
   </Body>
-  <Width>7.42253in</Width>
+  <Width>7.29753in</Width>
   <Page>
     <PageHeader>
       <Height>2.54cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Image Name="Image3">
-          <Source>Embedded</Source>
-          <Value>imagen</Value>
-          <Sizing>FitProportional</Sizing>
-          <Left>0.06134cm</Left>
-          <Height>2.14877cm</Height>
-          <Width>1.51285cm</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
         <Textbox Name="Textbox3">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -297,11 +284,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>0.02718cm</Top>
           <Left>0.06134cm</Left>
           <Height>1.32119cm</Height>
-          <Width>18.76543cm</Width>
-          <ZIndex>1</ZIndex>
+          <Width>18.39502cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -312,6 +297,20 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
+        <Image Name="Image3">
+          <Source>Embedded</Source>
+          <Value>imagen</Value>
+          <Sizing>FitProportional</Sizing>
+          <Left>0.0878cm</Left>
+          <Height>2.14877cm</Height>
+          <Width>1.51285cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
         <Textbox Name="Textbox2">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -333,10 +332,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>1.38365cm</Top>
+          <Top>1.35647cm</Top>
           <Left>0.06134cm</Left>
           <Height>1.12917cm</Height>
-          <Width>18.76543cm</Width>
+          <Width>18.36856cm</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -379,10 +378,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
-          <Top>0.01722cm</Top>
+          <Top>0.04465cm</Top>
           <Left>0.02646cm</Left>
           <Height>0.6cm</Height>
-          <Width>18.80032cm</Width>
+          <Width>18.45636cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -410,10 +409,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>0.6525cm</Top>
+          <Top>0.67993cm</Top>
           <Left>0.02646cm</Left>
           <Height>0.6cm</Height>
-          <Width>18.80032cm</Width>
+          <Width>18.45636cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -442,9 +441,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox8</rd:DefaultName>
-          <Top>1.2525cm</Top>
+          <Top>1.27993cm</Top>
           <Height>0.6cm</Height>
-          <Width>18.80032cm</Width>
+          <Width>18.45636cm</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -465,10 +464,10 @@
     </PageFooter>
     <PageHeight>27.94cm</PageHeight>
     <PageWidth>21.59cm</PageWidth>
-    <LeftMargin>2cm</LeftMargin>
-    <RightMargin>2cm</RightMargin>
-    <TopMargin>2cm</TopMargin>
-    <BottomMargin>2cm</BottomMargin>
+    <LeftMargin>1cm</LeftMargin>
+    <RightMargin>1cm</RightMargin>
+    <TopMargin>1cm</TopMargin>
+    <BottomMargin>1cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>
     <Style />
   </Page>
