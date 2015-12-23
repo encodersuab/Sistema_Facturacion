@@ -94,10 +94,10 @@ Public Class frmInicioF
         'UsuarioPOSGRADO()
         'AdministradorFEXPOBENI()
         'UsuarioFEXPOBENI()
-        If lbrol.Text = "SUPER USUARIO" Then
-           
+        If lbrol.Text = "SUPER USUARIO" Or lbrol.Text = "ADMINISTRADOR" Then
+
         Else
-            If lbrol.Text = "UsuarioEMFOPESBE" Then
+            If lbrol.Text = "CajeroEMFOPESBE" Then
                 fexpobeni.Enabled = False
                 redrubi.Enabled = False
                 emfopesbe.Enabled = True
@@ -113,7 +113,7 @@ Public Class frmInicioF
                     fexpobeni.Enabled = False
                     SUPERADMIN.Enabled = False
                 Else
-                    If lbrol.Text = "UsuarioREDRUBI" Then
+                    If lbrol.Text = "CajeroREDRUBI" Then
                         fexpobeni.Enabled = False
                         redrubi.Enabled = True
                         emfopesbe.Enabled = False
@@ -128,7 +128,7 @@ Public Class frmInicioF
                             postgrado.Enabled = False
                             SUPERADMIN.Enabled = False
                         Else
-                            If lbrol.Text = "UsuarioPOSTGRADO" Then
+                            If lbrol.Text = "CajeroPOSTGRADO" Then
                                 fexpobeni.Enabled = False
                                 redrubi.Enabled = False
                                 emfopesbe.Enabled = False
@@ -143,7 +143,7 @@ Public Class frmInicioF
                                     postgrado.Enabled = True
                                     SUPERADMIN.Enabled = False
                                 Else
-                                    If lbrol.Text = "UsuarioCAMPOFERIAL" Then
+                                    If lbrol.Text = "CajeroCAMPOFERIAL" Then
                                         fexpobeni.Enabled = True
                                         redrubi.Enabled = False
                                         emfopesbe.Enabled = False
@@ -309,12 +309,12 @@ Public Class frmInicioF
         frmVenta.Show()
     End Sub
 
-    Private Sub PorPlanillaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PorPlanillaToolStripMenuItem.Click
+    Private Sub PorPlanillaToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmVentaPlanilla.MdiParent = Me
         frmVentaPlanilla.Show()
     End Sub
 
-    Private Sub AnularFacturaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AnularFacturaToolStripMenuItem.Click
+    Private Sub AnularFacturaToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmQR.MdiParent = Me
         frmQR.Show()
     End Sub
@@ -328,7 +328,7 @@ Public Class frmInicioF
 
     End Sub
 
-    Private Sub reImprecionF_Click(sender As Object, e As EventArgs) Handles reImprecionF.Click
+    Private Sub reImprecionF_Click(sender As Object, e As EventArgs)
         frmQR.MdiParent = Me
         frmQR.Show()
 
@@ -339,7 +339,7 @@ Public Class frmInicioF
         frmVentaCAMPOFERIAL.Show()
     End Sub
 
-    Private Sub PorPlanillaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PorPlanillaToolStripMenuItem1.Click
+    Private Sub PorPlanillaToolStripMenuItem1_Click(sender As Object, e As EventArgs)
         frmVentaPlanillaCAMPOFERIAL.MdiParent = Me
         frmVentaPlanillaCAMPOFERIAL.Show()
 
@@ -369,12 +369,12 @@ Public Class frmInicioF
         frmVentaPostGrado.Show()
     End Sub
 
-    Private Sub ToolStripMenuItem17_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem17.Click
+    Private Sub ToolStripMenuItem17_Click(sender As Object, e As EventArgs)
         frmVentaPlanillaPostGrado.MdiParent = Me
         frmVentaPlanillaPostGrado.Show()
     End Sub
 
-    Private Sub ToolStripMenuItem33_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem33.Click
+    Private Sub ToolStripMenuItem33_Click(sender As Object, e As EventArgs)
         frmQR.MdiParent = Me
         frmQR.Show()
     End Sub
@@ -418,7 +418,7 @@ Public Class frmInicioF
 
     End Sub
 
-    Private Sub PorPlanillaToolStripMenuItem2_Click_1(sender As Object, e As EventArgs) Handles PorPlanillaToolStripMenuItem2.Click
+    Private Sub PorPlanillaToolStripMenuItem2_Click_1(sender As Object, e As EventArgs)
         frmVentaPlanillaREDRUBI.MdiParent = Me
         frmVentaPlanillaREDRUBI.Show()
 
@@ -582,5 +582,10 @@ Public Class frmInicioF
         frmPruebaCC.MdiParent = Me
         frmPruebaCC.Show()
 
+    End Sub
+
+    Private Sub LibroVentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LibroVentasToolStripMenuItem.Click
+        frmLibroVentas.MdiParent = Me
+        frmLibroVentas.Show()
     End Sub
 End Class

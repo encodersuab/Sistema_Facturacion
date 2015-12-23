@@ -34,14 +34,12 @@ Partial Class frmInicioF
         Me.CategoriassmenuEmfopesbe = New System.Windows.Forms.ToolStripMenuItem()
         Me.ventaE = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PorPlanillaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.reporteE = New System.Windows.Forms.ToolStripMenuItem()
         Me.RptVentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PorClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RpteProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CategoriaToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AnularFacturaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.postgrado = New System.Windows.Forms.ToolStripMenuItem()
         Me.registroP = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
@@ -49,14 +47,12 @@ Partial Class frmInicioF
         Me.ToolStripMenuItem11 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem12 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem13 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem17 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem18 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem22 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PorClienteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.GeneralToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem23 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem24 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem33 = New System.Windows.Forms.ToolStripMenuItem()
         Me.redrubi = New System.Windows.Forms.ToolStripMenuItem()
         Me.registroR = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem25 = New System.Windows.Forms.ToolStripMenuItem()
@@ -64,7 +60,6 @@ Partial Class frmInicioF
         Me.ToolStripMenuItem27 = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentaR = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContadoToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PorPlanillaToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.reporteR = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem30 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PorClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -79,14 +74,12 @@ Partial Class frmInicioF
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ventaF = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContadoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PorPlanillaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.reporteF = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PorClienteToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.GeneralToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.reImprecionF = New System.Windows.Forms.ToolStripMenuItem()
         Me.SUPERADMIN = New System.Windows.Forms.ToolStripMenuItem()
         Me.DATOSIMPUESTOSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.REGISTRODEUSUARIOSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -94,6 +87,7 @@ Partial Class frmInicioF
         Me.VentasPorTipoDeClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasEnGeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LibroVentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -128,7 +122,7 @@ Partial Class frmInicioF
         '
         'MenuStrip
         '
-        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicioToolStripMenuItem, Me.emfopesbe, Me.postgrado, Me.redrubi, Me.fexpobeni, Me.SUPERADMIN, Me.ViewMenu, Me.ToolsMenu, Me.WindowsMenu, Me.HelpMenu, Me.SalirToolStripMenuItem})
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicioToolStripMenuItem, Me.redrubi, Me.emfopesbe, Me.fexpobeni, Me.postgrado, Me.SUPERADMIN, Me.ViewMenu, Me.ToolsMenu, Me.WindowsMenu, Me.HelpMenu, Me.SalirToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 24)
         Me.MenuStrip.MdiWindowListItem = Me.WindowsMenu
         Me.MenuStrip.Name = "MenuStrip"
@@ -144,7 +138,7 @@ Partial Class frmInicioF
         '
         'emfopesbe
         '
-        Me.emfopesbe.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registroE, Me.ventaE, Me.reporteE, Me.AnularFacturaToolStripMenuItem})
+        Me.emfopesbe.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registroE, Me.ventaE, Me.reporteE})
         Me.emfopesbe.Name = "emfopesbe"
         Me.emfopesbe.Size = New System.Drawing.Size(83, 20)
         Me.emfopesbe.Text = "&EMFOPESBE"
@@ -153,7 +147,7 @@ Partial Class frmInicioF
         '
         Me.registroE.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientessmenuEmfopesbe, Me.ProductossmenuEmfopesbe, Me.CategoriassmenuEmfopesbe})
         Me.registroE.Name = "registroE"
-        Me.registroE.Size = New System.Drawing.Size(117, 22)
+        Me.registroE.Size = New System.Drawing.Size(152, 22)
         Me.registroE.Text = "Registro"
         '
         'ClientessmenuEmfopesbe
@@ -176,28 +170,22 @@ Partial Class frmInicioF
         '
         'ventaE
         '
-        Me.ventaE.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContadoToolStripMenuItem, Me.PorPlanillaToolStripMenuItem})
+        Me.ventaE.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContadoToolStripMenuItem})
         Me.ventaE.Name = "ventaE"
-        Me.ventaE.Size = New System.Drawing.Size(117, 22)
+        Me.ventaE.Size = New System.Drawing.Size(152, 22)
         Me.ventaE.Text = "Venta"
         '
         'ContadoToolStripMenuItem
         '
         Me.ContadoToolStripMenuItem.Name = "ContadoToolStripMenuItem"
-        Me.ContadoToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
+        Me.ContadoToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
         Me.ContadoToolStripMenuItem.Text = "Contado"
-        '
-        'PorPlanillaToolStripMenuItem
-        '
-        Me.PorPlanillaToolStripMenuItem.Name = "PorPlanillaToolStripMenuItem"
-        Me.PorPlanillaToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.PorPlanillaToolStripMenuItem.Text = "Por Planilla"
         '
         'reporteE
         '
         Me.reporteE.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RptVentaToolStripMenuItem, Me.RpteProductoToolStripMenuItem, Me.CategoriaToolStripMenuItem2})
         Me.reporteE.Name = "reporteE"
-        Me.reporteE.Size = New System.Drawing.Size(117, 22)
+        Me.reporteE.Size = New System.Drawing.Size(152, 22)
         Me.reporteE.Text = "Reporte"
         '
         'RptVentaToolStripMenuItem
@@ -231,15 +219,9 @@ Partial Class frmInicioF
         Me.CategoriaToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.CategoriaToolStripMenuItem2.Text = "Rpte Categoria"
         '
-        'AnularFacturaToolStripMenuItem
-        '
-        Me.AnularFacturaToolStripMenuItem.Name = "AnularFacturaToolStripMenuItem"
-        Me.AnularFacturaToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
-        Me.AnularFacturaToolStripMenuItem.Text = "Factura"
-        '
         'postgrado
         '
-        Me.postgrado.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registroP, Me.ToolStripMenuItem12, Me.ToolStripMenuItem18, Me.ToolStripMenuItem33})
+        Me.postgrado.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registroP, Me.ToolStripMenuItem12, Me.ToolStripMenuItem18})
         Me.postgrado.Name = "postgrado"
         Me.postgrado.Size = New System.Drawing.Size(93, 20)
         Me.postgrado.Text = "&POST-GRADO"
@@ -248,51 +230,45 @@ Partial Class frmInicioF
         '
         Me.registroP.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem6, Me.ToolStripMenuItem7, Me.ToolStripMenuItem11})
         Me.registroP.Name = "registroP"
-        Me.registroP.Size = New System.Drawing.Size(151, 22)
+        Me.registroP.Size = New System.Drawing.Size(152, 22)
         Me.registroP.Text = "Registro"
         '
         'ToolStripMenuItem6
         '
         Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem6.Text = "Cliente"
         '
         'ToolStripMenuItem7
         '
         Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem7.Text = "Producto"
         '
         'ToolStripMenuItem11
         '
         Me.ToolStripMenuItem11.Name = "ToolStripMenuItem11"
-        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem11.Text = "Categoria"
         '
         'ToolStripMenuItem12
         '
-        Me.ToolStripMenuItem12.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem13, Me.ToolStripMenuItem17})
+        Me.ToolStripMenuItem12.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem13})
         Me.ToolStripMenuItem12.Name = "ToolStripMenuItem12"
-        Me.ToolStripMenuItem12.Size = New System.Drawing.Size(151, 22)
+        Me.ToolStripMenuItem12.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem12.Text = "Venta"
         '
         'ToolStripMenuItem13
         '
         Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
-        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(133, 22)
+        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(120, 22)
         Me.ToolStripMenuItem13.Text = "Contado"
-        '
-        'ToolStripMenuItem17
-        '
-        Me.ToolStripMenuItem17.Name = "ToolStripMenuItem17"
-        Me.ToolStripMenuItem17.Size = New System.Drawing.Size(133, 22)
-        Me.ToolStripMenuItem17.Text = "Por Planilla"
         '
         'ToolStripMenuItem18
         '
         Me.ToolStripMenuItem18.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem22, Me.ToolStripMenuItem23, Me.ToolStripMenuItem24})
         Me.ToolStripMenuItem18.Name = "ToolStripMenuItem18"
-        Me.ToolStripMenuItem18.Size = New System.Drawing.Size(151, 22)
+        Me.ToolStripMenuItem18.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem18.Text = "Reporte"
         '
         'ToolStripMenuItem22
@@ -326,12 +302,6 @@ Partial Class frmInicioF
         Me.ToolStripMenuItem24.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem24.Text = "Rpte Categoria"
         '
-        'ToolStripMenuItem33
-        '
-        Me.ToolStripMenuItem33.Name = "ToolStripMenuItem33"
-        Me.ToolStripMenuItem33.Size = New System.Drawing.Size(151, 22)
-        Me.ToolStripMenuItem33.Text = "Anular Factura"
-        '
         'redrubi
         '
         Me.redrubi.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registroR, Me.VentaR, Me.reporteR, Me.REImprecionR})
@@ -343,7 +313,7 @@ Partial Class frmInicioF
         '
         Me.registroR.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem25, Me.ToolStripMenuItem26, Me.ToolStripMenuItem27})
         Me.registroR.Name = "registroR"
-        Me.registroR.Size = New System.Drawing.Size(151, 22)
+        Me.registroR.Size = New System.Drawing.Size(152, 22)
         Me.registroR.Text = "Registro"
         '
         'ToolStripMenuItem25
@@ -366,28 +336,22 @@ Partial Class frmInicioF
         '
         'VentaR
         '
-        Me.VentaR.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContadoToolStripMenuItem2, Me.PorPlanillaToolStripMenuItem2})
+        Me.VentaR.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContadoToolStripMenuItem2})
         Me.VentaR.Name = "VentaR"
-        Me.VentaR.Size = New System.Drawing.Size(151, 22)
+        Me.VentaR.Size = New System.Drawing.Size(152, 22)
         Me.VentaR.Text = "Venta"
         '
         'ContadoToolStripMenuItem2
         '
         Me.ContadoToolStripMenuItem2.Name = "ContadoToolStripMenuItem2"
-        Me.ContadoToolStripMenuItem2.Size = New System.Drawing.Size(133, 22)
+        Me.ContadoToolStripMenuItem2.Size = New System.Drawing.Size(120, 22)
         Me.ContadoToolStripMenuItem2.Text = "Contado"
-        '
-        'PorPlanillaToolStripMenuItem2
-        '
-        Me.PorPlanillaToolStripMenuItem2.Name = "PorPlanillaToolStripMenuItem2"
-        Me.PorPlanillaToolStripMenuItem2.Size = New System.Drawing.Size(133, 22)
-        Me.PorPlanillaToolStripMenuItem2.Text = "Por Planilla"
         '
         'reporteR
         '
         Me.reporteR.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem30, Me.ToolStripMenuItem31, Me.ToolStripMenuItem32})
         Me.reporteR.Name = "reporteR"
-        Me.reporteR.Size = New System.Drawing.Size(151, 22)
+        Me.reporteR.Size = New System.Drawing.Size(152, 22)
         Me.reporteR.Text = "Reporte"
         '
         'ToolStripMenuItem30
@@ -424,12 +388,12 @@ Partial Class frmInicioF
         'REImprecionR
         '
         Me.REImprecionR.Name = "REImprecionR"
-        Me.REImprecionR.Size = New System.Drawing.Size(151, 22)
-        Me.REImprecionR.Text = "Anular Factura"
+        Me.REImprecionR.Size = New System.Drawing.Size(152, 22)
+        Me.REImprecionR.Text = "Factura"
         '
         'fexpobeni
         '
-        Me.fexpobeni.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registroF, Me.ventaF, Me.reporteF, Me.reImprecionF})
+        Me.fexpobeni.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.registroF, Me.ventaF, Me.reporteF})
         Me.fexpobeni.Name = "fexpobeni"
         Me.fexpobeni.Size = New System.Drawing.Size(103, 20)
         Me.fexpobeni.Text = "CAMPO-FERIAL"
@@ -438,51 +402,45 @@ Partial Class frmInicioF
         '
         Me.registroF.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem3, Me.ToolStripMenuItem4, Me.ToolStripMenuItem5})
         Me.registroF.Name = "registroF"
-        Me.registroF.Size = New System.Drawing.Size(151, 22)
+        Me.registroF.Size = New System.Drawing.Size(152, 22)
         Me.registroF.Text = "Registro"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem3.Text = "Cliente"
         '
         'ToolStripMenuItem4
         '
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem4.Text = "Producto"
         '
         'ToolStripMenuItem5
         '
         Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem5.Text = "Categoria"
         '
         'ventaF
         '
-        Me.ventaF.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContadoToolStripMenuItem1, Me.PorPlanillaToolStripMenuItem1})
+        Me.ventaF.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContadoToolStripMenuItem1})
         Me.ventaF.Name = "ventaF"
-        Me.ventaF.Size = New System.Drawing.Size(151, 22)
+        Me.ventaF.Size = New System.Drawing.Size(152, 22)
         Me.ventaF.Text = "Venta"
         '
         'ContadoToolStripMenuItem1
         '
         Me.ContadoToolStripMenuItem1.Name = "ContadoToolStripMenuItem1"
-        Me.ContadoToolStripMenuItem1.Size = New System.Drawing.Size(133, 22)
+        Me.ContadoToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ContadoToolStripMenuItem1.Text = "Contado"
-        '
-        'PorPlanillaToolStripMenuItem1
-        '
-        Me.PorPlanillaToolStripMenuItem1.Name = "PorPlanillaToolStripMenuItem1"
-        Me.PorPlanillaToolStripMenuItem1.Size = New System.Drawing.Size(133, 22)
-        Me.PorPlanillaToolStripMenuItem1.Text = "Por Planilla"
         '
         'reporteF
         '
         Me.reporteF.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem8, Me.ToolStripMenuItem9, Me.ToolStripMenuItem10})
         Me.reporteF.Name = "reporteF"
-        Me.reporteF.Size = New System.Drawing.Size(151, 22)
+        Me.reporteF.Size = New System.Drawing.Size(152, 22)
         Me.reporteF.Text = "Reporte"
         '
         'ToolStripMenuItem8
@@ -516,12 +474,6 @@ Partial Class frmInicioF
         Me.ToolStripMenuItem10.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem10.Text = "Rpte Categoria"
         '
-        'reImprecionF
-        '
-        Me.reImprecionF.Name = "reImprecionF"
-        Me.reImprecionF.Size = New System.Drawing.Size(151, 22)
-        Me.reImprecionF.Text = "Anular Factura"
-        '
         'SUPERADMIN
         '
         Me.SUPERADMIN.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DATOSIMPUESTOSToolStripMenuItem, Me.REGISTRODEUSUARIOSToolStripMenuItem, Me.REPORTESToolStripMenuItem, Me.ToolStripMenuItem1})
@@ -543,7 +495,7 @@ Partial Class frmInicioF
         '
         'REPORTESToolStripMenuItem
         '
-        Me.REPORTESToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VentasPorTipoDeClienteToolStripMenuItem, Me.VentasEnGeneralToolStripMenuItem, Me.UsuariosToolStripMenuItem1})
+        Me.REPORTESToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VentasPorTipoDeClienteToolStripMenuItem, Me.VentasEnGeneralToolStripMenuItem, Me.UsuariosToolStripMenuItem1, Me.LibroVentasToolStripMenuItem})
         Me.REPORTESToolStripMenuItem.Name = "REPORTESToolStripMenuItem"
         Me.REPORTESToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
         Me.REPORTESToolStripMenuItem.Text = "REPORTES"
@@ -565,6 +517,12 @@ Partial Class frmInicioF
         Me.UsuariosToolStripMenuItem1.Name = "UsuariosToolStripMenuItem1"
         Me.UsuariosToolStripMenuItem1.Size = New System.Drawing.Size(213, 22)
         Me.UsuariosToolStripMenuItem1.Text = "Usuarios"
+        '
+        'LibroVentasToolStripMenuItem
+        '
+        Me.LibroVentasToolStripMenuItem.Name = "LibroVentasToolStripMenuItem"
+        Me.LibroVentasToolStripMenuItem.Size = New System.Drawing.Size(213, 22)
+        Me.LibroVentasToolStripMenuItem.Text = "Libro Ventas"
         '
         'ToolStripMenuItem1
         '
@@ -826,7 +784,6 @@ Partial Class frmInicioF
     Friend WithEvents ToolStripMenuItem8 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem9 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem10 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents reImprecionF As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents lbrol As System.Windows.Forms.Label
     Friend WithEvents lbUsurio As System.Windows.Forms.Label
     Friend WithEvents redrubi As System.Windows.Forms.ToolStripMenuItem
@@ -847,14 +804,11 @@ Partial Class frmInicioF
     Friend WithEvents CategoriassmenuEmfopesbe As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ventaE As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ContadoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PorPlanillaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents reporteE As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RptVentaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RpteProductoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CategoriaToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AnularFacturaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ContadoToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PorPlanillaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents postgrado As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents registroP As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem6 As System.Windows.Forms.ToolStripMenuItem
@@ -862,14 +816,11 @@ Partial Class frmInicioF
     Friend WithEvents ToolStripMenuItem11 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem12 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem13 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem17 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem18 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem22 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem23 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem24 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem33 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ContadoToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PorPlanillaToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SUPERADMIN As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -890,5 +841,6 @@ Partial Class frmInicioF
     Friend WithEvents GeneralToolStripMenuItem3 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents UsuariosToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LibroVentasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

@@ -25,7 +25,7 @@ Partial Public Class frmDetalleVenta
     Public Sub mostrarDatosImpuestos()
         Dim dt1 As New DataTable
         Dim fdatosImp As New fDatosImpuestos
-        dt1 = fdatosImp.mostrar
+        dt1 = fdatosImp.mostrar1
 
         txtnituab.Text = dt1.Rows(0)("nitEmisor").ToString
         lbllave.Text = dt1.Rows(0)("llave").ToString
@@ -430,7 +430,7 @@ Partial Public Class frmDetalleVenta
                 Dim func As New fQr
                 Dim f, aux As String
 
-                aux = func.mostrarUltimoQR.ToString + 1
+                aux = func.mostrarUltimoQR1.ToString + 1
 
                 f = dtpFecha.Value.Date
                 ' QrCodeImgControl1.Visible = True
@@ -450,11 +450,11 @@ Partial Public Class frmDetalleVenta
                 dts.gvalidez = "V"
                 dts.gliteral = lbliteral.Text
                 ''''''''
-                If func.insertar(dts) Then
-                    frmReporteFactura.txtnumfactura.Text = aux
+                If func.insertar1(dts) Then
+                    frmFactura1.txtnumfactura.Text = aux
                     MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    frmReporteFactura.MdiParent = frmInicioF
-                    frmReporteFactura.Show()
+                    frmFactura1.MdiParent = frmInicioF
+                    frmFactura1.Show()
 
                     Me.Close()
 

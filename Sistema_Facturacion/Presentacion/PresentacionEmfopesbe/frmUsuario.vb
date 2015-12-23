@@ -1,5 +1,6 @@
 ﻿Public Class frmUsuario
     Private dt As New DataTable
+
     Private Sub frmUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
 

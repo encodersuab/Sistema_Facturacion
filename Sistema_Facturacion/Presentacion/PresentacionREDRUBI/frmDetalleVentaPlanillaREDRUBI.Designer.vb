@@ -64,11 +64,11 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lbliteral = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.lbdetalle = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.lbliteral = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -351,7 +351,6 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.lbnumAutor.Size = New System.Drawing.Size(98, 13)
         Me.lbnumAutor.TabIndex = 39
         Me.lbnumAutor.Text = "lbnum AUtorizacion"
-        Me.lbnumAutor.Visible = False
         '
         'lbllave
         '
@@ -361,7 +360,6 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.lbllave.Size = New System.Drawing.Size(37, 13)
         Me.lbllave.TabIndex = 38
         Me.lbllave.Text = "lbllave"
-        Me.lbllave.Visible = False
         '
         'lbCC
         '
@@ -371,7 +369,6 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
         Me.lbCC.Text = "Codigo Control"
-        Me.lbCC.Visible = False
         '
         'Label11
         '
@@ -470,6 +467,23 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
+        'lbliteral
+        '
+        Me.lbliteral.AutoSize = True
+        Me.lbliteral.Location = New System.Drawing.Point(58, 358)
+        Me.lbliteral.Name = "lbliteral"
+        Me.lbliteral.Size = New System.Drawing.Size(0, 13)
+        Me.lbliteral.TabIndex = 45
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(7, 358)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(36, 13)
+        Me.Label13.TabIndex = 44
+        Me.Label13.Text = "SON: "
+        '
         'lbdetalle
         '
         Me.lbdetalle.AutoSize = True
@@ -522,23 +536,6 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
-        '
-        'lbliteral
-        '
-        Me.lbliteral.AutoSize = True
-        Me.lbliteral.Location = New System.Drawing.Point(58, 358)
-        Me.lbliteral.Name = "lbliteral"
-        Me.lbliteral.Size = New System.Drawing.Size(0, 13)
-        Me.lbliteral.TabIndex = 45
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(7, 358)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(36, 13)
-        Me.Label13.TabIndex = 44
-        Me.Label13.Text = "SON: "
         '
         'frmDetalleVentaPlanillaREDRUBI
         '

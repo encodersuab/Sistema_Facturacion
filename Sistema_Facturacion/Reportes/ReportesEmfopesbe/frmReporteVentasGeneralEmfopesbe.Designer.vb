@@ -23,28 +23,38 @@ Partial Class frmReporteVentasGeneralEmfopesbe
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Me.mostrar_venta_generalXfechaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
+        Me.btnMostrarReporte = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
-        Me.mostrar_venta_generalXfechaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.mostrar_venta_generalXfechaTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_generalXfechaTableAdapter()
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mostrar_venta_generalXfechaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'mostrar_venta_generalXfechaBindingSource
         '
-        Me.Button1.Location = New System.Drawing.Point(478, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 39)
-        Me.Button1.TabIndex = 19
-        Me.Button1.Text = "MOSTRAR"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.mostrar_venta_generalXfechaBindingSource.DataMember = "mostrar_venta_generalXfecha"
+        Me.mostrar_venta_generalXfechaBindingSource.DataSource = Me.dbfacDataSet
+        '
+        'dbfacDataSet
+        '
+        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
+        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'btnMostrarReporte
+        '
+        Me.btnMostrarReporte.Location = New System.Drawing.Point(478, 12)
+        Me.btnMostrarReporte.Name = "btnMostrarReporte"
+        Me.btnMostrarReporte.Size = New System.Drawing.Size(75, 39)
+        Me.btnMostrarReporte.TabIndex = 19
+        Me.btnMostrarReporte.Text = "MOSTRAR"
+        Me.btnMostrarReporte.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -82,24 +92,14 @@ Partial Class frmReporteVentasGeneralEmfopesbe
         '
         'ReportViewer1
         '
-        ReportDataSource2.Name = "DataSet1"
-        ReportDataSource2.Value = Me.mostrar_venta_generalXfechaBindingSource
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
+        ReportDataSource1.Name = "DataSet1"
+        ReportDataSource1.Value = Me.mostrar_venta_generalXfechaBindingSource
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptVentasGeneralEmfopesbe.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(3, 70)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(865, 411)
         Me.ReportViewer1.TabIndex = 20
-        '
-        'dbfacDataSet
-        '
-        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
-        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'mostrar_venta_generalXfechaBindingSource
-        '
-        Me.mostrar_venta_generalXfechaBindingSource.DataMember = "mostrar_venta_generalXfecha"
-        Me.mostrar_venta_generalXfechaBindingSource.DataSource = Me.dbfacDataSet
         '
         'mostrar_venta_generalXfechaTableAdapter
         '
@@ -111,20 +111,20 @@ Partial Class frmReporteVentasGeneralEmfopesbe
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(868, 483)
         Me.Controls.Add(Me.ReportViewer1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnMostrarReporte)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dtpFechaFin)
         Me.Controls.Add(Me.dtpFechaInicio)
         Me.Name = "frmReporteVentasGeneralEmfopesbe"
         Me.Text = "frmReporteVentasGeneralEmfopesbe"
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mostrar_venta_generalXfechaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnMostrarReporte As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents dtpFechaFin As System.Windows.Forms.DateTimePicker

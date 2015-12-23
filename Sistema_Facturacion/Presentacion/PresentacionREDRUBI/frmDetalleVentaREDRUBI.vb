@@ -406,11 +406,11 @@ Public Class frmDetalleVentaREDRUBI
                 dts.gvalidez = "V"
                 dts.gliteral = lbliteral.Text
                 ''''''''
-                If func.insertar(dts) Then
-                    frmReporteFactura.txtnumfactura.Text = aux
+                If func.insertar0(dts) Then
+                    frmFactura0.txtnumfactura.Text = aux
                     MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    frmReporteFactura.MdiParent = frmInicioF
-                    frmReporteFactura.Show()
+                    frmFactura0.MdiParent = frmInicioF
+                    frmFactura0.Show()
 
                     Me.Close()
 

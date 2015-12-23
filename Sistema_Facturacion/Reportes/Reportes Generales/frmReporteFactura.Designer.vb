@@ -52,7 +52,7 @@ Partial Class frmReporteFactura
         ReportDataSource1.Name = "DataSet1"
         ReportDataSource1.Value = Me.mostrar_facturaBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptFactura.rdlc"
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptFactura0.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(689, 452)

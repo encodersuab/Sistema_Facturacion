@@ -25,7 +25,7 @@ Partial Class FrmEditarProducto2
         Me.components = New System.ComponentModel.Container()
         Me.dtpfechaModificacion = New System.Windows.Forms.DateTimePicker()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnEditarCampo = New System.Windows.Forms.Button()
         Me.txtdetalle = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lbnombreproducto = New System.Windows.Forms.Label()
@@ -76,14 +76,14 @@ Partial Class FrmEditarProducto2
         Me.Label8.TabIndex = 22
         Me.Label8.Text = "Fecha de Modificacion"
         '
-        'Button1
+        'btnEditarCampo
         '
-        Me.Button1.Location = New System.Drawing.Point(388, 260)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(145, 58)
-        Me.Button1.TabIndex = 24
-        Me.Button1.Text = "Guardar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnEditarCampo.Location = New System.Drawing.Point(388, 260)
+        Me.btnEditarCampo.Name = "btnEditarCampo"
+        Me.btnEditarCampo.Size = New System.Drawing.Size(145, 58)
+        Me.btnEditarCampo.TabIndex = 24
+        Me.btnEditarCampo.Text = "Guardar"
+        Me.btnEditarCampo.UseVisualStyleBackColor = True
         '
         'txtdetalle
         '
@@ -317,7 +317,7 @@ Partial Class FrmEditarProducto2
         Me.Controls.Add(Me.lbnombreproducto)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtdetalle)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnEditarCampo)
         Me.Controls.Add(Me.dtpfechaModificacion)
         Me.Controls.Add(Me.Label8)
         Me.Name = "FrmEditarProducto2"
@@ -338,7 +338,7 @@ Partial Class FrmEditarProducto2
     End Sub
     Friend WithEvents dtpfechaModificacion As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnEditarCampo As System.Windows.Forms.Button
     Friend WithEvents txtdetalle As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents lbnombreproducto As System.Windows.Forms.Label

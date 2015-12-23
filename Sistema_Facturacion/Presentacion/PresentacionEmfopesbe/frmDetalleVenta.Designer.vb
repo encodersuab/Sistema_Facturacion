@@ -25,6 +25,7 @@ Partial Class frmDetalleVenta
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.lbliteral = New System.Windows.Forms.Label()
         Me.lbdetalle = New System.Windows.Forms.Label()
         Me.btnFinalizarVenta = New System.Windows.Forms.Button()
@@ -72,7 +73,6 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtDD = New System.Windows.Forms.TextBox()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -105,6 +105,15 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(6, 370)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(32, 13)
+        Me.Label13.TabIndex = 43
+        Me.Label13.Text = "Son :"
         '
         'lbliteral
         '
@@ -143,32 +152,29 @@ Partial Class frmDetalleVenta
         'lbnumAutor
         '
         Me.lbnumAutor.AutoSize = True
-        Me.lbnumAutor.Location = New System.Drawing.Point(205, 36)
+        Me.lbnumAutor.Location = New System.Drawing.Point(183, 39)
         Me.lbnumAutor.Name = "lbnumAutor"
         Me.lbnumAutor.Size = New System.Drawing.Size(98, 13)
         Me.lbnumAutor.TabIndex = 39
         Me.lbnumAutor.Text = "lbnum AUtorizacion"
-        Me.lbnumAutor.Visible = False
         '
         'lbllave
         '
         Me.lbllave.AutoSize = True
-        Me.lbllave.Location = New System.Drawing.Point(205, 21)
+        Me.lbllave.Location = New System.Drawing.Point(183, 24)
         Me.lbllave.Name = "lbllave"
         Me.lbllave.Size = New System.Drawing.Size(37, 13)
         Me.lbllave.TabIndex = 38
         Me.lbllave.Text = "lbllave"
-        Me.lbllave.Visible = False
         '
         'lbCC
         '
         Me.lbCC.AutoSize = True
-        Me.lbCC.Location = New System.Drawing.Point(205, 50)
+        Me.lbCC.Location = New System.Drawing.Point(183, 53)
         Me.lbCC.Name = "lbCC"
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
         Me.lbCC.Text = "Codigo Control"
-        Me.lbCC.Visible = False
         '
         'Label11
         '
@@ -560,15 +566,6 @@ Partial Class frmDetalleVenta
         Me.txtDD.TabIndex = 7
         Me.txtDD.Text = "0"
         Me.txtDD.Visible = False
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(6, 370)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(32, 13)
-        Me.Label13.TabIndex = 43
-        Me.Label13.Text = "Son :"
         '
         'frmDetalleVenta
         '

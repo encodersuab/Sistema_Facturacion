@@ -22,7 +22,7 @@ Public Class frmDetalleVentaplanilla
     Public Sub mostrarDatosImpuestos()
         Dim dt1 As New DataTable
         Dim fdatosImp As New fDatosImpuestos
-        dt1 = fdatosImp.mostrar
+        dt1 = fdatosImp.mostrar1
 
         txtnituab.Text = dt1.Rows(0)("nitEmisor").ToString
         lbllave.Text = dt1.Rows(0)("llave").ToString

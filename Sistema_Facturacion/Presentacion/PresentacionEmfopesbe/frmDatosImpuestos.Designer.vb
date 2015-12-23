@@ -25,6 +25,12 @@ Partial Class frmDatosImpuestos
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDatosImpuestos))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbbDetalle = New System.Windows.Forms.ComboBox()
+        Me.nupSucursal = New System.Windows.Forms.NumericUpDown()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.dtpFechaLimite = New System.Windows.Forms.DateTimePicker()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
@@ -46,6 +52,7 @@ Partial Class frmDatosImpuestos
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox1.SuspendLayout()
+        CType(Me.nupSucursal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,6 +61,12 @@ Partial Class frmDatosImpuestos
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.cbbDetalle)
+        Me.GroupBox1.Controls.Add(Me.nupSucursal)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.dtpFechaLimite)
+        Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.btnGuardar)
         Me.GroupBox1.Controls.Add(Me.btnEditar)
         Me.GroupBox1.Controls.Add(Me.btnNuevo)
@@ -67,14 +80,65 @@ Partial Class frmDatosImpuestos
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(456, 167)
+        Me.GroupBox1.Size = New System.Drawing.Size(456, 269)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Impuestos"
         '
+        'cbbDetalle
+        '
+        Me.cbbDetalle.FormattingEnabled = True
+        Me.cbbDetalle.Items.AddRange(New Object() {"CENTRAL", "SUCURSAL 1", "SUCURSAL 2", "SUCURSAL 3"})
+        Me.cbbDetalle.Location = New System.Drawing.Point(120, 186)
+        Me.cbbDetalle.Name = "cbbDetalle"
+        Me.cbbDetalle.Size = New System.Drawing.Size(120, 21)
+        Me.cbbDetalle.TabIndex = 23
+        Me.cbbDetalle.Text = "CENTRAL"
+        '
+        'nupSucursal
+        '
+        Me.nupSucursal.Location = New System.Drawing.Point(120, 160)
+        Me.nupSucursal.Name = "nupSucursal"
+        Me.nupSucursal.Size = New System.Drawing.Size(120, 20)
+        Me.nupSucursal.TabIndex = 22
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(66, 162)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(48, 13)
+        Me.Label7.TabIndex = 21
+        Me.Label7.Text = "Sucursal"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(74, 190)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(40, 13)
+        Me.Label6.TabIndex = 20
+        Me.Label6.Text = "Detalle"
+        '
+        'dtpFechaLimite
+        '
+        Me.dtpFechaLimite.Location = New System.Drawing.Point(120, 128)
+        Me.dtpFechaLimite.Name = "dtpFechaLimite"
+        Me.dtpFechaLimite.Size = New System.Drawing.Size(200, 20)
+        Me.dtpFechaLimite.TabIndex = 19
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(51, 134)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(63, 13)
+        Me.Label5.TabIndex = 18
+        Me.Label5.Text = "Fecha limite"
+        '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(193, 132)
+        Me.btnGuardar.Location = New System.Drawing.Point(192, 224)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 24)
         Me.btnGuardar.TabIndex = 17
@@ -83,7 +147,7 @@ Partial Class frmDatosImpuestos
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(193, 132)
+        Me.btnEditar.Location = New System.Drawing.Point(192, 224)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 23)
         Me.btnEditar.TabIndex = 16
@@ -92,7 +156,7 @@ Partial Class frmDatosImpuestos
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(280, 132)
+        Me.btnNuevo.Location = New System.Drawing.Point(279, 224)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(75, 23)
         Me.btnNuevo.TabIndex = 9
@@ -177,7 +241,7 @@ Partial Class frmDatosImpuestos
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(474, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(455, 167)
+        Me.GroupBox2.Size = New System.Drawing.Size(455, 269)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Datos de Impuestos"
@@ -222,7 +286,7 @@ Partial Class frmDatosImpuestos
         'Inexistente
         '
         Me.Inexistente.AutoSize = True
-        Me.Inexistente.Location = New System.Drawing.Point(234, 203)
+        Me.Inexistente.Location = New System.Drawing.Point(229, 83)
         Me.Inexistente.Name = "Inexistente"
         Me.Inexistente.Size = New System.Drawing.Size(94, 13)
         Me.Inexistente.TabIndex = 3
@@ -239,7 +303,7 @@ Partial Class frmDatosImpuestos
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(443, 131)
+        Me.datalistado.Size = New System.Drawing.Size(443, 239)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -256,7 +320,7 @@ Partial Class frmDatosImpuestos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(941, 191)
+        Me.ClientSize = New System.Drawing.Size(941, 293)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -265,6 +329,7 @@ Partial Class frmDatosImpuestos
         Me.Text = ".:. datos Impuestos .:."
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.nupSucursal, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -294,4 +359,10 @@ Partial Class frmDatosImpuestos
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents btnEditar As System.Windows.Forms.Button
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
+    Friend WithEvents dtpFechaLimite As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents cbbDetalle As System.Windows.Forms.ComboBox
+    Friend WithEvents nupSucursal As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class

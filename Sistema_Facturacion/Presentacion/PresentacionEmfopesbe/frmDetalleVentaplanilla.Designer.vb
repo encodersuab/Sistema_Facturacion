@@ -153,7 +153,6 @@ Partial Class frmDetalleVentaplanilla
         Me.lbnumAutor.Size = New System.Drawing.Size(98, 13)
         Me.lbnumAutor.TabIndex = 39
         Me.lbnumAutor.Text = "lbnum AUtorizacion"
-        Me.lbnumAutor.Visible = False
         '
         'lbllave
         '
@@ -163,7 +162,6 @@ Partial Class frmDetalleVentaplanilla
         Me.lbllave.Size = New System.Drawing.Size(37, 13)
         Me.lbllave.TabIndex = 38
         Me.lbllave.Text = "lbllave"
-        Me.lbllave.Visible = False
         '
         'lbCC
         '
@@ -173,7 +171,6 @@ Partial Class frmDetalleVentaplanilla
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
         Me.lbCC.Text = "Codigo Control"
-        Me.lbCC.Visible = False
         '
         'Label11
         '

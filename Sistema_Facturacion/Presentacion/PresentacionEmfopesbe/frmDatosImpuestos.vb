@@ -19,7 +19,7 @@ Public Class frmDatosImpuestos
     Private Sub mostrar()
         Try
             Dim func As New fDatosImpuestos
-            dt = func.mostrar
+            dt = func.mostrarT
             datalistado.Columns.Item("Eliminar").Visible = False
 
             If dt.Rows.Count <> 0 Then
@@ -147,6 +147,9 @@ Public Class frmDatosImpuestos
                 dts.gnitEmisor = txtNitEmisor.Text
                 dts.gnumAutorizacion = txtNumAutorizacion.Text
                 dts.gllave = txtLLAVE.Text
+                dts.gfechalimite = dtpFechaLimite.Value.Date.ToString
+                dts.gsucursal = nupSucursal.Value.ToString
+                dts.gdetalle = cbbDetalle.Text
 
                 If func.insertar(dts) Then
                     MessageBox.Show("Registro realizado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)

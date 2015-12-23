@@ -58,6 +58,7 @@ Partial Class frmDetalleVentaREDRUBI
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.lbliteral = New System.Windows.Forms.Label()
         Me.lbdetalle = New System.Windows.Forms.Label()
         Me.btnFinalizarVenta = New System.Windows.Forms.Button()
@@ -71,7 +72,6 @@ Partial Class frmDetalleVentaREDRUBI
         Me.btnquitar = New System.Windows.Forms.Button()
         Me.cbeliminar = New System.Windows.Forms.CheckBox()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
-        Me.Label13 = New System.Windows.Forms.Label()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -423,6 +423,15 @@ Partial Class frmDetalleVentaREDRUBI
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(12, 370)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(39, 13)
+        Me.Label13.TabIndex = 47
+        Me.Label13.Text = "SON : "
+        '
         'lbliteral
         '
         Me.lbliteral.AutoSize = True
@@ -467,7 +476,6 @@ Partial Class frmDetalleVentaREDRUBI
         Me.lbnumAutor.Size = New System.Drawing.Size(98, 13)
         Me.lbnumAutor.TabIndex = 39
         Me.lbnumAutor.Text = "lbnum AUtorizacion"
-        Me.lbnumAutor.Visible = False
         '
         'lbllave
         '
@@ -477,7 +485,6 @@ Partial Class frmDetalleVentaREDRUBI
         Me.lbllave.Size = New System.Drawing.Size(37, 13)
         Me.lbllave.TabIndex = 38
         Me.lbllave.Text = "lbllave"
-        Me.lbllave.Visible = False
         '
         'lbCC
         '
@@ -487,7 +494,6 @@ Partial Class frmDetalleVentaREDRUBI
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
         Me.lbCC.Text = "Codigo Control"
-        Me.lbCC.Visible = False
         '
         'Label11
         '
@@ -548,15 +554,6 @@ Partial Class frmDetalleVentaREDRUBI
         Me.Inexistente.TabIndex = 3
         Me.Inexistente.TabStop = True
         Me.Inexistente.Text = "Datos Inexistentes"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(12, 370)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(39, 13)
-        Me.Label13.TabIndex = 47
-        Me.Label13.Text = "SON : "
         '
         'frmDetalleVentaREDRUBI
         '

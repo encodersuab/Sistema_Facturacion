@@ -15,7 +15,7 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnEditarCampo.Click
         If Me.ValidateChildren = True And txtdetalle.Text <> "" Then
             Dim result As DialogResult
             result = MessageBox.Show("Realmente desea realizar los cambios en el Producto?", "Modificando registro", MessageBoxButtons.OKCancel)

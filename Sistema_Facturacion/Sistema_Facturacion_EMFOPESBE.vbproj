@@ -13,7 +13,7 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>H:\intalador\</PublishUrl>
+    <PublishUrl>D:\Users\Blady\Desktop\instalador\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,8 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>12</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -74,7 +73,15 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="Gma.QrCodeNet.Encoding">
       <HintPath>G:\Downloads\QrCode.Net 0.4 Pre-Release\QrCode.Net 0.4 Pre-Release\Gma.QrCodeNet.Encoder\Gma.QrCodeNet.Encoding.dll</HintPath>
     </Reference>
@@ -86,6 +93,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -108,40 +116,41 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="datos\DatosCAMPOFERIAL\fCategoriaCAMPOFERIAL.vb" />
-    <Compile Include="datos\DatosCAMPOFERIAL\fDetalleVentaCAMPOFERIAL.vb" />
-    <Compile Include="datos\DatosCAMPOFERIAL\fDetalleVentaPlanillaCAMPOFERIAL.vb" />
-    <Compile Include="datos\DatosCAMPOFERIAL\fProductoCAMPOFERIAL.vb" />
-    <Compile Include="datos\DatosCAMPOFERIAL\fVentaCAMPOFERIAL.vb" />
-    <Compile Include="datos\DatosCAMPOFERIAL\fVentaPlanillaCAMPOFERIAL.vb" />
-    <Compile Include="datos\DatosEmfopesbe\fVentaPlanilla.vb" />
-    <Compile Include="datos\DatosEmfopesbe\fDetalleVentaPlanilla.vb" />
-    <Compile Include="datos\DatosEmfopesbe\fHistorialProducto.vb" />
-    <Compile Include="datos\DatosEmfopesbe\Numaled.vb" />
-    <Compile Include="datos\DatosPostGrado\fCategoriaPostGrado.vb" />
-    <Compile Include="datos\DatosPostGrado\fClientePostGrado.vb" />
-    <Compile Include="datos\DatosPostGrado\fDetalleVentaPlanillaPostGrado.vb" />
-    <Compile Include="datos\DatosPostGrado\fDetalleVentaPostGrado.vb" />
-    <Compile Include="datos\DatosPostGrado\fProductoPostGrado.vb" />
-    <Compile Include="datos\DatosPostGrado\fVentaPlanillaPostGrado.vb" />
-    <Compile Include="datos\DatosPostGrado\fVentaPostGrado.vb" />
-    <Compile Include="datos\DatosEmfopesbe\fCC.vb" />
-    <Compile Include="datos\DatosEmfopesbe\Conexion.vb" />
-    <Compile Include="datos\DatosEmfopesbe\fCategoria.vb" />
-    <Compile Include="datos\DatosEmfopesbe\fCliente.vb" />
-    <Compile Include="datos\DatosEmfopesbe\fDatosImpuestos.vb" />
-    <Compile Include="datos\DatosEmfopesbe\fDetalleVenta.vb" />
-    <Compile Include="datos\DatosEmfopesbe\fProducto.vb" />
-    <Compile Include="datos\DatosEmfopesbe\fQr.vb" />
-    <Compile Include="datos\DatosEmfopesbe\fUsuario.vb" />
-    <Compile Include="datos\DatosEmfopesbe\fVenta.vb" />
-    <Compile Include="datos\DatosREDRUBI\fCategoriaREDRUBI.vb" />
-    <Compile Include="datos\DatosREDRUBI\fClienteREDRUBI.vb" />
-    <Compile Include="datos\DatosREDRUBI\fDetalleVentaPlanillaREDRUBI.vb" />
-    <Compile Include="datos\DatosREDRUBI\fDetalleVentaREDRUBI.vb" />
-    <Compile Include="datos\DatosREDRUBI\fProductoREDRUBI.vb" />
-    <Compile Include="datos\DatosREDRUBI\fVentaPlanillaREDRUBI.vb" />
-    <Compile Include="datos\DatosREDRUBI\fVentaREDRUBI.vb" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Datos\DatosCAMPOFERIAL\fCategoriaCAMPOFERIAL.vb" />
+    <Compile Include="Datos\DatosCAMPOFERIAL\fDetalleVentaCAMPOFERIAL.vb" />
+    <Compile Include="Datos\DatosCAMPOFERIAL\fDetalleVentaPlanillaCAMPOFERIAL.vb" />
+    <Compile Include="Datos\DatosCAMPOFERIAL\fProductoCAMPOFERIAL.vb" />
+    <Compile Include="Datos\DatosCAMPOFERIAL\fVentaCAMPOFERIAL.vb" />
+    <Compile Include="Datos\DatosCAMPOFERIAL\fVentaPlanillaCAMPOFERIAL.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\fVentaPlanilla.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\fDetalleVentaPlanilla.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\fHistorialProducto.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\Numaled.vb" />
+    <Compile Include="Datos\DatosPostGrado\fCategoriaPostGrado.vb" />
+    <Compile Include="Datos\DatosPostGrado\fClientePostGrado.vb" />
+    <Compile Include="Datos\DatosPostGrado\fDetalleVentaPlanillaPostGrado.vb" />
+    <Compile Include="Datos\DatosPostGrado\fDetalleVentaPostGrado.vb" />
+    <Compile Include="Datos\DatosPostGrado\fProductoPostGrado.vb" />
+    <Compile Include="Datos\DatosPostGrado\fVentaPlanillaPostGrado.vb" />
+    <Compile Include="Datos\DatosPostGrado\fVentaPostGrado.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\fCC.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\Conexion.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\fCategoria.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\fCliente.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\fDatosImpuestos.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\fDetalleVenta.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\fProducto.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\fQr.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\fUsuario.vb" />
+    <Compile Include="Datos\DatosEmfopesbe\fVenta.vb" />
+    <Compile Include="Datos\DatosREDRUBI\fCategoriaREDRUBI.vb" />
+    <Compile Include="Datos\DatosREDRUBI\fClienteREDRUBI.vb" />
+    <Compile Include="Datos\DatosREDRUBI\fDetalleVentaPlanillaREDRUBI.vb" />
+    <Compile Include="Datos\DatosREDRUBI\fDetalleVentaREDRUBI.vb" />
+    <Compile Include="Datos\DatosREDRUBI\fProductoREDRUBI.vb" />
+    <Compile Include="Datos\DatosREDRUBI\fVentaPlanillaREDRUBI.vb" />
+    <Compile Include="Datos\DatosREDRUBI\fVentaREDRUBI.vb" />
     <Compile Include="dbfacDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -196,6 +205,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Presentacion\CrystalReport4.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Presentacion\CrystalReportSF.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportSF.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Presentacion\frmPruebaCC.Designer.vb">
       <DependentUpon>frmPruebaCC.vb</DependentUpon>
@@ -455,6 +476,12 @@
     <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes Generales\reportePrueba.Designer.vb">
+      <DependentUpon>reportePrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\reportePrueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\Reportes Campo Ferial\frmReporteCategoriaCampoFerial.Designer.vb">
       <DependentUpon>frmReporteCategoriaCampoFerial.vb</DependentUpon>
     </Compile>
@@ -477,6 +504,12 @@
       <DependentUpon>frmReporteXclienteCAMPOFERIAL.vb</DependentUpon>
     </Compile>
     <Compile Include="Reportes\Reportes Campo Ferial\frmReporteXclienteCAMPOFERIAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmLibroVentas.Designer.vb">
+      <DependentUpon>frmLibroVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmLibroVentas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\Reportes Generales\frmReporteVentasGeneral.Designer.vb">
@@ -600,6 +633,14 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\CrystalReportSF.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportSF.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmPruebaCC.resx">
       <DependentUpon>frmPruebaCC.vb</DependentUpon>
@@ -727,6 +768,9 @@
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.resx">
       <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Generales\reportePrueba.resx">
+      <DependentUpon>reportePrueba.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\frmReporteCategoriaCampoFerial.resx">
       <DependentUpon>frmReporteCategoriaCampoFerial.vb</DependentUpon>
     </EmbeddedResource>
@@ -743,12 +787,16 @@
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptReporteProductosCampoFerial.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptReporteVentasXClienteCAMPOFERIAL.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptventasGeneralCampoFerial.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\frmLibroVentas.resx">
+      <DependentUpon>frmLibroVentas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteVentasGeneral.resx">
       <DependentUpon>frmReporteVentasGeneral.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteVentasgeneralCliente.resx">
       <DependentUpon>frmReporteVentasgeneralCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Generales\Report1.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasGeneral.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasgeneralCliente.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteProductosPostGrado.resx">
@@ -820,6 +868,14 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentasGeneralEmfopesbe.rdlc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="ClassDiagram5.cd" />
+    <None Include="ClassDiagram6.cd" />
+    <None Include="Diagramas\Logico\ClassDiagram3.cd" />
+    <None Include="Diagramas\Logico\ClassDiagram4.cd" />
+    <None Include="Diagramas\Logico\ClassDiagram5.cd" />
+    <None Include="Diagramas\Logico\ClassDiagram6.cd" />
     <None Include="dbfacDataSet.xsc">
       <DependentUpon>dbfacDataSet.xsd</DependentUpon>
     </None>
@@ -831,6 +887,7 @@
     <None Include="dbfacDataSet.xss">
       <DependentUpon>dbfacDataSet.xsd</DependentUpon>
     </None>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -890,7 +947,274 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Diagramas\Datos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Gma.QrCodeNet.Encoding">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -57,7 +57,7 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=SOFTWARE;Initial Catalog=dbfac;integrated security = true")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.25;Initial Catalog=BDFactur;User ID=union;Password=123456")>  _
         Public ReadOnly Property Setting() As String
             Get
                 Return CType(Me("Setting"),String)
@@ -67,8 +67,7 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.125;Initial Catalog=BDFactu;User ID=union;Password=12345678"& _ 
-            "9")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.25;Initial Catalog=BDFactur;User ID=union;Password=123456")>  _
         Public ReadOnly Property dbfacConnectionString() As String
             Get
                 Return CType(Me("dbfacConnectionString"),String)
@@ -78,8 +77,7 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.125;Initial Catalog=BDFactu;User ID=union;Password=12345678"& _ 
-            "9")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.25;Initial Catalog=BDFactur;User ID=union;Password=123456")>  _
         Public ReadOnly Property Setting1() As String
             Get
                 Return CType(Me("Setting1"),String)

@@ -24,7 +24,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
     Public Sub mostrarDatosImpuestos()
         Dim dt1 As New DataTable
         Dim fdatosImp As New fDatosImpuestos
-        dt1 = fdatosImp.mostrar
+        dt1 = fdatosImp.mostrar2
 
         txtnituab.Text = dt1.Rows(0)("nitEmisor").ToString
         lbllave.Text = dt1.Rows(0)("llave").ToString
@@ -482,7 +482,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
                 Dim func As New fQr
                 Dim f, aux As String
 
-                aux = func.mostrarUltimoQR.ToString + 1
+                aux = func.mostrarUltimoQR2.ToString + 1
 
                 f = dtpFecha.Value.Date
                 ' QrCodeImgControl1.Visible = True
@@ -502,11 +502,11 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
                 dts.gvalidez = "V"
                 dts.gliteral = lbliteral.Text
                 ''''''''
-                If func.insertar(dts) Then
-                    frmReporteFactura.txtnumfactura.Text = aux
+                If func.insertar2(dts) Then
+                    frmFactura2.txtnumfactura.Text = aux
                     MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    frmReporteFactura.MdiParent = frmInicioF
-                    frmReporteFactura.Show()
+                    frmFactura2.MdiParent = frmInicioF
+                    frmFactura2.Show()
                     Me.Close()
                 Else
                     MessageBox.Show("No se a podido guardar la venta  Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
