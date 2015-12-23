@@ -476,6 +476,12 @@
     <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes Campo Ferial\frmFactura2.Designer.vb">
+      <DependentUpon>frmFactura2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Campo Ferial\frmFactura2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\Reportes Generales\reportePrueba.Designer.vb">
       <DependentUpon>reportePrueba.vb</DependentUpon>
     </Compile>
@@ -522,6 +528,12 @@
       <DependentUpon>frmReporteVentasgeneralCliente.vb</DependentUpon>
     </Compile>
     <Compile Include="Reportes\Reportes Generales\frmReporteVentasgeneralCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes PostGrado\frmFactura3.Designer.vb">
+      <DependentUpon>frmFactura3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes PostGrado\frmFactura3.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\Reportes PostGrado\frmReporteProductosPostGrado.Designer.vb">
@@ -578,6 +590,12 @@
     <Compile Include="Reportes\Reportes PostGrado\frmReporteVentasXClientePostGrado.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes RedRubi\frmFactura0.Designer.vb">
+      <DependentUpon>frmFactura0.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes RedRubi\frmFactura0.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\Reportes RedRubi\frmReporteCategoriaREDRUBI.Designer.vb">
       <DependentUpon>frmReporteCategoriaREDRUBI.vb</DependentUpon>
     </Compile>
@@ -600,6 +618,12 @@
       <DependentUpon>frmReporteVentasXClienteRedRubi.vb</DependentUpon>
     </Compile>
     <Compile Include="Reportes\Reportes RedRubi\frmReporteVentasXClienteRedRubi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmFactura1.Designer.vb">
+      <DependentUpon>frmFactura1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmfopesbe\frmFactura1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\ReportesEmfopesbe\frmReporteCategoriaEmfopesbe.Designer.vb">
@@ -768,6 +792,7 @@
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.resx">
       <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptFactura2.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\reportePrueba.resx">
       <DependentUpon>reportePrueba.vb</DependentUpon>
     </EmbeddedResource>
@@ -823,6 +848,7 @@
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteVentasXClientePostGrado.resx">
       <DependentUpon>frmReporteVentasXClientePostGrado.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptFactura3.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteCategoriaPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteProductoPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteVentasXClientePostGrado.rdlc" />
@@ -844,6 +870,7 @@
     <EmbeddedResource Include="Reportes\Reportes RedRubi\frmReporteVentasXClienteRedRubi.resx">
       <DependentUpon>frmReporteVentasXClienteRedRubi.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes RedRubi\rptFactura0.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteCategoriaRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteProductosRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteVentasXClienteREDRUBI.rdlc" />
@@ -860,6 +887,7 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentasXclienteEmfopesbe.resx">
       <DependentUpon>frmReporteVentasXclienteEmfopesbe.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptFactura1.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReportecategoriaEmfopesbe.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReporteProductoEMFOPESBE.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReporteVentasXClienteEmfopesbe.rdlc" />
