@@ -824,7 +824,6 @@
           </Paragraphs>
           <rd:DefaultName>Textbox8</rd:DefaultName>
           <Top>1.2525cm</Top>
-          <Left>0cm</Left>
           <Height>0.6cm</Height>
           <Width>25.84666cm</Width>
           <ZIndex>2</ZIndex>
@@ -847,10 +846,10 @@
     </PageFooter>
     <PageHeight>21.59cm</PageHeight>
     <PageWidth>27.94cm</PageWidth>
-    <LeftMargin>2cm</LeftMargin>
-    <RightMargin>2cm</RightMargin>
-    <TopMargin>2cm</TopMargin>
-    <BottomMargin>2cm</BottomMargin>
+    <LeftMargin>1cm</LeftMargin>
+    <RightMargin>1cm</RightMargin>
+    <TopMargin>1cm</TopMargin>
+    <BottomMargin>1cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>
     <Style />
   </Page>

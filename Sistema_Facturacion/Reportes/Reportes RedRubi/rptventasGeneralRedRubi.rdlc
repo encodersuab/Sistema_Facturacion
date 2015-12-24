@@ -768,7 +768,7 @@
     <Height>1.22917in</Height>
     <Style />
   </Body>
-  <Width>10.18627in</Width>
+  <Width>10.19669in</Width>
   <Page>
     <PageHeader>
       <Height>2.54cm</Height>
@@ -797,6 +797,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>1.38365cm</Top>
+          <Left>0.02646cm</Left>
           <Height>1.12917cm</Height>
           <Width>25.87312cm</Width>
           <Style>
@@ -842,6 +843,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>0.02718cm</Top>
+          <Left>0.02646cm</Left>
           <Height>1.32119cm</Height>
           <Width>25.87312cm</Width>
           <ZIndex>1</ZIndex>
@@ -902,7 +904,6 @@
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
           <Top>0.0525cm</Top>
-          <Left>0cm</Left>
           <Height>0.6cm</Height>
           <Width>25.84666cm</Width>
           <Style>
@@ -965,7 +966,6 @@
           </Paragraphs>
           <rd:DefaultName>Textbox8</rd:DefaultName>
           <Top>1.2525cm</Top>
-          <Left>0cm</Left>
           <Height>0.6cm</Height>
           <Width>25.84666cm</Width>
           <ZIndex>2</ZIndex>
@@ -986,12 +986,12 @@
         </Border>
       </Style>
     </PageFooter>
-    <PageHeight>29.7cm</PageHeight>
-    <PageWidth>21cm</PageWidth>
-    <LeftMargin>2cm</LeftMargin>
-    <RightMargin>2cm</RightMargin>
-    <TopMargin>2cm</TopMargin>
-    <BottomMargin>2cm</BottomMargin>
+    <PageHeight>27.94cm</PageHeight>
+    <PageWidth>21.59cm</PageWidth>
+    <LeftMargin>1cm</LeftMargin>
+    <RightMargin>1cm</RightMargin>
+    <TopMargin>1cm</TopMargin>
+    <BottomMargin>1cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>
     <Style />
   </Page>
