@@ -52,13 +52,13 @@ Public Class frmInicioF
         'Utilice My.Computer.Clipboard.GetText() o My.Computer.Clipboard.GetData para recuperar la información del Portapapeles.
     End Sub
 
-    Private Sub ToolBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles ToolBarToolStripMenuItem.Click
+    Private Sub ToolBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         '     Me.ToolStrip.Visible = Me.ToolBarToolStripMenuItem.Checked
     End Sub
 
-    Private Sub StatusBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles StatusBarToolStripMenuItem.Click
-        Me.StatusStrip.Visible = Me.StatusBarToolStripMenuItem.Checked
-    End Sub
+    'Private Sub StatusBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+    '    Me.StatusStrip.Visible = Me.StatusBarToolStripMenuItem.Checked
+    'End Sub
 
     Private Sub CascadeToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles CascadeToolStripMenuItem.Click
         Me.LayoutMdi(MdiLayout.Cascade)
@@ -446,9 +446,9 @@ Public Class frmInicioF
 
     End Sub
 
-    Private Sub VentasPorTipoDeClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentasPorTipoDeClienteToolStripMenuItem.Click
-        frmReporteVentasGeneralCliente.MdiParent = Me
-        frmReporteVentasGeneralCliente.Show()
+    Private Sub VentasPorTipoDeClienteToolStripMenuItem_Click(sender As Object, e As EventArgs)
+        frmReporteVentasgeneralCliente.MdiParent = Me
+        frmReporteVentasgeneralCliente.Show()
 
     End Sub
 
@@ -468,7 +468,7 @@ Public Class frmInicioF
         frmReporteXclienteCAMPOFERIAL.Show()
     End Sub
 
-    Private Sub PorClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PorClienteToolStripMenuItem.Click
+    Private Sub PorClienteToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmReporteVentasXclienteEmfopesbe.MdiParent = Me
         frmReporteVentasXclienteEmfopesbe.Show()
 
@@ -485,7 +485,7 @@ Public Class frmInicioF
 
     End Sub
 
-    Private Sub PorClientesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PorClientesToolStripMenuItem.Click
+    Private Sub PorClientesToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmReporteVentasXClienteRedRubi.MdiParent = Me
         frmReporteVentasXClienteRedRubi.Show()
 
@@ -501,7 +501,7 @@ Public Class frmInicioF
 
     End Sub
 
-    Private Sub PorClienteToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PorClienteToolStripMenuItem1.Click
+    Private Sub PorClienteToolStripMenuItem1_Click(sender As Object, e As EventArgs)
         frmReporteVentasXClientePostGrado.MdiParent = Me
         frmReporteVentasXClientePostGrado.Show()
 
@@ -517,7 +517,7 @@ Public Class frmInicioF
 
     End Sub
 
-    Private Sub PorClienteToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles PorClienteToolStripMenuItem2.Click
+    Private Sub PorClienteToolStripMenuItem2_Click(sender As Object, e As EventArgs)
         frmReporteXclienteCAMPOFERIAL.MdiParent = Me
         frmReporteXclienteCAMPOFERIAL.Show()
 

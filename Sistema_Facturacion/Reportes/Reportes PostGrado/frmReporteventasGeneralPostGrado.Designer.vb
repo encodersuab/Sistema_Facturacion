@@ -24,18 +24,31 @@ Partial Class frmReporteventasGeneralPostGrado
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Me.mostrar_venta_porFecha_postgrado_generalBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
-        Me.mostrar_venta_porFecha_postgrado_generalBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.mostrar_venta_porFecha_postgrado_generalTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_postgrado_generalTableAdapter()
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.mostrar_v_XFecha_G_postgradoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.mostrar_v_XFecha_G_postgradoTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_G_postgradoTableAdapter()
         CType(Me.mostrar_venta_porFecha_postgrado_generalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mostrar_v_XFecha_G_postgradoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'mostrar_venta_porFecha_postgrado_generalBindingSource
+        '
+        Me.mostrar_venta_porFecha_postgrado_generalBindingSource.DataMember = "mostrar_venta_porFecha_postgrado_general"
+        Me.mostrar_venta_porFecha_postgrado_generalBindingSource.DataSource = Me.dbfacDataSet
+        '
+        'dbfacDataSet
+        '
+        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
+        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Button1
         '
@@ -83,27 +96,26 @@ Partial Class frmReporteventasGeneralPostGrado
         'ReportViewer1
         '
         ReportDataSource1.Name = "DataSet1"
-        ReportDataSource1.Value = Me.mostrar_venta_porFecha_postgrado_generalBindingSource
+        ReportDataSource1.Value = Me.mostrar_v_XFecha_G_postgradoBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptventasGeneralPostGrado.rdlc"
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptVPostGrado.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(2, 74)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(879, 366)
         Me.ReportViewer1.TabIndex = 30
         '
-        'dbfacDataSet
-        '
-        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
-        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'mostrar_venta_porFecha_postgrado_generalBindingSource
-        '
-        Me.mostrar_venta_porFecha_postgrado_generalBindingSource.DataMember = "mostrar_venta_porFecha_postgrado_general"
-        Me.mostrar_venta_porFecha_postgrado_generalBindingSource.DataSource = Me.dbfacDataSet
-        '
         'mostrar_venta_porFecha_postgrado_generalTableAdapter
         '
         Me.mostrar_venta_porFecha_postgrado_generalTableAdapter.ClearBeforeFill = True
+        '
+        'mostrar_v_XFecha_G_postgradoBindingSource
+        '
+        Me.mostrar_v_XFecha_G_postgradoBindingSource.DataMember = "mostrar_v_XFecha_G_postgrado"
+        Me.mostrar_v_XFecha_G_postgradoBindingSource.DataSource = Me.dbfacDataSet
+        '
+        'mostrar_v_XFecha_G_postgradoTableAdapter
+        '
+        Me.mostrar_v_XFecha_G_postgradoTableAdapter.ClearBeforeFill = True
         '
         'frmReporteventasGeneralPostGrado
         '
@@ -118,8 +130,9 @@ Partial Class frmReporteventasGeneralPostGrado
         Me.Controls.Add(Me.dtpFechaInicio)
         Me.Name = "frmReporteventasGeneralPostGrado"
         Me.Text = "frmReporteventasGeneralPostGrado"
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mostrar_venta_porFecha_postgrado_generalBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mostrar_v_XFecha_G_postgradoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -133,4 +146,6 @@ Partial Class frmReporteventasGeneralPostGrado
     Friend WithEvents mostrar_venta_porFecha_postgrado_generalBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents dbfacDataSet As Sistema_Facturacion.dbfacDataSet
     Friend WithEvents mostrar_venta_porFecha_postgrado_generalTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_postgrado_generalTableAdapter
+    Friend WithEvents mostrar_v_XFecha_G_postgradoBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents mostrar_v_XFecha_G_postgradoTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_G_postgradoTableAdapter
 End Class

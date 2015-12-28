@@ -226,6 +226,30 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_GDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G_campoferialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G_emfopesbeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G_postgradoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G_redrubiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.TCategoriaRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -446,6 +470,30 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_GRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G_campoferialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G_emfopesbeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G_postgradoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G_redrubiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.TCategoriaRowChangeEvent">
 	<summary>
 Row event argument class
@@ -663,6 +711,30 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_factura3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_GRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G_campoferialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G_emfopesbeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G_postgradoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G_redrubiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSet.mostrar_v_XFecha_G1RowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -887,6 +959,30 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_factura3TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_GTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_G_campoferialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_G_emfopesbeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_G_postgradoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_G_redrubiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_G1TableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("Sistema_Facturacion")> 
-<Assembly: AssemblyCopyright("Copyright ©  2015")> 
+<Assembly: AssemblyCopyright("Copyright ©  2015 SoftwareHive")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>

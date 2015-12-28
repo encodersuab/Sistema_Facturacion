@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sistema_Facturacion.vCategoriaREDRUBI">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAEAAAAAAAAIAAABAAAAAk=</HashCode>
+      <FileName>Dato\LogicaREDRUBI\vCategoriaREDRUBI.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sistema_Facturacion.vClienteREDRUBI">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgQAEQAAQEIACEiAAAAAAAAAAAAAAEAAAAAAAAAAI=</HashCode>
+      <FileName>Dato\LogicaREDRUBI\vClienteREDRUBI.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sistema_Facturacion.vDetalleVentaPlanillaREDRUBI">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAIAoAAAABAAAAAEAGAAACAgDAQQAAAAIQAA=</HashCode>
+      <FileName>Dato\LogicaREDRUBI\vDetalleVentaPlanillaREDRUBI.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sistema_Facturacion.vDetalleVentaREDRUBI">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAIAgAAAQBAAAAAEAGAAACAgDAUAAAAAIQAA=</HashCode>
+      <FileName>Dato\LogicaREDRUBI\vDetalleVentaREDRUBI.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sistema_Facturacion.vProductoREDRUBI">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIEQAAAAAAgAAiQAAEAAAQEEABACIAAIBAABAAEQgw=</HashCode>
+      <FileName>Dato\LogicaREDRUBI\vProductoREDRUBI.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sistema_Facturacion.vVentaPlanillaREDRUBI">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAKAAAIAAEAAAAAEAABgAAICCAABBEAAQAAQAEAAw=</HashCode>
+      <FileName>Dato\LogicaREDRUBI\vVentaPlanillaREDRUBI.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sistema_Facturacion.vVentaREDRUBI">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAKAAAIAAEAAAAAEAABgAAKAGAABBEAAQAAQAEAAw=</HashCode>
+      <FileName>Dato\LogicaREDRUBI\vVentaREDRUBI.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
