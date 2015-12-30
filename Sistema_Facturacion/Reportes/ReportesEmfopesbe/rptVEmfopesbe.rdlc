@@ -573,20 +573,6 @@
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Image Name="Image3">
-          <Source>Embedded</Source>
-          <Value>imagen</Value>
-          <Sizing>FitProportional</Sizing>
-          <Top>0.09918cm</Top>
-          <Left>0.97457cm</Left>
-          <Height>2.14877cm</Height>
-          <Width>1.60583cm</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
         <Textbox Name="Textbox7">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -623,7 +609,6 @@
           <Left>0.00916cm</Left>
           <Height>1.32119cm</Height>
           <Width>25.87312cm</Width>
-          <ZIndex>1</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -634,6 +619,21 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
+        <Image Name="Image3">
+          <Source>Embedded</Source>
+          <Value>imagen</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.09918cm</Top>
+          <Left>0.97457cm</Left>
+          <Height>2.14877cm</Height>
+          <Width>1.60583cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
         <Textbox Name="Textbox8">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>

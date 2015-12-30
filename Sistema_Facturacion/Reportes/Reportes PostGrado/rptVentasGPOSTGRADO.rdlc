@@ -562,7 +562,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>1.31975cm</Top>
+        <Top>1.17099cm</Top>
+        <Left>0.02646cm</Left>
         <Height>1.2cm</Height>
         <Width>25.84666cm</Width>
         <Style>
@@ -586,8 +587,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>0.21139cm</Top>
-        <Left>0.17166cm</Left>
+        <Top>0.06262cm</Top>
+        <Left>0.19812cm</Left>
         <Height>0.6cm</Height>
         <Width>0.70083cm</Width>
         <ZIndex>1</ZIndex>
@@ -618,8 +619,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>FechaInicio</rd:DefaultName>
-        <Top>0.20285cm</Top>
-        <Left>0.93895cm</Left>
+        <Top>0.05408cm</Top>
+        <Left>0.96541cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>2</ZIndex>
@@ -650,8 +651,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox23</rd:DefaultName>
-        <Top>0.18493cm</Top>
-        <Left>3.61125cm</Left>
+        <Top>0.03616cm</Top>
+        <Left>3.63771cm</Left>
         <Height>0.6cm</Height>
         <Width>0.40979cm</Width>
         <ZIndex>3</ZIndex>
@@ -682,8 +683,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>FechaFin</rd:DefaultName>
-        <Top>0.17639cm</Top>
-        <Left>4.16687cm</Left>
+        <Top>0.02762cm</Top>
+        <Left>4.19333cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>4</ZIndex>
@@ -714,8 +715,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Total</rd:DefaultName>
-        <Top>2.69614cm</Top>
-        <Left>23.34666cm</Left>
+        <Top>2.54738cm</Top>
+        <Left>23.37312cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>5</ZIndex>
@@ -746,8 +747,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox21</rd:DefaultName>
-        <Top>2.69614cm</Top>
-        <Left>20.81138cm</Left>
+        <Top>2.54738cm</Top>
+        <Left>20.83784cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>6</ZIndex>
@@ -764,7 +765,7 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>1.29769in</Height>
+    <Height>1.3125in</Height>
     <Style />
   </Body>
   <Width>10.19669in</Width>
@@ -795,7 +796,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>1.38365cm</Top>
+          <Top>1.36601cm</Top>
           <Height>1.12917cm</Height>
           <Width>25.87312cm</Width>
           <Style>
@@ -840,7 +841,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>0.06246cm</Top>
+          <Top>0.04482cm</Top>
           <Left>0.02646cm</Left>
           <Height>1.32119cm</Height>
           <Width>25.87312cm</Width>
@@ -859,7 +860,7 @@
           <Source>Embedded</Source>
           <Value>imagen</Value>
           <Sizing>FitProportional</Sizing>
-          <Top>0.08964cm</Top>
+          <Top>0.072cm</Top>
           <Left>0.96541cm</Left>
           <Height>2.14877cm</Height>
           <Width>1.60583cm</Width>
@@ -878,7 +879,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>1.93146cm</Height>
+      <Height>1.95792cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -901,7 +902,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
-          <Top>0.05249cm</Top>
+          <Top>0.0525cm</Top>
+          <Left>0.01323cm</Left>
           <Height>0.6cm</Height>
           <Width>25.84666cm</Width>
           <Style>
@@ -931,8 +933,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>0.65249cm</Top>
-          <Left>0.02646cm</Left>
+          <Top>0.6525cm</Top>
+          <Left>0.03969cm</Left>
           <Height>0.6cm</Height>
           <Width>25.84666cm</Width>
           <ZIndex>1</ZIndex>
@@ -963,7 +965,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox8</rd:DefaultName>
-          <Top>1.25249cm</Top>
+          <Top>1.2525cm</Top>
+          <Left>0.01323cm</Left>
           <Height>0.6cm</Height>
           <Width>25.84666cm</Width>
           <ZIndex>2</ZIndex>
@@ -995,18 +998,18 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="dbfacDataSet">
+    <DataSource Name="DataSet1">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>c4b5ca6b-3635-4632-8c39-d8c59ee95c55</rd:DataSourceID>
+      <rd:DataSourceID>e8baf550-a61c-4677-a1e1-6d66d66ab573</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>dbfacDataSet</DataSourceName>
+        <DataSourceName>DataSet1</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -1052,12 +1055,12 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>dbfacDataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\Users\soft\Desktop\repositorio\Sistema_Facturacion\Sistema_Facturacion\dbfacDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>mostrar_venta_porFecha_postgrado_general</rd:TableName>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+        <rd:SchemaPath>D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\dbfacDataSetREPORTES.xsd</rd:SchemaPath>
+        <rd:TableName>mostrar_v_XFecha_G_postgrado</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>mostrar_venta_porFecha_postgrado_generalTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>mostrar_v_XFecha_G_postgradoTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -1180,5 +1183,5 @@ gMTyocgDnr14FdN8Yf8Ag70+M3xk+FviDwpeeA/h/ZWXiDT5tOmaKOZ9scyGN8ZbghWJHuK/TSH/AINB
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>66da9765-f3e7-49c1-901f-383f291fa081</rd:ReportID>
+  <rd:ReportID>016736c3-481f-411d-9dd2-1706cc7d7658</rd:ReportID>
 </Report>

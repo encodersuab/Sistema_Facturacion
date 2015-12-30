@@ -413,13 +413,13 @@
               <KeepWithGroup>After</KeepWithGroup>
             </TablixMember>
             <TablixMember>
-              <Group Name="Detalles" />
+              <Group Name="Detalles2" />
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0.99791cm</Top>
-        <Left>0.07124cm</Left>
+        <Top>1.0316cm</Top>
+        <Left>1.86062cm</Left>
         <Height>1.2cm</Height>
         <Width>22.17021cm</Width>
         <Style>
@@ -449,8 +449,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>FechaInicio</rd:DefaultName>
-        <Top>0.1427cm</Top>
-        <Left>1.31291cm</Left>
+        <Top>0.17639cm</Top>
+        <Left>3.07113cm</Left>
         <Height>0.6cm</Height>
         <Width>3.34667cm</Width>
         <ZIndex>1</ZIndex>
@@ -486,8 +486,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>FechaFin</rd:DefaultName>
-        <Top>0.1427cm</Top>
-        <Left>5.40041cm</Left>
+        <Top>0.17639cm</Top>
+        <Left>7.15863cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>2</ZIndex>
@@ -517,8 +517,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox56</rd:DefaultName>
-        <Top>2.62688cm</Top>
-        <Left>18.43207cm</Left>
+        <Top>2.44685cm</Top>
+        <Left>20.22145cm</Left>
         <Height>0.6cm</Height>
         <Width>1.30938cm</Width>
         <ZIndex>3</ZIndex>
@@ -547,8 +547,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox57</rd:DefaultName>
-        <Top>2.62688cm</Top>
-        <Left>19.74145cm</Left>
+        <Top>2.44685cm</Top>
+        <Left>21.53083cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>4</ZIndex>
@@ -563,51 +563,16 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>1.375in</Height>
+    <Height>1.32292in</Height>
     <Style />
   </Body>
-  <Width>10.19669in</Width>
+  <Width>10.20151in</Width>
   <Page>
     <PageHeader>
       <Height>2.54cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="Textbox8">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>REPORTE DE VENTAS GENERAL</Value>
-                  <Style>
-                    <FontSize>20pt</FontSize>
-                    <FontWeight>Bold</FontWeight>
-                    <TextDecoration>Underline</TextDecoration>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>1.36601cm</Top>
-          <Left>0.02646cm</Left>
-          <Height>1.12917cm</Height>
-          <Width>25.87312cm</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
         <Textbox Name="Textbox7">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -641,7 +606,43 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>0.04482cm</Top>
+          <Left>0.00916cm</Left>
           <Height>1.32119cm</Height>
+          <Width>25.87312cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox8">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>REPORTE DE VENTAS GENERAL RED-RUBI</Value>
+                  <Style>
+                    <FontSize>20pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <TextDecoration>Underline</TextDecoration>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox2</rd:DefaultName>
+          <Top>1.36601cm</Top>
+          <Left>0.00916cm</Left>
+          <Height>1.12917cm</Height>
           <Width>25.87312cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
@@ -658,8 +659,8 @@
           <Source>Embedded</Source>
           <Value>imagen</Value>
           <Sizing>FitProportional</Sizing>
-          <Top>0.09918cm</Top>
-          <Left>0.96541cm</Left>
+          <Top>0.144cm</Top>
+          <Left>0.95217cm</Left>
           <Height>2.14877cm</Height>
           <Width>1.60583cm</Width>
           <ZIndex>2</ZIndex>
@@ -677,7 +678,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>1.905cm</Height>
+      <Height>1.98438cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -700,8 +701,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
-          <Top>0.07034cm</Top>
-          <Left>0.05292cm</Left>
+          <Top>0.03948cm</Top>
+          <Left>0.04478cm</Left>
           <Height>0.6cm</Height>
           <Width>25.84666cm</Width>
           <Style>
@@ -731,8 +732,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>0.63466cm</Top>
-          <Left>0.05292cm</Left>
+          <Top>0.63948cm</Top>
           <Height>0.6cm</Height>
           <Width>25.84666cm</Width>
           <ZIndex>1</ZIndex>
@@ -763,8 +763,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox8</rd:DefaultName>
-          <Top>1.23465cm</Top>
-          <Left>0cm</Left>
+          <Top>1.26552cm</Top>
           <Height>0.6cm</Height>
           <Width>25.84666cm</Width>
           <ZIndex>2</ZIndex>
@@ -785,29 +784,29 @@
         </Border>
       </Style>
     </PageFooter>
-    <PageHeight>29.7cm</PageHeight>
-    <PageWidth>21cm</PageWidth>
-    <LeftMargin>2cm</LeftMargin>
-    <RightMargin>2cm</RightMargin>
-    <TopMargin>2cm</TopMargin>
-    <BottomMargin>2cm</BottomMargin>
+    <PageHeight>21.59cm</PageHeight>
+    <PageWidth>27.94cm</PageWidth>
+    <LeftMargin>1cm</LeftMargin>
+    <RightMargin>1cm</RightMargin>
+    <TopMargin>1cm</TopMargin>
+    <BottomMargin>1cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="dbfacDataSet">
+    <DataSource Name="DataSet1">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>08a1fee3-9780-4511-ab3a-6dc5b63dec0d</rd:DataSourceID>
+      <rd:DataSourceID>f83667f2-248a-41a7-bc62-0321cadd9ee4</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>dbfacDataSet</DataSourceName>
+        <DataSourceName>DataSet1</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -853,12 +852,12 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>dbfacDataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\dbfacDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>mostrar_v_XFecha_G_campoferial</rd:TableName>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+        <rd:SchemaPath>D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\dbfacDataSetREPORTES.xsd</rd:SchemaPath>
+        <rd:TableName>mostrar_v_XFecha_G_redrubi</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>mostrar_v_XFecha_G_campoferialTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>mostrar_v_XFecha_G_redrubiTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -981,5 +980,5 @@ gMTyocgDnr14FdN8Yf8Ag70+M3xk+FviDwpeeA/h/ZWXiDT5tOmaKOZ9scyGN8ZbghWJHuK/TSH/AINB
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>9b360380-5389-408c-bf69-2015ba1e6ba9</rd:ReportID>
+  <rd:ReportID>d7cc460d-10be-4507-bcbf-a49a26c7e64e</rd:ReportID>
 </Report>

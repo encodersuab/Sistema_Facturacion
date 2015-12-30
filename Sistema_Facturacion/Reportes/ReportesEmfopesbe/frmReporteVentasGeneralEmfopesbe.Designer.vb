@@ -24,28 +24,18 @@ Partial Class frmReporteVentasGeneralEmfopesbe
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.mostrar_venta_generalXfechaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
         Me.btnMostrarReporte = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.mostrar_venta_generalXfechaTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_generalXfechaTableAdapter()
-        CType(Me.mostrar_venta_generalXfechaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DataSet1 = New Sistema_Facturacion.DataSet1()
+        Me.mostrar_v_XFecha_G_emfopesbeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.mostrar_v_XFecha_G_emfopesbeTableAdapter = New Sistema_Facturacion.DataSet1TableAdapters.mostrar_v_XFecha_G_emfopesbeTableAdapter()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mostrar_v_XFecha_G_emfopesbeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'mostrar_venta_generalXfechaBindingSource
-        '
-        Me.mostrar_venta_generalXfechaBindingSource.DataMember = "mostrar_venta_generalXfecha"
-        Me.mostrar_venta_generalXfechaBindingSource.DataSource = Me.dbfacDataSet
-        '
-        'dbfacDataSet
-        '
-        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
-        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'btnMostrarReporte
         '
@@ -93,17 +83,27 @@ Partial Class frmReporteVentasGeneralEmfopesbe
         'ReportViewer1
         '
         ReportDataSource1.Name = "DataSet1"
-        ReportDataSource1.Value = Me.mostrar_venta_generalXfechaBindingSource
+        ReportDataSource1.Value = Me.mostrar_v_XFecha_G_emfopesbeBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptVentasGeneralEmfopesbe.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(3, 70)
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptVentaGEMFOPESBE.rdlc"
+        Me.ReportViewer1.Location = New System.Drawing.Point(0, 45)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(865, 411)
+        Me.ReportViewer1.Size = New System.Drawing.Size(867, 246)
         Me.ReportViewer1.TabIndex = 20
         '
-        'mostrar_venta_generalXfechaTableAdapter
+        'DataSet1
         '
-        Me.mostrar_venta_generalXfechaTableAdapter.ClearBeforeFill = True
+        Me.DataSet1.DataSetName = "DataSet1"
+        Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'mostrar_v_XFecha_G_emfopesbeBindingSource
+        '
+        Me.mostrar_v_XFecha_G_emfopesbeBindingSource.DataMember = "mostrar_v_XFecha_G_emfopesbe"
+        Me.mostrar_v_XFecha_G_emfopesbeBindingSource.DataSource = Me.DataSet1
+        '
+        'mostrar_v_XFecha_G_emfopesbeTableAdapter
+        '
+        Me.mostrar_v_XFecha_G_emfopesbeTableAdapter.ClearBeforeFill = True
         '
         'frmReporteVentasGeneralEmfopesbe
         '
@@ -118,8 +118,8 @@ Partial Class frmReporteVentasGeneralEmfopesbe
         Me.Controls.Add(Me.dtpFechaInicio)
         Me.Name = "frmReporteVentasGeneralEmfopesbe"
         Me.Text = "frmReporteVentasGeneralEmfopesbe"
-        CType(Me.mostrar_venta_generalXfechaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mostrar_v_XFecha_G_emfopesbeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -130,7 +130,7 @@ Partial Class frmReporteVentasGeneralEmfopesbe
     Friend WithEvents dtpFechaFin As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpFechaInicio As System.Windows.Forms.DateTimePicker
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
-    Friend WithEvents mostrar_venta_generalXfechaBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents dbfacDataSet As Sistema_Facturacion.dbfacDataSet
-    Friend WithEvents mostrar_venta_generalXfechaTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_generalXfechaTableAdapter
+    Friend WithEvents mostrar_v_XFecha_G_emfopesbeBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DataSet1 As Sistema_Facturacion.DataSet1
+    Friend WithEvents mostrar_v_XFecha_G_emfopesbeTableAdapter As Sistema_Facturacion.DataSet1TableAdapters.mostrar_v_XFecha_G_emfopesbeTableAdapter
 End Class

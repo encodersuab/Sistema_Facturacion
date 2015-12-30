@@ -816,9 +816,8 @@
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\frmFactura2.resx">
       <DependentUpon>frmFactura2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\Report1.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptFac2.rdlc" />
-    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptFactura2.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptVentasGCAMPOFERIA.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\reportePrueba.resx">
       <DependentUpon>reportePrueba.vb</DependentUpon>
     </EmbeddedResource>
@@ -848,6 +847,7 @@
       <DependentUpon>frmReporteVentasgeneralCliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentaIVA.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasG.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasgeneralCliente.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVGenerales.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmFactura3.resx">
@@ -878,7 +878,6 @@
       <DependentUpon>frmReporteVentasXClientePostGrado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptFac3.rdlc" />
-    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptFactura3.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteCategoriaPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteProductoPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteVentasXClientePostGrado.rdlc" />
@@ -888,6 +887,7 @@
       <DependentUpon>frmrptReImpresionFactura.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptventasGeneralPostGrado.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptVentasGPOSTGRADO.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptVPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\frmFactura0.resx">
       <DependentUpon>frmFactura0.vb</DependentUpon>
@@ -905,11 +905,11 @@
       <DependentUpon>frmReporteVentasXClienteRedRubi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptFac0.rdlc" />
-    <EmbeddedResource Include="Reportes\Reportes RedRubi\rptFactura0.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteCategoriaRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteProductosRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteVentasXClienteREDRUBI.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptventasGeneralRedRubi.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes RedRubi\rptVentasGREDRUBI.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptVRedRUbi.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmFactura1.resx">
       <DependentUpon>frmFactura1.vb</DependentUpon>
@@ -933,6 +933,7 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\rptreporteRecibo.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptUsuarios.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVEmfopesbe.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentaGEMFOPESBE.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentasGeneralEmfopesbe.rdlc" />
   </ItemGroup>
   <ItemGroup>

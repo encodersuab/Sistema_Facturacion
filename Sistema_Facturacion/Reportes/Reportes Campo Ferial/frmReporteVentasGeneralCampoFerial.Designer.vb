@@ -24,31 +24,19 @@ Partial Class frmReporteVentasGeneralCampoFerial
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.mostrar_venta_porFecha_campoferial_generalBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.mostrar_venta_porFecha_campoferial_generalTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_campoferial_generalTableAdapter()
-        Me.mostrar_v_XFecha_G_emfopesbeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.mostrar_v_XFecha_G_emfopesbeTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_G_emfopesbeTableAdapter()
-        CType(Me.mostrar_venta_porFecha_campoferial_generalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.mostrar_v_XFecha_G_emfopesbeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.DataSet1 = New Sistema_Facturacion.DataSet1()
+        Me.mostrar_v_XFecha_G_campoferialBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.mostrar_v_XFecha_G_campoferialTableAdapter = New Sistema_Facturacion.DataSet1TableAdapters.mostrar_v_XFecha_G_campoferialTableAdapter()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mostrar_v_XFecha_G_campoferialBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'mostrar_venta_porFecha_campoferial_generalBindingSource
-        '
-        Me.mostrar_venta_porFecha_campoferial_generalBindingSource.DataMember = "mostrar_venta_porFecha_campoferial_general"
-        Me.mostrar_venta_porFecha_campoferial_generalBindingSource.DataSource = Me.dbfacDataSet
-        '
-        'dbfacDataSet
-        '
-        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
-        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Button1
         '
@@ -93,29 +81,34 @@ Partial Class frmReporteVentasGeneralCampoFerial
         Me.dtpFechaInicio.Size = New System.Drawing.Size(98, 20)
         Me.dtpFechaInicio.TabIndex = 30
         '
-        'ReportViewer1
-        '
-        ReportDataSource1.Name = "DataSet1"
-        ReportDataSource1.Value = Me.mostrar_v_XFecha_G_emfopesbeBindingSource
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptVEmfopesbe.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(-1, 65)
-        Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(930, 384)
-        Me.ReportViewer1.TabIndex = 35
-        '
-        'mostrar_venta_porFecha_campoferial_generalTableAdapter
-        '
-        Me.mostrar_venta_porFecha_campoferial_generalTableAdapter.ClearBeforeFill = True
-        '
-        'mostrar_v_XFecha_G_emfopesbeBindingSource
-        '
-        Me.mostrar_v_XFecha_G_emfopesbeBindingSource.DataMember = "mostrar_v_XFecha_G_emfopesbe"
-        Me.mostrar_v_XFecha_G_emfopesbeBindingSource.DataSource = Me.dbfacDataSet
-        '
         'mostrar_v_XFecha_G_emfopesbeTableAdapter
         '
         Me.mostrar_v_XFecha_G_emfopesbeTableAdapter.ClearBeforeFill = True
+        '
+        'ReportViewer1
+        '
+        ReportDataSource1.Name = "DataSet1"
+        ReportDataSource1.Value = Me.mostrar_v_XFecha_G_campoferialBindingSource
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptVentasGCAMPOFERIA.rdlc"
+        Me.ReportViewer1.Location = New System.Drawing.Point(3, 45)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.Size = New System.Drawing.Size(928, 246)
+        Me.ReportViewer1.TabIndex = 35
+        '
+        'DataSet1
+        '
+        Me.DataSet1.DataSetName = "DataSet1"
+        Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'mostrar_v_XFecha_G_campoferialBindingSource
+        '
+        Me.mostrar_v_XFecha_G_campoferialBindingSource.DataMember = "mostrar_v_XFecha_G_campoferial"
+        Me.mostrar_v_XFecha_G_campoferialBindingSource.DataSource = Me.DataSet1
+        '
+        'mostrar_v_XFecha_G_campoferialTableAdapter
+        '
+        Me.mostrar_v_XFecha_G_campoferialTableAdapter.ClearBeforeFill = True
         '
         'frmReporteVentasGeneralCampoFerial
         '
@@ -130,9 +123,8 @@ Partial Class frmReporteVentasGeneralCampoFerial
         Me.Controls.Add(Me.dtpFechaInicio)
         Me.Name = "frmReporteVentasGeneralCampoFerial"
         Me.Text = "frmReporteVentasGeneralCampoFerial"
-        CType(Me.mostrar_venta_porFecha_campoferial_generalBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.mostrar_v_XFecha_G_emfopesbeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mostrar_v_XFecha_G_campoferialBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -142,10 +134,9 @@ Partial Class frmReporteVentasGeneralCampoFerial
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents dtpFechaFin As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpFechaInicio As System.Windows.Forms.DateTimePicker
-    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
-    Friend WithEvents mostrar_venta_porFecha_campoferial_generalBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents dbfacDataSet As Sistema_Facturacion.dbfacDataSet
-    Friend WithEvents mostrar_venta_porFecha_campoferial_generalTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_campoferial_generalTableAdapter
-    Friend WithEvents mostrar_v_XFecha_G_emfopesbeBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents mostrar_v_XFecha_G_emfopesbeTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_G_emfopesbeTableAdapter
+    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
+    Friend WithEvents mostrar_v_XFecha_G_campoferialBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DataSet1 As Sistema_Facturacion.DataSet1
+    Friend WithEvents mostrar_v_XFecha_G_campoferialTableAdapter As Sistema_Facturacion.DataSet1TableAdapters.mostrar_v_XFecha_G_campoferialTableAdapter
 End Class

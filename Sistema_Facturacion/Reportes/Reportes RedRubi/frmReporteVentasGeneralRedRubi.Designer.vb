@@ -23,18 +23,18 @@ Partial Class frmReporteVentasGeneralRedRubi
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
-        Me.mostrar_venta_porFecha_redrubi_generalBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.mostrar_venta_porFecha_redrubi_generalTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_redrubi_generalTableAdapter()
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.mostrar_venta_porFecha_redrubi_generalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DataSet1 = New Sistema_Facturacion.DataSet1()
+        Me.mostrar_v_XFecha_G_redrubiBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.mostrar_v_XFecha_G_redrubiTableAdapter = New Sistema_Facturacion.DataSet1TableAdapters.mostrar_v_XFecha_G_redrubiTableAdapter()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mostrar_v_XFecha_G_redrubiBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -82,28 +82,28 @@ Partial Class frmReporteVentasGeneralRedRubi
         '
         'ReportViewer1
         '
-        ReportDataSource2.Name = "DataSet1"
-        ReportDataSource2.Value = Me.mostrar_venta_porFecha_redrubi_generalBindingSource
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptventasGeneralRedRubi.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(1, 60)
+        ReportDataSource1.Name = "DataSet1"
+        ReportDataSource1.Value = Me.mostrar_v_XFecha_G_redrubiBindingSource
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptVentasGREDRUBI.rdlc"
+        Me.ReportViewer1.Location = New System.Drawing.Point(0, 45)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(911, 423)
+        Me.ReportViewer1.Size = New System.Drawing.Size(909, 435)
         Me.ReportViewer1.TabIndex = 25
         '
-        'dbfacDataSet
+        'DataSet1
         '
-        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
-        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.DataSet1.DataSetName = "DataSet1"
+        Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'mostrar_venta_porFecha_redrubi_generalBindingSource
+        'mostrar_v_XFecha_G_redrubiBindingSource
         '
-        Me.mostrar_venta_porFecha_redrubi_generalBindingSource.DataMember = "mostrar_venta_porFecha_redrubi_general"
-        Me.mostrar_venta_porFecha_redrubi_generalBindingSource.DataSource = Me.dbfacDataSet
+        Me.mostrar_v_XFecha_G_redrubiBindingSource.DataMember = "mostrar_v_XFecha_G_redrubi"
+        Me.mostrar_v_XFecha_G_redrubiBindingSource.DataSource = Me.DataSet1
         '
-        'mostrar_venta_porFecha_redrubi_generalTableAdapter
+        'mostrar_v_XFecha_G_redrubiTableAdapter
         '
-        Me.mostrar_venta_porFecha_redrubi_generalTableAdapter.ClearBeforeFill = True
+        Me.mostrar_v_XFecha_G_redrubiTableAdapter.ClearBeforeFill = True
         '
         'frmReporteVentasGeneralRedRubi
         '
@@ -118,8 +118,8 @@ Partial Class frmReporteVentasGeneralRedRubi
         Me.Controls.Add(Me.dtpFechaInicio)
         Me.Name = "frmReporteVentasGeneralRedRubi"
         Me.Text = "frmReporteVentasGeneralRedRubi"
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.mostrar_venta_porFecha_redrubi_generalBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mostrar_v_XFecha_G_redrubiBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -130,7 +130,7 @@ Partial Class frmReporteVentasGeneralRedRubi
     Friend WithEvents dtpFechaFin As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpFechaInicio As System.Windows.Forms.DateTimePicker
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
-    Friend WithEvents mostrar_venta_porFecha_redrubi_generalBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents dbfacDataSet As Sistema_Facturacion.dbfacDataSet
-    Friend WithEvents mostrar_venta_porFecha_redrubi_generalTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_redrubi_generalTableAdapter
+    Friend WithEvents mostrar_v_XFecha_G_redrubiBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DataSet1 As Sistema_Facturacion.DataSet1
+    Friend WithEvents mostrar_v_XFecha_G_redrubiTableAdapter As Sistema_Facturacion.DataSet1TableAdapters.mostrar_v_XFecha_G_redrubiTableAdapter
 End Class
