@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationRevision>16</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -269,6 +269,12 @@
     <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmEditarProductoCAMPOFERIAL.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmFACTURA-CAMPOFERIAL.Designer.vb">
+      <DependentUpon>frmFACTURA-CAMPOFERIAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionCAMPOFERIAL\frmFACTURA-CAMPOFERIAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\PresentacionEmfopesbe\frmDetalleVentaplanilla.Designer.vb">
       <DependentUpon>frmDetalleVentaplanilla.vb</DependentUpon>
     </Compile>
@@ -359,6 +365,12 @@
     <Compile Include="Presentacion\PresentacionPostGrado\frmEditarProductoPostGrado.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmFACTURA-POSTGRADO.Designer.vb">
+      <DependentUpon>frmFACTURA-POSTGRADO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmFACTURA-POSTGRADO.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\PresentacionPostGrado\frmProductoPostGrado.Designer.vb">
       <DependentUpon>frmProductoPostGrado.vb</DependentUpon>
     </Compile>
@@ -419,10 +431,10 @@
     <Compile Include="Presentacion\PresentacionEmfopesbe\frmProducto.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\PresentacionEmfopesbe\frmQR.Designer.vb">
-      <DependentUpon>frmQR.vb</DependentUpon>
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmFACTURA-EMFOPESBE.Designer.vb">
+      <DependentUpon>frmFACTURA-EMFOPESBE.vb</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\PresentacionEmfopesbe\frmQR.vb">
+    <Compile Include="Presentacion\PresentacionEmfopesbe\frmFACTURA-EMFOPESBE.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\PresentacionEmfopesbe\frmUsuario.Designer.vb">
@@ -477,6 +489,12 @@
       <DependentUpon>frmEditarProductoREDRUBI.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\PresentacionREDRUBI\frmEditarProductoREDRUBI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmFACTURA-REDRUBI.Designer.vb">
+      <DependentUpon>frmFACTURA-REDRUBI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmFACTURA-REDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.Designer.vb">
@@ -702,6 +720,9 @@
     <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmEditarProductoCAMPOFERIAL.resx">
       <DependentUpon>frmEditarProductoCAMPOFERIAL.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionCAMPOFERIAL\frmFACTURA-CAMPOFERIAL.resx">
+      <DependentUpon>frmFACTURA-CAMPOFERIAL.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmDetalleVentaplanilla.resx">
       <DependentUpon>frmDetalleVentaplanilla.vb</DependentUpon>
     </EmbeddedResource>
@@ -747,6 +768,9 @@
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmEditarProductoPostGrado.resx">
       <DependentUpon>frmEditarProductoPostGrado.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmFACTURA-POSTGRADO.resx">
+      <DependentUpon>frmFACTURA-POSTGRADO.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmProductoPostGrado.resx">
       <DependentUpon>frmProductoPostGrado.vb</DependentUpon>
     </EmbeddedResource>
@@ -777,8 +801,8 @@
     <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmProducto.resx">
       <DependentUpon>frmProducto.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmQR.resx">
-      <DependentUpon>frmQR.vb</DependentUpon>
+    <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmFACTURA-EMFOPESBE.resx">
+      <DependentUpon>frmFACTURA-EMFOPESBE.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionEmfopesbe\frmUsuario.resx">
       <DependentUpon>frmUsuario.vb</DependentUpon>
@@ -803,6 +827,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmEditarProductoREDRUBI.resx">
       <DependentUpon>frmEditarProductoREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmFACTURA-REDRUBI.resx">
+      <DependentUpon>frmFACTURA-REDRUBI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.resx">
       <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
@@ -836,7 +863,6 @@
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptReporteCategoriaCampoFerial.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptReporteProductosCampoFerial.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptReporteVentasXClienteCAMPOFERIAL.rdlc" />
-    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptventasGeneralCampoFerial.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\frmLibroVentas.resx">
       <DependentUpon>frmLibroVentas.vb</DependentUpon>
     </EmbeddedResource>
@@ -849,7 +875,6 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentaIVA.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasG.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasgeneralCliente.rdlc" />
-    <EmbeddedResource Include="Reportes\Reportes Generales\rptVGenerales.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmFactura3.resx">
       <DependentUpon>frmFactura3.vb</DependentUpon>
     </EmbeddedResource>
@@ -886,9 +911,7 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\frmrptReImpresionFactura.resx">
       <DependentUpon>frmrptReImpresionFactura.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptventasGeneralPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptVentasGPOSTGRADO.rdlc" />
-    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptVPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\frmFactura0.resx">
       <DependentUpon>frmFactura0.vb</DependentUpon>
     </EmbeddedResource>
@@ -908,9 +931,7 @@
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteCategoriaRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteProductosRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteVentasXClienteREDRUBI.rdlc" />
-    <EmbeddedResource Include="Reportes\Reportes RedRubi\rptventasGeneralRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptVentasGREDRUBI.rdlc" />
-    <EmbeddedResource Include="Reportes\Reportes RedRubi\rptVRedRUbi.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmFactura1.resx">
       <DependentUpon>frmFactura1.vb</DependentUpon>
     </EmbeddedResource>
@@ -932,9 +953,7 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReporteVentasXClienteEmfopesbe.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptreporteRecibo.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptUsuarios.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVEmfopesbe.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentaGEMFOPESBE.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentasGeneralEmfopesbe.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram3.cd" />

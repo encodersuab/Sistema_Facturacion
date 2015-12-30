@@ -24,22 +24,32 @@ Partial Class frmReporteventasGeneralPostGrado
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Me.mostrar_v_XFecha_G_postgradoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataSet1 = New Sistema_Facturacion.DataSet1()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.DataSet1 = New Sistema_Facturacion.DataSet1()
-        Me.mostrar_v_XFecha_G_postgradoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.mostrar_v_XFecha_G_postgradoTableAdapter = New Sistema_Facturacion.DataSet1TableAdapters.mostrar_v_XFecha_G_postgradoTableAdapter()
-        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mostrar_v_XFecha_G_postgradoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'mostrar_v_XFecha_G_postgradoBindingSource
+        '
+        Me.mostrar_v_XFecha_G_postgradoBindingSource.DataMember = "mostrar_v_XFecha_G_postgrado"
+        Me.mostrar_v_XFecha_G_postgradoBindingSource.DataSource = Me.DataSet1
+        '
+        'DataSet1
+        '
+        Me.DataSet1.DataSetName = "DataSet1"
+        Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(486, 0)
+        Me.Button1.Location = New System.Drawing.Point(795, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 39)
         Me.Button1.TabIndex = 29
@@ -49,7 +59,7 @@ Partial Class frmReporteventasGeneralPostGrado
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(246, 25)
+        Me.Label2.Location = New System.Drawing.Point(626, 31)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 13)
         Me.Label2.TabIndex = 28
@@ -58,7 +68,7 @@ Partial Class frmReporteventasGeneralPostGrado
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 25)
+        Me.Label1.Location = New System.Drawing.Point(436, 31)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 27
@@ -67,7 +77,7 @@ Partial Class frmReporteventasGeneralPostGrado
         'dtpFechaFin
         '
         Me.dtpFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaFin.Location = New System.Drawing.Point(341, 19)
+        Me.dtpFechaFin.Location = New System.Drawing.Point(694, 25)
         Me.dtpFechaFin.Name = "dtpFechaFin"
         Me.dtpFechaFin.Size = New System.Drawing.Size(95, 20)
         Me.dtpFechaFin.TabIndex = 26
@@ -75,31 +85,22 @@ Partial Class frmReporteventasGeneralPostGrado
         'dtpFechaInicio
         '
         Me.dtpFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaInicio.Location = New System.Drawing.Point(109, 19)
+        Me.dtpFechaInicio.Location = New System.Drawing.Point(522, 25)
         Me.dtpFechaInicio.Name = "dtpFechaInicio"
         Me.dtpFechaInicio.Size = New System.Drawing.Size(98, 20)
         Me.dtpFechaInicio.TabIndex = 25
         '
         'ReportViewer1
         '
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         ReportDataSource1.Name = "DataSet1"
         ReportDataSource1.Value = Me.mostrar_v_XFecha_G_postgradoBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptVentasGPOSTGRADO.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(-2, 45)
+        Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(886, 246)
+        Me.ReportViewer1.Size = New System.Drawing.Size(882, 441)
         Me.ReportViewer1.TabIndex = 30
-        '
-        'DataSet1
-        '
-        Me.DataSet1.DataSetName = "DataSet1"
-        Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'mostrar_v_XFecha_G_postgradoBindingSource
-        '
-        Me.mostrar_v_XFecha_G_postgradoBindingSource.DataMember = "mostrar_v_XFecha_G_postgrado"
-        Me.mostrar_v_XFecha_G_postgradoBindingSource.DataSource = Me.DataSet1
         '
         'mostrar_v_XFecha_G_postgradoTableAdapter
         '
@@ -110,16 +111,16 @@ Partial Class frmReporteventasGeneralPostGrado
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(882, 441)
-        Me.Controls.Add(Me.ReportViewer1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dtpFechaFin)
         Me.Controls.Add(Me.dtpFechaInicio)
+        Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "frmReporteventasGeneralPostGrado"
         Me.Text = "frmReporteventasGeneralPostGrado"
-        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mostrar_v_XFecha_G_postgradoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
