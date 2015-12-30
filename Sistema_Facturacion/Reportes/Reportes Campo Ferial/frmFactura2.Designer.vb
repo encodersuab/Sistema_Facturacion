@@ -25,11 +25,11 @@ Partial Class frmFactura2
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
-        Me.mostrar_factura2BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.mostrar_factura2TableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_factura2TableAdapter()
         Me.txtnumfactura = New System.Windows.Forms.Label()
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dbfacDataSetFACTURAS = New Sistema_Facturacion.dbfacDataSetFACTURAS()
+        Me.mostrar_factura2BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.mostrar_factura2TableAdapter = New Sistema_Facturacion.dbfacDataSetFACTURASTableAdapters.mostrar_factura2TableAdapter()
+        CType(Me.dbfacDataSetFACTURAS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mostrar_factura2BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,25 +39,11 @@ Partial Class frmFactura2
         ReportDataSource1.Name = "DataSet1"
         ReportDataSource1.Value = Me.mostrar_factura2BindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptFactura2.rdlc"
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptFac2.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(792, 460)
         Me.ReportViewer1.TabIndex = 0
-        '
-        'dbfacDataSet
-        '
-        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
-        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'mostrar_factura2BindingSource
-        '
-        Me.mostrar_factura2BindingSource.DataMember = "mostrar_factura2"
-        Me.mostrar_factura2BindingSource.DataSource = Me.dbfacDataSet
-        '
-        'mostrar_factura2TableAdapter
-        '
-        Me.mostrar_factura2TableAdapter.ClearBeforeFill = True
         '
         'txtnumfactura
         '
@@ -68,6 +54,20 @@ Partial Class frmFactura2
         Me.txtnumfactura.TabIndex = 1
         Me.txtnumfactura.Text = "Label1"
         '
+        'dbfacDataSetFACTURAS
+        '
+        Me.dbfacDataSetFACTURAS.DataSetName = "dbfacDataSetFACTURAS"
+        Me.dbfacDataSetFACTURAS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'mostrar_factura2BindingSource
+        '
+        Me.mostrar_factura2BindingSource.DataMember = "mostrar_factura2"
+        Me.mostrar_factura2BindingSource.DataSource = Me.dbfacDataSetFACTURAS
+        '
+        'mostrar_factura2TableAdapter
+        '
+        Me.mostrar_factura2TableAdapter.ClearBeforeFill = True
+        '
         'frmFactura2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -77,15 +77,15 @@ Partial Class frmFactura2
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "frmFactura2"
         Me.Text = "frmFactura2"
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dbfacDataSetFACTURAS, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mostrar_factura2BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
-    Friend WithEvents mostrar_factura2BindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents dbfacDataSet As Sistema_Facturacion.dbfacDataSet
-    Friend WithEvents mostrar_factura2TableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_factura2TableAdapter
     Friend WithEvents txtnumfactura As System.Windows.Forms.Label
+    Friend WithEvents mostrar_factura2BindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents dbfacDataSetFACTURAS As Sistema_Facturacion.dbfacDataSetFACTURAS
+    Friend WithEvents mostrar_factura2TableAdapter As Sistema_Facturacion.dbfacDataSetFACTURASTableAdapters.mostrar_factura2TableAdapter
 End Class

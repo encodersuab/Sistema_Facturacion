@@ -1228,7 +1228,7 @@
           </Paragraphs>
           <rd:DefaultName>Total</rd:DefaultName>
           <Top>0.03528cm</Top>
-          <Left>16.44415cm</Left>
+          <Left>16.4177cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <ZIndex>6</ZIndex>
@@ -1258,7 +1258,7 @@
           </Paragraphs>
           <rd:DefaultName>Codigo_Control</rd:DefaultName>
           <Top>1.39069cm</Top>
-          <Left>16.01231cm</Left>
+          <Left>15.98586cm</Left>
           <Height>0.6cm</Height>
           <Width>2.93184cm</Width>
           <ZIndex>7</ZIndex>
@@ -1308,7 +1308,7 @@
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
           <Top>0.14111cm</Top>
-          <Left>10.48695cm</Left>
+          <Left>10.49137cm</Left>
           <Height>2.36651cm</Height>
           <Width>2.5cm</Width>
           <ZIndex>9</ZIndex>
@@ -1336,7 +1336,7 @@
           </Paragraphs>
           <rd:DefaultName>literal</rd:DefaultName>
           <Top>0.40264cm</Top>
-          <Left>14.01411cm</Left>
+          <Left>13.98766cm</Left>
           <Height>0.6cm</Height>
           <Width>4.96532cm</Width>
           <ZIndex>10</ZIndex>
@@ -1368,7 +1368,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox48</rd:DefaultName>
           <Top>0.40264cm</Top>
-          <Left>13.02223cm</Left>
+          <Left>12.99578cm</Left>
           <Height>0.61049cm</Height>
           <Width>0.99188cm</Width>
           <ZIndex>11</ZIndex>
@@ -1432,7 +1432,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox48</rd:DefaultName>
           <Top>0.02479cm</Top>
-          <Left>15.21415cm</Left>
+          <Left>15.1877cm</Left>
           <Height>0.61049cm</Height>
           <Width>1.23cm</Width>
           <ZIndex>13</ZIndex>

@@ -120,6 +120,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="dbfacDataSetFACTURAS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbfacDataSetFACTURAS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbfacDataSetLIBROVENTA.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbfacDataSetLIBROVENTA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbfacDataSetREPORTES.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbfacDataSetREPORTES.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datos\DatosCAMPOFERIAL\fCategoriaCAMPOFERIAL.vb" />
     <Compile Include="Datos\DatosCAMPOFERIAL\fDetalleVentaCAMPOFERIAL.vb" />
     <Compile Include="Datos\DatosCAMPOFERIAL\fDetalleVentaPlanillaCAMPOFERIAL.vb" />
@@ -161,6 +176,9 @@
     </Compile>
     <Compile Include="dbfacDataSet.vb">
       <DependentUpon>dbfacDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbfacDataSetREPORTES.vb">
+      <DependentUpon>dbfacDataSetREPORTES.xsd</DependentUpon>
     </Compile>
     <Compile Include="Logica\LogicaCAMPOFERIAL\vCategoriaCAMPOFERIAL.vb" />
     <Compile Include="Logica\LogicaCAMPOFERIAL\vDetalleVentaCAMPOFERIAL.vb" />
@@ -795,7 +813,11 @@
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmVentaREDRUBI.resx">
       <DependentUpon>frmVentaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\frmFactura2.resx">
+      <DependentUpon>frmFactura2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\Report1.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptFac2.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptFactura2.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\reportePrueba.resx">
       <DependentUpon>reportePrueba.vb</DependentUpon>
@@ -825,9 +847,12 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteVentasgeneralCliente.resx">
       <DependentUpon>frmReporteVentasgeneralCliente.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\Reportes Generales\Report1.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentaIVA.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasgeneralCliente.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVGenerales.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\frmFactura3.resx">
+      <DependentUpon>frmFactura3.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteProductosPostGrado.resx">
       <DependentUpon>frmReporteProductosPostGrado.vb</DependentUpon>
     </EmbeddedResource>
@@ -852,6 +877,7 @@
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteVentasXClientePostGrado.resx">
       <DependentUpon>frmReporteVentasXClientePostGrado.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptFac3.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptFactura3.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteCategoriaPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteProductoPostGrado.rdlc" />
@@ -863,6 +889,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptventasGeneralPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptVPostGrado.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes RedRubi\frmFactura0.resx">
+      <DependentUpon>frmFactura0.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes RedRubi\frmReporteCategoriaREDRUBI.resx">
       <DependentUpon>frmReporteCategoriaREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
@@ -875,12 +904,16 @@
     <EmbeddedResource Include="Reportes\Reportes RedRubi\frmReporteVentasXClienteRedRubi.resx">
       <DependentUpon>frmReporteVentasXClienteRedRubi.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes RedRubi\rptFac0.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptFactura0.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteCategoriaRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteProductosRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptReporteVentasXClienteREDRUBI.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptventasGeneralRedRubi.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\rptVRedRUbi.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmFactura1.resx">
+      <DependentUpon>frmFactura1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteCategoriaEmfopesbe.resx">
       <DependentUpon>frmReporteCategoriaEmfopesbe.vb</DependentUpon>
     </EmbeddedResource>
@@ -893,7 +926,7 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\frmReporteVentasXclienteEmfopesbe.resx">
       <DependentUpon>frmReporteVentasXclienteEmfopesbe.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptFactura1.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptFac1.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReportecategoriaEmfopesbe.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReporteProductoEMFOPESBE.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptReporteVentasXClienteEmfopesbe.rdlc" />
@@ -907,6 +940,39 @@
     <None Include="ClassDiagram4.cd" />
     <None Include="ClassDiagram5.cd" />
     <None Include="ClassDiagram6.cd" />
+    <None Include="dbfacDataSetFACTURAS.xsc">
+      <DependentUpon>dbfacDataSetFACTURAS.xsd</DependentUpon>
+    </None>
+    <None Include="dbfacDataSetFACTURAS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbfacDataSetFACTURAS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dbfacDataSetFACTURAS.xss">
+      <DependentUpon>dbfacDataSetFACTURAS.xsd</DependentUpon>
+    </None>
+    <None Include="dbfacDataSetLIBROVENTA.xsc">
+      <DependentUpon>dbfacDataSetLIBROVENTA.xsd</DependentUpon>
+    </None>
+    <None Include="dbfacDataSetLIBROVENTA.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbfacDataSetLIBROVENTA.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dbfacDataSetLIBROVENTA.xss">
+      <DependentUpon>dbfacDataSetLIBROVENTA.xsd</DependentUpon>
+    </None>
+    <None Include="dbfacDataSetREPORTES.xsc">
+      <DependentUpon>dbfacDataSetREPORTES.xsd</DependentUpon>
+    </None>
+    <None Include="dbfacDataSetREPORTES.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbfacDataSetREPORTES.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dbfacDataSetREPORTES.xss">
+      <DependentUpon>dbfacDataSetREPORTES.xsd</DependentUpon>
+    </None>
     <None Include="Reportes\Diagramas\Logico\ClassDiagram3.cd" />
     <None Include="Reportes\Diagramas\Logico\ClassDiagram4.cd" />
     <None Include="Reportes\Diagramas\Logico\ClassDiagram5.cd" />
