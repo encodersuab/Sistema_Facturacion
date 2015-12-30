@@ -23,37 +23,19 @@ Partial Class frmReporteVentasGeneral
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.mostrar_v_XFecha_GBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.dbfacDataSet = New Sistema_Facturacion.dbfacDataSet()
-        Me.mostrar_venta_porFecha_GeneralBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Me.btnGenerar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.mostrar_venta_porFecha_GeneralTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_GeneralTableAdapter()
-        Me.mostrar_v_XFecha_GTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_GTableAdapter()
-        CType(Me.mostrar_v_XFecha_GBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.mostrar_venta_porFecha_GeneralBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dbfacDataSetLIBROVENTA = New Sistema_Facturacion.dbfacDataSetLIBROVENTA()
+        Me.mostrar_libroVentasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.mostrar_libroVentasTableAdapter = New Sistema_Facturacion.dbfacDataSetLIBROVENTATableAdapters.mostrar_libroVentasTableAdapter()
+        CType(Me.dbfacDataSetLIBROVENTA, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mostrar_libroVentasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'mostrar_v_XFecha_GBindingSource
-        '
-        Me.mostrar_v_XFecha_GBindingSource.DataMember = "mostrar_v_XFecha_G"
-        Me.mostrar_v_XFecha_GBindingSource.DataSource = Me.dbfacDataSet
-        '
-        'dbfacDataSet
-        '
-        Me.dbfacDataSet.DataSetName = "dbfacDataSet"
-        Me.dbfacDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'mostrar_venta_porFecha_GeneralBindingSource
-        '
-        Me.mostrar_venta_porFecha_GeneralBindingSource.DataMember = "mostrar_venta_porFecha_General"
-        Me.mostrar_venta_porFecha_GeneralBindingSource.DataSource = Me.dbfacDataSet
         '
         'btnGenerar
         '
@@ -100,22 +82,28 @@ Partial Class frmReporteVentasGeneral
         '
         'ReportViewer1
         '
-        ReportDataSource2.Name = "DataSet1"
-        ReportDataSource2.Value = Me.mostrar_v_XFecha_GBindingSource
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptVGenerales.rdlc"
+        ReportDataSource1.Name = "DataSet1"
+        ReportDataSource1.Value = Me.mostrar_libroVentasBindingSource
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptLibroVentaIVA.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(2, 73)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(891, 399)
         Me.ReportViewer1.TabIndex = 35
         '
-        'mostrar_venta_porFecha_GeneralTableAdapter
+        'dbfacDataSetLIBROVENTA
         '
-        Me.mostrar_venta_porFecha_GeneralTableAdapter.ClearBeforeFill = True
+        Me.dbfacDataSetLIBROVENTA.DataSetName = "dbfacDataSetLIBROVENTA"
+        Me.dbfacDataSetLIBROVENTA.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'mostrar_v_XFecha_GTableAdapter
+        'mostrar_libroVentasBindingSource
         '
-        Me.mostrar_v_XFecha_GTableAdapter.ClearBeforeFill = True
+        Me.mostrar_libroVentasBindingSource.DataMember = "mostrar_libroVentas"
+        Me.mostrar_libroVentasBindingSource.DataSource = Me.dbfacDataSetLIBROVENTA
+        '
+        'mostrar_libroVentasTableAdapter
+        '
+        Me.mostrar_libroVentasTableAdapter.ClearBeforeFill = True
         '
         'frmReporteVentasGeneral
         '
@@ -130,9 +118,8 @@ Partial Class frmReporteVentasGeneral
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "frmReporteVentasGeneral"
         Me.Text = "frmReporteVentasGeneral"
-        CType(Me.mostrar_v_XFecha_GBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.mostrar_venta_porFecha_GeneralBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dbfacDataSetLIBROVENTA, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mostrar_libroVentasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -143,9 +130,7 @@ Partial Class frmReporteVentasGeneral
     Friend WithEvents dtpFechaFin As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpFechaInicio As System.Windows.Forms.DateTimePicker
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
-    Friend WithEvents mostrar_venta_porFecha_GeneralBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents dbfacDataSet As Sistema_Facturacion.dbfacDataSet
-    Friend WithEvents mostrar_venta_porFecha_GeneralTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_venta_porFecha_GeneralTableAdapter
-    Friend WithEvents mostrar_v_XFecha_GBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents mostrar_v_XFecha_GTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_GTableAdapter
+    Friend WithEvents mostrar_libroVentasBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents dbfacDataSetLIBROVENTA As Sistema_Facturacion.dbfacDataSetLIBROVENTA
+    Friend WithEvents mostrar_libroVentasTableAdapter As Sistema_Facturacion.dbfacDataSetLIBROVENTATableAdapters.mostrar_libroVentasTableAdapter
 End Class

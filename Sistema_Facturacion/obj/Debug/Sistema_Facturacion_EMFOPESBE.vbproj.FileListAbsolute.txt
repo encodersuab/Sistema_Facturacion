@@ -774,3 +774,7 @@ D:\Users\Blady\Desktop\Sistema_Facturacion-847d7223f3cb35071c17060eb5110ef75f414
 D:\Users\Blady\Desktop\Sistema_Facturacion-847d7223f3cb35071c17060eb5110ef75f414487\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFactura1.resources
 D:\Users\Blady\Desktop\Sistema_Facturacion-847d7223f3cb35071c17060eb5110ef75f414487\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFactura2.resources
 D:\Users\Blady\Desktop\Sistema_Facturacion-847d7223f3cb35071c17060eb5110ef75f414487\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFactura3.resources
+D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFactura2.resources
+D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFactura3.resources
+D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFactura0.resources
+D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFactura1.resources
