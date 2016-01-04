@@ -22,6 +22,7 @@ Partial Class frmFACTURA_CAMPOFERIAL
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.cbxListadoClientes = New System.Windows.Forms.ComboBox()
@@ -52,9 +53,11 @@ Partial Class frmFACTURA_CAMPOFERIAL
         Me.txtNum_Factura = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtNit_Emisor = New System.Windows.Forms.TextBox()
+        Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox2
@@ -357,6 +360,10 @@ Partial Class frmFACTURA_CAMPOFERIAL
         Me.txtNit_Emisor.Size = New System.Drawing.Size(173, 20)
         Me.txtNit_Emisor.TabIndex = 0
         '
+        'erroricono
+        '
+        Me.erroricono.ContainerControl = Me
+        '
         'frmFACTURA_CAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -371,6 +378,7 @@ Partial Class frmFACTURA_CAMPOFERIAL
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -404,4 +412,5 @@ Partial Class frmFACTURA_CAMPOFERIAL
     Friend WithEvents txtNum_Factura As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtNit_Emisor As System.Windows.Forms.TextBox
+    Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
 End Class

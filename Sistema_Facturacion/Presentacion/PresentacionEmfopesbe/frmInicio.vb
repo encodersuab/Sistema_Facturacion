@@ -390,8 +390,8 @@ Public Class frmInicioF
     End Sub
 
     Private Sub REImprecionR_Click(sender As Object, e As EventArgs) Handles REImprecionR.Click
-        frmQR.MdiParent = Me
-        frmQR.Show()
+        frmFACTURA.MdiParent = Me
+        frmFACTURA.Show()
     End Sub
 
     Private Sub ToolStripMenuItem28_Click(sender As Object, e As EventArgs)
@@ -587,5 +587,20 @@ Public Class frmInicioF
     Private Sub LibroVentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LibroVentasToolStripMenuItem.Click
         frmLibroVentas.MdiParent = Me
         frmLibroVentas.Show()
+    End Sub
+
+    Private Sub FacturaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FacturaToolStripMenuItem.Click
+        frmQR.MdiParent = Me
+        frmQR.Show()
+    End Sub
+
+    Private Sub FacturaToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles FacturaToolStripMenuItem1.Click
+        frmFACTURA_CAMPOFERIAL.MdiParent = Me
+        frmFACTURA_CAMPOFERIAL.Show()
+    End Sub
+
+    Private Sub FacturaToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles FacturaToolStripMenuItem2.Click
+        frmFACTURA_POSTGRADO.MdiParent = Me
+        frmFACTURA_POSTGRADO.Show()
     End Sub
 End Class

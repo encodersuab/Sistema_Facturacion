@@ -5,8 +5,6 @@
 
     End Sub
 
-
-    ''''''''''''''''
     Public Sub limpiar()
 
 
@@ -26,7 +24,7 @@
     Private Sub mostrar()
         Try
             Dim func As New fQr
-            dt = func.mostrar
+            dt = func.mostrar1
             datalistado.Columns.Item("Eliminar").Visible = False
 
             If dt.Rows.Count <> 0 Then
@@ -73,7 +71,7 @@
     End Sub
 
     Private Sub ocultar_columnas()
-        '   datalistado.Columns(1).Visible = False
+        'datalistado.Columns(1).Visible = False
         '  datalistado.Columns(2).Visible = False
         '  datalistado.Columns(3).Visible = False
     End Sub
@@ -415,15 +413,15 @@
                     res = MessageBox.Show("REALMENTE QUIERE ANULAR LA FACTURA", "FACTURA ANULADA", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
                     dts1.gidventa = txttxtIdVenta.Text
                     If (res = Windows.Forms.DialogResult.Yes) Then
-                        func.editar(dts)
-                        Do While func1.mostraridprodXidventa(dts1) <> 0
+                        func.editar1(dts)
+                        Do While func1.mostraridprodXidventa1(dts1) <> 0
 
-                            dts2.gidproducto = func1.mostraridprodXidventa(dts1)
-                            dts2.gcantidad = func1.mostrarCantidadXidventa(dts1)
-                            func2.aumentar_stock(dts2)
-                            dts2.giddedatlle_venta = func1.mostrariddetalleventaXidventa(dts1)
+                            dts2.gidproducto = func1.mostraridprodXidventa1(dts1)
+                            dts2.gcantidad = func1.mostrarCantidadXidventa1(dts1)
+                            func2.aumentar_stock1(dts2)
+                            dts2.giddedatlle_venta = func1.mostrariddetalleventaXidventa1(dts1)
                             dts2.gvalidez = "A"
-                            func2.editarValidez(dts2)
+                            func2.editarValidez1(dts2)
                             ' func1.eliminar(dts2)
                         Loop
                         mostrar()

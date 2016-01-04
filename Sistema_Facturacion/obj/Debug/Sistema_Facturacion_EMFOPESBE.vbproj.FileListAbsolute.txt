@@ -778,3 +778,6 @@ D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debu
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFactura3.resources
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFactura0.resources
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFactura1.resources
+D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFACTURA_CAMPOFERIAL.resources
+D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFACTURA_POSTGRADO.resources
+D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFACTURA.resources
