@@ -76,7 +76,7 @@ Partial Class frmProductoPostGrado
         '
         Me.txtmedida.FormattingEnabled = True
         Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
-        Me.txtmedida.Location = New System.Drawing.Point(1007, 71)
+        Me.txtmedida.Location = New System.Drawing.Point(1230, 143)
         Me.txtmedida.Name = "txtmedida"
         Me.txtmedida.Size = New System.Drawing.Size(121, 21)
         Me.txtmedida.TabIndex = 29
@@ -85,7 +85,7 @@ Partial Class frmProductoPostGrado
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(948, 74)
+        Me.Label11.Location = New System.Drawing.Point(1171, 146)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(42, 13)
         Me.Label11.TabIndex = 28
@@ -134,7 +134,7 @@ Partial Class frmProductoPostGrado
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(396, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(470, 499)
+        Me.GroupBox2.Size = New System.Drawing.Size(701, 499)
         Me.GroupBox2.TabIndex = 28
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Productos"
@@ -153,7 +153,7 @@ Partial Class frmProductoPostGrado
         '
         Me.txtBuscar.Location = New System.Drawing.Point(160, 26)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(292, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(535, 20)
         Me.txtBuscar.TabIndex = 2
         '
         'cbxListadoClientes
@@ -176,7 +176,7 @@ Partial Class frmProductoPostGrado
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(446, 421)
+        Me.datalistado.Size = New System.Drawing.Size(689, 421)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -275,7 +275,7 @@ Partial Class frmProductoPostGrado
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(899, 48)
+        Me.Label5.Location = New System.Drawing.Point(1122, 120)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(91, 13)
         Me.Label5.TabIndex = 9
@@ -284,7 +284,7 @@ Partial Class frmProductoPostGrado
         'txtprecio_compra
         '
         Me.txtprecio_compra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtprecio_compra.Location = New System.Drawing.Point(1007, 45)
+        Me.txtprecio_compra.Location = New System.Drawing.Point(1230, 117)
         Me.txtprecio_compra.Name = "txtprecio_compra"
         Me.txtprecio_compra.Size = New System.Drawing.Size(56, 20)
         Me.txtprecio_compra.TabIndex = 8
@@ -457,7 +457,7 @@ Partial Class frmProductoPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(874, 521)
+        Me.ClientSize = New System.Drawing.Size(1109, 521)
         Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label11)

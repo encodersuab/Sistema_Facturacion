@@ -77,4 +77,8 @@
     Private Sub frmEditarProductoREDRUBI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub cbbmodulo_Click(sender As Object, e As EventArgs) Handles cbbmodulo.Click
+
+    End Sub
 End Class

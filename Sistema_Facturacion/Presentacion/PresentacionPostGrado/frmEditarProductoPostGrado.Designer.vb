@@ -176,9 +176,9 @@ Partial Class frmEditarProductoPostGrado
         Me.cbbmodulo.Enabled = False
         Me.cbbmodulo.Location = New System.Drawing.Point(150, 233)
         Me.cbbmodulo.Name = "cbbmodulo"
-        Me.cbbmodulo.Size = New System.Drawing.Size(72, 13)
+        Me.cbbmodulo.Size = New System.Drawing.Size(78, 13)
         Me.cbbmodulo.TabIndex = 30
-        Me.cbbmodulo.Text = "EMFOPESBE"
+        Me.cbbmodulo.Text = "POST-GRADO"
         '
         'txtmedida
         '

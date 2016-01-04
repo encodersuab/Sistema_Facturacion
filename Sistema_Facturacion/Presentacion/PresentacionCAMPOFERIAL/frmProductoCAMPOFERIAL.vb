@@ -83,7 +83,7 @@
             ds.Tables.Add(dt.Copy)
             Dim dv As New DataView(ds.Tables(0))
 
-            dv.RowFilter = cbxListadoClientes.Text & " Like '" & txtBuscar.Text & "%'"
+            dv.RowFilter = cbxListadoClientes.Text & " Like '%" & txtBuscar.Text & "%'"
 
             If dv.Count <> 0 Then
                 Inexistente.Visible = False

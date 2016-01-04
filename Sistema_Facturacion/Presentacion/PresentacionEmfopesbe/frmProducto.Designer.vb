@@ -139,7 +139,7 @@ Partial Class frmProducto
         '
         Me.txtBuscar.Location = New System.Drawing.Point(160, 26)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(292, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(608, 20)
         Me.txtBuscar.TabIndex = 2
         '
         'cbxListadoClientes
@@ -187,7 +187,7 @@ Partial Class frmProducto
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(446, 421)
+        Me.datalistado.Size = New System.Drawing.Size(762, 421)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -438,7 +438,7 @@ Partial Class frmProducto
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(400, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(470, 499)
+        Me.GroupBox2.Size = New System.Drawing.Size(786, 499)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Productos"
@@ -460,7 +460,7 @@ Partial Class frmProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(886, 519)
+        Me.ClientSize = New System.Drawing.Size(1198, 519)
         Me.Controls.Add(Me.txtTag)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)

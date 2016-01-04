@@ -176,9 +176,9 @@ Partial Class frmEditarProductoREDRUBI
         Me.cbbmodulo.Enabled = False
         Me.cbbmodulo.Location = New System.Drawing.Point(151, 209)
         Me.cbbmodulo.Name = "cbbmodulo"
-        Me.cbbmodulo.Size = New System.Drawing.Size(72, 13)
+        Me.cbbmodulo.Size = New System.Drawing.Size(59, 13)
         Me.cbbmodulo.TabIndex = 30
-        Me.cbbmodulo.Text = "EMFOPESBE"
+        Me.cbbmodulo.Text = "RED-RUBI"
         '
         'txtmedida
         '

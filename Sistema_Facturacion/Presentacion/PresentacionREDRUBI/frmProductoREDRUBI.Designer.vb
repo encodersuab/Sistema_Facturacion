@@ -76,7 +76,7 @@ Partial Class frmProductoREDRUBI
         '
         Me.txtmedida.FormattingEnabled = True
         Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
-        Me.txtmedida.Location = New System.Drawing.Point(947, 65)
+        Me.txtmedida.Location = New System.Drawing.Point(1234, 107)
         Me.txtmedida.Name = "txtmedida"
         Me.txtmedida.Size = New System.Drawing.Size(121, 21)
         Me.txtmedida.TabIndex = 29
@@ -85,7 +85,7 @@ Partial Class frmProductoREDRUBI
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(888, 68)
+        Me.Label11.Location = New System.Drawing.Point(1175, 110)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(42, 13)
         Me.Label11.TabIndex = 28
@@ -216,7 +216,7 @@ Partial Class frmProductoREDRUBI
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(895, 97)
+        Me.Label5.Location = New System.Drawing.Point(1182, 139)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(91, 13)
         Me.Label5.TabIndex = 9
@@ -225,7 +225,7 @@ Partial Class frmProductoREDRUBI
         'txtprecio_compra
         '
         Me.txtprecio_compra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtprecio_compra.Location = New System.Drawing.Point(947, 43)
+        Me.txtprecio_compra.Location = New System.Drawing.Point(1234, 85)
         Me.txtprecio_compra.Name = "txtprecio_compra"
         Me.txtprecio_compra.Size = New System.Drawing.Size(56, 20)
         Me.txtprecio_compra.TabIndex = 8
@@ -234,7 +234,7 @@ Partial Class frmProductoREDRUBI
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(895, 26)
+        Me.Label4.Location = New System.Drawing.Point(1182, 68)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(35, 13)
         Me.Label4.TabIndex = 7
@@ -243,7 +243,7 @@ Partial Class frmProductoREDRUBI
         'txtstock
         '
         Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtstock.Location = New System.Drawing.Point(947, 23)
+        Me.txtstock.Location = New System.Drawing.Point(1234, 65)
         Me.txtstock.Name = "txtstock"
         Me.txtstock.Size = New System.Drawing.Size(56, 20)
         Me.txtstock.TabIndex = 6
@@ -276,7 +276,7 @@ Partial Class frmProductoREDRUBI
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(396, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(470, 499)
+        Me.GroupBox2.Size = New System.Drawing.Size(754, 499)
         Me.GroupBox2.TabIndex = 28
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Productos"
@@ -295,7 +295,7 @@ Partial Class frmProductoREDRUBI
         '
         Me.txtBuscar.Location = New System.Drawing.Point(160, 26)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(292, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(588, 20)
         Me.txtBuscar.TabIndex = 2
         '
         'cbxListadoClientes
@@ -318,7 +318,7 @@ Partial Class frmProductoREDRUBI
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(446, 421)
+        Me.datalistado.Size = New System.Drawing.Size(742, 421)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -456,7 +456,7 @@ Partial Class frmProductoREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(877, 523)
+        Me.ClientSize = New System.Drawing.Size(1162, 523)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.txtTag)
