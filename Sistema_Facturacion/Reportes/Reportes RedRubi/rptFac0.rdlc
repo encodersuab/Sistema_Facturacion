@@ -133,7 +133,7 @@
                               <Value>=Fields!precio_unitario.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>0.0;(0.0)</Format>
+                                <Format>0.00;(0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -165,7 +165,7 @@
                               <Value>=Fields!TotalParcial.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>0.0;(0.0)</Format>
+                                <Format>0.00;(0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -539,7 +539,7 @@
                               <Value>=Fields!precio_unitario.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>0.0;(0.0)</Format>
+                                <Format>0.00;(0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -571,7 +571,7 @@
                               <Value>=Fields!TotalParcial.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>0.0;(0.0)</Format>
+                                <Format>0.00;(0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -589,6 +589,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -1186,7 +1187,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Literal</Value>
+                  <Value>SON:</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                   </Style>
@@ -1197,7 +1198,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox48</rd:DefaultName>
           <Top>0.41313cm</Top>
-          <Left>2.55072cm</Left>
+          <Left>2.44489cm</Left>
           <Height>0.61049cm</Height>
           <Width>0.99188cm</Width>
           <ZIndex>5</ZIndex>
@@ -1358,7 +1359,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Literal</Value>
+                  <Value>SON:</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                   </Style>
@@ -1432,6 +1433,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox48</rd:DefaultName>
+          <Top>0cm</Top>
           <Left>15.19872cm</Left>
           <Height>0.61049cm</Height>
           <Width>1.23cm</Width>

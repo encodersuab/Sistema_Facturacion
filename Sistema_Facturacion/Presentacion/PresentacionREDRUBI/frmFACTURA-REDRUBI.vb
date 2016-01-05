@@ -189,6 +189,8 @@
                     Dim func1 As New fDetalleVenta
                     Dim dts2 As New vDetalleVenta
                     Dim func2 As New fDetalleVenta
+                    Dim dts3 As New vVenta
+                    Dim func3 As New fVenta
 
                     dts.gIDCodQr = txtIDCodQr.Text
                     dts.gNit_Emisor = txtNit_Emisor.Text
@@ -208,8 +210,8 @@
                     dts1.gidventa = txttxtIdVenta.Text
                     If (res = Windows.Forms.DialogResult.Yes) Then
                         func.editar(dts)
+                        func3.editarNomFactura(dts1)
                         Do While func1.mostraridprodXidventa(dts1) <> 0
-
                             dts2.gidproducto = func1.mostraridprodXidventa(dts1)
                             dts2.gcantidad = func1.mostrarCantidadXidventa(dts1)
                             func2.aumentar_stock(dts2)

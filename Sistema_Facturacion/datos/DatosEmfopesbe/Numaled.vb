@@ -11,14 +11,14 @@ Public NotInheritable Class Numalet
 
     Private Const UNI As Integer = 0, DIECI As Integer = 1, DECENA As Integer = 2, CENTENA As Integer = 3
     Private Shared _matriz As String(,) = New String(CENTENA, 9) { _
-        {Nothing, " uno", " dos", " tres", " cuatro", " cinco", " seis", " siete", " ocho", " nueve"}, _
-        {" diez", " once", " doce", " trece", " catorce", " quince", " dieciséis", " diecisiete", " dieciocho", " diecinueve"}, _
-        {Nothing, Nothing, Nothing, " treinta", " cuarenta", " cincuenta", " sesenta", " setenta", " ochenta", " noventa"}, _
-        {Nothing, Nothing, Nothing, Nothing, Nothing, " quinientos", Nothing, " setecientos", Nothing, " novecientos"}}
+        {Nothing, " UNO", " DOS", " TRES", " CUATRO", " CINCO", " SEIS", " SIETE", " OCHO", " NUEVE"}, _
+        {" DIEZ", " ONCE", " DOCE", " TRECE", " CATORCE", " QUINCE", " DIECISÉIS", " DIECISIETE", " DIECIOCHO", " DIECINUEVE"}, _
+        {Nothing, Nothing, Nothing, " TREINTA", " CUARENTA", " CINCUENTA", " SESENTA", " SETENTA", " OCHENTA", " NOVENTA"}, _
+        {Nothing, Nothing, Nothing, Nothing, Nothing, " QUINIENTOS", Nothing, " SETECIENTOS", Nothing, " NOVECIENTOS"}}
     Private Const [sub] As Char = CChar(ChrW(26))
     'Cambiar acá si se quiere otro comportamiento en los métodos de clase
-    Public Const SeparadorDecimalSalidaDefault As String = "con"
-    Public Const MascaraSalidaDecimalDefault As String = "00'/100.-'"
+    Public Const SeparadorDecimalSalidaDefault As String = "CON"
+    Public Const MascaraSalidaDecimalDefault As String = "00'/100 BOLIVIANOS'"
     Public Const DecimalesDefault As Int32 = 2
     Public Const LetraCapitalDefault As Boolean = False
     Public Const ConvertirDecimalesDefault As Boolean = False
@@ -275,7 +275,7 @@ Public NotInheritable Class Numalet
             Throw New ArgumentException("El número '" + Numero.ToString() + "' excedió los límites del conversor: [0;1.000.000.000.001]")
         End If
         If Num = 0 Then
-            Resultado.Append(" cero")
+            Resultado.Append(" CERO")
         Else
             iTerna = 0
 
@@ -295,12 +295,12 @@ Public NotInheritable Class Numalet
                     Case 10 To 19
                         cadTerna = cadTerna + _matriz(DIECI, unidadTerna)
                     Case 20
-                        cadTerna = cadTerna + " veinte"
+                        cadTerna = cadTerna + " VEINTE"
                     Case 21 To 29
-                        cadTerna = " veinti" + _matriz(UNI, unidadTerna).Substring(1)
+                        cadTerna = " VEINTI" + _matriz(UNI, unidadTerna).Substring(1)
                     Case 30 To 99
                         If unidadTerna <> 0 Then
-                            cadTerna = _matriz(DECENA, Int(decenaTerna / 10)) + " y" + _matriz(UNI, unidadTerna) + cadTerna
+                            cadTerna = _matriz(DECENA, Int(decenaTerna / 10)) + " Y" + _matriz(UNI, unidadTerna) + cadTerna
                         Else
                             cadTerna += _matriz(DECENA, Int(decenaTerna / 10))
                         End If
@@ -309,9 +309,9 @@ Public NotInheritable Class Numalet
                 Select Case centenaTerna
                     Case 1
                         If decenaTerna > 0 Then
-                            cadTerna = " ciento" + cadTerna
+                            cadTerna = " CIENTO" + cadTerna
                         Else
-                            cadTerna = " cien" + cadTerna
+                            cadTerna = " CIEN" + cadTerna
                         End If
                         Exit Select
                     Case 5, 7, 9
@@ -319,34 +319,34 @@ Public NotInheritable Class Numalet
                         Exit Select
                     Case Else
                         If Int(terna / 100) > 1 Then
-                            cadTerna = _matriz(UNI, Int(terna / 100)) + "cientos" + cadTerna
+                            cadTerna = _matriz(UNI, Int(terna / 100)) + "CIENTOS" + cadTerna
                         End If
                         Exit Select
                 End Select
                 'Reemplazo el 'uno' por 'un' si no es en las únidades o si se solicító apocopar
                 If (iTerna > 1 OrElse ApocoparUnoParteEntera) AndAlso decenaTerna = 21 Then
-                    cadTerna = cadTerna.Replace("veintiuno", "veintiún")
+                    cadTerna = cadTerna.Replace("VEINTIUNO", "VEINTIÚN")
                 ElseIf (iTerna > 1 OrElse ApocoparUnoParteEntera) AndAlso unidadTerna = 1 AndAlso decenaTerna <> 11 Then
                     cadTerna = cadTerna.Substring(0, cadTerna.Length - 1)
                     'Acentúo 'veintidós', 'veintitrés' y 'veintiséis'
                 ElseIf decenaTerna = 22 Then
-                    cadTerna = cadTerna.Replace("veintidos", "veintidós")
+                    cadTerna = cadTerna.Replace("VEINTIDOS", "VEINTIDÓS")
                 ElseIf decenaTerna = 23 Then
-                    cadTerna = cadTerna.Replace("veintitres", "veintitrés")
+                    cadTerna = cadTerna.Replace("VEINTITRES", "VEINTITRÉS")
                 ElseIf decenaTerna = 26 Then
-                    cadTerna = cadTerna.Replace("veintiseis", "veintiséis")
+                    cadTerna = cadTerna.Replace("VEINTISEIS", "VEINTISÉIS")
                 End If
 
                 'Completo miles y millones
                 Select Case iTerna
                     Case 3
                         If Numero < 2000000 Then
-                            cadTerna += " millón"
+                            cadTerna += " MILLÓN"
                         Else
-                            cadTerna += " millones"
+                            cadTerna += " MILLONES"
                         End If
                     Case 2, 4
-                        If terna > 0 Then cadTerna += " mil"
+                        If terna > 0 Then cadTerna += " MIL"
                 End Select
                 Resultado.Insert(0, cadTerna)
                 Num = Int(Num / 1000)

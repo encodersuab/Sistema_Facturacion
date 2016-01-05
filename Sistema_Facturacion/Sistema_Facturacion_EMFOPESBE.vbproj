@@ -521,6 +521,12 @@
     <Compile Include="Reportes\Reportes Campo Ferial\frmFactura2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmImpuestos.Designer.vb">
+      <DependentUpon>frmImpuestos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmImpuestos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\Reportes Generales\reportePrueba.Designer.vb">
       <DependentUpon>reportePrueba.vb</DependentUpon>
     </Compile>
@@ -845,6 +851,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptFac2.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptVentasGCAMPOFERIA.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\frmImpuestos.resx">
+      <DependentUpon>frmImpuestos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Generales\reportePrueba.resx">
       <DependentUpon>reportePrueba.vb</DependentUpon>
     </EmbeddedResource>
@@ -872,6 +881,7 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteVentasgeneralCliente.resx">
       <DependentUpon>frmReporteVentasgeneralCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptImpuestos.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentaIVA.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasG.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasgeneralCliente.rdlc" />

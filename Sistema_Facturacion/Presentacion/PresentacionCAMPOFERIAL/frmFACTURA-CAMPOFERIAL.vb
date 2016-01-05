@@ -106,6 +106,8 @@
                     Dim func1 As New fDetalleVenta
                     Dim dts2 As New vDetalleVenta
                     Dim func2 As New fDetalleVenta
+                    Dim dts3 As New vVenta
+                    Dim func3 As New fVenta
 
                     dts.gIDCodQr = txtIDCodQr.Text
                     dts.gNit_Emisor = txtNit_Emisor.Text
@@ -125,14 +127,15 @@
                     dts1.gidventa = txttxtIdVenta.Text
                     If (res = Windows.Forms.DialogResult.Yes) Then
                         func.editar2(dts)
-                        Do While func1.mostraridprodXidventa2(dts1) <> 0
-
-                            dts2.gidproducto = func1.mostraridprodXidventa2(dts1)
-                            dts2.gcantidad = func1.mostrarCantidadXidventa2(dts1)
-                            func2.aumentar_stock2(dts2)
-                            dts2.giddedatlle_venta = func1.mostrariddetalleventaXidventa2(dts1)
+                        func3.editarNomFactura(dts1)
+                        Do While func1.mostraridprodXidventa(dts1) <> 0
+                            'dts3.Gnombre_fac = "ANULADO"
+                            dts2.gidproducto = func1.mostraridprodXidventa(dts1)
+                            dts2.gcantidad = func1.mostrarCantidadXidventa(dts1)
+                            func2.aumentar_stock(dts2)
+                            dts2.giddedatlle_venta = func1.mostrariddetalleventaXidventa(dts1)
                             dts2.gvalidez = "A"
-                            func2.editarValidez2(dts2)
+                            func2.editarValidez(dts2)
                             ' func1.eliminar(dts2)
                         Loop
                         mostrar()

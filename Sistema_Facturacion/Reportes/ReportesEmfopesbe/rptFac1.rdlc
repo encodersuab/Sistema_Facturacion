@@ -133,7 +133,7 @@
                               <Value>=Fields!precio_unitario.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>0.0;(0.0)</Format>
+                                <Format>0.00;(0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -165,7 +165,7 @@
                               <Value>=Fields!TotalParcial.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>0.0;(0.0)</Format>
+                                <Format>0.00;(0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -542,7 +542,7 @@
                               <Value>=Fields!precio_unitario.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>0.0;(0.0)</Format>
+                                <Format>0.00;(0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -574,7 +574,7 @@
                               <Value>=Fields!TotalParcial.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>0.0;(0.0)</Format>
+                                <Format>0.00;(0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1172,7 +1172,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Literal</Value>
+                  <Value>SON:</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                   </Style>
@@ -1343,7 +1343,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Literal</Value>
+                  <Value>SON:</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                   </Style>

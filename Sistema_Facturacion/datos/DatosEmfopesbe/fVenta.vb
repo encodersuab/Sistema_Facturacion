@@ -2,6 +2,27 @@
 Public Class fVenta
     Inherits Conexion
     Dim cmd As New SqlCommand
+    Public Function editarNomFactura(ByVal dts As vDetalleVenta) As Boolean
+        Try
+            conectado()
+            cmd = New SqlCommand("editar_nomFactura")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+
+            cmd.Parameters.AddWithValue("@idventa", dts.gidventa)
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            desconectado()
+        End Try
+    End Function
     Public Function mostrar() As DataTable
         Try
             conectado()

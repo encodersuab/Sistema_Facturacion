@@ -63,7 +63,7 @@
             ds.Tables.Add(dt.Copy)
             Dim dv As New DataView(ds.Tables(0))
 
-            dv.RowFilter = cbxListadoClientes.Text & " Like '" & txtBuscar.Text & "%'"
+            dv.RowFilter = cbxListadoClientes.Text & " Like '%" & txtBuscar.Text & "%'"
 
             If dv.Count <> 0 Then
                 Inexistente.Visible = False
@@ -128,25 +128,25 @@
 
     End Sub
 
-    Private Sub txtDireccion_Validated(sender As Object, e As EventArgs) Handles txtDireccion.Validated
-        If DirectCast(sender, TextBox).Text.Length > 0 Then
-            Me.erroricono.SetError(sender, "")
-        Else
-            Me.erroricono.SetError(sender, "ingrese direccion del cliente, ese dato es obligatorio")
-        End If
-    End Sub
+    'Private Sub txtDireccion_Validated(sender As Object, e As EventArgs) Handles txtDireccion.Validated
+    '    If DirectCast(sender, TextBox).Text.Length > 0 Then
+    '        Me.erroricono.SetError(sender, "")
+    '    Else
+    '        Me.erroricono.SetError(sender, "ingrese direccion del cliente, ese dato es obligatorio")
+    '    End If
+    'End Sub
 
     Private Sub txtTelefono_TextChanged(sender As Object, e As EventArgs) Handles txtTelefono.TextChanged
 
     End Sub
 
-    Private Sub txtTelefono_Validated(sender As Object, e As EventArgs) Handles txtTelefono.Validated
-        If DirectCast(sender, TextBox).Text.Length > 0 Then
-            Me.erroricono.SetError(sender, "")
-        Else
-            Me.erroricono.SetError(sender, "ingrese el telefono del cliente, ese dato es obligatorio")
-        End If
-    End Sub
+    'Private Sub txtTelefono_Validated(sender As Object, e As EventArgs) Handles txtTelefono.Validated
+    '    If DirectCast(sender, TextBox).Text.Length > 0 Then
+    '        Me.erroricono.SetError(sender, "")
+    '    Else
+    '        Me.erroricono.SetError(sender, "ingrese el telefono del cliente, ese dato es obligatorio")
+    '    End If
+    'End Sub
 
     Private Sub txtCi_TextChanged(sender As Object, e As EventArgs) Handles txtCi.TextChanged
 
@@ -167,7 +167,7 @@
     End Sub
 
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        If Me.ValidateChildren = True And txtNombre.Text <> "" And txtApellido.Text <> "" And txtDireccion.Text <> "" And txtTelefono.Text <> "" And txtCi.Text <> "" Then
+        If Me.ValidateChildren = True And txtNombre.Text <> "" And txtApellido.Text <> "" And txtCi.Text <> "" Then
             Try
                 Dim dts As New vClientePostGrado
                 Dim func As New fClientePostGrado

@@ -181,6 +181,8 @@ Partial Class frmProducto
         '
         Me.datalistado.AllowUserToAddRows = False
         Me.datalistado.AllowUserToDeleteRows = False
+        Me.datalistado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader
+        Me.datalistado.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.eliminar})
         Me.datalistado.Location = New System.Drawing.Point(6, 59)
@@ -195,6 +197,7 @@ Partial Class frmProducto
         Me.eliminar.HeaderText = "Eliminar"
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
+        Me.eliminar.Width = 5
         '
         'Label4
         '

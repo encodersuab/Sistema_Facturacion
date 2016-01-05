@@ -266,7 +266,7 @@ Public Class frmInicioF
 
     End Sub
 
-   
+
 
     Private Sub CategoriaToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles CategoriaToolStripMenuItem2.Click
         frmReporteCategoriaEmfopesbe.MdiParent = Me
@@ -321,7 +321,7 @@ Public Class frmInicioF
 
 
     Private Sub RptVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RptVentaToolStripMenuItem.Click
-     
+
     End Sub
 
     Private Sub reporteF_Click(sender As Object, e As EventArgs) Handles reporteF.Click
@@ -602,5 +602,10 @@ Public Class frmInicioF
     Private Sub FacturaToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles FacturaToolStripMenuItem2.Click
         frmFACTURA_POSTGRADO.MdiParent = Me
         frmFACTURA_POSTGRADO.Show()
+    End Sub
+
+    Private Sub ImpuestosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImpuestosToolStripMenuItem.Click
+        frmImpuestos.MdiParent = Me
+        frmImpuestos.Show()
     End Sub
 End Class
