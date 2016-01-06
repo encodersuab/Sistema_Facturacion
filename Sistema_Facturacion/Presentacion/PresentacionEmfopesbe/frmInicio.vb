@@ -608,4 +608,10 @@ Public Class frmInicioF
         frmImpuestos.MdiParent = Me
         frmImpuestos.Show()
     End Sub
+
+    Private Sub DetalleVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DetalleVentaToolStripMenuItem.Click
+        frmDetalladoVenta.MdiParent = Me
+        frmDetalladoVenta.Show()
+
+    End Sub
 End Class

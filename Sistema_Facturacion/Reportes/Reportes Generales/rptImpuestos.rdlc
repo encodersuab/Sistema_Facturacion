@@ -6,40 +6,40 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.17708cm</Width>
+              <Width>1.1837cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>5.72791cm</Width>
+              <Width>5.73453cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.81208cm</Width>
+              <Width>1.8187cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.63229cm</Width>
+              <Width>2.63891cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.41521cm</Width>
+              <Width>1.42183cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.38875cm</Width>
+              <Width>1.39537cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.36229cm</Width>
+              <Width>1.36891cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.33583cm</Width>
+              <Width>1.34245cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.55292cm</Width>
+              <Width>2.55954cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.17708cm</Width>
+              <Width>1.1837cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.33584cm</Width>
+              <Width>1.34246cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.81208cm</Width>
+              <Width>1.8187cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -450,7 +450,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Ci_Nit_Comprador</rd:DefaultName>
@@ -482,7 +484,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>nombre_fac</rd:DefaultName>
@@ -514,7 +518,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Num_Factura</rd:DefaultName>
@@ -546,7 +552,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>numAutorizacion</rd:DefaultName>
@@ -579,7 +587,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Fecha_emision</rd:DefaultName>
@@ -611,7 +621,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Total</rd:DefaultName>
@@ -643,7 +655,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox31</rd:DefaultName>
@@ -675,7 +689,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox33</rd:DefaultName>
@@ -707,7 +723,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Total1</rd:DefaultName>
@@ -739,7 +757,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox35</rd:DefaultName>
@@ -771,7 +791,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>validez</rd:DefaultName>
@@ -803,7 +825,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Codigo_Control</rd:DefaultName>
@@ -1243,9 +1267,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0.20849cm</Top>
         <Height>2.19688cm</Height>
-        <Width>23.72938cm</Width>
+        <Width>23.80877cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1253,7 +1276,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>1.02083in</Height>
+    <Height>0.89583in</Height>
     <Style />
   </Body>
   <Width>9.37353in</Width>
