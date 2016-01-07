@@ -1,5 +1,33 @@
 ﻿Public Class frmProductoPostGrado
     Private dt As New DataTable
+
+    Public Sub mostrarBotonEditar()
+        If (frmInicioF.lbrol.Text = "CajeroPOSTGRADO") Then
+            btnEditar.Visible = False
+            btnGuardar.Visible = False
+            btnNuevo.Visible = False
+            btncargar.Visible = False
+            btnlimpiar.Visible = False
+        Else
+            btnNuevo.Visible = False
+            btnEditar.Visible = True
+            btnNuevo.Visible = True
+        End If
+
+    End Sub
+    Public Sub mostrarBotonGuardar()
+        If (frmInicioF.lbrol.Text = "CajeroPOSTGRADO") Then
+            btnEditar.Visible = False
+            btnGuardar.Visible = False
+            btnNuevo.Visible = False
+            btncargar.Visible = False
+            btnlimpiar.Visible = False
+        Else
+            btnNuevo.Visible = True
+            btnEditar.Visible = False
+            btnNuevo.Visible = True
+        End If
+    End Sub
     Public Sub frmProductoPostGrado_Load() Handles MyBase.Load
         If frmInicioF.lbrol.Text = "UsuarioEMFOPESBE" Then
             btnEditar.Enabled = False
@@ -25,8 +53,7 @@
         mostrar()
     End Sub
     Public Sub limpiar()
-        btnGuardar.Visible = True
-        btnEditar.Visible = False
+        mostrarBotonGuardar()
         txtNombre.Text = ""
         txtdescripcion.Text = ""
         'txtstock.Text = ""
@@ -66,8 +93,7 @@
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        btnNuevo.Visible = True
-        btnEditar.Visible = False
+        mostrarBotonGuardar()
 
         Buscar()
 
@@ -251,8 +277,7 @@
         imagen.SizeMode = PictureBoxSizeMode.StretchImage
 
 
-        btnEditar.Visible = True
-        btnGuardar.Visible = False
+        mostrarBotonEditar()
 
 
     End Sub

@@ -737,6 +737,8 @@ D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debu
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVentaPlanillaREDRUBI.resources
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmVentaREDRUBI.resources
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmFactura2.resources
+D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalladoVenta.resources
+D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmImpuestos.resources
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.reportePrueba.resources
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteCategoriaCampoFerial.resources
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteProductosCampoFerial.resources
@@ -779,5 +781,3 @@ D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debu
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.exe.manifest
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.application
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.xml
-D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmImpuestos.resources
-D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmDetalladoVenta.resources

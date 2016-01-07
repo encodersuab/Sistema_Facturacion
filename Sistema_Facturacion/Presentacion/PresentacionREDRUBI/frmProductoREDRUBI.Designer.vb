@@ -75,17 +75,17 @@ Partial Class frmProductoREDRUBI
         'txtmedida
         '
         Me.txtmedida.FormattingEnabled = True
-        Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
-        Me.txtmedida.Location = New System.Drawing.Point(1234, 107)
+        Me.txtmedida.Items.AddRange(New Object() {"PASE", "HORA", "DIA", "MES"})
+        Me.txtmedida.Location = New System.Drawing.Point(154, 232)
         Me.txtmedida.Name = "txtmedida"
         Me.txtmedida.Size = New System.Drawing.Size(121, 21)
         Me.txtmedida.TabIndex = 29
-        Me.txtmedida.Text = "UNIDAD"
+        Me.txtmedida.Text = "PASE"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(1175, 110)
+        Me.Label11.Location = New System.Drawing.Point(95, 235)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(42, 13)
         Me.Label11.TabIndex = 28
@@ -103,7 +103,7 @@ Partial Class frmProductoREDRUBI
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(95, 230)
+        Me.Label9.Location = New System.Drawing.Point(95, 267)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 22
@@ -385,7 +385,9 @@ Partial Class frmProductoREDRUBI
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.cbbmodulo)
+        Me.GroupBox1.Controls.Add(Me.txtmedida)
         Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.btnlimpiar)
         Me.GroupBox1.Controls.Add(Me.btncargar)
         Me.GroupBox1.Controls.Add(Me.imagen)
@@ -428,7 +430,7 @@ Partial Class frmProductoREDRUBI
         '
         Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
         Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(331, 305)
+        Me.btnlimpiar.Location = New System.Drawing.Point(331, 338)
         Me.btnlimpiar.Name = "btnlimpiar"
         Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
         Me.btnlimpiar.TabIndex = 25
@@ -438,7 +440,7 @@ Partial Class frmProductoREDRUBI
         '
         Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
         Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(331, 251)
+        Me.btncargar.Location = New System.Drawing.Point(331, 284)
         Me.btncargar.Name = "btncargar"
         Me.btncargar.Size = New System.Drawing.Size(45, 48)
         Me.btncargar.TabIndex = 24
@@ -449,7 +451,7 @@ Partial Class frmProductoREDRUBI
         Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
         Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(154, 230)
+        Me.imagen.Location = New System.Drawing.Point(154, 263)
         Me.imagen.Name = "imagen"
         Me.imagen.Size = New System.Drawing.Size(171, 133)
         Me.imagen.TabIndex = 23
@@ -461,9 +463,7 @@ Partial Class frmProductoREDRUBI
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1162, 523)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.txtTag)
-        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtstock)

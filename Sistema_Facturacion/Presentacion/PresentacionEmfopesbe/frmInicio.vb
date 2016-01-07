@@ -91,9 +91,9 @@ Public Class frmInicioF
         'AdministradorREDRUBI()
         'UsuarioREDRUBI()
         'AdministradorPOSGRADO()
-        'UsuarioPOSGRADO()
+        'UsuarioPOSGRADO()        'UsuarioFEXPOBENI()
+
         'AdministradorFEXPOBENI()
-        'UsuarioFEXPOBENI()
         If lbrol.Text = "SUPER USUARIO" Or lbrol.Text = "ADMINISTRADOR" Then
 
         Else

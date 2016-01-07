@@ -1,13 +1,38 @@
 ﻿Public Class frmCategoriaCAMPOFERIAL
+    Public Sub mostrarBotonEditar()
+        If (frmInicioF.lbrol.Text = "CajeroCAMPOFERIAL") Then
+            btnEditar.Visible = False
+            btnGuardar.Visible = False
+            btnNuevo.Visible = False
+            'btncargar.Visible = False
+            'btnlimpiar.Visible = False
+        Else
+            btnNuevo.Visible = False
+            btnEditar.Visible = True
+            btnNuevo.Visible = True
+        End If
 
+    End Sub
+    Public Sub mostrarBotonGuardar()
+        If (frmInicioF.lbrol.Text = "CajeroCAMPOFERIAL") Then
+            btnEditar.Visible = False
+            btnGuardar.Visible = False
+            btnNuevo.Visible = False
+            'btncargar.Visible = False
+            'btnlimpiar.Visible = False
+        Else
+            btnNuevo.Visible = True
+            btnEditar.Visible = False
+            btnNuevo.Visible = True
+        End If
+    End Sub
     Private Sub frmCategoriaCAMPOFERIAL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
     End Sub
     Private dt As New DataTable
 
     Public Sub limpiar()
-        btnGuardar.Visible = True
-        btnEditar.Visible = False
+        mostrarBotonGuardar()
         txtNombre.Text = ""
         txtIdcategoria.Text = ""
 
@@ -35,8 +60,7 @@
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        btnNuevo.Visible = True
-        btnEditar.Visible = False
+        mostrarBotonGuardar()
 
         Buscar()
 
@@ -156,8 +180,7 @@
         txtNombre.Text = datalistado.SelectedCells.Item(2).Value
 
 
-        btnEditar.Visible = True
-        btnGuardar.Visible = False
+        mostrarBotonEditar()
 
 
     End Sub

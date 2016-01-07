@@ -1,8 +1,38 @@
 ﻿Public Class frmProductoCAMPOFERIAL
     Private dt As New DataTable
+
+    Public Sub mostrarBotonEditar()
+        If (frmInicioF.lbrol.Text = "CajeroCAMPOFERIAL") Then
+            btnEditar.Visible = False
+            btnGuardar.Visible = False
+            btnNuevo.Visible = False
+            btncargar.Visible = False
+            btnlimpiar.Visible = False
+        Else
+            btnNuevo.Visible = False
+            btnEditar.Visible = True
+            btnNuevo.Visible = True
+        End If
+        
+    End Sub
+    Public Sub mostrarBotonGuardar()
+        If (frmInicioF.lbrol.Text = "CajeroCAMPOFERIAL") Then
+            btnEditar.Visible = False
+            btnGuardar.Visible = False
+            btnNuevo.Visible = False
+            btncargar.Visible = False
+            btnlimpiar.Visible = False
+        Else
+            btnNuevo.Visible = True
+            btnEditar.Visible = False
+            btnNuevo.Visible = True
+        End If
+        
+    End Sub
     Public Sub frmProductoCAMPOFERIAL_Load() Handles MyBase.Load
+       
         If frmInicioF.lbrol.Text = "UsuarioCAMPOFERIAL" Then
-            btnEditar.Enabled = False
+            'btnEditar.Enabled = False
             btnNuevo.Enabled = False
             btncategoria.Enabled = False
             txtstock.Enabled = False
@@ -26,8 +56,7 @@
     End Sub
 
     Public Sub limpiar()
-        btnGuardar.Visible = True
-        btnEditar.Visible = False
+        mostrarBotonGuardar()
         txtNombre.Text = ""
         txtdescripcion.Text = ""
         txtstock.Text = ""
@@ -69,8 +98,7 @@
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        btnNuevo.Visible = True
-        btnEditar.Visible = False
+        mostrarBotonGuardar()
 
         Buscar()
 
@@ -255,8 +283,8 @@
         imagen.Image = Image.FromStream(ms)
         imagen.SizeMode = PictureBoxSizeMode.StretchImage
 
-        btnEditar.Visible = True
-        btnGuardar.Visible = False
+        mostrarBotonEditar()
+
 
     End Sub
 
@@ -264,7 +292,6 @@
         If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then
             Dim chkcell As DataGridViewCheckBoxCell = Me.datalistado.Rows(e.RowIndex).Cells("Eliminar")
             chkcell.Value = Not chkcell.Value
-
         End If
     End Sub
 
