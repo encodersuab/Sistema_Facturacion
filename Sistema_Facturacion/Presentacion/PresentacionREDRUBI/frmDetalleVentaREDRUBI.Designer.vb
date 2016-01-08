@@ -559,7 +559,7 @@ Partial Class frmDetalleVentaREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(961, 423)
+        Me.ClientSize = New System.Drawing.Size(962, 423)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox1)

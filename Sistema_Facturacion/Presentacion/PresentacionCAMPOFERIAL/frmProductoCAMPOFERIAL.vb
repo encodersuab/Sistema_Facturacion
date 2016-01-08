@@ -1,5 +1,23 @@
 ﻿Public Class frmProductoCAMPOFERIAL
     Private dt As New DataTable
+    Public Sub estadoCamposEdicion()
+        btnNuevo.Enabled = True
+        btnGuardar.Enabled = False
+        btncategoria.Enabled = False
+        txtstock.Enabled = False
+        txtNombre.Enabled = False
+        txtdescripcion.Enabled = False
+        txtprecio_compra.Enabled = False
+        txtprecio_venta.Enabled = False
+        txtIdproducto.Enabled = False
+        cbbModulo.Enabled = False
+        txtfecha_vencimiento.Enabled = False
+        btncargar.Enabled = False
+        btnlimpiar.Enabled = False
+        txtidcategoria.Enabled = False
+        txtnom_categoria.Enabled = False
+        txtmedida.Enabled = False
+    End Sub
 
     Public Sub mostrarBotonEditar()
         If (frmInicioF.lbrol.Text = "CajeroCAMPOFERIAL") Then
@@ -9,11 +27,11 @@
             btncargar.Visible = False
             btnlimpiar.Visible = False
         Else
-            btnNuevo.Visible = False
+            btnGuardar.Visible = False
             btnEditar.Visible = True
             btnNuevo.Visible = True
         End If
-        
+
     End Sub
     Public Sub mostrarBotonGuardar()
         If (frmInicioF.lbrol.Text = "CajeroCAMPOFERIAL") Then
@@ -23,14 +41,14 @@
             btncargar.Visible = False
             btnlimpiar.Visible = False
         Else
-            btnNuevo.Visible = True
+            btnGuardar.Visible = True
             btnEditar.Visible = False
             btnNuevo.Visible = True
         End If
-        
+
     End Sub
     Public Sub frmProductoCAMPOFERIAL_Load() Handles MyBase.Load
-       
+
         If frmInicioF.lbrol.Text = "UsuarioCAMPOFERIAL" Then
             'btnEditar.Enabled = False
             btnNuevo.Enabled = False
@@ -56,6 +74,23 @@
     End Sub
 
     Public Sub limpiar()
+        btnNuevo.Enabled = True
+        btnGuardar.Enabled = True
+        btncategoria.Enabled = True
+        txtstock.Enabled = True
+        txtNombre.Enabled = True
+        txtdescripcion.Enabled = True
+        txtprecio_compra.Enabled = True
+        txtprecio_venta.Enabled = True
+        txtIdproducto.Enabled = True
+        cbbModulo.Enabled = True
+        txtfecha_vencimiento.Enabled = True
+        btncargar.Enabled = True
+        btnlimpiar.Enabled = True
+        txtidcategoria.Enabled = True
+        txtnom_categoria.Enabled = True
+        txtmedida.Enabled = True
+
         mostrarBotonGuardar()
         txtNombre.Text = ""
         txtdescripcion.Text = ""
@@ -77,8 +112,8 @@
 
     Private Sub mostrar()
         Try
-            
-           
+
+
             Dim func As New fProductoCAMPOFERIAL
             dt = func.mostrar
             datalistado.Columns.Item("Eliminar").Visible = False
@@ -282,7 +317,7 @@
 
         imagen.Image = Image.FromStream(ms)
         imagen.SizeMode = PictureBoxSizeMode.StretchImage
-
+        estadoCamposEdicion()
         mostrarBotonEditar()
 
 
@@ -340,7 +375,7 @@
                 frmDetalleVentaCAMPOFERIAL.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
                 frmDetalleVentaCAMPOFERIAL.txtStock.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaCAMPOFERIAL.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
-               
+
                 Me.Close()
 
             Else
@@ -458,7 +493,7 @@
 
     End Sub
 
-    
+
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
 

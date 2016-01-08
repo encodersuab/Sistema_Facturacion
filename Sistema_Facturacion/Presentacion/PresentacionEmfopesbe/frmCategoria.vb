@@ -8,7 +8,7 @@
             'btncargar.Visible = False
             'btnlimpiar.Visible = False
         Else
-            btnNuevo.Visible = False
+            btnGuardar.Visible = False
             btnEditar.Visible = True
             btnNuevo.Visible = True
         End If
@@ -22,7 +22,7 @@
             'btncargar.Visible = False
             'btnlimpiar.Visible = False
         Else
-            btnNuevo.Visible = True
+            btnGuardar.Visible = True
             btnEditar.Visible = False
             btnNuevo.Visible = True
         End If

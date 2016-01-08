@@ -146,4 +146,20 @@
     Private Sub frmEditarProducto2REDRUBI_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
         txtdetalle.Text = ""
     End Sub
+
+    Private Sub btncargar_Click(sender As Object, e As EventArgs) Handles btncargar.Click
+
+    End Sub
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+
+    End Sub
+
+    Private Sub btnlimpiar_Click(sender As Object, e As EventArgs) Handles btnlimpiar.Click
+
+    End Sub
+
+    Private Sub imagen_Click(sender As Object, e As EventArgs) Handles imagen.Click
+
+    End Sub
 End Class

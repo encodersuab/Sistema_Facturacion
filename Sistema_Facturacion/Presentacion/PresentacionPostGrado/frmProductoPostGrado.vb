@@ -1,6 +1,23 @@
 ﻿Public Class frmProductoPostGrado
     Private dt As New DataTable
-
+    Public Sub estadoCamposEdicion()
+        btnNuevo.Enabled = True
+        btnGuardar.Enabled = False
+        btncategoria.Enabled = False
+        txtstock.Enabled = False
+        txtNombre.Enabled = False
+        txtdescripcion.Enabled = False
+        txtprecio_compra.Enabled = False
+        txtprecio_venta.Enabled = False
+        txtIdproducto.Enabled = False
+        cbbModulo.Enabled = False
+        txtfecha_vencimiento.Enabled = False
+        btncargar.Enabled = False
+        btnlimpiar.Enabled = False
+        txtidcategoria.Enabled = False
+        txtnom_categoria.Enabled = False
+        txtmedida.Enabled = False
+    End Sub
     Public Sub mostrarBotonEditar()
         If (frmInicioF.lbrol.Text = "CajeroPOSTGRADO") Then
             btnEditar.Visible = False
@@ -9,7 +26,7 @@
             btncargar.Visible = False
             btnlimpiar.Visible = False
         Else
-            btnNuevo.Visible = False
+            btnGuardar.Visible = False
             btnEditar.Visible = True
             btnNuevo.Visible = True
         End If
@@ -23,7 +40,7 @@
             btncargar.Visible = False
             btnlimpiar.Visible = False
         Else
-            btnNuevo.Visible = True
+            btnGuardar.Visible = True
             btnEditar.Visible = False
             btnNuevo.Visible = True
         End If
@@ -276,7 +293,7 @@
         imagen.Image = Image.FromStream(ms)
         imagen.SizeMode = PictureBoxSizeMode.StretchImage
 
-
+        estadoCamposEdicion()
         mostrarBotonEditar()
 
 

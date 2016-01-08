@@ -32,7 +32,6 @@ Partial Class frmEditarProductoREDRUBI
         Me.btnEditarPresioVenta = New System.Windows.Forms.Button()
         Me.btnEditarNombreProd = New System.Windows.Forms.Button()
         Me.cbbmodulo = New System.Windows.Forms.Label()
-        Me.txtmedida = New System.Windows.Forms.ComboBox()
         Me.l7 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.imagen = New System.Windows.Forms.PictureBox()
@@ -54,12 +53,14 @@ Partial Class frmEditarProductoREDRUBI
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdproducto = New System.Windows.Forms.TextBox()
+        Me.txtmedida = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtmedida)
         Me.GroupBox1.Controls.Add(Me.btnEditarDescripcion)
         Me.GroupBox1.Controls.Add(Me.btnEditarStock)
         Me.GroupBox1.Controls.Add(Me.btnEditarPresioCompra)
@@ -69,7 +70,6 @@ Partial Class frmEditarProductoREDRUBI
         Me.GroupBox1.Controls.Add(Me.btnEditarPresioVenta)
         Me.GroupBox1.Controls.Add(Me.btnEditarNombreProd)
         Me.GroupBox1.Controls.Add(Me.cbbmodulo)
-        Me.GroupBox1.Controls.Add(Me.txtmedida)
         Me.GroupBox1.Controls.Add(Me.l7)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.imagen)
@@ -179,17 +179,6 @@ Partial Class frmEditarProductoREDRUBI
         Me.cbbmodulo.Size = New System.Drawing.Size(59, 13)
         Me.cbbmodulo.TabIndex = 30
         Me.cbbmodulo.Text = "RED-RUBI"
-        '
-        'txtmedida
-        '
-        Me.txtmedida.Enabled = False
-        Me.txtmedida.FormattingEnabled = True
-        Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
-        Me.txtmedida.Location = New System.Drawing.Point(154, 233)
-        Me.txtmedida.Name = "txtmedida"
-        Me.txtmedida.Size = New System.Drawing.Size(107, 21)
-        Me.txtmedida.TabIndex = 29
-        Me.txtmedida.Text = "UNIDAD"
         '
         'l7
         '
@@ -385,6 +374,16 @@ Partial Class frmEditarProductoREDRUBI
         Me.txtIdproducto.Size = New System.Drawing.Size(172, 20)
         Me.txtIdproducto.TabIndex = 0
         '
+        'txtmedida
+        '
+        Me.txtmedida.FormattingEnabled = True
+        Me.txtmedida.Items.AddRange(New Object() {"PASE", "HORA", "DIA", "MES"})
+        Me.txtmedida.Location = New System.Drawing.Point(154, 233)
+        Me.txtmedida.Name = "txtmedida"
+        Me.txtmedida.Size = New System.Drawing.Size(171, 21)
+        Me.txtmedida.TabIndex = 42
+        Me.txtmedida.Text = "PASE"
+        '
         'frmEditarProductoREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -409,7 +408,6 @@ Partial Class frmEditarProductoREDRUBI
     Friend WithEvents btnEditarPresioVenta As System.Windows.Forms.Button
     Friend WithEvents btnEditarNombreProd As System.Windows.Forms.Button
     Friend WithEvents cbbmodulo As System.Windows.Forms.Label
-    Friend WithEvents txtmedida As System.Windows.Forms.ComboBox
     Friend WithEvents l7 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents imagen As System.Windows.Forms.PictureBox
@@ -431,4 +429,5 @@ Partial Class frmEditarProductoREDRUBI
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtIdproducto As System.Windows.Forms.TextBox
+    Friend WithEvents txtmedida As System.Windows.Forms.ComboBox
 End Class
