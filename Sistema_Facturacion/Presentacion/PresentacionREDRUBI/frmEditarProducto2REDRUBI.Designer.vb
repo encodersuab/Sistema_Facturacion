@@ -48,6 +48,10 @@ Partial Class frmEditarProducto2REDRUBI
         Me.dtpfechaModificacion = New System.Windows.Forms.DateTimePicker()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.gbMedida = New System.Windows.Forms.GroupBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtmedida = New System.Windows.Forms.ComboBox()
+        Me.lbMedida = New System.Windows.Forms.Label()
         Me.gbimagen.SuspendLayout()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnlimpiar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,15 +59,16 @@ Partial Class frmEditarProducto2REDRUBI
         Me.gbFechaVencimiento.SuspendLayout()
         Me.gbdetalle.SuspendLayout()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbMedida.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbimagen
         '
-        Me.gbimagen.Controls.Add(Me.imagen)
         Me.gbimagen.Controls.Add(Me.btnlimpiar)
         Me.gbimagen.Controls.Add(Me.Label9)
         Me.gbimagen.Controls.Add(Me.btncargar)
-        Me.gbimagen.Location = New System.Drawing.Point(7, 94)
+        Me.gbimagen.Controls.Add(Me.imagen)
+        Me.gbimagen.Location = New System.Drawing.Point(24, 118)
         Me.gbimagen.Name = "gbimagen"
         Me.gbimagen.Size = New System.Drawing.Size(311, 205)
         Me.gbimagen.TabIndex = 42
@@ -75,7 +80,7 @@ Partial Class frmEditarProducto2REDRUBI
         Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
         Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(69, 33)
+        Me.imagen.Location = New System.Drawing.Point(59, 43)
         Me.imagen.Name = "imagen"
         Me.imagen.Size = New System.Drawing.Size(171, 133)
         Me.imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -117,7 +122,7 @@ Partial Class frmEditarProducto2REDRUBI
         Me.gbFechaVencimiento.Controls.Add(Me.Label6)
         Me.gbFechaVencimiento.Controls.Add(Me.dtpfecha_vencimientoNueva)
         Me.gbFechaVencimiento.Controls.Add(Me.dtpfecha_vencimientoActual)
-        Me.gbFechaVencimiento.Location = New System.Drawing.Point(7, 113)
+        Me.gbFechaVencimiento.Location = New System.Drawing.Point(18, 126)
         Me.gbFechaVencimiento.Name = "gbFechaVencimiento"
         Me.gbFechaVencimiento.Size = New System.Drawing.Size(311, 205)
         Me.gbFechaVencimiento.TabIndex = 41
@@ -167,7 +172,7 @@ Partial Class frmEditarProducto2REDRUBI
         Me.gbdetalle.Controls.Add(Me.Label1)
         Me.gbdetalle.Controls.Add(Me.Label2)
         Me.gbdetalle.Controls.Add(Me.Label4)
-        Me.gbdetalle.Location = New System.Drawing.Point(7, 137)
+        Me.gbdetalle.Location = New System.Drawing.Point(12, 135)
         Me.gbdetalle.Name = "gbdetalle"
         Me.gbdetalle.Size = New System.Drawing.Size(311, 202)
         Me.gbdetalle.TabIndex = 40
@@ -299,11 +304,52 @@ Partial Class frmEditarProducto2REDRUBI
         '
         Me.erroricono.ContainerControl = Me
         '
+        'gbMedida
+        '
+        Me.gbMedida.Controls.Add(Me.lbMedida)
+        Me.gbMedida.Controls.Add(Me.txtmedida)
+        Me.gbMedida.Controls.Add(Me.Label10)
+        Me.gbMedida.Location = New System.Drawing.Point(30, 111)
+        Me.gbMedida.Name = "gbMedida"
+        Me.gbMedida.Size = New System.Drawing.Size(311, 205)
+        Me.gbMedida.TabIndex = 43
+        Me.gbMedida.TabStop = False
+        Me.gbMedida.Text = "Medida"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(10, 33)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(42, 13)
+        Me.Label10.TabIndex = 30
+        Me.Label10.Text = "Medida"
+        '
+        'txtmedida
+        '
+        Me.txtmedida.FormattingEnabled = True
+        Me.txtmedida.Items.AddRange(New Object() {"PASE", "HORA", "DIA", "MES"})
+        Me.txtmedida.Location = New System.Drawing.Point(72, 116)
+        Me.txtmedida.Name = "txtmedida"
+        Me.txtmedida.Size = New System.Drawing.Size(171, 21)
+        Me.txtmedida.TabIndex = 43
+        Me.txtmedida.Text = "PASE"
+        '
+        'lbMedida
+        '
+        Me.lbMedida.AutoSize = True
+        Me.lbMedida.Location = New System.Drawing.Point(74, 78)
+        Me.lbMedida.Name = "lbMedida"
+        Me.lbMedida.Size = New System.Drawing.Size(45, 13)
+        Me.lbMedida.TabIndex = 44
+        Me.lbMedida.Text = "Label11"
+        '
         'frmEditarProducto2REDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(564, 353)
+        Me.ClientSize = New System.Drawing.Size(564, 354)
+        Me.Controls.Add(Me.gbMedida)
         Me.Controls.Add(Me.gbimagen)
         Me.Controls.Add(Me.gbFechaVencimiento)
         Me.Controls.Add(Me.gbdetalle)
@@ -326,6 +372,8 @@ Partial Class frmEditarProducto2REDRUBI
         Me.gbdetalle.ResumeLayout(False)
         Me.gbdetalle.PerformLayout()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gbMedida.ResumeLayout(False)
+        Me.gbMedida.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -355,4 +403,8 @@ Partial Class frmEditarProducto2REDRUBI
     Friend WithEvents dtpfechaModificacion As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents erroricono As System.Windows.Forms.ErrorProvider
+    Friend WithEvents gbMedida As System.Windows.Forms.GroupBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents txtmedida As System.Windows.Forms.ComboBox
+    Friend WithEvents lbMedida As System.Windows.Forms.Label
 End Class

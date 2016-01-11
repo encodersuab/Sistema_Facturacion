@@ -56,8 +56,8 @@
                                         frmEditarProductoREDRUBI.txtprecio_venta.Text = txtdescripcionEditada.Text
                                     Else
                                         If txtflag.Text = 6 Then
-                                            dts.gmedida = Me.txtdescripcionEditada.Text
-                                            frmEditarProductoREDRUBI.txtmedida.Text = txtdescripcionEditada.Text
+                                            dts.gmedida = Me.txtmedida.Text
+                                            frmEditarProductoREDRUBI.txtmedida.Text = txtmedida.Text
                                         Else
                                             If txtflag.Text = 8 Then
                                                 dts.gfecha_vencimiento = Me.dtpfecha_vencimientoNueva.Text()
@@ -127,7 +127,7 @@
     End Sub
 
     Private Sub frmEditarProducto2REDRUBI_Load(sender As Object, e As EventArgs)
-      
+
 
     End Sub
 
@@ -160,6 +160,10 @@
     End Sub
 
     Private Sub imagen_Click(sender As Object, e As EventArgs) Handles imagen.Click
+
+    End Sub
+
+    Private Sub gbdetalle_Enter(sender As Object, e As EventArgs) Handles gbdetalle.Enter
 
     End Sub
 End Class

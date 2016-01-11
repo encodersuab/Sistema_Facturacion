@@ -60,14 +60,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="descripcion">
+                    <Textbox Name="NombreProducto">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!descripcion.Value</Value>
+                              <Value>=Fields!NombreProducto.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                               </Style>
@@ -76,7 +76,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>descripcion</rd:DefaultName>
+                      <rd:DefaultName>NombreProducto</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -473,7 +473,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!descripcion.Value</Value>
+                              <Value>=Fields!NombreProducto.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                               </Style>
@@ -494,6 +494,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -589,7 +590,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -1433,7 +1433,6 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox48</rd:DefaultName>
-          <Top>0cm</Top>
           <Left>15.19872cm</Left>
           <Height>0.61049cm</Height>
           <Width>1.23cm</Width>

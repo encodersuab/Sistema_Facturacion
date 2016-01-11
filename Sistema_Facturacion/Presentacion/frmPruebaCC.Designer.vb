@@ -37,7 +37,7 @@ Partial Class frmPruebaCC
         Me.Button2 = New System.Windows.Forms.Button()
         Me.dtpfecha = New System.Windows.Forms.DateTimePicker()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
-        Me.CrystalReport41 = New Sistema_Facturacion.CrystalReport4()
+        'Me.CrystalReport41 = New Sistema_Facturacion.CrystalReport4()
         Me.SuspendLayout()
         '
         'Button1
@@ -173,7 +173,7 @@ Partial Class frmPruebaCC
         Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(370, 41)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
-        Me.CrystalReportViewer1.ReportSource = Me.CrystalReport41
+        'Me.CrystalReportViewer1.ReportSource = Me.CrystalReport41
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(460, 298)
         Me.CrystalReportViewer1.TabIndex = 16
         Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
@@ -219,5 +219,5 @@ Partial Class frmPruebaCC
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents dtpfecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
-    Friend WithEvents CrystalReport41 As Sistema_Facturacion.CrystalReport4
+    'Friend WithEvents CrystalReport41 As Sistema_Facturacion.CrystalReport4
 End Class

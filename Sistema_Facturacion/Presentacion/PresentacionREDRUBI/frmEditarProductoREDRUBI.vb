@@ -1,8 +1,9 @@
 ﻿Public Class frmEditarProductoREDRUBI
 
-   
-  
+
+
     Private Sub btnEditarNombreProd_Click(sender As Object, e As EventArgs) Handles btnEditarNombreProd.Click
+        frmEditarProducto2REDRUBI.gbMedida.Visible = False
         frmEditarProducto2REDRUBI.gbdetalle.Visible = True
         frmEditarProducto2REDRUBI.gbimagen.Visible = False
         frmEditarProducto2REDRUBI.gbFechaVencimiento.Visible = False
@@ -15,6 +16,7 @@
     End Sub
 
     Private Sub btnEditarDescripcion_Click(sender As Object, e As EventArgs) Handles btnEditarDescripcion.Click
+        frmEditarProducto2REDRUBI.gbMedida.Visible = False
         frmEditarProducto2REDRUBI.gbdetalle.Visible = True
         frmEditarProducto2REDRUBI.gbimagen.Visible = False
         frmEditarProducto2REDRUBI.gbFechaVencimiento.Visible = False
@@ -27,6 +29,7 @@
     End Sub
 
     Private Sub btnEditarPresioVenta_Click(sender As Object, e As EventArgs) Handles btnEditarPresioVenta.Click
+        frmEditarProducto2REDRUBI.gbMedida.Visible = False
         frmEditarProducto2REDRUBI.gbdetalle.Visible = True
         frmEditarProducto2REDRUBI.gbimagen.Visible = False
         frmEditarProducto2REDRUBI.gbFechaVencimiento.Visible = False
@@ -39,6 +42,7 @@
     End Sub
 
     Private Sub btnEditarFechaVenc_Click(sender As Object, e As EventArgs) Handles btnEditarFechaVenc.Click
+        frmEditarProducto2REDRUBI.gbMedida.Visible = False
         frmEditarProducto2REDRUBI.gbFechaVencimiento.Visible = True
         frmEditarProducto2REDRUBI.gbdetalle.Visible = False
         frmEditarProducto2REDRUBI.gbimagen.Visible = False
@@ -51,11 +55,12 @@
     End Sub
 
     Private Sub btnEditarMedida_Click(sender As Object, e As EventArgs) Handles btnEditarMedida.Click
-        frmEditarProducto2REDRUBI.gbdetalle.Visible = True
+        frmEditarProducto2REDRUBI.gbMedida.Visible = True
+        frmEditarProducto2REDRUBI.gbdetalle.Visible = False
         frmEditarProducto2REDRUBI.gbimagen.Visible = False
         frmEditarProducto2REDRUBI.gbFechaVencimiento.Visible = False
         frmEditarProducto2REDRUBI.txtflag.Text = 6
-        frmEditarProducto2REDRUBI.txtdescripcion.Text = Me.txtmedida.Text
+        frmEditarProducto2REDRUBI.lbMedida.Text = Me.txtmedida.Text
         frmEditarProducto2REDRUBI.lbnombreproducto.Text = l7.Text
         frmEditarProducto2REDRUBI.dtpfecha_vencimientoNueva.Text = ""
         frmEditarProducto2REDRUBI.txtdescripcionEditada.Text = ""
@@ -63,6 +68,7 @@
     End Sub
 
     Private Sub btnEditarImagen_Click(sender As Object, e As EventArgs) Handles btnEditarImagen.Click
+        frmEditarProducto2REDRUBI.gbMedida.Visible = False
         frmEditarProducto2REDRUBI.txtflag.Text = 7
         frmEditarProducto2REDRUBI.gbdetalle.Visible = False
         frmEditarProducto2REDRUBI.gbFechaVencimiento.Visible = False
@@ -79,6 +85,10 @@
     End Sub
 
     Private Sub cbbmodulo_Click(sender As Object, e As EventArgs) Handles cbbmodulo.Click
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
 End Class

@@ -23,6 +23,7 @@ Partial Class frmEditarProductoREDRUBI
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtmedida = New System.Windows.Forms.ComboBox()
         Me.btnEditarDescripcion = New System.Windows.Forms.Button()
         Me.btnEditarStock = New System.Windows.Forms.Button()
         Me.btnEditarPresioCompra = New System.Windows.Forms.Button()
@@ -53,7 +54,6 @@ Partial Class frmEditarProductoREDRUBI
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdproducto = New System.Windows.Forms.TextBox()
-        Me.txtmedida = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -98,6 +98,15 @@ Partial Class frmEditarProductoREDRUBI
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
+        'txtmedida
+        '
+        Me.txtmedida.Enabled = False
+        Me.txtmedida.FormattingEnabled = True
+        Me.txtmedida.Location = New System.Drawing.Point(154, 233)
+        Me.txtmedida.Name = "txtmedida"
+        Me.txtmedida.Size = New System.Drawing.Size(171, 21)
+        Me.txtmedida.TabIndex = 42
+        '
         'btnEditarDescripcion
         '
         Me.btnEditarDescripcion.Location = New System.Drawing.Point(413, 108)
@@ -136,7 +145,7 @@ Partial Class frmEditarProductoREDRUBI
         '
         'btnEditarMedida
         '
-        Me.btnEditarMedida.Location = New System.Drawing.Point(414, 233)
+        Me.btnEditarMedida.Location = New System.Drawing.Point(413, 233)
         Me.btnEditarMedida.Name = "btnEditarMedida"
         Me.btnEditarMedida.Size = New System.Drawing.Size(75, 21)
         Me.btnEditarMedida.TabIndex = 37
@@ -373,16 +382,6 @@ Partial Class frmEditarProductoREDRUBI
         Me.txtIdproducto.Name = "txtIdproducto"
         Me.txtIdproducto.Size = New System.Drawing.Size(172, 20)
         Me.txtIdproducto.TabIndex = 0
-        '
-        'txtmedida
-        '
-        Me.txtmedida.FormattingEnabled = True
-        Me.txtmedida.Items.AddRange(New Object() {"PASE", "HORA", "DIA", "MES"})
-        Me.txtmedida.Location = New System.Drawing.Point(154, 233)
-        Me.txtmedida.Name = "txtmedida"
-        Me.txtmedida.Size = New System.Drawing.Size(171, 21)
-        Me.txtmedida.TabIndex = 42
-        Me.txtmedida.Text = "PASE"
         '
         'frmEditarProductoREDRUBI
         '

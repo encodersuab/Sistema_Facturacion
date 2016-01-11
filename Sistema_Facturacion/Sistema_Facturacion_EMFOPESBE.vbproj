@@ -228,18 +228,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Presentacion\CrystalReport4.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport4.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Presentacion\CrystalReportSF.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReportSF.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Presentacion\frmPruebaCC.Designer.vb">
       <DependentUpon>frmPruebaCC.vb</DependentUpon>
     </Compile>
@@ -710,14 +698,6 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\CrystalReport4.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport4.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\CrystalReportSF.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReportSF.vb</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmPruebaCC.resx">
       <DependentUpon>frmPruebaCC.vb</DependentUpon>
     </EmbeddedResource>
@@ -894,6 +874,7 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\rptDetalladoVentas.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptImpuestos.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentaIVA.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentasEstandar.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasG.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasgeneralCliente.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmFactura3.resx">
@@ -977,10 +958,6 @@
     <EmbeddedResource Include="Reportes\ReportesEmfopesbe\rptVentaGEMFOPESBE.rdlc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram3.cd" />
-    <None Include="ClassDiagram4.cd" />
-    <None Include="ClassDiagram5.cd" />
-    <None Include="ClassDiagram6.cd" />
     <None Include="dbfacDataSetFACTURAS.xsc">
       <DependentUpon>dbfacDataSetFACTURAS.xsd</DependentUpon>
     </None>
