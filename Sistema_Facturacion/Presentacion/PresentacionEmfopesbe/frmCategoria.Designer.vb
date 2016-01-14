@@ -56,7 +56,7 @@ Partial Class frmCategoria
         Me.cbeliminar.Location = New System.Drawing.Point(29, 52)
         Me.cbeliminar.Name = "cbeliminar"
         Me.cbeliminar.Size = New System.Drawing.Size(62, 17)
-        Me.cbeliminar.TabIndex = 16
+        Me.cbeliminar.TabIndex = 4
         Me.cbeliminar.Text = "Eliminar"
         Me.cbeliminar.UseVisualStyleBackColor = True
         '
@@ -65,7 +65,7 @@ Partial Class frmCategoria
         Me.btnGuardar.Location = New System.Drawing.Point(118, 169)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
-        Me.btnGuardar.TabIndex = 15
+        Me.btnGuardar.TabIndex = 3
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
@@ -74,7 +74,7 @@ Partial Class frmCategoria
         Me.btnEditar.Location = New System.Drawing.Point(118, 169)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
-        Me.btnEditar.TabIndex = 14
+        Me.btnEditar.TabIndex = 4
         Me.btnEditar.Text = "Editar"
         Me.btnEditar.UseVisualStyleBackColor = True
         '
@@ -83,7 +83,7 @@ Partial Class frmCategoria
         Me.btncancelar.Location = New System.Drawing.Point(203, 169)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
-        Me.btncancelar.TabIndex = 13
+        Me.btncancelar.TabIndex = 5
         Me.btncancelar.Text = "Cancelar"
         Me.btncancelar.UseVisualStyleBackColor = True
         '
@@ -92,7 +92,7 @@ Partial Class frmCategoria
         Me.btnNuevo.Location = New System.Drawing.Point(34, 169)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
-        Me.btnNuevo.TabIndex = 12
+        Me.btnNuevo.TabIndex = 2
         Me.btnNuevo.Text = "Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = True
         '
@@ -102,7 +102,7 @@ Partial Class frmCategoria
         Me.Inexistente.Location = New System.Drawing.Point(144, 122)
         Me.Inexistente.Name = "Inexistente"
         Me.Inexistente.Size = New System.Drawing.Size(94, 13)
-        Me.Inexistente.TabIndex = 3
+        Me.Inexistente.TabIndex = 5
         Me.Inexistente.TabStop = True
         Me.Inexistente.Text = "Datos Inexistentes"
         '
@@ -112,7 +112,7 @@ Partial Class frmCategoria
         Me.txtBuscar.Location = New System.Drawing.Point(160, 26)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(149, 20)
-        Me.txtBuscar.TabIndex = 2
+        Me.txtBuscar.TabIndex = 1
         '
         'cbxListadoClientes
         '
@@ -121,7 +121,7 @@ Partial Class frmCategoria
         Me.cbxListadoClientes.Location = New System.Drawing.Point(29, 25)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
         Me.cbxListadoClientes.Size = New System.Drawing.Size(125, 21)
-        Me.cbxListadoClientes.TabIndex = 1
+        Me.cbxListadoClientes.TabIndex = 0
         Me.cbxListadoClientes.Text = "nombre_categoria"
         '
         'datalistado
@@ -135,7 +135,7 @@ Partial Class frmCategoria
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.datalistado.Size = New System.Drawing.Size(303, 88)
-        Me.datalistado.TabIndex = 0
+        Me.datalistado.TabIndex = 2
         '
         'eliminar
         '
@@ -148,7 +148,7 @@ Partial Class frmCategoria
         Me.btnEliminar.Location = New System.Drawing.Point(6, 169)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(67, 26)
-        Me.btnEliminar.TabIndex = 15
+        Me.btnEliminar.TabIndex = 3
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
@@ -162,7 +162,7 @@ Partial Class frmCategoria
         Me.Label2.Location = New System.Drawing.Point(31, 91)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(110, 13)
-        Me.Label2.TabIndex = 3
+        Me.Label2.TabIndex = 7
         Me.Label2.Text = "Nombre de Categoria "
         '
         'txtNombre
@@ -171,7 +171,7 @@ Partial Class frmCategoria
         Me.txtNombre.Location = New System.Drawing.Point(170, 88)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(100, 20)
-        Me.txtNombre.TabIndex = 2
+        Me.txtNombre.TabIndex = 1
         '
         'Label1
         '
@@ -179,7 +179,7 @@ Partial Class frmCategoria
         Me.Label1.Location = New System.Drawing.Point(80, 65)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(61, 13)
-        Me.Label1.TabIndex = 1
+        Me.Label1.TabIndex = 6
         Me.Label1.Text = "IdCategoria"
         '
         'txtIdcategoria
@@ -202,7 +202,7 @@ Partial Class frmCategoria
         Me.GroupBox2.Location = New System.Drawing.Point(315, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(321, 214)
-        Me.GroupBox2.TabIndex = 3
+        Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Categorias"
         '
@@ -221,7 +221,7 @@ Partial Class frmCategoria
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(297, 214)
-        Me.GroupBox1.TabIndex = 2
+        Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
@@ -231,7 +231,7 @@ Partial Class frmCategoria
         Me.lbModulo.Location = New System.Drawing.Point(167, 122)
         Me.lbModulo.Name = "lbModulo"
         Me.lbModulo.Size = New System.Drawing.Size(72, 13)
-        Me.lbModulo.TabIndex = 17
+        Me.lbModulo.TabIndex = 9
         Me.lbModulo.Text = "EMFOPESBE"
         '
         'Label3
@@ -240,7 +240,7 @@ Partial Class frmCategoria
         Me.Label3.Location = New System.Drawing.Point(99, 122)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(42, 13)
-        Me.Label3.TabIndex = 16
+        Me.Label3.TabIndex = 8
         Me.Label3.Text = "Modulo"
         '
         'txtflag
@@ -248,7 +248,7 @@ Partial Class frmCategoria
         Me.txtflag.Location = New System.Drawing.Point(273, -2)
         Me.txtflag.Name = "txtflag"
         Me.txtflag.Size = New System.Drawing.Size(36, 20)
-        Me.txtflag.TabIndex = 4
+        Me.txtflag.TabIndex = 2
         Me.txtflag.Text = "0"
         Me.txtflag.Visible = False
         '

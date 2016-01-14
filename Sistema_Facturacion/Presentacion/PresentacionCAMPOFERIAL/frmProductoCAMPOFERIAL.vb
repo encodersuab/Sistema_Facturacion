@@ -502,4 +502,8 @@
     Private Sub txtfecha_vencimiento_ValueChanged(sender As Object, e As EventArgs) Handles txtfecha_vencimiento.ValueChanged
 
     End Sub
+
+    Private Sub frmProductoCAMPOFERIAL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

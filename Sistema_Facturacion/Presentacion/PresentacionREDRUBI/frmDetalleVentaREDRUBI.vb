@@ -376,7 +376,7 @@ Public Class frmDetalleVentaREDRUBI
             monto = calcularMontoCC(txttotal.Text)
 
 
-            lbCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
+            lbCC.Text = CC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
             ''''''''''''''''''''''''''''''''''
             Try
 

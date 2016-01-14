@@ -87,7 +87,7 @@ Partial Class frmProducto
         Me.btnGuardar.Location = New System.Drawing.Point(167, 454)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
-        Me.btnGuardar.TabIndex = 15
+        Me.btnGuardar.TabIndex = 11
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
@@ -96,7 +96,7 @@ Partial Class frmProducto
         Me.btnEditar.Location = New System.Drawing.Point(167, 454)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
-        Me.btnEditar.TabIndex = 14
+        Me.btnEditar.TabIndex = 10
         Me.btnEditar.Text = "Editar"
         Me.btnEditar.UseVisualStyleBackColor = True
         '
@@ -105,7 +105,7 @@ Partial Class frmProducto
         Me.btncancelar.Location = New System.Drawing.Point(252, 454)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
-        Me.btncancelar.TabIndex = 13
+        Me.btncancelar.TabIndex = 12
         Me.btncancelar.Text = "Cancelar"
         Me.btncancelar.UseVisualStyleBackColor = True
         '
@@ -114,7 +114,7 @@ Partial Class frmProducto
         Me.btnNuevo.Location = New System.Drawing.Point(83, 454)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
-        Me.btnNuevo.TabIndex = 12
+        Me.btnNuevo.TabIndex = 10
         Me.btnNuevo.Text = "Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = True
         '
@@ -124,7 +124,7 @@ Partial Class frmProducto
         Me.Label6.Location = New System.Drawing.Point(54, 208)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(83, 13)
-        Me.Label6.TabIndex = 11
+        Me.Label6.TabIndex = 19
         Me.Label6.Text = "Precio de Venta"
         '
         'txtprecio_venta
@@ -133,14 +133,14 @@ Partial Class frmProducto
         Me.txtprecio_venta.Location = New System.Drawing.Point(154, 205)
         Me.txtprecio_venta.Name = "txtprecio_venta"
         Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
-        Me.txtprecio_venta.TabIndex = 10
+        Me.txtprecio_venta.TabIndex = 6
         '
         'txtBuscar
         '
         Me.txtBuscar.Location = New System.Drawing.Point(160, 26)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(608, 20)
-        Me.txtBuscar.TabIndex = 2
+        Me.txtBuscar.TabIndex = 1
         '
         'cbxListadoClientes
         '
@@ -149,7 +149,7 @@ Partial Class frmProducto
         Me.cbxListadoClientes.Location = New System.Drawing.Point(6, 26)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
         Me.cbxListadoClientes.Size = New System.Drawing.Size(148, 21)
-        Me.cbxListadoClientes.TabIndex = 1
+        Me.cbxListadoClientes.TabIndex = 0
         Me.cbxListadoClientes.Text = "NombreProducto"
         '
         'Label5
@@ -158,7 +158,7 @@ Partial Class frmProducto
         Me.Label5.Location = New System.Drawing.Point(46, 182)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(91, 13)
-        Me.Label5.TabIndex = 9
+        Me.Label5.TabIndex = 18
         Me.Label5.Text = "Precio de Compra"
         '
         'txtprecio_compra
@@ -167,7 +167,7 @@ Partial Class frmProducto
         Me.txtprecio_compra.Location = New System.Drawing.Point(154, 179)
         Me.txtprecio_compra.Name = "txtprecio_compra"
         Me.txtprecio_compra.Size = New System.Drawing.Size(172, 20)
-        Me.txtprecio_compra.TabIndex = 8
+        Me.txtprecio_compra.TabIndex = 5
         '
         'txtstock
         '
@@ -175,7 +175,7 @@ Partial Class frmProducto
         Me.txtstock.Location = New System.Drawing.Point(154, 153)
         Me.txtstock.Name = "txtstock"
         Me.txtstock.Size = New System.Drawing.Size(172, 20)
-        Me.txtstock.TabIndex = 6
+        Me.txtstock.TabIndex = 4
         '
         'datalistado
         '
@@ -190,7 +190,7 @@ Partial Class frmProducto
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.datalistado.Size = New System.Drawing.Size(762, 421)
-        Me.datalistado.TabIndex = 0
+        Me.datalistado.TabIndex = 2
         '
         'eliminar
         '
@@ -205,7 +205,7 @@ Partial Class frmProducto
         Me.Label4.Location = New System.Drawing.Point(102, 156)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(35, 13)
-        Me.Label4.TabIndex = 7
+        Me.Label4.TabIndex = 17
         Me.Label4.Text = "Stock"
         '
         'erroricono
@@ -218,7 +218,7 @@ Partial Class frmProducto
         Me.Label3.Location = New System.Drawing.Point(74, 111)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(63, 13)
-        Me.Label3.TabIndex = 5
+        Me.Label3.TabIndex = 16
         Me.Label3.Text = "Descripcion"
         '
         'txtdescripcion
@@ -229,7 +229,7 @@ Partial Class frmProducto
         Me.txtdescripcion.Name = "txtdescripcion"
         Me.txtdescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtdescripcion.Size = New System.Drawing.Size(172, 39)
-        Me.txtdescripcion.TabIndex = 4
+        Me.txtdescripcion.TabIndex = 3
         '
         'Label2
         '
@@ -237,7 +237,7 @@ Partial Class frmProducto
         Me.Label2.Location = New System.Drawing.Point(30, 59)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(107, 13)
-        Me.Label2.TabIndex = 3
+        Me.Label2.TabIndex = 14
         Me.Label2.Text = "Nombre del Producto"
         '
         'txtNombre
@@ -246,7 +246,7 @@ Partial Class frmProducto
         Me.txtNombre.Location = New System.Drawing.Point(154, 56)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(172, 20)
-        Me.txtNombre.TabIndex = 2
+        Me.txtNombre.TabIndex = 1
         '
         'Label1
         '
@@ -254,7 +254,7 @@ Partial Class frmProducto
         Me.Label1.Location = New System.Drawing.Point(75, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(62, 13)
-        Me.Label1.TabIndex = 1
+        Me.Label1.TabIndex = 13
         Me.Label1.Text = "Id Producto"
         '
         'GroupBox1
@@ -292,7 +292,7 @@ Partial Class frmProducto
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(382, 499)
-        Me.GroupBox1.TabIndex = 2
+        Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
@@ -302,17 +302,17 @@ Partial Class frmProducto
         Me.cbbmodulo.Location = New System.Drawing.Point(151, 260)
         Me.cbbmodulo.Name = "cbbmodulo"
         Me.cbbmodulo.Size = New System.Drawing.Size(72, 13)
-        Me.cbbmodulo.TabIndex = 30
+        Me.cbbmodulo.TabIndex = 24
         Me.cbbmodulo.Text = "EMFOPESBE"
         '
         'txtmedida
         '
         Me.txtmedida.FormattingEnabled = True
-        Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS"})
+        Me.txtmedida.Items.AddRange(New Object() {"UNIDAD", "KILOS", "PIEZA"})
         Me.txtmedida.Location = New System.Drawing.Point(154, 284)
         Me.txtmedida.Name = "txtmedida"
         Me.txtmedida.Size = New System.Drawing.Size(107, 21)
-        Me.txtmedida.TabIndex = 29
+        Me.txtmedida.TabIndex = 9
         Me.txtmedida.Text = "UNIDAD"
         '
         'Label11
@@ -321,7 +321,7 @@ Partial Class frmProducto
         Me.Label11.Location = New System.Drawing.Point(95, 287)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(42, 13)
-        Me.Label11.TabIndex = 28
+        Me.Label11.TabIndex = 22
         Me.Label11.Text = "Medida"
         '
         'Label10
@@ -330,7 +330,7 @@ Partial Class frmProducto
         Me.Label10.Location = New System.Drawing.Point(95, 260)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(42, 13)
-        Me.Label10.TabIndex = 27
+        Me.Label10.TabIndex = 21
         Me.Label10.Text = "Modulo"
         '
         'btnlimpiar
@@ -370,7 +370,7 @@ Partial Class frmProducto
         Me.Label9.Location = New System.Drawing.Point(95, 312)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
-        Me.Label9.TabIndex = 22
+        Me.Label9.TabIndex = 23
         Me.Label9.Text = "Imagen"
         '
         'txtfecha_vencimiento
@@ -379,7 +379,7 @@ Partial Class frmProducto
         Me.txtfecha_vencimiento.Location = New System.Drawing.Point(154, 231)
         Me.txtfecha_vencimiento.Name = "txtfecha_vencimiento"
         Me.txtfecha_vencimiento.Size = New System.Drawing.Size(171, 20)
-        Me.txtfecha_vencimiento.TabIndex = 21
+        Me.txtfecha_vencimiento.TabIndex = 8
         '
         'Label8
         '
@@ -395,7 +395,7 @@ Partial Class frmProducto
         Me.btncategoria.Location = New System.Drawing.Point(331, 85)
         Me.btncategoria.Name = "btncategoria"
         Me.btncategoria.Size = New System.Drawing.Size(26, 19)
-        Me.btncategoria.TabIndex = 19
+        Me.btncategoria.TabIndex = 2
         Me.btncategoria.Text = "..."
         Me.btncategoria.UseVisualStyleBackColor = True
         '
@@ -405,7 +405,7 @@ Partial Class frmProducto
         Me.txtnom_categoria.Location = New System.Drawing.Point(189, 82)
         Me.txtnom_categoria.Name = "txtnom_categoria"
         Me.txtnom_categoria.Size = New System.Drawing.Size(137, 20)
-        Me.txtnom_categoria.TabIndex = 18
+        Me.txtnom_categoria.TabIndex = 26
         '
         'Label7
         '
@@ -413,7 +413,7 @@ Partial Class frmProducto
         Me.Label7.Location = New System.Drawing.Point(85, 85)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(52, 13)
-        Me.Label7.TabIndex = 17
+        Me.Label7.TabIndex = 15
         Me.Label7.Text = "Categoria"
         '
         'txtidcategoria
@@ -422,7 +422,7 @@ Partial Class frmProducto
         Me.txtidcategoria.Location = New System.Drawing.Point(154, 82)
         Me.txtidcategoria.Name = "txtidcategoria"
         Me.txtidcategoria.Size = New System.Drawing.Size(29, 20)
-        Me.txtidcategoria.TabIndex = 16
+        Me.txtidcategoria.TabIndex = 25
         '
         'txtIdproducto
         '
@@ -442,7 +442,7 @@ Partial Class frmProducto
         Me.GroupBox2.Location = New System.Drawing.Point(400, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(786, 499)
-        Me.GroupBox2.TabIndex = 3
+        Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Productos"
         '
@@ -455,7 +455,7 @@ Partial Class frmProducto
         Me.txtTag.Location = New System.Drawing.Point(268, -3)
         Me.txtTag.Name = "txtTag"
         Me.txtTag.Size = New System.Drawing.Size(140, 20)
-        Me.txtTag.TabIndex = 26
+        Me.txtTag.TabIndex = 2
         Me.txtTag.Text = "0"
         Me.txtTag.Visible = False
         '

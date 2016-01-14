@@ -256,8 +256,8 @@ Public Class frmDetalleVentaPostGrado
                         vdb.gcantidad = datalistado.SelectedCells.Item(5).Value
                         vdb.gvalidez = "V"
                         If func.eliminar(vdb) Then
-                            If func.aumentar_stock(vdb) Then
-                            End If
+                            'If func.aumentar_stock(vdb) Then
+                            'End If
                         Else
                             MessageBox.Show("Fue eliminado", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
                         End If
@@ -375,7 +375,7 @@ Public Class frmDetalleVentaPostGrado
             monto = calcularMontoCC(txttotal.Text)
 
 
-            lbCC.Text = fCC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
+            lbCC.Text = CC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
             ''''''''''''''''''''''''''''''''''
             Try
 
@@ -459,7 +459,7 @@ Public Class frmDetalleVentaPostGrado
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-          Dim result As DialogResult
+        Dim result As DialogResult
         result = MessageBox.Show("realizar la anulacion de la venta?", "Anulando venta", MessageBoxButtons.OKCancel)
         If result = DialogResult.OK Then
             If Me.ValidateChildren = True And txtIdVenta.Text <> "" Then
@@ -482,7 +482,7 @@ Public Class frmDetalleVentaPostGrado
 
                             dts2.gidproducto = func1.mostraridprodXidventa(dts1)
                             dts2.gcantidad = func1.mostrarCantidadXidventa(dts1)
-                            func2.aumentar_stock(dts2)
+                            'func2.aumentar_stock(dts2)
                             dts2.giddedatlle_venta = func1.mostrariddetalleventaXidventa(dts1)
                             dts2.gvalidez = "A"
                             func2.editarValidez(dts2)
@@ -569,21 +569,20 @@ Public Class frmDetalleVentaPostGrado
     '    End Try
     'End Sub
     Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
-        'Dim cant As Double
-        'cant = txtCantidad.Text
-        'If txtCantidad.Text > txtncuota.Value Then
-        '    MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
-        '    'btnGuardar.Visible = 0
-        '    txtCantidad.Text = txtncuota.Value
-        'Else
-        '    btnGuardar.Visible = 1
-        'End If
-        'If txtCantidad.Text = 0 Then
-        '    btnGuardar.Visible = 0
-        'Else
-        '    btnGuardar.Visible = 1
-        'End If   
-
+        Dim cant As Double
+        cant = txtCantidad.Text
+        If txtCantidad.Text > txtncuota.Value Then
+            MessageBox.Show("error numero de cuota", "Error al vender")
+            'btnGuardar.Visible = 0
+            txtCantidad.Text = txtncuota.Value
+        Else
+            btnGuardar.Visible = 1
+        End If
+        If txtCantidad.Text = 0 Then
+            btnGuardar.Visible = 0
+        Else
+            btnGuardar.Visible = 1
+        End If
     End Sub
 
 
@@ -599,6 +598,10 @@ Public Class frmDetalleVentaPostGrado
     End Sub
 
     Private Sub lbliteral_Click(sender As Object, e As EventArgs) Handles lbliteral.Click
+
+    End Sub
+
+    Private Sub txtncuota_ValueChanged(sender As Object, e As EventArgs) Handles txtncuota.ValueChanged
 
     End Sub
 End Class

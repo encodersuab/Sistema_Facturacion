@@ -335,7 +335,8 @@ Public Class frmDetalleVentaplanillaPostGrado
 
                             dts2.gidproducto = func1.mostraridprodXidventa(dts1)
                             dts2.gcantidad = func1.mostrarCantidadXidventa(dts1)
-                            func2.aumentar_stock(dts2)
+
+                            'func2.aumentar_stock(dts2)
                             dts2.giddedatlle_venta = func1.mostrariddetalleventaXidventa(dts1)
                             dts2.gvalidez = "A"
                             func2.editarValidez(dts2)

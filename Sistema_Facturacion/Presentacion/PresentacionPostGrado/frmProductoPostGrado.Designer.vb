@@ -97,7 +97,7 @@ Partial Class frmProductoPostGrado
         Me.Label10.Location = New System.Drawing.Point(95, 240)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(42, 13)
-        Me.Label10.TabIndex = 27
+        Me.Label10.TabIndex = 18
         Me.Label10.Text = "Modulo"
         '
         'Label9
@@ -106,7 +106,7 @@ Partial Class frmProductoPostGrado
         Me.Label9.Location = New System.Drawing.Point(95, 264)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
-        Me.Label9.TabIndex = 22
+        Me.Label9.TabIndex = 20
         Me.Label9.Text = "Imagen"
         '
         'txtfecha_vencimiento
@@ -115,7 +115,7 @@ Partial Class frmProductoPostGrado
         Me.txtfecha_vencimiento.Location = New System.Drawing.Point(154, 208)
         Me.txtfecha_vencimiento.Name = "txtfecha_vencimiento"
         Me.txtfecha_vencimiento.Size = New System.Drawing.Size(100, 20)
-        Me.txtfecha_vencimiento.TabIndex = 21
+        Me.txtfecha_vencimiento.TabIndex = 6
         '
         'Label8
         '
@@ -123,7 +123,7 @@ Partial Class frmProductoPostGrado
         Me.Label8.Location = New System.Drawing.Point(31, 214)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(106, 13)
-        Me.Label8.TabIndex = 20
+        Me.Label8.TabIndex = 17
         Me.Label8.Text = "Fecha de conclusion"
         '
         'GroupBox2
@@ -135,7 +135,7 @@ Partial Class frmProductoPostGrado
         Me.GroupBox2.Location = New System.Drawing.Point(396, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(701, 499)
-        Me.GroupBox2.TabIndex = 28
+        Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Productos"
         '
@@ -154,7 +154,7 @@ Partial Class frmProductoPostGrado
         Me.txtBuscar.Location = New System.Drawing.Point(160, 26)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(535, 20)
-        Me.txtBuscar.TabIndex = 2
+        Me.txtBuscar.TabIndex = 1
         '
         'cbxListadoClientes
         '
@@ -163,7 +163,7 @@ Partial Class frmProductoPostGrado
         Me.cbxListadoClientes.Location = New System.Drawing.Point(6, 26)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
         Me.cbxListadoClientes.Size = New System.Drawing.Size(148, 21)
-        Me.cbxListadoClientes.TabIndex = 1
+        Me.cbxListadoClientes.TabIndex = 0
         Me.cbxListadoClientes.Text = "NombreProducto"
         '
         'datalistado
@@ -179,7 +179,7 @@ Partial Class frmProductoPostGrado
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.datalistado.Size = New System.Drawing.Size(689, 421)
-        Me.datalistado.TabIndex = 0
+        Me.datalistado.TabIndex = 2
         '
         'eliminar
         '
@@ -193,7 +193,7 @@ Partial Class frmProductoPostGrado
         Me.btncategoria.Location = New System.Drawing.Point(331, 85)
         Me.btncategoria.Name = "btncategoria"
         Me.btncategoria.Size = New System.Drawing.Size(26, 19)
-        Me.btncategoria.TabIndex = 19
+        Me.btncategoria.TabIndex = 2
         Me.btncategoria.Text = "..."
         Me.btncategoria.UseVisualStyleBackColor = True
         '
@@ -203,7 +203,7 @@ Partial Class frmProductoPostGrado
         Me.txtnom_categoria.Location = New System.Drawing.Point(189, 82)
         Me.txtnom_categoria.Name = "txtnom_categoria"
         Me.txtnom_categoria.Size = New System.Drawing.Size(137, 20)
-        Me.txtnom_categoria.TabIndex = 18
+        Me.txtnom_categoria.TabIndex = 22
         '
         'Label7
         '
@@ -211,7 +211,7 @@ Partial Class frmProductoPostGrado
         Me.Label7.Location = New System.Drawing.Point(85, 85)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(52, 13)
-        Me.Label7.TabIndex = 17
+        Me.Label7.TabIndex = 13
         Me.Label7.Text = "Categoria"
         '
         'txtidcategoria
@@ -220,14 +220,14 @@ Partial Class frmProductoPostGrado
         Me.txtidcategoria.Location = New System.Drawing.Point(154, 82)
         Me.txtidcategoria.Name = "txtidcategoria"
         Me.txtidcategoria.Size = New System.Drawing.Size(29, 20)
-        Me.txtidcategoria.TabIndex = 16
+        Me.txtidcategoria.TabIndex = 21
         '
         'btnGuardar
         '
         Me.btnGuardar.Location = New System.Drawing.Point(154, 434)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
-        Me.btnGuardar.TabIndex = 15
+        Me.btnGuardar.TabIndex = 8
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
@@ -236,7 +236,7 @@ Partial Class frmProductoPostGrado
         Me.btnEditar.Location = New System.Drawing.Point(154, 434)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
-        Me.btnEditar.TabIndex = 14
+        Me.btnEditar.TabIndex = 9
         Me.btnEditar.Text = "Editar"
         Me.btnEditar.UseVisualStyleBackColor = True
         '
@@ -245,7 +245,7 @@ Partial Class frmProductoPostGrado
         Me.btncancelar.Location = New System.Drawing.Point(239, 434)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
-        Me.btncancelar.TabIndex = 13
+        Me.btncancelar.TabIndex = 10
         Me.btncancelar.Text = "Cancelar"
         Me.btncancelar.UseVisualStyleBackColor = True
         '
@@ -254,7 +254,7 @@ Partial Class frmProductoPostGrado
         Me.btnNuevo.Location = New System.Drawing.Point(70, 434)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
-        Me.btnNuevo.TabIndex = 12
+        Me.btnNuevo.TabIndex = 7
         Me.btnNuevo.Text = "Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = True
         '
@@ -264,7 +264,7 @@ Partial Class frmProductoPostGrado
         Me.Label6.Location = New System.Drawing.Point(52, 158)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(85, 13)
-        Me.Label6.TabIndex = 11
+        Me.Label6.TabIndex = 15
         Me.Label6.Text = "Precio por cuota"
         '
         'txtprecio_venta
@@ -273,7 +273,7 @@ Partial Class frmProductoPostGrado
         Me.txtprecio_venta.Location = New System.Drawing.Point(154, 155)
         Me.txtprecio_venta.Name = "txtprecio_venta"
         Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
-        Me.txtprecio_venta.TabIndex = 10
+        Me.txtprecio_venta.TabIndex = 4
         '
         'Label5
         '
@@ -298,7 +298,7 @@ Partial Class frmProductoPostGrado
         Me.txtTag.Location = New System.Drawing.Point(264, -3)
         Me.txtTag.Name = "txtTag"
         Me.txtTag.Size = New System.Drawing.Size(140, 20)
-        Me.txtTag.TabIndex = 29
+        Me.txtTag.TabIndex = 3
         Me.txtTag.Text = "0"
         Me.txtTag.Visible = False
         '
@@ -308,7 +308,7 @@ Partial Class frmProductoPostGrado
         Me.Label4.Location = New System.Drawing.Point(43, 185)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(94, 13)
-        Me.Label4.TabIndex = 7
+        Me.Label4.TabIndex = 16
         Me.Label4.Text = "Numero de cuotas"
         '
         'txtstock
@@ -317,7 +317,7 @@ Partial Class frmProductoPostGrado
         Me.txtstock.Location = New System.Drawing.Point(154, 182)
         Me.txtstock.Name = "txtstock"
         Me.txtstock.Size = New System.Drawing.Size(56, 20)
-        Me.txtstock.TabIndex = 6
+        Me.txtstock.TabIndex = 5
         '
         'Label3
         '
@@ -325,7 +325,7 @@ Partial Class frmProductoPostGrado
         Me.Label3.Location = New System.Drawing.Point(74, 111)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(63, 13)
-        Me.Label3.TabIndex = 5
+        Me.Label3.TabIndex = 14
         Me.Label3.Text = "Descripcion"
         '
         'txtdescripcion
@@ -336,7 +336,7 @@ Partial Class frmProductoPostGrado
         Me.txtdescripcion.Name = "txtdescripcion"
         Me.txtdescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtdescripcion.Size = New System.Drawing.Size(172, 39)
-        Me.txtdescripcion.TabIndex = 4
+        Me.txtdescripcion.TabIndex = 3
         '
         'Label2
         '
@@ -344,7 +344,7 @@ Partial Class frmProductoPostGrado
         Me.Label2.Location = New System.Drawing.Point(30, 59)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(107, 13)
-        Me.Label2.TabIndex = 3
+        Me.Label2.TabIndex = 12
         Me.Label2.Text = "Nombre del Producto"
         '
         'txtNombre
@@ -353,7 +353,7 @@ Partial Class frmProductoPostGrado
         Me.txtNombre.Location = New System.Drawing.Point(154, 56)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(172, 20)
-        Me.txtNombre.TabIndex = 2
+        Me.txtNombre.TabIndex = 1
         '
         'Label1
         '
@@ -361,7 +361,7 @@ Partial Class frmProductoPostGrado
         Me.Label1.Location = New System.Drawing.Point(75, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(62, 13)
-        Me.Label1.TabIndex = 1
+        Me.Label1.TabIndex = 11
         Me.Label1.Text = "Id Producto"
         '
         'erroricono
@@ -408,7 +408,7 @@ Partial Class frmProductoPostGrado
         Me.GroupBox1.Location = New System.Drawing.Point(8, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(382, 499)
-        Me.GroupBox1.TabIndex = 27
+        Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
@@ -418,7 +418,7 @@ Partial Class frmProductoPostGrado
         Me.cbbmodulo.Location = New System.Drawing.Point(156, 240)
         Me.cbbmodulo.Name = "cbbmodulo"
         Me.cbbmodulo.Size = New System.Drawing.Size(78, 13)
-        Me.cbbmodulo.TabIndex = 28
+        Me.cbbmodulo.TabIndex = 19
         Me.cbbmodulo.Text = "POST-GRADO"
         '
         'btnlimpiar

@@ -7,8 +7,6 @@
         Me.mostrar_factura3TableAdapter.Fill(Me.dbfacDataSetFACTURAS.mostrar_factura3, txtnumfactura.Text)
 
         Me.ReportViewer1.RefreshReport()
-
-
     End Sub
 
     Private Sub ReportViewer1_Load(sender As Object, e As EventArgs)
@@ -19,7 +17,11 @@
 
     End Sub
 
-    Private Sub ReportViewer1_Load_2(sender As Object, e As EventArgs) Handles ReportViewer1.Load
+    Private Sub ReportViewer1_Load_2(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub ReportViewer1_Load_3(sender As Object, e As EventArgs) Handles ReportViewer1.Load
 
     End Sub
 End Class

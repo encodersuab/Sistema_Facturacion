@@ -118,7 +118,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(382, 499)
-        Me.GroupBox1.TabIndex = 27
+        Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
@@ -128,7 +128,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.cbbModulo.Location = New System.Drawing.Point(152, 247)
         Me.cbbModulo.Name = "cbbModulo"
         Me.cbbModulo.Size = New System.Drawing.Size(85, 13)
-        Me.cbbModulo.TabIndex = 30
+        Me.cbbModulo.TabIndex = 21
         Me.cbbModulo.Text = "CAMPO-FERIAL"
         '
         'txtmedida
@@ -138,7 +138,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtmedida.Location = New System.Drawing.Point(152, 271)
         Me.txtmedida.Name = "txtmedida"
         Me.txtmedida.Size = New System.Drawing.Size(133, 21)
-        Me.txtmedida.TabIndex = 29
+        Me.txtmedida.TabIndex = 7
         Me.txtmedida.Text = "METRO CUADRADO"
         '
         'Label10
@@ -147,7 +147,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label10.Location = New System.Drawing.Point(92, 247)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(42, 13)
-        Me.Label10.TabIndex = 27
+        Me.Label10.TabIndex = 18
         Me.Label10.Text = "Modulo"
         '
         'btnlimpiar
@@ -166,7 +166,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label11.Location = New System.Drawing.Point(93, 274)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(42, 13)
-        Me.Label11.TabIndex = 28
+        Me.Label11.TabIndex = 19
         Me.Label11.Text = "Medida"
         '
         'Label4
@@ -175,7 +175,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label4.Location = New System.Drawing.Point(37, 184)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(100, 13)
-        Me.Label4.TabIndex = 7
+        Me.Label4.TabIndex = 16
         Me.Label4.Text = "Espacio en metros2"
         '
         'txtprecio_venta
@@ -184,7 +184,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtprecio_venta.Location = New System.Drawing.Point(153, 153)
         Me.txtprecio_venta.Name = "txtprecio_venta"
         Me.txtprecio_venta.Size = New System.Drawing.Size(115, 20)
-        Me.txtprecio_venta.TabIndex = 10
+        Me.txtprecio_venta.TabIndex = 4
         '
         'txtstock
         '
@@ -192,7 +192,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtstock.Location = New System.Drawing.Point(152, 181)
         Me.txtstock.Name = "txtstock"
         Me.txtstock.Size = New System.Drawing.Size(116, 20)
-        Me.txtstock.TabIndex = 6
+        Me.txtstock.TabIndex = 5
         '
         'btncargar
         '
@@ -221,7 +221,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label9.Location = New System.Drawing.Point(95, 315)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
-        Me.Label9.TabIndex = 22
+        Me.Label9.TabIndex = 20
         Me.Label9.Text = "Imagen"
         '
         'txtfecha_vencimiento
@@ -230,7 +230,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtfecha_vencimiento.Location = New System.Drawing.Point(152, 211)
         Me.txtfecha_vencimiento.Name = "txtfecha_vencimiento"
         Me.txtfecha_vencimiento.Size = New System.Drawing.Size(116, 20)
-        Me.txtfecha_vencimiento.TabIndex = 21
+        Me.txtfecha_vencimiento.TabIndex = 6
         '
         'Label8
         '
@@ -238,7 +238,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label8.Location = New System.Drawing.Point(25, 217)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(112, 13)
-        Me.Label8.TabIndex = 20
+        Me.Label8.TabIndex = 17
         Me.Label8.Text = "Fecha de vencimiento"
         '
         'btncategoria
@@ -246,7 +246,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.btncategoria.Location = New System.Drawing.Point(331, 85)
         Me.btncategoria.Name = "btncategoria"
         Me.btncategoria.Size = New System.Drawing.Size(26, 19)
-        Me.btncategoria.TabIndex = 19
+        Me.btncategoria.TabIndex = 2
         Me.btncategoria.Text = "..."
         Me.btncategoria.UseVisualStyleBackColor = True
         '
@@ -256,7 +256,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtnom_categoria.Location = New System.Drawing.Point(189, 82)
         Me.txtnom_categoria.Name = "txtnom_categoria"
         Me.txtnom_categoria.Size = New System.Drawing.Size(137, 20)
-        Me.txtnom_categoria.TabIndex = 18
+        Me.txtnom_categoria.TabIndex = 23
         '
         'Label7
         '
@@ -264,7 +264,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label7.Location = New System.Drawing.Point(85, 85)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(52, 13)
-        Me.Label7.TabIndex = 17
+        Me.Label7.TabIndex = 13
         Me.Label7.Text = "Categoria"
         '
         'txtidcategoria
@@ -273,14 +273,14 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtidcategoria.Location = New System.Drawing.Point(154, 82)
         Me.txtidcategoria.Name = "txtidcategoria"
         Me.txtidcategoria.Size = New System.Drawing.Size(29, 20)
-        Me.txtidcategoria.TabIndex = 16
+        Me.txtidcategoria.TabIndex = 22
         '
         'btnGuardar
         '
         Me.btnGuardar.Location = New System.Drawing.Point(162, 467)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
-        Me.btnGuardar.TabIndex = 15
+        Me.btnGuardar.TabIndex = 9
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
@@ -289,7 +289,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.btnEditar.Location = New System.Drawing.Point(162, 467)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
-        Me.btnEditar.TabIndex = 14
+        Me.btnEditar.TabIndex = 24
         Me.btnEditar.Text = "Editar"
         Me.btnEditar.UseVisualStyleBackColor = True
         '
@@ -298,7 +298,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.btncancelar.Location = New System.Drawing.Point(247, 467)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
-        Me.btncancelar.TabIndex = 13
+        Me.btncancelar.TabIndex = 10
         Me.btncancelar.Text = "Cancelar"
         Me.btncancelar.UseVisualStyleBackColor = True
         '
@@ -307,7 +307,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.btnNuevo.Location = New System.Drawing.Point(78, 467)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
-        Me.btnNuevo.TabIndex = 12
+        Me.btnNuevo.TabIndex = 8
         Me.btnNuevo.Text = "Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = True
         '
@@ -317,7 +317,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label6.Location = New System.Drawing.Point(44, 156)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(90, 13)
-        Me.Label6.TabIndex = 11
+        Me.Label6.TabIndex = 15
         Me.Label6.Text = "Precio por metro2"
         '
         'Label3
@@ -326,7 +326,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label3.Location = New System.Drawing.Point(74, 111)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(63, 13)
-        Me.Label3.TabIndex = 5
+        Me.Label3.TabIndex = 14
         Me.Label3.Text = "Descripcion"
         '
         'txtdescripcion
@@ -337,7 +337,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtdescripcion.Name = "txtdescripcion"
         Me.txtdescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtdescripcion.Size = New System.Drawing.Size(172, 39)
-        Me.txtdescripcion.TabIndex = 4
+        Me.txtdescripcion.TabIndex = 3
         '
         'Label2
         '
@@ -345,7 +345,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label2.Location = New System.Drawing.Point(30, 59)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(107, 13)
-        Me.Label2.TabIndex = 3
+        Me.Label2.TabIndex = 12
         Me.Label2.Text = "Nombre del Producto"
         '
         'txtNombre
@@ -354,7 +354,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtNombre.Location = New System.Drawing.Point(154, 56)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(172, 20)
-        Me.txtNombre.TabIndex = 2
+        Me.txtNombre.TabIndex = 1
         '
         'Label1
         '
@@ -362,7 +362,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.Label1.Location = New System.Drawing.Point(75, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(62, 13)
-        Me.Label1.TabIndex = 1
+        Me.Label1.TabIndex = 11
         Me.Label1.Text = "Id Producto"
         '
         'txtIdproducto
@@ -401,7 +401,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.GroupBox2.Location = New System.Drawing.Point(400, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(719, 499)
-        Me.GroupBox2.TabIndex = 28
+        Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Productos"
         '
@@ -420,7 +420,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.txtBuscar.Location = New System.Drawing.Point(171, 26)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(542, 20)
-        Me.txtBuscar.TabIndex = 2
+        Me.txtBuscar.TabIndex = 1
         '
         'cbxListadoClientes
         '
@@ -429,7 +429,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.cbxListadoClientes.Location = New System.Drawing.Point(17, 26)
         Me.cbxListadoClientes.Name = "cbxListadoClientes"
         Me.cbxListadoClientes.Size = New System.Drawing.Size(148, 21)
-        Me.cbxListadoClientes.TabIndex = 1
+        Me.cbxListadoClientes.TabIndex = 0
         Me.cbxListadoClientes.Text = "NombreProducto"
         '
         'datalistado
@@ -445,7 +445,7 @@ Partial Class frmProductoCAMPOFERIAL
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.datalistado.Size = New System.Drawing.Size(696, 421)
-        Me.datalistado.TabIndex = 0
+        Me.datalistado.TabIndex = 2
         '
         'eliminar
         '

@@ -25,7 +25,6 @@
         Return real.ToString()
 
     End Function
-   
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim fecha, monto As String
         fecha = CalcularFechaParaCC()
@@ -33,7 +32,6 @@
 
         txtresultCC.Text = CC.generar(txtautorizacion.Text, txtnumero.Text, txtnit.Text, fecha, monto, txtllave.Text)
     End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         txtautorizacion.Clear()
         txtllave.Clear()
@@ -42,15 +40,12 @@
         txtnumero.Clear()
         txtresultCC.Clear()
     End Sub
-
     Private Sub Button3_Click(sender As Object, e As EventArgs)
 
     End Sub
-
     Private Sub frmPruebaCC_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-
     Private Sub CrystalReportViewer1_Load(sender As Object, e As EventArgs) Handles CrystalReportViewer1.Load
 
     End Sub

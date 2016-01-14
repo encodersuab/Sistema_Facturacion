@@ -352,7 +352,7 @@
                 frmDetalleVentaPostGrado.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
                 frmDetalleVentaPostGrado.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
                 frmDetalleVentaPostGrado.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
-                frmDetalleVentaPostGrado.txtncuota.Text = datalistado.SelectedCells.Item(6).Value
+                frmDetalleVentaPostGrado.txtncuota.Text = 1
                 frmDetalleVentaPostGrado.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
                 Me.Close()
 

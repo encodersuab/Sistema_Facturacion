@@ -614,4 +614,9 @@ Public Class frmInicioF
         frmDetalladoVenta.Show()
 
     End Sub
+
+    Private Sub RpteNºCuotasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RpteNºCuotasToolStripMenuItem.Click
+        frmReporteCuotas.MdiParent = Me
+        frmReporteCuotas.Show()
+    End Sub
 End Class
