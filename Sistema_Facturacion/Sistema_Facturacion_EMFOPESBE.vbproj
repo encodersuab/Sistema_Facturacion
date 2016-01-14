@@ -836,7 +836,7 @@
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\frmFactura2.resx">
       <DependentUpon>frmFactura2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptFac2.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptFact2.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptVentasGCAMPOFERIA.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\frmDetalladoVenta.resx">
       <DependentUpon>frmDetalladoVenta.vb</DependentUpon>
@@ -906,7 +906,10 @@
       <DependentUpon>frmReporteVentasXClientePostGrado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptConsultarCuotas.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptCuotasPostgrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptFac3.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptFact3.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptFactu3.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteCategoriaPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteProductoPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteVentasXClientePostGrado.rdlc" />

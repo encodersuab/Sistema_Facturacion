@@ -3266,6 +3266,8 @@ Partial Public Class DataSet1
 
         Private columndetalle As Global.System.Data.DataColumn
 
+        Private columnncuota As Global.System.Data.DataColumn
+
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
@@ -3350,6 +3352,14 @@ Partial Public Class DataSet1
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property ncuotaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnncuota
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
          Global.System.ComponentModel.Browsable(False)> _
         Public ReadOnly Property Count() As Integer
@@ -3386,9 +3396,9 @@ Partial Public Class DataSet1
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Overloads Function Addmostrar_cliente_servicio_cuota_postgradoRow(ByVal Num_Factura As Integer, ByVal Ci_Nit_Comprador As String, ByVal nombre_fac As String, ByVal validez As String, ByVal nombre_categoria As String, ByVal detalle As String) As mostrar_cliente_servicio_cuota_postgradoRow
+        Public Overloads Function Addmostrar_cliente_servicio_cuota_postgradoRow(ByVal Num_Factura As Integer, ByVal Ci_Nit_Comprador As String, ByVal nombre_fac As String, ByVal validez As String, ByVal nombre_categoria As String, ByVal detalle As String, ByVal ncuota As String) As mostrar_cliente_servicio_cuota_postgradoRow
             Dim rowmostrar_cliente_servicio_cuota_postgradoRow As mostrar_cliente_servicio_cuota_postgradoRow = CType(Me.NewRow, mostrar_cliente_servicio_cuota_postgradoRow)
-            Dim columnValuesArray() As Object = New Object() {Num_Factura, Ci_Nit_Comprador, nombre_fac, validez, nombre_categoria, detalle}
+            Dim columnValuesArray() As Object = New Object() {Num_Factura, Ci_Nit_Comprador, nombre_fac, validez, nombre_categoria, detalle, ncuota}
             rowmostrar_cliente_servicio_cuota_postgradoRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowmostrar_cliente_servicio_cuota_postgradoRow)
             Return rowmostrar_cliente_servicio_cuota_postgradoRow
@@ -3417,6 +3427,7 @@ Partial Public Class DataSet1
             Me.columnvalidez = MyBase.Columns("validez")
             Me.columnnombre_categoria = MyBase.Columns("nombre_categoria")
             Me.columndetalle = MyBase.Columns("detalle")
+            Me.columnncuota = MyBase.Columns("ncuota")
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
@@ -3434,11 +3445,14 @@ Partial Public Class DataSet1
             MyBase.Columns.Add(Me.columnnombre_categoria)
             Me.columndetalle = New Global.System.Data.DataColumn("detalle", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columndetalle)
+            Me.columnncuota = New Global.System.Data.DataColumn("ncuota", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnncuota)
             Me.columnCi_Nit_Comprador.MaxLength = 50
             Me.columnnombre_fac.MaxLength = 50
             Me.columnvalidez.MaxLength = 1
             Me.columnnombre_categoria.MaxLength = 50
             Me.columndetalle.MaxLength = 2147483647
+            Me.columnncuota.MaxLength = 50
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
@@ -5784,6 +5798,22 @@ Partial Public Class DataSet1
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property ncuota() As String
+            Get
+                Try
+                    Return CType(Me(Me.tablemostrar_cliente_servicio_cuota_postgrado.ncuotaColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'ncuota' de la tabla 'mostrar_cliente_servicio_cuota_postg" & _
+                            "rado' es DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tablemostrar_cliente_servicio_cuota_postgrado.ncuotaColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Function IsNum_FacturaNull() As Boolean
             Return Me.IsNull(Me.tablemostrar_cliente_servicio_cuota_postgrado.Num_FacturaColumn)
         End Function
@@ -5852,6 +5882,18 @@ Partial Public Class DataSet1
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub SetdetalleNull()
             Me(Me.tablemostrar_cliente_servicio_cuota_postgrado.detalleColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IsncuotaNull() As Boolean
+            Return Me.IsNull(Me.tablemostrar_cliente_servicio_cuota_postgrado.ncuotaColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetncuotaNull()
+            Me(Me.tablemostrar_cliente_servicio_cuota_postgrado.ncuotaColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
 
@@ -7718,6 +7760,7 @@ Namespace DataSet1TableAdapters
             tableMapping.ColumnMappings.Add("validez", "validez")
             tableMapping.ColumnMappings.Add("nombre_categoria", "nombre_categoria")
             tableMapping.ColumnMappings.Add("detalle", "detalle")
+            tableMapping.ColumnMappings.Add("ncuota", "ncuota")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
 

@@ -228,7 +228,7 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>1.55787cm</Top>
         <Height>1.2cm</Height>
-        <Width>18.6109cm</Width>
+        <Width>18.61089cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -559,8 +559,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
-          <Top>0.03486cm</Top>
-          <Left>0.18099cm</Left>
+          <Top>0.06972cm</Top>
+          <Left>0.20745cm</Left>
           <Height>0.6cm</Height>
           <Width>18.45636cm</Width>
           <Style>
@@ -590,8 +590,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>0.67014cm</Top>
-          <Left>0.18099cm</Left>
+          <Top>0.705cm</Top>
+          <Left>0.20745cm</Left>
           <Height>0.6cm</Height>
           <Width>18.45636cm</Width>
           <ZIndex>1</ZIndex>
@@ -622,8 +622,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox8</rd:DefaultName>
-          <Top>1.27014cm</Top>
-          <Left>0.15453cm</Left>
+          <Top>1.305cm</Top>
+          <Left>0.18099cm</Left>
           <Height>0.6cm</Height>
           <Width>18.45636cm</Width>
           <ZIndex>2</ZIndex>
