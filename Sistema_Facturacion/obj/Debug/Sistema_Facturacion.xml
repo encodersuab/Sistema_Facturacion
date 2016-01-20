@@ -1297,11 +1297,11 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURAS.mostrar_factura2DataTable">
+</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURAS.mostrar_factura3DataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURAS.mostrar_factura3DataTable">
+</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURAS.mostrar_factura2DataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -1313,11 +1313,11 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURAS.mostrar_factura2Row">
+</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURAS.mostrar_factura3Row">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURAS.mostrar_factura3Row">
+</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURAS.mostrar_factura2Row">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -1329,11 +1329,11 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURAS.mostrar_factura2RowChangeEvent">
+</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURAS.mostrar_factura3RowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURAS.mostrar_factura3RowChangeEvent">
+</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURAS.mostrar_factura2RowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -1349,11 +1349,11 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURASTableAdapters.mostrar_factura2TableAdapter">
+</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURASTableAdapters.mostrar_factura3TableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURASTableAdapters.mostrar_factura3TableAdapter">
+</member><member name="T:Sistema_Facturacion.dbfacDataSetFACTURASTableAdapters.mostrar_factura2TableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

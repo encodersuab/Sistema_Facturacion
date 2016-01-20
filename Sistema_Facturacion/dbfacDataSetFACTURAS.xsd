@@ -120,7 +120,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mostrar_factura2TableAdapter" GeneratorDataComponentClassName="mostrar_factura2TableAdapter" Name="mostrar_factura2" UserDataComponentName="mostrar_factura2TableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="BDFacturConnectionString (MySettings)" DbObjectName="BDFactur.dbo.mostrar_factura2" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="Setting (MySettings)" DbObjectName="BDFactu.dbo.mostrar_factura2" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.mostrar_factura2</CommandText>
@@ -152,6 +152,7 @@
               <Mapping SourceColumn="literal" DataSetColumn="literal" />
               <Mapping SourceColumn="Fecha_limite" DataSetColumn="Fecha_limite" />
               <Mapping SourceColumn="nombre_categoria" DataSetColumn="nombre_categoria" />
+              <Mapping SourceColumn="aux" DataSetColumn="aux" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -163,7 +164,7 @@
   <xs:element name="dbfacDataSetFACTURAS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dbfacDataSetFACTURAS" msprop:Generator_UserDSName="dbfacDataSetFACTURAS">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="mostrar_factura0" msprop:Generator_TableClassName="mostrar_factura0DataTable" msprop:Generator_TableVarName="tablemostrar_factura0" msprop:Generator_TablePropName="mostrar_factura0" msprop:Generator_RowDeletingName="mostrar_factura0RowDeleting" msprop:Generator_RowChangingName="mostrar_factura0RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura0RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura0RowDeleted" msprop:Generator_UserTableName="mostrar_factura0" msprop:Generator_RowChangedName="mostrar_factura0RowChanged" msprop:Generator_RowEvArgName="mostrar_factura0RowChangeEvent" msprop:Generator_RowClassName="mostrar_factura0Row">
+        <xs:element name="mostrar_factura0" msprop:Generator_TableClassName="mostrar_factura0DataTable" msprop:Generator_TableVarName="tablemostrar_factura0" msprop:Generator_RowChangedName="mostrar_factura0RowChanged" msprop:Generator_TablePropName="mostrar_factura0" msprop:Generator_RowDeletingName="mostrar_factura0RowDeleting" msprop:Generator_RowChangingName="mostrar_factura0RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura0RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura0RowDeleted" msprop:Generator_RowClassName="mostrar_factura0Row" msprop:Generator_UserTableName="mostrar_factura0" msprop:Generator_RowEvArgName="mostrar_factura0RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NumeroFactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumeroFactura" msprop:Generator_ColumnPropNameInRow="NumeroFactura" msprop:Generator_ColumnPropNameInTable="NumeroFacturaColumn" msprop:Generator_UserColumnName="NumeroFactura" type="xs:int" />
@@ -247,7 +248,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="mostrar_factura1" msprop:Generator_TableClassName="mostrar_factura1DataTable" msprop:Generator_TableVarName="tablemostrar_factura1" msprop:Generator_TablePropName="mostrar_factura1" msprop:Generator_RowDeletingName="mostrar_factura1RowDeleting" msprop:Generator_RowChangingName="mostrar_factura1RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura1RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura1RowDeleted" msprop:Generator_UserTableName="mostrar_factura1" msprop:Generator_RowChangedName="mostrar_factura1RowChanged" msprop:Generator_RowEvArgName="mostrar_factura1RowChangeEvent" msprop:Generator_RowClassName="mostrar_factura1Row">
+        <xs:element name="mostrar_factura1" msprop:Generator_TableClassName="mostrar_factura1DataTable" msprop:Generator_TableVarName="tablemostrar_factura1" msprop:Generator_RowChangedName="mostrar_factura1RowChanged" msprop:Generator_TablePropName="mostrar_factura1" msprop:Generator_RowDeletingName="mostrar_factura1RowDeleting" msprop:Generator_RowChangingName="mostrar_factura1RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura1RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura1RowDeleted" msprop:Generator_RowClassName="mostrar_factura1Row" msprop:Generator_UserTableName="mostrar_factura1" msprop:Generator_RowEvArgName="mostrar_factura1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NumeroFactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumeroFactura" msprop:Generator_ColumnPropNameInRow="NumeroFactura" msprop:Generator_ColumnPropNameInTable="NumeroFacturaColumn" msprop:Generator_UserColumnName="NumeroFactura" type="xs:int" />
@@ -331,7 +332,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="mostrar_factura3" msprop:Generator_TableClassName="mostrar_factura3DataTable" msprop:Generator_TableVarName="tablemostrar_factura3" msprop:Generator_RowChangedName="mostrar_factura3RowChanged" msprop:Generator_TablePropName="mostrar_factura3" msprop:Generator_RowDeletingName="mostrar_factura3RowDeleting" msprop:Generator_RowChangingName="mostrar_factura3RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura3RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura3RowDeleted" msprop:Generator_RowClassName="mostrar_factura3Row" msprop:Generator_UserTableName="mostrar_factura3" msprop:Generator_RowEvArgName="mostrar_factura3RowChangeEvent">
+        <xs:element name="mostrar_factura3" msprop:Generator_TableClassName="mostrar_factura3DataTable" msprop:Generator_TableVarName="tablemostrar_factura3" msprop:Generator_TablePropName="mostrar_factura3" msprop:Generator_RowDeletingName="mostrar_factura3RowDeleting" msprop:Generator_RowChangingName="mostrar_factura3RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura3RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura3RowDeleted" msprop:Generator_UserTableName="mostrar_factura3" msprop:Generator_RowChangedName="mostrar_factura3RowChanged" msprop:Generator_RowEvArgName="mostrar_factura3RowChangeEvent" msprop:Generator_RowClassName="mostrar_factura3Row">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NumeroFactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumeroFactura" msprop:Generator_ColumnPropNameInRow="NumeroFactura" msprop:Generator_ColumnPropNameInTable="NumeroFacturaColumn" msprop:Generator_UserColumnName="NumeroFactura" type="xs:int" />
@@ -514,6 +515,13 @@
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aux" msprop:Generator_ColumnVarNameInTable="columnaux" msprop:Generator_ColumnPropNameInRow="aux" msprop:Generator_ColumnPropNameInTable="auxColumn" msprop:Generator_UserColumnName="aux" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>

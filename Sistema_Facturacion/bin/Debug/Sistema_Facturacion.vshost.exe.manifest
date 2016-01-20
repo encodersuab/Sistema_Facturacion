@@ -151,14 +151,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sistema_Facturacion.exe" size="7613952">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sistema_Facturacion.exe" size="7670272">
       <assemblyIdentity name="Sistema_Facturacion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>C/lzYwCROGlO6N24Q5Z4YyoJTCePPH170azXhE614Wk=</dsig:DigestValue>
+        <dsig:DigestValue>nKZy7CW6Fy6sIOSoMgWTXz7unMwgS/jhT1OLZ3RWltg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -183,13 +183,13 @@
       <dsig:DigestValue>Uyjyie8J1PZup5c9uJwVPiTya1yny07T+Eyq91Ff8SM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Sistema_Facturacion.exe.config" size="944">
+  <file name="Sistema_Facturacion.exe.config" size="1189">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>hQRuC2NxUlKSIBRjUHQ+om3Q/9IOaxlhyFBE1RaOIqQ=</dsig:DigestValue>
+      <dsig:DigestValue>ylgotUdKIiIMM793Yjfenqc9jHXmD9f3a7L0uFucwwA=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

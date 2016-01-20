@@ -1976,6 +1976,8 @@ Partial Public Class dbfacDataSetFACTURAS
 
         Private columnnombre_categoria As Global.System.Data.DataColumn
 
+        Private columnaux As Global.System.Data.DataColumn
+
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
@@ -2164,6 +2166,14 @@ Partial Public Class dbfacDataSetFACTURAS
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property auxColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnaux
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
          Global.System.ComponentModel.Browsable(False)> _
         Public ReadOnly Property Count() As Integer
@@ -2218,9 +2228,10 @@ Partial Public Class dbfacDataSetFACTURAS
                     ByVal medida As String, _
                     ByVal literal As String, _
                     ByVal Fecha_limite As Date, _
-                    ByVal nombre_categoria As String) As mostrar_factura2Row
+                    ByVal nombre_categoria As String, _
+                    ByVal aux As String) As mostrar_factura2Row
             Dim rowmostrar_factura2Row As mostrar_factura2Row = CType(Me.NewRow, mostrar_factura2Row)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Fecha_emision, Nit_Emisor, Total, Codigo_Control, Ci_Nit_Comprador, imagen, cantidad, NombreProducto, precio_unitario, TotalParcial, nombre_fac, tipo_documento, Num_Autorizacion, descripcion, medida, literal, Fecha_limite, nombre_categoria}
+            Dim columnValuesArray() As Object = New Object() {Nothing, Fecha_emision, Nit_Emisor, Total, Codigo_Control, Ci_Nit_Comprador, imagen, cantidad, NombreProducto, precio_unitario, TotalParcial, nombre_fac, tipo_documento, Num_Autorizacion, descripcion, medida, literal, Fecha_limite, nombre_categoria, aux}
             rowmostrar_factura2Row.ItemArray = columnValuesArray
             Me.Rows.Add(rowmostrar_factura2Row)
             Return rowmostrar_factura2Row
@@ -2268,6 +2279,7 @@ Partial Public Class dbfacDataSetFACTURAS
             Me.columnliteral = MyBase.Columns("literal")
             Me.columnFecha_limite = MyBase.Columns("Fecha_limite")
             Me.columnnombre_categoria = MyBase.Columns("nombre_categoria")
+            Me.columnaux = MyBase.Columns("aux")
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
@@ -2311,6 +2323,8 @@ Partial Public Class dbfacDataSetFACTURAS
             MyBase.Columns.Add(Me.columnFecha_limite)
             Me.columnnombre_categoria = New Global.System.Data.DataColumn("nombre_categoria", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnnombre_categoria)
+            Me.columnaux = New Global.System.Data.DataColumn("aux", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnaux)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnNumeroFactura}, True))
             Me.columnNumeroFactura.AutoIncrement = True
             Me.columnNumeroFactura.AllowDBNull = False
@@ -2328,6 +2342,7 @@ Partial Public Class dbfacDataSetFACTURAS
             Me.columnmedida.MaxLength = 50
             Me.columnliteral.MaxLength = 2147483647
             Me.columnnombre_categoria.MaxLength = 50
+            Me.columnaux.MaxLength = 2147483647
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
@@ -4293,6 +4308,21 @@ Partial Public Class dbfacDataSetFACTURAS
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property aux() As String
+            Get
+                Try
+                    Return CType(Me(Me.tablemostrar_factura2.auxColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'aux' de la tabla 'mostrar_factura2' es DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tablemostrar_factura2.auxColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Function IsFecha_emisionNull() As Boolean
             Return Me.IsNull(Me.tablemostrar_factura2.Fecha_emisionColumn)
         End Function
@@ -4505,6 +4535,18 @@ Partial Public Class dbfacDataSetFACTURAS
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub Setnombre_categoriaNull()
             Me(Me.tablemostrar_factura2.nombre_categoriaColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IsauxNull() As Boolean
+            Return Me.IsNull(Me.tablemostrar_factura2.auxColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetauxNull()
+            Me(Me.tablemostrar_factura2.auxColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
 
@@ -5409,6 +5451,7 @@ Namespace dbfacDataSetFACTURASTableAdapters
             tableMapping.ColumnMappings.Add("literal", "literal")
             tableMapping.ColumnMappings.Add("Fecha_limite", "Fecha_limite")
             tableMapping.ColumnMappings.Add("nombre_categoria", "nombre_categoria")
+            tableMapping.ColumnMappings.Add("aux", "aux")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
 
@@ -5416,7 +5459,7 @@ Namespace dbfacDataSetFACTURASTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.Sistema_Facturacion.My.MySettings.Default.BDFacturConnectionString
+            Me._connection.ConnectionString = Global.Sistema_Facturacion.My.MySettings.Default.Setting
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
