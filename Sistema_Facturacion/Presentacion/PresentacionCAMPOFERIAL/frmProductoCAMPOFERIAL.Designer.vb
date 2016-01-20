@@ -163,7 +163,7 @@ Partial Class frmProductoCAMPOFERIAL
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(93, 274)
+        Me.Label11.Location = New System.Drawing.Point(92, 279)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(42, 13)
         Me.Label11.TabIndex = 19
@@ -462,7 +462,7 @@ Partial Class frmProductoCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1131, 522)
+        Me.ClientSize = New System.Drawing.Size(1013, 522)
         Me.Controls.Add(Me.txtTag)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)

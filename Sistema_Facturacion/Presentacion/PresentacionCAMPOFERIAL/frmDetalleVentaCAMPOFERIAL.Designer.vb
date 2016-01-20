@@ -71,6 +71,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.txtStock = New System.Windows.Forms.NumericUpDown()
+        Me.dtpDel = New System.Windows.Forms.DateTimePicker()
+        Me.dtpAl = New System.Windows.Forms.DateTimePicker()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -269,6 +271,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.dtpAl)
+        Me.GroupBox1.Controls.Add(Me.dtpDel)
         Me.GroupBox1.Controls.Add(Me.lbmedida)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
@@ -447,7 +451,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(229, 336)
+        Me.btnGuardar.Location = New System.Drawing.Point(225, 353)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 35)
         Me.btnGuardar.TabIndex = 15
@@ -456,7 +460,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(145, 336)
+        Me.btnNuevo.Location = New System.Drawing.Point(144, 353)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 35)
         Me.btnNuevo.TabIndex = 12
@@ -545,11 +549,28 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtStock.TabIndex = 29
         Me.txtStock.Visible = False
         '
+        'dtpDel
+        '
+        Me.dtpDel.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.erroricono.SetIconAlignment(Me.dtpDel, System.Windows.Forms.ErrorIconAlignment.BottomLeft)
+        Me.dtpDel.Location = New System.Drawing.Point(145, 285)
+        Me.dtpDel.Name = "dtpDel"
+        Me.dtpDel.Size = New System.Drawing.Size(98, 20)
+        Me.dtpDel.TabIndex = 36
+        '
+        'dtpAl
+        '
+        Me.dtpAl.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpAl.Location = New System.Drawing.Point(145, 311)
+        Me.dtpAl.Name = "dtpAl"
+        Me.dtpAl.Size = New System.Drawing.Size(98, 20)
+        Me.dtpAl.TabIndex = 37
+        '
         'frmDetalleVentaCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(968, 422)
+        Me.ClientSize = New System.Drawing.Size(969, 422)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox2)
@@ -619,4 +640,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
     Friend WithEvents lbdetalle As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents lbliteral As System.Windows.Forms.Label
+    Friend WithEvents dtpAl As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtpDel As System.Windows.Forms.DateTimePicker
 End Class

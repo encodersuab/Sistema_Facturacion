@@ -165,7 +165,7 @@
                               <Value>=Fields!TotalParcial.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>0.00;(0.00)</Format>
+                                <Format>#,0.00;(#,0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -301,7 +301,7 @@
         </Paragraphs>
         <rd:DefaultName>Ci_Nit_Comprador</rd:DefaultName>
         <Top>2.63288cm</Top>
-        <Left>1.37978cm</Left>
+        <Left>1.35663cm</Left>
         <Height>0.60854cm</Height>
         <Width>7.13585cm</Width>
         <ZIndex>3</ZIndex>
@@ -574,7 +574,7 @@
                               <Value>=Fields!TotalParcial.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>0.00;(0.00)</Format>
+                                <Format>#,0.00;(#,0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1052,7 +1052,7 @@
                 <TextRun>
                   <Value>=Fields!Total.Value</Value>
                   <Style>
-                    <Format>0.0;(0.0)</Format>
+                    <Format>#,0.00;(#,0.00)</Format>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -1206,7 +1206,7 @@
                 <TextRun>
                   <Value>=Fields!Total.Value</Value>
                   <Style>
-                    <Format>0.0;(0.0)</Format>
+                    <Format>#,0.00;(#,0.00)</Format>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -1214,7 +1214,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Total</rd:DefaultName>
-          <Left>16.43973cm</Left>
+          <Left>16.51029cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <ZIndex>5</ZIndex>

@@ -147,6 +147,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
                     dts.gprecio_unitario = txtPrecioUnitario.Text
                     dts.gvalidez = "V"
                     dts.gdetalle = lbdetalle.Text
+                    dts.gaux = "DEL " + dtpDel.Value.Date + "AL " + dtpAl.Value.Date
                     '''''''''''''''''''''''''''''''''''''''''''
                     Dim ms As New IO.MemoryStream()
 
@@ -486,7 +487,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
 
                 f = dtpFecha.Value.Date
                 ' QrCodeImgControl1.Visible = True
-                QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
+                QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + txttotal.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text + "|" + "0" + "|" + "0" + "|" + "0" + "|" + "0"
                 'QrCodeImgControl1.Enabled = True
                 QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
                 '''''''' 
@@ -680,6 +681,14 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
     End Sub
 
     Private Sub txtStock_ValueChanged(sender As Object, e As EventArgs) Handles txtStock.ValueChanged
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub dtpDel_ValueChanged(sender As Object, e As EventArgs) Handles dtpDel.ValueChanged
 
     End Sub
 End Class

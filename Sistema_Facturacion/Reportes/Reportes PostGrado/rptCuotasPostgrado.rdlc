@@ -12,7 +12,7 @@
               <Width>5.96604cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>11.10554cm</Width>
+              <Width>10.94258cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -29,7 +29,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>validez</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -59,7 +61,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>nombre categoria</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -89,7 +93,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>detalle</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -226,10 +232,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>2.52208cm</Top>
-        <Left>0.09049cm</Left>
+        <Top>1.25208cm</Top>
         <Height>1.2cm</Height>
-        <Width>18.61089cm</Width>
+        <Width>18.44793cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -251,8 +256,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Num_Factura</rd:DefaultName>
-        <Top>1.37583cm</Top>
-        <Left>3.26549cm</Left>
+        <Top>0.42333cm</Top>
+        <Left>2.69452cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>1</ZIndex>
@@ -275,15 +280,17 @@
             <TextRuns>
               <TextRun>
                 <Value>Num Factura</Value>
-                <Style />
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox8</rd:DefaultName>
-        <Top>1.35791cm</Top>
-        <Left>0.46091cm</Left>
+        <Top>0.40541cm</Top>
+        <Left>0.20744cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>2</ZIndex>
@@ -313,10 +320,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Ci_Nit_Comprador</rd:DefaultName>
-        <Top>1.40229cm</Top>
-        <Left>8.63653cm</Left>
+        <Top>0.44979cm</Top>
+        <Left>8.34306cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
+        <Width>2.54cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -337,15 +344,17 @@
             <TextRuns>
               <TextRun>
                 <Value>CI / NIT</Value>
-                <Style />
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox16</rd:DefaultName>
-        <Top>1.38437cm</Top>
-        <Left>6.09653cm</Left>
+        <Top>0.43187cm</Top>
+        <Left>5.84306cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>4</ZIndex>
@@ -375,8 +384,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_fac</rd:DefaultName>
-        <Top>1.40229cm</Top>
-        <Left>14.0646cm</Left>
+        <Top>0.45833cm</Top>
+        <Left>13.81113cm</Left>
         <Height>0.6cm</Height>
         <Width>4.6368cm</Width>
         <ZIndex>5</ZIndex>
@@ -399,17 +408,19 @@
             <TextRuns>
               <TextRun>
                 <Value>nombre fac</Value>
-                <Style />
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox18</rd:DefaultName>
-        <Top>1.41083cm</Top>
-        <Left>11.3882cm</Left>
+        <Top>0.45833cm</Top>
+        <Left>11.45223cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
+        <Width>2.32362cm</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -423,13 +434,13 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>1.57536in</Height>
+    <Height>1.02328in</Height>
     <Style />
   </Body>
-  <Width>7.39838in</Width>
+  <Width>7.38796in</Width>
   <Page>
     <PageHeader>
-      <Height>2.54cm</Height>
+      <Height>2.54273cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -454,8 +465,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>1.36601cm</Top>
-          <Left>0.02646cm</Left>
+          <Top>1.3371cm</Top>
           <Height>1.12917cm</Height>
           <Width>18.76543cm</Width>
           <Style>
@@ -500,7 +510,6 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>0.04482cm</Top>
           <Height>1.32119cm</Height>
           <Width>18.76543cm</Width>
           <ZIndex>1</ZIndex>
@@ -518,8 +527,7 @@
           <Source>Embedded</Source>
           <Value>imagen</Value>
           <Sizing>FitProportional</Sizing>
-          <Top>0.04482cm</Top>
-          <Left>0.02646cm</Left>
+          <Left>0.06403cm</Left>
           <Height>2.14877cm</Height>
           <Width>1.51285cm</Width>
           <ZIndex>2</ZIndex>
@@ -561,7 +569,6 @@
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
           <Top>0.03486cm</Top>
-          <Left>0.18099cm</Left>
           <Height>0.6cm</Height>
           <Width>18.45636cm</Width>
           <Style>
@@ -592,7 +599,6 @@
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
           <Top>0.67014cm</Top>
-          <Left>0.18099cm</Left>
           <Height>0.6cm</Height>
           <Width>18.45636cm</Width>
           <ZIndex>1</ZIndex>
@@ -624,7 +630,6 @@
           </Paragraphs>
           <rd:DefaultName>Textbox8</rd:DefaultName>
           <Top>1.27014cm</Top>
-          <Left>0.15453cm</Left>
           <Height>0.6cm</Height>
           <Width>18.45636cm</Width>
           <ZIndex>2</ZIndex>

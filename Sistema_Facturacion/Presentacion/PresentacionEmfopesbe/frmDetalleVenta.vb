@@ -434,7 +434,7 @@ Partial Public Class frmDetalleVenta
 
                 f = dtpFecha.Value.Date
                 ' QrCodeImgControl1.Visible = True
-                QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text
+                QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + txttotal.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text + "|" + "0" + "|" + "0" + "|" + "0" + "|" + "0"
                 'QrCodeImgControl1.Enabled = True
                 QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
                 '''''''' 

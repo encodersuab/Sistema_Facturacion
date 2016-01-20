@@ -31,7 +31,7 @@ Public Class fDetalleVentaCAMPOFERIAL
     Public Function insertar(ByVal dts As vDetalleVentaCAMPOFERIAL) As Boolean
         Try
             conectado()
-            cmd = New SqlCommand("insertar_detalle_venta")
+            cmd = New SqlCommand("insertar_detalle_venta_campoferial")
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
@@ -42,6 +42,7 @@ Public Class fDetalleVentaCAMPOFERIAL
             cmd.Parameters.AddWithValue("@precio_unitario", dts.gprecio_unitario)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
             cmd.Parameters.AddWithValue("@detalle", dts.gdetalle)
+            cmd.Parameters.AddWithValue("@aux", dts.gaux)
             'cmd.Parameters.AddWithValue("@imagen", dts.gimagen)
 
 

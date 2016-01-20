@@ -139,7 +139,7 @@ Partial Class frmReporteXclienteCAMPOFERIAL
         Me.Controls.Add(Me.dtpFechaFin)
         Me.Controls.Add(Me.dtpFechaInicio)
         Me.Name = "frmReporteXclienteCAMPOFERIAL"
-        Me.Text = "frmReporteXcliente"
+        Me.Text = "frmReporteXclienteCAMPOFERIAL"
         CType(Me.mostrar_venta_porFecha_campoferialBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dbfacDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -7,7 +7,7 @@ Public Class Conexion
 
     Protected Function conectado()
         Try
-            cnn = New SqlConnection("Data Source=192.168.1.25;Initial Catalog=BDFactur;User ID=union;Password=123456")
+            cnn = New SqlConnection("Data Source=192.168.1.25;Initial Catalog=BDFactu;User ID=union;Password=123456")
             cnn.Open()
             Return True
         Catch ex As Exception
