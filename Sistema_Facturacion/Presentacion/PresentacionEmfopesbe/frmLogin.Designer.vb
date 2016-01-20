@@ -166,7 +166,7 @@ Partial Class frmLogin
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(246, 14)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "EMSOPESBE RED-RUBI CAMPO-FERIAL POST-GRADO"
+        Me.Label4.Text = "EMFOPESBE RED-RUBI CAMPO-FERIAL POST-GRADO"
         '
         'PictureBox1
         '

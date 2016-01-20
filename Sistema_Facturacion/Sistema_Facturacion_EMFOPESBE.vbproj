@@ -836,7 +836,6 @@
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\frmFactura2.resx">
       <DependentUpon>frmFactura2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptFact2.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptFactu.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Campo Ferial\rptVentasGCAMPOFERIA.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\frmDetalladoVenta.resx">

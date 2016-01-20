@@ -148,7 +148,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
                     dts.gprecio_unitario = txtPrecioUnitario.Text
                     dts.gvalidez = "V"
                     dts.gdetalle = lbdetalle.Text
-                    dts.gaux = "DEL " + dtpDel.Value.Date + "AL " + dtpAl.Value.Date
+                    dts.gaux = "DEL " + dtpDel.Value.Date + " AL " + dtpAl.Value.Date
                     '''''''''''''''''''''''''''''''''''''''''''
                     Dim ms As New IO.MemoryStream()
 
