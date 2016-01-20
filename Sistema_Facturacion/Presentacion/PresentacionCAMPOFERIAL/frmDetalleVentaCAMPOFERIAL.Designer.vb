@@ -25,6 +25,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVentaCAMPOFERIAL))
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.dtpDel = New System.Windows.Forms.DateTimePicker()
         Me.txtDD = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -44,6 +45,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.dtpAl = New System.Windows.Forms.DateTimePicker()
         Me.lbmedida = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
@@ -71,8 +73,9 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.txtStock = New System.Windows.Forms.NumericUpDown()
-        Me.dtpDel = New System.Windows.Forms.DateTimePicker()
-        Me.dtpAl = New System.Windows.Forms.DateTimePicker()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.lbFechaLimite = New System.Windows.Forms.Label()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,6 +89,15 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         Me.erroricono.ContainerControl = Me
         '
+        'dtpDel
+        '
+        Me.dtpDel.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.erroricono.SetIconAlignment(Me.dtpDel, System.Windows.Forms.ErrorIconAlignment.BottomLeft)
+        Me.dtpDel.Location = New System.Drawing.Point(145, 303)
+        Me.dtpDel.Name = "dtpDel"
+        Me.dtpDel.Size = New System.Drawing.Size(98, 20)
+        Me.dtpDel.TabIndex = 36
+        '
         'txtDD
         '
         Me.txtDD.Location = New System.Drawing.Point(270, -4)
@@ -97,6 +109,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.lbFechaLimite)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.lbliteral)
         Me.GroupBox2.Controls.Add(Me.lbdetalle)
@@ -114,7 +127,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(376, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(581, 400)
+        Me.GroupBox2.Size = New System.Drawing.Size(581, 424)
         Me.GroupBox2.TabIndex = 9
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
@@ -193,7 +206,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(210, 353)
+        Me.Label11.Location = New System.Drawing.Point(215, 353)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(71, 13)
         Me.Label11.TabIndex = 35
@@ -203,7 +216,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         Me.txttotal.Enabled = False
         Me.txttotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txttotal.Location = New System.Drawing.Point(287, 342)
+        Me.txttotal.Location = New System.Drawing.Point(292, 342)
         Me.txttotal.Name = "txttotal"
         Me.txttotal.Size = New System.Drawing.Size(100, 29)
         Me.txttotal.TabIndex = 34
@@ -271,6 +284,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label14)
+        Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Controls.Add(Me.dtpAl)
         Me.GroupBox1.Controls.Add(Me.dtpDel)
         Me.GroupBox1.Controls.Add(Me.lbmedida)
@@ -301,15 +316,23 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.GroupBox1.Controls.Add(Me.txtIdVenta)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(358, 400)
+        Me.GroupBox1.Size = New System.Drawing.Size(358, 424)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
+        'dtpAl
+        '
+        Me.dtpAl.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpAl.Location = New System.Drawing.Point(145, 329)
+        Me.dtpAl.Name = "dtpAl"
+        Me.dtpAl.Size = New System.Drawing.Size(98, 20)
+        Me.dtpAl.TabIndex = 37
+        '
         'lbmedida
         '
         Me.lbmedida.AutoSize = True
-        Me.lbmedida.Location = New System.Drawing.Point(243, 237)
+        Me.lbmedida.Location = New System.Drawing.Point(243, 247)
         Me.lbmedida.Name = "lbmedida"
         Me.lbmedida.Size = New System.Drawing.Size(0, 13)
         Me.lbmedida.TabIndex = 35
@@ -335,7 +358,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'txtCantidad
         '
         Me.txtCantidad.DecimalPlaces = 3
-        Me.txtCantidad.Location = New System.Drawing.Point(145, 233)
+        Me.txtCantidad.Location = New System.Drawing.Point(145, 243)
         Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(92, 20)
@@ -362,7 +385,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'txtPrecioUnitario
         '
         Me.txtPrecioUnitario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtPrecioUnitario.Location = New System.Drawing.Point(144, 258)
+        Me.txtPrecioUnitario.Location = New System.Drawing.Point(144, 268)
         Me.txtPrecioUnitario.Name = "txtPrecioUnitario"
         Me.txtPrecioUnitario.Size = New System.Drawing.Size(93, 20)
         Me.txtPrecioUnitario.TabIndex = 27
@@ -370,7 +393,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(35, 261)
+        Me.Label9.Location = New System.Drawing.Point(35, 271)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(90, 13)
         Me.Label9.TabIndex = 26
@@ -379,7 +402,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(77, 235)
+        Me.Label7.Location = New System.Drawing.Point(77, 245)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 13)
         Me.Label7.TabIndex = 24
@@ -451,7 +474,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(225, 353)
+        Me.btnGuardar.Location = New System.Drawing.Point(218, 369)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 35)
         Me.btnGuardar.TabIndex = 15
@@ -460,7 +483,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(144, 353)
+        Me.btnNuevo.Location = New System.Drawing.Point(145, 369)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 35)
         Me.btnNuevo.TabIndex = 12
@@ -549,28 +572,38 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtStock.TabIndex = 29
         Me.txtStock.Visible = False
         '
-        'dtpDel
+        'Label13
         '
-        Me.dtpDel.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.erroricono.SetIconAlignment(Me.dtpDel, System.Windows.Forms.ErrorIconAlignment.BottomLeft)
-        Me.dtpDel.Location = New System.Drawing.Point(145, 285)
-        Me.dtpDel.Name = "dtpDel"
-        Me.dtpDel.Size = New System.Drawing.Size(98, 20)
-        Me.dtpDel.TabIndex = 36
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(97, 309)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(28, 13)
+        Me.Label13.TabIndex = 38
+        Me.Label13.Text = "DEL"
         '
-        'dtpAl
+        'Label14
         '
-        Me.dtpAl.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpAl.Location = New System.Drawing.Point(145, 311)
-        Me.dtpAl.Name = "dtpAl"
-        Me.dtpAl.Size = New System.Drawing.Size(98, 20)
-        Me.dtpAl.TabIndex = 37
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(105, 335)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(20, 13)
+        Me.Label14.TabIndex = 39
+        Me.Label14.Text = "AL"
+        '
+        'lbFechaLimite
+        '
+        Me.lbFechaLimite.AutoSize = True
+        Me.lbFechaLimite.Location = New System.Drawing.Point(205, 63)
+        Me.lbFechaLimite.Name = "lbFechaLimite"
+        Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
+        Me.lbFechaLimite.TabIndex = 45
+        Me.lbFechaLimite.Text = "FechaLimite"
         '
         'frmDetalleVentaCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(969, 422)
+        Me.ClientSize = New System.Drawing.Size(969, 448)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox2)
@@ -642,4 +675,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
     Friend WithEvents lbliteral As System.Windows.Forms.Label
     Friend WithEvents dtpAl As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpDel As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents lbFechaLimite As System.Windows.Forms.Label
 End Class

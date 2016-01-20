@@ -73,6 +73,7 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtDD = New System.Windows.Forms.TextBox()
+        Me.lbFechaLimite = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,6 +85,7 @@ Partial Class frmDetalleVenta
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.lbFechaLimite)
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.lbliteral)
         Me.GroupBox2.Controls.Add(Me.lbdetalle)
@@ -567,6 +569,15 @@ Partial Class frmDetalleVenta
         Me.txtDD.Text = "0"
         Me.txtDD.Visible = False
         '
+        'lbFechaLimite
+        '
+        Me.lbFechaLimite.AutoSize = True
+        Me.lbFechaLimite.Location = New System.Drawing.Point(183, 66)
+        Me.lbFechaLimite.Name = "lbFechaLimite"
+        Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
+        Me.lbFechaLimite.TabIndex = 46
+        Me.lbFechaLimite.Text = "FechaLimite"
+        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -642,4 +653,5 @@ Partial Class frmDetalleVenta
     Friend WithEvents btnsalir As System.Windows.Forms.Button
     Friend WithEvents lbliteral As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents lbFechaLimite As System.Windows.Forms.Label
 End Class

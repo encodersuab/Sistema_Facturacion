@@ -229,7 +229,7 @@ Public Class fQr
             cmd.Parameters.AddWithValue("@IdVenta", dts.gIdVenta)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
             cmd.Parameters.AddWithValue("@literal", dts.gliteral)
-
+            cmd.Parameters.AddWithValue("@fechaLimite", dts.gfecha_limite)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -261,7 +261,7 @@ Public Class fQr
             cmd.Parameters.AddWithValue("@IdVenta", dts.gIdVenta)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
             cmd.Parameters.AddWithValue("@literal", dts.gliteral)
-
+            cmd.Parameters.AddWithValue("@fechaLimite", dts.gfecha_limite)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -293,7 +293,7 @@ Public Class fQr
             cmd.Parameters.AddWithValue("@IdVenta", dts.gIdVenta)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
             cmd.Parameters.AddWithValue("@literal", dts.gliteral)
-
+            cmd.Parameters.AddWithValue("@fechaLimite", dts.gfecha_limite)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -325,7 +325,7 @@ Public Class fQr
             cmd.Parameters.AddWithValue("@IdVenta", dts.gIdVenta)
             cmd.Parameters.AddWithValue("@validez", dts.gvalidez)
             cmd.Parameters.AddWithValue("@literal", dts.gliteral)
-
+            cmd.Parameters.AddWithValue("@fechaLimite", dts.gfecha_limite)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else

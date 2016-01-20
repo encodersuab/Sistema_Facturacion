@@ -30,6 +30,7 @@ Partial Public Class frmDetalleVenta
         txtnituab.Text = dt1.Rows(0)("nitEmisor").ToString
         lbllave.Text = dt1.Rows(0)("llave").ToString
         lbnumAutor.Text = dt1.Rows(0)("numAutorizacion").ToString
+        lbFechaLimite.Text = dt1.Rows(0)("fechaLimite").ToString
     End Sub
     Public Sub limpiar()
         btnGuardar.Visible = True
@@ -449,6 +450,7 @@ Partial Public Class frmDetalleVenta
                 dts.gIdVenta = txtIdVenta.Text
                 dts.gvalidez = "V"
                 dts.gliteral = lbliteral.Text
+                dts.gfecha_limite = lbFechaLimite.Text
                 ''''''''
                 If func.insertar1(dts) Then
                     frmFactura1.txtnumfactura.Text = aux

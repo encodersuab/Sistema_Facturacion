@@ -17,7 +17,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
         QrCodeImgControl1.Visible = False
         limpiar()
         mostrarDatosImpuestos()
-        
+
         '  txtIdVenta.Text = datalistado.SelectedCells.Item(8).Value
     End Sub
 
@@ -29,6 +29,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
         txtnituab.Text = dt1.Rows(0)("nitEmisor").ToString
         lbllave.Text = dt1.Rows(0)("llave").ToString
         lbnumAutor.Text = dt1.Rows(0)("numAutorizacion").ToString
+        lbFechaLimite.Text = dt1.Rows(0)("fechaLimite").ToString
     End Sub
     Public Sub limpiar()
         btnGuardar.Visible = True
@@ -87,7 +88,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
 
 
         Buscar()
-        
+
 
 
 
@@ -502,6 +503,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
                 dts.gIdVenta = txtIdVenta.Text
                 dts.gvalidez = "V"
                 dts.gliteral = lbliteral.Text
+                dts.gfecha_limite = lbFechaLimite.Text
                 ''''''''
                 If func.insertar2(dts) Then
                     frmFactura2.txtnumfactura.Text = aux
@@ -689,6 +691,10 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
     End Sub
 
     Private Sub dtpDel_ValueChanged(sender As Object, e As EventArgs) Handles dtpDel.ValueChanged
+
+    End Sub
+
+    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
 
     End Sub
 End Class

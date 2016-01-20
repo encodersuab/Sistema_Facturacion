@@ -850,8 +850,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Fecha_emision</rd:DefaultName>
-          <Top>0.4276cm</Top>
-          <Left>2.74724cm</Left>
+          <Top>0.42759cm</Top>
+          <Left>5.45698cm</Left>
           <Height>0.57354cm</Height>
           <Width>2.96713cm</Width>
           <Style>
@@ -883,8 +883,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Num_Autorizacion</rd:DefaultName>
-          <Top>1.53885cm</Top>
-          <Left>2.74724cm</Left>
+          <Top>1.53884cm</Top>
+          <Left>5.45698cm</Left>
           <Height>0.57354cm</Height>
           <Width>2.96713cm</Width>
           <ZIndex>1</ZIndex>
@@ -917,8 +917,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>NumeroFactura</rd:DefaultName>
-          <Top>0.98322cm</Top>
-          <Left>2.74724cm</Left>
+          <Top>0.98321cm</Top>
+          <Left>5.45698cm</Left>
           <Height>0.57354cm</Height>
           <Width>2.96713cm</Width>
           <ZIndex>2</ZIndex>
@@ -950,8 +950,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Fecha_emision</rd:DefaultName>
-          <Top>0.42761cm</Top>
-          <Left>13.26507cm</Left>
+          <Top>0.4276cm</Top>
+          <Left>15.97481cm</Left>
           <Height>0.57354cm</Height>
           <Width>2.96713cm</Width>
           <ZIndex>3</ZIndex>
@@ -982,8 +982,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Num_Autorizacion</rd:DefaultName>
-          <Top>1.53886cm</Top>
-          <Left>13.26507cm</Left>
+          <Top>1.53885cm</Top>
+          <Left>15.97481cm</Left>
           <Height>0.57354cm</Height>
           <Width>2.96713cm</Width>
           <ZIndex>4</ZIndex>
@@ -1014,8 +1014,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>NumeroFactura</rd:DefaultName>
-          <Top>0.98323cm</Top>
-          <Left>13.26507cm</Left>
+          <Top>0.98322cm</Top>
+          <Left>15.97481cm</Left>
           <Height>0.57354cm</Height>
           <Width>2.96713cm</Width>
           <ZIndex>5</ZIndex>
@@ -1110,7 +1110,9 @@
               <TextRuns>
                 <TextRun>
                   <Value>=Fields!Fecha_limite.Value</Value>
-                  <Style />
+                  <Style>
+                    <Format>d</Format>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
@@ -1266,7 +1268,9 @@
               <TextRuns>
                 <TextRun>
                   <Value>=Fields!Fecha_limite.Value</Value>
-                  <Style />
+                  <Style>
+                    <Format>d</Format>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
@@ -1417,6 +1421,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox48</rd:DefaultName>
+          <Top>0cm</Top>
           <Left>15.21195cm</Left>
           <Height>0.61049cm</Height>
           <Width>1.23cm</Width>

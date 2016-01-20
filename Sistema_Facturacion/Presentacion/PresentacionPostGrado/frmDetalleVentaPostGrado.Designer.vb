@@ -73,6 +73,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.lbFechaLimite = New System.Windows.Forms.Label()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -410,6 +411,7 @@ Partial Class frmDetalleVentaPostGrado
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.lbFechaLimite)
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.lbliteral)
         Me.GroupBox2.Controls.Add(Me.btnConsultarCuotas)
@@ -572,6 +574,15 @@ Partial Class frmDetalleVentaPostGrado
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
         '
+        'lbFechaLimite
+        '
+        Me.lbFechaLimite.AutoSize = True
+        Me.lbFechaLimite.Location = New System.Drawing.Point(205, 63)
+        Me.lbFechaLimite.Name = "lbFechaLimite"
+        Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
+        Me.lbFechaLimite.TabIndex = 46
+        Me.lbFechaLimite.Text = "FechaLimite"
+        '
         'frmDetalleVentaPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -647,4 +658,5 @@ Partial Class frmDetalleVentaPostGrado
     Friend WithEvents btnConsultarCuotas As System.Windows.Forms.Button
     Friend WithEvents lbliteral As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents lbFechaLimite As System.Windows.Forms.Label
 End Class

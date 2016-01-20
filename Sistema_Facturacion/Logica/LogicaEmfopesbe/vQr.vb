@@ -2,7 +2,7 @@
     Dim IDCodQr, Num_Factura, IdVenta As Integer
     Dim validez, Nit_Emisor, Codigo_Control, Ci_Nit_Comprador, Num_Autorizacion, literal As String
     Dim Total As Double
-    Dim fecha_emision As Date
+    Dim fecha_emision, fecha_limite As Date
     Dim imagen() As Byte
 
     Public Property gIDCodQr
@@ -114,11 +114,20 @@
 
         End Set
     End Property
+    Public Property gfecha_limite
+        Get
+            Return fecha_limite
+        End Get
+        Set(value)
+            fecha_limite = value
+
+        End Set
+    End Property
     Public Sub New()
 
     End Sub
     Public Sub New(ByVal IDCodQr As Integer, ByVal Num_Factura As Integer, ByVal Num_Autorizacion As String, ByVal IdVenta As Integer, ByVal Nit_emisor As String,
-                   ByVal Codigo_Control As String, ByVal Ci_Nit_Comprador As String, ByVal Total As Double, ByVal fecha_emision As Date, ByVal imagen As Byte, ByVal validez As String, ByVal literal As String)
+                   ByVal Codigo_Control As String, ByVal Ci_Nit_Comprador As String, ByVal Total As Double, ByVal fecha_emision As Date, ByVal imagen As Byte, ByVal validez As String, ByVal literal As String, ByVal fecha_limite As Date)
 
 
         gIDCodQr = IDCodQr
@@ -133,7 +142,7 @@
         gimagen = imagen
         gvalidez = validez
         gliteral = literal
-
+        gfecha_limite = fecha_limite
 
     End Sub
 End Class

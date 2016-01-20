@@ -1111,7 +1111,9 @@
               <TextRuns>
                 <TextRun>
                   <Value>=Fields!Fecha_limite.Value</Value>
-                  <Style />
+                  <Style>
+                    <Format>d</Format>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
@@ -1266,7 +1268,9 @@
               <TextRuns>
                 <TextRun>
                   <Value>=Fields!Fecha_limite.Value</Value>
-                  <Style />
+                  <Style>
+                    <Format>d</Format>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style />
