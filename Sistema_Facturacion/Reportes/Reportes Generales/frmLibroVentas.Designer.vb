@@ -23,19 +23,29 @@ Partial Class frmLibroVentas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Me.mostrar_libroVentasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.dbfacDataSetLIBROVENTA = New Sistema_Facturacion.dbfacDataSetLIBROVENTA()
         Me.btngenerar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.dbfacDataSetLIBROVENTA = New Sistema_Facturacion.dbfacDataSetLIBROVENTA()
-        Me.mostrar_libroVentasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.mostrar_libroVentasTableAdapter = New Sistema_Facturacion.dbfacDataSetLIBROVENTATableAdapters.mostrar_libroVentasTableAdapter()
-        CType(Me.dbfacDataSetLIBROVENTA, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         CType(Me.mostrar_libroVentasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dbfacDataSetLIBROVENTA, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'mostrar_libroVentasBindingSource
+        '
+        Me.mostrar_libroVentasBindingSource.DataMember = "mostrar_libroVentas"
+        Me.mostrar_libroVentasBindingSource.DataSource = Me.dbfacDataSetLIBROVENTA
+        '
+        'dbfacDataSetLIBROVENTA
+        '
+        Me.dbfacDataSetLIBROVENTA.DataSetName = "dbfacDataSetLIBROVENTA"
+        Me.dbfacDataSetLIBROVENTA.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'btngenerar
         '
@@ -80,31 +90,21 @@ Partial Class frmLibroVentas
         Me.dtpFechaInicio.Size = New System.Drawing.Size(98, 20)
         Me.dtpFechaInicio.TabIndex = 34
         '
+        'mostrar_libroVentasTableAdapter
+        '
+        Me.mostrar_libroVentasTableAdapter.ClearBeforeFill = True
+        '
         'ReportViewer1
         '
         Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
-        ReportDataSource1.Name = "DataSet1"
-        ReportDataSource1.Value = Me.mostrar_libroVentasBindingSource
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
+        ReportDataSource2.Name = "DataSet1"
+        ReportDataSource2.Value = Me.mostrar_libroVentasBindingSource
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptLibroVentasEstandar.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(913, 512)
         Me.ReportViewer1.TabIndex = 38
-        '
-        'dbfacDataSetLIBROVENTA
-        '
-        Me.dbfacDataSetLIBROVENTA.DataSetName = "dbfacDataSetLIBROVENTA"
-        Me.dbfacDataSetLIBROVENTA.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'mostrar_libroVentasBindingSource
-        '
-        Me.mostrar_libroVentasBindingSource.DataMember = "mostrar_libroVentas"
-        Me.mostrar_libroVentasBindingSource.DataSource = Me.dbfacDataSetLIBROVENTA
-        '
-        'mostrar_libroVentasTableAdapter
-        '
-        Me.mostrar_libroVentasTableAdapter.ClearBeforeFill = True
         '
         'frmLibroVentas
         '
@@ -119,8 +119,8 @@ Partial Class frmLibroVentas
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "frmLibroVentas"
         Me.Text = "frmLibroVentas"
-        CType(Me.dbfacDataSetLIBROVENTA, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mostrar_libroVentasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dbfacDataSetLIBROVENTA, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -130,8 +130,8 @@ Partial Class frmLibroVentas
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents dtpFechaFin As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpFechaInicio As System.Windows.Forms.DateTimePicker
-    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents mostrar_libroVentasBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents dbfacDataSetLIBROVENTA As Sistema_Facturacion.dbfacDataSetLIBROVENTA
     Friend WithEvents mostrar_libroVentasTableAdapter As Sistema_Facturacion.dbfacDataSetLIBROVENTATableAdapters.mostrar_libroVentasTableAdapter
+    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
 End Class

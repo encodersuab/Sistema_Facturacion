@@ -12,9 +12,10 @@
     End Sub
 
     Private Sub btngenerar_Click(sender As Object, e As EventArgs) Handles btngenerar.Click
-        Me.mostrar_libroVentasTableAdapter.Fill(Me.dbfacDataSetLIBROVENTA.mostrar_libroVentas, dtpFechaInicio.Value, dtpFechaFin.Value)
 
-        Me.ReportViewer1.RefreshReport()
+            Me.mostrar_libroVentasTableAdapter.Fill(Me.dbfacDataSetLIBROVENTA.mostrar_libroVentas, dtpFechaInicio.Value, dtpFechaFin.Value)
+            Me.ReportViewer1.RefreshReport()
+
     End Sub
 
     Private Sub ReportViewer1_Load(sender As Object, e As EventArgs) Handles ReportViewer1.Load

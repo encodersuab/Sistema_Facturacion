@@ -13,17 +13,19 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\Users\Blady\Desktop\instalador2016\</PublishUrl>
+    <PublishUrl>\\192.168.1.25\instaladorHIVE\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>23</ApplicationRevision>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>33</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -129,6 +131,9 @@
     <Compile Include="dbfacDataSetLIBROVENTA.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>dbfacDataSetLIBROVENTA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbfacDataSetLIBROVENTA.vb">
       <DependentUpon>dbfacDataSetLIBROVENTA.xsd</DependentUpon>
     </Compile>
     <Compile Include="dbfacDataSetREPORTES.Designer.vb">
@@ -522,6 +527,30 @@
     <Compile Include="Reportes\Reportes Generales\frmImpuestos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmLibroVenta0.Designer.vb">
+      <DependentUpon>frmLibroVenta0.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmLibroVenta0.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmLibroVenta1.Designer.vb">
+      <DependentUpon>frmLibroVenta1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmLibroVenta1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmLibroVenta2.Designer.vb">
+      <DependentUpon>frmLibroVenta2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmLibroVenta2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmLibroVenta3.Designer.vb">
+      <DependentUpon>frmLibroVenta3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmLibroVenta3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\Reportes Generales\reportePrueba.Designer.vb">
       <DependentUpon>reportePrueba.vb</DependentUpon>
     </Compile>
@@ -844,6 +873,18 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\frmImpuestos.resx">
       <DependentUpon>frmImpuestos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Generales\frmLibroVenta0.resx">
+      <DependentUpon>frmLibroVenta0.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Generales\frmLibroVenta1.resx">
+      <DependentUpon>frmLibroVenta1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Generales\frmLibroVenta2.resx">
+      <DependentUpon>frmLibroVenta2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Generales\frmLibroVenta3.resx">
+      <DependentUpon>frmLibroVenta3.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Generales\reportePrueba.resx">
       <DependentUpon>reportePrueba.vb</DependentUpon>
     </EmbeddedResource>
@@ -873,6 +914,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Generales\rptDetalladoVentas.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptImpuestos.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVenta0.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVenta1.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVenta2.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVenta3.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentaIVA.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentasEstandar.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasG.rdlc" />

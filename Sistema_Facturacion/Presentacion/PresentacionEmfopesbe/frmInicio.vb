@@ -585,8 +585,7 @@ Public Class frmInicioF
     End Sub
 
     Private Sub LibroVentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LibroVentasToolStripMenuItem.Click
-        frmLibroVentas.MdiParent = Me
-        frmLibroVentas.Show()
+        
     End Sub
 
     Private Sub FacturaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FacturaToolStripMenuItem.Click
@@ -618,5 +617,30 @@ Public Class frmInicioF
     Private Sub RpteNºCuotasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RpteNºCuotasToolStripMenuItem.Click
         frmReporteCuotas.MdiParent = Me
         frmReporteCuotas.Show()
+    End Sub
+
+    Private Sub TODOSToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TODOSToolStripMenuItem.Click
+        frmLibroVentas.MdiParent = Me
+        frmLibroVentas.Show()
+    End Sub
+
+    Private Sub Sucursal0ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Sucursal0ToolStripMenuItem.Click
+        frmLibroVenta0.MdiParent = Me
+        frmLibroVenta0.Show()
+    End Sub
+
+    Private Sub Sucursal1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Sucursal1ToolStripMenuItem.Click
+        frmLibroVenta1.MdiParent = Me
+        frmLibroVenta1.Show()
+    End Sub
+
+    Private Sub Sucursal2ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Sucursal2ToolStripMenuItem.Click
+        frmLibroVenta2.MdiParent = Me
+        frmLibroVenta2.Show()
+    End Sub
+
+    Private Sub Sucursal3ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Sucursal3ToolStripMenuItem.Click
+        frmLibroVenta3.MdiParent = Me
+        frmLibroVenta3.Show()
     End Sub
 End Class

@@ -36,12 +36,12 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
         txtIdProducto.Text = ""
         txtNombreProducto.Text = ""
         txtPrecioUnitario.Text = ""
-        txtCantidad.Text = 0
+        lbCantidad.Text = 0
         txtStock.Text = 0
         If txtDD.Text = 1 Then
             Button2.Enabled = False
             btnBuscarProducto.Enabled = False
-            txtCantidad.Enabled = False
+            lbCantidad.Enabled = False
             txtPrecioUnitario.Enabled = False
             lbmedida.Visible = False
             '     btncancelar.Enabled = False
@@ -50,7 +50,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
         Else
             Button2.Enabled = True
             btnBuscarProducto.Enabled = True
-            txtCantidad.Enabled = True
+            lbCantidad.Enabled = True
             txtPrecioUnitario.Enabled = True
             lbmedida.Visible = True
             '    btncancelar.Enabled = True
@@ -131,11 +131,11 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
 
     End Sub
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        If txtCantidad.Text = 0 Then
+        If lbCantidad.Text = 0 Then
             MessageBox.Show("CANTIDAD INCORRECTA")
         Else
 
-            If Me.ValidateChildren = True And txtIdProducto.Text <> "" And txtCantidad.Text <> "" And txtPrecioUnitario.Text <> "" Then
+            If Me.ValidateChildren = True And txtIdProducto.Text <> "" And lbCantidad.Text <> "" And txtPrecioUnitario.Text <> "" Then
                 'System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
                 Try
 
@@ -144,7 +144,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
 
                     dts.gidventa = txtIdVenta.Text
                     dts.gidproducto = txtIdProducto.Text
-                    dts.gcantidad = txtCantidad.Text
+                    dts.gcantidad = lbCantidad.Text
                     dts.gprecio_unitario = txtPrecioUnitario.Text
                     dts.gvalidez = "V"
                     dts.gdetalle = lbdetalle.Text
@@ -626,7 +626,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
         End If
     End Sub
 
-    Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress
+    Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs)
         If ((e.KeyChar = "."c) OrElse (e.KeyChar = ","c)) Then
             ' Obtenemos el carácter separador decimal existente
             ' actualmente en la configuración regional de Windows.
@@ -664,13 +664,13 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
     '        MessageBox.Show("ingrese un monto  a vender")
     '    End Try
     'End Sub
-    Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
+    Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs)
         Dim cant As Double
-        cant = txtCantidad.Text
-        If txtCantidad.Text >= txtStock.Value Then
+        cant = lbCantidad.Text
+        If lbCantidad.Text >= txtStock.Value Then
             MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
             'btnGuardar.Visible = 0
-            txtCantidad.Text = txtStock.Value
+            lbCantidad.Text = txtStock.Value
         Else
             btnGuardar.Visible = 1
         End If
@@ -696,5 +696,44 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
 
     Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
 
+    End Sub
+
+    Private Sub Label15_Click(sender As Object, e As EventArgs) Handles lbCantidad.Click
+        Dim cant As Double
+        cant = lbCantidad.Text
+        If lbCantidad.Text >= txtStock.Value Then
+            MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
+            'btnGuardar.Visible = 0
+            lbCantidad.Text = txtStock.Value
+        Else
+            btnGuardar.Visible = 1
+        End If
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim cant As Double
+        cant = lbCantidad.Text
+        If lbCantidad.Text >= txtStock.Value Then
+            MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
+            'btnGuardar.Visible = 0
+            lbCantidad.Text = txtStock.Value
+        Else
+            btnGuardar.Visible = 1
+            lbCantidad.Text = Double.Parse(lbCantidad.Text) + 0.5
+        End If
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        If (lbCantidad.Text > 0) Then
+            lbCantidad.Text = Double.Parse(lbCantidad.Text) - 0.5
+        End If
+    End Sub
+
+    Private Sub Button1_KeyDown(sender As Object, e As KeyEventArgs) Handles Button1.KeyDown
+
+        If e.KeyData = Keys.Oemplus Then
+            Button1_Click(Nothing, Nothing)
+        End If
     End Sub
 End Class
