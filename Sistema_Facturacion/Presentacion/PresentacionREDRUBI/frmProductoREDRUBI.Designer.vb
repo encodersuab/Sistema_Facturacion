@@ -75,7 +75,7 @@ Partial Class frmProductoREDRUBI
         'txtmedida
         '
         Me.txtmedida.FormattingEnabled = True
-        Me.txtmedida.Items.AddRange(New Object() {"PASE", "HORA", "DIA", "MES"})
+        Me.txtmedida.Items.AddRange(New Object() {"PASE", "HORA", "MES"})
         Me.txtmedida.Location = New System.Drawing.Point(154, 232)
         Me.txtmedida.Name = "txtmedida"
         Me.txtmedida.Size = New System.Drawing.Size(121, 21)
@@ -162,7 +162,7 @@ Partial Class frmProductoREDRUBI
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(167, 438)
+        Me.btnGuardar.Location = New System.Drawing.Point(167, 454)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 9

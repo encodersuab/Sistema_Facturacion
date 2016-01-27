@@ -25,6 +25,7 @@ Partial Class frmDetalleVenta
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lbFechaLimite = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.lbliteral = New System.Windows.Forms.Label()
         Me.lbdetalle = New System.Windows.Forms.Label()
@@ -44,7 +45,6 @@ Partial Class frmDetalleVenta
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnsalir = New System.Windows.Forms.Button()
         Me.lbmedida = New System.Windows.Forms.Label()
-        Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombreFac = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -73,12 +73,13 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtDD = New System.Windows.Forms.TextBox()
-        Me.lbFechaLimite = New System.Windows.Forms.Label()
+        Me.lbCantidad = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -107,6 +108,15 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
+        '
+        'lbFechaLimite
+        '
+        Me.lbFechaLimite.AutoSize = True
+        Me.lbFechaLimite.Location = New System.Drawing.Point(183, 66)
+        Me.lbFechaLimite.Name = "lbFechaLimite"
+        Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
+        Me.lbFechaLimite.TabIndex = 46
+        Me.lbFechaLimite.Text = "FechaLimite"
         '
         'Label13
         '
@@ -259,9 +269,11 @@ Partial Class frmDetalleVenta
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.lbCantidad)
+        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.btnsalir)
         Me.GroupBox1.Controls.Add(Me.lbmedida)
-        Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -308,19 +320,10 @@ Partial Class frmDetalleVenta
         'lbmedida
         '
         Me.lbmedida.AutoSize = True
-        Me.lbmedida.Location = New System.Drawing.Point(284, 235)
+        Me.lbmedida.Location = New System.Drawing.Point(265, 235)
         Me.lbmedida.Name = "lbmedida"
         Me.lbmedida.Size = New System.Drawing.Size(0, 13)
         Me.lbmedida.TabIndex = 35
-        '
-        'txtCantidad
-        '
-        Me.txtCantidad.DecimalPlaces = 3
-        Me.txtCantidad.Location = New System.Drawing.Point(144, 233)
-        Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
-        Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(114, 20)
-        Me.txtCantidad.TabIndex = 29
         '
         'Label12
         '
@@ -569,14 +572,32 @@ Partial Class frmDetalleVenta
         Me.txtDD.Text = "0"
         Me.txtDD.Visible = False
         '
-        'lbFechaLimite
+        'lbCantidad
         '
-        Me.lbFechaLimite.AutoSize = True
-        Me.lbFechaLimite.Location = New System.Drawing.Point(183, 66)
-        Me.lbFechaLimite.Name = "lbFechaLimite"
-        Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
-        Me.lbFechaLimite.TabIndex = 46
-        Me.lbFechaLimite.Text = "FechaLimite"
+        Me.lbCantidad.AutoSize = True
+        Me.lbCantidad.Location = New System.Drawing.Point(141, 235)
+        Me.lbCantidad.Name = "lbCantidad"
+        Me.lbCantidad.Size = New System.Drawing.Size(28, 13)
+        Me.lbCantidad.TabIndex = 48
+        Me.lbCantidad.Text = "0.00"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(228, 230)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(29, 23)
+        Me.Button3.TabIndex = 47
+        Me.Button3.Text = "&-"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(197, 230)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(29, 23)
+        Me.Button4.TabIndex = 46
+        Me.Button4.Text = "&+"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'frmDetalleVenta
         '
@@ -597,7 +618,6 @@ Partial Class frmDetalleVenta
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -646,7 +666,6 @@ Partial Class frmDetalleVenta
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents txtNombreFac As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
     Friend WithEvents txtDD As System.Windows.Forms.TextBox
     Friend WithEvents lbmedida As System.Windows.Forms.Label
     Friend WithEvents lbdetalle As System.Windows.Forms.Label
@@ -654,4 +673,7 @@ Partial Class frmDetalleVenta
     Friend WithEvents lbliteral As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents lbFechaLimite As System.Windows.Forms.Label
+    Friend WithEvents lbCantidad As System.Windows.Forms.Label
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

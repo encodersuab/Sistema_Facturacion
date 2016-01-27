@@ -37,12 +37,12 @@ Partial Public Class frmDetalleVenta
         txtIdProducto.Text = ""
         txtNombreProducto.Text = ""
         txtPrecioUnitario.Text = ""
-        txtCantidad.Text = 0
+        lbCantidad.Text = 0
         txtStock.Text = 0
         If txtDD.Text = 1 Then
             Button2.Enabled = False
             btnBuscarProducto.Enabled = False
-            txtCantidad.Enabled = False
+            lbCantidad.Enabled = False
             txtPrecioUnitario.Enabled = False
             lbmedida.Visible = False
             btnsalir.Visible = True
@@ -53,7 +53,7 @@ Partial Public Class frmDetalleVenta
         Else
             Button2.Enabled = True
             btnBuscarProducto.Enabled = True
-            txtCantidad.Enabled = True
+            lbCantidad.Enabled = True
             txtPrecioUnitario.Enabled = True
             lbmedida.Visible = True
             btnsalir.Visible = False
@@ -134,11 +134,11 @@ Partial Public Class frmDetalleVenta
 
     End Sub
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        If txtCantidad.Text = 0 Then
+        If lbCantidad.Text = 0 Then
             MessageBox.Show("CANTIDAD INCORRECTA")
         Else
 
-            If Me.ValidateChildren = True And txtIdProducto.Text <> "" And txtCantidad.Text <> "" And txtPrecioUnitario.Text <> "" Then
+            If Me.ValidateChildren = True And txtIdProducto.Text <> "" And lbCantidad.Text <> "" And txtPrecioUnitario.Text <> "" Then
                 'System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
                 Try
 
@@ -147,7 +147,7 @@ Partial Public Class frmDetalleVenta
 
                     dts.gidventa = txtIdVenta.Text
                     dts.gidproducto = txtIdProducto.Text
-                    dts.gcantidad = txtCantidad.Text
+                    dts.gcantidad = lbCantidad.Text
                     dts.gprecio_unitario = txtPrecioUnitario.Text
                     dts.gvalidez = "V"
                     dts.gdetalle = lbdetalle.Text
@@ -575,7 +575,7 @@ Partial Public Class frmDetalleVenta
         End If
     End Sub
 
-    Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress
+    Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs)
         If ((e.KeyChar = "."c) OrElse (e.KeyChar = ","c)) Then
             ' Obtenemos el carácter separador decimal existente
             ' actualmente en la configuración regional de Windows.
@@ -613,13 +613,13 @@ Partial Public Class frmDetalleVenta
     '        MessageBox.Show("ingrese un monto  a vender")
     '    End Try
     'End Sub
-    Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs) Handles txtCantidad.ValueChanged
+    Private Sub txtCantidad_ValueChanged(sender As Object, e As EventArgs)
         Dim cant As Double
-        cant = txtCantidad.Text
-        If txtCantidad.Text > txtStock.Value Then
+        cant = lbCantidad.Text
+        If lbCantidad.Text > txtStock.Value Then
             MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
             'btnGuardar.Visible = 0
-            txtCantidad.Text = txtStock.Value
+            lbCantidad.Text = txtStock.Value
         Else
             btnGuardar.Visible = 1
         End If
@@ -672,5 +672,24 @@ Partial Public Class frmDetalleVenta
 
     Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
 
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim cant As Double
+        cant = lbCantidad.Text
+        If lbCantidad.Text >= txtStock.Value Then
+            MessageBox.Show("La cantidad que intenta vender supera el stock", "Error al vender")
+            'btnGuardar.Visible = 0
+            lbCantidad.Text = txtStock.Value
+        Else
+            btnGuardar.Visible = 1
+            lbCantidad.Text = Double.Parse(lbCantidad.Text) + 0.5
+        End If
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        If (lbCantidad.Text > 0) Then
+            lbCantidad.Text = Double.Parse(lbCantidad.Text) - 0.5
+        End If
     End Sub
 End Class

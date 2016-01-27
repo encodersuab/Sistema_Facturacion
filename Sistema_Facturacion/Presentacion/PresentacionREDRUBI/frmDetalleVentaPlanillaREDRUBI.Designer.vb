@@ -29,7 +29,6 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtnituab = New System.Windows.Forms.TextBox()
         Me.txtStock = New System.Windows.Forms.NumericUpDown()
-        Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
         Me.txtPrecioUnitario = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -69,8 +68,10 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.lbdetalle = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lbCantidad = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -129,15 +130,6 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.txtStock.Name = "txtStock"
         Me.txtStock.Size = New System.Drawing.Size(173, 20)
         Me.txtStock.TabIndex = 29
-        '
-        'txtCantidad
-        '
-        Me.txtCantidad.DecimalPlaces = 3
-        Me.txtCantidad.Location = New System.Drawing.Point(144, 233)
-        Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
-        Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(139, 20)
-        Me.txtCantidad.TabIndex = 28
         '
         'txtPrecioUnitario
         '
@@ -504,12 +496,14 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.lbCantidad)
+        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.lbmedida)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtNombreFac)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.txtnituab)
-        Me.GroupBox1.Controls.Add(Me.txtCantidad)
         Me.GroupBox1.Controls.Add(Me.txtPrecioUnitario)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -537,6 +531,33 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
+        'lbCantidad
+        '
+        Me.lbCantidad.AutoSize = True
+        Me.lbCantidad.Location = New System.Drawing.Point(141, 235)
+        Me.lbCantidad.Name = "lbCantidad"
+        Me.lbCantidad.Size = New System.Drawing.Size(28, 13)
+        Me.lbCantidad.TabIndex = 45
+        Me.lbCantidad.Text = "0.00"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(228, 230)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(29, 23)
+        Me.Button3.TabIndex = 44
+        Me.Button3.Text = "&-"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(197, 230)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(29, 23)
+        Me.Button4.TabIndex = 43
+        Me.Button4.Text = "&+"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'frmDetalleVentaPlanillaREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -552,7 +573,6 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
         Me.Name = "frmDetalleVentaPlanillaREDRUBI"
         Me.Text = ".:. detalle venta planilla REDRUBI .:."
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
@@ -569,7 +589,6 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtnituab As System.Windows.Forms.TextBox
     Friend WithEvents txtStock As System.Windows.Forms.NumericUpDown
-    Friend WithEvents txtCantidad As System.Windows.Forms.NumericUpDown
     Friend WithEvents txtPrecioUnitario As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
@@ -609,4 +628,7 @@ Partial Class frmDetalleVentaPlanillaREDRUBI
     Friend WithEvents lbdetalle As System.Windows.Forms.Label
     Friend WithEvents lbliteral As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents lbCantidad As System.Windows.Forms.Label
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class
