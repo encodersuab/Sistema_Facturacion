@@ -17,7 +17,7 @@ Partial Public Class frmDetalleVenta
         QrCodeImgControl1.Visible = False
         limpiar()
         mostrarDatosImpuestos()
-      
+
         '  lbdetalle.Text = lbdetalle.Text + "" + txtNombreCLiente.Text + "" + txtNumDoc.Text
         '  txtIdVenta.Text = datalistado.SelectedCells.Item(8).Value
     End Sub
@@ -66,7 +66,7 @@ Partial Public Class frmDetalleVenta
 
     Private Sub mostrar()
         txttotal.Text = 0
-        
+
         Try
             Dim func As New fDetalleVenta
             dt = func.mostrar
@@ -329,7 +329,7 @@ Partial Public Class frmDetalleVenta
         frmProducto.txtTag.Text = "1"
         frmProducto.ShowDialog()
         lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text + "/USUARIO:" + frmInicioF.lbUsurio.Text
-        
+
     End Sub
 
 
@@ -412,6 +412,7 @@ Partial Public Class frmDetalleVenta
     End Sub
 
     Public Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFinalizarVenta.Click
+        System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
         txttotal.Text = sumar().ToString
         lbliteral.Text = Numalet.ToCardinal(CDbl(txttotal.Text)).ToString
         If txttotal.Text = 0 Then

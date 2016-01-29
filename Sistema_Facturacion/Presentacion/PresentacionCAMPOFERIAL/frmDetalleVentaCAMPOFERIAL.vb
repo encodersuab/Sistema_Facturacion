@@ -462,6 +462,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnFinalizarVenta.Click
+        System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
         txttotal.Text = sumar().ToString
         lbliteral.Text = Numalet.ToCardinal(CDbl(txttotal.Text)).ToString
         If txttotal.Text = 0 Then
