@@ -1697,12 +1697,6 @@ Partial Public Class dbfacDataSetFACTURAS
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function FindByNumeroFactura(ByVal NumeroFactura As Integer) As mostrar_factura3Row
-            Return CType(Me.Rows.Find(New Object() {NumeroFactura}), mostrar_factura3Row)
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_factura3DataTable = CType(MyBase.Clone, mostrar_factura3DataTable)
             cln.InitVars()
@@ -1783,11 +1777,9 @@ Partial Public Class dbfacDataSetFACTURAS
             MyBase.Columns.Add(Me.columnncuota)
             Me.columnnombre_categoria = New Global.System.Data.DataColumn("nombre_categoria", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnnombre_categoria)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnNumeroFactura}, True))
             Me.columnNumeroFactura.AutoIncrement = True
             Me.columnNumeroFactura.AllowDBNull = False
             Me.columnNumeroFactura.ReadOnly = True
-            Me.columnNumeroFactura.Unique = True
             Me.columnNit_Emisor.MaxLength = 50
             Me.columnCodigo_Control.MaxLength = 50
             Me.columnCi_Nit_Comprador.MaxLength = 50
@@ -2239,12 +2231,6 @@ Partial Public Class dbfacDataSetFACTURAS
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function FindByNumeroFactura(ByVal NumeroFactura As Integer) As mostrar_factura2Row
-            Return CType(Me.Rows.Find(New Object() {NumeroFactura}), mostrar_factura2Row)
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Overrides Function Clone() As Global.System.Data.DataTable
             Dim cln As mostrar_factura2DataTable = CType(MyBase.Clone, mostrar_factura2DataTable)
             cln.InitVars()
@@ -2325,11 +2311,9 @@ Partial Public Class dbfacDataSetFACTURAS
             MyBase.Columns.Add(Me.columnnombre_categoria)
             Me.columnaux = New Global.System.Data.DataColumn("aux", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnaux)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnNumeroFactura}, True))
             Me.columnNumeroFactura.AutoIncrement = True
             Me.columnNumeroFactura.AllowDBNull = False
             Me.columnNumeroFactura.ReadOnly = True
-            Me.columnNumeroFactura.Unique = True
             Me.columnNit_Emisor.MaxLength = 50
             Me.columnCodigo_Control.MaxLength = 50
             Me.columnCi_Nit_Comprador.MaxLength = 50

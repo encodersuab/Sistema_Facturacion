@@ -95,6 +95,7 @@
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Format>0.00;(0.00)</Format>
+                                <Language>en-US</Language>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -160,6 +161,7 @@
                 <Style>
                   <FontSize>8pt</FontSize>
                   <Format>d</Format>
+                  <Language>es-ES</Language>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -365,6 +367,7 @@
                 <Style>
                   <FontSize>8pt</FontSize>
                   <Format>d</Format>
+                  <Language>es-ES</Language>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -630,7 +633,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -646,6 +648,7 @@
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Format>0.00;(0.00)</Format>
+                                <Language>en-US</Language>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1080,6 +1083,7 @@
                   <Style>
                     <FontSize>8pt</FontSize>
                     <Format>d</Format>
+                    <Language>es-ES</Language>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -1163,6 +1167,7 @@
                   <Value>=Fields!Total.Value</Value>
                   <Style>
                     <Format>0.00;(0.00)</Format>
+                    <Language>en-US</Language>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -1271,6 +1276,7 @@
                   <Style>
                     <FontSize>8pt</FontSize>
                     <Format>d</Format>
+                    <Language>es-ES</Language>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -1354,6 +1360,7 @@
                   <Value>=Fields!Total.Value</Value>
                   <Style>
                     <Format>0.00;(0.00)</Format>
+                    <Language>en-US</Language>
                   </Style>
                 </TextRun>
               </TextRuns>

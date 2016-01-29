@@ -43,6 +43,9 @@ Partial Class frmDetalleVenta
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lbCantidad = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.btnsalir = New System.Windows.Forms.Button()
         Me.lbmedida = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -73,9 +76,6 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtDD = New System.Windows.Forms.TextBox()
-        Me.lbCantidad = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -117,6 +117,7 @@ Partial Class frmDetalleVenta
         Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
         Me.lbFechaLimite.TabIndex = 46
         Me.lbFechaLimite.Text = "FechaLimite"
+        Me.lbFechaLimite.Visible = False
         '
         'Label13
         '
@@ -169,6 +170,7 @@ Partial Class frmDetalleVenta
         Me.lbnumAutor.Size = New System.Drawing.Size(98, 13)
         Me.lbnumAutor.TabIndex = 39
         Me.lbnumAutor.Text = "lbnum AUtorizacion"
+        Me.lbnumAutor.Visible = False
         '
         'lbllave
         '
@@ -178,6 +180,7 @@ Partial Class frmDetalleVenta
         Me.lbllave.Size = New System.Drawing.Size(37, 13)
         Me.lbllave.TabIndex = 38
         Me.lbllave.Text = "lbllave"
+        Me.lbllave.Visible = False
         '
         'lbCC
         '
@@ -187,6 +190,7 @@ Partial Class frmDetalleVenta
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
         Me.lbCC.Text = "Codigo Control"
+        Me.lbCC.Visible = False
         '
         'Label11
         '
@@ -306,6 +310,33 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'lbCantidad
+        '
+        Me.lbCantidad.AutoSize = True
+        Me.lbCantidad.Location = New System.Drawing.Point(141, 235)
+        Me.lbCantidad.Name = "lbCantidad"
+        Me.lbCantidad.Size = New System.Drawing.Size(28, 13)
+        Me.lbCantidad.TabIndex = 48
+        Me.lbCantidad.Text = "0.00"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(228, 230)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(29, 23)
+        Me.Button3.TabIndex = 47
+        Me.Button3.Text = "&-"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(197, 230)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(29, 23)
+        Me.Button4.TabIndex = 46
+        Me.Button4.Text = "&+"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'btnsalir
         '
@@ -571,33 +602,6 @@ Partial Class frmDetalleVenta
         Me.txtDD.TabIndex = 7
         Me.txtDD.Text = "0"
         Me.txtDD.Visible = False
-        '
-        'lbCantidad
-        '
-        Me.lbCantidad.AutoSize = True
-        Me.lbCantidad.Location = New System.Drawing.Point(141, 235)
-        Me.lbCantidad.Name = "lbCantidad"
-        Me.lbCantidad.Size = New System.Drawing.Size(28, 13)
-        Me.lbCantidad.TabIndex = 48
-        Me.lbCantidad.Text = "0.00"
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(228, 230)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(29, 23)
-        Me.Button3.TabIndex = 47
-        Me.Button3.Text = "&-"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(197, 230)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(29, 23)
-        Me.Button4.TabIndex = 46
-        Me.Button4.Text = "&+"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'frmDetalleVenta
         '

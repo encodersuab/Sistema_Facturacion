@@ -141,6 +141,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
         Me.lbFechaLimite.TabIndex = 45
         Me.lbFechaLimite.Text = "FechaLimite"
+        Me.lbFechaLimite.Visible = False
         '
         'Label8
         '
@@ -167,6 +168,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.lbdetalle.Size = New System.Drawing.Size(45, 13)
         Me.lbdetalle.TabIndex = 42
         Me.lbdetalle.Text = "Label13"
+        Me.lbdetalle.Visible = False
         '
         'btnFinalizarVenta
         '
@@ -194,6 +196,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.lbnumAutor.Size = New System.Drawing.Size(98, 13)
         Me.lbnumAutor.TabIndex = 39
         Me.lbnumAutor.Text = "lbnum AUtorizacion"
+        Me.lbnumAutor.Visible = False
         '
         'lbllave
         '
@@ -203,6 +206,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.lbllave.Size = New System.Drawing.Size(37, 13)
         Me.lbllave.TabIndex = 38
         Me.lbllave.Text = "lbllave"
+        Me.lbllave.Visible = False
         '
         'lbCC
         '
@@ -212,6 +216,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
         Me.lbCC.Text = "Codigo Control"
+        Me.lbCC.Visible = False
         '
         'Label11
         '

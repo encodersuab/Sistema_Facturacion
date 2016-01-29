@@ -164,7 +164,7 @@
   <xs:element name="dbfacDataSetFACTURAS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dbfacDataSetFACTURAS" msprop:Generator_UserDSName="dbfacDataSetFACTURAS">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="mostrar_factura0" msprop:Generator_TableClassName="mostrar_factura0DataTable" msprop:Generator_TableVarName="tablemostrar_factura0" msprop:Generator_RowChangedName="mostrar_factura0RowChanged" msprop:Generator_TablePropName="mostrar_factura0" msprop:Generator_RowDeletingName="mostrar_factura0RowDeleting" msprop:Generator_RowChangingName="mostrar_factura0RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura0RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura0RowDeleted" msprop:Generator_RowClassName="mostrar_factura0Row" msprop:Generator_UserTableName="mostrar_factura0" msprop:Generator_RowEvArgName="mostrar_factura0RowChangeEvent">
+        <xs:element name="mostrar_factura0" msprop:Generator_TableClassName="mostrar_factura0DataTable" msprop:Generator_TableVarName="tablemostrar_factura0" msprop:Generator_TablePropName="mostrar_factura0" msprop:Generator_RowDeletingName="mostrar_factura0RowDeleting" msprop:Generator_RowChangingName="mostrar_factura0RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura0RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura0RowDeleted" msprop:Generator_UserTableName="mostrar_factura0" msprop:Generator_RowChangedName="mostrar_factura0RowChanged" msprop:Generator_RowEvArgName="mostrar_factura0RowChangeEvent" msprop:Generator_RowClassName="mostrar_factura0Row">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NumeroFactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumeroFactura" msprop:Generator_ColumnPropNameInRow="NumeroFactura" msprop:Generator_ColumnPropNameInTable="NumeroFacturaColumn" msprop:Generator_UserColumnName="NumeroFactura" type="xs:int" />
@@ -248,7 +248,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="mostrar_factura1" msprop:Generator_TableClassName="mostrar_factura1DataTable" msprop:Generator_TableVarName="tablemostrar_factura1" msprop:Generator_RowChangedName="mostrar_factura1RowChanged" msprop:Generator_TablePropName="mostrar_factura1" msprop:Generator_RowDeletingName="mostrar_factura1RowDeleting" msprop:Generator_RowChangingName="mostrar_factura1RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura1RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura1RowDeleted" msprop:Generator_RowClassName="mostrar_factura1Row" msprop:Generator_UserTableName="mostrar_factura1" msprop:Generator_RowEvArgName="mostrar_factura1RowChangeEvent">
+        <xs:element name="mostrar_factura1" msprop:Generator_TableClassName="mostrar_factura1DataTable" msprop:Generator_TableVarName="tablemostrar_factura1" msprop:Generator_TablePropName="mostrar_factura1" msprop:Generator_RowDeletingName="mostrar_factura1RowDeleting" msprop:Generator_RowChangingName="mostrar_factura1RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura1RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura1RowDeleted" msprop:Generator_UserTableName="mostrar_factura1" msprop:Generator_RowChangedName="mostrar_factura1RowChanged" msprop:Generator_RowEvArgName="mostrar_factura1RowChangeEvent" msprop:Generator_RowClassName="mostrar_factura1Row">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NumeroFactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumeroFactura" msprop:Generator_ColumnPropNameInRow="NumeroFactura" msprop:Generator_ColumnPropNameInTable="NumeroFacturaColumn" msprop:Generator_UserColumnName="NumeroFactura" type="xs:int" />
@@ -332,7 +332,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="mostrar_factura3" msprop:Generator_TableClassName="mostrar_factura3DataTable" msprop:Generator_TableVarName="tablemostrar_factura3" msprop:Generator_TablePropName="mostrar_factura3" msprop:Generator_RowDeletingName="mostrar_factura3RowDeleting" msprop:Generator_RowChangingName="mostrar_factura3RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura3RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura3RowDeleted" msprop:Generator_UserTableName="mostrar_factura3" msprop:Generator_RowChangedName="mostrar_factura3RowChanged" msprop:Generator_RowEvArgName="mostrar_factura3RowChangeEvent" msprop:Generator_RowClassName="mostrar_factura3Row">
+        <xs:element name="mostrar_factura3" msprop:Generator_TableClassName="mostrar_factura3DataTable" msprop:Generator_TableVarName="tablemostrar_factura3" msprop:Generator_RowChangedName="mostrar_factura3RowChanged" msprop:Generator_TablePropName="mostrar_factura3" msprop:Generator_RowDeletingName="mostrar_factura3RowDeleting" msprop:Generator_RowChangingName="mostrar_factura3RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura3RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura3RowDeleted" msprop:Generator_RowClassName="mostrar_factura3Row" msprop:Generator_UserTableName="mostrar_factura3" msprop:Generator_RowEvArgName="mostrar_factura3RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NumeroFactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumeroFactura" msprop:Generator_ColumnPropNameInRow="NumeroFactura" msprop:Generator_ColumnPropNameInTable="NumeroFacturaColumn" msprop:Generator_UserColumnName="NumeroFactura" type="xs:int" />
@@ -430,7 +430,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="mostrar_factura2" msprop:Generator_TableClassName="mostrar_factura2DataTable" msprop:Generator_TableVarName="tablemostrar_factura2" msprop:Generator_TablePropName="mostrar_factura2" msprop:Generator_RowDeletingName="mostrar_factura2RowDeleting" msprop:Generator_RowChangingName="mostrar_factura2RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura2RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura2RowDeleted" msprop:Generator_UserTableName="mostrar_factura2" msprop:Generator_RowChangedName="mostrar_factura2RowChanged" msprop:Generator_RowEvArgName="mostrar_factura2RowChangeEvent" msprop:Generator_RowClassName="mostrar_factura2Row">
+        <xs:element name="mostrar_factura2" msprop:Generator_TableClassName="mostrar_factura2DataTable" msprop:Generator_TableVarName="tablemostrar_factura2" msprop:Generator_RowChangedName="mostrar_factura2RowChanged" msprop:Generator_TablePropName="mostrar_factura2" msprop:Generator_RowDeletingName="mostrar_factura2RowDeleting" msprop:Generator_RowChangingName="mostrar_factura2RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura2RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura2RowDeleted" msprop:Generator_RowClassName="mostrar_factura2Row" msprop:Generator_UserTableName="mostrar_factura2" msprop:Generator_RowEvArgName="mostrar_factura2RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NumeroFactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumeroFactura" msprop:Generator_ColumnPropNameInRow="NumeroFactura" msprop:Generator_ColumnPropNameInTable="NumeroFacturaColumn" msprop:Generator_UserColumnName="NumeroFactura" type="xs:int" />
@@ -530,13 +530,5 @@
         </xs:element>
       </xs:choice>
     </xs:complexType>
-    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:mostrar_factura3" />
-      <xs:field xpath="mstns:NumeroFactura" />
-    </xs:unique>
-    <xs:unique name="mostrar_factura2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:mostrar_factura2" />
-      <xs:field xpath="mstns:NumeroFactura" />
-    </xs:unique>
   </xs:element>
 </xs:schema>

@@ -38,6 +38,7 @@
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Format>0.0;(0.0)</Format>
+                                <Language>en-US</Language>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -123,24 +124,25 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="precio_unitario">
+                    <Textbox Name="Codigo_Control">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!precio_unitario.Value</Value>
+                              <Value>=Fields!Codigo_Control.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Format>0.00;(0.00)</Format>
+                                <Language>en-US</Language>
                               </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>precio_unitario</rd:DefaultName>
+                      <rd:DefaultName>Codigo_Control</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -166,6 +168,7 @@
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Format>#,0.00;(#,0.00)</Format>
+                                <Language>en-US</Language>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -252,6 +255,7 @@
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Format>0.0;(0.0)</Format>
+                                <Language>es-US</Language>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -380,6 +384,7 @@
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Format>0.00;(0.00)</Format>
+                                <Language>en-US</Language>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -449,6 +454,7 @@
                 <Style>
                   <FontSize>8pt</FontSize>
                   <Format>d</Format>
+                  <Language>es-ES</Language>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -753,6 +759,7 @@
                 <Style>
                   <FontSize>8pt</FontSize>
                   <Format>d</Format>
+                  <Language>es-ES</Language>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -1227,6 +1234,7 @@
                   <Style>
                     <FontSize>8pt</FontSize>
                     <Format>d</Format>
+                    <Language>es-ES</Language>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -1310,6 +1318,7 @@
                   <Value>=Fields!Total.Value</Value>
                   <Style>
                     <Format>0.00;(0.00)</Format>
+                    <Language>en-US</Language>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -1408,6 +1417,7 @@
                   <Value>=Fields!Total.Value</Value>
                   <Style>
                     <Format>0.00;(0.00)</Format>
+                    <Language>en-US</Language>
                   </Style>
                 </TextRun>
               </TextRuns>
@@ -1500,6 +1510,7 @@
                   <Style>
                     <FontSize>8pt</FontSize>
                     <Format>d</Format>
+                    <Language>es-ES</Language>
                   </Style>
                 </TextRun>
               </TextRuns>

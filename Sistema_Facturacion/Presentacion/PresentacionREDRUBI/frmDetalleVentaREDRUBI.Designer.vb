@@ -58,6 +58,7 @@ Partial Class frmDetalleVentaREDRUBI
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lbFechaLimite = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.lbliteral = New System.Windows.Forms.Label()
         Me.lbdetalle = New System.Windows.Forms.Label()
@@ -72,7 +73,6 @@ Partial Class frmDetalleVentaREDRUBI
         Me.btnquitar = New System.Windows.Forms.Button()
         Me.cbeliminar = New System.Windows.Forms.CheckBox()
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
-        Me.lbFechaLimite = New System.Windows.Forms.Label()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtStock, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -425,6 +425,16 @@ Partial Class frmDetalleVentaREDRUBI
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
+        'lbFechaLimite
+        '
+        Me.lbFechaLimite.AutoSize = True
+        Me.lbFechaLimite.Location = New System.Drawing.Point(205, 63)
+        Me.lbFechaLimite.Name = "lbFechaLimite"
+        Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
+        Me.lbFechaLimite.TabIndex = 47
+        Me.lbFechaLimite.Text = "FechaLimite"
+        Me.lbFechaLimite.Visible = False
+        '
         'Label13
         '
         Me.Label13.AutoSize = True
@@ -451,6 +461,7 @@ Partial Class frmDetalleVentaREDRUBI
         Me.lbdetalle.Size = New System.Drawing.Size(45, 13)
         Me.lbdetalle.TabIndex = 43
         Me.lbdetalle.Text = "Label13"
+        Me.lbdetalle.Visible = False
         '
         'btnFinalizarVenta
         '
@@ -478,6 +489,7 @@ Partial Class frmDetalleVentaREDRUBI
         Me.lbnumAutor.Size = New System.Drawing.Size(98, 13)
         Me.lbnumAutor.TabIndex = 39
         Me.lbnumAutor.Text = "lbnum AUtorizacion"
+        Me.lbnumAutor.Visible = False
         '
         'lbllave
         '
@@ -487,6 +499,7 @@ Partial Class frmDetalleVentaREDRUBI
         Me.lbllave.Size = New System.Drawing.Size(37, 13)
         Me.lbllave.TabIndex = 38
         Me.lbllave.Text = "lbllave"
+        Me.lbllave.Visible = False
         '
         'lbCC
         '
@@ -496,6 +509,7 @@ Partial Class frmDetalleVentaREDRUBI
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
         Me.lbCC.Text = "Codigo Control"
+        Me.lbCC.Visible = False
         '
         'Label11
         '
@@ -557,20 +571,11 @@ Partial Class frmDetalleVentaREDRUBI
         Me.Inexistente.TabStop = True
         Me.Inexistente.Text = "Datos Inexistentes"
         '
-        'lbFechaLimite
-        '
-        Me.lbFechaLimite.AutoSize = True
-        Me.lbFechaLimite.Location = New System.Drawing.Point(205, 63)
-        Me.lbFechaLimite.Name = "lbFechaLimite"
-        Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
-        Me.lbFechaLimite.TabIndex = 47
-        Me.lbFechaLimite.Text = "FechaLimite"
-        '
         'frmDetalleVentaREDRUBI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(962, 423)
+        Me.ClientSize = New System.Drawing.Size(959, 423)
         Me.ControlBox = False
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox1)

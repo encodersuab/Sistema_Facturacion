@@ -58,6 +58,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lbFechaLimite = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.lbliteral = New System.Windows.Forms.Label()
         Me.btnConsultarCuotas = New System.Windows.Forms.Button()
@@ -73,7 +74,6 @@ Partial Class frmDetalleVentaPostGrado
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.lbFechaLimite = New System.Windows.Forms.Label()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -434,6 +434,16 @@ Partial Class frmDetalleVentaPostGrado
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
+        'lbFechaLimite
+        '
+        Me.lbFechaLimite.AutoSize = True
+        Me.lbFechaLimite.Location = New System.Drawing.Point(205, 63)
+        Me.lbFechaLimite.Name = "lbFechaLimite"
+        Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
+        Me.lbFechaLimite.TabIndex = 46
+        Me.lbFechaLimite.Text = "FechaLimite"
+        Me.lbFechaLimite.Visible = False
+        '
         'Label13
         '
         Me.Label13.AutoSize = True
@@ -468,6 +478,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.lbdetalle.Size = New System.Drawing.Size(45, 13)
         Me.lbdetalle.TabIndex = 43
         Me.lbdetalle.Text = "Label13"
+        Me.lbdetalle.Visible = False
         '
         'btnFinalizarVenta
         '
@@ -573,15 +584,6 @@ Partial Class frmDetalleVentaPostGrado
         Me.eliminar.HeaderText = "Eliminar"
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
-        '
-        'lbFechaLimite
-        '
-        Me.lbFechaLimite.AutoSize = True
-        Me.lbFechaLimite.Location = New System.Drawing.Point(205, 63)
-        Me.lbFechaLimite.Name = "lbFechaLimite"
-        Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
-        Me.lbFechaLimite.TabIndex = 46
-        Me.lbFechaLimite.Text = "FechaLimite"
         '
         'frmDetalleVentaPostGrado
         '
