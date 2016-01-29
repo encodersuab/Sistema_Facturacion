@@ -87,6 +87,10 @@ Partial Class frmInicioF
         Me.VentasEnGeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.LibroVentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Sucursal0ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Sucursal1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Sucursal2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Sucursal3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImpuestosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DetalleVentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -112,11 +116,6 @@ Partial Class frmInicioF
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lbidusuario = New System.Windows.Forms.Label()
-        Me.Sucursal0ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Sucursal1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Sucursal2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Sucursal3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TODOSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -515,10 +514,34 @@ Partial Class frmInicioF
         '
         'LibroVentasToolStripMenuItem
         '
-        Me.LibroVentasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Sucursal0ToolStripMenuItem, Me.Sucursal1ToolStripMenuItem, Me.Sucursal2ToolStripMenuItem, Me.Sucursal3ToolStripMenuItem, Me.TODOSToolStripMenuItem})
+        Me.LibroVentasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Sucursal0ToolStripMenuItem, Me.Sucursal1ToolStripMenuItem, Me.Sucursal2ToolStripMenuItem, Me.Sucursal3ToolStripMenuItem})
         Me.LibroVentasToolStripMenuItem.Name = "LibroVentasToolStripMenuItem"
         Me.LibroVentasToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
         Me.LibroVentasToolStripMenuItem.Text = "Libro Ventas"
+        '
+        'Sucursal0ToolStripMenuItem
+        '
+        Me.Sucursal0ToolStripMenuItem.Name = "Sucursal0ToolStripMenuItem"
+        Me.Sucursal0ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.Sucursal0ToolStripMenuItem.Text = "Sucursal0"
+        '
+        'Sucursal1ToolStripMenuItem
+        '
+        Me.Sucursal1ToolStripMenuItem.Name = "Sucursal1ToolStripMenuItem"
+        Me.Sucursal1ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.Sucursal1ToolStripMenuItem.Text = "Sucursal1"
+        '
+        'Sucursal2ToolStripMenuItem
+        '
+        Me.Sucursal2ToolStripMenuItem.Name = "Sucursal2ToolStripMenuItem"
+        Me.Sucursal2ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.Sucursal2ToolStripMenuItem.Text = "Sucursal2"
+        '
+        'Sucursal3ToolStripMenuItem
+        '
+        Me.Sucursal3ToolStripMenuItem.Name = "Sucursal3ToolStripMenuItem"
+        Me.Sucursal3ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.Sucursal3ToolStripMenuItem.Text = "Sucursal3"
         '
         'ImpuestosToolStripMenuItem
         '
@@ -693,36 +716,6 @@ Partial Class frmInicioF
         Me.lbidusuario.TabIndex = 20
         Me.lbidusuario.Text = "L"
         '
-        'Sucursal0ToolStripMenuItem
-        '
-        Me.Sucursal0ToolStripMenuItem.Name = "Sucursal0ToolStripMenuItem"
-        Me.Sucursal0ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.Sucursal0ToolStripMenuItem.Text = "Sucursal0"
-        '
-        'Sucursal1ToolStripMenuItem
-        '
-        Me.Sucursal1ToolStripMenuItem.Name = "Sucursal1ToolStripMenuItem"
-        Me.Sucursal1ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.Sucursal1ToolStripMenuItem.Text = "Sucursal1"
-        '
-        'Sucursal2ToolStripMenuItem
-        '
-        Me.Sucursal2ToolStripMenuItem.Name = "Sucursal2ToolStripMenuItem"
-        Me.Sucursal2ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.Sucursal2ToolStripMenuItem.Text = "Sucursal2"
-        '
-        'Sucursal3ToolStripMenuItem
-        '
-        Me.Sucursal3ToolStripMenuItem.Name = "Sucursal3ToolStripMenuItem"
-        Me.Sucursal3ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.Sucursal3ToolStripMenuItem.Text = "Sucursal3"
-        '
-        'TODOSToolStripMenuItem
-        '
-        Me.TODOSToolStripMenuItem.Name = "TODOSToolStripMenuItem"
-        Me.TODOSToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.TODOSToolStripMenuItem.Text = "TODOS"
-        '
         'frmInicioF
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -844,6 +837,5 @@ Partial Class frmInicioF
     Friend WithEvents Sucursal1ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Sucursal2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Sucursal3ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TODOSToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

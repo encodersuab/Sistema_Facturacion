@@ -619,7 +619,7 @@ Public Class frmInicioF
         frmReporteCuotas.Show()
     End Sub
 
-    Private Sub TODOSToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TODOSToolStripMenuItem.Click
+    Private Sub TODOSToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmLibroVentas.MdiParent = Me
         frmLibroVentas.Show()
     End Sub
