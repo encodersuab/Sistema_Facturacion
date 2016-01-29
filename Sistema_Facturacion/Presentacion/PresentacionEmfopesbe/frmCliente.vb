@@ -119,11 +119,11 @@
     End Sub
 
     Private Sub txtApellido_Validated(sender As Object, e As EventArgs) Handles txtApellido.Validated
-        If DirectCast(sender, TextBox).Text.Length > 0 Then
-            Me.erroricono.SetError(sender, "")
-        Else
-            Me.erroricono.SetError(sender, "ingrese apellidos del cliente, ese dato es obligatorio")
-        End If
+        'If DirectCast(sender, TextBox).Text.Length > 0 Then
+        '    Me.erroricono.SetError(sender, "")
+        'Else
+        '    Me.erroricono.SetError(sender, "ingrese apellidos del cliente, ese dato es obligatorio")
+        'End If
     End Sub
 
     Private Sub txtDireccion_TextChanged(sender As Object, e As EventArgs) Handles txtDireccion.TextChanged
@@ -169,7 +169,7 @@
     End Sub
 
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        If Me.ValidateChildren = True And txtNombre.Text <> "" And txtApellido.Text <> "" And txtCi.Text <> "" Then
+        If Me.ValidateChildren = True And txtNombre.Text <> "" And txtCi.Text <> "" Then
             Try
                 Dim dts As New vCliente
                 Dim func As New fCliente
