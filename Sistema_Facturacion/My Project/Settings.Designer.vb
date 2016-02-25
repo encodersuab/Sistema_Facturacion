@@ -68,16 +68,6 @@ Namespace My
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.25;Initial Catalog=BDFactura;User ID=union;Password=123456")>  _
-        Public ReadOnly Property BDFacturConnectionString() As String
-            Get
-                Return CType(Me("BDFacturConnectionString"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.25;Initial Catalog=BDFactura;User ID=union;Password=123456")>  _
         Public ReadOnly Property dbfacConnectionString() As String
             Get
                 Return CType(Me("dbfacConnectionString"),String)
@@ -91,6 +81,16 @@ Namespace My
         Public ReadOnly Property Setting1() As String
             Get
                 Return CType(Me("Setting1"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.25;Initial Catalog=BDFactura;User ID=union;Password=123456")>  _
+        Public ReadOnly Property BDFacturConnectionString() As String
+            Get
+                Return CType(Me("BDFacturConnectionString"),String)
             End Get
         End Property
     End Class

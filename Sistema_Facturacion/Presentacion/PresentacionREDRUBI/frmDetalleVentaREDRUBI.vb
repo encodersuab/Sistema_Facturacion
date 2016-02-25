@@ -407,7 +407,7 @@ Public Class frmDetalleVentaREDRUBI
                 dts.gIdVenta = txtIdVenta.Text
                 dts.gvalidez = "V"
                 dts.gliteral = lbliteral.Text
-                dts.gfecha_limite = lbFechaLimite.Text
+                dts.gfecha_limite = lbFechaLimite.Value
                 ''''''''
                 If func.insertar0(dts) Then
                     frmFactura0.txtnumfactura.Text = aux
@@ -590,6 +590,10 @@ Public Class frmDetalleVentaREDRUBI
     End Sub
 
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles lbFechaLimite.ValueChanged
 
     End Sub
 End Class

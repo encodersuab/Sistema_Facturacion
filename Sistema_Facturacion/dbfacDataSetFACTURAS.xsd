@@ -164,7 +164,92 @@
   <xs:element name="dbfacDataSetFACTURAS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dbfacDataSetFACTURAS" msprop:Generator_UserDSName="dbfacDataSetFACTURAS">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="mostrar_factura0" msprop:Generator_TableClassName="mostrar_factura0DataTable" msprop:Generator_TableVarName="tablemostrar_factura0" msprop:Generator_TablePropName="mostrar_factura0" msprop:Generator_RowDeletingName="mostrar_factura0RowDeleting" msprop:Generator_RowChangingName="mostrar_factura0RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura0RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura0RowDeleted" msprop:Generator_UserTableName="mostrar_factura0" msprop:Generator_RowChangedName="mostrar_factura0RowChanged" msprop:Generator_RowEvArgName="mostrar_factura0RowChangeEvent" msprop:Generator_RowClassName="mostrar_factura0Row">
+        <xs:element name="mostrar_factura0" msprop:Generator_TableClassName="mostrar_factura0DataTable" msprop:Generator_TableVarName="tablemostrar_factura0" msprop:Generator_RowChangedName="mostrar_factura0RowChanged" msprop:Generator_TablePropName="mostrar_factura0" msprop:Generator_RowDeletingName="mostrar_factura0RowDeleting" msprop:Generator_RowChangingName="mostrar_factura0RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura0RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura0RowDeleted" msprop:Generator_RowClassName="mostrar_factura0Row" msprop:Generator_UserTableName="mostrar_factura0" msprop:Generator_RowEvArgName="mostrar_factura0RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumeroFactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumeroFactura" msprop:Generator_ColumnPropNameInRow="NumeroFactura" msprop:Generator_ColumnPropNameInTable="NumeroFacturaColumn" msprop:Generator_UserColumnName="NumeroFactura" type="xs:int" />
+              <xs:element name="Fecha_emision" msprop:Generator_ColumnVarNameInTable="columnFecha_emision" msprop:Generator_ColumnPropNameInRow="Fecha_emision" msprop:Generator_ColumnPropNameInTable="Fecha_emisionColumn" msprop:Generator_UserColumnName="Fecha_emision" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Nit_Emisor" msprop:Generator_ColumnVarNameInTable="columnNit_Emisor" msprop:Generator_ColumnPropNameInRow="Nit_Emisor" msprop:Generator_ColumnPropNameInTable="Nit_EmisorColumn" msprop:Generator_UserColumnName="Nit_Emisor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Codigo_Control" msprop:Generator_ColumnVarNameInTable="columnCodigo_Control" msprop:Generator_ColumnPropNameInRow="Codigo_Control" msprop:Generator_ColumnPropNameInTable="Codigo_ControlColumn" msprop:Generator_UserColumnName="Codigo_Control" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ci_Nit_Comprador" msprop:Generator_ColumnVarNameInTable="columnCi_Nit_Comprador" msprop:Generator_ColumnPropNameInRow="Ci_Nit_Comprador" msprop:Generator_ColumnPropNameInTable="Ci_Nit_CompradorColumn" msprop:Generator_UserColumnName="Ci_Nit_Comprador" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="imagen" msprop:Generator_ColumnVarNameInTable="columnimagen" msprop:Generator_ColumnPropNameInRow="imagen" msprop:Generator_ColumnPropNameInTable="imagenColumn" msprop:Generator_UserColumnName="imagen" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NombreProducto" msprop:Generator_ColumnVarNameInTable="columnNombreProducto" msprop:Generator_ColumnPropNameInRow="NombreProducto" msprop:Generator_ColumnPropNameInTable="NombreProductoColumn" msprop:Generator_UserColumnName="NombreProducto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="precio_unitario" msprop:Generator_ColumnVarNameInTable="columnprecio_unitario" msprop:Generator_ColumnPropNameInRow="precio_unitario" msprop:Generator_ColumnPropNameInTable="precio_unitarioColumn" msprop:Generator_UserColumnName="precio_unitario" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalParcial" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalParcial" msprop:Generator_ColumnPropNameInRow="TotalParcial" msprop:Generator_ColumnPropNameInTable="TotalParcialColumn" msprop:Generator_UserColumnName="TotalParcial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="nombre_fac" msprop:Generator_ColumnVarNameInTable="columnnombre_fac" msprop:Generator_ColumnPropNameInRow="nombre_fac" msprop:Generator_ColumnPropNameInTable="nombre_facColumn" msprop:Generator_UserColumnName="nombre_fac" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tipo_documento" msprop:Generator_ColumnVarNameInTable="columntipo_documento" msprop:Generator_ColumnPropNameInRow="tipo_documento" msprop:Generator_ColumnPropNameInTable="tipo_documentoColumn" msprop:Generator_UserColumnName="tipo_documento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Num_Autorizacion" msprop:Generator_ColumnVarNameInTable="columnNum_Autorizacion" msprop:Generator_ColumnPropNameInRow="Num_Autorizacion" msprop:Generator_ColumnPropNameInTable="Num_AutorizacionColumn" msprop:Generator_UserColumnName="Num_Autorizacion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="medida" msprop:Generator_ColumnVarNameInTable="columnmedida" msprop:Generator_ColumnPropNameInRow="medida" msprop:Generator_ColumnPropNameInTable="medidaColumn" msprop:Generator_UserColumnName="medida" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="literal" msprop:Generator_ColumnVarNameInTable="columnliteral" msprop:Generator_ColumnPropNameInRow="literal" msprop:Generator_ColumnPropNameInTable="literalColumn" msprop:Generator_UserColumnName="literal" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha_limite" msprop:Generator_ColumnVarNameInTable="columnFecha_limite" msprop:Generator_ColumnPropNameInRow="Fecha_limite" msprop:Generator_ColumnPropNameInTable="Fecha_limiteColumn" msprop:Generator_UserColumnName="Fecha_limite" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="nombre_categoria" msprop:Generator_ColumnVarNameInTable="columnnombre_categoria" msprop:Generator_ColumnPropNameInRow="nombre_categoria" msprop:Generator_ColumnPropNameInTable="nombre_categoriaColumn" msprop:Generator_UserColumnName="nombre_categoria" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mostrar_factura1" msprop:Generator_TableClassName="mostrar_factura1DataTable" msprop:Generator_TableVarName="tablemostrar_factura1" msprop:Generator_RowChangedName="mostrar_factura1RowChanged" msprop:Generator_TablePropName="mostrar_factura1" msprop:Generator_RowDeletingName="mostrar_factura1RowDeleting" msprop:Generator_RowChangingName="mostrar_factura1RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura1RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura1RowDeleted" msprop:Generator_RowClassName="mostrar_factura1Row" msprop:Generator_UserTableName="mostrar_factura1" msprop:Generator_RowEvArgName="mostrar_factura1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NumeroFactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumeroFactura" msprop:Generator_ColumnPropNameInRow="NumeroFactura" msprop:Generator_ColumnPropNameInTable="NumeroFacturaColumn" msprop:Generator_UserColumnName="NumeroFactura" type="xs:int" />
@@ -248,91 +333,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="mostrar_factura1" msprop:Generator_TableClassName="mostrar_factura1DataTable" msprop:Generator_TableVarName="tablemostrar_factura1" msprop:Generator_TablePropName="mostrar_factura1" msprop:Generator_RowDeletingName="mostrar_factura1RowDeleting" msprop:Generator_RowChangingName="mostrar_factura1RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura1RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura1RowDeleted" msprop:Generator_UserTableName="mostrar_factura1" msprop:Generator_RowChangedName="mostrar_factura1RowChanged" msprop:Generator_RowEvArgName="mostrar_factura1RowChangeEvent" msprop:Generator_RowClassName="mostrar_factura1Row">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="NumeroFactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumeroFactura" msprop:Generator_ColumnPropNameInRow="NumeroFactura" msprop:Generator_ColumnPropNameInTable="NumeroFacturaColumn" msprop:Generator_UserColumnName="NumeroFactura" type="xs:int" />
-              <xs:element name="Fecha_emision" msprop:Generator_ColumnVarNameInTable="columnFecha_emision" msprop:Generator_ColumnPropNameInRow="Fecha_emision" msprop:Generator_ColumnPropNameInTable="Fecha_emisionColumn" msprop:Generator_UserColumnName="Fecha_emision" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Nit_Emisor" msprop:Generator_ColumnVarNameInTable="columnNit_Emisor" msprop:Generator_ColumnPropNameInRow="Nit_Emisor" msprop:Generator_ColumnPropNameInTable="Nit_EmisorColumn" msprop:Generator_UserColumnName="Nit_Emisor" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Codigo_Control" msprop:Generator_ColumnVarNameInTable="columnCodigo_Control" msprop:Generator_ColumnPropNameInRow="Codigo_Control" msprop:Generator_ColumnPropNameInTable="Codigo_ControlColumn" msprop:Generator_UserColumnName="Codigo_Control" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Ci_Nit_Comprador" msprop:Generator_ColumnVarNameInTable="columnCi_Nit_Comprador" msprop:Generator_ColumnPropNameInRow="Ci_Nit_Comprador" msprop:Generator_ColumnPropNameInTable="Ci_Nit_CompradorColumn" msprop:Generator_UserColumnName="Ci_Nit_Comprador" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="imagen" msprop:Generator_ColumnVarNameInTable="columnimagen" msprop:Generator_ColumnPropNameInRow="imagen" msprop:Generator_ColumnPropNameInTable="imagenColumn" msprop:Generator_UserColumnName="imagen" type="xs:base64Binary" minOccurs="0" />
-              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:decimal" minOccurs="0" />
-              <xs:element name="NombreProducto" msprop:Generator_ColumnVarNameInTable="columnNombreProducto" msprop:Generator_ColumnPropNameInRow="NombreProducto" msprop:Generator_ColumnPropNameInTable="NombreProductoColumn" msprop:Generator_UserColumnName="NombreProducto" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="precio_unitario" msprop:Generator_ColumnVarNameInTable="columnprecio_unitario" msprop:Generator_ColumnPropNameInRow="precio_unitario" msprop:Generator_ColumnPropNameInTable="precio_unitarioColumn" msprop:Generator_UserColumnName="precio_unitario" type="xs:decimal" minOccurs="0" />
-              <xs:element name="TotalParcial" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalParcial" msprop:Generator_ColumnPropNameInRow="TotalParcial" msprop:Generator_ColumnPropNameInTable="TotalParcialColumn" msprop:Generator_UserColumnName="TotalParcial" type="xs:decimal" minOccurs="0" />
-              <xs:element name="nombre_fac" msprop:Generator_ColumnVarNameInTable="columnnombre_fac" msprop:Generator_ColumnPropNameInRow="nombre_fac" msprop:Generator_ColumnPropNameInTable="nombre_facColumn" msprop:Generator_UserColumnName="nombre_fac" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="tipo_documento" msprop:Generator_ColumnVarNameInTable="columntipo_documento" msprop:Generator_ColumnPropNameInRow="tipo_documento" msprop:Generator_ColumnPropNameInTable="tipo_documentoColumn" msprop:Generator_UserColumnName="tipo_documento" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Num_Autorizacion" msprop:Generator_ColumnVarNameInTable="columnNum_Autorizacion" msprop:Generator_ColumnPropNameInRow="Num_Autorizacion" msprop:Generator_ColumnPropNameInTable="Num_AutorizacionColumn" msprop:Generator_UserColumnName="Num_Autorizacion" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="medida" msprop:Generator_ColumnVarNameInTable="columnmedida" msprop:Generator_ColumnPropNameInRow="medida" msprop:Generator_ColumnPropNameInTable="medidaColumn" msprop:Generator_UserColumnName="medida" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="literal" msprop:Generator_ColumnVarNameInTable="columnliteral" msprop:Generator_ColumnPropNameInRow="literal" msprop:Generator_ColumnPropNameInTable="literalColumn" msprop:Generator_UserColumnName="literal" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2147483647" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Fecha_limite" msprop:Generator_ColumnVarNameInTable="columnFecha_limite" msprop:Generator_ColumnPropNameInRow="Fecha_limite" msprop:Generator_ColumnPropNameInTable="Fecha_limiteColumn" msprop:Generator_UserColumnName="Fecha_limite" type="xs:dateTime" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="mostrar_factura3" msprop:Generator_TableClassName="mostrar_factura3DataTable" msprop:Generator_TableVarName="tablemostrar_factura3" msprop:Generator_RowChangedName="mostrar_factura3RowChanged" msprop:Generator_TablePropName="mostrar_factura3" msprop:Generator_RowDeletingName="mostrar_factura3RowDeleting" msprop:Generator_RowChangingName="mostrar_factura3RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura3RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura3RowDeleted" msprop:Generator_RowClassName="mostrar_factura3Row" msprop:Generator_UserTableName="mostrar_factura3" msprop:Generator_RowEvArgName="mostrar_factura3RowChangeEvent">
+        <xs:element name="mostrar_factura3" msprop:Generator_TableClassName="mostrar_factura3DataTable" msprop:Generator_TableVarName="tablemostrar_factura3" msprop:Generator_TablePropName="mostrar_factura3" msprop:Generator_RowDeletingName="mostrar_factura3RowDeleting" msprop:Generator_RowChangingName="mostrar_factura3RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura3RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura3RowDeleted" msprop:Generator_UserTableName="mostrar_factura3" msprop:Generator_RowChangedName="mostrar_factura3RowChanged" msprop:Generator_RowEvArgName="mostrar_factura3RowChangeEvent" msprop:Generator_RowClassName="mostrar_factura3Row">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NumeroFactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumeroFactura" msprop:Generator_ColumnPropNameInRow="NumeroFactura" msprop:Generator_ColumnPropNameInTable="NumeroFacturaColumn" msprop:Generator_UserColumnName="NumeroFactura" type="xs:int" />
@@ -430,7 +431,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="mostrar_factura2" msprop:Generator_TableClassName="mostrar_factura2DataTable" msprop:Generator_TableVarName="tablemostrar_factura2" msprop:Generator_RowChangedName="mostrar_factura2RowChanged" msprop:Generator_TablePropName="mostrar_factura2" msprop:Generator_RowDeletingName="mostrar_factura2RowDeleting" msprop:Generator_RowChangingName="mostrar_factura2RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura2RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura2RowDeleted" msprop:Generator_RowClassName="mostrar_factura2Row" msprop:Generator_UserTableName="mostrar_factura2" msprop:Generator_RowEvArgName="mostrar_factura2RowChangeEvent">
+        <xs:element name="mostrar_factura2" msprop:Generator_TableClassName="mostrar_factura2DataTable" msprop:Generator_TableVarName="tablemostrar_factura2" msprop:Generator_TablePropName="mostrar_factura2" msprop:Generator_RowDeletingName="mostrar_factura2RowDeleting" msprop:Generator_RowChangingName="mostrar_factura2RowChanging" msprop:Generator_RowEvHandlerName="mostrar_factura2RowChangeEventHandler" msprop:Generator_RowDeletedName="mostrar_factura2RowDeleted" msprop:Generator_UserTableName="mostrar_factura2" msprop:Generator_RowChangedName="mostrar_factura2RowChanged" msprop:Generator_RowEvArgName="mostrar_factura2RowChangeEvent" msprop:Generator_RowClassName="mostrar_factura2Row">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NumeroFactura" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnNumeroFactura" msprop:Generator_ColumnPropNameInRow="NumeroFactura" msprop:Generator_ColumnPropNameInTable="NumeroFacturaColumn" msprop:Generator_UserColumnName="NumeroFactura" type="xs:int" />

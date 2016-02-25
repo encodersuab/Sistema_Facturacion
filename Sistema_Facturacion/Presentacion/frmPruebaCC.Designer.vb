@@ -37,7 +37,8 @@ Partial Class frmPruebaCC
         Me.Button2 = New System.Windows.Forms.Button()
         Me.dtpfecha = New System.Windows.Forms.DateTimePicker()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
-        'Me.CrystalReport41 = New Sistema_Facturacion.CrystalReport4()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -167,22 +168,42 @@ Partial Class frmPruebaCC
         '
         'CrystalReportViewer1
         '
-        Me.CrystalReportViewer1.ActiveViewIndex = 0
+        Me.CrystalReportViewer1.ActiveViewIndex = -1
         Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        'Me.CrystalReportViewer1.CachedPageNumberPerDoc = 10
+        Me.CrystalReportViewer1.CachedPageNumberPerDoc = 10
         Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(370, 41)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
-        'Me.CrystalReportViewer1.ReportSource = Me.CrystalReport41
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(460, 298)
         Me.CrystalReportViewer1.TabIndex = 16
         Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(42, 225)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(98, 34)
+        Me.Button3.TabIndex = 17
+        Me.Button3.Text = "CARGAR"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(274, 342)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(67, 13)
+        Me.Label4.TabIndex = 18
+        Me.Label4.Text = "71-D5-61-C8"
         '
         'frmPruebaCC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(895, 378)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Controls.Add(Me.dtpfecha)
         Me.Controls.Add(Me.Button2)
@@ -219,5 +240,7 @@ Partial Class frmPruebaCC
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents dtpfecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Label4 As System.Windows.Forms.Label
     'Friend WithEvents CrystalReport41 As Sistema_Facturacion.CrystalReport4
 End Class

@@ -49,4 +49,13 @@
     Private Sub CrystalReportViewer1_Load(sender As Object, e As EventArgs) Handles CrystalReportViewer1.Load
 
     End Sub
+
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+        txtautorizacion.Text = 20040010113
+        txtllave.Text = "442F3w5AggG7644D737asd4BH5677sasdL4%44643(3C3674F4"
+        txtmonto.Text = 905.23
+        txtnit.Text = 1004141023
+        txtnumero.Text = 665
+        dtpfecha.Value = "08/01/2007"
+    End Sub
 End Class

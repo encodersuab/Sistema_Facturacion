@@ -164,7 +164,7 @@
     End Sub
 
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        If Me.ValidateChildren = True And txtNombre.Text <> "" And txtdescripcion.Text <> "" And txtstock.Text <> "" And txtprecio_compra.Text <> "" And txtprecio_venta.Text <> "" Then
+        If Me.ValidateChildren = True And txtNombre.Text <> "" And txtstock.Text <> "" And txtprecio_compra.Text <> "" And txtprecio_venta.Text <> "" Then
             Try
                 Dim dts As New vProductoREDRUBI
                 Dim func As New fProductoREDRUBI
@@ -422,13 +422,7 @@
 
     End Sub
 
-    Private Sub txtdescripcion_Validated(sender As Object, e As EventArgs) Handles txtdescripcion.Validated
-        If DirectCast(sender, TextBox).Text.Length > 0 Then
-            Me.erroricono.SetError(sender, "")
-        Else
-            Me.erroricono.SetError(sender, "ingrese el nombre del cliente, ese dato es obligatorio")
-        End If
-    End Sub
+
 
     Private Sub txtprecio_compra_TextChanged(sender As Object, e As EventArgs) Handles txtprecio_compra.TextChanged
 
