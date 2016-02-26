@@ -36,7 +36,6 @@ Partial Class frmPruebaCC
         Me.txtresultCC = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.dtpfecha = New System.Windows.Forms.DateTimePicker()
-        Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
@@ -166,18 +165,6 @@ Partial Class frmPruebaCC
         Me.dtpfecha.Size = New System.Drawing.Size(200, 20)
         Me.dtpfecha.TabIndex = 15
         '
-        'CrystalReportViewer1
-        '
-        Me.CrystalReportViewer1.ActiveViewIndex = -1
-        Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CrystalReportViewer1.CachedPageNumberPerDoc = 10
-        Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.CrystalReportViewer1.Location = New System.Drawing.Point(370, 41)
-        Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(460, 298)
-        Me.CrystalReportViewer1.TabIndex = 16
-        Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
-        '
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -201,10 +188,9 @@ Partial Class frmPruebaCC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(895, 378)
+        Me.ClientSize = New System.Drawing.Size(365, 378)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Controls.Add(Me.dtpfecha)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.txtresultCC)
@@ -239,7 +225,6 @@ Partial Class frmPruebaCC
     Friend WithEvents txtresultCC As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents dtpfecha As System.Windows.Forms.DateTimePicker
-    Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
     'Friend WithEvents CrystalReport41 As Sistema_Facturacion.CrystalReport4

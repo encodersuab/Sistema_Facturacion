@@ -207,8 +207,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>3.68212cm</Top>
-        <Left>0.06392cm</Left>
+        <Top>4.49351cm</Top>
+        <Left>0.23694cm</Left>
         <Height>0.6cm</Height>
         <Width>8.46162cm</Width>
         <Style>
@@ -421,8 +421,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>3.68212cm</Top>
-        <Left>10.58174cm</Left>
+        <Top>4.49351cm</Top>
+        <Left>10.76081cm</Left>
         <Height>0.6cm</Height>
         <Width>8.46162cm</Width>
         <ZIndex>1</ZIndex>
@@ -449,7 +449,7 @@
                 <Value>=Fields!Fecha_emision.Value</Value>
                 <Style>
                   <FontSize>8pt</FontSize>
-                  <Format>d' de 'MMMM' de 'yyyy</Format>
+                  <Format>d</Format>
                   <Language>es-ES</Language>
                 </Style>
               </TextRun>
@@ -460,10 +460,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Fecha_emision1</rd:DefaultName>
-        <Top>0.77542cm</Top>
-        <Left>2.74476cm</Left>
+        <Top>1.88446cm</Top>
+        <Left>3.56437cm</Left>
         <Height>0.6cm</Height>
-        <Width>6.13575cm</Width>
+        <Width>5.58973cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -492,10 +492,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_fac</rd:DefaultName>
-        <Top>1.37542cm</Top>
-        <Left>2.74476cm</Left>
+        <Top>2.29953cm</Top>
+        <Left>3.56437cm</Left>
         <Height>0.6cm</Height>
-        <Width>6.13575cm</Width>
+        <Width>5.58973cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -524,10 +524,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Ci_Nit_Comprador</rd:DefaultName>
-        <Top>1.97542cm</Top>
-        <Left>2.74476cm</Left>
+        <Top>2.66085cm</Top>
+        <Left>3.56437cm</Left>
         <Height>0.60854cm</Height>
-        <Width>6.13575cm</Width>
+        <Width>5.58973cm</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -557,8 +557,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox28</rd:DefaultName>
-        <Top>1.37542cm</Top>
-        <Left>0.10362cm</Left>
+        <Top>2.29953cm</Top>
+        <Left>0.92323cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85493cm</Width>
         <ZIndex>5</ZIndex>
@@ -590,8 +590,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox27</rd:DefaultName>
-        <Top>0.77542cm</Top>
-        <Left>0.10143cm</Left>
+        <Top>1.88446cm</Top>
+        <Left>0.92104cm</Left>
         <Height>0.6cm</Height>
         <Width>2.64333cm</Width>
         <ZIndex>6</ZIndex>
@@ -623,11 +623,118 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
-        <Top>1.97542cm</Top>
-        <Left>0.10143cm</Left>
+        <Top>2.66939cm</Top>
+        <Left>0.92323cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85712cm</Width>
         <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Fecha_emision2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Trinidad, </Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <Format>d</Format>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!Fecha_emision.Value</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <Format>d</Format>
+                  <Language>es-ES</Language>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Fecha_emision1</rd:DefaultName>
+        <Top>1.87592cm</Top>
+        <Left>14.10277cm</Left>
+        <Height>0.6cm</Height>
+        <Width>5.3484cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="nombre_fac2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!nombre_fac.Value</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>nombre_fac</rd:DefaultName>
+        <Top>2.29953cm</Top>
+        <Left>14.10277cm</Left>
+        <Height>0.6cm</Height>
+        <Width>5.3484cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Ci_Nit_Comprador2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!Ci_Nit_Comprador.Value</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Ci_Nit_Comprador</rd:DefaultName>
+        <Top>2.65231cm</Top>
+        <Left>14.10277cm</Left>
+        <Height>0.60854cm</Height>
+        <Width>5.3484cm</Width>
+        <ZIndex>10</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -656,11 +763,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox28</rd:DefaultName>
-        <Top>1.36688cm</Top>
-        <Left>10.58394cm</Left>
+        <Top>2.29099cm</Top>
+        <Left>11.46163cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85493cm</Width>
-        <ZIndex>8</ZIndex>
+        <ZIndex>11</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -689,11 +796,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox27</rd:DefaultName>
-        <Top>0.76688cm</Top>
-        <Left>10.58175cm</Left>
+        <Top>1.87592cm</Top>
+        <Left>11.45944cm</Left>
         <Height>0.6cm</Height>
         <Width>2.64333cm</Width>
-        <ZIndex>9</ZIndex>
+        <ZIndex>12</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -722,117 +829,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
-        <Top>1.96688cm</Top>
-        <Left>10.58175cm</Left>
+        <Top>2.66085cm</Top>
+        <Left>11.46163cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85712cm</Width>
-        <ZIndex>10</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="Fecha_emision3">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Trinidad, </Value>
-                <Style>
-                  <FontSize>8pt</FontSize>
-                  <Format>d</Format>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>=Fields!Fecha_emision.Value</Value>
-                <Style>
-                  <FontSize>8pt</FontSize>
-                  <Format>d' de 'MMMM' de 'yyyy</Format>
-                  <Language>es-ES</Language>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Left</TextAlign>
-            </Style>
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Fecha_emision1</rd:DefaultName>
-        <Top>0.76688cm</Top>
-        <Left>13.22508cm</Left>
-        <Height>0.6cm</Height>
-        <Width>5.85356cm</Width>
-        <ZIndex>11</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="nombre_fac2">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Fields!nombre_fac.Value</Value>
-                <Style>
-                  <FontSize>8pt</FontSize>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>nombre_fac</rd:DefaultName>
-        <Top>1.36688cm</Top>
-        <Left>13.22508cm</Left>
-        <Height>0.6cm</Height>
-        <Width>5.85356cm</Width>
-        <ZIndex>12</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="Ci_Nit_Comprador2">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=Fields!Ci_Nit_Comprador.Value</Value>
-                <Style>
-                  <FontSize>8pt</FontSize>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Ci_Nit_Comprador</rd:DefaultName>
-        <Top>1.96688cm</Top>
-        <Left>13.22508cm</Left>
-        <Height>0.60854cm</Height>
-        <Width>5.85356cm</Width>
         <ZIndex>13</ZIndex>
         <Style>
           <Border>
@@ -845,13 +845,13 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>1.73958in</Height>
+    <Height>2.01226in</Height>
     <Style />
   </Body>
-  <Width>7.52256in</Width>
+  <Width>7.67269in</Width>
   <Page>
     <PageHeader>
-      <Height>3.25438cm</Height>
+      <Height>2.09021cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -862,18 +862,19 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>NºAUTORIZACION:</Value>
+                  <Value>NºAutorización:</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
-                <TextRun>
-                  <Value xml:space="preserve"> </Value>
-                  <Style>
-                    <FontSize>8pt</FontSize>
-                  </Style>
-                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
                 <TextRun>
                   <Value>=Fields!Num_Autorizacion.Value</Value>
                   <Style>
@@ -882,14 +883,14 @@
                 </TextRun>
               </TextRuns>
               <Style>
-                <TextAlign>Left</TextAlign>
+                <TextAlign>Right</TextAlign>
               </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Num_Autorizacion</rd:DefaultName>
-          <Top>1.90956cm</Top>
-          <Left>3.54092cm</Left>
-          <Height>0.57354cm</Height>
+          <Top>1.1639cm</Top>
+          <Left>2.91778cm</Left>
+          <Height>0.89104cm</Height>
           <Width>5.17198cm</Width>
           <Style>
             <Border>
@@ -915,12 +916,6 @@
                   </Style>
                 </TextRun>
                 <TextRun>
-                  <Value xml:space="preserve">           </Value>
-                  <Style>
-                    <FontSize>8pt</FontSize>
-                  </Style>
-                </TextRun>
-                <TextRun>
                   <Value>=Fields!NumeroFactura.Value</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
@@ -928,13 +923,13 @@
                 </TextRun>
               </TextRuns>
               <Style>
-                <TextAlign>Left</TextAlign>
+                <TextAlign>Right</TextAlign>
               </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>NumeroFactura</rd:DefaultName>
-          <Top>1.33602cm</Top>
-          <Left>3.54092cm</Left>
+          <Top>0.77586cm</Top>
+          <Left>2.91778cm</Left>
           <Height>0.57354cm</Height>
           <Width>5.17198cm</Width>
           <ZIndex>1</ZIndex>
@@ -948,23 +943,17 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="Nit_Emisor3">
+        <Textbox Name="Nit_Emisor5">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>NIT:  </Value>
+                  <Value>NIT:</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-                <TextRun>
-                  <Value xml:space="preserve">                        </Value>
-                  <Style>
-                    <FontSize>8pt</FontSize>
                   </Style>
                 </TextRun>
                 <TextRun>
@@ -974,12 +963,14 @@
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Nit_Emisor</rd:DefaultName>
-          <Top>0.77128cm</Top>
-          <Left>3.54092cm</Left>
+          <Top>0.38751cm</Top>
+          <Left>2.91778cm</Left>
           <Height>0.6cm</Height>
           <Width>5.17198cm</Width>
           <ZIndex>2</ZIndex>
@@ -1000,18 +991,19 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>NºAUTORIZACION:</Value>
+                  <Value>NºAutoización:</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
-                <TextRun>
-                  <Value xml:space="preserve"> </Value>
-                  <Style>
-                    <FontSize>8pt</FontSize>
-                  </Style>
-                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+            <Paragraph>
+              <TextRuns>
                 <TextRun>
                   <Value>=Fields!Num_Autorizacion.Value</Value>
                   <Style>
@@ -1020,14 +1012,14 @@
                 </TextRun>
               </TextRuns>
               <Style>
-                <TextAlign>Left</TextAlign>
+                <TextAlign>Right</TextAlign>
               </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Num_Autorizacion</rd:DefaultName>
-          <Top>1.90956cm</Top>
-          <Left>13.87138cm</Left>
-          <Height>0.57354cm</Height>
+          <Top>1.1639cm</Top>
+          <Left>13.72642cm</Left>
+          <Height>0.89104cm</Height>
           <Width>5.17198cm</Width>
           <ZIndex>3</ZIndex>
           <Style>
@@ -1054,12 +1046,6 @@
                   </Style>
                 </TextRun>
                 <TextRun>
-                  <Value xml:space="preserve">           </Value>
-                  <Style>
-                    <FontSize>8pt</FontSize>
-                  </Style>
-                </TextRun>
-                <TextRun>
                   <Value>=Fields!NumeroFactura.Value</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
@@ -1067,13 +1053,13 @@
                 </TextRun>
               </TextRuns>
               <Style>
-                <TextAlign>Left</TextAlign>
+                <TextAlign>Right</TextAlign>
               </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>NumeroFactura</rd:DefaultName>
-          <Top>1.33602cm</Top>
-          <Left>13.87138cm</Left>
+          <Top>0.77586cm</Top>
+          <Left>13.72642cm</Left>
           <Height>0.57354cm</Height>
           <Width>5.17198cm</Width>
           <ZIndex>4</ZIndex>
@@ -1087,23 +1073,17 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Textbox Name="Nit_Emisor4">
+        <Textbox Name="Nit_Emisor6">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>NIT:  </Value>
+                  <Value>NIT:</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-                <TextRun>
-                  <Value xml:space="preserve">                        </Value>
-                  <Style>
-                    <FontSize>8pt</FontSize>
                   </Style>
                 </TextRun>
                 <TextRun>
@@ -1113,12 +1093,14 @@
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Nit_Emisor</rd:DefaultName>
-          <Top>0.77128cm</Top>
-          <Left>13.87138cm</Left>
+          <Top>0.38751cm</Top>
+          <Left>13.72642cm</Left>
           <Height>0.6cm</Height>
           <Width>5.17198cm</Width>
           <ZIndex>5</ZIndex>
@@ -1140,7 +1122,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>2.64528cm</Height>
+      <Height>3.20972cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -1174,9 +1156,9 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>literal</rd:DefaultName>
-          <Top>0.56306cm</Top>
-          <Left>12.93625cm</Left>
-          <Height>1.05861cm</Height>
+          <Top>0.5851cm</Top>
+          <Left>13.2823cm</Left>
+          <Height>0.76757cm</Height>
           <Width>6.17106cm</Width>
           <Style>
             <Border>
@@ -1188,22 +1170,6 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
-        <Image Name="Image4">
-          <Source>Database</Source>
-          <Value>=Fields!imagen.Value</Value>
-          <MIMEType>image/jpeg</MIMEType>
-          <Sizing>FitProportional</Sizing>
-          <Top>0.0441cm</Top>
-          <Left>10.29514cm</Left>
-          <Height>2.60118cm</Height>
-          <Width>2.64111cm</Width>
-          <ZIndex>1</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
         <Textbox Name="Fecha_limite4">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -1211,7 +1177,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>FECHA LIMITE DE EMISION:</Value>
+                  <Value>Fecha limite de emisión:</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -1238,11 +1204,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Fecha_limite</rd:DefaultName>
-          <Top>2.11583cm</Top>
-          <Left>12.97153cm</Left>
+          <Top>1.52907cm</Top>
+          <Left>13.2823cm</Left>
           <Height>0.49417cm</Height>
-          <Width>6.13575cm</Width>
-          <ZIndex>2</ZIndex>
+          <Width>6.17106cm</Width>
+          <ZIndex>1</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1283,11 +1249,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Codigo_Control</rd:DefaultName>
-          <Top>1.62166cm</Top>
-          <Left>12.97153cm</Left>
+          <Top>1.28211cm</Top>
+          <Left>13.2823cm</Left>
           <Height>0.49417cm</Height>
-          <Width>6.13575cm</Width>
-          <ZIndex>3</ZIndex>
+          <Width>6.17106cm</Width>
+          <ZIndex>2</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1305,28 +1271,32 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>TOTAL: </Value>
+                  <Value>TOTAL Bs. : </Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <Format>0.00;(0.00)</Format>
                   </Style>
                 </TextRun>
                 <TextRun>
                   <Value>=Fields!Total.Value</Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <Format>0.00;(0.00)</Format>
                     <Language>en-US</Language>
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Total</rd:DefaultName>
-          <Top>0.0441cm</Top>
-          <Left>15.42551cm</Left>
+          <Top>0.14553cm</Top>
+          <Left>15.76081cm</Left>
           <Height>0.51896cm</Height>
-          <Width>3.68177cm</Width>
-          <ZIndex>4</ZIndex>
+          <Width>3.29375cm</Width>
+          <ZIndex>3</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1342,10 +1312,10 @@
           <Value>=Fields!imagen.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
-          <Top>0.02646cm</Top>
-          <Height>2.60118cm</Height>
-          <Width>2.64111cm</Width>
-          <ZIndex>5</ZIndex>
+          <Top>0.11025cm</Top>
+          <Height>2.35423cm</Height>
+          <Width>2.51357cm</Width>
+          <ZIndex>4</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1382,11 +1352,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>literal</rd:DefaultName>
-          <Top>0.54542cm</Top>
-          <Left>2.64111cm</Left>
-          <Height>1.05861cm</Height>
-          <Width>6.17106cm</Width>
-          <ZIndex>6</ZIndex>
+          <Top>0.60275cm</Top>
+          <Left>2.68996cm</Left>
+          <Height>0.74993cm</Height>
+          <Width>6.46633cm</Width>
+          <ZIndex>5</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1404,27 +1374,32 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>TOTAL: </Value>
+                  <Value>TOTAL Bs.: </Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <Format>0.00;(0.00)</Format>
                   </Style>
                 </TextRun>
                 <TextRun>
                   <Value>=Fields!Total.Value</Value>
                   <Style>
+                    <FontSize>8pt</FontSize>
                     <Format>0.00;(0.00)</Format>
                     <Language>en-US</Language>
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Total</rd:DefaultName>
-          <Left>5.13036cm</Left>
+          <Top>0.14553cm</Top>
+          <Left>5.10602cm</Left>
           <Height>0.51896cm</Height>
-          <Width>3.68177cm</Width>
-          <ZIndex>7</ZIndex>
+          <Width>3.2212cm</Width>
+          <ZIndex>6</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1465,11 +1440,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Codigo_Control</rd:DefaultName>
-          <Top>1.57756cm</Top>
-          <Left>2.67639cm</Left>
+          <Top>1.29093cm</Top>
+          <Left>2.68996cm</Left>
           <Height>0.49417cm</Height>
-          <Width>6.13575cm</Width>
-          <ZIndex>8</ZIndex>
+          <Width>6.46633cm</Width>
+          <ZIndex>7</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1487,7 +1462,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>FECHA LIMITE DE EMISION:</Value>
+                  <Value>Fecha limite de emisión:</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -1514,11 +1489,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Fecha_limite</rd:DefaultName>
-          <Top>2.07173cm</Top>
-          <Left>2.64333cm</Left>
+          <Top>1.54671cm</Top>
+          <Left>2.68996cm</Left>
           <Height>0.49417cm</Height>
-          <Width>6.13575cm</Width>
-          <ZIndex>9</ZIndex>
+          <Width>6.46633cm</Width>
+          <ZIndex>8</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1529,6 +1504,22 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
+        <Image Name="Image4">
+          <Source>Database</Source>
+          <Value>=Fields!imagen.Value</Value>
+          <MIMEType>image/jpeg</MIMEType>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.11025cm</Top>
+          <Left>10.58226cm</Left>
+          <Height>2.35423cm</Height>
+          <Width>2.51357cm</Width>
+          <ZIndex>9</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
       </ReportItems>
       <Style>
         <Border>
@@ -1539,9 +1530,9 @@
     <PageHeight>16.5cm</PageHeight>
     <PageWidth>21.5cm</PageWidth>
     <LeftMargin>1cm</LeftMargin>
-    <RightMargin>1cm</RightMargin>
-    <TopMargin>1cm</TopMargin>
-    <BottomMargin>1cm</BottomMargin>
+    <RightMargin>0.5cm</RightMargin>
+    <TopMargin>0.7cm</TopMargin>
+    <BottomMargin>0.5cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>
     <Style />
   </Page>
