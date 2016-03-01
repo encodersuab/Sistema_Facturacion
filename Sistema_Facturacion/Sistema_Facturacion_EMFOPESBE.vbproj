@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>48</ApplicationRevision>
+    <ApplicationRevision>51</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -232,6 +232,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Presentacion\frmAcercaDe.Designer.vb">
+      <DependentUpon>frmAcercaDe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmAcercaDe.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\frmPruebaCC.Designer.vb">
       <DependentUpon>frmPruebaCC.vb</DependentUpon>
@@ -498,6 +504,12 @@
     <Compile Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmUsuarioRR.Designer.vb">
+      <DependentUpon>frmUsuarioRR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmUsuarioRR.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\PresentacionREDRUBI\frmVentaPlanillaREDRUBI.Designer.vb">
       <DependentUpon>frmVentaPlanillaREDRUBI.vb</DependentUpon>
     </Compile>
@@ -728,6 +740,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmAcercaDe.resx">
+      <DependentUpon>frmAcercaDe.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmPruebaCC.resx">
       <DependentUpon>frmPruebaCC.vb</DependentUpon>
     </EmbeddedResource>
@@ -856,6 +871,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.resx">
       <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmUsuarioRR.resx">
+      <DependentUpon>frmUsuarioRR.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmVentaPlanillaREDRUBI.resx">
       <DependentUpon>frmVentaPlanillaREDRUBI.vb</DependentUpon>

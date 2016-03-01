@@ -642,4 +642,34 @@ Public Class frmInicioF
         frmLibroVenta3.MdiParent = Me
         frmLibroVenta3.Show()
     End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        frmAcercaDe.MdiParent = Me
+        frmAcercaDe.Show()
+    End Sub
+
+    Private Sub CambioDeAccesoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CambioDeAccesoToolStripMenuItem.Click
+        frmUsuarioRR.MdiParent = Me
+        frmUsuarioRR.Show()
+    End Sub
+
+    Private Sub CambioDeAccesoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CambioDeAccesoToolStripMenuItem1.Click
+        frmUsuarioRR.MdiParent = Me
+        frmUsuarioRR.Show()
+    End Sub
+
+    Private Sub CambioDeAccesoToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles CambioDeAccesoToolStripMenuItem2.Click
+        frmUsuarioRR.MdiParent = Me
+        frmUsuarioRR.Show()
+    End Sub
+
+    Private Sub CambioDeAccesoToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles CambioDeAccesoToolStripMenuItem3.Click
+        frmUsuarioRR.MdiParent = Me
+        frmUsuarioRR.Show()
+    End Sub
+
+    Private Sub CambioDeAccesoToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles CambioDeAccesoToolStripMenuItem4.Click
+        frmUsuarioRR.MdiParent = Me
+        frmUsuarioRR.Show()
+    End Sub
 End Class

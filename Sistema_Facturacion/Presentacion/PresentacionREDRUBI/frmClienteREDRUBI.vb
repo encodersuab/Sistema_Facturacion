@@ -207,7 +207,7 @@
 
         If result = DialogResult.OK Then
 
-            If Me.ValidateChildren = True And txtNombre.Text <> "" And txtApellido.Text <> "" And txtDireccion.Text <> "" And txtTelefono.Text <> "" And txtCi.Text <> "" And txtIdCliente.Text <> "" Then
+            If Me.ValidateChildren = True And txtNombre.Text <> "" And txtCi.Text <> "" And txtIdCliente.Text <> "" Then
                 Try
                     Dim dts As New vClienteREDRUBI
                     Dim func As New fClienteREDRUBI

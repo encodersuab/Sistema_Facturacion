@@ -877,3 +877,5 @@ D:\Users\Blady\Desktop\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\RdlComp
 D:\Users\Blady\Desktop\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\RdlCompile.compiled
 D:\Users\Blady\Desktop\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.exe.manifest
 D:\Users\Blady\Desktop\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.application
+D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmAcercaDe.resources
+D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmUsuarioRR.resources

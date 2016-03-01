@@ -192,16 +192,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.96162cm</Width>
+              <Width>1.38688cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.65792cm</Width>
+              <Width>3.90633cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.28292cm</Width>
+              <Width>1.3182cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.21708cm</Width>
+              <Width>1.38465cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -225,7 +225,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>cantidad</rd:DefaultName>
@@ -291,7 +293,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>precio_unitario</rd:DefaultName>
@@ -361,9 +365,9 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>4.48014cm</Top>
-        <Left>10.93502cm</Left>
+        <Left>11.05851cm</Left>
         <Height>0.6cm</Height>
-        <Width>8.11954cm</Width>
+        <Width>7.99605cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -1251,6 +1255,7 @@
           <Value>=Fields!imagen.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
+          <Top>0cm</Top>
           <Height>2.35423cm</Height>
           <Width>2.51357cm</Width>
           <ZIndex>4</ZIndex>
@@ -1447,6 +1452,7 @@
           <Value>=Fields!imagen.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
+          <Top>0cm</Top>
           <Left>10.58226cm</Left>
           <Height>2.35423cm</Height>
           <Width>2.51357cm</Width>

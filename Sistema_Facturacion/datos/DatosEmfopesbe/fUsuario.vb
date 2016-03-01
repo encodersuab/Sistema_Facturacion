@@ -4,6 +4,30 @@
 Public Class fUsuario
     Inherits Conexion
     Dim cmd As New SqlCommand
+    Public Function editarPassUser(ByVal dts As vUsuario) As Boolean
+        Try
+            conectado()
+            cmd = New SqlCommand("editar_pass&user")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+            cmd.Parameters.AddWithValue("@idusuario", dts.gidusuario)
+            cmd.Parameters.AddWithValue("@login", dts.glogin)
+            cmd.Parameters.AddWithValue("@password", dts.gpassword)
+
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            desconectado()
+        End Try
+    End Function
 
     Public Function validar_usuario(ByVal dts As vUsuario)
         Try
