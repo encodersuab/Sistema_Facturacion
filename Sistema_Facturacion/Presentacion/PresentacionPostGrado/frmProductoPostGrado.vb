@@ -173,7 +173,7 @@
                 dts.gstock = txtstock.Text
                 dts.gprecio_compra = txtprecio_compra.Text
                 dts.gprecio_venta = txtprecio_venta.Text
-                dts.gfecha_vencimiento = txtfecha_vencimiento.Text
+                dts.gfecha_vencimiento = txtfecha_vencimiento.Value
                 dts.gmodulo = cbbmodulo.Text
                 dts.gmedida = txtmedida.Text
 
@@ -293,7 +293,7 @@
         imagen.Image = Image.FromStream(ms)
         imagen.SizeMode = PictureBoxSizeMode.StretchImage
 
-        estadoCamposEdicion()
+        'estadoCamposEdicion()
         mostrarBotonEditar()
 
 
@@ -346,36 +346,51 @@
     End Sub
 
     Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
-        Try
-            If txtTag.Text = "1" Then
-                frmDetalleVentaPostGrado.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
-                frmDetalleVentaPostGrado.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
-                frmDetalleVentaPostGrado.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
-                frmDetalleVentaPostGrado.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
-                frmDetalleVentaPostGrado.txtncuota.Text = 1
-                frmDetalleVentaPostGrado.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
-                Me.Close()
+        Dim dts As New vDeudor
+        Dim func As New fDeudor
+        Dim aux As Integer
 
-            Else
-                frmDetalleVentaplanillaPostGrado.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
-                frmDetalleVentaplanillaPostGrado.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
-                frmDetalleVentaplanillaPostGrado.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
-                frmDetalleVentaplanillaPostGrado.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
-                frmDetalleVentaplanillaPostGrado.txtncuota.Text = datalistado.SelectedCells.Item(6).Value
-                frmDetalleVentaplanillaPostGrado.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
-                Me.Close()
+        dts.gidproducto = txtIdproducto.Text
+        dts.gidcliente = txtidcliente.Text
+
+        aux = func.mostrar_ultimo_ncuota(dts).ToString + 1
+        If aux > txtstock.Text Then
+            MessageBox.Show("NUMERO DE CUOTAS SUPERADO REALISE UN REPORTE DE CUOTAS PARA VERIFICAR EL NUMERO")
+            Me.Close()
+        Else
+            Try
+                If txtTag.Text = "1" Then
+                    frmDetalleVentaPostGrado.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+                    frmDetalleVentaPostGrado.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                    frmDetalleVentaPostGrado.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
+                    frmDetalleVentaPostGrado.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+                    frmDetalleVentaPostGrado.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
+
+                    'frmDetalleVentaPostGrado.txtncuota.Text = 1
+
+                    'Dim ms As New IO.MemoryStream()
+
+                    frmDetalleVentaPostGrado.txtncuota.Text = aux
+
+                    Me.Close()
+                Else
+                    frmDetalleVentaplanillaPostGrado.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+                    frmDetalleVentaplanillaPostGrado.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                    frmDetalleVentaplanillaPostGrado.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
+                    frmDetalleVentaplanillaPostGrado.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+                    frmDetalleVentaplanillaPostGrado.txtncuota.Text = datalistado.SelectedCells.Item(6).Value
+                    frmDetalleVentaplanillaPostGrado.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
+                    Me.Close()
 
 
-            End If
+                End If
 
 
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            End Try
 
-
-
-
+        End If
     End Sub
 
     Private Sub datalistado_CellErrorTextChanged(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellErrorTextChanged
@@ -468,4 +483,7 @@
     End Sub
 
 
+    Private Sub datalistado_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles datalistado.CellMouseClick
+
+    End Sub
 End Class

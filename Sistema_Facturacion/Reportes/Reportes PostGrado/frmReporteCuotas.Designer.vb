@@ -30,8 +30,9 @@ Partial Class frmReporteCuotas
         Me.txtci = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.mostrar_cliente_servicio_cuotaTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_cliente_servicio_cuotaTableAdapter()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.mostrar_cliente_servicio_cuota_postgradoTableAdapter = New Sistema_Facturacion.DataSet1TableAdapters.mostrar_cliente_servicio_cuota_postgradoTableAdapter()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.mostrar_cliente_servicio_cuota_postgradoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -48,7 +49,7 @@ Partial Class frmReporteCuotas
         '
         'btnbuscar
         '
-        Me.btnbuscar.Location = New System.Drawing.Point(833, 4)
+        Me.btnbuscar.Location = New System.Drawing.Point(833, 46)
         Me.btnbuscar.Name = "btnbuscar"
         Me.btnbuscar.Size = New System.Drawing.Size(75, 22)
         Me.btnbuscar.TabIndex = 0
@@ -57,15 +58,15 @@ Partial Class frmReporteCuotas
         '
         'txtci
         '
-        Me.txtci.Location = New System.Drawing.Point(665, 6)
+        Me.txtci.Location = New System.Drawing.Point(610, 22)
         Me.txtci.Name = "txtci"
-        Me.txtci.Size = New System.Drawing.Size(162, 20)
+        Me.txtci.Size = New System.Drawing.Size(217, 20)
         Me.txtci.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(642, 9)
+        Me.Label2.Location = New System.Drawing.Point(587, 25)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(17, 13)
         Me.Label2.TabIndex = 4
@@ -77,25 +78,39 @@ Partial Class frmReporteCuotas
         ReportDataSource1.Name = "DataSet1"
         ReportDataSource1.Value = Me.mostrar_cliente_servicio_cuota_postgradoBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptConsultarCuotas.rdlc"
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.Report1.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(920, 397)
         Me.ReportViewer1.TabIndex = 5
         '
-        'mostrar_cliente_servicio_cuotaTableAdapter
+        'txtNombre
         '
-        Me.mostrar_cliente_servicio_cuotaTableAdapter.ClearBeforeFill = True
+        Me.txtNombre.Location = New System.Drawing.Point(610, 48)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(217, 20)
+        Me.txtNombre.TabIndex = 6
         '
         'mostrar_cliente_servicio_cuota_postgradoTableAdapter
         '
         Me.mostrar_cliente_servicio_cuota_postgradoTableAdapter.ClearBeforeFill = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(485, 51)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(119, 13)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "NOMBRE DEL CURSO"
         '
         'frmReporteCuotas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(920, 397)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtci)
         Me.Controls.Add(Me.btnbuscar)
@@ -112,8 +127,9 @@ Partial Class frmReporteCuotas
     Friend WithEvents txtci As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
-    Friend WithEvents mostrar_cliente_servicio_cuotaTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_cliente_servicio_cuotaTableAdapter
+    Friend WithEvents txtNombre As System.Windows.Forms.TextBox
     Friend WithEvents mostrar_cliente_servicio_cuota_postgradoBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents DataSet1 As Sistema_Facturacion.DataSet1
     Friend WithEvents mostrar_cliente_servicio_cuota_postgradoTableAdapter As Sistema_Facturacion.DataSet1TableAdapters.mostrar_cliente_servicio_cuota_postgradoTableAdapter
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

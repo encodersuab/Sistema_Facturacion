@@ -12,10 +12,10 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("Sistema_Facturacion")> 
-<Assembly: AssemblyCopyright("Copyright ©  2015 SoftwareHive")> 
+<Assembly: AssemblyCopyright("Copyright ©  2016 SoftwareHive")> 
 <Assembly: AssemblyTrademark("")> 
 
-<Assembly: ComVisible(False)>
+<Assembly: ComVisible(False)> 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("09098298-880a-4fd4-af74-fcee24bc236d")> 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.66")> 
+<Assembly: AssemblyFileVersion("1.0.0.66")> 

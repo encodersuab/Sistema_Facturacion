@@ -23,4 +23,7 @@
         Me.Close()
     End Sub
 
+    Private Sub LabelVersion_Click(sender As Object, e As EventArgs) Handles LabelVersion.Click
+
+    End Sub
 End Class

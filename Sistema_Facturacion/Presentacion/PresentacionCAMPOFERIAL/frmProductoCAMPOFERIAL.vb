@@ -317,7 +317,7 @@
 
         imagen.Image = Image.FromStream(ms)
         imagen.SizeMode = PictureBoxSizeMode.StretchImage
-        estadoCamposEdicion()
+        'estadoCamposEdicion()
         mostrarBotonEditar()
 
 

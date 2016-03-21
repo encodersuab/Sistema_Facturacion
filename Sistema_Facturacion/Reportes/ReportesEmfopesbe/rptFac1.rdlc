@@ -1065,7 +1065,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>3.05097cm</Height>
+      <Height>3.18326cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -1099,7 +1099,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>literal</rd:DefaultName>
-          <Top>0.5851cm</Top>
+          <Top>0.2676cm</Top>
           <Left>13.2823cm</Left>
           <Height>0.76757cm</Height>
           <Width>6.17106cm</Width>
@@ -1147,7 +1147,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Fecha_limite</rd:DefaultName>
-          <Top>1.52907cm</Top>
+          <Top>1.21157cm</Top>
           <Left>13.2823cm</Left>
           <Height>0.49417cm</Height>
           <Width>6.17106cm</Width>
@@ -1192,7 +1192,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Codigo_Control</rd:DefaultName>
-          <Top>1.28211cm</Top>
+          <Top>0.96461cm</Top>
           <Left>13.2823cm</Left>
           <Height>0.49417cm</Height>
           <Width>6.17106cm</Width>
@@ -1235,7 +1235,6 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Total</rd:DefaultName>
-          <Top>0.14553cm</Top>
           <Left>15.76081cm</Left>
           <Height>0.51896cm</Height>
           <Width>3.29375cm</Width>
@@ -1255,7 +1254,6 @@
           <Value>=Fields!imagen.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
-          <Top>0.11025cm</Top>
           <Height>2.35423cm</Height>
           <Width>2.51357cm</Width>
           <ZIndex>4</ZIndex>
@@ -1295,7 +1293,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>literal</rd:DefaultName>
-          <Top>0.60275cm</Top>
+          <Top>0.28525cm</Top>
           <Left>2.68996cm</Left>
           <Height>0.74993cm</Height>
           <Width>6.46633cm</Width>
@@ -1338,7 +1336,6 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Total</rd:DefaultName>
-          <Top>0.14553cm</Top>
           <Left>5.10602cm</Left>
           <Height>0.51896cm</Height>
           <Width>3.2212cm</Width>
@@ -1383,7 +1380,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Codigo_Control</rd:DefaultName>
-          <Top>1.29093cm</Top>
+          <Top>0.97343cm</Top>
           <Left>2.68996cm</Left>
           <Height>0.49417cm</Height>
           <Width>6.46633cm</Width>
@@ -1432,7 +1429,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Fecha_limite</rd:DefaultName>
-          <Top>1.54671cm</Top>
+          <Top>1.22921cm</Top>
           <Left>2.68996cm</Left>
           <Height>0.49417cm</Height>
           <Width>6.46633cm</Width>
@@ -1452,7 +1449,6 @@
           <Value>=Fields!imagen.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
-          <Top>0.11025cm</Top>
           <Left>10.58226cm</Left>
           <Height>2.35423cm</Height>
           <Width>2.51357cm</Width>

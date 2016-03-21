@@ -3,6 +3,8 @@ Public Class fDetalleVentaPostGrado
     Inherits Conexion
     Dim cmd As New SqlCommand
     Dim retornarValor As Object
+
+   
     Public Function mostrar() As DataTable
         Try
             conectado()

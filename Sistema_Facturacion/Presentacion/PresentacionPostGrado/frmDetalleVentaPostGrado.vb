@@ -34,9 +34,9 @@ Public Class frmDetalleVentaPostGrado
     End Sub
     Public Sub limpiar()
         btnGuardar.Visible = True
-        txtIdProducto.Text = ""
-        txtNombreProducto.Text = ""
-        txtPrecioUnitario.Text = ""
+
+
+
         txtCantidad.Text = 1
         txtncuota.Text = 0
         If txtDD.Text = 1 Then
@@ -58,7 +58,30 @@ Public Class frmDetalleVentaPostGrado
             btnGuardar.Enabled = True
             btnNuevo.Enabled = True
         End If
+        If CodCobranza.Text = 8 Then
+            btnBuscarProducto.Enabled = False
+            btnNuevo.Enabled = False
+            txtCantidad.Enabled = False
 
+            btnConsultarCuotas.Visible = False
+            btnConsultarPagos.Visible = True
+            Label8.Visible = False
+            txtncuota.Visible = False
+
+            'txtIdProducto.Text = ""
+            'txtNombreProducto.Text = ""
+            'txtPrecioUnitario.Text = ""
+        Else
+            txtIdProducto.Text = ""
+            txtNombreProducto.Text = ""
+            txtPrecioUnitario.Text = ""
+
+            btnConsultarCuotas.Visible = True
+            btnConsultarPagos.Visible = False
+
+            Label8.Visible = True
+            txtncuota.Visible = True
+        End If
     End Sub
 
     Private Sub mostrar()
@@ -283,6 +306,7 @@ Public Class frmDetalleVentaPostGrado
 
     Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
         lbdetalle.Text = ""
+        frmProductoPostGrado.txtidcliente.Text = txtidCliente.Text
         frmProductoPostGrado.txtTag.Text = "1"
         frmProductoPostGrado.ShowDialog()
         lbdetalle.Text = "/PRODUCTO:" + lbdetalle.Text + "nCUOTA:" + txtncuota.Text + "/FACTURADO:" + txtNombreFac.Text + "/DOCUMENTO:" + txtNumDoc.Text + "/USUARIO:" + frmInicioF.lbUsurio.Text
@@ -411,14 +435,22 @@ Public Class frmDetalleVentaPostGrado
                 If func.insertar3(dts) Then
                     frmFactura3.txtnumfactura.Text = aux
                     MessageBox.Show("Venta realizada Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    If CodCobranza.Text = 8 Then
+                        Dim dts2 As New vDeudor
+                        Dim func2 As New fDeudor
+
+                        dts2.giddeudor = txtIdDeudor.Text
+                        dts2.gcantidad_deuda = txttotal.Text
+                        func2.disminuir_monto_adeudado(dts2)
+                    End If
+
                     frmFactura3.MdiParent = frmInicioF
                     frmFactura3.Show()
-
                     Me.Close()
-
+                    CodCobranza.Text = "0"
                 Else
                     MessageBox.Show("No se a podido guardar la venta  Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
+                    CodCobranza.Text = "0"
                 End If
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -493,10 +525,12 @@ Public Class frmDetalleVentaPostGrado
                         func3.eliminar(dts3)
                         mostrar()
                         limpiar()
+                        CodCobranza.Text = "0"
                     Else
                         MessageBox.Show("ERROR AL ANULAR ESTA VENTA", "intente de nuevo", MessageBoxButtons.OK, MessageBoxIcon.Error)
                         mostrar()
                         limpiar()
+                        CodCobranza.Text = "0"
                     End If
                     Me.Close()
                 Catch ex As Exception
@@ -591,6 +625,8 @@ Public Class frmDetalleVentaPostGrado
 
     Private Sub btnConsultarCuotas_Click(sender As Object, e As EventArgs) Handles btnConsultarCuotas.Click
         frmReporteCuotas.txtci.Text = txtNumDoc.Text
+        frmReporteCuotas.txtNombre.Text = txtNombreProducto.Text
+
         '   frmReporteCuotas.MdiParent = frmInicioF
         frmReporteCuotas.Show()
     End Sub
@@ -605,5 +641,13 @@ Public Class frmDetalleVentaPostGrado
 
     Private Sub txtncuota_ValueChanged(sender As Object, e As EventArgs) Handles txtncuota.ValueChanged
 
+    End Sub
+
+    Private Sub btnConsultarPagos_Click(sender As Object, e As EventArgs) Handles btnConsultarPagos.Click
+        frmReportePagos.txtci.Text = txtNumDoc.Text
+        frmReportePagos.txtNombre.Text = txtNombreProducto.Text
+
+        '   frmReporteCuotas.MdiParent = frmInicioF
+        frmReportePagos.Show()
     End Sub
 End Class

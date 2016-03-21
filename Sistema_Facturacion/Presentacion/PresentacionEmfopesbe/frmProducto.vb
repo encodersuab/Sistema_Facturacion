@@ -301,7 +301,7 @@
         imagen.Image = Image.FromStream(ms)
         imagen.SizeMode = PictureBoxSizeMode.StretchImage
 
-        estadoCamposEdicion()
+        'estadoCamposEdicion()
         mostrarBotonEditar()
 
     End Sub
@@ -371,16 +371,16 @@
                 frmDetalleVentaplanilla.txtStock.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaplanilla.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
                 Me.Close()
-
-
             End If
-
-
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
 
+        'If e.ColumnIndex = Me.datalistado.Columns.Item("Eliminar").Index Then
+        '    Dim chkcell As DataGridViewCheckBoxCell = Me.datalistado.Rows(e.RowIndex).Cells("Eliminar")
+        '    chkcell.Value = Not chkcell.Value
 
+        'End If
 
 
     End Sub
@@ -411,14 +411,14 @@
     End Sub
 
     Private Sub txtstock_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtstock.KeyPress
-        If Char.IsDigit(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Char.IsControl(e.KeyChar) Then
-            e.Handled = False
-        Else
-            e.Handled = True
+        'If Char.IsDigit(e.KeyChar) Then
+        '    e.Handled = False
+        'ElseIf Char.IsControl(e.KeyChar) Then
+        '    e.Handled = False
+        'Else
+        '    e.Handled = True
 
-        End If
+        'End If
     End Sub
 
     Private Sub txtstock_TextChanged(sender As Object, e As EventArgs) Handles txtstock.TextChanged
@@ -506,6 +506,10 @@
     End Sub
 
     Private Sub MaskedTextBox1_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs)
+
+    End Sub
+
+    Private Sub datalistado_CellMouseDown(sender As Object, e As DataGridViewCellMouseEventArgs) Handles datalistado.CellMouseDown
 
     End Sub
 End Class

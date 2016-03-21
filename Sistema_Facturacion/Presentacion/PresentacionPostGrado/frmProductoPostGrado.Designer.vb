@@ -63,6 +63,7 @@ Partial Class frmProductoPostGrado
         Me.btncargar = New System.Windows.Forms.PictureBox()
         Me.imagen = New System.Windows.Forms.PictureBox()
         Me.dlg = New System.Windows.Forms.OpenFileDialog()
+        Me.txtidcliente = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,7 +95,7 @@ Partial Class frmProductoPostGrado
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(95, 240)
+        Me.Label10.Location = New System.Drawing.Point(95, 266)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(42, 13)
         Me.Label10.TabIndex = 18
@@ -103,7 +104,7 @@ Partial Class frmProductoPostGrado
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(95, 264)
+        Me.Label9.Location = New System.Drawing.Point(95, 290)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 20
@@ -112,7 +113,7 @@ Partial Class frmProductoPostGrado
         'txtfecha_vencimiento
         '
         Me.txtfecha_vencimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.txtfecha_vencimiento.Location = New System.Drawing.Point(154, 208)
+        Me.txtfecha_vencimiento.Location = New System.Drawing.Point(154, 234)
         Me.txtfecha_vencimiento.Name = "txtfecha_vencimiento"
         Me.txtfecha_vencimiento.Size = New System.Drawing.Size(100, 20)
         Me.txtfecha_vencimiento.TabIndex = 6
@@ -120,7 +121,7 @@ Partial Class frmProductoPostGrado
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(31, 214)
+        Me.Label8.Location = New System.Drawing.Point(31, 240)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(106, 13)
         Me.Label8.TabIndex = 17
@@ -224,7 +225,7 @@ Partial Class frmProductoPostGrado
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(154, 434)
+        Me.btnGuardar.Location = New System.Drawing.Point(154, 460)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 26)
         Me.btnGuardar.TabIndex = 8
@@ -233,7 +234,7 @@ Partial Class frmProductoPostGrado
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(154, 434)
+        Me.btnEditar.Location = New System.Drawing.Point(154, 460)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 26)
         Me.btnEditar.TabIndex = 9
@@ -242,7 +243,7 @@ Partial Class frmProductoPostGrado
         '
         'btncancelar
         '
-        Me.btncancelar.Location = New System.Drawing.Point(239, 434)
+        Me.btncancelar.Location = New System.Drawing.Point(239, 460)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(67, 26)
         Me.btncancelar.TabIndex = 10
@@ -251,7 +252,7 @@ Partial Class frmProductoPostGrado
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(70, 434)
+        Me.btnNuevo.Location = New System.Drawing.Point(70, 460)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(67, 26)
         Me.btnNuevo.TabIndex = 7
@@ -261,7 +262,7 @@ Partial Class frmProductoPostGrado
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(52, 158)
+        Me.Label6.Location = New System.Drawing.Point(52, 184)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(85, 13)
         Me.Label6.TabIndex = 15
@@ -270,7 +271,7 @@ Partial Class frmProductoPostGrado
         'txtprecio_venta
         '
         Me.txtprecio_venta.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtprecio_venta.Location = New System.Drawing.Point(154, 155)
+        Me.txtprecio_venta.Location = New System.Drawing.Point(154, 181)
         Me.txtprecio_venta.Name = "txtprecio_venta"
         Me.txtprecio_venta.Size = New System.Drawing.Size(172, 20)
         Me.txtprecio_venta.TabIndex = 4
@@ -278,18 +279,18 @@ Partial Class frmProductoPostGrado
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(1122, 120)
+        Me.Label5.Location = New System.Drawing.Point(54, 157)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(91, 13)
+        Me.Label5.Size = New System.Drawing.Size(83, 13)
         Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Precio de Compra"
+        Me.Label5.Text = "Precio del curso"
         '
         'txtprecio_compra
         '
         Me.txtprecio_compra.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtprecio_compra.Location = New System.Drawing.Point(1230, 117)
+        Me.txtprecio_compra.Location = New System.Drawing.Point(154, 154)
         Me.txtprecio_compra.Name = "txtprecio_compra"
-        Me.txtprecio_compra.Size = New System.Drawing.Size(56, 20)
+        Me.txtprecio_compra.Size = New System.Drawing.Size(172, 20)
         Me.txtprecio_compra.TabIndex = 8
         Me.txtprecio_compra.Text = "0"
         '
@@ -305,7 +306,7 @@ Partial Class frmProductoPostGrado
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(43, 185)
+        Me.Label4.Location = New System.Drawing.Point(43, 211)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(94, 13)
         Me.Label4.TabIndex = 16
@@ -314,7 +315,7 @@ Partial Class frmProductoPostGrado
         'txtstock
         '
         Me.txtstock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtstock.Location = New System.Drawing.Point(154, 182)
+        Me.txtstock.Location = New System.Drawing.Point(154, 208)
         Me.txtstock.Name = "txtstock"
         Me.txtstock.Size = New System.Drawing.Size(56, 20)
         Me.txtstock.TabIndex = 5
@@ -383,6 +384,8 @@ Partial Class frmProductoPostGrado
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.btnlimpiar)
         Me.GroupBox1.Controls.Add(Me.btncargar)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.txtprecio_compra)
         Me.GroupBox1.Controls.Add(Me.imagen)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label9)
@@ -415,7 +418,7 @@ Partial Class frmProductoPostGrado
         'cbbmodulo
         '
         Me.cbbmodulo.AutoSize = True
-        Me.cbbmodulo.Location = New System.Drawing.Point(156, 240)
+        Me.cbbmodulo.Location = New System.Drawing.Point(156, 266)
         Me.cbbmodulo.Name = "cbbmodulo"
         Me.cbbmodulo.Size = New System.Drawing.Size(78, 13)
         Me.cbbmodulo.TabIndex = 19
@@ -425,7 +428,7 @@ Partial Class frmProductoPostGrado
         '
         Me.btnlimpiar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__1_
         Me.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnlimpiar.Location = New System.Drawing.Point(331, 339)
+        Me.btnlimpiar.Location = New System.Drawing.Point(331, 365)
         Me.btnlimpiar.Name = "btnlimpiar"
         Me.btnlimpiar.Size = New System.Drawing.Size(45, 48)
         Me.btnlimpiar.TabIndex = 25
@@ -435,7 +438,7 @@ Partial Class frmProductoPostGrado
         '
         Me.btncargar.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.descarga__3_
         Me.btncargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btncargar.Location = New System.Drawing.Point(331, 285)
+        Me.btncargar.Location = New System.Drawing.Point(331, 311)
         Me.btncargar.Name = "btncargar"
         Me.btncargar.Size = New System.Drawing.Size(45, 48)
         Me.btncargar.TabIndex = 24
@@ -446,7 +449,7 @@ Partial Class frmProductoPostGrado
         Me.imagen.BackgroundImage = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
         Me.imagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imagen.Image = Global.Sistema_Facturacion.My.Resources.Resources.fondo_transparente_fotos
-        Me.imagen.Location = New System.Drawing.Point(154, 264)
+        Me.imagen.Location = New System.Drawing.Point(154, 290)
         Me.imagen.Name = "imagen"
         Me.imagen.Size = New System.Drawing.Size(171, 133)
         Me.imagen.TabIndex = 23
@@ -456,18 +459,26 @@ Partial Class frmProductoPostGrado
         '
         Me.dlg.FileName = "dlg"
         '
+        'txtidcliente
+        '
+        Me.txtidcliente.AutoSize = True
+        Me.txtidcliente.Location = New System.Drawing.Point(200, 0)
+        Me.txtidcliente.Name = "txtidcliente"
+        Me.txtidcliente.Size = New System.Drawing.Size(47, 13)
+        Me.txtidcliente.TabIndex = 26
+        Me.txtidcliente.Text = "Idcliente"
+        '
         'frmProductoPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1109, 521)
+        Me.ClientSize = New System.Drawing.Size(1103, 521)
+        Me.Controls.Add(Me.txtidcliente)
         Me.Controls.Add(Me.txtmedida)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.txtTag)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.txtprecio_compra)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "frmProductoPostGrado"
@@ -525,4 +536,5 @@ Partial Class frmProductoPostGrado
     Friend WithEvents txtIdproducto As System.Windows.Forms.TextBox
     Friend WithEvents dlg As System.Windows.Forms.OpenFileDialog
     Friend WithEvents cbbmodulo As System.Windows.Forms.Label
+    Friend WithEvents txtidcliente As System.Windows.Forms.Label
 End Class

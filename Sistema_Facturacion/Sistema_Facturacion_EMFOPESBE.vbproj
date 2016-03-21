@@ -13,19 +13,19 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>\\192.168.1.25\instaladorHIVE\</PublishUrl>
+    <PublishUrl>\\192.168.1.25/instaladorHIVE/</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateInterval>1</UpdateInterval>
+    <UpdateIntervalUnits>Hours</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <InstallUrl>\\192.168.1.25/instaladorHIVE/</InstallUrl>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>51</ApplicationRevision>
+    <ApplicationRevision>68</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -123,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Datos\DatosPostGrado\fDeudor.vb" />
     <Compile Include="dbfacDataSetFACTURAS.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -199,6 +200,7 @@
     <Compile Include="Logica\LogicaPostGrado\vClientePostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vDetalleVentaPlanillaPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vDetalleVentaPostGrado.vb" />
+    <Compile Include="Logica\LogicaPostGrado\vDeudor.vb" />
     <Compile Include="Logica\LogicaPostGrado\vProductoPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vVentaPlanillaPostGrado.vb" />
     <Compile Include="Logica\LogicaPostGrado\vVentaPostGrado.vb" />
@@ -340,6 +342,12 @@
       <DependentUpon>frmClientePostGrado.vb</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\PresentacionPostGrado\frmClientePostGrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmCobranza.Designer.vb">
+      <DependentUpon>frmCobranza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionPostGrado\frmCobranza.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\PresentacionPostGrado\frmDetalleVentaplanillaPostGrado.Designer.vb">
@@ -618,6 +626,12 @@
     <Compile Include="Reportes\Reportes PostGrado\frmFactura3.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes PostGrado\frmReportePagos.Designer.vb">
+      <DependentUpon>frmReportePagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes PostGrado\frmReportePagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\Reportes PostGrado\frmReporteProductosPostGrado.Designer.vb">
       <DependentUpon>frmReporteProductosPostGrado.vb</DependentUpon>
     </Compile>
@@ -794,6 +808,9 @@
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmClientePostGrado.resx">
       <DependentUpon>frmClientePostGrado.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmCobranza.resx">
+      <DependentUpon>frmCobranza.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionPostGrado\frmDetalleVentaplanillaPostGrado.resx">
       <DependentUpon>frmDetalleVentaplanillaPostGrado.vb</DependentUpon>
     </EmbeddedResource>
@@ -945,6 +962,9 @@
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmFactura3.resx">
       <DependentUpon>frmFactura3.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReportePagos.resx">
+      <DependentUpon>frmReportePagos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteProductosPostGrado.resx">
       <DependentUpon>frmReporteProductosPostGrado.vb</DependentUpon>
     </EmbeddedResource>
@@ -969,10 +989,13 @@
     <EmbeddedResource Include="Reportes\Reportes PostGrado\frmReporteVentasXClientePostGrado.resx">
       <DependentUpon>frmReporteVentasXClientePostGrado.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\Report1.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptConsultarCuotas.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptCuotasPostgrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptFactu3.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptNCuotasPG.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteCategoriaPostGrado.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReportePagos.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteProductoPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteVentasXClientePostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptCuotas.rdlc" />

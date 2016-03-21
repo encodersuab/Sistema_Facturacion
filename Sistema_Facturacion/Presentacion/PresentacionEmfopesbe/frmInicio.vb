@@ -672,4 +672,9 @@ Public Class frmInicioF
         frmUsuarioRR.MdiParent = Me
         frmUsuarioRR.Show()
     End Sub
+
+    Private Sub CobranzaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CobranzaToolStripMenuItem.Click
+        frmCobranza.MdiParent = Me
+        frmCobranza.Show()
+    End Sub
 End Class

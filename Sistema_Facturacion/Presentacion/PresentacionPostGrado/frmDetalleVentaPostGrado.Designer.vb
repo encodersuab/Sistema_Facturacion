@@ -74,6 +74,9 @@ Partial Class frmDetalleVentaPostGrado
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.CodCobranza = New System.Windows.Forms.TextBox()
+        Me.txtIdDeudor = New System.Windows.Forms.TextBox()
+        Me.btnConsultarPagos = New System.Windows.Forms.Button()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -231,11 +234,11 @@ Partial Class frmDetalleVentaPostGrado
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(47, 283)
+        Me.Label9.Location = New System.Drawing.Point(35, 283)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(73, 13)
+        Me.Label9.Size = New System.Drawing.Size(90, 13)
         Me.Label9.TabIndex = 26
-        Me.Label9.Text = "PrecioUnitario"
+        Me.Label9.Text = "Monto a cancelar"
         '
         'Label8
         '
@@ -414,7 +417,6 @@ Partial Class frmDetalleVentaPostGrado
         Me.GroupBox2.Controls.Add(Me.lbFechaLimite)
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.lbliteral)
-        Me.GroupBox2.Controls.Add(Me.btnConsultarCuotas)
         Me.GroupBox2.Controls.Add(Me.lbdetalle)
         Me.GroupBox2.Controls.Add(Me.btnFinalizarVenta)
         Me.GroupBox2.Controls.Add(Me.lbnumAutor)
@@ -427,6 +429,8 @@ Partial Class frmDetalleVentaPostGrado
         Me.GroupBox2.Controls.Add(Me.cbeliminar)
         Me.GroupBox2.Controls.Add(Me.Inexistente)
         Me.GroupBox2.Controls.Add(Me.datalistado)
+        Me.GroupBox2.Controls.Add(Me.btnConsultarPagos)
+        Me.GroupBox2.Controls.Add(Me.btnConsultarCuotas)
         Me.GroupBox2.Location = New System.Drawing.Point(390, 15)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(566, 400)
@@ -585,12 +589,43 @@ Partial Class frmDetalleVentaPostGrado
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
         '
+        'CodCobranza
+        '
+        Me.CodCobranza.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.CodCobranza.Enabled = False
+        Me.CodCobranza.Location = New System.Drawing.Point(325, 0)
+        Me.CodCobranza.Name = "CodCobranza"
+        Me.CodCobranza.Size = New System.Drawing.Size(22, 20)
+        Me.CodCobranza.TabIndex = 29
+        Me.CodCobranza.Text = "0"
+        '
+        'txtIdDeudor
+        '
+        Me.txtIdDeudor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtIdDeudor.Enabled = False
+        Me.txtIdDeudor.Location = New System.Drawing.Point(353, 0)
+        Me.txtIdDeudor.Name = "txtIdDeudor"
+        Me.txtIdDeudor.Size = New System.Drawing.Size(22, 20)
+        Me.txtIdDeudor.TabIndex = 30
+        Me.txtIdDeudor.Text = "0"
+        '
+        'btnConsultarPagos
+        '
+        Me.btnConsultarPagos.Location = New System.Drawing.Point(407, 19)
+        Me.btnConsultarPagos.Name = "btnConsultarPagos"
+        Me.btnConsultarPagos.Size = New System.Drawing.Size(135, 44)
+        Me.btnConsultarPagos.TabIndex = 47
+        Me.btnConsultarPagos.Text = "Consultar Pagos"
+        Me.btnConsultarPagos.UseVisualStyleBackColor = True
+        '
         'frmDetalleVentaPostGrado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(968, 425)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtIdDeudor)
+        Me.Controls.Add(Me.CodCobranza)
         Me.Controls.Add(Me.txtDD)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
@@ -661,4 +696,7 @@ Partial Class frmDetalleVentaPostGrado
     Friend WithEvents lbliteral As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents lbFechaLimite As System.Windows.Forms.Label
+    Friend WithEvents txtIdDeudor As System.Windows.Forms.TextBox
+    Friend WithEvents CodCobranza As System.Windows.Forms.TextBox
+    Friend WithEvents btnConsultarPagos As System.Windows.Forms.Button
 End Class

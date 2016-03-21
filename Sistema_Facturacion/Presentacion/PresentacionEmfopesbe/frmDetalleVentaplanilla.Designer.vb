@@ -347,7 +347,7 @@ Partial Class frmDetalleVentaplanilla
         Me.txtCantidad.Location = New System.Drawing.Point(144, 233)
         Me.txtCantidad.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(139, 20)
+        Me.txtCantidad.Size = New System.Drawing.Size(173, 20)
         Me.txtCantidad.TabIndex = 28
         '
         'txtPrecioUnitario
