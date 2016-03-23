@@ -30,9 +30,9 @@ Partial Class frmImpuestos
         Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.btngenerar = New System.Windows.Forms.Button()
-        Me.DataSet1 = New Sistema_Facturacion.DataSet1()
+        Me.DataSet1 = New Sistema_Facturacion.dbfacDataSetREPORTES()
         Me.mostrar_reporte_impuestosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.mostrar_reporte_impuestosTableAdapter = New Sistema_Facturacion.DataSet1TableAdapters.mostrar_reporte_impuestosTableAdapter()
+        Me.mostrar_reporte_impuestosTableAdapter = New Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_reporte_impuestosTableAdapter()
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mostrar_reporte_impuestosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -127,11 +127,11 @@ Partial Class frmImpuestos
     End Sub
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents mostrar_reporte_impuestosBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents DataSet1 As Sistema_Facturacion.DataSet1
+    Friend WithEvents DataSet1 As Sistema_Facturacion.dbfacDataSetREPORTES
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents dtpFechaFin As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpFechaInicio As System.Windows.Forms.DateTimePicker
     Friend WithEvents btngenerar As System.Windows.Forms.Button
-    Friend WithEvents mostrar_reporte_impuestosTableAdapter As Sistema_Facturacion.DataSet1TableAdapters.mostrar_reporte_impuestosTableAdapter
+    Friend WithEvents mostrar_reporte_impuestosTableAdapter As Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_reporte_impuestosTableAdapter
 End Class

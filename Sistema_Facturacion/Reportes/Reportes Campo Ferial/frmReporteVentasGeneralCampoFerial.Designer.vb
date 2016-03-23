@@ -25,7 +25,7 @@ Partial Class frmReporteVentasGeneralCampoFerial
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Me.mostrar_v_XFecha_G_campoferialBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DataSet1 = New Sistema_Facturacion.DataSet1()
+        Me.DataSet1 = New Sistema_Facturacion.dbfacDataSetREPORTES()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -33,7 +33,7 @@ Partial Class frmReporteVentasGeneralCampoFerial
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.mostrar_v_XFecha_G_emfopesbeTableAdapter = New Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_G_emfopesbeTableAdapter()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.mostrar_v_XFecha_G_campoferialTableAdapter = New Sistema_Facturacion.DataSet1TableAdapters.mostrar_v_XFecha_G_campoferialTableAdapter()
+        Me.mostrar_v_XFecha_G_campoferialTableAdapter = New Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_G_campoferialTableAdapter()
         CType(Me.mostrar_v_XFecha_G_campoferialBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -138,6 +138,6 @@ Partial Class frmReporteVentasGeneralCampoFerial
     Friend WithEvents mostrar_v_XFecha_G_emfopesbeTableAdapter As Sistema_Facturacion.dbfacDataSetTableAdapters.mostrar_v_XFecha_G_emfopesbeTableAdapter
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents mostrar_v_XFecha_G_campoferialBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents DataSet1 As Sistema_Facturacion.DataSet1
-    Friend WithEvents mostrar_v_XFecha_G_campoferialTableAdapter As Sistema_Facturacion.DataSet1TableAdapters.mostrar_v_XFecha_G_campoferialTableAdapter
+    Friend WithEvents DataSet1 As Sistema_Facturacion.dbfacDataSetREPORTES
+    Friend WithEvents mostrar_v_XFecha_G_campoferialTableAdapter As Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_G_campoferialTableAdapter
 End Class

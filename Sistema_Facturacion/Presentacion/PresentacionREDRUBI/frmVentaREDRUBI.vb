@@ -1,6 +1,7 @@
 ﻿Public Class frmVentaREDRUBI
     Private dt As New DataTable
     Private Sub frmVentaREDRUBI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         lbusuario.Text = frmInicioF.lbidusuario.Text
         mostrar()
     End Sub
@@ -226,7 +227,6 @@
     Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
         frmClienteREDRUBI.txtFlag.Text = "1"
         frmClienteREDRUBI.ShowDialog()
-
     End Sub
 
     Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click

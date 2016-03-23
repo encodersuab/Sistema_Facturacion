@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>\\192.168.1.25/instaladorHIVE/</InstallUrl>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>68</ApplicationRevision>
+    <ApplicationRevision>73</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -137,11 +137,6 @@
     <Compile Include="dbfacDataSetLIBROVENTA.vb">
       <DependentUpon>dbfacDataSetLIBROVENTA.xsd</DependentUpon>
     </Compile>
-    <Compile Include="dbfacDataSetREPORTES.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbfacDataSetREPORTES.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Datos\DatosCAMPOFERIAL\fCategoriaCAMPOFERIAL.vb" />
     <Compile Include="Datos\DatosCAMPOFERIAL\fDetalleVentaCAMPOFERIAL.vb" />
     <Compile Include="Datos\DatosCAMPOFERIAL\fDetalleVentaPlanillaCAMPOFERIAL.vb" />
@@ -184,7 +179,9 @@
     <Compile Include="dbfacDataSet.vb">
       <DependentUpon>dbfacDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="dbfacDataSetREPORTES.vb">
+    <Compile Include="dbfacDataSetREPORTES.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>dbfacDataSetREPORTES.xsd</DependentUpon>
     </Compile>
     <Compile Include="Logica\LogicaCAMPOFERIAL\vCategoriaCAMPOFERIAL.vb" />
@@ -506,6 +503,18 @@
     <Compile Include="Presentacion\PresentacionREDRUBI\frmFACTURA-REDRUBI.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmImprimirOrdenPAgo.Designer.vb">
+      <DependentUpon>frmImprimirOrdenPAgo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmImprimirOrdenPAgo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmOrdenPago.Designer.vb">
+      <DependentUpon>frmOrdenPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\PresentacionREDRUBI\frmOrdenPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.Designer.vb">
       <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
     </Compile>
@@ -570,6 +579,12 @@
       <DependentUpon>frmLibroVenta3.vb</DependentUpon>
     </Compile>
     <Compile Include="Reportes\Reportes Generales\frmLibroVenta3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmReporteCLiente.Designer.vb">
+      <DependentUpon>frmReporteCLiente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmReporteCLiente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\Reportes Generales\reportePrueba.Designer.vb">
@@ -886,6 +901,12 @@
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmFACTURA-REDRUBI.resx">
       <DependentUpon>frmFACTURA-REDRUBI.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmImprimirOrdenPAgo.resx">
+      <DependentUpon>frmImprimirOrdenPAgo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmOrdenPago.resx">
+      <DependentUpon>frmOrdenPago.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\PresentacionREDRUBI\frmProductoREDRUBI.resx">
       <DependentUpon>frmProductoREDRUBI.vb</DependentUpon>
     </EmbeddedResource>
@@ -920,6 +941,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Generales\frmLibroVenta3.resx">
       <DependentUpon>frmLibroVenta3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteCLiente.resx">
+      <DependentUpon>frmReporteCLiente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Generales\reportePrueba.resx">
       <DependentUpon>reportePrueba.vb</DependentUpon>
@@ -956,6 +980,7 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVenta3.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentaIVA.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentasEstandar.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptReporteCLiente.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasG.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasgeneralCliente.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\Fact3.rdlc" />
@@ -991,9 +1016,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes PostGrado\Report1.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptConsultarCuotas.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptCuotaPG.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptCuotasPostgrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptFactu3.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptNCuotasPG.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptPagoPG.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteCategoriaPostGrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReportePagos.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteProductoPostGrado.rdlc" />
@@ -1075,9 +1102,9 @@
       <DependentUpon>dbfacDataSetREPORTES.xsd</DependentUpon>
     </None>
     <None Include="dbfacDataSetREPORTES.xsd">
-      <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>dbfacDataSetREPORTES.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
     <None Include="dbfacDataSetREPORTES.xss">
       <DependentUpon>dbfacDataSetREPORTES.xsd</DependentUpon>

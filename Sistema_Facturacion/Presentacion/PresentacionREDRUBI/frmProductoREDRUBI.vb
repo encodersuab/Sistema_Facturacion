@@ -358,20 +358,24 @@
                 frmDetalleVentaREDRUBI.txtStock.Text = datalistado.SelectedCells.Item(6).Value
                 frmDetalleVentaREDRUBI.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
                 Me.Close()
-
+            ElseIf txtTag.Text = "3" Then
+                frmOrdenPago.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+                frmOrdenPago.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
+                'frmOrdenPago.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
+                frmOrdenPago.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+                'frmOrdenPago.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                frmOrdenPago.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
+                frmOrdenPago.txtNombreCategoria.Text = datalistado.SelectedCells.Item(3).Value
+                Me.Close()
             Else
-                frmDetalleVentaplanillaREDRUBI.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
+                frmDetalleVentaPlanillaREDRUBI.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value
                 frmDetalleVentaPlanillaREDRUBI.txtNombreProducto.Text = datalistado.SelectedCells.Item(4).Value
                 frmDetalleVentaPlanillaREDRUBI.lbdetalle.Text = datalistado.SelectedCells.Item(5).Value
-                frmDetalleVentaplanillaREDRUBI.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
-                frmDetalleVentaplanillaREDRUBI.txtStock.Text = datalistado.SelectedCells.Item(6).Value
-                frmDetalleVentaplanillaREDRUBI.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
+                frmDetalleVentaPlanillaREDRUBI.txtPrecioUnitario.Text = datalistado.SelectedCells.Item(8).Value
+                frmDetalleVentaPlanillaREDRUBI.txtStock.Text = datalistado.SelectedCells.Item(6).Value
+                frmDetalleVentaPlanillaREDRUBI.lbmedida.Text = datalistado.SelectedCells.Item(12).Value
                 Me.Close()
-
-
             End If
-
-
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try

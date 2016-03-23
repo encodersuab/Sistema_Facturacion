@@ -37,12 +37,12 @@ Partial Public Class frmDetalleVenta
         txtIdProducto.Text = ""
         txtNombreProducto.Text = ""
         txtPrecioUnitario.Text = ""
-        lbCantidad.Text = 0
+        lbCantidad.Text = 0.0
         txtStock.Text = 0
         If txtDD.Text = 1 Then
             Button2.Enabled = False
             btnBuscarProducto.Enabled = False
-            lbCantidad.Enabled = False
+            '' '' ''lbCantidad.Enabled = False
             txtPrecioUnitario.Enabled = False
             lbmedida.Visible = False
             btnsalir.Visible = True
@@ -53,7 +53,7 @@ Partial Public Class frmDetalleVenta
         Else
             Button2.Enabled = True
             btnBuscarProducto.Enabled = True
-            lbCantidad.Enabled = True
+            ' '' ''lbCantidad.Enabled = True
             txtPrecioUnitario.Enabled = True
             lbmedida.Visible = True
             btnsalir.Visible = False
@@ -684,13 +684,13 @@ Partial Public Class frmDetalleVenta
             lbCantidad.Text = txtStock.Value
         Else
             btnGuardar.Visible = 1
-            lbCantidad.Text = Double.Parse(lbCantidad.Text) + 0.5
+            lbCantidad.Text = Double.Parse(lbCantidad.Text) + 0.1
         End If
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         If (lbCantidad.Text > 0) Then
-            lbCantidad.Text = Double.Parse(lbCantidad.Text) - 0.5
+            lbCantidad.Text = Double.Parse(lbCantidad.Text) - 0.1
         End If
     End Sub
 End Class

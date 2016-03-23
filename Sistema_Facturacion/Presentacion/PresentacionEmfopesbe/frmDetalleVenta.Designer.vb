@@ -43,7 +43,6 @@ Partial Class frmDetalleVenta
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.lbCantidad = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.btnsalir = New System.Windows.Forms.Button()
@@ -76,6 +75,7 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtDD = New System.Windows.Forms.TextBox()
+        Me.lbCantidad = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -311,18 +311,9 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
         '
-        'lbCantidad
-        '
-        Me.lbCantidad.AutoSize = True
-        Me.lbCantidad.Location = New System.Drawing.Point(141, 235)
-        Me.lbCantidad.Name = "lbCantidad"
-        Me.lbCantidad.Size = New System.Drawing.Size(28, 13)
-        Me.lbCantidad.TabIndex = 48
-        Me.lbCantidad.Text = "0.00"
-        '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(228, 230)
+        Me.Button3.Location = New System.Drawing.Point(286, 233)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(29, 23)
         Me.Button3.TabIndex = 47
@@ -331,7 +322,7 @@ Partial Class frmDetalleVenta
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(197, 230)
+        Me.Button4.Location = New System.Drawing.Point(255, 233)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(29, 23)
         Me.Button4.TabIndex = 46
@@ -351,7 +342,7 @@ Partial Class frmDetalleVenta
         'lbmedida
         '
         Me.lbmedida.AutoSize = True
-        Me.lbmedida.Location = New System.Drawing.Point(265, 235)
+        Me.lbmedida.Location = New System.Drawing.Point(323, 238)
         Me.lbmedida.Name = "lbmedida"
         Me.lbmedida.Size = New System.Drawing.Size(0, 13)
         Me.lbmedida.TabIndex = 35
@@ -603,6 +594,14 @@ Partial Class frmDetalleVenta
         Me.txtDD.Text = "0"
         Me.txtDD.Visible = False
         '
+        'lbCantidad
+        '
+        Me.lbCantidad.Location = New System.Drawing.Point(144, 233)
+        Me.lbCantidad.Name = "lbCantidad"
+        Me.lbCantidad.Size = New System.Drawing.Size(105, 20)
+        Me.lbCantidad.TabIndex = 49
+        Me.lbCantidad.Text = "0.00"
+        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -677,7 +676,7 @@ Partial Class frmDetalleVenta
     Friend WithEvents lbliteral As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents lbFechaLimite As System.Windows.Forms.Label
-    Friend WithEvents lbCantidad As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents lbCantidad As System.Windows.Forms.TextBox
 End Class

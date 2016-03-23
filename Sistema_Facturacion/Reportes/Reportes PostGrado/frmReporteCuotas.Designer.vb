@@ -24,28 +24,18 @@ Partial Class frmReporteCuotas
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.mostrar_cliente_servicio_cuota_postgradoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DataSet1 = New Sistema_Facturacion.DataSet1()
         Me.btnbuscar = New System.Windows.Forms.Button()
         Me.txtci = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.txtNombre = New System.Windows.Forms.TextBox()
-        Me.mostrar_cliente_servicio_cuota_postgradoTableAdapter = New Sistema_Facturacion.DataSet1TableAdapters.mostrar_cliente_servicio_cuota_postgradoTableAdapter()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.dbfacDataSetREPORTES = New Sistema_Facturacion.dbfacDataSetREPORTES()
+        Me.mostrar_cliente_servicio_cuota_postgradoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.mostrar_cliente_servicio_cuota_postgradoTableAdapter = New Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_cliente_servicio_cuota_postgradoTableAdapter()
+        CType(Me.dbfacDataSetREPORTES, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mostrar_cliente_servicio_cuota_postgradoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'mostrar_cliente_servicio_cuota_postgradoBindingSource
-        '
-        Me.mostrar_cliente_servicio_cuota_postgradoBindingSource.DataMember = "mostrar_cliente_servicio_cuota_postgrado"
-        Me.mostrar_cliente_servicio_cuota_postgradoBindingSource.DataSource = Me.DataSet1
-        '
-        'DataSet1
-        '
-        Me.DataSet1.DataSetName = "DataSet1"
-        Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'btnbuscar
         '
@@ -78,7 +68,7 @@ Partial Class frmReporteCuotas
         ReportDataSource1.Name = "DataSet1"
         ReportDataSource1.Value = Me.mostrar_cliente_servicio_cuota_postgradoBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.Report1.rdlc"
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_Facturacion.rptCuotaPG.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.Size = New System.Drawing.Size(920, 397)
@@ -91,10 +81,6 @@ Partial Class frmReporteCuotas
         Me.txtNombre.Size = New System.Drawing.Size(217, 20)
         Me.txtNombre.TabIndex = 6
         '
-        'mostrar_cliente_servicio_cuota_postgradoTableAdapter
-        '
-        Me.mostrar_cliente_servicio_cuota_postgradoTableAdapter.ClearBeforeFill = True
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -103,6 +89,20 @@ Partial Class frmReporteCuotas
         Me.Label1.Size = New System.Drawing.Size(119, 13)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "NOMBRE DEL CURSO"
+        '
+        'dbfacDataSetREPORTES
+        '
+        Me.dbfacDataSetREPORTES.DataSetName = "dbfacDataSetREPORTES"
+        Me.dbfacDataSetREPORTES.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'mostrar_cliente_servicio_cuota_postgradoBindingSource
+        '
+        Me.mostrar_cliente_servicio_cuota_postgradoBindingSource.DataMember = "mostrar_cliente_servicio_cuota_postgrado"
+        Me.mostrar_cliente_servicio_cuota_postgradoBindingSource.DataSource = Me.dbfacDataSetREPORTES
+        '
+        'mostrar_cliente_servicio_cuota_postgradoTableAdapter
+        '
+        Me.mostrar_cliente_servicio_cuota_postgradoTableAdapter.ClearBeforeFill = True
         '
         'frmReporteCuotas
         '
@@ -117,8 +117,8 @@ Partial Class frmReporteCuotas
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "frmReporteCuotas"
         Me.Text = "frmReporteCuotasPOSTGRADO"
+        CType(Me.dbfacDataSetREPORTES, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mostrar_cliente_servicio_cuota_postgradoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -128,8 +128,8 @@ Partial Class frmReporteCuotas
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
-    Friend WithEvents mostrar_cliente_servicio_cuota_postgradoBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents DataSet1 As Sistema_Facturacion.DataSet1
-    Friend WithEvents mostrar_cliente_servicio_cuota_postgradoTableAdapter As Sistema_Facturacion.DataSet1TableAdapters.mostrar_cliente_servicio_cuota_postgradoTableAdapter
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents mostrar_cliente_servicio_cuota_postgradoBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents dbfacDataSetREPORTES As Sistema_Facturacion.dbfacDataSetREPORTES
+    Friend WithEvents mostrar_cliente_servicio_cuota_postgradoTableAdapter As Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_cliente_servicio_cuota_postgradoTableAdapter
 End Class

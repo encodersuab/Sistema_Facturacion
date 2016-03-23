@@ -26,7 +26,7 @@
                 btnEditar.Enabled = False
                 dt = func.mostrarUAB
 
-            ElseIf txtFlag.Text = 1 Or txtFlag.Text = 0 Then
+            ElseIf txtFlag.Text = 1 Or txtFlag.Text = 0 Or txtFlag.Text = 3 Then
                 btnNuevo.Enabled = True
                 btnGuardar.Enabled = True
                 btnEditar.Enabled = True
@@ -284,6 +284,13 @@
             frmVentaPlanillaREDRUBI.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
             frmVentaPlanillaREDRUBI.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
             frmVentaPlanillaREDRUBI.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
+            txtFlag.Text = "0"
+            Me.Close()
+        ElseIf txtFlag.Text = "3" Then
+            frmOrdenPago.txtidCliente.Text = datalistado.SelectedCells.Item(1).Value
+            frmOrdenPago.txtNombreCLiente.Text = datalistado.SelectedCells.Item(2).Value
+            frmOrdenPago.txtNumDoc.Text = datalistado.SelectedCells.Item(6).Value
+            frmOrdenPago.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
             txtFlag.Text = "0"
             Me.Close()
         End If

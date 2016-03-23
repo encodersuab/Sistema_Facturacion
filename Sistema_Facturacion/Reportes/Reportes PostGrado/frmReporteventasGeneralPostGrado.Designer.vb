@@ -25,14 +25,14 @@ Partial Class frmReporteventasGeneralPostGrado
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Me.mostrar_v_XFecha_G_postgradoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DataSet1 = New Sistema_Facturacion.DataSet1()
+        Me.DataSet1 = New Sistema_Facturacion.dbfacDataSetREPORTES()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.mostrar_v_XFecha_G_postgradoTableAdapter = New Sistema_Facturacion.DataSet1TableAdapters.mostrar_v_XFecha_G_postgradoTableAdapter()
+        Me.mostrar_v_XFecha_G_postgradoTableAdapter = New Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_G_postgradoTableAdapter()
         CType(Me.mostrar_v_XFecha_G_postgradoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -132,6 +132,6 @@ Partial Class frmReporteventasGeneralPostGrado
     Friend WithEvents dtpFechaInicio As System.Windows.Forms.DateTimePicker
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents mostrar_v_XFecha_G_postgradoBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents DataSet1 As Sistema_Facturacion.DataSet1
-    Friend WithEvents mostrar_v_XFecha_G_postgradoTableAdapter As Sistema_Facturacion.DataSet1TableAdapters.mostrar_v_XFecha_G_postgradoTableAdapter
+    Friend WithEvents DataSet1 As Sistema_Facturacion.dbfacDataSetREPORTES
+    Friend WithEvents mostrar_v_XFecha_G_postgradoTableAdapter As Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_G_postgradoTableAdapter
 End Class

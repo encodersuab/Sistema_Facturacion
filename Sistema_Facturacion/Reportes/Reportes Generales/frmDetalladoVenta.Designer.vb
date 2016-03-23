@@ -30,9 +30,9 @@ Partial Class frmDetalladoVenta
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.btngenerar = New System.Windows.Forms.Button()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.DataSet1 = New Sistema_Facturacion.DataSet1()
+        Me.DataSet1 = New Sistema_Facturacion.dbfacDataSetREPORTES()
         Me.mostrar_detalleventasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.mostrar_detalleventasTableAdapter = New Sistema_Facturacion.DataSet1TableAdapters.mostrar_detalleventasTableAdapter()
+        Me.mostrar_detalleventasTableAdapter = New Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_detalleventasTableAdapter()
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mostrar_detalleventasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -132,6 +132,6 @@ Partial Class frmDetalladoVenta
     Friend WithEvents btngenerar As System.Windows.Forms.Button
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents mostrar_detalleventasBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents DataSet1 As Sistema_Facturacion.DataSet1
-    Friend WithEvents mostrar_detalleventasTableAdapter As Sistema_Facturacion.DataSet1TableAdapters.mostrar_detalleventasTableAdapter
+    Friend WithEvents DataSet1 As Sistema_Facturacion.dbfacDataSetREPORTES
+    Friend WithEvents mostrar_detalleventasTableAdapter As Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_detalleventasTableAdapter
 End Class

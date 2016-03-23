@@ -286,6 +286,7 @@
             frmVentaPlanilla.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
             txtFlag.Text = "0"
             Me.Close()
+       
         End If
 
 

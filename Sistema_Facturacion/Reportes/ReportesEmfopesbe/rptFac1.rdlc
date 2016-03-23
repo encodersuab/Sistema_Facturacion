@@ -93,7 +93,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Ci_Nit_Comprador</rd:DefaultName>
-        <Top>2.66085cm</Top>
+        <Top>2.97835cm</Top>
         <Left>3.56437cm</Left>
         <Height>0.60854cm</Height>
         <Width>5.58973cm</Width>
@@ -192,7 +192,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
-        <Top>2.66939cm</Top>
+        <Top>2.98689cm</Top>
         <Left>0.92323cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85712cm</Width>
@@ -299,7 +299,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Ci_Nit_Comprador</rd:DefaultName>
-        <Top>2.65231cm</Top>
+        <Top>2.96981cm</Top>
         <Left>14.10277cm</Left>
         <Height>0.60854cm</Height>
         <Width>5.3484cm</Width>
@@ -398,7 +398,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
-        <Top>2.66085cm</Top>
+        <Top>2.97835cm</Top>
         <Left>11.46163cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85712cm</Width>
@@ -445,7 +445,7 @@
                               <Value>=Fields!cantidad.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>0;(0)</Format>
+                                <Format>0.00;(0.00)</Format>
                                 <Language>en-US</Language>
                               </Style>
                             </TextRun>
@@ -477,7 +477,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!medida.Value+"-"+Fields!NombreProducto.Value+"-"+Fields!descripcion.Value</Value>
+                              <Value>=Fields!medida.Value+"-"+Fields!NombreProducto.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                               </Style>
@@ -632,7 +632,7 @@
                               <Value>=Fields!cantidad.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>0;(0)</Format>
+                                <Format>0.00;(0.00)</Format>
                                 <Language>en-US</Language>
                               </Style>
                             </TextRun>
@@ -653,6 +653,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -664,7 +665,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!medida.Value+"-"+Fields!NombreProducto.Value+"-"+Fields!descripcion.Value</Value>
+                              <Value>=Fields!medida.Value+"-"+Fields!NombreProducto.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                               </Style>
@@ -1235,6 +1236,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Total</rd:DefaultName>
+          <Top>0cm</Top>
           <Left>15.76081cm</Left>
           <Height>0.51896cm</Height>
           <Width>3.29375cm</Width>
@@ -1254,6 +1256,7 @@
           <Value>=Fields!imagen.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
+          <Top>0cm</Top>
           <Height>2.35423cm</Height>
           <Width>2.51357cm</Width>
           <ZIndex>4</ZIndex>
@@ -1336,6 +1339,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Total</rd:DefaultName>
+          <Top>0cm</Top>
           <Left>5.10602cm</Left>
           <Height>0.51896cm</Height>
           <Width>3.2212cm</Width>
@@ -1449,6 +1453,7 @@
           <Value>=Fields!imagen.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
+          <Top>0cm</Top>
           <Left>10.58226cm</Left>
           <Height>2.35423cm</Height>
           <Width>2.51357cm</Width>
