@@ -104,7 +104,8 @@ Public Class frmInicioF
                 postgrado.Enabled = False
                 registroE.Enabled = False
                 SUPERADMIN.Enabled = False
-
+                frmQR.Enabled = False
+                'CambioDeAccesoToolStripMenuItem1.Enabled = False
             Else
                 If lbrol.Text = "AdministradorEMFOPESBE" Then
                     redrubi.Enabled = False
@@ -120,6 +121,8 @@ Public Class frmInicioF
                         postgrado.Enabled = False
                         registroR.Enabled = False
                         SUPERADMIN.Enabled = False
+                        REImprecionR.Enabled = False
+                        'CambioDeAccesoToolStripMenuItem.Enabled = False
                     Else
                         If lbrol.Text = "AdministradorREDRUBI" Then
                             fexpobeni.Enabled = False
@@ -135,6 +138,7 @@ Public Class frmInicioF
                                 postgrado.Enabled = True
                                 registroP.Enabled = False
                                 SUPERADMIN.Enabled = False
+                                FacturaToolStripMenuItem2.Enabled = False
                             Else
                                 If lbrol.Text = "AdministradorPOSTGRADO" Then
                                     fexpobeni.Enabled = False
@@ -150,6 +154,7 @@ Public Class frmInicioF
                                         postgrado.Enabled = False
                                         registroF.Enabled = False
                                         SUPERADMIN.Enabled = False
+                                        FacturaToolStripMenuItem1.Enabled = False
                                     Else
                                         If lbrol.Text = "AdministradorCAMPOFERIAL" Then
                                             fexpobeni.Enabled = True
@@ -158,9 +163,23 @@ Public Class frmInicioF
                                             postgrado.Enabled = False
                                             SUPERADMIN.Enabled = False
                                         Else
-                                            MessageBox.Show("USAURIO INCORRECTO")
-                                            Me.Close()
-                                            frmLogin.Show()
+                                            If lbrol.Text = "OrdenPagoREDRUBI" Then
+                                                fexpobeni.Enabled = False
+                                                redrubi.Enabled = True
+
+                                                registroR.Enabled = False
+                                                VentaR.Enabled = False
+                                                REImprecionR.Enabled = False
+                                                'CambioDeAccesoToolStripMenuItem.Enabled = False
+
+                                                emfopesbe.Enabled = False
+                                                postgrado.Enabled = False
+                                                SUPERADMIN.Enabled = False
+                                            Else
+                                                MessageBox.Show("USAURIO INCORRECTO")
+                                                Me.Close()
+                                                frmLogin.Show()
+                                            End If
                                         End If
                                     End If
                                 End If
@@ -687,6 +706,14 @@ Public Class frmInicioF
     Private Sub ClienteToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles ClienteToolStripMenuItem.Click
         frmReporteCLiente.MdiParent = Me
         frmReporteCLiente.Show()
+
+    End Sub
+
+    Private Sub registroR_Click(sender As Object, e As EventArgs) Handles registroR.Click
+
+    End Sub
+
+    Private Sub VentaR_Click(sender As Object, e As EventArgs) Handles VentaR.Click
 
     End Sub
 End Class

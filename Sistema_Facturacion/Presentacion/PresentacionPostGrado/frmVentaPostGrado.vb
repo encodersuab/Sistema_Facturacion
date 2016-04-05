@@ -112,6 +112,7 @@
                 End If
 
             Catch ex As Exception
+                frmDetalleVentaPostGrado.CancelarVentaPG()
                 MsgBox(ex.Message)
             End Try
         Else

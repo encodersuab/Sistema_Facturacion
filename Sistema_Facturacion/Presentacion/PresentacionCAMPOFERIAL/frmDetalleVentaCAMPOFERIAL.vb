@@ -516,6 +516,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
                     MessageBox.Show("No se a podido guardar la venta  Correctamente", "Guardando Venta", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End If
             Catch ex As Exception
+                CancelarVentaCF()
                 MsgBox(ex.Message)
             End Try
         End If
@@ -553,9 +554,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
 
     End Sub
 
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+    Public Sub CancelarVentaCF()
         Dim result As DialogResult
         result = MessageBox.Show("realizar la anulacion de la venta?", "Anulando venta", MessageBoxButtons.OKCancel)
         If result = DialogResult.OK Then
@@ -601,6 +600,10 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
                 MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
+    End Sub
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        CancelarVentaCF()
 
     End Sub
 
@@ -699,7 +702,7 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
 
     End Sub
 
-    Private Sub Label15_Click(sender As Object, e As EventArgs) Handles lbCantidad.Click
+    Private Sub Label15_Click(sender As Object, e As EventArgs)
         Dim cant As Double
         cant = lbCantidad.Text
         If lbCantidad.Text >= txtStock.Value Then
@@ -720,14 +723,14 @@ Partial Public Class frmDetalleVentaCAMPOFERIAL
             lbCantidad.Text = txtStock.Value
         Else
             btnGuardar.Visible = 1
-            lbCantidad.Text = Double.Parse(lbCantidad.Text) + 0.5
+            lbCantidad.Text = Double.Parse(lbCantidad.Text) + 0.1
         End If
 
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         If (lbCantidad.Text > 0) Then
-            lbCantidad.Text = Double.Parse(lbCantidad.Text) - 0.5
+            lbCantidad.Text = Double.Parse(lbCantidad.Text) - 0.1
         End If
     End Sub
 

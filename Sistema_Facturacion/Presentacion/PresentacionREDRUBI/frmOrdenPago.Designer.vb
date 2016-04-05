@@ -23,6 +23,7 @@ Partial Class frmOrdenPago
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtNombreCategoria = New System.Windows.Forms.TextBox()
         Me.txtTotalParcial = New System.Windows.Forms.Label()
         Me.btnBuscarCliente = New System.Windows.Forms.Button()
         Me.lbmedida = New System.Windows.Forms.Label()
@@ -54,7 +55,6 @@ Partial Class frmOrdenPago
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txttotal = New System.Windows.Forms.TextBox()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
-        Me.txtNombreCategoria = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -94,6 +94,15 @@ Partial Class frmOrdenPago
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'txtNombreCategoria
+        '
+        Me.txtNombreCategoria.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtNombreCategoria.Enabled = False
+        Me.txtNombreCategoria.Location = New System.Drawing.Point(168, 181)
+        Me.txtNombreCategoria.Name = "txtNombreCategoria"
+        Me.txtNombreCategoria.Size = New System.Drawing.Size(147, 20)
+        Me.txtNombreCategoria.TabIndex = 38
         '
         'txtTotalParcial
         '
@@ -143,7 +152,6 @@ Partial Class frmOrdenPago
         'txtNombreFac
         '
         Me.txtNombreFac.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtNombreFac.Enabled = False
         Me.txtNombreFac.Location = New System.Drawing.Point(144, 138)
         Me.txtNombreFac.Name = "txtNombreFac"
         Me.txtNombreFac.Size = New System.Drawing.Size(173, 20)
@@ -152,6 +160,7 @@ Partial Class frmOrdenPago
         'txtPrecioUnitario
         '
         Me.txtPrecioUnitario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtPrecioUnitario.Enabled = False
         Me.txtPrecioUnitario.Location = New System.Drawing.Point(142, 259)
         Me.txtPrecioUnitario.Name = "txtPrecioUnitario"
         Me.txtPrecioUnitario.Size = New System.Drawing.Size(173, 20)
@@ -373,15 +382,6 @@ Partial Class frmOrdenPago
         '
         'PrintDocument1
         '
-        '
-        'txtNombreCategoria
-        '
-        Me.txtNombreCategoria.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtNombreCategoria.Enabled = False
-        Me.txtNombreCategoria.Location = New System.Drawing.Point(168, 181)
-        Me.txtNombreCategoria.Name = "txtNombreCategoria"
-        Me.txtNombreCategoria.Size = New System.Drawing.Size(147, 20)
-        Me.txtNombreCategoria.TabIndex = 38
         '
         'frmOrdenPago
         '

@@ -113,6 +113,7 @@
                 End If
 
             Catch ex As Exception
+                frmDetalleVenta.CancelarVentaE()
                 MsgBox(ex.Message)
             End Try
         Else

@@ -8,38 +8,33 @@
     'Dim dcCiNit As New DataColumn("CI/NIT", GetType(System.String))
     'Dim dcNumDocumento As New DataColumn("NUMERO DOC", GetType(System.String))
     'Dim dcNombre As New DataColumn("NOMBRE", GetType(System.String))
-
+    Dim dcCategoria As New DataColumn("CATEGORIA", GetType(System.String))
+    Dim dcProducto As New DataColumn("PRODUCTO", GetType(System.String))
     Dim dcCantidad As New DataColumn("CANTIDAD ", GetType(System.Double))
     Dim dcPrecioUnitario As New DataColumn("PRECIO UNITARIO", GetType(System.Double))
     Dim dcTotalParcial As New DataColumn("TOTAL PARCIAL", GetType(System.Double))
-    Dim dcCategoria As New DataColumn("CATEGORIA", GetType(System.String))
-    Dim dcProducto As New DataColumn("PRODUCTO", GetType(System.String))
+
     Private Sub frmOrdenPago_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'dt2.Columns.Add(dcCiNit)
         'dt2.Columns.Add(dcNumDocumento)
         'dt2.Columns.Add(dcNombre)
-
+        dt2.Columns.Add(dcCategoria)
+        dt2.Columns.Add(dcProducto)
         dt2.Columns.Add(dcCantidad)
         dt2.Columns.Add(dcPrecioUnitario)
         dt2.Columns.Add(dcTotalParcial)
-        dt2.Columns.Add(dcCategoria)
-        dt2.Columns.Add(dcProducto)
+
         Me.dgvDetalleOrdenPago.DataSource = dt2
         'lbusuario.Text = frmInicioF.lbidusuario.Text
         mostrar()
     End Sub
 
     Public Sub limpiar()
-        'btnGuardar.Visible = True
-        'btnEditar.Visible = False
-        'txtidCliente.Text = ""
-        'txtNombreCLiente.Text = ""
-        'cbTipoDoc.Text = ""
-        'txtNumDoc.Text = ""
-        'txtIdVenta.Text = ""
-        'txtNombreFac.Text = ""
-        ' txtCi.Text = ""
-
+        txtCantidad.Text = 0
+        txtNombreCategoria.Text = ""
+        txtIdProducto.Text = ""
+        txtNombreProducto.Text = ""
+        txtPrecioUnitario.Text = ""
     End Sub
 
     Private Sub mostrar()
@@ -119,16 +114,17 @@
                 'dr2(dcCiNit) = Me.cbTipoDoc.Text
                 'dr2(dcNumDocumento) = Me.txtNumDoc.Text
                 'dr2(dcNombre) = Me.txtNombreFac.Text
-
+                dr2(dcProducto) = Me.txtNombreProducto.Text
+                dr2(dcCategoria) = Me.txtNombreCategoria.Text
                 dr2(dcCantidad) = Me.txtCantidad.Text
                 dr2(dcPrecioUnitario) = Me.txtPrecioUnitario.Text
                 dr2(dcTotalParcial) = Me.txtTotalParcial.Text
                 'dr2(dcCategoria) = Me
-                dr2(dcProducto) = Me.txtNombreProducto.Text
-                dr2(dcCategoria) = Me.txtNombreCategoria.Text
+
                 dt2.Rows.Add(dr2)
 
                 txttotal.Text = sumar().ToString
+                limpiar()
             Else
                 MessageBox.Show("CANTIDAD INCORRECTA")
             End If

@@ -43,6 +43,7 @@ Partial Class frmDetalleVenta
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lbCantidad = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.btnsalir = New System.Windows.Forms.Button()
@@ -75,7 +76,6 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtDD = New System.Windows.Forms.TextBox()
-        Me.lbCantidad = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,7 +112,7 @@ Partial Class frmDetalleVenta
         'lbFechaLimite
         '
         Me.lbFechaLimite.AutoSize = True
-        Me.lbFechaLimite.Location = New System.Drawing.Point(183, 66)
+        Me.lbFechaLimite.Location = New System.Drawing.Point(184, 57)
         Me.lbFechaLimite.Name = "lbFechaLimite"
         Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
         Me.lbFechaLimite.TabIndex = 46
@@ -165,7 +165,7 @@ Partial Class frmDetalleVenta
         'lbnumAutor
         '
         Me.lbnumAutor.AutoSize = True
-        Me.lbnumAutor.Location = New System.Drawing.Point(183, 39)
+        Me.lbnumAutor.Location = New System.Drawing.Point(184, 30)
         Me.lbnumAutor.Name = "lbnumAutor"
         Me.lbnumAutor.Size = New System.Drawing.Size(98, 13)
         Me.lbnumAutor.TabIndex = 39
@@ -175,7 +175,7 @@ Partial Class frmDetalleVenta
         'lbllave
         '
         Me.lbllave.AutoSize = True
-        Me.lbllave.Location = New System.Drawing.Point(183, 24)
+        Me.lbllave.Location = New System.Drawing.Point(184, 15)
         Me.lbllave.Name = "lbllave"
         Me.lbllave.Size = New System.Drawing.Size(37, 13)
         Me.lbllave.TabIndex = 38
@@ -185,7 +185,7 @@ Partial Class frmDetalleVenta
         'lbCC
         '
         Me.lbCC.AutoSize = True
-        Me.lbCC.Location = New System.Drawing.Point(183, 53)
+        Me.lbCC.Location = New System.Drawing.Point(184, 44)
         Me.lbCC.Name = "lbCC"
         Me.lbCC.Size = New System.Drawing.Size(76, 13)
         Me.lbCC.TabIndex = 36
@@ -310,6 +310,14 @@ Partial Class frmDetalleVenta
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'lbCantidad
+        '
+        Me.lbCantidad.Location = New System.Drawing.Point(144, 233)
+        Me.lbCantidad.Name = "lbCantidad"
+        Me.lbCantidad.Size = New System.Drawing.Size(105, 20)
+        Me.lbCantidad.TabIndex = 49
+        Me.lbCantidad.Text = "0.00"
         '
         'Button3
         '
@@ -593,14 +601,6 @@ Partial Class frmDetalleVenta
         Me.txtDD.TabIndex = 7
         Me.txtDD.Text = "0"
         Me.txtDD.Visible = False
-        '
-        'lbCantidad
-        '
-        Me.lbCantidad.Location = New System.Drawing.Point(144, 233)
-        Me.lbCantidad.Name = "lbCantidad"
-        Me.lbCantidad.Size = New System.Drawing.Size(105, 20)
-        Me.lbCantidad.TabIndex = 49
-        Me.lbCantidad.Text = "0.00"
         '
         'frmDetalleVenta
         '

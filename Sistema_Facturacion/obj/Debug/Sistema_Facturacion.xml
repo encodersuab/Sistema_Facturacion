@@ -6,203 +6,7 @@ Sistema_Facturacion
 </name>
 </assembly>
 <members>
-<member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_clienteDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_cliente_servicio_cuota_postgradoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_detalleventasDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_reporte_impuestosDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_GDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_campoferialDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_emfopesbeDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_postgradoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_redrubiDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_cliente_servicio_pago_postgradoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_clienteRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_cliente_servicio_cuota_postgradoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_detalleventasRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_reporte_impuestosRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_GRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_campoferialRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_emfopesbeRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_postgradoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_redrubiRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_cliente_servicio_pago_postgradoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_clienteRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_cliente_servicio_cuota_postgradoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_detalleventasRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_reporte_impuestosRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_GRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_campoferialRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_emfopesbeRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_postgradoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_redrubiRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_cliente_servicio_pago_postgradoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_clienteTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_cliente_servicio_cuota_postgradoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_detalleventasTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_reporte_impuestosTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_GTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_G_campoferialTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_G_emfopesbeTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_G_postgradoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_G_redrubiTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_cliente_servicio_pago_postgradoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.UpdateUpdatedRows(Sistema_Facturacion.dbfacDataSetREPORTES,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.UpdateInsertedRows(Sistema_Facturacion.dbfacDataSetREPORTES,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.UpdateDeletedRows(Sistema_Facturacion.dbfacDataSetREPORTES,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.UpdateAll(Sistema_Facturacion.dbfacDataSetREPORTES)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="T:Sistema_Facturacion.dbfacDataSet.TCategoriaDataTable">
+<member name="T:Sistema_Facturacion.dbfacDataSet.TCategoriaDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -1256,6 +1060,202 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 	<summary>
  Convierte números en su expresión numérica a su numeral cardinal
  </summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_clienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_cliente_servicio_cuota_postgradoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_detalleventasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_reporte_impuestosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_GDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_campoferialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_emfopesbeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_postgradoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_redrubiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_cliente_servicio_pago_postgradoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_clienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_cliente_servicio_cuota_postgradoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_detalleventasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_reporte_impuestosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_GRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_campoferialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_emfopesbeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_postgradoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_redrubiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_cliente_servicio_pago_postgradoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_clienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_cliente_servicio_cuota_postgradoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_detalleventasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_reporte_impuestosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_GRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_campoferialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_emfopesbeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_postgradoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_v_XFecha_G_redrubiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES.mostrar_cliente_servicio_pago_postgradoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTES">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_clienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_cliente_servicio_cuota_postgradoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_detalleventasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_reporte_impuestosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_GTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_G_campoferialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_G_emfopesbeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_G_postgradoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_v_XFecha_G_redrubiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.mostrar_cliente_servicio_pago_postgradoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.UpdateUpdatedRows(Sistema_Facturacion.dbfacDataSetREPORTES,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.UpdateInsertedRows(Sistema_Facturacion.dbfacDataSetREPORTES,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.UpdateDeletedRows(Sistema_Facturacion.dbfacDataSetREPORTES,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.UpdateAll(Sistema_Facturacion.dbfacDataSetREPORTES)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Sistema_Facturacion.dbfacDataSetREPORTESTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
 </member><member name="P:Sistema_Facturacion.My.Resources.Resources.ResourceManager">
 	<summary>
   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.

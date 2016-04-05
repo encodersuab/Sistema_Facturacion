@@ -134,12 +134,12 @@ Partial Class frmProductoCAMPOFERIAL
         'txtmedida
         '
         Me.txtmedida.FormattingEnabled = True
-        Me.txtmedida.Items.AddRange(New Object() {"METRO CUADRADO"})
+        Me.txtmedida.Items.AddRange(New Object() {"m²"})
         Me.txtmedida.Location = New System.Drawing.Point(152, 271)
         Me.txtmedida.Name = "txtmedida"
         Me.txtmedida.Size = New System.Drawing.Size(133, 21)
         Me.txtmedida.TabIndex = 7
-        Me.txtmedida.Text = "METRO CUADRADO"
+        Me.txtmedida.Text = "m²"
         '
         'Label10
         '

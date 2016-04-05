@@ -422,6 +422,7 @@ Public Class frmDetalleVentaREDRUBI
 
                 End If
             Catch ex As Exception
+                CancelarVentaRR()
                 MsgBox(ex.Message)
             End Try
         End If
@@ -459,9 +460,7 @@ Public Class frmDetalleVentaREDRUBI
 
     End Sub
 
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+    Public Sub CancelarVentaRR()
         Dim result As DialogResult
         result = MessageBox.Show("realizar la anulacion de la venta?", "Anulando venta", MessageBoxButtons.OKCancel)
         If result = DialogResult.OK Then
@@ -506,6 +505,10 @@ Public Class frmDetalleVentaREDRUBI
                 MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
+    End Sub
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        CancelarVentaRR()
 
 
     End Sub

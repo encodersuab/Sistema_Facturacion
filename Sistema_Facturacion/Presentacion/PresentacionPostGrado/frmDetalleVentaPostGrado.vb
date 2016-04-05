@@ -453,6 +453,7 @@ Public Class frmDetalleVentaPostGrado
                     CodCobranza.Text = "0"
                 End If
             Catch ex As Exception
+                CancelarVentaPG()
                 MsgBox(ex.Message)
             End Try
         End If
@@ -490,9 +491,7 @@ Public Class frmDetalleVentaPostGrado
 
     End Sub
 
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+    Public Sub CancelarVentaPG()
         Dim result As DialogResult
         result = MessageBox.Show("realizar la anulacion de la venta?", "Anulando venta", MessageBoxButtons.OKCancel)
         If result = DialogResult.OK Then
@@ -540,6 +539,10 @@ Public Class frmDetalleVentaPostGrado
                 MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
+    End Sub
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        CancelarVentaPG()
 
     End Sub
 

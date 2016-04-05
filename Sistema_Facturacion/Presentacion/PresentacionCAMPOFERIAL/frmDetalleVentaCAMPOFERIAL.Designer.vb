@@ -46,7 +46,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.lbCantidad = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -78,6 +77,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.txtStock = New System.Windows.Forms.NumericUpDown()
+        Me.lbCantidad = New System.Windows.Forms.TextBox()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -337,15 +337,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
-        '
-        'lbCantidad
-        '
-        Me.lbCantidad.AutoSize = True
-        Me.lbCantidad.Location = New System.Drawing.Point(141, 245)
-        Me.lbCantidad.Name = "lbCantidad"
-        Me.lbCantidad.Size = New System.Drawing.Size(28, 13)
-        Me.lbCantidad.TabIndex = 42
-        Me.lbCantidad.Text = "0.00"
         '
         'Button3
         '
@@ -625,6 +616,13 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtStock.TabIndex = 29
         Me.txtStock.Visible = False
         '
+        'lbCantidad
+        '
+        Me.lbCantidad.Location = New System.Drawing.Point(145, 242)
+        Me.lbCantidad.Name = "lbCantidad"
+        Me.lbCantidad.Size = New System.Drawing.Size(47, 20)
+        Me.lbCantidad.TabIndex = 42
+        '
         'frmDetalleVentaCAMPOFERIAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -704,5 +702,5 @@ Partial Class frmDetalleVentaCAMPOFERIAL
     Friend WithEvents lbFechaLimite As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents lbCantidad As System.Windows.Forms.Label
+    Friend WithEvents lbCantidad As System.Windows.Forms.TextBox
 End Class

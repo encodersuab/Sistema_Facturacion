@@ -2,7 +2,56 @@
 Public Class fCliente
     Inherits Conexion
     Dim cmd As New SqlCommand
+    'Public Function mostrarCI(ByVal dts As vCliente) As DataTable
+    '    Try
+    '        conectado()
+    '        cmd = New SqlCommand("buscarCI_cliente")
+    '        cmd.CommandType = CommandType.StoredProcedure
+    '        cmd.Connection = cnn
 
+    '        cmd.Parameters.AddWithValue("@ci", dts.gci)
+
+    '        If cmd.ExecuteNonQuery Then
+    '            Dim dt As New DataTable
+    '            Dim da As New SqlDataAdapter(cmd)
+    '            da.Fill(dt)
+    '            Return dt
+    '        Else
+    '            Return Nothing
+    '        End If
+    '    Catch ex As Exception
+    '        MsgBox(ex.Message)
+    '        Return Nothing
+    '    Finally
+    '        desconectado()
+
+    '    End Try
+    'End Function
+    Dim retornarValor As Object
+    Public Function mostrarCI(ByVal dts As vCliente) As DataTable
+        Try
+            conectado()
+            cmd = New SqlCommand("buscarCI_cliente")
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Connection = cnn
+            cmd.Parameters.AddWithValue("@ci", dts.gci)
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dt)
+                Return dt
+            Else
+                Return Nothing
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            desconectado()
+
+        End Try
+    End Function
     Public Function mostrarUAB() As DataTable
         Try
             conectado()

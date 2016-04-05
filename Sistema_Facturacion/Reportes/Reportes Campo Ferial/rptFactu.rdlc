@@ -6,13 +6,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.64111cm</Width>
+              <Width>2.51357cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.97586cm</Width>
+              <Width>4.23051cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.51959cm</Width>
+              <Width>1.58314cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -60,7 +60,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!nombre_categoria.Value+" "+Fields!NombreProducto.Value+" "+Fields!descripcion.Value+" /"+Str(Fields!cantidad.Value)+" "+Fields!medida.Value</Value>
+                              <Value>=Fields!cantidad.Value &amp; " " &amp; Fields!medida.Value &amp; " " &amp; Fields!nombre_categoria.Value &amp;" "&amp; Fields!NombreProducto.Value &amp;" "&amp; Fields!descripcion.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                               </Style>
@@ -134,10 +134,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>4.49764cm</Top>
-        <Left>0.19066cm</Left>
+        <Top>4.55056cm</Top>
         <Height>0.6cm</Height>
-        <Width>8.13656cm</Width>
+        <Width>8.32722cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -148,10 +147,10 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.88452cm</Width>
+              <Width>2.51357cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.06819cm</Width>
+              <Width>4.43914cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.51959cm</Width>
@@ -202,7 +201,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!nombre_categoria.Value+" "+Fields!NombreProducto.Value+" "+Fields!descripcion.Value+" /"+Str(Fields!cantidad.Value)+" "+Fields!medida.Value</Value>
+                              <Value>=Fields!cantidad.Value &amp; " " &amp; Fields!medida.Value &amp; " " &amp; Fields!nombre_categoria.Value &amp;" "&amp; Fields!NombreProducto.Value &amp;" "&amp; Fields!descripcion.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                               </Style>
@@ -222,6 +221,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -276,7 +276,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>4.49764cm</Top>
+        <Top>4.55053cm</Top>
         <Left>10.58226cm</Left>
         <Height>0.6cm</Height>
         <Width>8.4723cm</Width>
@@ -700,7 +700,7 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>2.00694in</Height>
+    <Height>2.02778in</Height>
     <Style />
   </Body>
   <Width>7.6588in</Width>
@@ -1011,7 +1011,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>literal</rd:DefaultName>
-          <Top>0.51895cm</Top>
+          <Top>0.51893cm</Top>
           <Left>13.2823cm</Left>
           <Height>0.76757cm</Height>
           <Width>6.17106cm</Width>
@@ -1059,7 +1059,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Fecha_limite</rd:DefaultName>
-          <Top>1.46292cm</Top>
+          <Top>1.4629cm</Top>
           <Left>13.2823cm</Left>
           <Height>0.49417cm</Height>
           <Width>6.17106cm</Width>
@@ -1104,7 +1104,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Codigo_Control</rd:DefaultName>
-          <Top>1.21596cm</Top>
+          <Top>1.21594cm</Top>
           <Left>13.2823cm</Left>
           <Height>0.49417cm</Height>
           <Width>6.17106cm</Width>
@@ -1147,7 +1147,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Total</rd:DefaultName>
-          <Top>0.14111cm</Top>
+          <Top>0.14109cm</Top>
           <Left>15.76081cm</Left>
           <Height>0.51896cm</Height>
           <Width>3.29375cm</Width>
@@ -1167,7 +1167,7 @@
           <Value>=Fields!imagen.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
-          <Top>0.14111cm</Top>
+          <Top>0.14109cm</Top>
           <Height>2.35423cm</Height>
           <Width>2.51357cm</Width>
           <ZIndex>4</ZIndex>
@@ -1207,7 +1207,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>literal</rd:DefaultName>
-          <Top>0.5366cm</Top>
+          <Top>0.53658cm</Top>
           <Left>2.68996cm</Left>
           <Height>0.74993cm</Height>
           <Width>6.46633cm</Width>
@@ -1250,7 +1250,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Total</rd:DefaultName>
-          <Top>0.14111cm</Top>
+          <Top>0.14109cm</Top>
           <Left>5.10602cm</Left>
           <Height>0.51896cm</Height>
           <Width>3.2212cm</Width>
@@ -1295,7 +1295,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Codigo_Control</rd:DefaultName>
-          <Top>1.22478cm</Top>
+          <Top>1.22476cm</Top>
           <Left>2.68996cm</Left>
           <Height>0.49417cm</Height>
           <Width>6.46633cm</Width>
@@ -1344,7 +1344,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Fecha_limite</rd:DefaultName>
-          <Top>1.48056cm</Top>
+          <Top>1.48054cm</Top>
           <Left>2.68996cm</Left>
           <Height>0.49417cm</Height>
           <Width>6.46633cm</Width>
@@ -1364,7 +1364,7 @@
           <Value>=Fields!imagen.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
-          <Top>0.14111cm</Top>
+          <Top>0.14109cm</Top>
           <Left>10.58226cm</Left>
           <Height>2.35423cm</Height>
           <Width>2.51357cm</Width>

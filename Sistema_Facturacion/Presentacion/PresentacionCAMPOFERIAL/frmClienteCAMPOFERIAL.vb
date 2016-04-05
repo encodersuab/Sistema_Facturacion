@@ -304,4 +304,21 @@
     Private Sub cbxListadoClientes_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub txtCi_KeyUp(sender As Object, e As KeyEventArgs) Handles txtCi.KeyUp
+        Dim i As String
+        Try
+            Dim dt1 As New DataTable
+            Dim dts As New vCliente
+            Dim funcCI As New fCliente
+
+            dts.gci = txtCi.Text
+            dt1 = funcCI.mostrarCI(dts)
+            i = dt1.Rows(0)("ci").ToString
+            If i = txtCi.Text Then
+                MessageBox.Show("YA EXISTE UN CLIENTE REGISTRADO CON ESTE CI " + txtCi.Text + " REALICE LA BUSQUEDA DEL CLIENTE")
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
 End Class

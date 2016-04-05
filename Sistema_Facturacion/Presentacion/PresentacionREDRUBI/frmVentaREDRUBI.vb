@@ -115,6 +115,7 @@
                 End If
 
             Catch ex As Exception
+                frmDetalleVentaREDRUBI.CancelarVentaRR()
                 MsgBox(ex.Message)
             End Try
         Else

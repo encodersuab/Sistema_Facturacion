@@ -2,7 +2,7 @@
 
     Private dt As New DataTable
     Private Sub frmCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-            mostrar()
+        mostrar()
     End Sub
 
     Public Sub limpiar()
@@ -151,7 +151,21 @@
     'End Sub
 
     Private Sub txtCi_TextChanged(sender As Object, e As EventArgs) Handles txtCi.TextChanged
+        'Dim i As String
+        'Try
+        '    Dim dt1 As New DataTable
+        '    Dim dts As New vCliente
+        '    Dim funcCI As New fCliente
 
+        '    dts.gci = txtCi.Text
+        '    dt1 = funcCI.mostrarCI(dts)
+        '    i = dt1.Rows(0)("ci").ToString
+        '    If i = txtCi.Text Then
+        '        MessageBox.Show("YA EXISTE UN CLIENTE REGISTRADO CON ESTE CI " + txtCi.Text + " REALICE LA BUSQUEDA DEL CLIENTE")
+        '    End If
+        'Catch ex As Exception
+
+        'End Try
     End Sub
 
     Private Sub txtCi_Validated(sender As Object, e As EventArgs) Handles txtCi.Validated
@@ -286,7 +300,7 @@
             frmVentaPlanilla.txtNombreFac.Text = datalistado.SelectedCells.Item(2).Value + " " + datalistado.SelectedCells.Item(3).Value
             txtFlag.Text = "0"
             Me.Close()
-       
+
         End If
 
 
@@ -294,7 +308,6 @@
 
     Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
         Buscar()
-
     End Sub
 
     Private Sub Inexistente_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Inexistente.LinkClicked
@@ -303,5 +316,30 @@
 
     Private Sub cbxListadoClientes_SelectedIndexChanged(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub txtCi_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCi.KeyPress
+       
+    End Sub
+
+    Private Sub txtCi_PreviewKeyDown(sender As Object, e As PreviewKeyDownEventArgs) Handles txtCi.PreviewKeyDown
+      
+    End Sub
+
+    Private Sub txtCi_KeyUp(sender As Object, e As KeyEventArgs) Handles txtCi.KeyUp
+        Dim i As String
+        Try
+            Dim dt1 As New DataTable
+            Dim dts As New vCliente
+            Dim funcCI As New fCliente
+
+            dts.gci = txtCi.Text
+            dt1 = funcCI.mostrarCI(dts)
+            i = dt1.Rows(0)("ci").ToString
+            If i = txtCi.Text Then
+                MessageBox.Show("YA EXISTE UN CLIENTE REGISTRADO CON ESTE CI " + txtCi.Text + " REALICE LA BUSQUEDA DEL CLIENTE")
+            End If
+        Catch ex As Exception
+        End Try
     End Sub
 End Class

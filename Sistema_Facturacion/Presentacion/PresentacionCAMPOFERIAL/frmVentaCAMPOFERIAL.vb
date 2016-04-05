@@ -112,9 +112,11 @@
                 End If
 
             Catch ex As Exception
+                frmDetalleVentaCAMPOFERIAL.CancelarVentaCF()
                 MsgBox(ex.Message)
             End Try
         Else
+
             MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
         End If

@@ -36,24 +36,24 @@ Partial Class frmImprimirOrdenPAgo
         Me.PrintPreviewControl1.Document = Me.PrintDocument1
         Me.PrintPreviewControl1.Location = New System.Drawing.Point(1, 1)
         Me.PrintPreviewControl1.Name = "PrintPreviewControl1"
-        Me.PrintPreviewControl1.Size = New System.Drawing.Size(888, 308)
+        Me.PrintPreviewControl1.Size = New System.Drawing.Size(888, 326)
         Me.PrintPreviewControl1.TabIndex = 0
-        Me.PrintPreviewControl1.Zoom = 1.2R
+        Me.PrintPreviewControl1.Zoom = 1.0R
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(392, 439)
+        Me.Button1.Location = New System.Drawing.Point(409, 338)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "IMPRIMIR"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'frmImprimirOrdenPAgo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(889, 569)
+        Me.ClientSize = New System.Drawing.Size(889, 373)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PrintPreviewControl1)
         Me.Name = "frmImprimirOrdenPAgo"

@@ -466,6 +466,7 @@ Partial Public Class frmDetalleVenta
 
                 End If
             Catch ex As Exception
+                CancelarVentaE()
                 MsgBox(ex.Message)
             End Try
         End If
@@ -502,9 +503,7 @@ Partial Public Class frmDetalleVenta
     Private Sub lbllave_Click(sender As Object, e As EventArgs) Handles lbllave.Click
 
     End Sub
-
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Public Sub CancelarVentaE()
         Dim result As DialogResult
         result = MessageBox.Show("realizar la anulacion de la venta?", "Anulando venta", MessageBoxButtons.OKCancel)
         If result = DialogResult.OK Then
@@ -550,6 +549,10 @@ Partial Public Class frmDetalleVenta
                 MessageBox.Show("error de datos faltante", "error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        CancelarVentaE()
 
     End Sub
 
@@ -655,7 +658,7 @@ Partial Public Class frmDetalleVenta
             If func.editarVentaPlanilla(dts) Then
                 Me.Close()
             Else
-                MsgBox("no se puede serrar")
+                MsgBox("no se puede cerrar")
 
             End If
 
