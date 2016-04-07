@@ -28,7 +28,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.dtpDel = New System.Windows.Forms.DateTimePicker()
         Me.txtDD = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.lbFechaLimite = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.lbliteral = New System.Windows.Forms.Label()
         Me.lbdetalle = New System.Windows.Forms.Label()
@@ -46,6 +45,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lbCantidad = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -77,7 +77,7 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.txtStock = New System.Windows.Forms.NumericUpDown()
-        Me.lbCantidad = New System.Windows.Forms.TextBox()
+        Me.lbFechaLimite = New System.Windows.Forms.DateTimePicker()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -132,16 +132,6 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.GroupBox2.TabIndex = 9
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
-        '
-        'lbFechaLimite
-        '
-        Me.lbFechaLimite.AutoSize = True
-        Me.lbFechaLimite.Location = New System.Drawing.Point(205, 63)
-        Me.lbFechaLimite.Name = "lbFechaLimite"
-        Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
-        Me.lbFechaLimite.TabIndex = 45
-        Me.lbFechaLimite.Text = "FechaLimite"
-        Me.lbFechaLimite.Visible = False
         '
         'Label8
         '
@@ -337,6 +327,13 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento"
+        '
+        'lbCantidad
+        '
+        Me.lbCantidad.Location = New System.Drawing.Point(145, 242)
+        Me.lbCantidad.Name = "lbCantidad"
+        Me.lbCantidad.Size = New System.Drawing.Size(47, 20)
+        Me.lbCantidad.TabIndex = 42
         '
         'Button3
         '
@@ -616,12 +613,15 @@ Partial Class frmDetalleVentaCAMPOFERIAL
         Me.txtStock.TabIndex = 29
         Me.txtStock.Visible = False
         '
-        'lbCantidad
+        'lbFechaLimite
         '
-        Me.lbCantidad.Location = New System.Drawing.Point(145, 242)
-        Me.lbCantidad.Name = "lbCantidad"
-        Me.lbCantidad.Size = New System.Drawing.Size(47, 20)
-        Me.lbCantidad.TabIndex = 42
+        Me.lbFechaLimite.Enabled = False
+        Me.lbFechaLimite.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.lbFechaLimite.Location = New System.Drawing.Point(208, 0)
+        Me.lbFechaLimite.Name = "lbFechaLimite"
+        Me.lbFechaLimite.Size = New System.Drawing.Size(92, 20)
+        Me.lbFechaLimite.TabIndex = 43
+        Me.lbFechaLimite.Value = New Date(2016, 4, 6, 17, 48, 8, 0)
         '
         'frmDetalleVentaCAMPOFERIAL
         '
@@ -699,8 +699,8 @@ Partial Class frmDetalleVentaCAMPOFERIAL
     Friend WithEvents dtpDel As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents lbFechaLimite As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents lbCantidad As System.Windows.Forms.TextBox
+    Friend WithEvents lbFechaLimite As System.Windows.Forms.DateTimePicker
 End Class

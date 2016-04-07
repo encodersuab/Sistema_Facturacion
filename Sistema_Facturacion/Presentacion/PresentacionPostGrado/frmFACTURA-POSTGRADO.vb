@@ -114,7 +114,7 @@
                     dts.gNum_Autorizacion = txtINum_Autorizacion.Text
                     dts.gfecha_emision = txtfechaEmision.Text
                     dts.gTotal = "0"
-                    dts.gCodigo_Control = txtCodigoControl.Text
+                    dts.gCodigo_Control = "0"
                     dts.gCi_Nit_Comprador = "0"
                     dts.gIdVenta = txttxtIdVenta.Text
                     dts.gvalidez = "A"

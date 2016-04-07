@@ -1,6 +1,8 @@
 ﻿Public Class frmReporteventasGeneralPostGrado
 
     Private Sub frmReporteventasGeneralPostGrado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'dbfacDataSetREPORTES.mostrar_v_XFecha_G_postgrado' Puede moverla o quitarla según sea necesario.
+
         'TODO: esta línea de código carga datos en la tabla 'DataSet1.mostrar_v_XFecha_G_postgrado' Puede moverla o quitarla según sea necesario.
 
         'TODO: esta línea de código carga datos en la tabla 'DataSet1.mostrar_v_XFecha_G_postgrado' Puede moverla o quitarla según sea necesario.
@@ -9,7 +11,7 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         'TODO: esta línea de código carga datos en la tabla 'dbfacDataSet.mostrar_venta_porFecha_postgrado_general' Puede moverla o quitarla según sea necesario.
-        Me.mostrar_v_XFecha_G_postgradoTableAdapter.Fill(Me.DataSet1.mostrar_v_XFecha_G_postgrado, dtpFechaInicio.Value, dtpFechaFin.Value)
+        Me.mostrar_v_XFecha_G_postgradoTableAdapter.Fill(Me.dbfacDataSetREPORTES.mostrar_v_XFecha_G_postgrado, dtpFechaInicio.Value, dtpFechaFin.Value)
         Me.ReportViewer1.RefreshReport()
     End Sub
 

@@ -622,8 +622,8 @@ Public Class frmInicioF
     End Sub
 
     Private Sub ImpuestosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImpuestosToolStripMenuItem.Click
-        frmImpuestos.MdiParent = Me
-        frmImpuestos.Show()
+        frmLibroVentas.MdiParent = Me
+        frmLibroVentas.Show()
     End Sub
 
     Private Sub DetalleVentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DetalleVentaToolStripMenuItem.Click
@@ -715,5 +715,10 @@ Public Class frmInicioF
 
     Private Sub VentaR_Click(sender As Object, e As EventArgs) Handles VentaR.Click
 
+    End Sub
+
+    Private Sub ConsolidadoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsolidadoToolStripMenuItem.Click
+        frmImpuestos.MdiParent = Me
+        frmImpuestos.Show()
     End Sub
 End Class

@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>\\192.168.1.25/instaladorHIVE/</InstallUrl>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>83</ApplicationRevision>
+    <ApplicationRevision>90</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -979,6 +979,7 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVenta2.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVenta3.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentaIVA.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentasConsolidado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVentasEstandar.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptReporteCLiente.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptVentasG.rdlc" />
@@ -1019,6 +1020,7 @@
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptCuotaPG.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptCuotasPostgrado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptFactu3.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptFactura3.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptNCuotasPG.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptPagoPG.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptReporteCategoriaPostGrado.rdlc" />
@@ -1030,6 +1032,7 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\frmrptReImpresionFactura.resx">
       <DependentUpon>frmrptReImpresionFactura.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes PostGrado\rptVentasGeneralesPostGRado.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes PostGrado\rptVentasGPOSTGRADO.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes RedRubi\frmFactura0.resx">
       <DependentUpon>frmFactura0.vb</DependentUpon>

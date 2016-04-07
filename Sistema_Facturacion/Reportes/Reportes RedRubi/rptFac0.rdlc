@@ -367,7 +367,7 @@
         <Top>4.48014cm</Top>
         <Left>11.05851cm</Left>
         <Height>0.6cm</Height>
-        <Width>7.99605cm</Width>
+        <Width>7.99606cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -934,7 +934,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>NºAutoización:</Value>
+                  <Value>NºAutorización:</Value>
                   <Style>
                     <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -1255,7 +1255,6 @@
           <Value>=Fields!imagen.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
-          <Top>0cm</Top>
           <Height>2.35423cm</Height>
           <Width>2.51357cm</Width>
           <ZIndex>4</ZIndex>
@@ -1452,7 +1451,6 @@
           <Value>=Fields!imagen.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
-          <Top>0cm</Top>
           <Left>10.58226cm</Left>
           <Height>2.35423cm</Height>
           <Width>2.51357cm</Width>
