@@ -25,7 +25,6 @@ Partial Class frmDetalleVenta
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDetalleVenta))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.lbFechaLimite = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.lbliteral = New System.Windows.Forms.Label()
         Me.lbdetalle = New System.Windows.Forms.Label()
@@ -76,6 +75,7 @@ Partial Class frmDetalleVenta
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.erroricono = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.txtDD = New System.Windows.Forms.TextBox()
+        Me.lbFechaLimite = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox2.SuspendLayout()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -108,16 +108,6 @@ Partial Class frmDetalleVenta
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
-        '
-        'lbFechaLimite
-        '
-        Me.lbFechaLimite.AutoSize = True
-        Me.lbFechaLimite.Location = New System.Drawing.Point(184, 57)
-        Me.lbFechaLimite.Name = "lbFechaLimite"
-        Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
-        Me.lbFechaLimite.TabIndex = 46
-        Me.lbFechaLimite.Text = "FechaLimite"
-        Me.lbFechaLimite.Visible = False
         '
         'Label13
         '
@@ -602,6 +592,15 @@ Partial Class frmDetalleVenta
         Me.txtDD.Text = "0"
         Me.txtDD.Visible = False
         '
+        'lbFechaLimite
+        '
+        Me.lbFechaLimite.Enabled = False
+        Me.lbFechaLimite.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.lbFechaLimite.Location = New System.Drawing.Point(187, 0)
+        Me.lbFechaLimite.Name = "lbFechaLimite"
+        Me.lbFechaLimite.Size = New System.Drawing.Size(92, 20)
+        Me.lbFechaLimite.TabIndex = 50
+        '
         'frmDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -675,8 +674,8 @@ Partial Class frmDetalleVenta
     Friend WithEvents btnsalir As System.Windows.Forms.Button
     Friend WithEvents lbliteral As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents lbFechaLimite As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents lbCantidad As System.Windows.Forms.TextBox
+    Friend WithEvents lbFechaLimite As System.Windows.Forms.DateTimePicker
 End Class

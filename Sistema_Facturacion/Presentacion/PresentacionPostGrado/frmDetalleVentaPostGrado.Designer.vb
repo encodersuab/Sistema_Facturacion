@@ -58,10 +58,8 @@ Partial Class frmDetalleVentaPostGrado
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.lbFechaLimite = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.lbliteral = New System.Windows.Forms.Label()
-        Me.btnConsultarCuotas = New System.Windows.Forms.Button()
         Me.lbdetalle = New System.Windows.Forms.Label()
         Me.btnFinalizarVenta = New System.Windows.Forms.Button()
         Me.lbnumAutor = New System.Windows.Forms.Label()
@@ -74,9 +72,11 @@ Partial Class frmDetalleVentaPostGrado
         Me.Inexistente = New System.Windows.Forms.LinkLabel()
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.btnConsultarPagos = New System.Windows.Forms.Button()
+        Me.btnConsultarCuotas = New System.Windows.Forms.Button()
         Me.CodCobranza = New System.Windows.Forms.TextBox()
         Me.txtIdDeudor = New System.Windows.Forms.TextBox()
-        Me.btnConsultarPagos = New System.Windows.Forms.Button()
+        Me.lbFechaLimite = New System.Windows.Forms.DateTimePicker()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -438,16 +438,6 @@ Partial Class frmDetalleVentaPostGrado
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
-        'lbFechaLimite
-        '
-        Me.lbFechaLimite.AutoSize = True
-        Me.lbFechaLimite.Location = New System.Drawing.Point(205, 63)
-        Me.lbFechaLimite.Name = "lbFechaLimite"
-        Me.lbFechaLimite.Size = New System.Drawing.Size(64, 13)
-        Me.lbFechaLimite.TabIndex = 46
-        Me.lbFechaLimite.Text = "FechaLimite"
-        Me.lbFechaLimite.Visible = False
-        '
         'Label13
         '
         Me.Label13.AutoSize = True
@@ -464,15 +454,6 @@ Partial Class frmDetalleVentaPostGrado
         Me.lbliteral.Name = "lbliteral"
         Me.lbliteral.Size = New System.Drawing.Size(0, 13)
         Me.lbliteral.TabIndex = 45
-        '
-        'btnConsultarCuotas
-        '
-        Me.btnConsultarCuotas.Location = New System.Drawing.Point(407, 19)
-        Me.btnConsultarCuotas.Name = "btnConsultarCuotas"
-        Me.btnConsultarCuotas.Size = New System.Drawing.Size(135, 44)
-        Me.btnConsultarCuotas.TabIndex = 44
-        Me.btnConsultarCuotas.Text = "Consultar Cuotas"
-        Me.btnConsultarCuotas.UseVisualStyleBackColor = True
         '
         'lbdetalle
         '
@@ -589,6 +570,24 @@ Partial Class frmDetalleVentaPostGrado
         Me.eliminar.Name = "eliminar"
         Me.eliminar.ReadOnly = True
         '
+        'btnConsultarPagos
+        '
+        Me.btnConsultarPagos.Location = New System.Drawing.Point(407, 19)
+        Me.btnConsultarPagos.Name = "btnConsultarPagos"
+        Me.btnConsultarPagos.Size = New System.Drawing.Size(135, 44)
+        Me.btnConsultarPagos.TabIndex = 47
+        Me.btnConsultarPagos.Text = "Consultar Pagos"
+        Me.btnConsultarPagos.UseVisualStyleBackColor = True
+        '
+        'btnConsultarCuotas
+        '
+        Me.btnConsultarCuotas.Location = New System.Drawing.Point(407, 19)
+        Me.btnConsultarCuotas.Name = "btnConsultarCuotas"
+        Me.btnConsultarCuotas.Size = New System.Drawing.Size(135, 44)
+        Me.btnConsultarCuotas.TabIndex = 44
+        Me.btnConsultarCuotas.Text = "Consultar Cuotas"
+        Me.btnConsultarCuotas.UseVisualStyleBackColor = True
+        '
         'CodCobranza
         '
         Me.CodCobranza.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
@@ -609,14 +608,14 @@ Partial Class frmDetalleVentaPostGrado
         Me.txtIdDeudor.TabIndex = 30
         Me.txtIdDeudor.Text = "0"
         '
-        'btnConsultarPagos
+        'lbFechaLimite
         '
-        Me.btnConsultarPagos.Location = New System.Drawing.Point(407, 19)
-        Me.btnConsultarPagos.Name = "btnConsultarPagos"
-        Me.btnConsultarPagos.Size = New System.Drawing.Size(135, 44)
-        Me.btnConsultarPagos.TabIndex = 47
-        Me.btnConsultarPagos.Text = "Consultar Pagos"
-        Me.btnConsultarPagos.UseVisualStyleBackColor = True
+        Me.lbFechaLimite.Enabled = False
+        Me.lbFechaLimite.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.lbFechaLimite.Location = New System.Drawing.Point(208, -3)
+        Me.lbFechaLimite.Name = "lbFechaLimite"
+        Me.lbFechaLimite.Size = New System.Drawing.Size(92, 20)
+        Me.lbFechaLimite.TabIndex = 36
         '
         'frmDetalleVentaPostGrado
         '
@@ -695,8 +694,8 @@ Partial Class frmDetalleVentaPostGrado
     Friend WithEvents btnConsultarCuotas As System.Windows.Forms.Button
     Friend WithEvents lbliteral As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents lbFechaLimite As System.Windows.Forms.Label
     Friend WithEvents txtIdDeudor As System.Windows.Forms.TextBox
     Friend WithEvents CodCobranza As System.Windows.Forms.TextBox
     Friend WithEvents btnConsultarPagos As System.Windows.Forms.Button
+    Friend WithEvents lbFechaLimite As System.Windows.Forms.DateTimePicker
 End Class

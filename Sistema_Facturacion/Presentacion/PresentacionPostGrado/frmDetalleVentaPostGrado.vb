@@ -419,7 +419,7 @@ Public Class frmDetalleVentaPostGrado
                 'QrCodeImgControl1.Enabled = True
                 QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)
                 '''''''' 
-                dts.gfecha_emision = f.ToString
+                dts.gfecha_emision = dtpFecha.Value.Date
                 dts.gNit_Emisor = txtnituab.Text
                 dts.gNum_Factura = aux
                 dts.gNum_Autorizacion = lbnumAutor.Text
@@ -430,7 +430,7 @@ Public Class frmDetalleVentaPostGrado
                 dts.gIdVenta = txtIdVenta.Text
                 dts.gvalidez = "V"
                 dts.gliteral = lbliteral.text
-                dts.gfecha_limite = lbFechaLimite.Text
+                dts.gfecha_limite = lbFechaLimite.Value.Date
                 ''''''''
                 If func.insertar3(dts) Then
                     frmFactura3.txtnumfactura.Text = aux
