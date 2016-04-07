@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>\\192.168.1.25/instaladorHIVE/</InstallUrl>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>91</ApplicationRevision>
+    <ApplicationRevision>92</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -182,6 +182,9 @@
     <Compile Include="dbfacDataSetREPORTES.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>dbfacDataSetREPORTES.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbfacDataSetREPORTES.vb">
       <DependentUpon>dbfacDataSetREPORTES.xsd</DependentUpon>
     </Compile>
     <Compile Include="Logica\LogicaCAMPOFERIAL\vCategoriaCAMPOFERIAL.vb" />
@@ -587,6 +590,12 @@
     <Compile Include="Reportes\Reportes Generales\frmReporteCLiente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmReporteClienteVenta.Designer.vb">
+      <DependentUpon>frmReporteClienteVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Generales\frmReporteClienteVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\Reportes Generales\reportePrueba.Designer.vb">
       <DependentUpon>reportePrueba.vb</DependentUpon>
     </Compile>
@@ -945,6 +954,9 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteCLiente.resx">
       <DependentUpon>frmReporteCLiente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteClienteVenta.resx">
+      <DependentUpon>frmReporteClienteVenta.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Reportes Generales\reportePrueba.resx">
       <DependentUpon>reportePrueba.vb</DependentUpon>
     </EmbeddedResource>
@@ -972,6 +984,8 @@
     <EmbeddedResource Include="Reportes\Reportes Generales\frmReporteVentasgeneralCliente.resx">
       <DependentUpon>frmReporteVentasgeneralCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptClienteDetalleVenta.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes Generales\rptClienteVenta.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptDetalladoVentas.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptImpuestos.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes Generales\rptLibroVenta0.rdlc" />

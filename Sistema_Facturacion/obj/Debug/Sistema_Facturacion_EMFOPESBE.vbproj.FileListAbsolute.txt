@@ -984,3 +984,4 @@ D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debu
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.pdb
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteCLiente.resources
 D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion_EMFOPESBE.vbprojResolveAssemblyReference.cache
+D:\Users\Blady\Documents\GitHub\Sistema_Facturacion\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.frmReporteClienteVenta.resources
