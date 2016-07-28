@@ -30,10 +30,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Fecha_emision1</rd:DefaultName>
-        <Top>1.72777cm</Top>
-        <Left>3.29759cm</Left>
+        <Top>1.41027cm</Top>
+        <Left>2.65742cm</Left>
         <Height>0.6cm</Height>
-        <Width>6.13575cm</Width>
+        <Width>6.30773cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -61,10 +61,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_fac</rd:DefaultName>
-        <Top>2.14284cm</Top>
-        <Left>3.29759cm</Left>
+        <Top>1.82534cm</Top>
+        <Left>2.65742cm</Left>
         <Height>0.6cm</Height>
-        <Width>6.13575cm</Width>
+        <Width>6.30773cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -94,9 +94,9 @@
         </Paragraphs>
         <rd:DefaultName>Ci_Nit_Comprador</rd:DefaultName>
         <Top>2.50416cm</Top>
-        <Left>3.29759cm</Left>
+        <Left>2.65742cm</Left>
         <Height>0.60854cm</Height>
-        <Width>6.13575cm</Width>
+        <Width>6.30773cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -126,8 +126,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox28</rd:DefaultName>
-        <Top>2.14284cm</Top>
-        <Left>0.65645cm</Left>
+        <Top>1.82534cm</Top>
+        <Left>0.33895cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85493cm</Width>
         <ZIndex>3</ZIndex>
@@ -159,8 +159,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox27</rd:DefaultName>
-        <Top>1.72777cm</Top>
-        <Left>0.65426cm</Left>
+        <Top>1.41027cm</Top>
+        <Left>0.33676cm</Left>
         <Height>0.6cm</Height>
         <Width>2.64333cm</Width>
         <ZIndex>4</ZIndex>
@@ -193,7 +193,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox29</rd:DefaultName>
         <Top>2.5127cm</Top>
-        <Left>0.65645cm</Left>
+        <Left>0.33895cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85712cm</Width>
         <ZIndex>5</ZIndex>
@@ -235,10 +235,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Fecha_emision1</rd:DefaultName>
-        <Top>1.71923cm</Top>
-        <Left>13.83599cm</Left>
+        <Top>1.40173cm</Top>
+        <Left>13.51976cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.3484cm</Width>
+        <Width>6.02183cm</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -267,10 +267,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_fac</rd:DefaultName>
-        <Top>2.14284cm</Top>
-        <Left>13.83599cm</Left>
+        <Top>1.82534cm</Top>
+        <Left>13.51976cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.3484cm</Width>
+        <Width>6.02183cm</Width>
         <ZIndex>7</ZIndex>
         <Style>
           <Border>
@@ -300,9 +300,9 @@
         </Paragraphs>
         <rd:DefaultName>Ci_Nit_Comprador</rd:DefaultName>
         <Top>2.49562cm</Top>
-        <Left>13.83599cm</Left>
+        <Left>13.51976cm</Left>
         <Height>0.60854cm</Height>
-        <Width>5.3484cm</Width>
+        <Width>6.02183cm</Width>
         <ZIndex>8</ZIndex>
         <Style>
           <Border>
@@ -332,7 +332,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox28</rd:DefaultName>
-        <Top>2.1343cm</Top>
+        <Top>1.8168cm</Top>
         <Left>11.19485cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85493cm</Width>
@@ -365,7 +365,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox27</rd:DefaultName>
-        <Top>1.71923cm</Top>
+        <Top>1.40173cm</Top>
         <Left>11.19266cm</Left>
         <Height>0.6cm</Height>
         <Width>2.64333cm</Width>
@@ -551,7 +551,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>4.37417cm</Top>
-        <Left>10.94994cm</Left>
+        <Left>11.26744cm</Left>
         <Height>0.6cm</Height>
         <Width>8.0195cm</Width>
         <ZIndex>12</ZIndex>
@@ -699,7 +699,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>4.37417cm</Top>
-        <Left>0.33208cm</Left>
+        <Left>0.64958cm</Left>
         <Height>0.6cm</Height>
         <Width>7.91002cm</Width>
         <ZIndex>13</ZIndex>
@@ -713,7 +713,7 @@
     <Height>1.97917in</Height>
     <Style />
   </Body>
-  <Width>7.6732in</Width>
+  <Width>7.69354in</Width>
   <Page>
     <PageHeader>
       <Height>2.2225cm</Height>
@@ -884,7 +884,7 @@
           <rd:DefaultName>Num_Autorizacion</rd:DefaultName>
           <Top>1.01396cm</Top>
           <Left>14.28138cm</Left>
-          <Height>0.89104cm</Height>
+          <Height>0.85576cm</Height>
           <Width>5.17198cm</Width>
           <ZIndex>3</ZIndex>
           <Style>
@@ -1022,9 +1022,9 @@
           </Paragraphs>
           <rd:DefaultName>literal</rd:DefaultName>
           <Top>0.76203cm</Top>
-          <Left>13.31887cm</Left>
+          <Left>13.47762cm</Left>
           <Height>0.76757cm</Height>
-          <Width>6.17106cm</Width>
+          <Width>5.95939cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1070,9 +1070,9 @@
           </Paragraphs>
           <rd:DefaultName>Fecha_limite</rd:DefaultName>
           <Top>1.68837cm</Top>
-          <Left>13.31887cm</Left>
+          <Left>13.47762cm</Left>
           <Height>0.49417cm</Height>
-          <Width>6.05512cm</Width>
+          <Width>5.96252cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -1115,9 +1115,9 @@
           </Paragraphs>
           <rd:DefaultName>Codigo_Control</rd:DefaultName>
           <Top>1.44141cm</Top>
-          <Left>13.31887cm</Left>
+          <Left>13.47762cm</Left>
           <Height>0.49417cm</Height>
-          <Width>6.09169cm</Width>
+          <Width>5.93294cm</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -1157,8 +1157,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Total</rd:DefaultName>
-          <Top>0.19015cm</Top>
-          <Left>15.76081cm</Left>
+          <Top>0.12665cm</Top>
+          <Left>16.06508cm</Left>
           <Height>0.51896cm</Height>
           <Width>3.29375cm</Width>
           <ZIndex>3</ZIndex>
@@ -1177,8 +1177,7 @@
           <Value>=Fields!imagen.Value</Value>
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
-          <Top>0.19015cm</Top>
-          <Left>0.06377cm</Left>
+          <Top>0.17692cm</Top>
           <Height>2.35423cm</Height>
           <Width>2.51357cm</Width>
           <ZIndex>4</ZIndex>
@@ -1219,9 +1218,9 @@
           </Paragraphs>
           <rd:DefaultName>literal</rd:DefaultName>
           <Top>0.77967cm</Top>
-          <Left>2.71845cm</Left>
+          <Left>2.59145cm</Left>
           <Height>0.74993cm</Height>
-          <Width>6.46633cm</Width>
+          <Width>6.36491cm</Width>
           <ZIndex>5</ZIndex>
           <Style>
             <Border>
@@ -1261,8 +1260,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Total</rd:DefaultName>
-          <Top>0.19015cm</Top>
-          <Left>5.10602cm</Left>
+          <Top>0.12665cm</Top>
+          <Left>5.41029cm</Left>
           <Height>0.51896cm</Height>
           <Width>3.2212cm</Width>
           <ZIndex>6</ZIndex>
@@ -1307,9 +1306,9 @@
           </Paragraphs>
           <rd:DefaultName>Codigo_Control</rd:DefaultName>
           <Top>1.46784cm</Top>
-          <Left>2.71845cm</Left>
+          <Left>2.59145cm</Left>
           <Height>0.49417cm</Height>
-          <Width>6.43102cm</Width>
+          <Width>6.37369cm</Width>
           <ZIndex>7</ZIndex>
           <Style>
             <Border>
@@ -1356,9 +1355,9 @@
           </Paragraphs>
           <rd:DefaultName>Fecha_limite</rd:DefaultName>
           <Top>1.72362cm</Top>
-          <Left>2.71845cm</Left>
+          <Left>2.59145cm</Left>
           <Height>0.49417cm</Height>
-          <Width>6.40253cm</Width>
+          <Width>6.36725cm</Width>
           <ZIndex>8</ZIndex>
           <Style>
             <Border>
@@ -1376,7 +1375,7 @@
           <MIMEType>image/jpeg</MIMEType>
           <Sizing>FitProportional</Sizing>
           <Top>0.19015cm</Top>
-          <Left>10.62891cm</Left>
+          <Left>10.78766cm</Left>
           <Height>2.35423cm</Height>
           <Width>2.51357cm</Width>
           <ZIndex>9</ZIndex>

@@ -80,7 +80,7 @@ Partial Class frmDatosImpuestos
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(456, 269)
+        Me.GroupBox1.Size = New System.Drawing.Size(456, 322)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Impuestos"
@@ -89,7 +89,7 @@ Partial Class frmDatosImpuestos
         '
         Me.cbbDetalle.FormattingEnabled = True
         Me.cbbDetalle.Items.AddRange(New Object() {"CENTRAL", "SUCURSAL 1", "SUCURSAL 2", "SUCURSAL 3"})
-        Me.cbbDetalle.Location = New System.Drawing.Point(120, 186)
+        Me.cbbDetalle.Location = New System.Drawing.Point(120, 248)
         Me.cbbDetalle.Name = "cbbDetalle"
         Me.cbbDetalle.Size = New System.Drawing.Size(120, 21)
         Me.cbbDetalle.TabIndex = 23
@@ -97,7 +97,7 @@ Partial Class frmDatosImpuestos
         '
         'nupSucursal
         '
-        Me.nupSucursal.Location = New System.Drawing.Point(120, 160)
+        Me.nupSucursal.Location = New System.Drawing.Point(120, 222)
         Me.nupSucursal.Name = "nupSucursal"
         Me.nupSucursal.Size = New System.Drawing.Size(120, 20)
         Me.nupSucursal.TabIndex = 22
@@ -105,7 +105,7 @@ Partial Class frmDatosImpuestos
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(66, 162)
+        Me.Label7.Location = New System.Drawing.Point(66, 224)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(48, 13)
         Me.Label7.TabIndex = 21
@@ -114,7 +114,7 @@ Partial Class frmDatosImpuestos
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(74, 190)
+        Me.Label6.Location = New System.Drawing.Point(74, 252)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(40, 13)
         Me.Label6.TabIndex = 20
@@ -122,7 +122,7 @@ Partial Class frmDatosImpuestos
         '
         'dtpFechaLimite
         '
-        Me.dtpFechaLimite.Location = New System.Drawing.Point(120, 128)
+        Me.dtpFechaLimite.Location = New System.Drawing.Point(120, 190)
         Me.dtpFechaLimite.Name = "dtpFechaLimite"
         Me.dtpFechaLimite.Size = New System.Drawing.Size(200, 20)
         Me.dtpFechaLimite.TabIndex = 19
@@ -130,7 +130,7 @@ Partial Class frmDatosImpuestos
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(51, 134)
+        Me.Label5.Location = New System.Drawing.Point(51, 196)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(63, 13)
         Me.Label5.TabIndex = 18
@@ -138,7 +138,7 @@ Partial Class frmDatosImpuestos
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(192, 224)
+        Me.btnGuardar.Location = New System.Drawing.Point(192, 286)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(67, 24)
         Me.btnGuardar.TabIndex = 17
@@ -147,7 +147,7 @@ Partial Class frmDatosImpuestos
         '
         'btnEditar
         '
-        Me.btnEditar.Location = New System.Drawing.Point(192, 224)
+        Me.btnEditar.Location = New System.Drawing.Point(192, 286)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(67, 23)
         Me.btnEditar.TabIndex = 16
@@ -156,7 +156,7 @@ Partial Class frmDatosImpuestos
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(279, 224)
+        Me.btnNuevo.Location = New System.Drawing.Point(279, 286)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(75, 23)
         Me.btnNuevo.TabIndex = 9
@@ -182,10 +182,10 @@ Partial Class frmDatosImpuestos
         '
         'txtLLAVE
         '
-        Me.txtLLAVE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtLLAVE.Location = New System.Drawing.Point(120, 102)
+        Me.txtLLAVE.Multiline = True
         Me.txtLLAVE.Name = "txtLLAVE"
-        Me.txtLLAVE.Size = New System.Drawing.Size(309, 20)
+        Me.txtLLAVE.Size = New System.Drawing.Size(309, 82)
         Me.txtLLAVE.TabIndex = 5
         '
         'txtNumAutorizacion
@@ -241,7 +241,7 @@ Partial Class frmDatosImpuestos
         Me.GroupBox2.Controls.Add(Me.datalistado)
         Me.GroupBox2.Location = New System.Drawing.Point(474, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(455, 269)
+        Me.GroupBox2.Size = New System.Drawing.Size(455, 322)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de Datos de Impuestos"
@@ -303,7 +303,7 @@ Partial Class frmDatosImpuestos
         Me.datalistado.Name = "datalistado"
         Me.datalistado.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(443, 239)
+        Me.datalistado.Size = New System.Drawing.Size(443, 292)
         Me.datalistado.TabIndex = 0
         '
         'eliminar
@@ -320,7 +320,7 @@ Partial Class frmDatosImpuestos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(941, 293)
+        Me.ClientSize = New System.Drawing.Size(941, 346)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog

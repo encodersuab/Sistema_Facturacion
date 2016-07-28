@@ -60,23 +60,23 @@ Public Class frmInicioF
     '    Me.StatusStrip.Visible = Me.StatusBarToolStripMenuItem.Checked
     'End Sub
 
-    Private Sub CascadeToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles CascadeToolStripMenuItem.Click
+    Private Sub CascadeToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.LayoutMdi(MdiLayout.Cascade)
     End Sub
 
-    Private Sub TileVerticalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles TileVerticalToolStripMenuItem.Click
+    Private Sub TileVerticalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.LayoutMdi(MdiLayout.TileVertical)
     End Sub
 
-    Private Sub TileHorizontalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles TileHorizontalToolStripMenuItem.Click
+    Private Sub TileHorizontalToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.LayoutMdi(MdiLayout.TileHorizontal)
     End Sub
 
-    Private Sub ArrangeIconsToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles ArrangeIconsToolStripMenuItem.Click
+    Private Sub ArrangeIconsToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.LayoutMdi(MdiLayout.ArrangeIcons)
     End Sub
 
-    Private Sub CloseAllToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles CloseAllToolStripMenuItem.Click
+    Private Sub CloseAllToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         ' Cierre todos los formularios secundarios del principal.
         For Each ChildForm As Form In Me.MdiChildren
             ChildForm.Close()
@@ -176,9 +176,39 @@ Public Class frmInicioF
                                                 postgrado.Enabled = False
                                                 SUPERADMIN.Enabled = False
                                             Else
-                                                MessageBox.Show("USAURIO INCORRECTO")
-                                                Me.Close()
-                                                frmLogin.Show()
+                                                If lbrol.Text = "AdministradorREPORTES" Then
+                                                    registroR.Visible = False
+                                                    registroE.Visible = False
+                                                    registroF.Visible = False
+                                                    registroP.Visible = False
+                                                    VentaR.Visible = False
+                                                    ventaE.Visible = False
+                                                    ventaF.Visible = False
+                                                    ToolStripMenuItem12.Visible = False
+                                                    REImprecionR.Visible = False
+                                                    FacturaToolStripMenuItem.Visible = False
+                                                    FacturaToolStripMenuItem1.Visible = False
+                                                    FacturaToolStripMenuItem2.Visible = False
+                                                    CambioDeAccesoToolStripMenuItem.Visible = False
+                                                    CambioDeAccesoToolStripMenuItem1.Visible = False
+                                                    CambioDeAccesoToolStripMenuItem2.Visible = False
+                                                    CambioDeAccesoToolStripMenuItem3.Visible = False
+                                                    DATOSIMPUESTOSToolStripMenuItem.Visible = False
+                                                    REGISTRODEUSUARIOSToolStripMenuItem.Visible = False
+                                                    ToolStripMenuItem1.Visible = False
+                                                    OrdenDePagoToolStripMenuItem.Visible = False
+                                                    'redrubi.Enabled = True
+                                                    'registroR.Enabled = False
+                                                    'VentaR.Enabled = False
+                                                    'REImprecionR.Enabled = False
+                                                    'emfopesbe.Enabled = False
+                                                    'postgrado.Enabled = False
+                                                    'SUPERADMIN.Enabled = False
+                                                Else
+                                                    MessageBox.Show("USAURIO INCORRECTO")
+                                                    Me.Close()
+                                                    frmLogin.Show()
+                                                End If
                                             End If
                                         End If
                                     End If

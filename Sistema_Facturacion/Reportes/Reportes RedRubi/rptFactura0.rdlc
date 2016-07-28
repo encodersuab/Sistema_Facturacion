@@ -216,7 +216,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Fecha_emision1</rd:DefaultName>
-        <Top>1.89566cm</Top>
+        <Top>1.57816cm</Top>
         <Left>3.56656cm</Left>
         <Height>0.6cm</Height>
         <Width>5.58973cm</Width>
@@ -248,7 +248,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_fac</rd:DefaultName>
-        <Top>2.31073cm</Top>
+        <Top>1.99323cm</Top>
         <Left>3.56656cm</Left>
         <Height>0.6cm</Height>
         <Width>5.58973cm</Width>
@@ -313,7 +313,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox28</rd:DefaultName>
-        <Top>2.31073cm</Top>
+        <Top>1.99323cm</Top>
         <Left>0.92542cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85493cm</Width>
@@ -346,7 +346,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox27</rd:DefaultName>
-        <Top>1.89566cm</Top>
+        <Top>1.57816cm</Top>
         <Left>0.92323cm</Left>
         <Height>0.6cm</Height>
         <Width>2.64333cm</Width>
@@ -422,7 +422,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Fecha_emision1</rd:DefaultName>
-        <Top>1.88712cm</Top>
+        <Top>1.56962cm</Top>
         <Left>14.10496cm</Left>
         <Height>0.6cm</Height>
         <Width>5.3484cm</Width>
@@ -454,7 +454,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_fac</rd:DefaultName>
-        <Top>2.31073cm</Top>
+        <Top>1.99323cm</Top>
         <Left>14.10496cm</Left>
         <Height>0.6cm</Height>
         <Width>5.3484cm</Width>
@@ -519,7 +519,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox28</rd:DefaultName>
-        <Top>2.30219cm</Top>
+        <Top>1.98469cm</Top>
         <Left>11.46382cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85493cm</Width>
@@ -552,7 +552,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox27</rd:DefaultName>
-        <Top>1.88712cm</Top>
+        <Top>1.56962cm</Top>
         <Left>11.46163cm</Left>
         <Height>0.6cm</Height>
         <Width>2.64333cm</Width>

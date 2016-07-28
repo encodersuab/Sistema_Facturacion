@@ -276,7 +276,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>4.55053cm</Top>
-        <Left>10.58226cm</Left>
+        <Left>10.76873cm</Left>
         <Height>0.6cm</Height>
         <Width>8.4723cm</Width>
         <ZIndex>1</ZIndex>
@@ -314,7 +314,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Fecha_emision1</rd:DefaultName>
-        <Top>1.89478cm</Top>
+        <Top>1.57728cm</Top>
         <Left>3.16776cm</Left>
         <Height>0.6cm</Height>
         <Width>5.98853cm</Width>
@@ -346,7 +346,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_fac</rd:DefaultName>
-        <Top>2.30985cm</Top>
+        <Top>1.99235cm</Top>
         <Left>3.16776cm</Left>
         <Height>0.6cm</Height>
         <Width>5.98853cm</Width>
@@ -411,7 +411,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox28</rd:DefaultName>
-        <Top>2.30985cm</Top>
+        <Top>1.99235cm</Top>
         <Left>0.52662cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85493cm</Width>
@@ -444,7 +444,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox27</rd:DefaultName>
-        <Top>1.89478cm</Top>
+        <Top>1.57728cm</Top>
         <Left>0.52443cm</Left>
         <Height>0.6cm</Height>
         <Width>2.64333cm</Width>
@@ -520,7 +520,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Fecha_emision1</rd:DefaultName>
-        <Top>1.88624cm</Top>
+        <Top>1.56874cm</Top>
         <Left>13.70616cm</Left>
         <Height>0.6cm</Height>
         <Width>5.7472cm</Width>
@@ -552,7 +552,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_fac</rd:DefaultName>
-        <Top>2.30985cm</Top>
+        <Top>1.99235cm</Top>
         <Left>13.70616cm</Left>
         <Height>0.6cm</Height>
         <Width>5.7472cm</Width>
@@ -617,7 +617,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox28</rd:DefaultName>
-        <Top>2.30131cm</Top>
+        <Top>1.98381cm</Top>
         <Left>11.06502cm</Left>
         <Height>0.6cm</Height>
         <Width>1.85493cm</Width>
@@ -650,7 +650,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox27</rd:DefaultName>
-        <Top>1.88624cm</Top>
+        <Top>1.56874cm</Top>
         <Left>11.06283cm</Left>
         <Height>0.6cm</Height>
         <Width>2.64333cm</Width>
@@ -742,7 +742,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Num_Autorizacion</rd:DefaultName>
-          <Top>1.16389cm</Top>
+          <Top>1.02278cm</Top>
           <Left>3.16776cm</Left>
           <Height>0.89104cm</Height>
           <Width>5.17198cm</Width>
@@ -782,7 +782,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>NumeroFactura</rd:DefaultName>
-          <Top>0.77585cm</Top>
+          <Top>0.63474cm</Top>
           <Left>3.16776cm</Left>
           <Height>0.57354cm</Height>
           <Width>5.17198cm</Width>
@@ -823,7 +823,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Nit_Emisor</rd:DefaultName>
-          <Top>0.3875cm</Top>
+          <Top>0.24639cm</Top>
           <Left>3.16776cm</Left>
           <Height>0.6cm</Height>
           <Width>5.17198cm</Width>
@@ -871,7 +871,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Num_Autorizacion</rd:DefaultName>
-          <Top>1.16389cm</Top>
+          <Top>1.02278cm</Top>
           <Left>13.9764cm</Left>
           <Height>0.89104cm</Height>
           <Width>5.17198cm</Width>
@@ -912,7 +912,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>NumeroFactura</rd:DefaultName>
-          <Top>0.77585cm</Top>
+          <Top>0.63474cm</Top>
           <Left>13.9764cm</Left>
           <Height>0.57354cm</Height>
           <Width>5.17198cm</Width>
@@ -953,7 +953,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Nit_Emisor</rd:DefaultName>
-          <Top>0.3875cm</Top>
+          <Top>0.24639cm</Top>
           <Left>13.9764cm</Left>
           <Height>0.6cm</Height>
           <Width>5.17198cm</Width>

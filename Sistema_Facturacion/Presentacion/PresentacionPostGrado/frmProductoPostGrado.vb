@@ -350,10 +350,20 @@
         Dim func As New fDeudor
         Dim aux As Integer
 
-        dts.gidproducto = txtIdproducto.Text
-        dts.gidcliente = txtidcliente.Text
+        If txtTag.Text <> "2" Then
+            dts.gidproducto = txtIdproducto.Text
+            dts.gidcliente = txtidcliente.Text
 
-        aux = func.mostrar_ultimo_ncuota(dts).ToString + 1
+            aux = func.mostrar_ultimo_ncuota(dts).ToString + 1
+        End If
+
+      
+
+        If txtTag.Text = "2" Then
+            aux = 0
+        End If
+
+
         If aux > txtstock.Text Then
             MessageBox.Show("NUMERO DE CUOTAS SUPERADO REALISE UN REPORTE DE CUOTAS PARA VERIFICAR EL NUMERO")
             Me.Close()
@@ -372,6 +382,10 @@
 
                     frmDetalleVentaPostGrado.txtncuota.Text = aux
 
+                    Me.Close()
+                ElseIf txtTag.Text = "2" Then
+                    frmReporteCuotas.txtNombre.Text = datalistado.SelectedCells.Item(4).Value
+                    '  frmReporteCuotas.ShowDialog()
                     Me.Close()
                 Else
                     frmDetalleVentaplanillaPostGrado.txtIdProducto.Text = datalistado.SelectedCells.Item(1).Value

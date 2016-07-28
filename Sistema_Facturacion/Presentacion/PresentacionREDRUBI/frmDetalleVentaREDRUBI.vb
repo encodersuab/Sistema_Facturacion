@@ -378,7 +378,7 @@ Public Class frmDetalleVentaREDRUBI
             monto = calcularMontoCC(txttotal.Text)
 
 
-            lbCC.Text = CC.generar(lbnumAutor.Text, txtIdVenta.Text, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
+
             ''''''''''''''''''''''''''''''''''
             Try
 
@@ -389,9 +389,9 @@ Public Class frmDetalleVentaREDRUBI
                 Dim f, aux As String
 
                 aux = func.mostrarUltimoQR.ToString + 1
-
-                f = dtpFecha.Value.Date
-                ' QrCodeImgControl1.Visible = True
+                lbCC.Text = CC.generar(lbnumAutor.Text, aux, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
+                f = dtpFecha.Value.Date.ToString("dd/MM/aaaa")
+                'QrCodeImgControl1.Visible = True
                 QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + txttotal.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text + "|" + "0" + "|" + "0" + "|" + "0" + "|" + "0"
                 'QrCodeImgControl1.Enabled = True
                 QrCodeImgControl1.Image.Save(ms, QrCodeImgControl1.Image.RawFormat)

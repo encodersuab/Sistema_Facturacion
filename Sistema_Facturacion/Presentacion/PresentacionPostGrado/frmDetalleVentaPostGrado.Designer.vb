@@ -58,6 +58,7 @@ Partial Class frmDetalleVentaPostGrado
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIdVenta = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lbFechaLimite = New System.Windows.Forms.DateTimePicker()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.lbliteral = New System.Windows.Forms.Label()
         Me.lbdetalle = New System.Windows.Forms.Label()
@@ -76,7 +77,6 @@ Partial Class frmDetalleVentaPostGrado
         Me.btnConsultarCuotas = New System.Windows.Forms.Button()
         Me.CodCobranza = New System.Windows.Forms.TextBox()
         Me.txtIdDeudor = New System.Windows.Forms.TextBox()
-        Me.lbFechaLimite = New System.Windows.Forms.DateTimePicker()
         CType(Me.QrCodeImgControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.erroricono, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -438,6 +438,15 @@ Partial Class frmDetalleVentaPostGrado
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Listado de articulos de Venta"
         '
+        'lbFechaLimite
+        '
+        Me.lbFechaLimite.Enabled = False
+        Me.lbFechaLimite.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.lbFechaLimite.Location = New System.Drawing.Point(208, -3)
+        Me.lbFechaLimite.Name = "lbFechaLimite"
+        Me.lbFechaLimite.Size = New System.Drawing.Size(92, 20)
+        Me.lbFechaLimite.TabIndex = 36
+        '
         'Label13
         '
         Me.Label13.AutoSize = True
@@ -607,15 +616,6 @@ Partial Class frmDetalleVentaPostGrado
         Me.txtIdDeudor.Size = New System.Drawing.Size(22, 20)
         Me.txtIdDeudor.TabIndex = 30
         Me.txtIdDeudor.Text = "0"
-        '
-        'lbFechaLimite
-        '
-        Me.lbFechaLimite.Enabled = False
-        Me.lbFechaLimite.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.lbFechaLimite.Location = New System.Drawing.Point(208, -3)
-        Me.lbFechaLimite.Name = "lbFechaLimite"
-        Me.lbFechaLimite.Size = New System.Drawing.Size(92, 20)
-        Me.lbFechaLimite.TabIndex = 36
         '
         'frmDetalleVentaPostGrado
         '

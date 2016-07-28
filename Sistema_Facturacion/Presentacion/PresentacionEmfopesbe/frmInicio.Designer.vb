@@ -26,7 +26,6 @@ Partial Class frmInicioF
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmInicioF))
         Me.MenuStrip = New System.Windows.Forms.MenuStrip()
-        Me.InicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.redrubi = New System.Windows.Forms.ToolStripMenuItem()
         Me.registroR = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem25 = New System.Windows.Forms.ToolStripMenuItem()
@@ -91,6 +90,7 @@ Partial Class frmInicioF
         Me.REGISTRODEUSUARIOSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.REPORTESToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClienteVentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasEnGeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImpuestosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -103,12 +103,6 @@ Partial Class frmInicioF
         Me.DetalleVentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CambioDeAccesoToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.WindowsMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CascadeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TileVerticalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TileHorizontalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CloseAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ArrangeIconsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -125,26 +119,18 @@ Partial Class frmInicioF
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lbidusuario = New System.Windows.Forms.Label()
-        Me.ClienteVentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip
         '
-        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InicioToolStripMenuItem, Me.redrubi, Me.emfopesbe, Me.fexpobeni, Me.postgrado, Me.SUPERADMIN, Me.WindowsMenu, Me.HelpMenu, Me.SalirToolStripMenuItem})
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.redrubi, Me.emfopesbe, Me.fexpobeni, Me.postgrado, Me.SUPERADMIN, Me.HelpMenu, Me.SalirToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 24)
-        Me.MenuStrip.MdiWindowListItem = Me.WindowsMenu
         Me.MenuStrip.Name = "MenuStrip"
         Me.MenuStrip.Size = New System.Drawing.Size(1172, 33)
         Me.MenuStrip.TabIndex = 5
         Me.MenuStrip.Text = "MenuStrip"
-        '
-        'InicioToolStripMenuItem
-        '
-        Me.InicioToolStripMenuItem.Name = "InicioToolStripMenuItem"
-        Me.InicioToolStripMenuItem.Size = New System.Drawing.Size(54, 29)
-        Me.InicioToolStripMenuItem.Text = "INICIO"
         '
         'redrubi
         '
@@ -163,19 +149,19 @@ Partial Class frmInicioF
         'ToolStripMenuItem25
         '
         Me.ToolStripMenuItem25.Name = "ToolStripMenuItem25"
-        Me.ToolStripMenuItem25.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem25.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem25.Text = "Cliente"
         '
         'ToolStripMenuItem26
         '
         Me.ToolStripMenuItem26.Name = "ToolStripMenuItem26"
-        Me.ToolStripMenuItem26.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem26.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem26.Text = "Producto"
         '
         'ToolStripMenuItem27
         '
         Me.ToolStripMenuItem27.Name = "ToolStripMenuItem27"
-        Me.ToolStripMenuItem27.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem27.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem27.Text = "Categoria"
         '
         'VentaR
@@ -188,7 +174,7 @@ Partial Class frmInicioF
         'ContadoToolStripMenuItem2
         '
         Me.ContadoToolStripMenuItem2.Name = "ContadoToolStripMenuItem2"
-        Me.ContadoToolStripMenuItem2.Size = New System.Drawing.Size(120, 22)
+        Me.ContadoToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.ContadoToolStripMenuItem2.Text = "Contado"
         '
         'reporteR
@@ -436,19 +422,19 @@ Partial Class frmInicioF
         'ToolStripMenuItem6
         '
         Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem6.Text = "Cliente"
         '
         'ToolStripMenuItem7
         '
         Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem7.Text = "Producto"
         '
         'ToolStripMenuItem11
         '
         Me.ToolStripMenuItem11.Name = "ToolStripMenuItem11"
-        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(125, 22)
+        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem11.Text = "Categoria"
         '
         'ToolStripMenuItem12
@@ -461,13 +447,13 @@ Partial Class frmInicioF
         'ToolStripMenuItem13
         '
         Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
-        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(124, 22)
+        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem13.Text = "Contado"
         '
         'CobranzaToolStripMenuItem
         '
         Me.CobranzaToolStripMenuItem.Name = "CobranzaToolStripMenuItem"
-        Me.CobranzaToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.CobranzaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.CobranzaToolStripMenuItem.Text = "Cobranza"
         '
         'ToolStripMenuItem18
@@ -552,6 +538,12 @@ Partial Class frmInicioF
         Me.ClienteToolStripMenuItem.Size = New System.Drawing.Size(199, 22)
         Me.ClienteToolStripMenuItem.Text = "Cliente"
         '
+        'ClienteVentaToolStripMenuItem
+        '
+        Me.ClienteVentaToolStripMenuItem.Name = "ClienteVentaToolStripMenuItem"
+        Me.ClienteVentaToolStripMenuItem.Size = New System.Drawing.Size(199, 22)
+        Me.ClienteVentaToolStripMenuItem.Text = "Cliente Venta"
+        '
         'UsuariosToolStripMenuItem1
         '
         Me.UsuariosToolStripMenuItem1.Name = "UsuariosToolStripMenuItem1"
@@ -624,43 +616,6 @@ Partial Class frmInicioF
         Me.CambioDeAccesoToolStripMenuItem4.Name = "CambioDeAccesoToolStripMenuItem4"
         Me.CambioDeAccesoToolStripMenuItem4.Size = New System.Drawing.Size(202, 22)
         Me.CambioDeAccesoToolStripMenuItem4.Text = "Cambio de acceso"
-        '
-        'WindowsMenu
-        '
-        Me.WindowsMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CascadeToolStripMenuItem, Me.TileVerticalToolStripMenuItem, Me.TileHorizontalToolStripMenuItem, Me.CloseAllToolStripMenuItem, Me.ArrangeIconsToolStripMenuItem})
-        Me.WindowsMenu.Name = "WindowsMenu"
-        Me.WindowsMenu.Size = New System.Drawing.Size(79, 29)
-        Me.WindowsMenu.Text = "&VENTANAS"
-        '
-        'CascadeToolStripMenuItem
-        '
-        Me.CascadeToolStripMenuItem.Name = "CascadeToolStripMenuItem"
-        Me.CascadeToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.CascadeToolStripMenuItem.Text = "&Cascada"
-        '
-        'TileVerticalToolStripMenuItem
-        '
-        Me.TileVerticalToolStripMenuItem.Name = "TileVerticalToolStripMenuItem"
-        Me.TileVerticalToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.TileVerticalToolStripMenuItem.Text = "Mosaico &vertical"
-        '
-        'TileHorizontalToolStripMenuItem
-        '
-        Me.TileHorizontalToolStripMenuItem.Name = "TileHorizontalToolStripMenuItem"
-        Me.TileHorizontalToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.TileHorizontalToolStripMenuItem.Text = "Mosaico &horizontal"
-        '
-        'CloseAllToolStripMenuItem
-        '
-        Me.CloseAllToolStripMenuItem.Name = "CloseAllToolStripMenuItem"
-        Me.CloseAllToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.CloseAllToolStripMenuItem.Text = "C&errar todo"
-        '
-        'ArrangeIconsToolStripMenuItem
-        '
-        Me.ArrangeIconsToolStripMenuItem.Name = "ArrangeIconsToolStripMenuItem"
-        Me.ArrangeIconsToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.ArrangeIconsToolStripMenuItem.Text = "&Organizar iconos"
         '
         'HelpMenu
         '
@@ -780,12 +735,6 @@ Partial Class frmInicioF
         Me.lbidusuario.TabIndex = 20
         Me.lbidusuario.Text = "L"
         '
-        'ClienteVentaToolStripMenuItem
-        '
-        Me.ClienteVentaToolStripMenuItem.Name = "ClienteVentaToolStripMenuItem"
-        Me.ClienteVentaToolStripMenuItem.Size = New System.Drawing.Size(199, 22)
-        Me.ClienteVentaToolStripMenuItem.Text = "Cliente Venta"
-        '
         'frmInicioF
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -822,17 +771,10 @@ Partial Class frmInicioF
     Friend WithEvents SearchToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator8 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents AboutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ArrangeIconsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CloseAllToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents WindowsMenu As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CascadeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TileVerticalToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TileHorizontalToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolTip As System.Windows.Forms.ToolTip
     Friend WithEvents ToolStripStatusLabel As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents StatusStrip As System.Windows.Forms.StatusStrip
     Friend WithEvents MenuStrip As System.Windows.Forms.MenuStrip
-    Friend WithEvents InicioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents fexpobeni As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents registroF As System.Windows.Forms.ToolStripMenuItem
