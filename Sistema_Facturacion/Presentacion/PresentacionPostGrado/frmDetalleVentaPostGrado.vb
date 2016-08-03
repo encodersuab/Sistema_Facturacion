@@ -415,7 +415,7 @@ Public Class frmDetalleVentaPostGrado
 
                 lbCC.Text = CC.generar(lbnumAutor.Text, aux, txtNumDoc.Text, fecha, monto, lbllave.Text).ToString
 
-                f = dtpFecha.Value.Date.ToString("dd/MM/aaaa")
+                f = dtpFecha.Value.Date.ToString("dd/MM/yyyy")
                 ' QrCodeImgControl1.Visible = True
                 QrCodeImgControl1.Text = txtnituab.Text + "|" + aux + "|" + lbnumAutor.Text + "|" + f.ToString + "|" + txttotal.Text + "|" + txttotal.Text + "|" + lbCC.Text + "|" + txtNumDoc.Text + "|" + "0" + "|" + "0" + "|" + "0" + "|" + "0"
                 'QrCodeImgControl1.Enabled = True
