@@ -151,6 +151,7 @@ Public Class frmDatosImpuestos
                 dts.gsucursal = nupSucursal.Value.ToString
                 dts.gdetalle = cbbDetalle.Text
 
+
                 If func.insertar(dts) Then
                     MessageBox.Show("Registro realizado correctamente", "guardando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     mostrar()
